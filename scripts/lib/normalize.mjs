@@ -59,17 +59,19 @@ const CATEGORY_RULES = [
 
 /**
  * “是否与 AI 相关”的判定，用于综合科技站（relevance=tech）的过滤。
- * 强信号：出现即可判定；弱信号：仅在标题命中时判定，避免正文里的一个“芯片”就把
- * 汽车产销稿收进来。ASCII 关键词按词边界匹配，避免 ai 命中 said/email。
+ * 只按**标题**判断：实测正文里出现一次 “AI/NVIDIA” 就足以把整篇消费电子稿
+ * 收进来（苹果 iPad、显示器、显卡销量榜），而标题是编辑给出的主题信号。
+ * ASCII 关键词按词边界匹配，避免 ai 命中 said/email；中文关键词直接包含匹配。
  */
-const STRONG_AI_KEYWORDS = [
+const AI_KEYWORDS = [
+  // 模型 / 厂商 / 产品强信号
   'ai', 'agi', 'llm', 'aigc', 'gpt', 'chatgpt', 'claude', 'gemini', 'deepseek', 'qwen', 'llama', 'grok',
-  'copilot', 'midjourney', 'sora', 'openai', 'anthropic', 'nvidia', 'hugging face', 'transformer', 'mcp',
-  '人工智能', '大模型', '智能体', '生成式', '多模态', '机器学习', '深度学习', '神经网络', '具身智能',
-  '自动驾驶', '语音识别', '计算机视觉',
-];
-
-const WEAK_AI_KEYWORDS = [
+  'kimi', 'glm', 'mistral', 'copilot', 'midjourney', 'sora', 'openai', 'anthropic', 'nvidia',
+  'hugging face', 'transformer', 'diffusion', 'agent', 'mcp',
+  // 中文强信号
+  '人工智能', '大模型', '大语言模型', '智能体', '生成式', '多模态', '机器学习', '深度学习', '神经网络',
+  '具身智能', '自动驾驶', '语音识别', '计算机视觉',
+  // 弱信号：只在标题出现时才算，仍属 AI 主题
   '模型', '算法', '芯片', '算力', '训练', '推理', '微调', '机器人', '英伟达', '智能驾驶', '对话系统',
 ];
 
@@ -93,13 +95,10 @@ export function matchesKeyword(haystack, keyword) {
   return haystack.includes(keyword);
 }
 
-/** 判断条目是否属于 AI 主题 */
-export function isAiRelated(title, summary = '') {
+/** 判断条目标题是否属于 AI 主题（只看标题，避免正文噪声） */
+export function isAiRelated(title) {
   const head = String(title ?? '');
-  const body = String(summary ?? '');
-  if (STRONG_AI_KEYWORDS.some((keyword) => matchesKeyword(head, keyword))) return true;
-  if (WEAK_AI_KEYWORDS.some((keyword) => matchesKeyword(head, keyword))) return true;
-  return STRONG_AI_KEYWORDS.some((keyword) => matchesKeyword(body, keyword));
+  return AI_KEYWORDS.some((keyword) => matchesKeyword(head, keyword));
 }
 
 /** 基于关键词的分类器：标题命中 3 分，摘要命中 1 分 */

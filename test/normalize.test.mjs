@@ -45,21 +45,20 @@ describe('matchesKeyword', () => {
 });
 
 describe('isAiRelated', () => {
-  it('强信号出现在标题即可', () => {
-    assert.equal(isAiRelated('OpenAI 发布新东西', ''), true);
+  it('标题命中强信号即可', () => {
+    assert.equal(isAiRelated('OpenAI 发布新东西'), true);
+    assert.equal(isAiRelated('某公司发布 Agent 中间层'), true);
   });
 
-  it('弱信号只在标题命中时才判定', () => {
-    assert.equal(isAiRelated('人形机器人第一股', ''), true);
-    assert.equal(isAiRelated('赛力斯 9 月产销快报', '该公司同时在推进芯片自研'), false);
+  it('标题命中弱信号也算 AI 主题', () => {
+    assert.equal(isAiRelated('人形机器人第一股'), true);
+    assert.equal(isAiRelated('新一代智能驾驶方案落地'), true);
   });
 
-  it('摘要里的强信号也可以判定', () => {
-    assert.equal(isAiRelated('某公司季度报告', '报告提到大模型带来的成本变化'), true);
-  });
-
-  it('完全无关的内容被排除', () => {
-    assert.equal(isAiRelated('红魔 12 Pro+ 全新配色发布', '新机将于 10 月发售'), false);
+  it('只看标题，正文提到 AI 不改变判定', () => {
+    assert.equal(isAiRelated('赛力斯 9 月产销快报'), false);
+    assert.equal(isAiRelated('苹果 iPad mini 8 本月发布'), false);
+    assert.equal(isAiRelated('优派推出新款 27 寸显示器'), false);
   });
 });
 

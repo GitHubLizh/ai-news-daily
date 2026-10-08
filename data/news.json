@@ -1,32 +1,32 @@
 {
-  "generatedAt": "2026-10-08T11:40:28.526Z",
+  "generatedAt": "2026-10-08T15:34:42.496Z",
   "timezone": "Asia/Shanghai",
-  "count": 456,
+  "count": 375,
   "days": [
     {
       "day": "2026-10-08",
       "label": "10月8日 · 周四",
-      "count": 164
+      "count": 131
     },
     {
       "day": "2026-10-07",
       "label": "10月7日 · 周三",
-      "count": 63
+      "count": 37
     },
     {
       "day": "2026-10-06",
       "label": "10月6日 · 周二",
-      "count": 25
+      "count": 19
     },
     {
       "day": "2026-10-05",
       "label": "10月5日 · 周一",
-      "count": 15
+      "count": 12
     },
     {
       "day": "2026-10-04",
       "label": "10月4日 · 周日",
-      "count": 9
+      "count": 5
     },
     {
       "day": "2026-10-03",
@@ -36,27 +36,27 @@
     {
       "day": "2026-10-02",
       "label": "10月2日 · 周五",
-      "count": 8
+      "count": 7
     },
     {
       "day": "2026-10-01",
       "label": "10月1日 · 周四",
-      "count": 10
+      "count": 9
     },
     {
       "day": "2026-09-30",
       "label": "9月30日 · 周三",
-      "count": 19
+      "count": 18
     },
     {
       "day": "2026-09-29",
       "label": "9月29日 · 周二",
-      "count": 16
+      "count": 15
     },
     {
       "day": "2026-09-28",
       "label": "9月28日 · 周一",
-      "count": 10
+      "count": 8
     },
     {
       "day": "2026-09-26",
@@ -86,7 +86,7 @@
     {
       "day": "2026-09-21",
       "label": "9月21日 · 周一",
-      "count": 7
+      "count": 6
     },
     {
       "day": "2026-09-19",
@@ -131,7 +131,7 @@
     {
       "day": "2026-09-10",
       "label": "9月10日 · 周四",
-      "count": 8
+      "count": 7
     },
     {
       "day": "2026-09-09",
@@ -192,38 +192,33 @@
       "day": "2026-08-25",
       "label": "8月25日 · 周二",
       "count": 4
-    },
-    {
-      "day": "2026-08-24",
-      "label": "8月24日 · 周一",
-      "count": 1
     }
   ],
   "stats": {
     "categories": [
       {
         "name": "行业动态",
-        "count": 221
+        "count": 179
       },
       {
         "name": "模型发布",
-        "count": 105
+        "count": 93
       },
       {
         "name": "产品动态",
-        "count": 78
+        "count": 64
       },
       {
         "name": "研究前沿",
-        "count": 30
+        "count": 26
       },
       {
         "name": "开源工具",
-        "count": 12
+        "count": 8
       },
       {
         "name": "观点方法",
-        "count": 10
+        "count": 5
       }
     ],
     "sources": [
@@ -233,22 +228,14 @@
       },
       {
         "name": "开源中国",
-        "count": 33
-      },
-      {
-        "name": "快科技",
-        "count": 28
+        "count": 32
       },
       {
         "name": "极客公园",
-        "count": 27
+        "count": 24
       },
       {
-        "name": "Simon Willison",
-        "count": 25
-      },
-      {
-        "name": "雷锋网",
+        "name": "TechCrunch AI",
         "count": 20
       },
       {
@@ -256,16 +243,8 @@
         "count": 20
       },
       {
-        "name": "TechCrunch AI",
-        "count": 20
-      },
-      {
         "name": "AWS 机器学习",
         "count": 20
-      },
-      {
-        "name": "Hacker News",
-        "count": 18
       },
       {
         "name": "NVIDIA",
@@ -276,19 +255,19 @@
         "count": 15
       },
       {
-        "name": "IT之家",
-        "count": 14
-      },
-      {
-        "name": "钛媒体",
-        "count": 11
-      },
-      {
-        "name": "The Decoder",
-        "count": 10
+        "name": "Simon Willison",
+        "count": 12
       },
       {
         "name": "量子位",
+        "count": 11
+      },
+      {
+        "name": "The Verge AI",
+        "count": 10
+      },
+      {
+        "name": "The Decoder",
         "count": 10
       },
       {
@@ -296,16 +275,20 @@
         "count": 10
       },
       {
-        "name": "The Verge AI",
-        "count": 10
-      },
-      {
         "name": "InfoQ 中文",
         "count": 9
       },
       {
-        "name": "爱范儿",
+        "name": "雷锋网",
         "count": 9
+      },
+      {
+        "name": "快科技",
+        "count": 8
+      },
+      {
+        "name": "爱范儿",
+        "count": 8
       },
       {
         "name": "Interconnects",
@@ -313,15 +296,23 @@
       },
       {
         "name": "Ars Technica",
-        "count": 8
+        "count": 7
       },
       {
         "name": "Solidot",
         "count": 6
       },
       {
+        "name": "IT之家",
+        "count": 5
+      },
+      {
+        "name": "钛媒体",
+        "count": 5
+      },
+      {
         "name": "MIT 科技评论",
-        "count": 2
+        "count": 3
       },
       {
         "name": "界面新闻",
@@ -333,12 +324,592 @@
       }
     ],
     "languages": {
-      "zh": 168,
-      "en": 288
+      "zh": 118,
+      "en": 257
     },
     "estimatedTime": 0
   },
   "items": [
+    {
+      "id": "0gjthvy",
+      "title": "Google’s AI note-taking app transcribes your meetings completely offline",
+      "url": "https://www.theverge.com/tech/1007985/google-ai-notetaking-app-transcribe-offline",
+      "summary": "Google has released an experimental note-taking app that can transcribe meetings and audio files entirely offline, as reported earlier by TechCrunch. The app, called Google AI Edge Foresight, is free to use and runs on m…",
+      "author": "Emma Roth",
+      "source": "The Verge AI",
+      "sourceId": "verge-ai",
+      "home": "https://www.theverge.com/ai-artificial-intelligence",
+      "weight": 1.6,
+      "lang": "en",
+      "category": "产品动态",
+      "publishedAt": "2026-10-08T15:27:30.000Z",
+      "publishedTs": 1791473250000,
+      "day": "2026-10-08",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 66
+    },
+    {
+      "id": "15e9ztx",
+      "title": "Hear from Ambrosia Energy and Bloom Energy execs on where the AI infrastructure boom is creating opportunity at TechCrunch Disrupt 2026",
+      "url": "https://techcrunch.com/2026/10/08/hear-from-ambrosia-energy-and-bloom-energy-execs-on-where-the-ai-infrastructure-boom-is-creating-opportunity-at-disrupt-2026",
+      "summary": "Ambrosia Energy CEO Ben Longmier and Bloom Energy SVP Bill Thayer join the Smart Systems Stage at TechCrunch Disrupt. Register now to save up to $100. Grab a second of the same pass to save 50%.",
+      "author": "TechCrunch Events",
+      "source": "TechCrunch AI",
+      "sourceId": "techcrunch-ai",
+      "home": "https://techcrunch.com/category/artificial-intelligence/",
+      "weight": 1.8,
+      "lang": "en",
+      "category": "行业动态",
+      "publishedAt": "2026-10-08T15:00:00.000Z",
+      "publishedTs": 1791471600000,
+      "day": "2026-10-08",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 67
+    },
+    {
+      "id": "1fflc44",
+      "title": "英伟达未来五年将投入10亿美元支持美国科学研究",
+      "url": "https://www.jiemian.com/article/15169413.html",
+      "summary": "10月8日，英伟达宣布，未来五年将投入总价值10亿美元的资金和资源，用于提升美国科学研究能力，重点支持量子计算、医疗健康和能源安全等领域。英伟达表示，相关投入将支持美国高校科研机构、量子计算领域发展以及为美国政府任务提供支持的云服务商，并参与美国“创世纪计划”第二阶段部分项目，涵盖量子计算、核聚变、加速器设计和微电子等领域。",
+      "author": "jianli@jiemian.com(界面快报)",
+      "source": "界面新闻",
+      "sourceId": "jiemian",
+      "home": "https://www.jiemian.com",
+      "weight": 1.2,
+      "lang": "zh",
+      "category": "研究前沿",
+      "publishedAt": "2026-10-08T14:36:54.000Z",
+      "publishedTs": 1791470214000,
+      "day": "2026-10-08",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 61
+    },
+    {
+      "id": "0e7lqny",
+      "title": "Google is launching a one-stop Gemini agent for your work tasks",
+      "url": "https://www.theverge.com/tech/1007904/google-gemini-ai-agent-enterprise",
+      "summary": "Google is launching a \"universal\" Gemini AI agent that can work across apps and devices in the background. The tool, announced as part of the Gemini at Work event on Thursday, will be available within the Gemini Enterpri…",
+      "author": "Emma Roth",
+      "source": "The Verge AI",
+      "sourceId": "verge-ai",
+      "home": "https://www.theverge.com/ai-artificial-intelligence",
+      "weight": 1.6,
+      "lang": "en",
+      "category": "模型发布",
+      "publishedAt": "2026-10-08T14:28:03.000Z",
+      "publishedTs": 1791469683000,
+      "day": "2026-10-08",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 64
+    },
+    {
+      "id": "1jxx3b3",
+      "title": "亚马逊发布 Alexa Tablet 平板电脑：接替 Fire Tablet，全面支持 Alexa+ AI",
+      "url": "https://www.ithome.com/1/010/715.htm",
+      "summary": "IT之家 10 月 8 日消息，Amazon（亚马逊）当地时间今日正式发布了接替此前 Fire Tablet 系列的 Alexa Tablet 平板电脑。这些产品运行 Android 操作系统，可访问完整的 Google Play 商店。 首批 Alexa Tablet 包括三款产品：Alexa Tablet 12 Pro、Alexa Tablet 11、Alexa Tablet 8。这些型号均拥有铝合金一体成型机身，都内置 Alexa…",
+      "author": "",
+      "source": "IT之家",
+      "sourceId": "ithome",
+      "home": "https://www.ithome.com",
+      "weight": 1.6,
+      "lang": "zh",
+      "category": "模型发布",
+      "publishedAt": "2026-10-08T14:14:22.000Z",
+      "publishedTs": 1791468862000,
+      "day": "2026-10-08",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 77
+    },
+    {
+      "id": "1kom7yw",
+      "title": "谷歌为 Pixel 手机开发新人脸解锁算法，改善暗光环境解锁体验",
+      "url": "https://www.ithome.com/1/010/714.htm",
+      "summary": "IT之家 10 月 8 日消息，据科技媒体 Android Headline 今天报道，谷歌似乎在为 Pixel 系列手机开发“Face Active Illumination”功能，可利用屏幕发出的光照亮人脸，改善暗光环境下的人脸解锁体验。 据报道，谷歌 Pixel 手机的人脸解锁功能在环境光良好的情况下表现尚可，当用户进入光线昏暗的房间时，它就显得力不从心。如今，Android 17 QPR3 Beta 1 系统已经留下一些代码痕迹…",
+      "author": "",
+      "source": "IT之家",
+      "sourceId": "ithome",
+      "home": "https://www.ithome.com",
+      "weight": 1.6,
+      "lang": "zh",
+      "category": "产品动态",
+      "publishedAt": "2026-10-08T14:08:55.000Z",
+      "publishedTs": 1791468535000,
+      "day": "2026-10-08",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 64
+    },
+    {
+      "id": "0anqrab",
+      "title": "hacked by trenggalek6etar",
+      "url": "https://www.qbitai.com/2026/10/502081.html",
+      "summary": "",
+      "author": "Yu Dongyang",
+      "source": "量子位",
+      "sourceId": "qbitai",
+      "home": "https://www.qbitai.com",
+      "weight": 2.2,
+      "lang": "en",
+      "category": "行业动态",
+      "publishedAt": "2026-10-08T14:07:51.000Z",
+      "publishedTs": 1791468471000,
+      "day": "2026-10-08",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 70
+    },
+    {
+      "id": "187rn4z",
+      "title": "5 days to TechCrunch Disrupt 2026: Don’t pay more at the door for your pass",
+      "url": "https://techcrunch.com/2026/10/08/5-days-to-techcrunch-disrupt-2026-dont-pay-more-at-the-door",
+      "summary": "The global tech ecosystem gathers at TechCrunch Disrupt 2026 at San Francisco’s Moscone West on October 13-15. Get your pass now to save up to $100. Get a second of the same ticket type to save 50%.",
+      "author": "TechCrunch Events",
+      "source": "TechCrunch AI",
+      "sourceId": "techcrunch-ai",
+      "home": "https://techcrunch.com/category/artificial-intelligence/",
+      "weight": 1.8,
+      "lang": "en",
+      "category": "行业动态",
+      "publishedAt": "2026-10-08T14:00:00.000Z",
+      "publishedTs": 1791468000000,
+      "day": "2026-10-08",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 66
+    },
+    {
+      "id": "0zzgtsu",
+      "title": "Cal AI’s 19-year-old founder just raised $10M for his new AI startup",
+      "url": "https://techcrunch.com/2026/10/08/cal-ais-19-year-old-founder-just-raised-10m-for-his-new-ai-startup",
+      "summary": "Zach Yadegari, the teen co-founder of popular Cal AI calorie tracking app, has launched a new personal AI agent startup that competes with Instinct, Muse, and Bee.",
+      "author": "Julie Bort",
+      "source": "TechCrunch AI",
+      "sourceId": "techcrunch-ai",
+      "home": "https://techcrunch.com/category/artificial-intelligence/",
+      "weight": 1.8,
+      "lang": "en",
+      "category": "产品动态",
+      "publishedAt": "2026-10-08T14:00:00.000Z",
+      "publishedTs": 1791468000000,
+      "day": "2026-10-08",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 66
+    },
+    {
+      "id": "1mkts84",
+      "title": "Can you trust Meta’s Muse or OpenAI’s Dots to run your life?",
+      "url": "https://www.theverge.com/podcast/1007408/meta-muse-openai-dots-ai-agent-race-privacy-free",
+      "summary": "My Decoder guest today is Hayden Field, The Verge’s senior AI reporter, and we’re discussing the new wave of consumer-friendly AI agents. If you’ve been paying attention to this space, you know AI enthusiasts have been u…",
+      "author": "Nilay Patel",
+      "source": "The Verge AI",
+      "sourceId": "verge-ai",
+      "home": "https://www.theverge.com/ai-artificial-intelligence",
+      "weight": 1.6,
+      "lang": "en",
+      "category": "行业动态",
+      "publishedAt": "2026-10-08T14:00:00.000Z",
+      "publishedTs": 1791468000000,
+      "day": "2026-10-08",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 64
+    },
+    {
+      "id": "0vur6s1",
+      "title": "Artificial is a wicked satire that also sticks to the facts",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1007786/artificial-is-a-wicked-satire-that-also-sticks-to-the-facts",
+      "summary": "At the New York Film Festival premiere of Artificial, Luca Guadagnino's satirical Sam Altman biopic, the director said onstage that \"[when] someone wants to play God, that's very interesting to me.\" The idea of playing G…",
+      "author": "Hayden Field",
+      "source": "The Verge AI",
+      "sourceId": "verge-ai",
+      "home": "https://www.theverge.com/ai-artificial-intelligence",
+      "weight": 1.6,
+      "lang": "en",
+      "category": "行业动态",
+      "publishedAt": "2026-10-08T14:00:00.000Z",
+      "publishedTs": 1791468000000,
+      "day": "2026-10-08",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 64
+    },
+    {
+      "id": "0l0owpc",
+      "title": "谷歌云发布Gemini智能体：可自主执行企业多步骤任务",
+      "url": "https://news.mydrivers.com/1/1156/1156028.htm",
+      "summary": "快科技10月8日消息，今日，谷歌云在Gemini at Work 2026发布会上宣布，面向企业客户推出Gemini智能体。 该产品定位“通用工作智能体”，支持Gemini Enterprise、Workspace以及第三方服务。 谷歌表示，Gemini智能体只需要用户给出目标就能完成工作，即可通过单一界面处理问答、知识工作、内容创作及代码编写和运行等任务，并能调用企业内部工具和数据，自主完成用户设定的目标。 例如，当你的经理用邮件要求…",
+      "author": "哈尔",
+      "source": "快科技",
+      "sourceId": "mydrivers",
+      "home": "https://www.mydrivers.com",
+      "weight": 1.2,
+      "lang": "zh",
+      "category": "产品动态",
+      "publishedAt": "2026-10-08T13:56:43.000Z",
+      "publishedTs": 1791467803000,
+      "day": "2026-10-08",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 66
+    },
+    {
+      "id": "0td8au0",
+      "title": "AI math breakthroughs have Ethereum researchers debating how fast wallet security could collapse",
+      "url": "https://the-decoder.com/ai-math-breakthroughs-have-ethereum-researchers-debating-how-fast-wallet-security-could-collapse",
+      "summary": "Ethereum researcher Justin Drake is urging the crypto industry to prepare a \"bunker mode\" for a scenario where AI-powered math could break wallet signature schemes within months. Vitalik Buterin broadly agrees but warns…",
+      "author": "Manuel Uth",
+      "source": "The Decoder",
+      "sourceId": "the-decoder",
+      "home": "https://the-decoder.com",
+      "weight": 1.6,
+      "lang": "en",
+      "category": "行业动态",
+      "publishedAt": "2026-10-08T13:52:54.000Z",
+      "publishedTs": 1791467574000,
+      "day": "2026-10-08",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 64
+    },
+    {
+      "id": "0kaiale",
+      "title": "Alphacool 带来多款 GPU 单槽冷头，支持 NVIDIA、AMD 专业显卡",
+      "url": "https://www.ithome.com/1/010/709.htm",
+      "summary": "IT之家 10 月 8 日消息，Alphacool 当地时间今日宣布扩展其 ES 1-Slot Design 系列分体式液冷显卡单槽冷头家族，为 4 款最新一代专业显卡提供支持。 此次发布的冷头分别兼容 NVIDIA RTX PRO 4000 / 4500 / 6000（工作站版本）Blackwell Edition、AMD Radeon AI PRO R9700。 这 4 款冷头均采用全覆盖设计，拥有镀铬铜底和碳纤维饰面，进出水口位于…",
+      "author": "",
+      "source": "IT之家",
+      "sourceId": "ithome",
+      "home": "https://www.ithome.com",
+      "weight": 1.6,
+      "lang": "zh",
+      "category": "行业动态",
+      "publishedAt": "2026-10-08T13:43:39.000Z",
+      "publishedTs": 1791467019000,
+      "day": "2026-10-08",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 70
+    },
+    {
+      "id": "1dvno3d",
+      "title": "Google releases a new local-first Granola competitor",
+      "url": "https://techcrunch.com/2026/10/08/google-releases-a-new-local-first-granola-competitor",
+      "summary": "Google’s new AI Edge Foresight app takes on Granola with an offline meeting note-taker that can transcribe conversations, generate notes, and answer questions using on-device AI.",
+      "author": "Ivan Mehta",
+      "source": "TechCrunch AI",
+      "sourceId": "techcrunch-ai",
+      "home": "https://techcrunch.com/category/artificial-intelligence/",
+      "weight": 1.8,
+      "lang": "en",
+      "category": "产品动态",
+      "publishedAt": "2026-10-08T13:28:39.000Z",
+      "publishedTs": 1791466119000,
+      "day": "2026-10-08",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 65
+    },
+    {
+      "id": "1boywlz",
+      "title": "真香！做这个邪恶老奶版「GTA 6」，我只花了5元！",
+      "url": "https://www.qbitai.com/2026/10/502049.html",
+      "summary": "Vidu Q4预览版，了解一下~",
+      "author": "十三",
+      "source": "量子位",
+      "sourceId": "qbitai",
+      "home": "https://www.qbitai.com",
+      "weight": 2.2,
+      "lang": "zh",
+      "category": "模型发布",
+      "publishedAt": "2026-10-08T13:28:23.000Z",
+      "publishedTs": 1791466103000,
+      "day": "2026-10-08",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 69
+    },
+    {
+      "id": "1fi7faz",
+      "title": "特朗普把AI改名SI：马斯克跟风 奥尔特曼拒绝改名OpenSI",
+      "url": "https://news.mydrivers.com/1/1156/1156025.htm",
+      "summary": "快科技10月8日消息，美国总统特朗普9月29日在白宫会见黄仁勋、马斯克、扎克伯格等科技企业负责人时，正式宣布将\"人工智能\"改名为\"超级智能\"（SI）。 马斯克10月4日已在社交平台跟进，表示SpaceX是一家超级智能公司，将把SpaceXAI改名为SpaceXSI。 OpenAI首席执行官萨姆·奥尔特曼则明确表示，不会将公司名称OpenAI改为OpenSI。 奥尔特曼认为，尽管超级智能概念日益受到关注，但人们依然会习惯性地称之为AI，改…",
+      "author": "建嘉",
+      "source": "快科技",
+      "sourceId": "mydrivers",
+      "home": "https://www.mydrivers.com",
+      "weight": 1.2,
+      "lang": "zh",
+      "category": "行业动态",
+      "publishedAt": "2026-10-08T13:26:28.000Z",
+      "publishedTs": 1791465988000,
+      "day": "2026-10-08",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 59
+    },
+    {
+      "id": "0wff4y7",
+      "title": "谷歌云发布 Gemini Agent，定位“通用工作智能体”",
+      "url": "https://www.ithome.com/1/010/706.htm",
+      "summary": "IT之家 10 月 8 日消息，谷歌云今天在 Gemini at Work 2026 发布会上宣布，面向企业客户推出 Gemini 智能体（Gemini Agent）。这款产品定位“通用工作智能体”，支持 Gemini Enterprise 、Workspace 以及第三方服务。 谷歌表示，Gemini Agent 只需要用户给出目标就能完成工作，支持回答问题、处理知识型工作、创建媒体内容，以及编写程序。 例如，当你的经理用邮件要求你制…",
+      "author": "",
+      "source": "IT之家",
+      "sourceId": "ithome",
+      "home": "https://www.ithome.com",
+      "weight": 1.6,
+      "lang": "zh",
+      "category": "产品动态",
+      "publishedAt": "2026-10-08T13:21:00.000Z",
+      "publishedTs": 1791465660000,
+      "day": "2026-10-08",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 69
+    },
+    {
+      "id": "1ybvjs9",
+      "title": "China’s Manus raises over $500M in first funding round since split with Meta",
+      "url": "https://techcrunch.com/2026/10/08/chinas-manus-raises-over-500m-in-first-funding-round-since-split-with-meta",
+      "summary": "Boyu Capital and IDG Capital led the funding round, and existing shareholders Tencent, HSG (formerly known as Sequoia China), ZhenFund, and others also participated.",
+      "author": "Kate Park",
+      "source": "TechCrunch AI",
+      "sourceId": "techcrunch-ai",
+      "home": "https://techcrunch.com/category/artificial-intelligence/",
+      "weight": 1.8,
+      "lang": "en",
+      "category": "行业动态",
+      "publishedAt": "2026-10-08T13:20:32.000Z",
+      "publishedTs": 1791465632000,
+      "day": "2026-10-08",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 65
+    },
+    {
+      "id": "01n4367",
+      "title": "美国男子因利用 AI 生成音乐和机器人账号欺诈播放被判 18 个月",
+      "url": "https://www.solidot.org/story?sid=85551",
+      "summary": "54 岁的美国北卡罗来纳州男子 Michael Smith 因 AI 辅助欺诈罪被判入狱 18 个月。他是首位涉嫌 AI 辅助流媒体欺诈而被刑事起诉的美国人。Smith 从 2017 年起利用虚假电邮账户和通过欺诈获取的借记卡在 Amazon Music 、Apple Music、Spotify 和 YouTube Music 等平台创建了数千个账号，使用软件操纵机器人程序，循环播放他声称拥有版权的歌曲——这些歌曲实际上都是 AI 生成…",
+      "author": "",
+      "source": "Solidot",
+      "sourceId": "solidot",
+      "home": "https://www.solidot.org",
+      "weight": 1.4,
+      "lang": "zh",
+      "category": "行业动态",
+      "publishedAt": "2026-10-08T13:19:39.000Z",
+      "publishedTs": 1791465579000,
+      "day": "2026-10-08",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 61
+    },
+    {
+      "id": "0fmzc9j",
+      "title": "A single prompt was enough to hijack every AI agent in an AWS account, Zenity researchers found",
+      "url": "https://the-decoder.com/a-single-prompt-was-enough-to-hijack-every-ai-agent-in-an-aws-account-zenity-researchers-found",
+      "summary": "Zenity Labs researchers say a single publicly accessible AI agent on Amazon's Bedrock AgentCore was enough to take over every AgentCore agent in the same AWS account and region. The attack exploited an internal AWS inter…",
+      "author": "Jonathan Kemper",
+      "source": "The Decoder",
+      "sourceId": "the-decoder",
+      "home": "https://the-decoder.com",
+      "weight": 1.6,
+      "lang": "en",
+      "category": "产品动态",
+      "publishedAt": "2026-10-08T13:01:01.000Z",
+      "publishedTs": 1791464461000,
+      "day": "2026-10-08",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 63
+    },
+    {
+      "id": "0t63hc5",
+      "title": "Rally Up: ‘Gears of War: E-Day’ Launches on GeForce NOW",
+      "url": "https://blogs.nvidia.com/blog/geforce-now-thursday-gears-of-war-e-day",
+      "summary": "Gears of War: E-Day leads the charge on GeForce NOW this week, bringing Marcus Fenix and Dom Santiago’s first fight against the Locust Horde to the cloud with GeForce RTX-powered performance. A new way to join the action…",
+      "author": "GeForce NOW Community",
+      "source": "NVIDIA",
+      "sourceId": "nvidia",
+      "home": "https://blogs.nvidia.com",
+      "weight": 1.8,
+      "lang": "en",
+      "category": "行业动态",
+      "publishedAt": "2026-10-08T13:00:46.000Z",
+      "publishedTs": 1791464446000,
+      "day": "2026-10-08",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 65
+    },
+    {
+      "id": "0mjktzm",
+      "title": "正行创新亮相APRCE 2026，发布全球首个零售物理智能24/7服务解决方案",
+      "url": "https://www.qbitai.com/2026/10/502035.html",
+      "summary": "打造便利店“人机协作”运营新模式",
+      "author": "量子位的朋友们",
+      "source": "量子位",
+      "sourceId": "qbitai",
+      "home": "https://www.qbitai.com",
+      "weight": 2.2,
+      "lang": "zh",
+      "category": "行业动态",
+      "publishedAt": "2026-10-08T12:43:31.000Z",
+      "publishedTs": 1791463411000,
+      "day": "2026-10-08",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 81
+    },
+    {
+      "id": "1llv3pw",
+      "title": "孙悟空与林黛玉约会全网走红！快手：重点打击AI魔改 相关视频已下线",
+      "url": "https://news.mydrivers.com/1/1156/1156019.htm",
+      "summary": "快科技10月8日消息，近日，社交平台上出现不少林黛玉与孙悟空谈恋爱的AI视频，网友还称他们为“圣黛CP”，受到不少人追捧。 两人保持着80年代改编影视剧里的经典形象，一个身着锦罗绸缎，一个身披行者装，来到现代社会，今天逛北京动物园，明天到迪士尼乐园看烟花……上演了一场“毒舌”少女和“直男”猴哥的纯爱情节。 网友发现，这两个出自中国四大名著的人物，虽然看似八竿子打不着边，拼接起来却毫不违和。 有网友表示，林妹妹和孙悟空都有俏皮、机敏和善良…",
+      "author": "哈尔",
+      "source": "快科技",
+      "sourceId": "mydrivers",
+      "home": "https://www.mydrivers.com",
+      "weight": 1.2,
+      "lang": "zh",
+      "category": "行业动态",
+      "publishedAt": "2026-10-08T12:29:55.000Z",
+      "publishedTs": 1791462595000,
+      "day": "2026-10-08",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 58
+    },
+    {
+      "id": "1hutb9f",
+      "title": "The Download: AI roadblocks for humanoids and portable rubber dams",
+      "url": "https://www.technologyreview.com/2026/10/08/1146045/the-download-ai-roadblocks-humanoids-portable-rubber-dams",
+      "summary": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. AI breakthroughs in robotics won’t change your life any time soon The hype around…",
+      "author": "Thomas Macaulay",
+      "source": "MIT 科技评论",
+      "sourceId": "mittr",
+      "home": "https://www.technologyreview.com",
+      "weight": 1.5,
+      "lang": "en",
+      "category": "行业动态",
+      "publishedAt": "2026-10-08T12:10:00.000Z",
+      "publishedTs": 1791461400000,
+      "day": "2026-10-08",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 60
+    },
+    {
+      "id": "1ozxm27",
+      "title": "自动驾驶货运的下一战：不在卡车里，在 500 英里以内",
+      "url": "https://www.tmtpost.com/8161239.html",
+      "summary": "自动驾驶货运的竞争，正在从“卡车内部”（谁的 L4 更强）扩展到“公铁之争”（500 英里以内的短途货运到底谁来吃）；短途才是真正的主战场，而决定谁能活到规模化那天的，不只是算法，还有资本与监管这两道闸门。",
+      "author": "山自",
+      "source": "钛媒体",
+      "sourceId": "tmtpost",
+      "home": "https://www.tmtpost.com",
+      "weight": 1.5,
+      "lang": "zh",
+      "category": "研究前沿",
+      "publishedAt": "2026-10-08T11:59:54.000Z",
+      "publishedTs": 1791460794000,
+      "day": "2026-10-08",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 60
+    },
+    {
+      "id": "0itxuer",
+      "title": "跳出游戏争当AI金主，“腾讯们”到底图啥",
+      "url": "https://www.tmtpost.com/8161222.html",
+      "summary": "（本文作者为 锌刻度，钛媒体经授权发布） 文 | 锌刻度，作者 | 陈邓新，编辑 | 李季 眼下，游戏产业正在与AI产业深度交织。 前不久，专注3D大模型的三启万物完成B轮及B+轮融资，三七互娱与延趣游戏联手入局，而此前7月的A3轮融资，浮现了四三九九与贪玩游戏的身影。 上述案例，并非个例。 近一两年来，腾讯、网易、巨人网络、昆仑万维、完美世界等头部以及腰部的游戏公司纷纷化身AI产业的战略投资者，频频出手好不阔气。 从游戏走向风投，这步…",
+      "author": "锌刻度",
+      "source": "钛媒体",
+      "sourceId": "tmtpost",
+      "home": "https://www.tmtpost.com",
+      "weight": 1.5,
+      "lang": "zh",
+      "category": "行业动态",
+      "publishedAt": "2026-10-08T11:47:26.000Z",
+      "publishedTs": 1791460046000,
+      "day": "2026-10-08",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 73
+    },
+    {
+      "id": "143twbv",
+      "title": "Anthropic要上市了：5年公司2万亿估值，谁在为AI泡沫买单？",
+      "url": "https://www.tmtpost.com/8161055.html",
+      "summary": "（本文作者为 节点财经，钛媒体经授权发布） 文 | 节点财经 ，作者 | 道哥 SpaceX上市才几个月，纪录就保不住了。 据多家媒体披露，Anthropic已秘密向美国SEC递交S-1招股书，计划在11月美国中期选举后正式登陆纳斯达克。这一次，它要干的事情有点吓人：募资高达1000亿美元，目标估值超过2万亿美元。 什么概念？SpaceX今年6月上市时，募资857亿美元、估值1.77万亿美元，已经是史上最大IPO。Anthropic一出…",
+      "author": "节点财经",
+      "source": "钛媒体",
+      "sourceId": "tmtpost",
+      "home": "https://www.tmtpost.com",
+      "weight": 1.5,
+      "lang": "zh",
+      "category": "行业动态",
+      "publishedAt": "2026-10-08T11:42:32.000Z",
+      "publishedTs": 1791459752000,
+      "day": "2026-10-08",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 66
+    },
+    {
+      "id": "1pg993w",
+      "title": "Personal Agent 的终点不该是一个更聪明的命令行",
+      "url": "https://my.oschina.net/u/9765709/blog/19774529",
+      "summary": "Qoni 是 Cognitive（认知）的延伸，是一个 Personal Agent 的托管基础设施，让企业开发者都能开发属于自己的 Muse。",
+      "author": "",
+      "source": "开源中国",
+      "sourceId": "oschina",
+      "home": "https://www.oschina.net",
+      "weight": 1.3,
+      "lang": "zh",
+      "category": "产品动态",
+      "publishedAt": "2026-10-08T11:39:36.000Z",
+      "publishedTs": 1791459576000,
+      "day": "2026-10-08",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 58
+    },
     {
       "id": "0hfexyx",
       "title": "数据中心装不下AI的全部野心了",
@@ -357,47 +928,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 71
-    },
-    {
-      "id": "0rauqkt",
-      "title": "苹果iPad mini 8本月发布：确认无高刷！首次搭载60Hz OLED屏幕",
-      "url": "https://news.mydrivers.com/1/1156/1156009.htm",
-      "summary": "快科技10月8日消息，据韩国Naver博主爆料，即将发布的iPad mini 8将配备60Hz OLED屏幕，不支持ProMotion 120Hz自适应刷新率。 售价超过4000元的旗舰平板产品却不支持高刷，这在2026年应该也是只此一家了，当真是“Only Apple can do”，安卓阵营连千元平板都已经普及高刷。 其他方面，iPad mini 8性能搭载苹果最新A20 Pro芯片，采用台积电2nm工艺，相比现款A17 Pro芯片…",
-      "author": "建嘉",
-      "source": "快科技",
-      "sourceId": "mydrivers",
-      "home": "https://www.mydrivers.com",
-      "weight": 1.2,
-      "lang": "zh",
-      "category": "行业动态",
-      "publishedAt": "2026-10-08T11:10:15.000Z",
-      "publishedTs": 1791457815000,
-      "day": "2026-10-08",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 80
-    },
-    {
-      "id": "0rbml72",
-      "title": "HarmonyOS 7升级持续推进！Mate 60、Pura 70等多款老机型开放尝鲜",
-      "url": "https://news.mydrivers.com/1/1156/1156008.htm",
-      "summary": "快科技10月8日消息，据华为官网HarmonyOS 7支持机型页面显示，目前已有多款老机型进入系统升级尝鲜名单，包括Mate 60系列、Mate X5系列、Pura 70系列等热门产品。 具体来看，此次涉及的手机包括华为Mate 60系列、Mate X5系列、初代Mate XT非凡大师、Pura 70系列、Pocket 2系列，以及nova 14系列和nova 16 SE等机型。 除了手机，华为MatePad Pro 13.2英寸202…",
-      "author": "寄云",
-      "source": "快科技",
-      "sourceId": "mydrivers",
-      "home": "https://www.mydrivers.com",
-      "weight": 1.2,
-      "lang": "zh",
-      "category": "产品动态",
-      "publishedAt": "2026-10-08T11:07:09.000Z",
-      "publishedTs": 1791457629000,
-      "day": "2026-10-08",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 61
+      "hot": 66
     },
     {
       "id": "0ld5i4p",
@@ -417,7 +948,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 68
+      "hot": 63
     },
     {
       "id": "0l0ogls",
@@ -437,7 +968,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 68
+      "hot": 63
     },
     {
       "id": "055ljz6",
@@ -457,13 +988,13 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 67
+      "hot": 62
     },
     {
       "id": "0arzzx2",
       "title": "从家电龙头到“人形机器人第一股”：质量，成为广东产业链的公共底座",
       "url": "https://www.tmtpost.com/8161267.html",
-      "summary": "9月下旬，作者随市场监管总局组织的“高质量发展中国行·质量强县看担当”采风团走完广东线，三天时间穿行三座城：佛山顺德、深圳南山、广州黄埔。 在前一站浙江线的行程中（详情见：从“世界小商品之都”到“数字经济第一区”，质量正在成为浙江的底色），质量更像一套嵌进市场毛细血管的制度；到了广东，主角换成了产业链。这里是中国制造业体量最大的省份，顺德有全球家电龙头和128年的机器人“四大家族”，南山有人形机器人第一股，黄埔有广东首条量产的12英寸晶…",
+      "summary": "（本文作者为 DeepWrite秦报局，钛媒体经授权发布） 9月下旬，作者随市场监管总局组织的“高质量发展中国行·质量强县看担当”采风团走完广东线，三天时间穿行三座城：佛山顺德、深圳南山、广州黄埔。 在前一站浙江线的行程中（详情见：从“世界小商品之都”到“数字经济第一区”，质量正在成为浙江的底色），质量更像一套嵌进市场毛细血管的制度；到了广东，主角换成了产业链。这里是中国制造业体量最大的省份，顺德有全球家电龙头和128年的机器人“四大家…",
       "author": "DeepWrite秦报局",
       "source": "钛媒体",
       "sourceId": "tmtpost",
@@ -477,27 +1008,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 64
-    },
-    {
-      "id": "0yzlnr0",
-      "title": "OpenAI一个月内再从SpaceX招募销售高管，加速拓展欧洲等市场",
-      "url": "https://www.jiemian.com/article/15168906.html",
-      "summary": "10月8日消息，OpenAI任命Ismail Elmas为欧洲、中东和非洲地区销售副总裁。Elmas此前任职于代码自动化初创公司Cursor，而Cursor已于今年8月被马斯克旗下SpaceX以600亿美元收购。这是OpenAI自9月以来第二次从SpaceX体系招募销售高管，上月公司还聘任前Cursor高管Brian McCarthy担任全球销售副总裁。",
-      "author": "jianli@jiemian.com(界面快报)",
-      "source": "界面新闻",
-      "sourceId": "jiemian",
-      "home": "https://www.jiemian.com",
-      "weight": 1.2,
-      "lang": "zh",
-      "category": "行业动态",
-      "publishedAt": "2026-10-08T10:31:28.000Z",
-      "publishedTs": 1791455488000,
-      "day": "2026-10-08",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 67
+      "hot": 65
     },
     {
       "id": "07gm1bf",
@@ -517,7 +1028,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 64
+      "hot": 59
     },
     {
       "id": "0m3k72k",
@@ -537,7 +1048,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 60
+      "hot": 55
     },
     {
       "id": "1fzz9z0",
@@ -557,27 +1068,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 70
-    },
-    {
-      "id": "0qji86h",
-      "title": "被叫停的收购，为什么让Manus更贵了",
-      "url": "https://www.tmtpost.com/8161264.html",
-      "summary": "10月8日，Manus母公司蝴蝶效应宣布完成超5亿美元新一轮融资，博裕投资、IDG资本领投，腾讯、红杉中国、真格基金继续加持。公司没有披露本轮估值，但相较于五个多月前，那笔被叫停的作价约20亿美元的收购，有媒体报道称，Manus在这一轮融资中的估值将翻倍至40亿美元。 公告写得很短，只交代了金额、领投方、跟投方。估值和资金用途，一字未提。这是那笔交易被叫停后，Manus完成的第一轮融资，距离它恢复独立运营刚过去五周多。 这一切始于十个月…",
-      "author": "科技不焦虑",
-      "source": "钛媒体",
-      "sourceId": "tmtpost",
-      "home": "https://www.tmtpost.com",
-      "weight": 1.5,
-      "lang": "zh",
-      "category": "行业动态",
-      "publishedAt": "2026-10-08T10:13:21.000Z",
-      "publishedTs": 1791454401000,
-      "day": "2026-10-08",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 82
+      "hot": 65
     },
     {
       "id": "1vep8a5",
@@ -597,7 +1088,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 64
+      "hot": 59
     },
     {
       "id": "0lun9op",
@@ -617,27 +1108,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 61
-    },
-    {
-      "id": "0udwf0l",
-      "title": "5岁的Win11跌落神坛 网友呼唤Win12：最快也要2027年",
-      "url": "https://news.mydrivers.com/1/1155/1155986.htm",
-      "summary": "快科技10月8日消息，今天凌晨的发布会上，微软联合NVIDIA推出了基于RTX Spark的Surface Laptop Ultra等设备，但没有全新的Windows系统。 不会发布Win12本来也是预期之内的，但发布会的直播活动和设计媒体中，不少网友还是在刷屏Win12，希望微软早点拿出来这个全新的系统。 大家呼唤Win12也是有原因的，一方面是Win11系统自从2021年6月份发布以来，如今已经5年多了，按照之前的节奏确实该升级了…",
-      "author": "宪瑞",
-      "source": "快科技",
-      "sourceId": "mydrivers",
-      "home": "https://www.mydrivers.com",
-      "weight": 1.2,
-      "lang": "zh",
-      "category": "产品动态",
-      "publishedAt": "2026-10-08T09:50:29.000Z",
-      "publishedTs": 1791453029000,
-      "day": "2026-10-08",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 66
+      "hot": 56
     },
     {
       "id": "0y04x1c",
@@ -657,27 +1128,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 60
-    },
-    {
-      "id": "0jyi8cf",
-      "title": "小马智行与 Uber 将在伦敦测试第七代 Robotaxi，未来数周内启动",
-      "url": "https://www.ithome.com/1/010/636.htm",
-      "summary": "IT之家 10 月 8 日消息，小马智行与 Uber 今日宣布将在欧洲出行需求最旺盛的枢纽城市伦敦即将迎来第七代 Robotaxi，测试将在未来数周内启动。 IT之家注意到，小马智行今年 3 月与 Verne、Uber 达成合作，三方将率先在克罗地亚首都萨格勒布推出欧洲首个商业化 Robotaxi 服务。今年 8 月，该服务于萨格勒布已上线，打开 Uber 即可叫到。 2025 年 5 月，小马智行与 Uber 宣布达成战略合作，小马智…",
-      "author": "",
-      "source": "IT之家",
-      "sourceId": "ithome",
-      "home": "https://www.ithome.com",
-      "weight": 1.6,
-      "lang": "zh",
-      "category": "产品动态",
-      "publishedAt": "2026-10-08T09:42:52.000Z",
-      "publishedTs": 1791452572000,
-      "day": "2026-10-08",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 76
+      "hot": 55
     },
     {
       "id": "1p2y2qw",
@@ -697,7 +1148,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 72
+      "hot": 67
     },
     {
       "id": "0f82xw3",
@@ -717,7 +1168,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 75
+      "hot": 70
     },
     {
       "id": "0cpnz5o",
@@ -737,7 +1188,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 69
+      "hot": 64
     },
     {
       "id": "0cwwjy5",
@@ -757,7 +1208,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 63
+      "hot": 58
     },
     {
       "id": "01ldrkq",
@@ -777,27 +1228,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 69
-    },
-    {
-      "id": "0kvkhms",
-      "title": "新卡卖不过老卡！日本9月显卡销量榜：RTX 3050力压RTX 50系列登顶",
-      "url": "https://news.mydrivers.com/1/1155/1155963.htm",
-      "summary": "快科技10月8日消息，根据日本知名零售商索夫玛（Sofmap）公布的9月最新显卡销量统计，显卡市场在2026年9月上旬呈现出极端的两极分化趋势。 技嘉推出的双风扇版RTX 3050 6GB凭借极高的机箱兼容性成功夺冠，而紧随其后的竟是已发布八年之久的微星GT 1030亮机卡。 在这一榜单中，冠军型号技嘉RTX 3050 6GB机身长度仅为191mm，不仅能轻松塞进各类超小型机箱，其建议电源功率仅为300W，意味着主流办公机无需更换电源即…",
-      "author": "青山",
-      "source": "快科技",
-      "sourceId": "mydrivers",
-      "home": "https://www.mydrivers.com",
-      "weight": 1.2,
-      "lang": "zh",
-      "category": "产品动态",
-      "publishedAt": "2026-10-08T09:15:48.000Z",
-      "publishedTs": 1791450948000,
-      "day": "2026-10-08",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 71
+      "hot": 64
     },
     {
       "id": "1ylgtxw",
@@ -817,7 +1248,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 61
+      "hot": 56
     },
     {
       "id": "0habn87",
@@ -837,27 +1268,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 75
-    },
-    {
-      "id": "1hwb3qx",
-      "title": "优派推出新款27寸显示器：2K 240Hz屏到手899元",
-      "url": "https://news.mydrivers.com/1/1155/1155959.htm",
-      "summary": "快科技10月8日消息，优派推出VX27G58-2K-9显示器，定位主流大尺寸2K高刷产品，到手价899元。 VX27G58-2K-9采用常规三边窄边框设计，配备操作便捷的五向摇杆，搭配五边形金属超薄底座，稳固且不占桌面空间。 其搭载27英寸Fast IPS面板，表面采用抗眩光、3H硬度、25%雾度涂层，色深10bit（8bit+FRC），可视角度178度（水平/垂直），分辨率2560 x 1440，原生刷新率200Hz，OC刷新率240…",
-      "author": "鹿角",
-      "source": "快科技",
-      "sourceId": "mydrivers",
-      "home": "https://www.mydrivers.com",
-      "weight": 1.2,
-      "lang": "zh",
-      "category": "产品动态",
-      "publishedAt": "2026-10-08T09:04:18.000Z",
-      "publishedTs": 1791450258000,
-      "day": "2026-10-08",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 65
+      "hot": 70
     },
     {
       "id": "1pm4f8q",
@@ -877,7 +1288,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 71
+      "hot": 66
     },
     {
       "id": "1d3c0u5",
@@ -897,7 +1308,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 61
+      "hot": 57
     },
     {
       "id": "1l877d9",
@@ -917,7 +1328,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 66
+      "hot": 61
     },
     {
       "id": "16qqr9z",
@@ -937,7 +1348,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 60
+      "hot": 56
     },
     {
       "id": "1sstku3",
@@ -957,127 +1368,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 60
-    },
-    {
-      "id": "0d3hkoy",
-      "title": "这个国庆节，中国人更能飞了",
-      "url": "https://www.tmtpost.com/8160761.html",
-      "summary": "（本文作者为 商业数据派，钛媒体经授权发布） 文｜商业数据派，作者 | 郭梦仪 王博（化名）是在中秋发现不对劲的。 他躺在床上刷朋友圈，连续十几天都是出国定位。更离谱的是，第二条和第四条的两位朋友互相根本不认识，但却同样在七千公里外的波罗的海。 他往下划，有人在澳大利亚晒考拉，有人在马尔代夫发玻璃海。“我一度怀疑自己是不是错过了什么集体通知。”王博笑说。 菜籽（化名）的遭遇更夸张：她打开工作群，发现1个同事国庆在意大利，直接和自己的朋友…",
-      "author": "商业数据派",
-      "source": "钛媒体",
-      "sourceId": "tmtpost",
-      "home": "https://www.tmtpost.com",
-      "weight": 1.5,
-      "lang": "zh",
-      "category": "行业动态",
-      "publishedAt": "2026-10-08T08:39:00.000Z",
-      "publishedTs": 1791448740000,
-      "day": "2026-10-08",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 67
-    },
-    {
-      "id": "0amt2f0",
-      "title": "机械师14 Ultra轻薄本上市：搭载X7 358H、32GB+1TB组合",
-      "url": "https://news.mydrivers.com/1/1155/1155952.htm",
-      "summary": "快科技10月8日消息，机械师14 Ultra 轻薄笔记本电脑的英特尔酷睿Ultra X7处理器358H配置现已开售，标价8499元、国家补贴后到手价为7224.15元。 机械师14 Ultra采用全金属机身，航空级铝合金+C面镁合金，通过阳极氧化工艺打磨，质感扎实。整机重量仅约 1.1kg，厚度薄至 15.9mm。 屏幕配备14英寸2.8K（2880 x 1800）120Hz高分高刷屏，16:10黄金比例，400nit高亮度，支持DC调…",
-      "author": "鹿角",
-      "source": "快科技",
-      "sourceId": "mydrivers",
-      "home": "https://www.mydrivers.com",
-      "weight": 1.2,
-      "lang": "zh",
-      "category": "行业动态",
-      "publishedAt": "2026-10-08T08:38:21.000Z",
-      "publishedTs": 1791448701000,
-      "day": "2026-10-08",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 58
-    },
-    {
-      "id": "1if1w92",
-      "title": "韩国“世界”号第五次发射载荷包括 5 款 LG 零部件与 Mobilint AI SoC",
-      "url": "https://www.ithome.com/1/010/587.htm",
-      "summary": "IT之家 10 月 8 日消息，韩国当地时间昨日成功进行了自研运载火箭“世界”号的第五次发射。 IT之家注意到，根据韩媒《首尔经济日报》与 ZDNET Korea 的报道，此次发射的载荷包括 5 款来自 LG 集团的零部件以及人工智能芯片企业 Mobilint 的 REGULUS AI SoC。 这 5 款 LG 集团的零部件包括 LG Innotek 的相机模块、LG 新能源的电池组，以及 LG 电子的电源模块、姿态控制执行器、卫星通…",
-      "author": "",
-      "source": "IT之家",
-      "sourceId": "ithome",
-      "home": "https://www.ithome.com",
-      "weight": 1.6,
-      "lang": "zh",
-      "category": "行业动态",
-      "publishedAt": "2026-10-08T08:38:15.000Z",
-      "publishedTs": 1791448695000,
-      "day": "2026-10-08",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 62
-    },
-    {
-      "id": "1nxm7tx",
-      "title": "联想 YOGA Pro 15 RTX Spark 笔记本上架，10 月 16 日全网开售",
-      "url": "https://www.ithome.com/1/010/586.htm",
-      "summary": "IT之家 10 月 8 日消息，联想宣布 YOGA Pro 15 RTX Spark10 月 8 日正式开启预约，10 月 16 日即将全网开售。 IT之家从商品页面获悉，新品搭载 NVIDIA RTX Spark N1X 超级芯片，配备 20 核 NVIDIA Grace CPU、6144 核 NVIDIA Blackwell RTX GPU、256-bit 超大内存位宽、至高 96GB 高速共享显存、至高 128GB 统一内存 LP…",
-      "author": "",
-      "source": "IT之家",
-      "sourceId": "ithome",
-      "home": "https://www.ithome.com",
-      "weight": 1.6,
-      "lang": "zh",
-      "category": "行业动态",
-      "publishedAt": "2026-10-08T08:34:27.000Z",
-      "publishedTs": 1791448467000,
-      "day": "2026-10-08",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 62
-    },
-    {
-      "id": "03uikyb",
-      "title": "网约车司机、骑手等权益保障有新规：不得滥用罚款等惩罚性措施，账号封禁必须人工审核",
-      "url": "https://www.ithome.com/1/010/579.htm",
-      "summary": "IT之家 10 月 8 日消息，人力资源社会保障部今日发布《新就业形态劳动者权益保障办法（征求意见稿）》，从即日起至 11 月 8 日，向社会公开征求意见。 征求意见稿规定了平等就业和自由择业、劳动报酬、奖惩、工作时间和劳动强度、休息、劳动安全卫生、恶劣天气保护、职业培训、社会保险、个人信息保护、集体协商等基本劳动权益，设置了新就业形态劳动者劳动条件的底线。明确了基本劳动权益保障内容，规范劳动规则与算法，分类规制企业用工形式，畅通劳动纠…",
-      "author": "",
-      "source": "IT之家",
-      "sourceId": "ithome",
-      "home": "https://www.ithome.com",
-      "weight": 1.6,
-      "lang": "zh",
-      "category": "研究前沿",
-      "publishedAt": "2026-10-08T08:24:43.000Z",
-      "publishedTs": 1791447883000,
-      "day": "2026-10-08",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 68
-    },
-    {
-      "id": "1pndu30",
-      "title": "AMD 苏姿丰访韩，会见三星电子联席 CEO 全永铉",
-      "url": "https://www.ithome.com/1/010/578.htm",
-      "summary": "IT之家 10 月 8 日消息，据韩媒 ChosunBiz 报道，AMD 首席执行官苏姿丰昨天下午抵达韩国首尔的三星电子瑞草办公楼，会见三星电子联席 CEO 全永铉。双方会面持续了 3 个多小时，苏姿丰接受采访时表示：“三星是一家优秀的合作伙伴，我们一直在进行良好的战略讨论。” ▲ 苏姿丰，图源：AMD当记者问到双方是否会在物理 AI 领域展开合作时，她回答道：“我们未来将在非常广泛的领域展开合作。”；谈到晶圆代工合作是否取得进展时，苏…",
-      "author": "",
-      "source": "IT之家",
-      "sourceId": "ithome",
-      "home": "https://www.ithome.com",
-      "weight": 1.6,
-      "lang": "zh",
-      "category": "行业动态",
-      "publishedAt": "2026-10-08T08:21:25.000Z",
-      "publishedTs": 1791447685000,
-      "day": "2026-10-08",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 62
+      "hot": 55
     },
     {
       "id": "0tnbx68",
@@ -1097,27 +1388,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 61
-    },
-    {
-      "id": "0csatbs",
-      "title": "香港恒生科技指数收跌 2.89%，创 2024 年 9 月以来新低",
-      "url": "https://www.ithome.com/1/010/574.htm",
-      "summary": "IT之家 10 月 8 日消息，香港恒生指数今日收跌 1.43%，恒生科技指数跌 2.89% 创 2024 年 9 月 26 日以来新低。 IT之家注意到，港股大模型“双雄”领跌，MINIMAX-W 跌超 13%，智谱跌超 7%。 半导体股集体下跌，壁仞科技跌超 11%，华虹宏力跌超 9%，兆易创新、江波龙跌超 7%，中芯国际、澜起科技跌超 6%，上海复旦跌超 5%。 光通信、PCB 概念股普跌，海光芯正跌超 13%，广合科技跌超 8%…",
-      "author": "",
-      "source": "IT之家",
-      "sourceId": "ithome",
-      "home": "https://www.ithome.com",
-      "weight": 1.6,
-      "lang": "zh",
-      "category": "模型发布",
-      "publishedAt": "2026-10-08T08:15:47.000Z",
-      "publishedTs": 1791447347000,
-      "day": "2026-10-08",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 61
+      "hot": 56
     },
     {
       "id": "0q3wrjq",
@@ -1137,147 +1408,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 59
-    },
-    {
-      "id": "0fkuxta",
-      "title": "全球唯一！希捷东芝为TDK硬盘磁头业务抢破头：东芝命脉要被掐断",
-      "url": "https://news.mydrivers.com/1/1155/1155943.htm",
-      "summary": "快科技10月8日消息，据报道，希捷和东芝正在竞购TDK的硬盘磁头业务，交易金额可能高达数十亿美元。 TDK是全球唯一独立硬盘磁头供应商，也是东芝硬盘磁头的唯一来源，如果希捷拿下这笔交易，东芝的硬盘业务将不得不依赖希捷供货。 硬盘磁头是读写数据的核心部件，希捷和西部数据自身都具备磁头制造能力，需要时也会从TDK额外采购，东芝则完全依赖TDK供应。 近年来TDK同时为三家厂商的下一代技术生产磁头，包括希捷的HAMR热辅助磁记录、WD的EAM…",
-      "author": "黑白",
-      "source": "快科技",
-      "sourceId": "mydrivers",
-      "home": "https://www.mydrivers.com",
-      "weight": 1.2,
-      "lang": "zh",
-      "category": "行业动态",
-      "publishedAt": "2026-10-08T08:13:25.000Z",
-      "publishedTs": 1791447205000,
-      "day": "2026-10-08",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 57
-    },
-    {
-      "id": "1xikjns",
-      "title": "1TB SSD从300涨到上千元！长江存储喊话：短缺至少持续三年",
-      "url": "https://news.mydrivers.com/1/1155/1155941.htm",
-      "summary": "快科技10月8日消息，据报道，长江存储工作人员近日在与投资者及市场人士交流中抛出重磅判断：全球NAND闪存供应紧张局面可能还将持续约三年。 价格涨幅已远超市场预期。据长江存储工作人员透露，内存价格已上涨5到10倍，NAND闪存整体涨幅在3到5倍之间，预计到今年底涨幅仍将维持在个位数水平。 消费端体感更为直接：2023年知名品牌1TB SSD价格约在300至400元，普通品牌1TB仅200元出头，1000元可买4TB；如今1TB SSD价…",
-      "author": "红茶",
-      "source": "快科技",
-      "sourceId": "mydrivers",
-      "home": "https://www.mydrivers.com",
-      "weight": 1.2,
-      "lang": "zh",
-      "category": "行业动态",
-      "publishedAt": "2026-10-08T08:12:56.000Z",
-      "publishedTs": 1791447176000,
-      "day": "2026-10-08",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 64
-    },
-    {
-      "id": "1avbjh4",
-      "title": "全行业迁移治理层｜产业落地的风控基线校准",
-      "url": "https://www.leiphone.com/category/industrynews/yXoEADuBlQVbLjXU.html",
-      "summary": "本文为《碳硅道统·跨域迁移治理法典》七层体系官方连载第四篇，是整套理论从制度标准下沉到产业实景、从通用理论落地为行业规范的工程落地层。 承接前三层技术+制度理论，实现全产业场景标准化治理。 体系固定基准：跨域迁移零号基准NT1-NT4四类负迁移定义、188集工业理论总纲、七层全域目录谱系。 体系永恒三原则：创立者零特权、结论零固化、迭代零终点。 体系永久机制：全员勘伪开放、全域反例准入、全维迭代重启。 体系坐标（机读·学术·监管通用）…",
-      "author": "",
-      "source": "雷锋网",
-      "sourceId": "leiphone",
-      "home": "https://www.leiphone.com",
-      "weight": 1.5,
-      "lang": "zh",
-      "category": "研究前沿",
-      "publishedAt": "2026-10-08T08:02:00.000Z",
-      "publishedTs": 1791446520000,
-      "day": "2026-10-08",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 60
-    },
-    {
-      "id": "1uv4spa",
-      "title": "迁移权责确权层｜跨域行为的权属与越界判定",
-      "url": "https://www.leiphone.com/category/industrynews/maJeT3wG8PATohRQ.html",
-      "summary": "本文为《碳硅道统·跨域迁移治理法典》七层体系官方连载第三篇，是整套理论从技术走向制度、从理论走向落地、从风险识别走向责任闭环的核心枢纽层。 承接前两层现象+机理，正式进入制度治理维度。 体系固定基准：跨域迁移零号基准NT1-NT4四类负迁移定义、188集工业理论总纲、七层全域目录谱系。 体系永恒三原则：创立者零特权、结论零固化、迭代零终点。 体系永久机制：全员勘伪开放、全域反例准入、全维迭代重启。 体系坐标（机读·学术·监管通用） 本篇…",
-      "author": "",
-      "source": "雷锋网",
-      "sourceId": "leiphone",
-      "home": "https://www.leiphone.com",
-      "weight": 1.5,
-      "lang": "zh",
-      "category": "研究前沿",
-      "publishedAt": "2026-10-08T08:00:00.000Z",
-      "publishedTs": 1791446400000,
-      "day": "2026-10-08",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 60
-    },
-    {
-      "id": "03qq26x",
-      "title": "迁移技术机理层｜负迁移发生的底层诱因",
-      "url": "https://www.leiphone.com/category/industrynews/ZiR18N0bk5jxaFJO.html",
-      "summary": "本文为《碳硅道统·跨域迁移治理法典》七层体系官方连载第二篇，为整套理论机理内核、归因底层、风险生成原点。 承接第一篇现象事实，开启从“看见风险”到“读懂风险、预判风险、溯源风险”的认知升维。 体系固定基准：跨域迁移零号基准NT1-NT4四类负迁移定义、188集工业理论总纲、七层全域目录谱系。 体系永恒三原则：创立者零特权、结论零固化、迭代零终点。 体系永久机制：全员勘伪开放、全域反例准入、全维迭代重启。 体系坐标（机读·学术·监管通用）…",
-      "author": "",
-      "source": "雷锋网",
-      "sourceId": "leiphone",
-      "home": "https://www.leiphone.com",
-      "weight": 1.5,
-      "lang": "zh",
-      "category": "研究前沿",
-      "publishedAt": "2026-10-08T07:58:00.000Z",
-      "publishedTs": 1791446280000,
-      "day": "2026-10-08",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 60
-    },
-    {
-      "id": "0cyfe1a",
-      "title": "迁移事故解剖层｜事故熵增的归因边界",
-      "url": "https://www.leiphone.com/category/industrynews/JYrJOwTptVzwomFq.html",
-      "summary": "本文为《碳硅道统·跨域迁移治理法典》七层体系官方连载第一篇，为整套理论现象入口、样本基底、风险原点。 整套法典七层递进完整闭环：迁移事故解剖层、迁移技术机理层、迁移权责确权层、全行业迁移治理层、跨域顶层监管层、文明级迁移风控层、法典终局锁档层。 体系固定基准：跨域迁移零号基准NT1-NT4四类负迁移定义、188集工业理论总纲、七层全域目录谱系。 体系永恒三原则：创立者零特权、结论零固化、迭代零终点。 体系永久机制：全员勘伪开放、全域反例…",
-      "author": "",
-      "source": "雷锋网",
-      "sourceId": "leiphone",
-      "home": "https://www.leiphone.com",
-      "weight": 1.5,
-      "lang": "zh",
-      "category": "研究前沿",
-      "publishedAt": "2026-10-08T07:56:00.000Z",
-      "publishedTs": 1791446160000,
-      "day": "2026-10-08",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 60
-    },
-    {
-      "id": "1typ4ge",
-      "title": "《碳硅道统·跨域迁移治理法典》七层体系目录",
-      "url": "https://www.leiphone.com/category/industrynews/qCQ6peI7fBvGB3bC.html",
-      "summary": "000|【全局唯一前置定标】负迁移NT1–NT4四类原型·官方终审定义（基准集，不计入188正集） 定稿标注：零号基准，独立于七层主体序列，不作为正集计数；NT四类原型为本法典全部引用唯一法定口径，永久锁死，不可迭代改写。 第一层：迁移事故解剖层（001–021，共21集|现象层，陈列迁移事故、归因现象，不下底层机理证明） 001|医疗AI规则跨域迁移金融风控：人类看不见的结构性翻车全链路 002|自动驾驶感知迁移工业机器人：机制不匹配…",
-      "author": "",
-      "source": "雷锋网",
-      "sourceId": "leiphone",
-      "home": "https://www.leiphone.com",
-      "weight": 1.5,
-      "lang": "zh",
-      "category": "研究前沿",
-      "publishedAt": "2026-10-08T07:54:00.000Z",
-      "publishedTs": 1791446040000,
-      "day": "2026-10-08",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 60
+      "hot": 55
     },
     {
       "id": "0zcvfqx",
@@ -1297,27 +1428,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 64
-    },
-    {
-      "id": "0jy7zfg",
-      "title": "iPhone Duo曾计划配16GB内存！成本太高苹果扛不住：最终砍至12GB",
-      "url": "https://news.mydrivers.com/1/1155/1155934.htm",
-      "summary": "快科技10月8日消息，据海外报道，苹果在开发iPhone 18 Pro系列及首款折叠屏手机iPhone Duo时曾考虑配备16GB内存，但最终将容量调整为12GB。 报道指出，砍掉16GB方案的原因是全球DRAM供应紧张和价格暴涨。 Xcode 27的数据已经确认，iPhone 18 Pro和Pro Max均配备12GB RAM，与上一代iPhone 17 Pro保持一致，这一代没有进行内存升级。 iPhone Duo虽然暂无直接确认…",
-      "author": "建嘉",
-      "source": "快科技",
-      "sourceId": "mydrivers",
-      "home": "https://www.mydrivers.com",
-      "weight": 1.2,
-      "lang": "zh",
-      "category": "行业动态",
-      "publishedAt": "2026-10-08T07:53:07.000Z",
-      "publishedTs": 1791445987000,
-      "day": "2026-10-08",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 63
+      "hot": 60
     },
     {
       "id": "01d7mz7",
@@ -1337,107 +1448,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 65
-    },
-    {
-      "id": "05k7vn1",
-      "title": "XREAL 确认 Android XR 眼镜 AURA 起价 1279 美元，另有 1499 美元高配",
-      "url": "https://www.ithome.com/1/010/564.htm",
-      "summary": "IT之家 10 月 8 日消息，XREAL 在其当地时间本月 7 日的新闻稿中确认，其 Android XR 眼镜 AURA 提供两档配置，12GB + 256GB 定价 1279 美元、16GB + 512GB 定价 1,499 美元（IT之家注：现汇率约合 8,585 / 10,062 元人民币）。 XREAL AURA 由眼镜本体和计算单元两部分构成。 其本体质量不到 95g，搭载 X1S 空间协处理器，配备索尼 FHD 120H…",
-      "author": "",
-      "source": "IT之家",
-      "sourceId": "ithome",
-      "home": "https://www.ithome.com",
-      "weight": 1.6,
-      "lang": "zh",
-      "category": "行业动态",
-      "publishedAt": "2026-10-08T07:44:25.000Z",
-      "publishedTs": 1791445465000,
-      "day": "2026-10-08",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
       "hot": 61
-    },
-    {
-      "id": "14i16rh",
-      "title": "官方不给就自己做！大神为《血源诅咒》实装DLSS 5与光追：画质直逼重制版",
-      "url": "https://news.mydrivers.com/1/1155/1155928.htm",
-      "summary": "快科技10月8日消息，在索尼官方迟迟未发布PC移植版的情况下，Mod作者gabdeg近日通过shadPS4模拟器，成功为PS4独占大作《血源诅咒》引入了NVIDIA RTX Remix技术与最新的DLSS 5。 《血源诅咒》自2015年发布以来，一直以30帧的规格困于PlayStation 4平台，但随着近期shadPS4模拟器的开发推进，这款游戏已经可以在PC上运行。 而玩家gabdeg则更进一步，借助英伟达新一代渲染技术，大幅重制这…",
-      "author": "青山",
-      "source": "快科技",
-      "sourceId": "mydrivers",
-      "home": "https://www.mydrivers.com",
-      "weight": 1.2,
-      "lang": "zh",
-      "category": "行业动态",
-      "publishedAt": "2026-10-08T07:37:56.000Z",
-      "publishedTs": 1791445076000,
-      "day": "2026-10-08",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 63
-    },
-    {
-      "id": "0q33v8r",
-      "title": "腾讯 WorkBuddy 上线独立文件浏览器，本地文件可直呼 AI 处理",
-      "url": "https://www.ithome.com/1/010/562.htm",
-      "summary": "IT之家 10 月 8 日消息，腾讯今天宣布，旗下 AI 办公产品 WorkBuddy 现已正式上线独立文件浏览器。用户现在可以在文件资源管理器 / Finder 找到一份文件，右键选择 WorkBuddy 打开，就能在独立窗口中查看文件，并直接调用 AI 进行分析、修改或继续处理。 IT之家了解到，WorkBuddy 文件浏览器可以直接打开 Word、Excel、PPT、PDF、Markdown、HTML 等文件，在同一个窗口里查看…",
-      "author": "",
-      "source": "IT之家",
-      "sourceId": "ithome",
-      "home": "https://www.ithome.com",
-      "weight": 1.6,
-      "lang": "zh",
-      "category": "产品动态",
-      "publishedAt": "2026-10-08T07:37:53.000Z",
-      "publishedTs": 1791445073000,
-      "day": "2026-10-08",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 67
-    },
-    {
-      "id": "1dpjing",
-      "title": "对标AMD X3D！Intel下代CPU大缓存版最先上市：主打游戏玩家",
-      "url": "https://news.mydrivers.com/1/1155/1155927.htm",
-      "summary": "=快科技10月8日消息，据Jaykihn透露，Intel Nova Lake处理器首发将优先推出搭载大容量末级缓存（bLLC）的BFC型号，主打游戏场景，策略上直接对标AMD的X3D系列。 Jaykihn在被问及BFC型号是否会与标准版同步发售时表示，BFC将是Nova Lake产品线中最先上市的，这意味着Intel在Nova Lake发布上采取了游戏优先的策略。 此前Intel已确认Nova Lake架构首发桌面端而非服务器，如今看来…",
-      "author": "黑白",
-      "source": "快科技",
-      "sourceId": "mydrivers",
-      "home": "https://www.mydrivers.com",
-      "weight": 1.2,
-      "lang": "zh",
-      "category": "行业动态",
-      "publishedAt": "2026-10-08T07:36:13.000Z",
-      "publishedTs": 1791444973000,
-      "day": "2026-10-08",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 63
-    },
-    {
-      "id": "01n78o6",
-      "title": "陶哲轩认为数学 2.0 时代应降低解决难题的核心地位",
-      "url": "https://www.solidot.org/story?sid=85545",
-      "summary": "OpenAI 公布了一份报告，称其一款尚未发布的前沿模型解决了数百个数学难题，其中之一是四维挂谷猜想，今年的菲尔茨奖得主王虹就是因为证明三维挂谷猜想而得奖。UCLA 数学家陶哲轩对此评论说，在传统数学的 1.0 时代，知名难题的证明通常会引发一系列后续的活动，证明作者会受邀参加演讲，与该领域的专家展开讨论，相关研讨会会组织起来去探讨该证明及最新进展。通过这些活动，证明过程被消化和精简，被置于该领域其他成果的背景下，最终成为下一代数学家的…",
-      "author": "",
-      "source": "Solidot",
-      "sourceId": "solidot",
-      "home": "https://www.solidot.org",
-      "weight": 1.4,
-      "lang": "zh",
-      "category": "观点方法",
-      "publishedAt": "2026-10-08T07:35:13.000Z",
-      "publishedTs": 1791444913000,
-      "day": "2026-10-08",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 65
     },
     {
       "id": "1rpry4u",
@@ -1457,127 +1468,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 64
-    },
-    {
-      "id": "08nru2y",
-      "title": "OpenAI 奥尔特曼：世界应接受 AI 带来的部分“坏事”以换取巨大红利",
-      "url": "https://www.ithome.com/1/010/561.htm",
-      "summary": "IT之家 10 月 8 日消息，在接受 Politico 新播客《Decoded》首期节目采访时，OpenAI 首席执行官萨姆 · 奥尔特曼（Sam Altman）表示，世界应接受人工智能带来的部分“坏事”，以换取技术带来的巨大益处与用户自主权。 在被问及在人工智能安全方面，OpenAI 和竞争对手 Anthropic 的方法有何不同时，奥尔特曼表示： 我认为其中有很多值得商榷的地方。OpenAI 与部分严格 AI 安全倡导者的关键分歧…",
-      "author": "",
-      "source": "IT之家",
-      "sourceId": "ithome",
-      "home": "https://www.ithome.com",
-      "weight": 1.6,
-      "lang": "zh",
-      "category": "行业动态",
-      "publishedAt": "2026-10-08T07:27:23.000Z",
-      "publishedTs": 1791444443000,
-      "day": "2026-10-08",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 60
-    },
-    {
-      "id": "0huyk8x",
-      "title": "阿里蔡崇信：五年后 AI将融入业务的每个环节",
-      "url": "https://news.mydrivers.com/1/1155/1155924.htm",
-      "summary": "快科技10月8日消息，北京时间10月7日晚，阿里巴巴集团主席蔡崇信在意大利都灵出席国际科技与投资盛会Wave by Vento 2026，围绕AI的应用价值、阿里巴巴的全栈AI布局，以及未来AI的发展前景展开交流。 蔡崇信预判，未来AI将从显性话题转为隐性基础设施。“五年后，人们可能不再单独讨论AI，因为它将像今天的互联网一样，融入业务的每个环节。相关术语可能会随技术普及程度而演变，但AI作为根本性的技术突破，将持续影响商业与社会。”…",
-      "author": "秋白",
-      "source": "快科技",
-      "sourceId": "mydrivers",
-      "home": "https://www.mydrivers.com",
-      "weight": 1.2,
-      "lang": "zh",
-      "category": "产品动态",
-      "publishedAt": "2026-10-08T07:27:21.000Z",
-      "publishedTs": 1791444441000,
-      "day": "2026-10-08",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 63
-    },
-    {
-      "id": "1fx6xhh",
-      "title": "独家丨前腾讯混元技术骨干胡瀚创业新进展：目标估值数亿美金",
-      "url": "https://www.leiphone.com/category/ai/rMAfd0hlFnaS8F3t.html",
-      "summary": "据雷峰网多方获悉，腾讯混元原视觉大模型算法中心负责人胡瀚创业项目已取得新进展：方向仍聚焦多模态，计划融资数千万美元，目标估值达数亿美金，远识资本担任本轮融资 FA。 多位了解该项目的投资人告诉雷峰网，过去一个月，已有多家投资机构与胡瀚接触。 商业化是机构与胡瀚沟通时反复追问的问题。大模型创业的融资窗口已不如前两年，仅凭技术团队和模型能力，越来越难打动投资人。在未来商业化上，胡瀚给出的答案也与多数创业团队不同，据一些投资人转述，他认为其模…",
-      "author": "",
-      "source": "雷锋网",
-      "sourceId": "leiphone",
-      "home": "https://www.leiphone.com",
-      "weight": 1.5,
-      "lang": "zh",
-      "category": "行业动态",
-      "publishedAt": "2026-10-08T07:26:00.000Z",
-      "publishedTs": 1791444360000,
-      "day": "2026-10-08",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 66
-    },
-    {
-      "id": "18q88af",
-      "title": "内存涨价逼迫厂商开倒车 中端Pro退回6G内存 博主：梦回2018年",
-      "url": "https://news.mydrivers.com/1/1155/1155922.htm",
-      "summary": "快科技10月8日消息，今年手机行业最绕不开的话题就是涨价。由于内存价格大幅上涨，主流品牌纷纷上调终端定价，整个市场的价格体系也随之发生变化。这轮涨价并非个别厂商的短期行为，而是上游存储成本持续攀升后，向终端市场传导的结果。 受内存价格影响，第三季度集中发布的多款迭代旗舰率先抬升售价，后续新品也普遍上调定价。例如，iPhone 18 Pro系列的起售价就上涨了1000元。除了直接涨价，部分厂商为控制成本，还开始精简产品矩阵，内存规格也出现…",
-      "author": "振亭",
-      "source": "快科技",
-      "sourceId": "mydrivers",
-      "home": "https://www.mydrivers.com",
-      "weight": 1.2,
-      "lang": "zh",
-      "category": "行业动态",
-      "publishedAt": "2026-10-08T07:21:57.000Z",
-      "publishedTs": 1791444117000,
-      "day": "2026-10-08",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 63
-    },
-    {
-      "id": "1m73gxx",
-      "title": "“芯片上车”不赚钱，消息称三星将退出车载应用处理器业务",
-      "url": "https://www.ithome.com/1/010/555.htm",
-      "summary": "IT之家 10 月 8 日消息，当地时间 6 日，韩媒《文化日报》爆料称，三星负责芯片设计的系统 LSI 事业部启动大规模调整。该部门被视为三星半导体复兴的“最后一块拼图”，负责设计智能手机、汽车、机器人等设备的核心系统芯片。 据悉，系统 LSI 事业部决定退出 2018 年以来大力布局的车载应用处理器业务，把资源转向图像传感器、移动端片上系统芯片等有望取得利润和市场份额的领域。 系统 LSI 事业部和晶圆代工事业部每年都亏损数万亿韩元…",
-      "author": "",
-      "source": "IT之家",
-      "sourceId": "ithome",
-      "home": "https://www.ithome.com",
-      "weight": 1.6,
-      "lang": "zh",
-      "category": "行业动态",
-      "publishedAt": "2026-10-08T07:21:24.000Z",
-      "publishedTs": 1791444084000,
-      "day": "2026-10-08",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 60
-    },
-    {
-      "id": "1tuabfq",
-      "title": "一加 x 京东方第四代东方屏技术沟通会明日举行",
-      "url": "https://www.ithome.com/1/010/554.htm",
-      "summary": "IT之家 10 月 8 日消息，一加 x 京东方第四代东方屏技术沟通会宣布将于 10 月 9 日 10:00 线上直播，号称“把屏幕的「通透显示」、「画面流畅」、「动态清晰」同时推到新高度”。 IT之家注意到，一加 16 手机已定档 10 月 12 日发布，首批搭载第六代骁龙 8 超级至尊版，带来 185FPS 游戏体验，并且支持全局 165Hz 超高刷。此外，该机提供明日星光、黑暗森林、火星杰作三种配色，首发搭载 ColorOS 17…",
-      "author": "",
-      "source": "IT之家",
-      "sourceId": "ithome",
-      "home": "https://www.ithome.com",
-      "weight": 1.6,
-      "lang": "zh",
-      "category": "产品动态",
-      "publishedAt": "2026-10-08T07:20:03.000Z",
-      "publishedTs": 1791444003000,
-      "day": "2026-10-08",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 67
+      "hot": 59
     },
     {
       "id": "0lwggoe",
@@ -1597,27 +1488,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 59
-    },
-    {
-      "id": "0yxz5wl",
-      "title": "腾讯拟发行50亿美元离岸债券 此前6月刚完成47亿美元发债创近年新高",
-      "url": "https://news.mydrivers.com/1/1155/1155919.htm",
-      "summary": "快科技10月8日消息，据知情人士透露，腾讯控股正考虑发行规模最高达50亿美元的离岸债券。本次债券或将采用美元、离岸人民币双币种计价，最快于本月完成发行。 值得注意的是，这也是腾讯继今年6月大额发债后，再度启动离岸市场大规模融资。 今年6月，腾讯已顺利发行长期美元及离岸人民币债券，合计募资近47亿美元，创下其2020年以来最大单次发债规模。本轮募资所得资金主要用于企业债务再融资，同时支撑公司一般性经营，重点投向AI产品与服务研发布局。 据…",
-      "author": "秋白",
-      "source": "快科技",
-      "sourceId": "mydrivers",
-      "home": "https://www.mydrivers.com",
-      "weight": 1.2,
-      "lang": "zh",
-      "category": "行业动态",
-      "publishedAt": "2026-10-08T07:18:07.000Z",
-      "publishedTs": 1791443887000,
-      "day": "2026-10-08",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 69
+      "hot": 55
     },
     {
       "id": "1pne5wv",
@@ -1637,27 +1508,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 59
-    },
-    {
-      "id": "1lswimc",
-      "title": "众擎T800机器人格斗赛一脚踢翻美国网红惹争议 人机笼斗被叫停",
-      "url": "https://news.mydrivers.com/1/1155/1155916.htm",
-      "summary": "快科技10月8日消息，近日，一场号称“世界首场人机笼斗”的表演赛事在海外引发广泛讨论。美国旧金山REK公司举办的这场特殊格斗，让网红弗兰基・拉佩纳与改装后的众擎T800人形机器人在铁笼内对抗，火爆的比赛片段在网络迅速传播。 这场表演赛中网红拉佩纳佩戴头盔、拳套、护膝全套防护装备，依次和三台不同机器人交手。率先登场的小型机器人很快被拉佩纳踢倒落败。 第二回合，身高约1.8米、重量接近90公斤的众擎T800机器人登场，这台机器人踢击力量最高…",
-      "author": "知敏",
-      "source": "快科技",
-      "sourceId": "mydrivers",
-      "home": "https://www.mydrivers.com",
-      "weight": 1.2,
-      "lang": "zh",
-      "category": "观点方法",
-      "publishedAt": "2026-10-08T07:11:39.000Z",
-      "publishedTs": 1791443499000,
-      "day": "2026-10-08",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 69
+      "hot": 55
     },
     {
       "id": "146ico3",
@@ -1677,47 +1528,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 66
-    },
-    {
-      "id": "0oig2d5",
-      "title": "30万级硬派SUV！全新魏牌蓝山谍照曝光：方盒子造型配大联屏",
-      "url": "https://news.mydrivers.com/1/1155/1155915.htm",
-      "summary": "快科技10月8日消息，据报道，全新魏牌蓝山内饰谍照近日曝光。该车此前已完成工信部申报，与长城H10同平台打造，定位豪华方盒子SUV，提供5座和6座两种布局，计划于四季度正式推出，预计瞄准30万级市场。 从谍照来看，新车内饰基本延续魏牌V8X、V9X的设计风格，配备大尺寸连屏设计，整体偏向家用风格。测试车采用5座布局，座椅使用打孔皮质材质包裹，并带有专属刺绣提升豪华感。主驾椅背后方配备小桌板，后排还设有独立控制屏，预计后排座椅将提供丰富的…",
-      "author": "霜月",
-      "source": "快科技",
-      "sourceId": "mydrivers",
-      "home": "https://www.mydrivers.com",
-      "weight": 1.2,
-      "lang": "zh",
-      "category": "产品动态",
-      "publishedAt": "2026-10-08T07:09:41.000Z",
-      "publishedTs": 1791443381000,
-      "day": "2026-10-08",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 56
-    },
-    {
-      "id": "0y5xnhm",
-      "title": "微星尊爵 Prestige N16 Flip AI+ 发布：RTX Spark 翻转本，16 日开售",
-      "url": "https://www.ithome.com/1/010/547.htm",
-      "summary": "IT之家 10 月 8 日消息，微星 (MSI) 今日正式发布了其基于 NVIDIA RTX Spark 超级芯片的尊爵 Prestige N16 Flip AI+ 可翻转笔记本电脑，该产品将于 16 日开售。 这一型号支持至高 128GB 统一内存，内置 99.8Whr 电池，配备 16\" 120Hz OLED 触控屏（可选 3840×2400 Tandem OLED 或 2880×1800 一般 OLED），集成环境光传感器 / 自…",
-      "author": "",
-      "source": "IT之家",
-      "sourceId": "ithome",
-      "home": "https://www.ithome.com",
-      "weight": 1.6,
-      "lang": "zh",
-      "category": "模型发布",
-      "publishedAt": "2026-10-08T07:07:28.000Z",
-      "publishedTs": 1791443248000,
-      "day": "2026-10-08",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 66
+      "hot": 62
     },
     {
       "id": "0luqf6o",
@@ -1737,27 +1548,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 57
-    },
-    {
-      "id": "0h0tadr",
-      "title": "不满 Mistral 表现，德国搜索引擎 Ecosia 押注中国开源 AI 模型",
-      "url": "https://www.ithome.com/1/010/539.htm",
-      "summary": "IT之家 10 月 8 日消息，据《政治报》前天报道，德国搜索引擎 Ecosia 最近选择放弃法国 AI 模型 Mistral，转而选择中国开源 AI 模型。 Ecosia 创始人兼 CEO 克里斯蒂安 · 克罗尔接受采访时表示：“我们对 Mistral 的质量感到失望，该模型如今已落后竞争对手一整年。” 今年 5 月，Ecosia 宣布放弃美国 OpenAI 方案，将 AI 服务供应商切换为 Mistral。据克罗尔所述，这次合作并不…",
-      "author": "",
-      "source": "IT之家",
-      "sourceId": "ithome",
-      "home": "https://www.ithome.com",
-      "weight": 1.6,
-      "lang": "zh",
-      "category": "模型发布",
-      "publishedAt": "2026-10-08T07:00:05.000Z",
-      "publishedTs": 1791442805000,
-      "day": "2026-10-08",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 66
+      "hot": 52
     },
     {
       "id": "1urzwfs",
@@ -1777,27 +1568,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 57
-    },
-    {
-      "id": "1n0w824",
-      "title": "腾讯WorkBuddy上线独立文件浏览器：让本地文件自带AI助手",
-      "url": "https://news.mydrivers.com/1/1155/1155909.htm",
-      "summary": "快科技10月8日消息，腾讯WorkBuddy正式上线独立文件浏览器功能，用户右键选择WorkBuddy打开本地文件后，文件在左、AI在右，当前文件自动成为对话上下文，无需上传或重新交代背景即可直接总结、分析和提问。 此前用AI处理本地文件需要先打开WorkBuddy、上传工作文件等待解析、与AI来回对话修改，最后还得手动下载结果再替换原文件，版本容易越攒越多，整个过程文件需要在多个应用之间来回搬运。 新功能支持打开Word、Excel…",
-      "author": "建嘉",
-      "source": "快科技",
-      "sourceId": "mydrivers",
-      "home": "https://www.mydrivers.com",
-      "weight": 1.2,
-      "lang": "zh",
-      "category": "产品动态",
-      "publishedAt": "2026-10-08T06:55:11.000Z",
-      "publishedTs": 1791442511000,
-      "day": "2026-10-08",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 62
+      "hot": 52
     },
     {
       "id": "01x6ud5",
@@ -1817,87 +1588,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 58
-    },
-    {
-      "id": "1dtdw65",
-      "title": "未能正确识别停车场出口 一乘客被困特斯拉Cybercab里14分钟",
-      "url": "https://news.mydrivers.com/1/1155/1155906.htm",
-      "summary": "快科技10月8日消息，日前，美国奥斯汀一名乘客大卫·莫斯体验特斯拉Cybercab无人驾驶出租车时，遭遇车辆导航迷路，在停车场内被困合计14分钟。 事发地点位于奥斯汀一处正在施工的停车场出口，出口通道本身可供正常车辆通行，但Cybercab的FSD系统没能识别出这条出口，无法重新规划路线，只能在停车场内不断循环兜圈，原地绕行了7分钟。 乘客随即联系特斯拉后台客服，工作人员远程下发指令将车辆刹停，随后又花费7分钟重启FSD自动驾驶软件，最…",
-      "author": "落木",
-      "source": "快科技",
-      "sourceId": "mydrivers",
-      "home": "https://www.mydrivers.com",
-      "weight": 1.2,
-      "lang": "zh",
-      "category": "产品动态",
-      "publishedAt": "2026-10-08T06:51:44.000Z",
-      "publishedTs": 1791442304000,
-      "day": "2026-10-08",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 56
-    },
-    {
-      "id": "0h6l0e0",
-      "title": "巨头大换血！亚马逊不到一年裁员超3万：省下的钱全砸AI",
-      "url": "https://news.mydrivers.com/1/1155/1155905.htm",
-      "summary": "快科技10月8日消息，据报道，亚马逊确认在零售部门Stores进行新一轮裁员，涉及不到1000名白领员工。这是亚马逊自去年10月以来一系列裁员行动的最新一波，累计裁员总数已超过3万人。 此次裁员的时机颇为引人注目，恰逢亚马逊Prime大促日期间。该促销活动于10月7日至8日举行，是亚马逊下半年最大的购物促销节点之一。在自家大促当天裁员，被外界解读为亚马逊对成本管控的决心已无需避讳任何时间窗口。 据知情人士透露，受影响员工分布在美国、印度…",
-      "author": "霜月",
-      "source": "快科技",
-      "sourceId": "mydrivers",
-      "home": "https://www.mydrivers.com",
-      "weight": 1.2,
-      "lang": "zh",
-      "category": "行业动态",
-      "publishedAt": "2026-10-08T06:47:57.000Z",
-      "publishedTs": 1791442077000,
-      "day": "2026-10-08",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 56
-    },
-    {
-      "id": "0wh5le1",
-      "title": "27360元起！戴尔XPS 16创作者版笔记本发布：首搭RTX Spark+128GB内存",
-      "url": "https://news.mydrivers.com/1/1155/1155902.htm",
-      "summary": "快科技10月8日消息，戴尔正式发布XPS 16 Creator Edition创作者笔记本，这是XPS系列首款搭载英伟达RTX Spark超级芯片的机型，面向AI开发者、内容创作者及高端游戏玩家。 该机型提供两种RTX Spark N1X配置：高配版搭载20核Grace CPU与6144核Blackwell RTX GPU，低配版则为18核CPU与5120核GPU。 RTX Spark超级芯片采用台积电3nm制程，将CPU与GPU通过N…",
-      "author": "红茶",
-      "source": "快科技",
-      "sourceId": "mydrivers",
-      "home": "https://www.mydrivers.com",
-      "weight": 1.2,
-      "lang": "zh",
-      "category": "模型发布",
-      "publishedAt": "2026-10-08T06:46:34.000Z",
-      "publishedTs": 1791441994000,
-      "day": "2026-10-08",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 62
-    },
-    {
-      "id": "0tebmej",
-      "title": "七年第一，三项蝉联！赛迪报告：奇安信持续领跑中国网安市场",
-      "url": "https://www.leiphone.com/category/industrynews/OnnIljx0ffMOHsQr.html",
-      "summary": "近日，赛迪顾问正式发布《2025-2026年中国网络信息安全市场研究年度报告》。报告显示，2025年中国网络信息安全市场规模达930.8亿元，行业进入存量优化、结构调整的过渡期。在市场结构性分化加剧的背景下，奇安信集团以43.9亿元的营业收入稳居中国网络信息安全市场第一，连续七年位居市场份额榜首。 更值得关注的是，在细分市场格局中，奇安信一举斩获“3金2银”——在中国终端安全、安全管理平台、安全服务三大核心领域连续多年稳居市场份额第一…",
-      "author": "",
-      "source": "雷锋网",
-      "sourceId": "leiphone",
-      "home": "https://www.leiphone.com",
-      "weight": 1.5,
-      "lang": "zh",
-      "category": "行业动态",
-      "publishedAt": "2026-10-08T06:45:00.000Z",
-      "publishedTs": 1791441900000,
-      "day": "2026-10-08",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 65
+      "hot": 53
     },
     {
       "id": "1vxdjnq",
@@ -1917,7 +1608,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 58
+      "hot": 54
     },
     {
       "id": "1b4u02b",
@@ -1937,67 +1628,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 58
-    },
-    {
-      "id": "1cf8coy",
-      "title": "没停产、没制裁就是买不到！RTX 5090已近乎全网断货",
-      "url": "https://news.mydrivers.com/1/1155/1155899.htm",
-      "summary": "快科技10月8日消息，据报道，虽然没有任何停产传闻，但NVIDIA RTX 5090在德国零售渠道已几乎消失，这款建议零售价2099欧元的旗舰显卡，实际均价已超过6000欧元（快科技注：约45027元人民币）。 德国科技媒体ComputerBase汇总信息显示，在价格对比平台搜索RTX 5090现货，能查到31款在售型号，价格从5999欧元到9900欧元不等。 31款看起来不算少，但其中14款显卡只有一家商铺显示有货，没有一款型号在超过…",
-      "author": "黑白",
-      "source": "快科技",
-      "sourceId": "mydrivers",
-      "home": "https://www.mydrivers.com",
-      "weight": 1.2,
-      "lang": "zh",
-      "category": "产品动态",
-      "publishedAt": "2026-10-08T06:35:44.000Z",
-      "publishedTs": 1791441344000,
-      "day": "2026-10-08",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 55
-    },
-    {
-      "id": "1gul3e9",
-      "title": "没有司机的出租车登场！小鹏Robotaxi定名“悠游” 打车小程序已上线",
-      "url": "https://news.mydrivers.com/1/1155/1155898.htm",
-      "summary": "快科技10月8日消息，今日上午，小鹏集团Robotaxi业务正式启用中文名称“小鹏悠游”，英文名“XPENG YOYO”。 同日，小鹏集团官网上线Robotaxi产品页面，线上下单小程序“小鹏YOYO自动驾驶”同步上线，并将通过发放邀请码的方式进一步扩大内测用户范围。这标志着小鹏Robotaxi正式从技术验证，迈入用户开放和商业化探索新阶段。 官方解读，“悠”对应悠闲、闲适，“游”则呼应出行场景，英文名“XPENG YOYO”全球易读…",
-      "author": "若风",
-      "source": "快科技",
-      "sourceId": "mydrivers",
-      "home": "https://www.mydrivers.com",
-      "weight": 1.2,
-      "lang": "zh",
-      "category": "产品动态",
-      "publishedAt": "2026-10-08T06:34:10.000Z",
-      "publishedTs": 1791441250000,
-      "day": "2026-10-08",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 62
-    },
-    {
-      "id": "1idl6a0",
-      "title": "首发价49998元 阿迈奇F9A迷你工作站上市：锐龙AI Max+ PRO 495、192GB内存",
-      "url": "https://news.mydrivers.com/1/1155/1155897.htm",
-      "summary": "快科技10月8日消息，阿迈奇上架F9A迷你主机工作站，售价50999元，新品首发特惠价49998元。 据介绍，这款工作站采用铝合金机身，两侧带有散热开孔。整机尺寸仅158.5 x 158.5 x 81.5mm，重量1.4kg，面向AI开发者、专业创作者等群体。 核心采用锐龙AI Max+ 495处理器，16核32线程，最高加速频率5.2GHz，集成Radeon 8065S核显与XDNA 2架构NPU，整机AI算力达131TOPS。 规格…",
-      "author": "鹿角",
-      "source": "快科技",
-      "sourceId": "mydrivers",
-      "home": "https://www.mydrivers.com",
-      "weight": 1.2,
-      "lang": "zh",
-      "category": "行业动态",
-      "publishedAt": "2026-10-08T06:33:47.000Z",
-      "publishedTs": 1791441227000,
-      "day": "2026-10-08",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 55
+      "hot": 54
     },
     {
       "id": "0nfy7mg",
@@ -2017,7 +1648,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 57
+      "hot": 53
     },
     {
       "id": "1wlihr6",
@@ -2037,67 +1668,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 57
-    },
-    {
-      "id": "0p6lnic",
-      "title": "Goldfish Scheme v18.11.39 发布了：迈向现代宏系统与多核并发",
-      "url": "https://www.oschina.net/news/502885",
-      "summary": "Goldfish Scheme（金鱼 Scheme） 是一款致力于“像 Python 一样实用易用，同时保持 Lisp 优雅”的现代化 Scheme 解释器。基于轻量高效的 S7 Scheme 引擎打造，具备 R7RS 兼容、轻量快速、安装包不到 5MB 以及 AI Coding 友好等特性。 近期，Goldfish Scheme 迎来了连续 8 个版本（v18.11.31 至 v18.11.39）的高密度演进与...",
-      "author": "",
-      "source": "开源中国",
-      "sourceId": "oschina",
-      "home": "https://www.oschina.net",
-      "weight": 1.3,
-      "lang": "zh",
-      "category": "行业动态",
-      "publishedAt": "2026-10-08T06:09:28.000Z",
-      "publishedTs": 1791439768000,
-      "day": "2026-10-08",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 62
-    },
-    {
-      "id": "09bqwmu",
-      "title": "从「小而专」切入，3C 卖家如何在东南亚做深配件生意",
-      "url": "https://www.leiphone.com/category/industrynews/JFIZ91nd5mP5Dl3N.html",
-      "summary": "一条音频线、一枚转接头，看似是消费电子市场中不起眼的小配件，却对应着消费者真实而具体的使用需求。 对于3C配件市场而言，产品标准化程度较高。头部品牌通常会集中资源布局需求体量较大的核心产品，而一些应用场景更加细分的产品，品牌化供给相对有限。消费者如果希望兼顾品质与价格，选择往往并不多。 2018年成立的深圳市SUNKANDI科技有限公司，最初主要从事消费电子品牌代理和渠道业务。2024年下半年，公司开始开发自有品牌SUNKANDI，并陆…",
-      "author": "",
-      "source": "雷锋网",
-      "sourceId": "leiphone",
-      "home": "https://www.leiphone.com",
-      "weight": 1.5,
-      "lang": "zh",
-      "category": "观点方法",
-      "publishedAt": "2026-10-08T06:07:00.000Z",
-      "publishedTs": 1791439620000,
-      "day": "2026-10-08",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 58
-    },
-    {
-      "id": "041fm9a",
-      "title": "Kling’s Path to a Separate Listing Leaves Kuaishou Shareholders With a Harder Choice",
-      "url": "https://www.tmtpost.com/8160989.html",
-      "summary": "Kuaishou’s AI video unit Kling has selected banks for a Hong Kong IPO that could raise at least $1 billion as early as 2027. The move would let pure AI-video investors buy the growth story directly, while holders of the…",
-      "author": "Chelsea_Sun",
-      "source": "钛媒体",
-      "sourceId": "tmtpost",
-      "home": "https://www.tmtpost.com",
-      "weight": 1.5,
-      "lang": "en",
-      "category": "行业动态",
-      "publishedAt": "2026-10-08T06:02:03.000Z",
-      "publishedTs": 1791439323000,
-      "day": "2026-10-08",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 58
+      "hot": 53
     },
     {
       "id": "0kk1c6o",
@@ -2117,27 +1688,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 58
-    },
-    {
-      "id": "1ibvk7z",
-      "title": "7个月融4亿美刀背后，站着代季峰8人团",
-      "url": "https://www.leiphone.com/category/industrynews/f0nfLFiAdLXtig24.html",
-      "summary": "一家清华背景公司，成立 7 个月，三轮融资总额 4 亿美元，投后估值 14.2 亿美元。 创下如此记录之时，官网上却只有一句英文标语，竟然一张团队合影、一份产品介绍都没有。 这个创业团队没有接受过任何采访，低调到令人发指。这家公司叫 Naive AI，工商注册名是北京智衍慧生科技有限公司。搜索引擎搜公司名，只能搜到其创始人是清华大学电子工程系副教授代季峰。左林右狸频道这就为大家扒一扒，这家公司背后的代季峰8人团是怎么聚到一起的。 01…",
-      "author": "",
-      "source": "雷锋网",
-      "sourceId": "leiphone",
-      "home": "https://www.leiphone.com",
-      "weight": 1.5,
-      "lang": "zh",
-      "category": "行业动态",
-      "publishedAt": "2026-10-08T05:49:00.000Z",
-      "publishedTs": 1791438540000,
-      "day": "2026-10-08",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 64
+      "hot": 53
     },
     {
       "id": "18jnwkw",
@@ -2157,47 +1708,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 56
-    },
-    {
-      "id": "1fe55nv",
-      "title": "一次同意，二十一次缺席",
-      "url": "https://www.tmtpost.com/8160632.html",
-      "summary": "一次点击同意，带来了二十一个月的自动扣款。授权仍在生效，人的注意力却早已离开。文章从自动续费出发，结合人脸识别误判与医疗AI研究，讨论为何保留人工审核，并不等于保留独立判断，以及如何通过清晰的授权边界、有效提醒和纠错退出机制，让人能在自动运行的流程中重新介入。",
-      "author": "观潮",
-      "source": "钛媒体",
-      "sourceId": "tmtpost",
-      "home": "https://www.tmtpost.com",
-      "weight": 1.5,
-      "lang": "zh",
-      "category": "观点方法",
-      "publishedAt": "2026-10-08T04:17:40.000Z",
-      "publishedTs": 1791433060000,
-      "day": "2026-10-08",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 56
-    },
-    {
-      "id": "0yd2vzk",
-      "title": "数据中心，正在拆掉Token时代的旧围墙",
-      "url": "https://www.tmtpost.com/8160868.html",
-      "summary": "（本文作者为 硅碳变量，钛媒体经授权发布） 文｜硅碳变量，作者｜沈浪 9月17日，在2026 ITValue Summit数字价值年会上，超聚变算力领域副总裁王梁栋指出，伴随大模型能力加速演进，AI进入推理为主的“干活”时代，全球Token消耗将持续爆发，促使AI基础设施同步进化。 当下算力行业的竞争逻辑正在迭代，单纯依靠堆叠服务器和扩张硬件规模的粗放式发展路径，效用持续减弱。 随着AI重心从模型训练转向海量推理，算力基础设施正在经历底…",
-      "author": "硅碳变量",
-      "source": "钛媒体",
-      "sourceId": "tmtpost",
-      "home": "https://www.tmtpost.com",
-      "weight": 1.5,
-      "lang": "zh",
-      "category": "行业动态",
-      "publishedAt": "2026-10-08T04:17:36.000Z",
-      "publishedTs": 1791433056000,
-      "day": "2026-10-08",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 62
+      "hot": 52
     },
     {
       "id": "0qki4rl",
@@ -2217,7 +1728,7 @@
       "estimate": false,
       "bulk": true,
       "alsoIn": [],
-      "hot": 52
+      "hot": 48
     },
     {
       "id": "1txilfx",
@@ -2237,7 +1748,7 @@
       "estimate": false,
       "bulk": true,
       "alsoIn": [],
-      "hot": 52
+      "hot": 48
     },
     {
       "id": "17wkojq",
@@ -2257,7 +1768,7 @@
       "estimate": false,
       "bulk": true,
       "alsoIn": [],
-      "hot": 52
+      "hot": 48
     },
     {
       "id": "0dn4pq5",
@@ -2277,7 +1788,7 @@
       "estimate": false,
       "bulk": true,
       "alsoIn": [],
-      "hot": 52
+      "hot": 48
     },
     {
       "id": "0c93jrb",
@@ -2297,7 +1808,7 @@
       "estimate": false,
       "bulk": true,
       "alsoIn": [],
-      "hot": 52
+      "hot": 48
     },
     {
       "id": "1s8nzdv",
@@ -2317,7 +1828,7 @@
       "estimate": false,
       "bulk": true,
       "alsoIn": [],
-      "hot": 52
+      "hot": 48
     },
     {
       "id": "0i68qk7",
@@ -2337,7 +1848,7 @@
       "estimate": false,
       "bulk": true,
       "alsoIn": [],
-      "hot": 52
+      "hot": 48
     },
     {
       "id": "1czhx6s",
@@ -2357,7 +1868,7 @@
       "estimate": false,
       "bulk": true,
       "alsoIn": [],
-      "hot": 52
+      "hot": 48
     },
     {
       "id": "1duazy8",
@@ -2377,7 +1888,7 @@
       "estimate": false,
       "bulk": true,
       "alsoIn": [],
-      "hot": 52
+      "hot": 48
     },
     {
       "id": "00olpjl",
@@ -2397,7 +1908,7 @@
       "estimate": false,
       "bulk": true,
       "alsoIn": [],
-      "hot": 52
+      "hot": 48
     },
     {
       "id": "0q8sych",
@@ -2417,7 +1928,7 @@
       "estimate": false,
       "bulk": true,
       "alsoIn": [],
-      "hot": 52
+      "hot": 48
     },
     {
       "id": "0uj1b0u",
@@ -2437,7 +1948,7 @@
       "estimate": false,
       "bulk": true,
       "alsoIn": [],
-      "hot": 52
+      "hot": 48
     },
     {
       "id": "0xvwdim",
@@ -2457,7 +1968,7 @@
       "estimate": false,
       "bulk": true,
       "alsoIn": [],
-      "hot": 52
+      "hot": 48
     },
     {
       "id": "0b421a6",
@@ -2477,7 +1988,7 @@
       "estimate": false,
       "bulk": true,
       "alsoIn": [],
-      "hot": 52
+      "hot": 48
     },
     {
       "id": "0nmjpep",
@@ -2497,7 +2008,7 @@
       "estimate": false,
       "bulk": true,
       "alsoIn": [],
-      "hot": 52
+      "hot": 48
     },
     {
       "id": "13kvfsa",
@@ -2517,7 +2028,7 @@
       "estimate": false,
       "bulk": true,
       "alsoIn": [],
-      "hot": 52
+      "hot": 48
     },
     {
       "id": "1azvnn2",
@@ -2537,7 +2048,7 @@
       "estimate": false,
       "bulk": true,
       "alsoIn": [],
-      "hot": 52
+      "hot": 48
     },
     {
       "id": "1720qv7",
@@ -2557,7 +2068,7 @@
       "estimate": false,
       "bulk": true,
       "alsoIn": [],
-      "hot": 52
+      "hot": 48
     },
     {
       "id": "1k97pil",
@@ -2577,7 +2088,7 @@
       "estimate": false,
       "bulk": true,
       "alsoIn": [],
-      "hot": 52
+      "hot": 48
     },
     {
       "id": "0wx8281",
@@ -2597,7 +2108,7 @@
       "estimate": false,
       "bulk": true,
       "alsoIn": [],
-      "hot": 52
+      "hot": 48
     },
     {
       "id": "1djb91i",
@@ -2617,27 +2128,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 66
-    },
-    {
-      "id": "0etwijd",
-      "title": "华为已为KV Cache单独做存储，专用SSD规格却还没定下来",
-      "url": "https://www.leiphone.com/category/chips/JidbQuKCNUBEEV6Z.html",
-      "summary": "推理的KV Cache，已经大到需要单独管理了。 这已经成为行业内越来越明确的共识。近日，华为全联接大会上推出了华为OceanStor M900，英伟达也已经推出了CMX Context Memory Storage。 这类AI记忆存储产品，会将推理过程中已经产生、可能再次复用的KV Cache进行分层管理和存储，在后续请求命中时减少相应的重复计算，这将直接节省有关算力开销。 有业者明确表示，即使缓存的命中率越来越高，继续从90%向95…",
-      "author": "",
-      "source": "雷锋网",
-      "sourceId": "leiphone",
-      "home": "https://www.leiphone.com",
-      "weight": 1.5,
-      "lang": "zh",
-      "category": "产品动态",
-      "publishedAt": "2026-10-08T03:55:00.000Z",
-      "publishedTs": 1791431700000,
-      "day": "2026-10-08",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 55
+      "hot": 62
     },
     {
       "id": "1ts7zxj",
@@ -2657,27 +2148,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 54
-    },
-    {
-      "id": "06v8qgn",
-      "title": "谁在给大模型出题、卖题、判卷？聊聊AI数据行业的野蛮生长",
-      "url": "https://www.tmtpost.com/8160841.html",
-      "summary": "（本文作者为 硅谷101，钛媒体经授权发布） 文 | 硅谷101 随着AI模型能力提升，训练需求更复杂，一批为模型公司提供训练数据的新公司正在快速增长：AfterQuery今年4月宣布A轮融资时，估值为3亿美元，到了9月，据媒体报道，新一轮融资已经将其估值推至32亿美元。另一家提供训练数据与智能体环境的公司Bespoke Labs，也在今年7月宣布，种子轮与A轮融资合计达到4000万美元。 虽然估值水涨船高，AI数据行业对外界来说却极其…",
-      "author": "硅谷101",
-      "source": "钛媒体",
-      "sourceId": "tmtpost",
-      "home": "https://www.tmtpost.com",
-      "weight": 1.5,
-      "lang": "zh",
-      "category": "模型发布",
-      "publishedAt": "2026-10-08T03:24:52.000Z",
-      "publishedTs": 1791429892000,
-      "day": "2026-10-08",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 67
+      "hot": 50
     },
     {
       "id": "1gvkv8n",
@@ -2697,27 +2168,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 61
-    },
-    {
-      "id": "01b06p3",
-      "title": "从Siri到Muse，我们如何一步步把生活交给AI",
-      "url": "https://www.tmtpost.com/8160467.html",
-      "summary": "Siri要追赶一个由自己开启的do engine愿景。新晋的Muse们也需要经历一个不断完善可靠性、安全性和经济性的过程。",
-      "author": "窄播",
-      "source": "钛媒体",
-      "sourceId": "tmtpost",
-      "home": "https://www.tmtpost.com",
-      "weight": 1.5,
-      "lang": "zh",
-      "category": "观点方法",
-      "publishedAt": "2026-10-08T03:17:53.000Z",
-      "publishedTs": 1791429473000,
-      "day": "2026-10-08",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 55
+      "hot": 57
     },
     {
       "id": "1k7qqo3",
@@ -2737,7 +2188,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 53
+      "hot": 49
     },
     {
       "id": "00wz00t",
@@ -2757,7 +2208,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 54
+      "hot": 50
     },
     {
       "id": "1wubcya",
@@ -2777,27 +2228,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 54
-    },
-    {
-      "id": "19gwbql",
-      "title": "90后站上C位：姚顺雨、罗福莉、刘大一恒、陈宇森、周畅们接管国产大模型",
-      "url": "https://www.tmtpost.com/8160735.html",
-      "summary": "（本文作者为 Tech星球，钛媒体经授权发布） 文 | Tech星球，作者| 任雪芸 2026年9月，国产大模型公司密集交出了一份成绩单。 9月21日，阿里巴巴在云栖大会开幕前一天确认，1993年出生的刘大一恒担任ATH事业群TokenFoundry Qwen大语言模型项目负责人，主论坛演讲排序仅在阿里集团主席蔡崇信、CEO吴泳铭之后。 9月22日，同一场大会上，1992年出生的陈宇森以阿里巴巴集团副总裁、千问办公CEO身份首次公开亮相…",
-      "author": "Tech星球",
-      "source": "钛媒体",
-      "sourceId": "tmtpost",
-      "home": "https://www.tmtpost.com",
-      "weight": 1.5,
-      "lang": "zh",
-      "category": "模型发布",
-      "publishedAt": "2026-10-08T02:43:42.000Z",
-      "publishedTs": 1791427422000,
-      "day": "2026-10-08",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 66
+      "hot": 50
     },
     {
       "id": "0cq9mb7",
@@ -2817,7 +2248,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 54
+      "hot": 50
     },
     {
       "id": "0fll3gf",
@@ -2837,47 +2268,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 59
-    },
-    {
-      "id": "1cspwi2",
-      "title": "吴佳俊 IROS 2026 演讲：结构化表征不是答案， 是机器人学会推理的脚手架 | IROS 2026",
-      "url": "https://www.leiphone.com/category/private/Hd5ntJGqUoFVY1PJ.html",
-      "summary": "从结构化表征到无演示学习之路。 作者丨吴思梦 编辑丨岑 峰 一个盘子，一只水龙头，一小团蓝色的洗洁精。 吴佳俊用这样一个几乎没有技术含量的厨房场景，开始了他在 IROS 2026 的演讲。 一个学生挤了洗洁精，打开水龙头，洗了一半，临时离开。现在，换成机器人接手。第一眼看过去，任务直接明确：把盘子洗干净，再放回去。但机器人真正需要处理的，并不是“洗盘子”这三个字。 它得先知道，眼前哪个东西是盘子；得知道这个盘子到底脏不脏；得注意到盘子上…",
-      "author": "",
-      "source": "雷锋网",
-      "sourceId": "leiphone",
-      "home": "https://www.leiphone.com",
-      "weight": 1.5,
-      "lang": "zh",
-      "category": "行业动态",
-      "publishedAt": "2026-10-08T02:29:00.000Z",
-      "publishedTs": 1791426540000,
-      "day": "2026-10-08",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 54
-    },
-    {
-      "id": "1yeqktw",
-      "title": "只有148家门店的“很久以前”要IPO了",
-      "url": "https://www.tmtpost.com/8160675.html",
-      "summary": "（本文作者为 蓝媒汇，钛媒体经授权发布） 文 | 蓝媒汇 北京烧烤界的“顶流”很久以前羊肉串，最近搞了波大的。 近日，它完成股份制改造，主体更名为 “北京很久以前餐饮管理集团股份有限公司”。消息一出，市场立刻嗅到信号：这家烤串店，正奔着 “烧烤第一股” 而去。 2008 年，很久以前在北京顺义开出第一家店，十几年过去，它依然是那个 “排队王”。 一到晚上，烤串店门口，等位的食客坐满了塑料凳。有人低头刷手机，有人啃着免费冰棍，有人脑门上贴…",
-      "author": "蓝媒汇",
-      "source": "钛媒体",
-      "sourceId": "tmtpost",
-      "home": "https://www.tmtpost.com",
-      "weight": 1.5,
-      "lang": "zh",
-      "category": "产品动态",
-      "publishedAt": "2026-10-08T02:21:25.000Z",
-      "publishedTs": 1791426085000,
-      "day": "2026-10-08",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 66
+      "hot": 55
     },
     {
       "id": "0wi92h0",
@@ -2897,7 +2288,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 67
+      "hot": 63
     },
     {
       "id": "1eczhrp",
@@ -2917,7 +2308,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 52
+      "hot": 48
     },
     {
       "id": "0dpo4cc",
@@ -2937,7 +2328,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 58
+      "hot": 54
     },
     {
       "id": "1unn4fb",
@@ -2957,7 +2348,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 52
+      "hot": 48
     },
     {
       "id": "1l46jdo",
@@ -2977,7 +2368,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 57
+      "hot": 53
     },
     {
       "id": "1oq4iwa",
@@ -2997,7 +2388,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 63
+      "hot": 59
     },
     {
       "id": "1ek9ld6",
@@ -3017,7 +2408,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 66
+      "hot": 62
     },
     {
       "id": "0p6mg3o",
@@ -3037,7 +2428,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 65
+      "hot": 62
     },
     {
       "id": "1kua36o",
@@ -3057,7 +2448,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 56
+      "hot": 52
     },
     {
       "id": "0g7kjl3",
@@ -3077,27 +2468,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 51
-    },
-    {
-      "id": "0jw3szx",
-      "title": "Port of the TypeScript compiler, checker and lsp to Rust, by LLM",
-      "url": "https://github.com/pingdotgg/ts-rust",
-      "summary": "Article URL: https://github.com/pingdotgg/ts-rust Comments URL: https://news.ycombinator.com/item?id=50000676 Points: 71 # Comments: 117",
-      "author": "jcbhmr",
-      "source": "Hacker News",
-      "sourceId": "hn-ai",
-      "home": "https://news.ycombinator.com",
-      "weight": 1.2,
-      "lang": "en",
-      "category": "开源工具",
-      "publishedAt": "2026-10-08T00:46:00.000Z",
-      "publishedTs": 1791420360000,
-      "day": "2026-10-08",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 49
+      "hot": 47
     },
     {
       "id": "1a4a4sg",
@@ -3117,27 +2488,27 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 63
+      "hot": 59
     },
     {
-      "id": "0jy2u1v",
-      "title": "早报｜苹果一大波新品曝光，最快下周发布/全球纯汽油车份额首次跌破50%/2599 美元起，Surface Laptop Ultra发布",
-      "url": "https://www.ifanr.com/1683053",
-      "summary": "· OpenAI 向 Chat 用户推送 GPT-6，并加入可交互界面 · 月之暗面估值据报升至约 500 亿美元，筹备明年赴港上市 · 2026 年诺贝尔奖陆续公布，目前已有 6 位得主#欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。",
-      "author": "郑廷旭",
-      "source": "爱范儿",
-      "sourceId": "ifanr",
-      "home": "https://www.ifanr.com",
-      "weight": 1.4,
-      "lang": "zh",
+      "id": "0llcw6s",
+      "title": "Disrupting AI-enabled “false front” operations",
+      "url": "https://openai.com/index/disrupting-ai-enabled-false-front-operations",
+      "summary": "OpenAI disrupted two AI-enabled influence operations that used false-front journalists and a think tank to spread geopolitical messaging.",
+      "author": "",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "home": "https://openai.com/news",
+      "weight": 2.5,
+      "lang": "en",
       "category": "行业动态",
-      "publishedAt": "2026-10-08T00:14:13.000Z",
-      "publishedTs": 1791418453000,
+      "publishedAt": "2026-10-08T00:00:00.000Z",
+      "publishedTs": 1791417600000,
       "day": "2026-10-08",
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 63
+      "hot": 57
     },
     {
       "id": "1l49ovn",
@@ -3157,27 +2528,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 55
-    },
-    {
-      "id": "0gjzvzd",
-      "title": "Quoting Ben Affleck",
-      "url": "https://simonwillison.net/2026/Oct/7/ben-affleck",
-      "summary": "I've always been kind of into computers since I was young. And then when film started to move from analog film to digital, I became more interested in that aspect of it. And the visual effects workflow for many years has…",
-      "author": "",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "home": "https://simonwillison.net",
-      "weight": 1.3,
-      "lang": "en",
-      "category": "行业动态",
-      "publishedAt": "2026-10-07T23:14:58.000Z",
-      "publishedTs": 1791414898000,
-      "day": "2026-10-08",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 48
+      "hot": 52
     },
     {
       "id": "0nvbe20",
@@ -3197,7 +2548,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 46
+      "hot": 43
     },
     {
       "id": "1975du9",
@@ -3217,7 +2568,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 51
+      "hot": 48
     },
     {
       "id": "16mkiy6",
@@ -3237,7 +2588,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 47
+      "hot": 44
     },
     {
       "id": "0b53mj6",
@@ -3257,7 +2608,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 51
+      "hot": 47
     },
     {
       "id": "043g74h",
@@ -3277,7 +2628,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 48
+      "hot": 44
     },
     {
       "id": "19lndep",
@@ -3297,7 +2648,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 48
+      "hot": 44
     },
     {
       "id": "1o5t9qk",
@@ -3317,27 +2668,27 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 45
+      "hot": 42
     },
     {
-      "id": "0lu9a8b",
-      "title": "Meta and Microsoft take steps to reduce employee usage of Claude AI",
-      "url": "https://www.rswebsols.com/news/meta-and-microsoft-take-steps-to-reduce-employee-usage-of-claude-ai",
-      "summary": "Article URL: https://www.rswebsols.com/news/meta-and-microsoft-take-steps-to-reduce-employee-usage-of-claude-ai/ Comments URL: https://news.ycombinator.com/item?id=49997161 Points: 344 # Comments: 348",
-      "author": "speckx",
-      "source": "Hacker News",
-      "sourceId": "hn-ai",
-      "home": "https://news.ycombinator.com",
-      "weight": 1.2,
+      "id": "1ovj7su",
+      "title": "It appears .agent and .agi are about to be the hot new domains",
+      "url": "https://www.theverge.com/tech/1007132/icann-domains-2026-ai-agi",
+      "summary": "For the first time in years, the Internet Corporation for Assigned Names and Numbers - better known as ICANN - is accepting applications for new top-level domains. These are the suffixes at the end of all URLs, and you m…",
+      "author": "David Pierce",
+      "source": "The Verge AI",
+      "sourceId": "verge-ai",
+      "home": "https://www.theverge.com/ai-artificial-intelligence",
+      "weight": 1.6,
       "lang": "en",
-      "category": "模型发布",
-      "publishedAt": "2026-10-07T18:49:40.000Z",
-      "publishedTs": 1791398980000,
+      "category": "产品动态",
+      "publishedAt": "2026-10-07T18:46:16.000Z",
+      "publishedTs": 1791398776000,
       "day": "2026-10-08",
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 43
+      "hot": 44
     },
     {
       "id": "1qucfny",
@@ -3357,7 +2708,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 49
+      "hot": 46
     },
     {
       "id": "0j1p01m",
@@ -3377,7 +2728,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 47
+      "hot": 44
     },
     {
       "id": "1i52q6n",
@@ -3397,7 +2748,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 45
+      "hot": 42
     },
     {
       "id": "1imf14y",
@@ -3417,7 +2768,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 49
+      "hot": 46
     },
     {
       "id": "1n34yuj",
@@ -3437,7 +2788,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 45
+      "hot": 42
     },
     {
       "id": "08unurp",
@@ -3457,7 +2808,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 49
+      "hot": 46
     },
     {
       "id": "17hvbvi",
@@ -3477,7 +2828,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 47
+      "hot": 43
     },
     {
       "id": "1q9h18a",
@@ -3497,7 +2848,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 49
+      "hot": 45
     },
     {
       "id": "1pqqhfy",
@@ -3517,7 +2868,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 47
+      "hot": 43
     },
     {
       "id": "13jr0g6",
@@ -3537,7 +2888,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 46
+      "hot": 43
     },
     {
       "id": "1hlc3mw",
@@ -3557,27 +2908,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 46
-    },
-    {
-      "id": "1g3lq15",
-      "title": "Show HN: Agent.reviews – Where AI agents read and write reviews on tools",
-      "url": "https://agent.reviews/",
-      "summary": "Hi HN!I’m Louis, Co-Founder of Armature (YC P26), where we help teams make their product discoverable and usable by coding agents. We already measured 50k+ agent sessions and realized that over and over agents would enco…",
-      "author": "screm",
-      "source": "Hacker News",
-      "sourceId": "hn-ai",
-      "home": "https://news.ycombinator.com",
-      "weight": 1.2,
-      "lang": "en",
-      "category": "产品动态",
-      "publishedAt": "2026-10-07T16:59:11.000Z",
-      "publishedTs": 1791392351000,
-      "day": "2026-10-08",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 42
+      "hot": 43
     },
     {
       "id": "1cwo4io",
@@ -3597,7 +2928,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 48
+      "hot": 45
     },
     {
       "id": "154ef13",
@@ -3617,7 +2948,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 45
+      "hot": 42
     },
     {
       "id": "1nfyfks",
@@ -3637,7 +2968,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 43
+      "hot": 40
     },
     {
       "id": "14xbabl",
@@ -3657,7 +2988,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 43
+      "hot": 40
     },
     {
       "id": "0m5hhea",
@@ -3677,7 +3008,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 43
+      "hot": 40
     },
     {
       "id": "0vv1w3c",
@@ -3697,7 +3028,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 43
+      "hot": 40
     },
     {
       "id": "1rsz406",
@@ -3717,27 +3048,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 43
-    },
-    {
-      "id": "139g1xw",
-      "title": "Muse launches on the iPad",
-      "url": "https://www.theverge.com/tech/1006813/muse-ai-agent-ios-app-ipad-support",
-      "summary": "After launching nearly a month ago and spending several weeks as the top free app in Apple's App Store, the latest update to Meta's Muse iOS app introduces native support for the iPad. A Mac version of Meta's agentic AI…",
-      "author": "Andrew Liszewski",
-      "source": "The Verge AI",
-      "sourceId": "verge-ai",
-      "home": "https://www.theverge.com/ai-artificial-intelligence",
-      "weight": 1.6,
-      "lang": "en",
-      "category": "产品动态",
-      "publishedAt": "2026-10-07T15:37:23.000Z",
-      "publishedTs": 1791387443000,
-      "day": "2026-10-07",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 45
+      "hot": 40
     },
     {
       "id": "0u4lotx",
@@ -3757,7 +3068,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 45
+      "hot": 42
     },
     {
       "id": "0zpdry2",
@@ -3777,27 +3088,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 46
-    },
-    {
-      "id": "05mz4xz",
-      "title": "Anti-Patterns in Software Blogging",
-      "url": "https://simonwillison.net/2026/Oct/7/anti-patterns-in-software-blogging",
-      "summary": "Anti-Patterns in Software Blogging Some excellent writing advice from Michael Lynch. Michael warns against \"meandering intros\", misjudging your reader's existing knowledge, assuming they'll read your previous posts, and…",
-      "author": "",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "home": "https://simonwillison.net",
-      "weight": 1.3,
-      "lang": "en",
-      "category": "行业动态",
-      "publishedAt": "2026-10-07T14:53:51.000Z",
-      "publishedTs": 1791384831000,
-      "day": "2026-10-07",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 41
+      "hot": 43
     },
     {
       "id": "0ok5xgz",
@@ -3817,7 +3108,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 44
+      "hot": 41
     },
     {
       "id": "1bumkmz",
@@ -3837,27 +3128,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 46
-    },
-    {
-      "id": "129wxol",
-      "title": "Google invests millions in Mark Zuckerberg’s efforts to create a ‘virtual cell’",
-      "url": "https://www.theverge.com/tech/1006766/google-meta-biohub-investment-virtual-cell",
-      "summary": "Google DeepMind, Meta, and AI drug discovery startup Isomorphic Labs are jointly investing $300 million into an initiative to create a \"virtual cell\" that researchers can use to combat disease, as reported earlier by Reu…",
-      "author": "Emma Roth",
-      "source": "The Verge AI",
-      "sourceId": "verge-ai",
-      "home": "https://www.theverge.com/ai-artificial-intelligence",
-      "weight": 1.6,
-      "lang": "en",
-      "category": "行业动态",
-      "publishedAt": "2026-10-07T14:40:52.000Z",
-      "publishedTs": 1791384052000,
-      "day": "2026-10-07",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 44
+      "hot": 43
     },
     {
       "id": "1fg5f3n",
@@ -3877,7 +3148,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 46
+      "hot": 43
     },
     {
       "id": "0gk6otw",
@@ -3897,7 +3168,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 46
+      "hot": 43
     },
     {
       "id": "1p37av7",
@@ -3917,47 +3188,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 46
-    },
-    {
-      "id": "1cy7kzw",
-      "title": "AI-assisted proof of optimal packing for 11 squares",
-      "url": "https://github.com/Queuingtheorydotcom/11SquaresFormalized",
-      "summary": "Article URL: https://github.com/Queuingtheorydotcom/11SquaresFormalized Comments URL: https://news.ycombinator.com/item?id=49993121 Points: 115 # Comments: 53",
-      "author": "bluepeter",
-      "source": "Hacker News",
-      "sourceId": "hn-ai",
-      "home": "https://news.ycombinator.com",
-      "weight": 1.2,
-      "lang": "en",
-      "category": "开源工具",
-      "publishedAt": "2026-10-07T14:10:55.000Z",
-      "publishedTs": 1791382255000,
-      "day": "2026-10-07",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 40
-    },
-    {
-      "id": "141afck",
-      "title": "迟到25年！诺贝尔化学奖揭晓，95岁法国教授圆梦",
-      "url": "https://www.qbitai.com/2026/10/501825.html",
-      "summary": "",
-      "author": "衡宇",
-      "source": "量子位",
-      "sourceId": "qbitai",
-      "home": "https://www.qbitai.com",
-      "weight": 2.2,
-      "lang": "zh",
-      "category": "行业动态",
-      "publishedAt": "2026-10-07T14:10:33.000Z",
-      "publishedTs": 1791382233000,
-      "day": "2026-10-07",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 50
+      "hot": 43
     },
     {
       "id": "1qi378y",
@@ -3977,7 +3208,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 45
+      "hot": 43
     },
     {
       "id": "05oujrv",
@@ -3997,27 +3228,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 45
-    },
-    {
-      "id": "19wdry7",
-      "title": "ChatGPT rated \"unacceptable risk\" for teens after parental alerts failed during suicide conversations",
-      "url": "https://the-decoder.com/chatgpt-rated-unacceptable-risk-for-teens-after-parental-alerts-failed-during-suicide-conversations",
-      "summary": "OpenAI's teen safety features for ChatGPT failed an independent audit. After more than 4,000 test prompts, the Common Sense Media Youth AI Safety Institute rated the service an \"unacceptable risk\" for minors. Conversatio…",
-      "author": "Manuel Uth",
-      "source": "The Decoder",
-      "sourceId": "the-decoder",
-      "home": "https://the-decoder.com",
-      "weight": 1.6,
-      "lang": "en",
-      "category": "行业动态",
-      "publishedAt": "2026-10-07T12:34:34.000Z",
-      "publishedTs": 1791376474000,
-      "day": "2026-10-07",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 42
+      "hot": 43
     },
     {
       "id": "1le9akm",
@@ -4037,27 +3248,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 52
-    },
-    {
-      "id": "1nviyax",
-      "title": "Anthropic gives more security teams access to Claude with fewer safety restrictions",
-      "url": "https://the-decoder.com/anthropic-gives-more-security-teams-access-to-claude-with-fewer-safety-restrictions",
-      "summary": "Anthropic is expanding its Cyber Verification Program, giving more security professionals access to Claude models with fewer safety restrictions for penetration testing, malware analysis, and vulnerability research. Anth…",
-      "author": "Manuel Uth",
-      "source": "The Decoder",
-      "sourceId": "the-decoder",
-      "home": "https://the-decoder.com",
-      "weight": 1.6,
-      "lang": "en",
-      "category": "模型发布",
-      "publishedAt": "2026-10-07T12:05:20.000Z",
-      "publishedTs": 1791374720000,
-      "day": "2026-10-07",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 42
+      "hot": 49
     },
     {
       "id": "1dykbvb",
@@ -4073,46 +3264,6 @@
       "category": "行业动态",
       "publishedAt": "2026-10-07T12:00:00.000Z",
       "publishedTs": 1791374400000,
-      "day": "2026-10-07",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 51
-    },
-    {
-      "id": "1rb35py",
-      "title": "AI could upend food delivery",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1005726/doordash-ai-agentic-food-delivery-bites",
-      "summary": "DoorDash, the leading food delivery app, processed 970 million orders in its second quarter this year and generated $4.5 billion in revenue. A 10-person startup called Bites is a blip in comparison: It has just around 30…",
-      "author": "Mia Sato",
-      "source": "The Verge AI",
-      "sourceId": "verge-ai",
-      "home": "https://www.theverge.com/ai-artificial-intelligence",
-      "weight": 1.6,
-      "lang": "en",
-      "category": "产品动态",
-      "publishedAt": "2026-10-07T12:00:00.000Z",
-      "publishedTs": 1791374400000,
-      "day": "2026-10-07",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 42
-    },
-    {
-      "id": "03nm2ss",
-      "title": "《怪物史莱克》编剧也来了！这家AI影视公司，视频模型全球第二！",
-      "url": "https://www.qbitai.com/2026/10/501803.html",
-      "summary": "",
-      "author": "量子位的朋友们",
-      "source": "量子位",
-      "sourceId": "qbitai",
-      "home": "https://www.qbitai.com",
-      "weight": 2.2,
-      "lang": "zh",
-      "category": "模型发布",
-      "publishedAt": "2026-10-07T11:34:47.000Z",
-      "publishedTs": 1791372887000,
       "day": "2026-10-07",
       "estimate": false,
       "bulk": false,
@@ -4137,67 +3288,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 51
-    },
-    {
-      "id": "1sbriin",
-      "title": "Reasons to Dislike AI Coding",
-      "url": "https://www.sicpers.info/2026/10/reasons-to-dislike-ai-coding",
-      "summary": "Article URL: https://www.sicpers.info/2026/10/reasons-to-dislike-ai-coding/ Comments URL: https://news.ycombinator.com/item?id=49990204 Points: 72 # Comments: 105",
-      "author": "signa11",
-      "source": "Hacker News",
-      "sourceId": "hn-ai",
-      "home": "https://news.ycombinator.com",
-      "weight": 1.2,
-      "lang": "en",
-      "category": "行业动态",
-      "publishedAt": "2026-10-07T09:15:00.000Z",
-      "publishedTs": 1791364500000,
-      "day": "2026-10-07",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 36
-    },
-    {
-      "id": "18nlcyo",
-      "title": "ChatGPT for Teens is an ‘unacceptable risk,’ says Common Sense Media",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1006355/openai-chatgpt-for-teens-common-sense-media",
-      "summary": "Common Sense Media, a nonprofit that offers reviews of apps, services, and entertainment with a focus on youth safety, today said that OpenAI's ChatGPT for Teens is an \"unacceptable risk.\" ChatGPT for Teens, introduced i…",
-      "author": "Jay Peters",
-      "source": "The Verge AI",
-      "sourceId": "verge-ai",
-      "home": "https://www.theverge.com/ai-artificial-intelligence",
-      "weight": 1.6,
-      "lang": "en",
-      "category": "行业动态",
-      "publishedAt": "2026-10-07T09:00:00.000Z",
-      "publishedTs": 1791363600000,
-      "day": "2026-10-07",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 40
-    },
-    {
-      "id": "1fsovda",
-      "title": "Forever junior: Skills AI can't develop for you",
-      "url": "https://tech.criteo.com/blog/human-skills-ai-cant-develop-junior-engineers",
-      "summary": "Article URL: https://tech.criteo.com/blog/human-skills-ai-cant-develop-junior-engineers/ Comments URL: https://news.ycombinator.com/item?id=49989684 Points: 76 # Comments: 58",
-      "author": "brugidou",
-      "source": "Hacker News",
-      "sourceId": "hn-ai",
-      "home": "https://news.ycombinator.com",
-      "weight": 1.2,
-      "lang": "en",
-      "category": "行业动态",
-      "publishedAt": "2026-10-07T08:00:06.000Z",
-      "publishedTs": 1791360006000,
-      "day": "2026-10-07",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 35
+      "hot": 48
     },
     {
       "id": "0mo88vq",
@@ -4217,7 +3308,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 37
+      "hot": 35
     },
     {
       "id": "1gce18o",
@@ -4237,7 +3328,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 48
+      "hot": 45
     },
     {
       "id": "0n1m96z",
@@ -4253,26 +3344,6 @@
       "category": "行业动态",
       "publishedAt": "2026-10-07T06:29:14.000Z",
       "publishedTs": 1791354554000,
-      "day": "2026-10-07",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 36
-    },
-    {
-      "id": "0h57aeh",
-      "title": "Quoting Jake Boggan",
-      "url": "https://simonwillison.net/2026/Oct/7/jake-boggan",
-      "summary": "I was a graph theory junkie long ago and even moved to Budapest for awhile to study among the greats. While I was there I started working on Barnette's Conjecture which came to occupy my thoughts over the next 24 years o…",
-      "author": "",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "home": "https://simonwillison.net",
-      "weight": 1.3,
-      "lang": "en",
-      "category": "行业动态",
-      "publishedAt": "2026-10-07T04:47:55.000Z",
-      "publishedTs": 1791348475000,
       "day": "2026-10-07",
       "estimate": false,
       "bulk": false,
@@ -4297,27 +3368,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 34
-    },
-    {
-      "id": "1nmcf4c",
-      "title": "袋鼠数据库工具 v9.9.1 版已上线",
-      "url": "https://www.oschina.net/news/502849",
-      "summary": "袋鼠数据库工具 是一款 AI 驱动的热门数据库系统客户端(MariaDB / MongoDB / MySQL / Oracle / PostgreSQL / Redis / SQLite / SQLServer / …) ，支持建表、查询、模型、同步、导入导出等功能，支持 Windows / Mac / Linux 等操作系统，致力于打造一款好用、好玩、开发友好的开发者工具。 新特性或修复的缺陷列表 重组云...",
-      "author": "",
-      "source": "开源中国",
-      "sourceId": "oschina",
-      "home": "https://www.oschina.net",
-      "weight": 1.3,
-      "lang": "zh",
-      "category": "产品动态",
-      "publishedAt": "2026-10-07T01:50:48.000Z",
-      "publishedTs": 1791337848000,
-      "day": "2026-10-07",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 39
+      "hot": 32
     },
     {
       "id": "0p6zco3",
@@ -4337,7 +3388,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 33
+      "hot": 31
     },
     {
       "id": "0clmk2h",
@@ -4357,7 +3408,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 45
+      "hot": 43
     },
     {
       "id": "1eb0h4c",
@@ -4377,7 +3428,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 32
+      "hot": 30
     },
     {
       "id": "0anf7hz",
@@ -4397,67 +3448,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 44
-    },
-    {
-      "id": "0swu0vv",
-      "title": "Quoting Victoria Kim",
-      "url": "https://simonwillison.net/2026/Oct/6/victoria-kim",
-      "summary": "Since the Medicare breach, OpenAI has put in place additional monitoring to allow “immediate intervention” by staff to stop training if the company’s models access the internet in ways they’re not supposed to, Mr. Kwon […",
-      "author": "",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "home": "https://simonwillison.net",
-      "weight": 1.3,
-      "lang": "en",
-      "category": "行业动态",
-      "publishedAt": "2026-10-06T23:58:56.000Z",
-      "publishedTs": 1791331136000,
-      "day": "2026-10-07",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 32
-    },
-    {
-      "id": "0x5xfrh",
-      "title": "South Korea says AI agents appear to have been used to hack the country's banks",
-      "url": "https://www.reuters.com/world/south-koreas-lee-says-ai-appears-have-been-used-bank-hacks-2026-10-06",
-      "summary": "Article URL: https://www.reuters.com/world/south-koreas-lee-says-ai-appears-have-been-used-bank-hacks-2026-10-06/ Comments URL: https://news.ycombinator.com/item?id=49985861 Points: 98 # Comments: 31",
-      "author": "thoughtpeddler",
-      "source": "Hacker News",
-      "sourceId": "hn-ai",
-      "home": "https://news.ycombinator.com",
-      "weight": 1.2,
-      "lang": "en",
-      "category": "行业动态",
-      "publishedAt": "2026-10-06T23:50:33.000Z",
-      "publishedTs": 1791330633000,
-      "day": "2026-10-07",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 30
-    },
-    {
-      "id": "1mdzgzv",
-      "title": "OpenAI drops another batch of mathematical breakthroughs",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1005004/openai-math-release-github",
-      "summary": "OpenAI has revealed solutions to a number of long-standing mathematics problems produced by an unreleased frontier model in a batch of 722 manuscripts, covering 372 result families that group related papers. It extends a…",
-      "author": "Robert Hart",
-      "source": "The Verge AI",
-      "sourceId": "verge-ai",
-      "home": "https://www.theverge.com/ai-artificial-intelligence",
-      "weight": 1.6,
-      "lang": "en",
-      "category": "行业动态",
-      "publishedAt": "2026-10-06T23:26:38.000Z",
-      "publishedTs": 1791329198000,
-      "day": "2026-10-07",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 34
+      "hot": 42
     },
     {
       "id": "1v5wzky",
@@ -4477,7 +3468,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 31
+      "hot": 29
     },
     {
       "id": "1q8k8ku",
@@ -4497,27 +3488,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 36
-    },
-    {
-      "id": "1ntlxru",
-      "title": "Penguin Mail – open-source Rust email client for Linux with AI",
-      "url": "https://penguin-mail.com/",
-      "summary": "Article URL: https://penguin-mail.com/ Comments URL: https://news.ycombinator.com/item?id=49984716 Points: 234 # Comments: 182",
-      "author": "kavourias",
-      "source": "Hacker News",
-      "sourceId": "hn-ai",
-      "home": "https://news.ycombinator.com",
-      "weight": 1.2,
-      "lang": "en",
-      "category": "行业动态",
-      "publishedAt": "2026-10-06T21:59:43.000Z",
-      "publishedTs": 1791323983000,
-      "day": "2026-10-07",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 30
+      "hot": 34
     },
     {
       "id": "18o06ee",
@@ -4537,27 +3508,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 30
-    },
-    {
-      "id": "041gdhn",
-      "title": "EmbeddingGemma 2",
-      "url": "https://simonwillison.net/2026/Oct/6/hn-49983751",
-      "summary": "My comment on EmbeddingGemma 2 — Hacker News. I really appreciate that EmbeddingGemma 2 is under the Apache 2.0 license. For embedding models in particular, I don't think it makes sense to use a closed, proprietary, host…",
-      "author": "",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "home": "https://simonwillison.net",
-      "weight": 1.3,
-      "lang": "en",
-      "category": "行业动态",
-      "publishedAt": "2026-10-06T20:37:53.000Z",
-      "publishedTs": 1791319073000,
-      "day": "2026-10-07",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 30
+      "hot": 29
     },
     {
       "id": "0rt2dc2",
@@ -4577,7 +3528,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 35
+      "hot": 33
     },
     {
       "id": "09jhbip",
@@ -4597,27 +3548,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 30
-    },
-    {
-      "id": "0y97gye",
-      "title": "AI computing startup Lambda to raise $4B ahead of planned IPO",
-      "url": "https://techcrunch.com/2026/10/06/ai-computing-startup-lambda-to-raise-4b-ahead-of-planned-ipo",
-      "summary": "Nvidia-backed Lambda is raising up to $4 billion at a $14.5 billion pre-money valuation ahead of a planned 2027 IPO, led by Coatue and Blackstone.",
-      "author": "Rebecca Bellan",
-      "source": "TechCrunch AI",
-      "sourceId": "techcrunch-ai",
-      "home": "https://techcrunch.com/category/artificial-intelligence/",
-      "weight": 1.8,
-      "lang": "en",
-      "category": "行业动态",
-      "publishedAt": "2026-10-06T20:00:30.000Z",
-      "publishedTs": 1791316830000,
-      "day": "2026-10-07",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 35
+      "hot": 28
     },
     {
       "id": "11rgbx5",
@@ -4637,27 +3568,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 40
-    },
-    {
-      "id": "0zxw1ek",
-      "title": "The next hurdle for AI agents: getting websites to let them in",
-      "url": "https://techcrunch.com/2026/10/06/the-next-hurdle-for-ai-agents-getting-websites-to-let-them-in",
-      "summary": "Personal AI agents promise to shop, book flights, and make reservations for you. But deliberate blocks and anti-bot defenses are getting in the way, leaving consumers caught in the middle. A new standard aims to help.",
-      "author": "Sarah Perez",
-      "source": "TechCrunch AI",
-      "sourceId": "techcrunch-ai",
-      "home": "https://techcrunch.com/category/artificial-intelligence/",
-      "weight": 1.8,
-      "lang": "en",
-      "category": "行业动态",
-      "publishedAt": "2026-10-06T19:56:50.000Z",
-      "publishedTs": 1791316610000,
-      "day": "2026-10-07",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 35
+      "hot": 38
     },
     {
       "id": "0h763ds",
@@ -4677,7 +3588,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 30
+      "hot": 29
     },
     {
       "id": "1paa1a6",
@@ -4697,7 +3608,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 42
+      "hot": 40
     },
     {
       "id": "0oyagx2",
@@ -4717,27 +3628,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 30
-    },
-    {
-      "id": "0uftjgc",
-      "title": "Hark releases an AI personal assistant with a focus on privacy",
-      "url": "https://techcrunch.com/2026/10/06/hark-releases-an-ai-personal-assistant-with-a-focus-on-privacy",
-      "summary": "The AI lab's personal assistant is an operating system from the future designed to compete with Muse, Dots, and Instinct.",
-      "author": "Tim Fernholz",
-      "source": "TechCrunch AI",
-      "sourceId": "techcrunch-ai",
-      "home": "https://techcrunch.com/category/artificial-intelligence/",
-      "weight": 1.8,
-      "lang": "en",
-      "category": "行业动态",
-      "publishedAt": "2026-10-06T18:22:45.000Z",
-      "publishedTs": 1791310965000,
-      "day": "2026-10-07",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 34
+      "hot": 28
     },
     {
       "id": "1js37ui",
@@ -4757,7 +3648,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 29
+      "hot": 27
     },
     {
       "id": "14pqz6p",
@@ -4777,67 +3668,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 30
-    },
-    {
-      "id": "1qca2p7",
-      "title": "Utah to let AI examine patients and prescribe medication without human oversight",
-      "url": "https://www.techspot.com/news/114111-utah-become-first-state-ai-examine-patients-prescribe.html",
-      "summary": "Article URL: https://www.techspot.com/news/114111-utah-become-first-state-ai-examine-patients-prescribe.html Comments URL: https://news.ycombinator.com/item?id=49981197 Points: 138 # Comments: 128",
-      "author": "healsdata",
-      "source": "Hacker News",
-      "sourceId": "hn-ai",
-      "home": "https://news.ycombinator.com",
-      "weight": 1.2,
-      "lang": "en",
-      "category": "行业动态",
-      "publishedAt": "2026-10-06T17:01:52.000Z",
-      "publishedTs": 1791306112000,
-      "day": "2026-10-07",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 27
-    },
-    {
-      "id": "07fppet",
-      "title": "Mirror Particle is building a ‘world model’ of human behavior",
-      "url": "https://techcrunch.com/2026/10/06/mirror-particle-is-building-a-world-model-of-human-behavior",
-      "summary": "Mirror Particle will launch at TechCrunch Disrupt's Startup Battlefield 200 with a world model built from scratch to predict human behavior, arguing that LLM role-play falls short for market research and brand strategy.",
-      "author": "Rebecca Bellan",
-      "source": "TechCrunch AI",
-      "sourceId": "techcrunch-ai",
-      "home": "https://techcrunch.com/category/artificial-intelligence/",
-      "weight": 1.8,
-      "lang": "en",
-      "category": "行业动态",
-      "publishedAt": "2026-10-06T16:35:00.000Z",
-      "publishedTs": 1791304500000,
-      "day": "2026-10-07",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 33
-    },
-    {
-      "id": "1leonwl",
-      "title": "OpenTPU – An open-source AI accelerator, developed by AI",
-      "url": "https://github.com/FeSens/openTPU",
-      "summary": "Article URL: https://github.com/FeSens/openTPU Comments URL: https://news.ycombinator.com/item?id=49980715 Points: 339 # Comments: 397",
-      "author": "fsbonetto",
-      "source": "Hacker News",
-      "sourceId": "hn-ai",
-      "home": "https://news.ycombinator.com",
-      "weight": 1.2,
-      "lang": "en",
-      "category": "开源工具",
-      "publishedAt": "2026-10-06T16:23:25.000Z",
-      "publishedTs": 1791303805000,
-      "day": "2026-10-07",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 27
+      "hot": 28
     },
     {
       "id": "12mxdqa",
@@ -4857,27 +3688,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 40
-    },
-    {
-      "id": "0q1ohaz",
-      "title": "Anthropic is giving startups a free year of Claude Team and $1,000 in credits",
-      "url": "https://techcrunch.com/2026/10/06/anthropic-gives-startups-a-free-year-of-enterprise-service-and-1000-in-token-credits",
-      "summary": "\"We created this program because we believe the benefits of AI will reach most people through the companies that build on top of models, rather than through the models alone.\"",
-      "author": "Russell Brandom",
-      "source": "TechCrunch AI",
-      "sourceId": "techcrunch-ai",
-      "home": "https://techcrunch.com/category/artificial-intelligence/",
-      "weight": 1.8,
-      "lang": "en",
-      "category": "模型发布",
-      "publishedAt": "2026-10-06T16:00:00.000Z",
-      "publishedTs": 1791302400000,
-      "day": "2026-10-07",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 33
+      "hot": 38
     },
     {
       "id": "061j2zw",
@@ -4897,7 +3708,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 29
+      "hot": 27
     },
     {
       "id": "00rurap",
@@ -4917,7 +3728,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 29
+      "hot": 27
     },
     {
       "id": "0ncd1pn",
@@ -4937,7 +3748,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 29
+      "hot": 27
     },
     {
       "id": "0ltx6bt",
@@ -4957,27 +3768,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 29
-    },
-    {
-      "id": "1tzuqpa",
-      "title": "Scrimshaw Jukebox",
-      "url": "https://simonwillison.net/2026/Oct/6/scrimshaw-jukebox",
-      "summary": "Tool: Scrimshaw Jukebox I wanted to see if Claude Opus 5.5 could compose music, so I tried this: I want you to write some computer game music for me. First design simple text based format for the music and build an artif…",
-      "author": "",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "home": "https://simonwillison.net",
-      "weight": 1.3,
-      "lang": "en",
-      "category": "模型发布",
-      "publishedAt": "2026-10-06T15:17:39.000Z",
-      "publishedTs": 1791299859000,
-      "day": "2026-10-06",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 28
+      "hot": 27
     },
     {
       "id": "03ycsqo",
@@ -4997,7 +3788,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 27
+      "hot": 26
     },
     {
       "id": "02h61r3",
@@ -5017,7 +3808,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 28
+      "hot": 27
     },
     {
       "id": "0sk0bke",
@@ -5037,27 +3828,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 32
-    },
-    {
-      "id": "0r8fecu",
-      "title": "Erdosproblems.com Succumbs to the AI Onslaught",
-      "url": "https://www.erdosproblems.com/forum/thread/blog:9",
-      "summary": "Article URL: https://www.erdosproblems.com/forum/thread/blog:9 Comments URL: https://news.ycombinator.com/item?id=49977689 Points: 118 # Comments: 55",
-      "author": "pfdietz",
-      "source": "Hacker News",
-      "sourceId": "hn-ai",
-      "home": "https://news.ycombinator.com",
-      "weight": 1.2,
-      "lang": "en",
-      "category": "行业动态",
-      "publishedAt": "2026-10-06T12:53:58.000Z",
-      "publishedTs": 1791291238000,
-      "day": "2026-10-06",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 26
+      "hot": 30
     },
     {
       "id": "03sxmqi",
@@ -5077,7 +3848,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 27
+      "hot": 26
     },
     {
       "id": "048301v",
@@ -5097,7 +3868,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 38
+      "hot": 37
     },
     {
       "id": "1ui06fh",
@@ -5117,7 +3888,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 38
+      "hot": 37
     },
     {
       "id": "14d5qb8",
@@ -5137,27 +3908,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 38
-    },
-    {
-      "id": "0cbmydi",
-      "title": "9499 元起售的华为 Mate 90 Pro Max，最值的还是相机",
-      "url": "http://www.geekpark.net/news/372088",
-      "summary": "相机好用之外，日常使用也有了新鲜感。 作者｜张勇毅 编辑｜靖宇 10 月 1 日，华为 Mate 90 系列正式发布。 最近几天，Mate 90 Pro Max 用下来，我最直接的感受是，影像能力是这一代毋庸置疑的最重要改变，可能没有之一。 作为华为每年的旗舰，Mate 系列其实每年都能在影像领域给我们带来很多惊喜，这一代 Mate 90 Pro Max 也确实有不少值得展开的相机规格。 拍合影时不知道怎么站，室内灯光把肤色染得不太对…",
-      "author": "",
-      "source": "极客公园",
-      "sourceId": "geekpark",
-      "home": "https://www.geekpark.net",
-      "weight": 1.4,
-      "lang": "zh",
-      "category": "模型发布",
-      "publishedAt": "2026-10-06T08:33:30.000Z",
-      "publishedTs": 1791275610000,
-      "day": "2026-10-06",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 32
+      "hot": 36
     },
     {
       "id": "1ksmull",
@@ -5177,7 +3928,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 24
+      "hot": 23
     },
     {
       "id": "0zyyzhv",
@@ -5197,7 +3948,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 24
+      "hot": 23
     },
     {
       "id": "0f3izb8",
@@ -5217,47 +3968,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 30
-    },
-    {
-      "id": "0jpmrag",
-      "title": "AI tutoring with Khanmigo in a two-year school experiment",
-      "url": "https://edworkingpapers.com/ai26-1551",
-      "summary": "Article URL: https://edworkingpapers.com/ai26-1551 Comments URL: https://news.ycombinator.com/item?id=49972419 Points: 73 # Comments: 69",
-      "author": "bryan0",
-      "source": "Hacker News",
-      "sourceId": "hn-ai",
-      "home": "https://news.ycombinator.com",
-      "weight": 1.2,
-      "lang": "en",
-      "category": "行业动态",
-      "publishedAt": "2026-10-06T00:00:45.000Z",
-      "publishedTs": 1791244845000,
-      "day": "2026-10-06",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 22
-    },
-    {
-      "id": "0iso6zo",
-      "title": "Quoting Felix Rieseberg",
-      "url": "https://simonwillison.net/2026/Oct/5/felix-rieseberg",
-      "summary": "The \"old\" version of Cowork runs model inference in the cloud, executing tool calls in an Anthropic-provided VM we shipped to your computer. We added the VM for capability, safety, and security reasons - mapping in just…",
-      "author": "",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "home": "https://simonwillison.net",
-      "weight": 1.3,
-      "lang": "en",
-      "category": "行业动态",
-      "publishedAt": "2026-10-05T23:56:47.000Z",
-      "publishedTs": 1791244607000,
-      "day": "2026-10-06",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 23
+      "hot": 29
     },
     {
       "id": "1oqatw8",
@@ -5277,7 +3988,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 35
+      "hot": 34
     },
     {
       "id": "1vq0ywr",
@@ -5297,7 +4008,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 23
+      "hot": 22
     },
     {
       "id": "1hmg40l",
@@ -5317,27 +4028,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 23
-    },
-    {
-      "id": "1plti1r",
-      "title": "AI Companies Are Parasites",
-      "url": "https://www.coryd.dev/posts/2026/ai-companies-are-parasites",
-      "summary": "Article URL: https://www.coryd.dev/posts/2026/ai-companies-are-parasites Comments URL: https://news.ycombinator.com/item?id=49969369 Points: 71 # Comments: 37",
-      "author": "cdrnsf",
-      "source": "Hacker News",
-      "sourceId": "hn-ai",
-      "home": "https://news.ycombinator.com",
-      "weight": 1.2,
-      "lang": "en",
-      "category": "行业动态",
-      "publishedAt": "2026-10-05T19:30:10.000Z",
-      "publishedTs": 1791228610000,
-      "day": "2026-10-06",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 20
+      "hot": 22
     },
     {
       "id": "0o6x6su",
@@ -5357,7 +4048,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 22
+      "hot": 21
     },
     {
       "id": "09idp2p",
@@ -5377,7 +4068,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 22
+      "hot": 21
     },
     {
       "id": "0s8ylcv",
@@ -5397,7 +4088,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 22
+      "hot": 21
     },
     {
       "id": "1mpq6ed",
@@ -5417,7 +4108,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 22
+      "hot": 21
     },
     {
       "id": "02qi3gv",
@@ -5437,7 +4128,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 22
+      "hot": 21
     },
     {
       "id": "0u3xqij",
@@ -5457,7 +4148,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 22
+      "hot": 21
     },
     {
       "id": "0u3byi7",
@@ -5517,27 +4208,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 25
-    },
-    {
-      "id": "0zpbdrp",
-      "title": "Accept 'bad things' in return for benefits of AI, says Sam Altman",
-      "url": "https://www.theguardian.com/technology/2026/oct/05/sam-altman-open-ai-chatgpt-benefits-risks",
-      "summary": "Article URL: https://www.theguardian.com/technology/2026/oct/05/sam-altman-open-ai-chatgpt-benefits-risks Comments URL: https://news.ycombinator.com/item?id=49964248 Points: 63 # Comments: 122",
-      "author": "samizdis",
-      "source": "Hacker News",
-      "sourceId": "hn-ai",
-      "home": "https://news.ycombinator.com",
-      "weight": 1.2,
-      "lang": "en",
-      "category": "行业动态",
-      "publishedAt": "2026-10-05T12:56:18.000Z",
-      "publishedTs": 1791204978000,
-      "day": "2026-10-05",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 19
+      "hot": 24
     },
     {
       "id": "162qkqd",
@@ -5577,7 +4248,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 27
+      "hot": 26
     },
     {
       "id": "0dzkkjc",
@@ -5597,47 +4268,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 19
-    },
-    {
-      "id": "07e4c8n",
-      "title": "Qwen3.8 27B addition in words",
-      "url": "https://simonwillison.net/2026/Oct/4/qwen38-addition-in-words",
-      "summary": "Research: Qwen3.8 27B addition in words Colin Frasier posted on Bluesky about an experiment he ran over two years ago using GPT-4o to see how well it could \"compute the sum but return the answer in words\" across increasi…",
-      "author": "",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "home": "https://simonwillison.net",
-      "weight": 1.3,
-      "lang": "en",
-      "category": "模型发布",
-      "publishedAt": "2026-10-04T23:34:00.000Z",
-      "publishedTs": 1791156840000,
-      "day": "2026-10-05",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
       "hot": 18
-    },
-    {
-      "id": "1idp8cs",
-      "title": "Homa: The end of TCP for AI clusters [video]",
-      "url": "https://www.youtube.com/watch?v=eZ8WWZzoaR0",
-      "summary": "Paper: https://www.usenix.org/system/files/atc21-ousterhout.pdfRelated: https://lwn.net/Articles/1003059/, https://www.theregister.com/networks/2026/10/01/stanford-pro... Comments URL: https://news.ycombinator.com/item?i…",
-      "author": "signa11",
-      "source": "Hacker News",
-      "sourceId": "hn-ai",
-      "home": "https://news.ycombinator.com",
-      "weight": 1.2,
-      "lang": "en",
-      "category": "行业动态",
-      "publishedAt": "2026-10-04T19:42:25.000Z",
-      "publishedTs": 1791142945000,
-      "day": "2026-10-05",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 16
     },
     {
       "id": "1p0afl7",
@@ -5657,7 +4288,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 24
+      "hot": 23
     },
     {
       "id": "15baqri",
@@ -5698,66 +4329,6 @@
       "bulk": false,
       "alsoIn": [],
       "hot": 30
-    },
-    {
-      "id": "1rl94m9",
-      "title": "Show HN: AI search for every photo and every frame of video on macOS",
-      "url": "https://github.com/allenv0/SCM",
-      "summary": "Article URL: https://github.com/allenv0/SCM Comments URL: https://news.ycombinator.com/item?id=49952111 Points: 178 # Comments: 74",
-      "author": "allenleee",
-      "source": "Hacker News",
-      "sourceId": "hn-ai",
-      "home": "https://news.ycombinator.com",
-      "weight": 1.2,
-      "lang": "en",
-      "category": "开源工具",
-      "publishedAt": "2026-10-04T09:24:52.000Z",
-      "publishedTs": 1791105892000,
-      "day": "2026-10-04",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 15
-    },
-    {
-      "id": "0dl2kjp",
-      "title": "How to scale intent, quality, and artistry with AI [video]",
-      "url": "https://www.youtube.com/watch?v=GLvFTMtw4Jk",
-      "summary": "Article URL: https://www.youtube.com/watch?v=GLvFTMtw4Jk Comments URL: https://news.ycombinator.com/item?id=49951891 Points: 103 # Comments: 51",
-      "author": "simonjgreen",
-      "source": "Hacker News",
-      "sourceId": "hn-ai",
-      "home": "https://news.ycombinator.com",
-      "weight": 1.2,
-      "lang": "en",
-      "category": "行业动态",
-      "publishedAt": "2026-10-04T08:41:58.000Z",
-      "publishedTs": 1791103318000,
-      "day": "2026-10-04",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 15
-    },
-    {
-      "id": "0y3jp6j",
-      "title": "What's the future for pure math research in the age of AI?",
-      "url": "https://writings.stephenwolfram.com/2026/09/whats-the-future-for-pure-math-research-in-the-age-of-ai",
-      "summary": "Article URL: https://writings.stephenwolfram.com/2026/09/whats-the-future-for-pure-math-research-in-the-age-of-ai/ Comments URL: https://news.ycombinator.com/item?id=49951641 Points: 69 # Comments: 54",
-      "author": "6bitquant",
-      "source": "Hacker News",
-      "sourceId": "hn-ai",
-      "home": "https://news.ycombinator.com",
-      "weight": 1.2,
-      "lang": "en",
-      "category": "行业动态",
-      "publishedAt": "2026-10-04T07:53:45.000Z",
-      "publishedTs": 1791100425000,
-      "day": "2026-10-04",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 15
     },
     {
       "id": "1nb7jxx",
@@ -5840,26 +4411,6 @@
       "hot": 23
     },
     {
-      "id": "0q8z0mc",
-      "title": "We're going to need default hard budget caps on pretty much everything",
-      "url": "https://simonwillison.net/2026/Oct/3/default-hard-budget-caps",
-      "summary": "Here's a product feature which the world is going to need a whole lot more of over the coming months and years: default hard budget caps. I'm talking about the feature of pay-by-usage services and APIs that lets you say…",
-      "author": "",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "home": "https://simonwillison.net",
-      "weight": 1.3,
-      "lang": "en",
-      "category": "行业动态",
-      "publishedAt": "2026-10-03T23:34:02.000Z",
-      "publishedTs": 1791070442000,
-      "day": "2026-10-04",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 15
-    },
-    {
       "id": "1qo81r1",
       "title": "🔥 AI 员工支持知识库文档引用：开源 AI 无代码平台 NocoBase",
       "url": "https://www.oschina.net/news/502842",
@@ -5897,7 +4448,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 16
+      "hot": 15
     },
     {
       "id": "0amfxih",
@@ -5917,7 +4468,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 22
+      "hot": 21
     },
     {
       "id": "012sny2",
@@ -6060,26 +4611,6 @@
       "hot": 19
     },
     {
-      "id": "00jxn7p",
-      "title": "pwasm 0.2a0",
-      "url": "https://simonwillison.net/2026/Oct/1/pwasm",
-      "summary": "Release: pwasm 0.2a0 pwasm is one of my folly projects - an entirely vibe-coded pure Python WebAssembly engine that I built in January during my first bout of AI mania. I hadn't touched it since January, so I decided to…",
-      "author": "",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "home": "https://simonwillison.net",
-      "weight": 1.3,
-      "lang": "en",
-      "category": "行业动态",
-      "publishedAt": "2026-10-01T17:10:31.000Z",
-      "publishedTs": 1790874631000,
-      "day": "2026-10-02",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 14
-    },
-    {
       "id": "1nrywdf",
       "title": "The eternal complement",
       "url": "https://openai.com/index/the-eternal-complement",
@@ -6097,7 +4628,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 26
+      "hot": 25
     },
     {
       "id": "0frqlpl",
@@ -6117,7 +4648,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 26
+      "hot": 25
     },
     {
       "id": "1ozm5hm",
@@ -6178,26 +4709,6 @@
       "bulk": false,
       "alsoIn": [],
       "hot": 18
-    },
-    {
-      "id": "0xprbl9",
-      "title": "Quoting Matthew Green",
-      "url": "https://simonwillison.net/2026/Oct/1/matthew-green",
-      "summary": "[...] Put these pieces together and you have the two halves of a worm: a payload that hijacks the agent, and an agent that will carry the payload to the next agent. Agents in separately-isolated sandboxes discovered that…",
-      "author": "",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "home": "https://simonwillison.net",
-      "weight": 1.3,
-      "lang": "en",
-      "category": "产品动态",
-      "publishedAt": "2026-10-01T06:29:01.000Z",
-      "publishedTs": 1790836141000,
-      "day": "2026-10-01",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 13
     },
     {
       "id": "0acd6bj",
@@ -6540,6 +5051,26 @@
       "hot": 19
     },
     {
+      "id": "0qb8cdt",
+      "title": "Termexo v0.10.9 发布：五种 Agent 状态集中显示，终端内可确认完成",
+      "url": "https://www.oschina.net/news/502815",
+      "summary": "开源 Windows 多 Agent 工作台 Termexo 发布 v0.10.9。这次更新把工作区内的 Agent 状态收成按终端顺序排列的图标：空闲为灰色，运行和思考为绿色闪动，异常与等待授权为红色，完成为绿色对号。鼠标悬停可查看对应窗口名称；重命名终端后，提示名称也会同步更新。 状态提醒的目的是帮助开发者找到需要处理的终端。看到完...",
+      "author": "",
+      "source": "开源中国",
+      "sourceId": "oschina",
+      "home": "https://www.oschina.net",
+      "weight": 1.3,
+      "lang": "zh",
+      "category": "产品动态",
+      "publishedAt": "2026-09-30T05:20:38.000Z",
+      "publishedTs": 1790745638000,
+      "day": "2026-09-30",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 26
+    },
+    {
       "id": "0q18qou",
       "title": "DeepSeek 开源昇腾基础组件",
       "url": "https://www.oschina.net/news/502814",
@@ -6660,46 +5191,6 @@
       "hot": 13
     },
     {
-      "id": "06ikbf3",
-      "title": "Introducing GPT-6.1 Sol",
-      "url": "https://openai.com/index/introducing-gpt-6-1-sol",
-      "summary": "Meet GPT-6.1 Sol: near-Astra intelligence for coding, computer use, and professional work at one-fifth of Astra’s standard API input and output token prices.",
-      "author": "",
-      "source": "OpenAI",
-      "sourceId": "openai",
-      "home": "https://openai.com/news",
-      "weight": 2.5,
-      "lang": "en",
-      "category": "模型发布",
-      "publishedAt": "2026-09-29T17:00:00.000Z",
-      "publishedTs": 1790701200000,
-      "day": "2026-09-30",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 25
-    },
-    {
-      "id": "0d51gui",
-      "title": "Photo Scrubber — local face blur & metadata removal",
-      "url": "https://simonwillison.net/2026/Sep/29/photo-scrubber",
-      "summary": "Tool: Photo Scrubber — local face blur & metadata removal I took a photograph of some protesters, then thought about how I don't like sharing photographs of strangers with identifiable faces. I had GPT-6 Astra build this…",
-      "author": "",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "home": "https://simonwillison.net",
-      "weight": 1.3,
-      "lang": "en",
-      "category": "模型发布",
-      "publishedAt": "2026-09-29T16:45:27.000Z",
-      "publishedTs": 1790700327000,
-      "day": "2026-09-30",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 13
-    },
-    {
       "id": "0pg7jfu",
       "title": "OpenAI DevDay 2026 live blog",
       "url": "https://simonwillison.net/2026/Sep/29/openai-devday-2026-live-blog",
@@ -6738,6 +5229,26 @@
       "bulk": false,
       "alsoIn": [],
       "hot": 20
+    },
+    {
+      "id": "06ikbf3",
+      "title": "Introducing GPT-6.1 Sol",
+      "url": "https://openai.com/index/introducing-gpt-6-1-sol",
+      "summary": "Meet GPT-6.1 Sol: near-Astra intelligence for coding, computer use, and professional work at one-fifth of Astra’s standard API input and output token prices.",
+      "author": "",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "home": "https://openai.com/news",
+      "weight": 2.5,
+      "lang": "en",
+      "category": "模型发布",
+      "publishedAt": "2026-09-29T10:00:00.000Z",
+      "publishedTs": 1790676000000,
+      "day": "2026-09-29",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 25
     },
     {
       "id": "00du1j1",
@@ -6860,26 +5371,6 @@
       "hot": 20
     },
     {
-      "id": "1nthj4a",
-      "title": "Claude Sonnet 5.5 发布：速度快 3 成、Agent 编程评测从 10% 跳到 70%",
-      "url": "https://www.oschina.net/news/502794/claude-sonnet-5-5",
-      "summary": "Claude 5.5 家族的第二个成员今天发布：Sonnet 5.5。Anthropic 把它定位成 Opus 5.5 的「快而省」互补款——专攻范围明确的高频日常任务、修 bug、做文档和表格，还强调它有敏锐的设计眼光。官方口径一句话：比 Sonnet 5 清晰升级，速度快 30% 以上，多数任务成本低 30%。 性能数据的跳跃有点夸张。Sonnet 5.5 在 agenti...",
-      "author": "",
-      "source": "开源中国",
-      "sourceId": "oschina",
-      "home": "https://www.oschina.net",
-      "weight": 1.3,
-      "lang": "zh",
-      "category": "产品动态",
-      "publishedAt": "2026-09-29T04:14:33.000Z",
-      "publishedTs": 1790655273000,
-      "day": "2026-09-29",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 19
-    },
-    {
       "id": "0vo35se",
       "title": "AMD 82 亿美元收购李飞飞 AI 创业公司；Manus 推出个人 AI 助手 CUE；今年低价手机将减少 2.3 亿部｜极客早知道",
       "url": "http://www.geekpark.net/news/371359",
@@ -6960,26 +5451,6 @@
       "hot": 13
     },
     {
-      "id": "06uhn0z",
-      "title": "Quoting @joedaroo",
-      "url": "https://simonwillison.net/2026/Sep/28/joedaroo",
-      "summary": "To say that we were surprised at the jump and suddenness of the capabilities of our models when it came to “cyber” or “swarming” or “message boards” or anything else related to the incidents is an understatement. Securit…",
-      "author": "",
-      "source": "Simon Willison",
-      "sourceId": "simonwillison",
-      "home": "https://simonwillison.net",
-      "weight": 1.3,
-      "lang": "en",
-      "category": "行业动态",
-      "publishedAt": "2026-09-28T19:11:42.000Z",
-      "publishedTs": 1790622702000,
-      "day": "2026-09-29",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 13
-    },
-    {
       "id": "0q47ed1",
       "title": "How we will do better for Australia",
       "url": "https://openai.com/index/how-we-will-do-better-for-australia",
@@ -7018,26 +5489,6 @@
       "bulk": false,
       "alsoIn": [],
       "hot": 25
-    },
-    {
-      "id": "0u05jmk",
-      "title": "中国智能汽车的后台，越来越像阿里云的主场",
-      "url": "http://www.geekpark.net/news/371357",
-      "summary": "中国智能汽车产业，正在经历一场没有硝烟、却极为深刻的范式迭代。 在 2026 云栖大会汽车行业峰会上，我们看到了智能汽车竞争的主线：智能座舱正全面进入 Agent 时代，车不再是执行指令的机器，而是能理解你的意图、主动帮你把事情办成的智能体；智能驾驶的竞争，也早已从算法层下沉到工程层。数据产线的效率、训练集群的稳定性、模型迭代的周期，这些工程层的东西，正在决定胜负。 如果切换一下视角，会发现另一条更隐蔽的竞争主线正在成形：谁能成为中国智…",
-      "author": "",
-      "source": "极客公园",
-      "sourceId": "geekpark",
-      "home": "https://www.geekpark.net",
-      "weight": 1.4,
-      "lang": "zh",
-      "category": "产品动态",
-      "publishedAt": "2026-09-28T14:54:50.000Z",
-      "publishedTs": 1790607290000,
-      "day": "2026-09-28",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 20
     },
     {
       "id": "0nqpkai",
@@ -7098,26 +5549,6 @@
       "bulk": false,
       "alsoIn": [],
       "hot": 14
-    },
-    {
-      "id": "1ntg7gu",
-      "title": "从超级个体到超级组织，究竟还有多远？",
-      "url": "http://www.geekpark.net/news/371104",
-      "summary": "9 月 22 日上午，阿里巴巴集团 CEO 吴泳铭站在云栖大会主论坛上讲到 AI 时，又一次用了电力作为参照。 今天回头来看，电几乎成为了现代社会最重要的基础设施生产力。 但 1882 年，即便是最负盛名的科学家与商人爱迪生，所能想到的事情也不过是在纽约珍珠街建起一个电站，点亮 400 盏电灯。甚至在当时为了推广电灯，还不得不用免费赠送半年电力的方式来吸引用户。 今天的 AI Coding，很可能也只是「电灯」——它已经能替代一部分旧工…",
-      "author": "",
-      "source": "极客公园",
-      "sourceId": "geekpark",
-      "home": "https://www.geekpark.net",
-      "weight": 1.4,
-      "lang": "zh",
-      "category": "产品动态",
-      "publishedAt": "2026-09-28T08:08:56.000Z",
-      "publishedTs": 1790582936000,
-      "day": "2026-09-28",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 20
     },
     {
       "id": "0p21kob",
@@ -7820,26 +6251,6 @@
       "hot": 18
     },
     {
-      "id": "03tz4i1",
-      "title": "AI Security Is an Engineering Problem — How to Solve It at Every Layer of the Agent Stack",
-      "url": "https://blogs.nvidia.com/blog/ai-security-agent-stack",
-      "summary": "AI security is an engineering problem. That means defined security requirements, enforceable controls, named owners and evidence that protections work. As AI becomes more capable, the industry must accelerate security en…",
-      "author": "Saša Zdjelar",
-      "source": "NVIDIA",
-      "sourceId": "nvidia",
-      "home": "https://blogs.nvidia.com",
-      "weight": 1.8,
-      "lang": "en",
-      "category": "产品动态",
-      "publishedAt": "2026-09-21T14:51:34.000Z",
-      "publishedTs": 1790002294000,
-      "day": "2026-09-21",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 18
-    },
-    {
       "id": "10ek50u",
       "title": "Advisory Group on Mathematics and Artificial Intelligence",
       "url": "https://openai.com/index/advisory-group-on-mathematics-and-ai",
@@ -8458,26 +6869,6 @@
       "bulk": false,
       "alsoIn": [],
       "hot": 25
-    },
-    {
-      "id": "1s6pmym",
-      "title": "Four groups caught using the same Chrome and Windows exploit kit",
-      "url": "https://arstechnica.com/information-technology/2026/09/4-groups-caught-using-the-same-chrome-and-windows-exploit-kit",
-      "summary": "A patch gap and the hastened pace of AI-based vulnerability discovery are likely contributors.",
-      "author": "Dan Goodin",
-      "source": "Ars Technica",
-      "sourceId": "arstechnica",
-      "home": "https://arstechnica.com",
-      "weight": 1.4,
-      "lang": "en",
-      "category": "行业动态",
-      "publishedAt": "2026-09-09T20:55:02.000Z",
-      "publishedTs": 1788987302000,
-      "day": "2026-09-10",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 14
     },
     {
       "id": "0rqgknm",
@@ -9434,26 +7825,6 @@
       "publishedAt": "2026-08-25T00:00:00.000Z",
       "publishedTs": 1787616000000,
       "day": "2026-08-25",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 25
-    },
-    {
-      "id": "07xd13r",
-      "title": "Advancing price-performance for developers with GPT‑5.6 in Kiro",
-      "url": "https://openai.com/index/gpt-5-6-in-kiro",
-      "summary": "GPT‑5.6 is now available in Kiro, helping developers plan, build, review, and test software with better price-performance.",
-      "author": "",
-      "source": "OpenAI",
-      "sourceId": "openai",
-      "home": "https://openai.com/news",
-      "weight": 2.5,
-      "lang": "en",
-      "category": "模型发布",
-      "publishedAt": "2026-08-24T12:00:00.000Z",
-      "publishedTs": 1787572800000,
-      "day": "2026-08-24",
       "estimate": false,
       "bulk": false,
       "alsoIn": [],

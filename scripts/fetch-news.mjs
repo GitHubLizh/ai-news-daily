@@ -134,7 +134,7 @@ async function main() {
     let filtered = 0;
     let limited = 0;
     if (feed.relevance === 'tech') {
-      const kept = items.filter((item) => isAiRelated(item.title, item.summary));
+      const kept = items.filter((item) => isAiRelated(item.title));
       filtered = items.length - kept.length;
       accepted = kept;
     }
@@ -157,8 +157,13 @@ async function main() {
   }
 
   const now = Date.now();
+  // 规则可能已经调整，历史数据里的综合科技站条目按当前规则重新裁决后再合并
+  const techFeedIds = new Set(config.feeds.filter((feed) => feed.relevance === 'tech').map((feed) => feed.id));
+  const existingKept = existing.filter((item) => !techFeedIds.has(item.sourceId) || isAiRelated(item.title));
+  const pruned = existing.length - existingKept.length;
+
   // 本次抓取结果排在前面：去重时优先采用刚拿到的新鲜条目
-  const dataset = buildDataset([...collected, ...existing], {
+  const dataset = buildDataset([...collected, ...existingKept], {
     now,
     timezone: config.timezone,
     retentionDays: config.retentionDays,
@@ -177,6 +182,7 @@ async function main() {
   console.log(
     `\n✅ 源可用 ${okCount}/${report.length}｜新增抓取 ${collected.length} 条｜去重后保留 ${dataset.count} 条｜耗时 ${((Date.now() - started) / 1000).toFixed(1)}s`,
   );
+  if (pruned > 0) console.log(`🧹 按当前相关性规则清理历史条目 ${pruned} 条`);
   console.log(`   最新日期：${dataset.days[0]?.label ?? '—'}｜语言：中文 ${dataset.stats.languages.zh} / 英文 ${dataset.stats.languages.en}`);
 
   if (dryRun) {

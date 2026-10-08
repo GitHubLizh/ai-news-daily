@@ -11,6 +11,7 @@ const STORAGE_KEYS = {
   theme: 'ainews.theme',
   read: 'ainews.read',
   bookmarks: 'ainews.bookmarks',
+  lang: 'ainews.lang',
 };
 
 /** 分类 -> 标签配色（见 styles.css 的 tone-*） */
@@ -31,7 +32,7 @@ const state = {
   view: 'today', // today | all | day | bookmarks
   day: null,
   category: 'all',
-  lang: 'all',
+  lang: 'zh', // 默认只看中文，切换后会记在本地
   sort: 'time',
   query: '',
   hideRead: false,
@@ -258,6 +259,7 @@ function scopeItems() {
 
 /* --------------------------------------------------------------- Hero */
 
+/** Hero 展示当前语言偏好下、最新一天里热度最高的一条 */
 function renderHero() {
   const box = $('#hero');
   const all = state.data.items;
@@ -267,8 +269,11 @@ function renderHero() {
   }
   const latestDay = state.data.days?.[0]?.day;
   const todays = all.filter((item) => item.day === latestDay);
-  const featured = [...todays].sort((a, b) => b.hot - a.hot)[0] || all[0];
+  const preferred = state.lang === 'all' ? todays : todays.filter((item) => item.lang === state.lang);
+  const pool = preferred.length ? preferred : todays;
+  const featured = [...pool].sort((a, b) => b.hot - a.hot)[0] || all[0];
   const isToday = latestDay === todayKey();
+  const scopeLabel = state.lang === 'zh' ? '中文更新' : state.lang === 'en' ? '英文更新' : '当日更新';
 
   box.hidden = false;
   box.innerHTML = `
@@ -284,10 +289,10 @@ function renderHero() {
       <span class="hero-chip">${escapeHtml(featured.category)}</span>
       <span class="hero-chip">来源 ${escapeHtml(featured.source)}</span>
       <span class="hero-chip">${escapeHtml(relativeTime(featured.publishedTs))}</span>
-      <a class="hero-cta" href="#/day/${encodeURIComponent(latestDay)}">查看当日 ${todays.length} 条 →</a>
+      <a class="hero-cta" href="#/day/${encodeURIComponent(latestDay)}">查看当日 ${pool.length} 条 →</a>
     </div>
     <div class="hero-stats">
-      <div class="hero-stat"><b>${todays.length}</b><span>当日更新</span></div>
+      <div class="hero-stat"><b>${pool.length}</b><span>${scopeLabel}</span></div>
       <div class="hero-stat"><b>${state.data.stats.sources.length}</b><span>覆盖来源</span></div>
       <div class="hero-stat"><b>${all.length}</b><span>归档条目</span></div>
     </div>
@@ -380,9 +385,13 @@ function renderFeed() {
     feed.innerHTML = '';
     moreWrap.hidden = true;
     empty.hidden = false;
+    const langHint =
+      state.lang !== 'all' && baseItems().some((item) => item.lang !== state.lang)
+        ? `<br />当前范围还有 ${baseItems().filter((item) => item.lang !== state.lang).length} 条${state.lang === 'zh' ? '英文' : '中文'}资讯，可切换语言查看。`
+        : '';
     empty.innerHTML = state.view === 'bookmarks' && !state.bookmarks.size
       ? '<b>还没有收藏</b>点击资讯卡片右下角的「☆ 收藏」，之后可以在这里集中查看。'
-      : '<b>没有符合条件的资讯</b>试试放宽筛选条件，或切换日期 / 分类。<br /><button type="button" class="ghost-btn" data-action="reset" style="margin-top:12px">重置筛选</button>';
+      : `<b>没有符合条件的资讯</b>试试放宽筛选条件，或切换日期 / 分类。${langHint}<br /><button type="button" class="ghost-btn" data-action="reset" style="margin-top:12px">重置筛选</button>`;
     return;
   }
 
@@ -635,6 +644,9 @@ function renderAbout() {
     <h3>热度口径</h3>
     <p>热度 = 50% 时效衰减（36 小时半衰期）+ 25% 来源权重（<code>feeds.json</code> 中的 weight）+ 25% 热点关键词命中，归一到 0~100。它只是排序辅助，不代表真实阅读量。</p>
 
+    <h3>浏览方式</h3>
+    <p>默认只显示中文资讯，切换「英文 / 全部语言」后会记住你的选择。日期、分类、语言、排序状态都会写进地址栏，可以直接把链接分享给别人。</p>
+
     <h3>去重与分类</h3>
     <p>按规范化 URL 与标题去重，跨源转载会合并并标注「另见」；分类由关键词规则自动判定（标题命中权重更高），可能有个别误判。</p>
 
@@ -745,6 +757,11 @@ function bindEvents() {
     if (!button) return;
     state.lang = button.dataset.lang;
     state.limit = PAGE_SIZE;
+    try {
+      localStorage.setItem(STORAGE_KEYS.lang, state.lang);
+    } catch {
+      /* 隐私模式下忽略 */
+    }
     render();
   });
 
@@ -864,7 +881,7 @@ function bindEvents() {
       $('#aboutDialog').showModal?.();
     } else if (kind === 'reset') {
       state.category = 'all';
-      state.lang = 'all';
+      state.lang = 'zh';
       state.sort = 'time';
       state.query = '';
       state.hideRead = false;
@@ -873,6 +890,11 @@ function bindEvents() {
       state.view = 'today';
       state.limit = PAGE_SIZE;
       $('#search').value = '';
+      try {
+        localStorage.setItem(STORAGE_KEYS.lang, state.lang);
+      } catch {
+        /* 忽略 */
+      }
       render();
     } else if (kind === 'menu') {
       const nav = $('#nav');
@@ -905,6 +927,12 @@ async function main() {
   initTheme();
   state.read = loadSet(STORAGE_KEYS.read);
   state.bookmarks = loadSet(STORAGE_KEYS.bookmarks);
+  try {
+    const savedLang = localStorage.getItem(STORAGE_KEYS.lang);
+    if (savedLang === 'zh' || savedLang === 'en' || savedLang === 'all') state.lang = savedLang;
+  } catch {
+    /* 忽略 */
+  }
   bindEvents();
 
   $('#feed').innerHTML = '<div class="skeleton"></div><div class="skeleton"></div><div class="skeleton"></div>';
