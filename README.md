@@ -1,5 +1,7 @@
 # AI 资讯速递
 
+**线上地址：<https://githublizh.github.io/ai-news-daily/>**（每天北京时间 06:00 自动更新）
+
 一个自建的 AI 资讯聚合站：每天抓取国内外公开 RSS 源，去重、分类、按天归档后写入一份静态 JSON，
 页面纯前端渲染。没有账号、没有广告，适合自己和朋友每天花几分钟扫一眼 AI 圈发生了什么。
 
@@ -9,7 +11,8 @@
 
 ## 特性
 
-- **按天归档的资讯流**：日期分组 + 粘性表头，跨源转载自动合并并标注「另见」
+- **按天归档的资讯流**：默认「最新」视图把全部归档按天从新到旧铺开，日期分组 + 粘性表头，
+  跨源转载自动合并并标注「另见」（凌晨时段最新一天可能只有零星几条，头条与统计会自动带上前一天）
 - **日期查询日历**：年 / 月 / 日三级切换，有数据的日期带标记，可一键跳到某天
 - **分类筛选**：模型发布 / 产品动态 / 研究前沿 / 行业动态 / 开源工具 / 观点方法
 - **搜索**：标题、摘要、来源、转载来源全文匹配，按 `/` 快速聚焦
@@ -119,7 +122,8 @@ npm run fetch && npm run build     # 生成 dist/
 站点是纯静态产物，把 `dist/` 作为站点根目录发布即可（也可以直接发布仓库根目录）。
 
 - **GitHub Pages**：仓库已带 `.github/workflows/refresh-and-deploy.yml`，每天北京时间 06:00
-  自动抓取、提交 `data/news.json` 与 `data/feed.xml`、构建 `dist/` 并发布站点。首次使用需在仓库
+  自动抓取、提交 `data/news.json` 与 `data/feed.xml`、构建 `dist/` 并发布站点。
+  本项目已按此方式部署在 <https://githublizh.github.io/ai-news-daily/>；换仓库时需在
   `Settings → Pages → Build and deployment` 把 Source 选为 **GitHub Actions**。
 - **Vercel / Netlify**：构建命令填 `npm run fetch && npm run build`，发布目录填 `dist`。
 - **本地自用**：`npm run fetch && npm run dev`，局域网内其他设备可通过 `HOST=0.0.0.0` 访问。

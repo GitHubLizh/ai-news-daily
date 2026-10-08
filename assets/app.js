@@ -29,7 +29,7 @@ const $$ = (selector, scope = document) => [...scope.querySelectorAll(selector)]
 
 const state = {
   data: null,
-  view: 'today', // today | all | day | bookmarks
+  view: 'all', // all | today | day | bookmarks（默认展示全部归档，最新在前）
   day: null,
   category: 'all',
   lang: 'zh', // 默认只看中文，切换后会记在本地
@@ -170,8 +170,8 @@ function initTheme() {
 function parseHash() {
   const raw = location.hash.replace(/^#\/?/, '');
   const parts = raw.split('/').filter(Boolean).map(decodeURIComponent);
-  const next = { view: 'today', day: null, category: 'all' };
-  if (parts[0] === 'all' || parts[0] === 'bookmarks') next.view = parts[0];
+  const next = { view: 'all', day: null, category: 'all' };
+  if (parts[0] === 'all' || parts[0] === 'today' || parts[0] === 'bookmarks') next.view = parts[0];
   for (let i = 0; i < parts.length; i += 2) {
     const key = parts[i];
     const value = parts[i + 1];
@@ -190,9 +190,9 @@ function parseHash() {
 function writeHash() {
   const parts = [];
   if (state.view === 'bookmarks') parts.push('bookmarks');
-  else if (state.view === 'all') parts.push('all');
+  else if (state.view === 'today') parts.push('today');
   else if (state.view === 'day' && state.day) parts.push('day', state.day);
-  else parts.push('today');
+  else parts.push('all');
   if (state.category !== 'all') parts.push('cat', state.category);
   if (state.day && state.view !== 'day') parts.push('day', state.day);
   const next = `#/${parts.map(encodeURIComponent).join('/')}`;
@@ -228,10 +228,7 @@ function baseItems() {
   if (!state.data) return [];
   const all = state.data.items;
   if (state.view === 'bookmarks') return all.filter((item) => state.bookmarks.has(item.id));
-  if (state.view === 'today') {
-    const latest = state.data.days?.[0]?.day;
-    return latest ? all.filter((item) => item.day === latest) : all;
-  }
+  if (state.view === 'today') return all.filter((item) => item.day === todayKey());
   if (state.view === 'day' && state.day) return all.filter((item) => item.day === state.day);
   return all;
 }
@@ -267,19 +264,22 @@ function renderHero() {
     box.hidden = true;
     return;
   }
-  const latestDay = state.data.days?.[0]?.day;
-  const todays = all.filter((item) => item.day === latestDay);
+  // 跨零点后最新一天可能只有零星几条，这时把前一天一起纳入头条窗口
+  const days = state.data.days || [];
+  const windowDays = [days[0]?.day];
+  if ((days[0]?.count ?? 0) < 10 && days[1]) windowDays.push(days[1].day);
+  const todays = all.filter((item) => windowDays.includes(item.day));
   const preferred = state.lang === 'all' ? todays : todays.filter((item) => item.lang === state.lang);
   const pool = preferred.length ? preferred : todays;
   const featured = [...pool].sort((a, b) => b.hot - a.hot)[0] || all[0];
-  const isToday = latestDay === todayKey();
+  const isToday = featured.day === todayKey();
   const scopeLabel = state.lang === 'zh' ? '中文更新' : state.lang === 'en' ? '英文更新' : '当日更新';
 
   box.hidden = false;
   box.innerHTML = `
     <div class="hero-top">
       <span class="hero-eyebrow">Today Top News</span>
-      <span class="hero-date">${escapeHtml(dayLabelOf(latestDay))}${isToday ? ' · 今日' : ''}</span>
+      <span class="hero-date">${escapeHtml(dayLabelOf(featured.day))}${isToday ? ' · 今日' : ''}</span>
     </div>
     <h1 class="hero-title">
       <a href="${escapeHtml(featured.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(featured.title)}</a>
@@ -289,7 +289,7 @@ function renderHero() {
       <span class="hero-chip">${escapeHtml(featured.category)}</span>
       <span class="hero-chip">来源 ${escapeHtml(featured.source)}</span>
       <span class="hero-chip">${escapeHtml(relativeTime(featured.publishedTs))}</span>
-      <a class="hero-cta" href="#/day/${encodeURIComponent(latestDay)}">查看当日 ${pool.length} 条 →</a>
+      <a class="hero-cta" href="#/day/${encodeURIComponent(featured.day)}">查看当天 ${pool.length} 条 →</a>
     </div>
     <div class="hero-stats">
       <div class="hero-stat"><b>${pool.length}</b><span>${scopeLabel}</span></div>
@@ -372,10 +372,10 @@ function renderFeed() {
   const scopeText = state.view === 'bookmarks'
     ? '我的收藏'
     : state.view === 'today'
-      ? `${dayLabelOf(state.data.days?.[0]?.day || todayKey())} · 最新`
+      ? `${dayLabelOf(todayKey())} · 今天`
       : state.view === 'day' && state.day
         ? dayLabelOf(state.day)
-        : '全部归档';
+        : '全部归档 · 最新在前';
 
   head.innerHTML = `<b>${escapeHtml(scopeText)}</b><span>共 ${items.length} 条${
     state.query ? ` · 关键词“${escapeHtml(state.query)}”` : ''
@@ -692,8 +692,7 @@ function updateNav() {
   $$('#nav a[data-nav]').forEach((link) => {
     const key = link.dataset.nav;
     const active =
-      (key === 'today' && state.view === 'today') ||
-      (key === 'all' && (state.view === 'all' || state.view === 'day')) ||
+      (key === 'all' && (state.view === 'all' || state.view === 'today' || state.view === 'day')) ||
       (key === 'bookmarks' && state.view === 'bookmarks');
     link.classList.toggle('is-active', active);
   });
@@ -887,7 +886,7 @@ function bindEvents() {
       state.hideRead = false;
       state.onlyPapers = false;
       state.day = null;
-      state.view = 'today';
+      state.view = 'all';
       state.limit = PAGE_SIZE;
       $('#search').value = '';
       try {
