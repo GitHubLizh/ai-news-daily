@@ -1,0 +1,23 @@
+{
+  "name": "ai-news-daily",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "AI 资讯聚合站：抓取 RSS 生成静态数据，纯前端渲染，供自己和朋友查阅。零运行时依赖。",
+  "scripts": {
+    "fetch": "node scripts/fetch-news.mjs",
+    "dev": "node scripts/serve.mjs",
+    "start": "node scripts/serve.mjs",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "ai",
+    "news",
+    "rss",
+    "aggregator"
+  ],
+  "license": "MIT"
+}

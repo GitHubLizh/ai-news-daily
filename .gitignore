@@ -1,0 +1,21 @@
+# 依赖
+node_modules/
+
+# 环境变量与密钥
+.env
+.env.*
+
+# 日志与临时文件
+*.log
+npm-debug.log*
+.cache/
+.tmp/
+tmp/
+
+# 编辑器 / 系统
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini

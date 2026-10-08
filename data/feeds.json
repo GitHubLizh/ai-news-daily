@@ -1,0 +1,256 @@
+{
+  "_comment": "资讯源配置。enabled=false 不抓取；weight(1~3) 影响热度排序；relevance=ai 表示整站都是 AI 内容，tech 表示综合科技站、需按关键词过滤；timeShiftHours 用于修正源站标注错误的时区；bulkLimit 用于高频源（如 arXiv）按新闻性择优截断。npm run fetch 会打印每个源的成功/失败。",
+  "timezone": "Asia/Shanghai",
+  "retentionDays": 45,
+  "maxItems": 2500,
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36",
+  "feeds": [
+    {
+      "id": "qbitai",
+      "name": "量子位",
+      "url": "https://www.qbitai.com/feed",
+      "home": "https://www.qbitai.com",
+      "lang": "zh",
+      "weight": 2.2,
+      "relevance": "ai",
+      "enabled": true
+    },
+    {
+      "id": "infoq-cn",
+      "name": "InfoQ 中文",
+      "url": "https://www.infoq.cn/feed",
+      "home": "https://www.infoq.cn",
+      "lang": "zh",
+      "weight": 1.4,
+      "relevance": "tech",
+      "timeShiftHours": -8,
+      "enabled": true
+    },
+    {
+      "id": "ithome",
+      "name": "IT之家",
+      "url": "https://www.ithome.com/rss/",
+      "home": "https://www.ithome.com",
+      "lang": "zh",
+      "weight": 1.6,
+      "relevance": "tech",
+      "enabled": true
+    },
+    {
+      "id": "tmtpost",
+      "name": "钛媒体",
+      "url": "https://www.tmtpost.com/rss.xml",
+      "home": "https://www.tmtpost.com",
+      "lang": "zh",
+      "weight": 1.5,
+      "relevance": "tech",
+      "enabled": true
+    },
+    {
+      "id": "leiphone",
+      "name": "雷锋网",
+      "url": "https://www.leiphone.com/feed",
+      "home": "https://www.leiphone.com",
+      "lang": "zh",
+      "weight": 1.5,
+      "relevance": "tech",
+      "enabled": true
+    },
+    {
+      "id": "sspai",
+      "name": "少数派",
+      "url": "https://sspai.com/feed",
+      "home": "https://sspai.com",
+      "lang": "zh",
+      "weight": 1.4,
+      "relevance": "tech",
+      "enabled": true
+    },
+    {
+      "id": "ifanr",
+      "name": "爱范儿",
+      "url": "https://www.ifanr.com/feed",
+      "home": "https://www.ifanr.com",
+      "lang": "zh",
+      "weight": 1.4,
+      "relevance": "tech",
+      "enabled": true
+    },
+    {
+      "id": "oschina",
+      "name": "开源中国",
+      "url": "https://www.oschina.net/news/rss",
+      "home": "https://www.oschina.net",
+      "lang": "zh",
+      "weight": 1.3,
+      "relevance": "tech",
+      "enabled": true
+    },
+
+    {
+      "id": "openai",
+      "name": "OpenAI",
+      "url": "https://openai.com/news/rss.xml",
+      "home": "https://openai.com/news",
+      "lang": "en",
+      "weight": 2.5,
+      "relevance": "ai",
+      "enabled": true
+    },
+    {
+      "id": "deepmind",
+      "name": "Google DeepMind",
+      "url": "https://deepmind.google/blog/rss.xml",
+      "home": "https://deepmind.google/discover/blog/",
+      "lang": "en",
+      "weight": 2.3,
+      "relevance": "ai",
+      "enabled": true
+    },
+    {
+      "id": "techcrunch-ai",
+      "name": "TechCrunch AI",
+      "url": "https://techcrunch.com/category/artificial-intelligence/feed/",
+      "home": "https://techcrunch.com/category/artificial-intelligence/",
+      "lang": "en",
+      "weight": 1.8,
+      "relevance": "ai",
+      "enabled": true
+    },
+    {
+      "id": "the-decoder",
+      "name": "The Decoder",
+      "url": "https://the-decoder.com/feed/",
+      "home": "https://the-decoder.com",
+      "lang": "en",
+      "weight": 1.6,
+      "relevance": "ai",
+      "enabled": true
+    },
+    {
+      "id": "verge-ai",
+      "name": "The Verge AI",
+      "url": "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml",
+      "home": "https://www.theverge.com/ai-artificial-intelligence",
+      "lang": "en",
+      "weight": 1.6,
+      "relevance": "ai",
+      "enabled": true
+    },
+    {
+      "id": "mittr",
+      "name": "MIT 科技评论",
+      "url": "https://www.technologyreview.com/feed/",
+      "home": "https://www.technologyreview.com",
+      "lang": "en",
+      "weight": 1.5,
+      "relevance": "tech",
+      "enabled": true
+    },
+    {
+      "id": "marktechpost",
+      "name": "MarkTechPost",
+      "url": "https://www.marktechpost.com/feed/",
+      "home": "https://www.marktechpost.com",
+      "lang": "en",
+      "weight": 1.4,
+      "relevance": "ai",
+      "enabled": true
+    },
+    {
+      "id": "arstechnica",
+      "name": "Ars Technica",
+      "url": "https://feeds.arstechnica.com/arstechnica/technology-lab",
+      "home": "https://arstechnica.com",
+      "lang": "en",
+      "weight": 1.4,
+      "relevance": "tech",
+      "enabled": true
+    },
+    {
+      "id": "simonwillison",
+      "name": "Simon Willison",
+      "url": "https://simonwillison.net/atom/everything/",
+      "home": "https://simonwillison.net",
+      "lang": "en",
+      "weight": 1.3,
+      "relevance": "tech",
+      "enabled": true
+    },
+    {
+      "id": "hn-ai",
+      "name": "Hacker News",
+      "url": "https://hnrss.org/newest?q=AI+OR+LLM+OR+GPT&points=60",
+      "home": "https://news.ycombinator.com",
+      "lang": "en",
+      "weight": 1.2,
+      "relevance": "ai",
+      "enabled": true
+    },
+    {
+      "id": "arxiv-cs-ai",
+      "name": "arXiv cs.AI",
+      "url": "https://rss.arxiv.org/rss/cs.AI",
+      "home": "https://arxiv.org/list/cs.AI/recent",
+      "lang": "en",
+      "weight": 1.2,
+      "relevance": "ai",
+      "bulk": true,
+      "bulkLimit": 20,
+      "timeoutMs": 45000,
+      "enabled": true
+    },
+
+    {
+      "_comment": "以下源实测不可用，保留配置便于日后恢复",
+      "id": "jiqizhixin",
+      "name": "机器之心",
+      "url": "https://www.jiqizhixin.com/rss",
+      "home": "https://www.jiqizhixin.com",
+      "lang": "zh",
+      "weight": 2.2,
+      "relevance": "ai",
+      "enabled": false
+    },
+    {
+      "id": "36kr",
+      "name": "36氪",
+      "url": "https://36kr.com/feed",
+      "home": "https://36kr.com",
+      "lang": "zh",
+      "weight": 1.5,
+      "relevance": "tech",
+      "enabled": false
+    },
+    {
+      "id": "googleai",
+      "name": "Google AI",
+      "url": "https://blog.google/technology/ai/rss/",
+      "home": "https://blog.google/technology/ai/",
+      "lang": "en",
+      "weight": 2.3,
+      "relevance": "ai",
+      "enabled": false
+    },
+    {
+      "id": "huggingface",
+      "name": "Hugging Face",
+      "url": "https://huggingface.co/blog/feed.xml",
+      "home": "https://huggingface.co/blog",
+      "lang": "en",
+      "weight": 2.0,
+      "relevance": "ai",
+      "enabled": false
+    },
+    {
+      "id": "venturebeat-ai",
+      "name": "VentureBeat AI",
+      "url": "https://venturebeat.com/category/ai/feed/",
+      "home": "https://venturebeat.com/category/ai/",
+      "lang": "en",
+      "weight": 1.5,
+      "relevance": "ai",
+      "enabled": false
+    }
+  ]
+}
