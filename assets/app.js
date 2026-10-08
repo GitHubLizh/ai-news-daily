@@ -626,6 +626,8 @@ function renderAbout() {
     <h3>数据是怎么来的</h3>
     <ul>
       <li><code>npm run fetch</code> 抓取 <code>data/feeds.json</code> 中启用的源，写入 <code>data/news.json</code></li>
+      <li><code>npm run build</code> 生成可发布的 <code>dist/</code> 目录（也可直接部署仓库根目录）</li>
+      <li>同时导出订阅源 <a class="footer-link" href="data/feed.xml" target="_blank" rel="noopener">data/feed.xml</a>，可直接加进 RSS 阅读器</li>
       <li><code>npm run dev</code> 本地预览（默认 http://127.0.0.1:5173）</li>
       <li>整站无第三方依赖，可整体发布到 GitHub Pages / Vercel / Netlify 等静态托管</li>
     </ul>
@@ -657,7 +659,21 @@ function render() {
   renderCalendar();
   renderSidebar();
   updateNav();
+  renderFooter();
   writeHash();
+}
+
+function renderFooter() {
+  const generated = new Intl.DateTimeFormat('zh-CN', {
+    timeZone: timezone(),
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit',
+    hour: '2-digit',
+    minute: '2-digit',
+    hour12: false,
+  }).format(new Date(state.data.generatedAt));
+  $('#footerMeta').textContent = `数据更新于 ${generated}（${timezone()}）· 共 ${state.data.count} 条 · 覆盖 ${state.data.stats.sources.length} 个来源`;
 }
 
 function updateNav() {

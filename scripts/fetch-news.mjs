@@ -10,10 +10,12 @@ import { fileURLToPath } from 'node:url';
 
 import { parseFeed } from './lib/rss.mjs';
 import { buildDataset, hotKeywordHits, isAiRelated } from './lib/normalize.mjs';
+import { buildRssXml } from './lib/feed.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const FEEDS_FILE = path.join(ROOT, 'data', 'feeds.json');
 const OUTPUT_FILE = path.join(ROOT, 'data', 'news.json');
+const FEED_FILE = path.join(ROOT, 'data', 'feed.xml');
 const CONCURRENCY = 6;
 const TIMEOUT_MS = 25000;
 const MAX_ATTEMPTS = 3;
@@ -184,6 +186,11 @@ async function main() {
   await mkdir(path.dirname(OUTPUT_FILE), { recursive: true });
   await writeFile(OUTPUT_FILE, `${JSON.stringify(dataset, null, 2)}\n`, 'utf8');
   console.log(`💾 已写入 ${path.relative(ROOT, OUTPUT_FILE)}（${(JSON.stringify(dataset).length / 1024).toFixed(1)} KB）`);
+
+  // 顺带导出站点自己的订阅源，方便用阅读器订阅
+  const feedXml = buildRssXml(dataset, config.site, { limit: 120 });
+  await writeFile(FEED_FILE, feedXml, 'utf8');
+  console.log(`📡 已写入 ${path.relative(ROOT, FEED_FILE)}（最多 120 条，可用阅读器订阅）`);
 
   const failed = report.filter((row) => !row.ok);
   if (failed.length) process.exitCode = failed.length === report.length ? 1 : 0;

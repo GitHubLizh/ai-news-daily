@@ -97,6 +97,11 @@ html[data-theme='dark'] {
   box-sizing: border-box;
 }
 
+/* 自定义 display 的元素会盖掉浏览器默认的 [hidden] 规则，这里显式兜底 */
+[hidden] {
+  display: none !important;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -1182,6 +1187,20 @@ ul {
 
 .footer-inner p + p {
   margin-top: 6px;
+}
+
+.footer-link {
+  color: var(--brand);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.footer code {
+  padding: 1px 6px;
+  border-radius: 5px;
+  background: var(--bg-soft);
+  border: 1px solid var(--border);
+  font-size: 12px;
 }
 
 .dialog {

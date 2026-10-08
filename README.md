@@ -16,6 +16,8 @@
 - **中英文过滤**：自动识别语种，中英混排站点也能只看中文
 - **热度榜与来源分布**：侧栏实时统计当前范围的分类、来源与 TOP 10
 - **收藏与已读**：浏览器本地记录，支持「隐藏已读」和只看收藏
+- **站点自带订阅源**：每次抓取同步导出 `data/feed.xml`，可直接加进 RSS 阅读器
+- **一条命令打包**：`npm run build` 生成 `dist/`，丢到任意静态托管即可发布
 - **深色模式 / 响应式 / 可分享 URL**：`#/day/2026-10-08`、`#/all/cat/研究前沿` 等状态直接进地址栏
 - **零运行时依赖**：只用 Node 内置能力，无 `node_modules` 也能跑
 
@@ -40,9 +42,10 @@ npm test
 
 | 命令 | 说明 |
 | --- | --- |
-| `npm run fetch` | 抓取全部启用的源，归一化后写入 `data/news.json` |
+| `npm run fetch` | 抓取全部启用的源，写入 `data/news.json` 与 `data/feed.xml` |
 | `npm run fetch -- --dry` | 只抓取与统计，不写文件 |
 | `npm run fetch -- --only=qbitai,openai` | 只抓指定源，便于调试单个源 |
+| `npm run build` | 生成可发布的 `dist/` 目录 |
 | `npm run dev` / `npm start` | 启动本地静态预览服务（`PORT`、`HOST`、`CACHE_SECONDS` 可覆盖） |
 | `npm test` | 运行 `test/` 下的单元测试 |
 
@@ -54,16 +57,20 @@ npm test
 │  ├─ styles.css            # 设计变量 + 布局/组件样式（含深色模式）
 │  └─ app.js                # 前端逻辑：加载 JSON、筛选、日历、收藏、路由
 ├─ data/
-│  ├─ feeds.json            # 资讯源配置（启停、权重、相关性、时区修正）
-│  └─ news.json             # 聚合产物，由 npm run fetch 生成并提交进仓库
+│  ├─ feeds.json            # 资讯源配置（启停、权重、相关性、时区修正）+ 站点信息
+│  ├─ news.json             # 聚合产物，由 npm run fetch 生成并提交进仓库
+│  └─ feed.xml              # 站点自身的 RSS 订阅源，随每次抓取更新
 ├─ scripts/
 │  ├─ fetch-news.mjs        # 抓取 + 归一化 + 写盘
+│  ├─ build.mjs             # 组装可发布的 dist/
 │  ├─ serve.mjs             # 零依赖本地静态服务器
 │  └─ lib/
 │     ├─ rss.mjs            # 极简 RSS/Atom 解析、日期解析
 │     ├─ normalize.mjs      # 相关性判断、分类、去重、按天分组、热度
+│     ├─ feed.mjs           # 导出站点 RSS
 │     └─ text.mjs           # HTML 清洗、实体解码、URL 规范化、语种识别
 ├─ test/                    # node:test 单元测试
+├─ dist/                    # npm run build 产物（已 gitignore）
 └─ .github/workflows/       # 定时刷新数据并发布到 GitHub Pages（可选）
 ```
 
@@ -79,6 +86,7 @@ npm test
    总量上限 `maxItems`（默认 2500），每次抓取都会与已有数据合并，因此历史不会被新抓取冲掉。
 7. **热度**：`0.5 × 时效衰减（36 小时半衰期）+ 0.25 × 来源权重 + 0.25 × 热点关键词命中`，
    归一到 0~100；只作为排序辅助，不代表真实阅读量。
+8. **导出**：同时写出 `data/feed.xml`（最近 120 条），便于用 RSS 阅读器订阅。
 
 ### 源配置字段
 
@@ -101,18 +109,34 @@ npm test
 
 ## 部署
 
-站点是纯静态产物：`index.html` + `assets/` + `data/news.json` 三个路径即可上线。
+```bash
+npm run fetch && npm run build     # 生成 dist/
+```
+
+站点是纯静态产物，把 `dist/` 作为站点根目录发布即可（也可以直接发布仓库根目录）。
 
 - **GitHub Pages**：仓库已带 `.github/workflows/refresh-and-deploy.yml`，每天北京时间 06:00
-  自动抓取、提交 `data/news.json` 并发布站点。首次使用需在仓库
+  自动抓取、提交 `data/news.json` 与 `data/feed.xml`、构建 `dist/` 并发布站点。首次使用需在仓库
   `Settings → Pages → Build and deployment` 把 Source 选为 **GitHub Actions**。
-- **Vercel / Netlify**：直接把仓库根目录当静态站点发布，构建命令留空（或填 `npm run fetch` 以在发布前刷新数据）。
+- **Vercel / Netlify**：构建命令填 `npm run fetch && npm run build`，发布目录填 `dist`。
 - **本地自用**：`npm run fetch && npm run dev`，局域网内其他设备可通过 `HOST=0.0.0.0` 访问。
+
+### 当前源（27 个抓取中）
+
+| 中文 | 说明 | 英文 | 说明 |
+| --- | --- | --- | --- |
+| 量子位、雷锋网、开源中国、IT之家、钛媒体、InfoQ 中文、爱范儿、少数派、Solidot、极客公园、新浪科技、快科技、界面新闻 | 前 8 个为 `ai` 全量收录，其余 5 个为综合科技站、按 AI 关键词过滤 | OpenAI、Google DeepMind、NVIDIA、TechCrunch AI、The Decoder、The Verge AI、MarkTechPost、AWS 机器学习、Hacker News、Interconnects、arXiv cs.AI、MIT 科技评论、Ars Technica、Simon Willison | arXiv 为 `bulk` 源，每天择优保留 20 条 |
+
+实测不可用而暂时关闭的源（配置保留在 `data/feeds.json`）：机器之心、36氪（RSS 已下线）、
+Google AI、Hugging Face、Google Research、Meta AI（本机网络不可达）、VentureBeat（有反爬拦截）、
+虎嗅、IEEE Spectrum（超时）。
 
 ## 已知问题
 
-- **部分源不可用**：`data/feeds.json` 中 `enabled: false` 的源是实测失败的（如机器之心 / 36氪
-  已下线 RSS、Google AI 与 Hugging Face 在部分网络不可达），保留配置便于日后恢复。
+- **中文占比偏低**：中文 AI 垂类源（机器之心、36氪、新智元）的 RSS 大多已下线或只做公众号，
+  目前中文条目约占四成，其余为英文源；英文条目可在页面上用「中文 / 英文」过滤器切换，或只订阅中文。
+- **部分源不稳定**：个别站点会偶发超时或被拦截（如 The Verge、Simon Willison），管线对网络类错误
+  会重试 3 次，失败只影响当次抓取，不影响已有数据。
 - **时区标注错误**：少数源把北京时间标成 GMT（如 InfoQ 中文），已通过 `timeShiftHours` 修正；
   源未提供发布时间的条目会标记「时间待确认」。
 - **分类误判**：分类基于关键词规则，个别稿件可能归错类，可在 `scripts/lib/normalize.mjs`

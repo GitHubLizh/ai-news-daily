@@ -35,7 +35,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/news.json
+          git add data/news.json data/feed.xml
           if git diff --staged --quiet; then
             echo "数据无变化，跳过提交"
           else
@@ -44,10 +44,7 @@ jobs:
           fi
 
       - name: 组装静态站点
-        run: |
-          mkdir -p dist
-          cp index.html .nojekyll dist/
-          cp -r assets data dist/
+        run: node scripts/build.mjs
 
       - uses: actions/configure-pages@v5
 
