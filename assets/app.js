@@ -4,6 +4,14 @@
  * 分组、搜索、日历查询与本地收藏/已读。所有来自 feed 的文本都经过转义。
  * ========================================================================== */
 
+import {
+  buildHashString,
+  countByCategory,
+  heroWindowDays,
+  parseHashString,
+  selectItems,
+} from './filters.mjs';
+
 const DATA_URL = 'data/news.json';
 const PAGE_SIZE = 40;
 
@@ -167,42 +175,29 @@ function initTheme() {
 
 /* ------------------------------------------------------------- 路由状态 */
 
+/** 解析地址栏状态：#/all、#/day/2026-10-08、#/bookmarks、#/all/lang/en/cat/模型发布 */
 function parseHash() {
-  const raw = location.hash.replace(/^#\/?/, '');
-  const parts = raw.split('/').filter(Boolean).map(decodeURIComponent);
-  const next = { view: 'all', day: null, category: 'all' };
-  if (parts[0] === 'all' || parts[0] === 'today' || parts[0] === 'bookmarks') next.view = parts[0];
-  for (let i = 0; i < parts.length; i += 2) {
-    const key = parts[i];
-    const value = parts[i + 1];
-    if (key === 'day' && value) {
-      next.view = 'day';
-      next.day = value;
-    } else if (key === 'cat' && value) {
-      next.category = value;
-    } else if (key === 'view' && value) {
-      next.view = value;
-    }
-  }
-  return next;
+  return parseHashString(location.hash);
 }
 
 function writeHash() {
-  const parts = [];
-  if (state.view === 'bookmarks') parts.push('bookmarks');
-  else if (state.view === 'today') parts.push('today');
-  else if (state.view === 'day' && state.day) parts.push('day', state.day);
-  else parts.push('all');
-  if (state.category !== 'all') parts.push('cat', state.category);
-  if (state.day && state.view !== 'day') parts.push('day', state.day);
-  const next = `#/${parts.map(encodeURIComponent).join('/')}`;
+  const next = buildHashString(state);
   if (location.hash !== next) history.replaceState(null, '', next);
 }
 
-function applyRoute() {
-  Object.assign(state, parseHash());
+/** 把地址栏状态应用到 state（未出现在地址栏里的字段保持不变） */
+function applyRouteState(initial = false) {
+  const next = parseHash();
+  state.view = next.view;
+  state.day = next.day;
+  state.category = next.category;
+  if (next.lang) state.lang = next.lang;
   state.limit = PAGE_SIZE;
-  render();
+  if (!initial) render();
+}
+
+function applyRoute() {
+  applyRouteState(false);
 }
 
 /* --------------------------------------------------------------- 数据加载 */
@@ -223,35 +218,36 @@ async function loadData() {
 
 /* --------------------------------------------------------------- 筛选范围 */
 
-/** 当前视图的基础集合（不含分类/语言/搜索等次级筛选） */
-function baseItems() {
-  if (!state.data) return [];
-  const all = state.data.items;
-  if (state.view === 'bookmarks') return all.filter((item) => state.bookmarks.has(item.id));
-  if (state.view === 'today') return all.filter((item) => item.day === todayKey());
-  if (state.view === 'day' && state.day) return all.filter((item) => item.day === state.day);
-  return all;
+/** 把当前 state 翻译成纯逻辑层要的筛选条件 */
+function scopeOptions() {
+  return {
+    view: state.view,
+    day: state.day,
+    today: todayKey(),
+    category: state.category,
+    lang: state.lang,
+    query: state.query,
+    hideRead: state.hideRead,
+    onlyPapers: state.onlyPapers,
+    sort: state.sort,
+    readIds: state.read,
+    bookmarkIds: state.bookmarks,
+  };
 }
 
-function scopeItems() {
+/**
+ * 应用全部筛选条件（见 assets/filters.mjs）。
+ * ignoreCategory 用于统计分类数量：分类芯片与侧栏分布需要的是「除了分类本身之外
+ * 其余条件都生效」的分布，否则选中某个分类后其它分类的条数就没有意义了。
+ */
+function scopedItems({ ignoreCategory = false } = {}) {
   if (!state.data) return [];
-  let items = baseItems();
-  if (state.category !== 'all') items = items.filter((item) => item.category === state.category);
-  if (state.lang !== 'all') items = items.filter((item) => item.lang === state.lang);
-  if (state.onlyPapers) items = items.filter((item) => item.bulk);
-  if (state.hideRead) items = items.filter((item) => !state.read.has(item.id));
+  return selectItems(state.data.items, { ...scopeOptions(), ignoreCategory });
+}
 
-  const query = state.query.trim().toLowerCase();
-  if (query) {
-    items = items.filter((item) =>
-      `${item.title} ${item.summary} ${item.source} ${item.alsoIn.join(' ')}`.toLowerCase().includes(query),
-    );
-  }
-
-  if (state.sort === 'hot') {
-    items = [...items].sort((a, b) => b.hot - a.hot || b.publishedTs - a.publishedTs);
-  }
-  return items;
+/** 当前列表内容（应用了全部分类筛选 + 排序） */
+function scopeItems() {
+  return scopedItems();
 }
 
 /* --------------------------------------------------------------- Hero */
@@ -265,9 +261,7 @@ function renderHero() {
     return;
   }
   // 跨零点后最新一天可能只有零星几条，这时把前一天一起纳入头条窗口
-  const days = state.data.days || [];
-  const windowDays = [days[0]?.day];
-  if ((days[0]?.count ?? 0) < 10 && days[1]) windowDays.push(days[1].day);
+  const windowDays = heroWindowDays(state.data.days);
   const todays = all.filter((item) => windowDays.includes(item.day));
   const preferred = state.lang === 'all' ? todays : todays.filter((item) => item.lang === state.lang);
   const pool = preferred.length ? preferred : todays;
@@ -302,9 +296,9 @@ function renderHero() {
 /* --------------------------------------------------------------- 筛选控件 */
 
 function renderFilters() {
-  const counts = new Map();
-  const base = baseItems();
-  for (const item of base) counts.set(item.category, (counts.get(item.category) || 0) + 1);
+  // 计数随语言/搜索/已读等条件变化，但不随分类本身变化
+  const base = scopedItems({ ignoreCategory: true });
+  const counts = countByCategory(base);
 
   const chips = [
     `<button type="button" class="chip ${state.category === 'all' ? 'is-active' : ''}" data-cat="all">全部<span class="chip-n">${base.length}</span></button>`,
@@ -385,9 +379,11 @@ function renderFeed() {
     feed.innerHTML = '';
     moreWrap.hidden = true;
     empty.hidden = false;
+    const langScope = scopedItems({ ignoreCategory: true });
+    const otherLang = langScope.filter((item) => item.lang !== state.lang);
     const langHint =
-      state.lang !== 'all' && baseItems().some((item) => item.lang !== state.lang)
-        ? `<br />当前范围还有 ${baseItems().filter((item) => item.lang !== state.lang).length} 条${state.lang === 'zh' ? '英文' : '中文'}资讯，可切换语言查看。`
+      state.lang !== 'all' && otherLang.length
+        ? `<br />当前范围还有 ${otherLang.length} 条${state.lang === 'zh' ? '英文' : '中文'}资讯，可切换语言查看。`
         : '';
     empty.innerHTML = state.view === 'bookmarks' && !state.bookmarks.size
       ? '<b>还没有收藏</b>点击资讯卡片右下角的「☆ 收藏」，之后可以在这里集中查看。'
@@ -546,12 +542,12 @@ function renderCalendar() {
 
 function renderSidebar() {
   const items = scopeItems();
+  // 分类分布同样不受「当前选中的分类」影响，否则切换分类后这张表就只剩一行
+  const catScope = scopedItems({ ignoreCategory: true });
 
-  // 分类分布
-  const catCounts = new Map();
+  const catCounts = countByCategory(catScope);
   const srcCounts = new Map();
   for (const item of items) {
-    catCounts.set(item.category, (catCounts.get(item.category) || 0) + 1);
     srcCounts.set(item.source, (srcCounts.get(item.source) || 0) + 1);
   }
   const catMax = Math.max(1, ...catCounts.values());
@@ -950,7 +946,7 @@ async function main() {
     return;
   }
 
-  Object.assign(state, parseHash());
+  applyRouteState(true);
   render();
 }
 
