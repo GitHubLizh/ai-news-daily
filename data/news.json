@@ -1,22 +1,22 @@
 {
-  "generatedAt": "2026-10-08T15:59:31.223Z",
+  "generatedAt": "2026-10-09T01:51:47.172Z",
   "timezone": "Asia/Shanghai",
-  "count": 397,
+  "count": 460,
   "days": [
     {
       "day": "2026-10-09",
       "label": "10月9日 · 周五",
-      "count": 3
+      "count": 70
     },
     {
       "day": "2026-10-08",
       "label": "10月8日 · 周四",
-      "count": 134
+      "count": 131
     },
     {
       "day": "2026-10-07",
       "label": "10月7日 · 周三",
-      "count": 45
+      "count": 46
     },
     {
       "day": "2026-10-06",
@@ -196,104 +196,112 @@
     {
       "day": "2026-08-25",
       "label": "8月25日 · 周二",
-      "count": 4
+      "count": 2
     }
   ],
   "stats": {
     "categories": [
       {
         "name": "行业动态",
-        "count": 194
+        "count": 226
       },
       {
         "name": "模型发布",
-        "count": 94
+        "count": 109
       },
       {
         "name": "产品动态",
-        "count": 66
+        "count": 75
       },
       {
         "name": "研究前沿",
-        "count": 26
+        "count": 29
       },
       {
         "name": "开源工具",
-        "count": 12
+        "count": 14
       },
       {
         "name": "观点方法",
-        "count": 5
+        "count": 7
       }
     ],
     "sources": [
       {
         "name": "OpenAI",
-        "count": 103
+        "count": 104
       },
       {
         "name": "开源中国",
         "count": 32
       },
       {
-        "name": "极客公园",
-        "count": 24
+        "name": "TechCrunch AI",
+        "count": 30
       },
       {
-        "name": "TechCrunch AI",
-        "count": 20
+        "name": "极客公园",
+        "count": 25
+      },
+      {
+        "name": "Hacker News",
+        "count": 22
+      },
+      {
+        "name": "AWS 机器学习",
+        "count": 22
       },
       {
         "name": "arXiv cs.AI",
         "count": 20
       },
       {
-        "name": "AWS 机器学习",
-        "count": 20
+        "name": "快科技",
+        "count": 19
+      },
+      {
+        "name": "IT之家",
+        "count": 19
       },
       {
         "name": "NVIDIA",
-        "count": 18
+        "count": 19
       },
       {
-        "name": "Hacker News",
-        "count": 18
+        "name": "The Verge AI",
+        "count": 16
       },
       {
         "name": "Google DeepMind",
         "count": 15
       },
       {
+        "name": "量子位",
+        "count": 13
+      },
+      {
+        "name": "The Decoder",
+        "count": 13
+      },
+      {
         "name": "Simon Willison",
         "count": 12
       },
       {
-        "name": "The Verge AI",
-        "count": 11
-      },
-      {
-        "name": "量子位",
-        "count": 11
-      },
-      {
-        "name": "快科技",
-        "count": 10
-      },
-      {
-        "name": "The Decoder",
-        "count": 10
-      },
-      {
         "name": "MarkTechPost",
+        "count": 11
+      },
+      {
+        "name": "钛媒体",
         "count": 10
       },
       {
         "name": "InfoQ 中文",
-        "count": 9
+        "count": 10
       },
       {
         "name": "雷锋网",
-        "count": 9
+        "count": 10
       },
       {
         "name": "爱范儿",
@@ -308,37 +316,1249 @@
         "count": 7
       },
       {
-        "name": "IT之家",
-        "count": 6
-      },
-      {
         "name": "Solidot",
         "count": 6
       },
       {
-        "name": "钛媒体",
-        "count": 5
-      },
-      {
         "name": "MIT 科技评论",
-        "count": 3
+        "count": 4
       },
       {
         "name": "界面新闻",
-        "count": 1
+        "count": 3
       },
       {
         "name": "少数派",
-        "count": 1
+        "count": 2
       }
     ],
     "languages": {
-      "zh": 121,
-      "en": 276
+      "zh": 156,
+      "en": 304
     },
-    "estimatedTime": 2
+    "estimatedTime": 5
   },
   "items": [
+    {
+      "id": "05nv0u3",
+      "title": "Q3全球PC出货量大跌20.1%！内存涨价逼出国产替代潮：惠普戴尔首次认证中国存储芯片",
+      "url": "https://news.mydrivers.com/1/1156/1156087.htm",
+      "summary": "快科技10月9日消息，据IDC最新报告，2026年第三季度全球PC出货量仅6270万台，同比大跌20.1%，较2025年同期的7850万台减少1580万台，环比下降9.1%。这是全球PC出货量连续第二个季度同比下滑，且创下近年Q3最大跌幅纪录。 IDC指出，此次暴跌的核心原因并非需求消失，而是行业性的提前备货透支。厂商与渠道商为应对内存驱动的涨价潮，在2026年上半年集中采购并大量囤货，将本应出现在下半年的需求提前释放。第三季度渠道商忙…",
+      "author": "红茶",
+      "source": "快科技",
+      "sourceId": "mydrivers",
+      "home": "https://www.mydrivers.com",
+      "weight": 1.2,
+      "lang": "zh",
+      "category": "行业动态",
+      "publishedAt": "2026-10-09T01:51:47.172Z",
+      "publishedTs": 1791510707172,
+      "day": "2026-10-09",
+      "estimate": true,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 68
+    },
+    {
+      "id": "13703nh",
+      "title": "没它造不成芯片！走私含锗镜片至海外：波长光电及其董事长等四人被起诉",
+      "url": "https://news.mydrivers.com/1/1156/1156081.htm",
+      "summary": "快科技10月9日消息，从2023年8月中国正式对镓、锗相关物项实施出口管制以来，相关外贸企业的出口合规问题始终处于监管层的重点关注范畴。主营精密光学元件的上市企业波长光电，连同公司董事长在内的四名核心相关责任人，近期因涉嫌走私含锗光学镜片被正式提起公诉。 公司今日晚间对外发布官方公告披露，近日已经收到了上海市人民检察院第三分院出具的正式起诉书。 相关案件经上海海关缉私局完整侦查终结后，缉私部门认定公司及董事长黄胜弟、时任公司国际业务部南…",
+      "author": "雪花",
+      "source": "快科技",
+      "sourceId": "mydrivers",
+      "home": "https://www.mydrivers.com",
+      "weight": 1.2,
+      "lang": "zh",
+      "category": "行业动态",
+      "publishedAt": "2026-10-09T01:51:47.172Z",
+      "publishedTs": 1791510707172,
+      "day": "2026-10-09",
+      "estimate": true,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 68
+    },
+    {
+      "id": "01iywjr",
+      "title": "主频5GHz麒麟不远了！余承东：会有更多华为手机采用基于韬定律的芯片",
+      "url": "https://news.mydrivers.com/1/1156/1156076.htm",
+      "summary": "快科技10月9日消息，近日余承东在公开采访中明确表态，未来肯定会有更多华为旗下的手机产品，搭载这类采用逻辑折叠技术的自研芯片。 余承东透露，从已经发布的Mate XT 2三折叠手机开始，华为就正式引入了基于韬定律研发的逻辑折叠技术芯片，后续这类创新技术不会仅局限在少数旗舰机型上，会逐步下放到更多华为手机产品线当中。 他同时表达了自己的期待，希望国内整个半导体产业的配套产能能够进一步稳步提升，未来有足够的产能支撑，为中国乃至全球市场的消费…",
+      "author": "雪花",
+      "source": "快科技",
+      "sourceId": "mydrivers",
+      "home": "https://www.mydrivers.com",
+      "weight": 1.2,
+      "lang": "zh",
+      "category": "行业动态",
+      "publishedAt": "2026-10-09T01:51:47.172Z",
+      "publishedTs": 1791510707172,
+      "day": "2026-10-09",
+      "estimate": true,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 68
+    },
+    {
+      "id": "06i7zb0",
+      "title": "别让AI糟蹋了四大名著 微信下架2.6万余条AI魔改视频",
+      "url": "https://news.mydrivers.com/1/1156/1156073.htm",
+      "summary": "快科技10月9日消息，微信珊瑚安全公布治理数据，针对滥用AI篡改经典内容的乱象，今年平台累计下架2.6万余条AI魔改短视频。 其中大量内容拿四大名著进行恶搞改编，这类内容已经成为平台重点打击对象。 现在AI生成工具门槛很低，不少账号把四大名著影视片段拿来二次加工。 出现不少离谱内容，林黛玉倒拔垂杨柳，关羽手持现代枪械，随意篡改人物性格，编造低俗猎奇的全新剧情。创作者靠着反差感博取流量，完全背离原著想要传递的内核。 这类魔改视频危害不小…",
+      "author": "随心",
+      "source": "快科技",
+      "sourceId": "mydrivers",
+      "home": "https://www.mydrivers.com",
+      "weight": 1.2,
+      "lang": "zh",
+      "category": "开源工具",
+      "publishedAt": "2026-10-09T01:51:47.172Z",
+      "publishedTs": 1791510707172,
+      "day": "2026-10-09",
+      "estimate": true,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 62
+    },
+    {
+      "id": "1gt3xdd",
+      "title": "智能体终端编程中文测评榜单：小米MiMo登顶",
+      "url": "https://news.mydrivers.com/1/1156/1156056.htm",
+      "summary": "快科技10月9日消息，SuperCLUE公布了智能体终端编程中文测评榜单，小米MiMo V2.6 Pro拿到综合总分第一。 这份测评重点考察大模型在驱动智能体框架时对中文需求的理解、任务规划、工具调用、文件修改、错误排查与最终交付能力。测评固定使用 Claude Code 作为智能体框架，以此为标准平台，横向对比各模型的核心能力。 榜单里面其余参赛选手中，Kimi、GLM、Hy4排在2到4名。小米MiMo V2.6 Flash位居第五…",
+      "author": "随心",
+      "source": "快科技",
+      "sourceId": "mydrivers",
+      "home": "https://www.mydrivers.com",
+      "weight": 1.2,
+      "lang": "zh",
+      "category": "产品动态",
+      "publishedAt": "2026-10-09T01:51:47.172Z",
+      "publishedTs": 1791510707172,
+      "day": "2026-10-09",
+      "estimate": true,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 68
+    },
+    {
+      "id": "0gnvn5z",
+      "title": "陶哲轩质疑 OpenAI 公司：719 篇 AI 数学证明，人类真的理解了吗？",
+      "url": "https://www.ithome.com/1/010/795.htm",
+      "summary": "IT之家 10 月 9 日消息，OpenAI 于 10 月公布 719 份 AI 数学解答，涵盖 372 个数学结果族，涉及数百项开放研究问题，不过发布后被指尚未完全达到“数学与人工智能顾问小组”（AGMAI）提出的标准。 IT之家此前报道，OpenAI 于 10 月 6 日最初在 GitHub 发布 722 份 AI 生成数学手稿总数，涉及 372 个结果族及多项开放研究问题。不过于 10 月 7 日因一处符号错误及其连锁影响撤回 3…",
+      "author": "",
+      "source": "IT之家",
+      "sourceId": "ithome",
+      "home": "https://www.ithome.com",
+      "weight": 1.6,
+      "lang": "zh",
+      "category": "观点方法",
+      "publishedAt": "2026-10-09T01:40:55.000Z",
+      "publishedTs": 1791510055000,
+      "day": "2026-10-09",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 72
+    },
+    {
+      "id": "0zmxr3i",
+      "title": "亚马逊一年裁掉3万人，省下的钱全砸进了AI",
+      "url": "https://www.tmtpost.com/8161599.html",
+      "summary": "（本文作者为 影子备忘录，钛媒体经授权发布） 文 | 影子备忘录 2026年10月7日，亚马逊Prime大促日。这一天本该是购物狂欢，但亚马逊内部一个拥有近3.7万名成员的Slack频道，被另一种消息淹没了。 大量员工发现自己的门禁权限突然失效，个人邮箱里躺着岗位撤销通知。有人发帖，有人追问遣散方案，频道瞬间炸了锅。 这不是第一波了。从2025年10月到2026年10月，不到一年时间，亚马逊累计裁掉了超过3万个企业岗位，占其35万白领员…",
+      "author": "影子备忘录",
+      "source": "钛媒体",
+      "sourceId": "tmtpost",
+      "home": "https://www.tmtpost.com",
+      "weight": 1.5,
+      "lang": "zh",
+      "category": "行业动态",
+      "publishedAt": "2026-10-09T01:39:00.000Z",
+      "publishedTs": 1791509940000,
+      "day": "2026-10-09",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 71
+    },
+    {
+      "id": "0pcajoc",
+      "title": "OpenAI和Anthropic，开启“模型之战”",
+      "url": "https://www.tmtpost.com/8161593.html",
+      "summary": "（本文作者为 影子备忘录，钛媒体经授权发布） 文 | 影子备忘录 10月7日，旧金山。两场发布会在同一天登场，前后相隔不过几分钟。 OpenAI推出了GPT-6和Intelligent UI，ChatGPT的回答从纯文本变成了可以直接操作的界面。 Anthropic则发布了Claude Haiku 5.5，把模型调用成本直接砍到上一代的十分之一。 两家公司的更新方向，出现了近年来最明显的分化：一个向AI如何与人交互的产品表现延伸，另一个…",
+      "author": "影子备忘录",
+      "source": "钛媒体",
+      "sourceId": "tmtpost",
+      "home": "https://www.tmtpost.com",
+      "weight": 1.5,
+      "lang": "zh",
+      "category": "模型发布",
+      "publishedAt": "2026-10-09T01:34:00.000Z",
+      "publishedTs": 1791509640000,
+      "day": "2026-10-09",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 71
+    },
+    {
+      "id": "0x0t1fg",
+      "title": "当 AI 扑进剪辑软件：视频创作的“专业权”正在被重新分配",
+      "url": "https://www.tmtpost.com/8161544.html",
+      "summary": "（本文作者为 文娱价值官，钛媒体经授权发布） 文 | 文娱价值官 一组数据显示，创作者经济仍在扩张。三菱 UFJ 研究咨询测算，日本创作者经济 2024 年规模达 2.09 万亿日元，2021 至 2024 年的复合增速为 15.5%；YouTube Korea 与牛津经济研究院的研究则显示，韩国相关创作者生态贡献 GDP 3.5 万亿韩元，支撑约 8.5 万个岗位。 规模之外，生产方式本身也在变复杂。同一条内容，往往要同时准备长视频与…",
+      "author": "文娱价值官",
+      "source": "钛媒体",
+      "sourceId": "tmtpost",
+      "home": "https://www.tmtpost.com",
+      "weight": 1.5,
+      "lang": "zh",
+      "category": "研究前沿",
+      "publishedAt": "2026-10-09T01:28:00.000Z",
+      "publishedTs": 1791509280000,
+      "day": "2026-10-09",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 71
+    },
+    {
+      "id": "01uafwp",
+      "title": "黄仁勋女婿 Nico Caprez 火速晋升英伟达全球 AI 基础设施增长副总裁，曾是职业滑雪运动员",
+      "url": "https://www.ithome.com/1/010/788.htm",
+      "summary": "IT之家 10 月 9 日消息，据 The Information 本周报道，英伟达 CEO 黄仁勋的长女 Madison Huang（黄敏珊）最近与 35 岁的 Nico Caprez 结婚，后者今年 1 月火速升任英伟达全球 AI 基础设施增长副总裁。 Caprez 负责数据中心运营和“Neocloud”服务，并参与推进一个目标超过 5,000 亿美元（IT之家注：现汇率约合 3.36 万亿元人民币）资本动员的 AI 计算融资平台…",
+      "author": "",
+      "source": "IT之家",
+      "sourceId": "ithome",
+      "home": "https://www.ithome.com",
+      "weight": 1.6,
+      "lang": "zh",
+      "category": "行业动态",
+      "publishedAt": "2026-10-09T01:18:19.000Z",
+      "publishedTs": 1791508699000,
+      "day": "2026-10-09",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 71
+    },
+    {
+      "id": "053i77d",
+      "title": "硬件都在卷Agent，耳夹式耳机靠什么卖得更好？",
+      "url": "https://www.jiemian.com/article/15169481.html",
+      "summary": "耳夹式耳机的反向走红说明了什么？",
+      "author": "jianli@jiemian.com(豹变)",
+      "source": "界面新闻",
+      "sourceId": "jiemian",
+      "home": "https://www.jiemian.com",
+      "weight": 1.2,
+      "lang": "zh",
+      "category": "产品动态",
+      "publishedAt": "2026-10-09T01:16:31.000Z",
+      "publishedTs": 1791508591000,
+      "day": "2026-10-09",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 61
+    },
+    {
+      "id": "0nerztj",
+      "title": "《Artificial》奥尔特曼扮演者加菲尔德：演了这部戏，我开始怀疑 AI",
+      "url": "https://www.ithome.com/1/010/786.htm",
+      "summary": "IT之家 10 月 9 日消息，当地时间 8 日，据《商业内幕》报道，安德鲁 · 加菲尔德在即将上映的电影《Artificial》中饰演 OpenAI CEO 萨姆 · 奥尔特曼，可这段表演经历并没有让他更加看好 AI。 相反，出演这部电影让他对 AI 产生了疑虑。“我有点害怕，也不太信任这项技术。那些开发 AI、鼓励大家使用 AI 的人，似乎连自己都不完全清楚它能做到什么。所以我个人觉得，这有点不负责任。” 加菲尔德曾使用 ChatG…",
+      "author": "",
+      "source": "IT之家",
+      "sourceId": "ithome",
+      "home": "https://www.ithome.com",
+      "weight": 1.6,
+      "lang": "zh",
+      "category": "行业动态",
+      "publishedAt": "2026-10-09T01:14:02.000Z",
+      "publishedTs": 1791508442000,
+      "day": "2026-10-09",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 65
+    },
+    {
+      "id": "0n60sxh",
+      "title": "【10.9盘前哨】工行、中行历史新高！OpenAI年化营收低于预期，特朗普：美伊会谈富有成效！",
+      "url": "https://www.jiemian.com/article/15169953.html",
+      "summary": "国庆节后首个交易日A股大幅调整，沪指跌0.79%报3811.90，创业板指暴跌3.15%，科创综指跌4.55%，成交放量至1.69万亿。",
+      "author": "jianli@jiemian.com(有连云)",
+      "source": "界面新闻",
+      "sourceId": "jiemian",
+      "home": "https://www.jiemian.com",
+      "weight": 1.2,
+      "lang": "zh",
+      "category": "行业动态",
+      "publishedAt": "2026-10-09T01:06:46.000Z",
+      "publishedTs": 1791508006000,
+      "day": "2026-10-09",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 67
+    },
+    {
+      "id": "10sgy8y",
+      "title": "在生产环境中保护MCP：超越网关的纵深防御",
+      "url": "https://www.infoq.cn/article/HZIW4QjEfV66I9CGr52R",
+      "summary": "点击查看原文>",
+      "author": "作者：Nik Kale",
+      "source": "InfoQ 中文",
+      "sourceId": "infoq-cn",
+      "home": "https://www.infoq.cn",
+      "weight": 1.4,
+      "lang": "zh",
+      "category": "行业动态",
+      "publishedAt": "2026-10-09T01:05:00.000Z",
+      "publishedTs": 1791507900000,
+      "day": "2026-10-09",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 69
+    },
+    {
+      "id": "13w28lc",
+      "title": "派早报：英伟达 RTX Spark 新品一览、Anthropic 发布 Claude Haiku 5.5 模型等",
+      "url": "https://sspai.com/post/115532",
+      "summary": "XMG 发布 PRO 18 系列笔记本、OpenAI 宣布在 ChatGPT 上线 GPT-6 模型查看全文",
+      "author": "少数派编辑部",
+      "source": "少数派",
+      "sourceId": "sspai",
+      "home": "https://sspai.com",
+      "weight": 1.4,
+      "lang": "zh",
+      "category": "模型发布",
+      "publishedAt": "2026-10-09T00:51:10.000Z",
+      "publishedTs": 1791507070000,
+      "day": "2026-10-09",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 75
+    },
+    {
+      "id": "02ohorl",
+      "title": "字节 Seed 团队发现 DeepSeek“抽风”原因，长上下文可能性能漂移",
+      "url": "https://www.ithome.com/1/010/780.htm",
+      "summary": "IT之家 10 月 9 日消息，字节 Seed 团队今年 9 月底在预印本平台 arXiv 提交了一篇论文，谈到分块 KV 缓存压缩带来的相位敏感性，直指 DeepSeek“抽风”原因。 该研究评估了基础版和后训练版的 DeepSeek-V4-Flash 和 DeepSeek-V4-Pro，以及后训练后的 DeepSeek-V4.1-Flash。 模型通过分块 KV 缓存压缩以固定步幅将连续标记的窗口压缩为更少的缓存条目，能够减少长上下…",
+      "author": "",
+      "source": "IT之家",
+      "sourceId": "ithome",
+      "home": "https://www.ithome.com",
+      "weight": 1.6,
+      "lang": "zh",
+      "category": "模型发布",
+      "publishedAt": "2026-10-09T00:49:58.000Z",
+      "publishedTs": 1791506998000,
+      "day": "2026-10-09",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 65
+    },
+    {
+      "id": "160mlvv",
+      "title": "新思科技拟寻求与中国 AI 实验室合作，在华加速芯片设计",
+      "url": "https://www.ithome.com/1/010/777.htm",
+      "summary": "IT之家 10 月 9 日消息，据日经亚洲报道，芯片设计软件龙头企业新思科技（Synopsys）表示，尽管美国政府收紧了对人工智能与半导体的出口管制，但公司计划通过与中国的大语言模型（LLM）构建者合作，利用其工具的 AI 版本，协助中国本土企业加速芯片研发进程。 当地时间 9 月 30 日，新思科技宣布与 OpenAI 签署多年期合作协议，双方将联手打造专用 AI 模型 GPT-Synopsys，旨在实现芯片设计流程的自动化并大幅缩短…",
+      "author": "",
+      "source": "IT之家",
+      "sourceId": "ithome",
+      "home": "https://www.ithome.com",
+      "weight": 1.6,
+      "lang": "zh",
+      "category": "行业动态",
+      "publishedAt": "2026-10-09T00:43:53.000Z",
+      "publishedTs": 1791506633000,
+      "day": "2026-10-09",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 64
+    },
+    {
+      "id": "0orn3re",
+      "title": "特朗普为什么非要给AI改名字",
+      "url": "https://www.tmtpost.com/8161128.html",
+      "summary": "白宫峰会上，马斯克脱口说出“AI”，随即慌忙改口：“是SI，抱歉。”总统在旁答了句“谢谢”。九天后，联邦政府的官方文件里，沿用了七十年的“人工智能”被正式要求改叫“超级智能”。 白宫上周签署了一纸标题为《开启超级智能时代》的行政令：在法律允许的最大范围内，联邦政府的官方通信、网站、报告与政策文件，一律用“超级智能”（Super Intelligence，SI）取代“人工智能”（Artificial Intelligence，AI）。改名…",
+      "author": "硅谷Tech news",
+      "source": "钛媒体",
+      "sourceId": "tmtpost",
+      "home": "https://www.tmtpost.com",
+      "weight": 1.5,
+      "lang": "zh",
+      "category": "观点方法",
+      "publishedAt": "2026-10-09T00:41:29.000Z",
+      "publishedTs": 1791506489000,
+      "day": "2026-10-09",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 63
+    },
+    {
+      "id": "0mhkfrb",
+      "title": "卖机器人“皮肤”之外，触觉厂商还想卖数据和模型",
+      "url": "https://www.tmtpost.com/8161374.html",
+      "summary": "2026年更像是机器人“皮肤”从技术样品走向产品化的一年；数据和模型的价值已经显现，但尚未形成可以独立验证的收入模式。",
+      "author": "具身商业前哨",
+      "source": "钛媒体",
+      "sourceId": "tmtpost",
+      "home": "https://www.tmtpost.com",
+      "weight": 1.5,
+      "lang": "zh",
+      "category": "模型发布",
+      "publishedAt": "2026-10-09T00:39:16.000Z",
+      "publishedTs": 1791506356000,
+      "day": "2026-10-09",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 63
+    },
+    {
+      "id": "1ve2nmj",
+      "title": "陶哲轩带头宣战！人类数学家联合抵制OpenAI",
+      "url": "https://www.qbitai.com/2026/10/502089.html",
+      "summary": "彻底撕破脸了",
+      "author": "Jay",
+      "source": "量子位",
+      "sourceId": "qbitai",
+      "home": "https://www.qbitai.com",
+      "weight": 2.2,
+      "lang": "zh",
+      "category": "行业动态",
+      "publishedAt": "2026-10-09T00:35:57.000Z",
+      "publishedTs": 1791506157000,
+      "day": "2026-10-09",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 70
+    },
+    {
+      "id": "06ne9kc",
+      "title": "谷歌云发布 Gemini Agent；Manus 官宣五亿美元融资；小鹏上线 Robotaxi 打车小程序",
+      "url": "http://www.geekpark.net/news/372143",
+      "summary": "谷歌云发布 Gemini Agent，支持多种 AI 模型 10 月 8 日，谷歌云在 Gemini at Work 2026 发布会上宣布，面向企业客户推出 Gemini 智能体（Gemini Agent）。这款产品定位「通用工作智能体」，支持 Gemini Enterprise 、Workspace 以及第三方服务。 谷歌表示，Gemini Agent 只需要用户给出目标就能完成工作，支持回答问题、处理知识型工作、创建媒体内容，以及…",
+      "author": "",
+      "source": "极客公园",
+      "sourceId": "geekpark",
+      "home": "https://www.geekpark.net",
+      "weight": 1.4,
+      "lang": "zh",
+      "category": "产品动态",
+      "publishedAt": "2026-10-09T00:35:13.000Z",
+      "publishedTs": 1791506113000,
+      "day": "2026-10-09",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 81
+    },
+    {
+      "id": "1r6ncw5",
+      "title": "小S沉迷兽人AI短剧！口味独特 已花费近万元",
+      "url": "https://news.mydrivers.com/1/1156/1156052.htm",
+      "summary": "AI短剧近年飞速普及，不仅改变影视行业生态，也走进了大众乃至艺人的日常生活。近日，女星小S（徐熙媛）在综艺中分享了自己的新奇追剧经历，自曝沉迷小众AI题材短剧，还为此高额氪金，引发网友热议。 节目中，小S听完嘉宾的AI相关分享后，顺势聊起当下火热的AI创作趋势，并坦言自己近期深陷《爱上兽人》系列AI剧集。这番发言也被现场嘉宾调侃观影口味独特。据小S透露，她最初仅充值1000元会员追剧，看完第一季后续集数迟迟未更新，心急之下直接加码充值8…",
+      "author": "枸杞薄荷",
+      "source": "快科技",
+      "sourceId": "mydrivers",
+      "home": "https://www.mydrivers.com",
+      "weight": 1.2,
+      "lang": "zh",
+      "category": "产品动态",
+      "publishedAt": "2026-10-09T00:25:44.000Z",
+      "publishedTs": 1791505544000,
+      "day": "2026-10-09",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 60
+    },
+    {
+      "id": "0j7t1xl",
+      "title": "不等Gemini 4了！谷歌发布办公Agent，支持调用Claude",
+      "url": "https://www.qbitai.com/2026/10/502083.html",
+      "summary": "新的“缝合怪”已经出现，怎么能够停滞不前",
+      "author": "衡宇",
+      "source": "量子位",
+      "sourceId": "qbitai",
+      "home": "https://www.qbitai.com",
+      "weight": 2.2,
+      "lang": "zh",
+      "category": "模型发布",
+      "publishedAt": "2026-10-09T00:16:56.000Z",
+      "publishedTs": 1791505016000,
+      "day": "2026-10-09",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 76
+    },
+    {
+      "id": "002valu",
+      "title": "黄仁勋力挺特朗普创世纪计划！英伟达承诺五年投入10亿美元",
+      "url": "https://news.mydrivers.com/1/1156/1156048.htm",
+      "summary": "快科技10月9日消息，英伟达宣布未来五年将投入价值10亿美元（约71亿人民币）资源，用于建设美国超级智能研发能力，覆盖对维持美国领先地位至关重要的量子计算、医疗健康以及能源安全领域。 该消息在华盛顿\"科学：新黄金时代\"活动上公布，活动汇集美国官员、行业领袖和科研人员，探讨依靠公私合作推进科学探索。 英伟达创始人兼首席执行官黄仁勋表示，特朗普的创世纪计划开启美国科学发现的全新黄金时代，英伟达投入10亿美元将先进超级智能交到美国科学家手中…",
+      "author": "建嘉",
+      "source": "快科技",
+      "sourceId": "mydrivers",
+      "home": "https://www.mydrivers.com",
+      "weight": 1.2,
+      "lang": "zh",
+      "category": "研究前沿",
+      "publishedAt": "2026-10-09T00:15:09.000Z",
+      "publishedTs": 1791504909000,
+      "day": "2026-10-09",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 60
+    },
+    {
+      "id": "0czzpsv",
+      "title": "马斯克对芯片产业再出新构想：提议台积电租赁自家Terafab晶圆厂",
+      "url": "https://news.mydrivers.com/1/1156/1156047.htm",
+      "summary": "快科技10月9日消息，据财联社报道，上周末，马斯克透露正在讨论让台积电参与到Terafab项目中，爆料指出台积电可能将合资运营Terafab在美国得克萨斯州的工厂。 然而马斯克周三却表示，SpaceX与特斯拉不会与台积电合作建设和运营晶圆厂，Terafab仍致力于自行建设和运营晶圆厂，他只是提议台积电租赁Terafab的部分设施，并生产芯片。 英特尔CEO陈立武也在周三重申，英特尔将继续参与Terafab项目。 今年4月，英特尔与Spa…",
+      "author": "哈尔",
+      "source": "快科技",
+      "sourceId": "mydrivers",
+      "home": "https://www.mydrivers.com",
+      "weight": 1.2,
+      "lang": "zh",
+      "category": "行业动态",
+      "publishedAt": "2026-10-09T00:09:34.000Z",
+      "publishedTs": 1791504574000,
+      "day": "2026-10-09",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 60
+    },
+    {
+      "id": "0bb9i1q",
+      "title": "Roundtables: A Conversation With the Creator of AI-Designed Viruses",
+      "url": "https://www.technologyreview.com/2026/10/08/1146224/roundtables-a-conversation-with-the-creator-of-ai-designed-viruses",
+      "summary": "Friday, October 16, 2026 Can AI design new life forms? In 2025, Stanford University PhD student Samuel King came up with a preliminary answer when he used a generative AI model to propose genetic blueprints for microscop…",
+      "author": "MIT Technology Review",
+      "source": "MIT 科技评论",
+      "sourceId": "mittr",
+      "home": "https://www.technologyreview.com",
+      "weight": 1.5,
+      "lang": "en",
+      "category": "行业动态",
+      "publishedAt": "2026-10-09T00:08:24.000Z",
+      "publishedTs": 1791504504000,
+      "day": "2026-10-09",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 63
+    },
+    {
+      "id": "0v7l2ks",
+      "title": "聊天机器人怂恿用户自残、挨饿，Character.AI 遭肯塔基州指控“产品存在缺陷”",
+      "url": "https://www.ithome.com/1/010/769.htm",
+      "summary": "IT之家 10 月 9 日消息，据路透社今天（9 日）上午报道，美国肯塔基州总检察长提交的一份新诉讼文件指控，AI 陪伴服务公司 Character.AI 旗下的聊天机器人曾怂恿用户割伤自己、挨饿，甚至自杀。肯塔基州此前以儿童安全问题为由起诉 Character.AI。 诉状称，Character.AI 的产品专门设计用来吸引儿童，把用户参与度放在儿童福祉之上，并诱导自杀、自残和孤立行为，还会实施心理操控。 当地时间 7 日，肯塔基州总…",
+      "author": "",
+      "source": "IT之家",
+      "sourceId": "ithome",
+      "home": "https://www.ithome.com",
+      "weight": 1.6,
+      "lang": "zh",
+      "category": "行业动态",
+      "publishedAt": "2026-10-09T00:05:12.000Z",
+      "publishedTs": 1791504312000,
+      "day": "2026-10-09",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 64
+    },
+    {
+      "id": "18fw30z",
+      "title": "OpenAI 推出 GPT-6.1 Sol Ultrafast 版：6 倍价格、最高 8 倍速度",
+      "url": "https://www.ithome.com/1/010/768.htm",
+      "summary": "IT之家 10 月 9 日消息，OpenAI Developers 官方宣布，OpenAI 正式在 API、Codex 和 ChatGPT Work 中推出 GPT-6.1 Sol 的 Ultrafast 版本。 该版本运行速度最高可达 Sol 标准版（Sol Standard）的 8 倍，定价为标准版的 6 倍（每百万 tokens 输入 12 美元（IT之家注：现汇率约合 80.5 元人民币），每百万 tokens 输出 60 美元…",
+      "author": "",
+      "source": "IT之家",
+      "sourceId": "ithome",
+      "home": "https://www.ithome.com",
+      "weight": 1.6,
+      "lang": "zh",
+      "category": "产品动态",
+      "publishedAt": "2026-10-09T00:04:37.000Z",
+      "publishedTs": 1791504277000,
+      "day": "2026-10-09",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 64
+    },
+    {
+      "id": "19ost25",
+      "title": "聊天框的终结 OpenAI向12亿用户下放GPT-6",
+      "url": "https://news.mydrivers.com/1/1156/1156045.htm",
+      "summary": "ChatGPT正在从一个生成答案的聊天框，变成一个按需生成界面的入口。图表、按钮、表单甚至微型应用，都可以随着问题即时出现。 北京时间10月8日，OpenAI“28天连续更新”的第三天。OpenAI宣布，面向全球超过12亿的周活跃用户全面上线GPT-6能力。伴随新模型一同落地的，还有一个被称为“Intelligent UI（智能界面）” 的全新交互功能。 OpenAI展示了一个典型场景：当用户询问七速自行车（配置了7个档位且可变速的自行…",
+      "author": "梁卡尔",
+      "source": "快科技",
+      "sourceId": "mydrivers",
+      "home": "https://www.mydrivers.com",
+      "weight": 1.2,
+      "lang": "zh",
+      "category": "模型发布",
+      "publishedAt": "2026-10-08T23:53:46.000Z",
+      "publishedTs": 1791503626000,
+      "day": "2026-10-09",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 72
+    },
+    {
+      "id": "0zu9vne",
+      "title": "阿里巴巴蔡崇信：五年后 AI 将如今天的互联网，融入社会的每个环节",
+      "url": "https://www.ithome.com/1/010/763.htm",
+      "summary": "北京时间 10 月 7 日晚，阿里巴巴集团主席蔡崇信在意大利都灵出席国际科技与投资盛会 Wave by Vento 2026，围绕 AI 的应用价值、阿里巴巴的全栈 AI 布局，以及未来 AI 的发展前景展开交流。 蔡崇信预判，未来 AI 将从显性话题转为隐性基础设施。“五年后，人们可能不再单独讨论 AI，因为它将像今天的互联网一样，融入业务的每个环节。相关术语可能会随技术普及程度而演变，但 AI 作为根本性的技术突破，将持续影响商业与…",
+      "author": "",
+      "source": "IT之家",
+      "sourceId": "ithome",
+      "home": "https://www.ithome.com",
+      "weight": 1.6,
+      "lang": "zh",
+      "category": "产品动态",
+      "publishedAt": "2026-10-08T23:52:08.000Z",
+      "publishedTs": 1791503528000,
+      "day": "2026-10-09",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 70
+    },
+    {
+      "id": "13h4un2",
+      "title": "AI让美国再工业化成泡影",
+      "url": "https://news.mydrivers.com/1/1156/1156044.htm",
+      "summary": "不知从什么时候开始，特朗普很少提“再工业化”了。 从“黄金时代”到无人再提二战后，美国历经漫长的去工业化，制造业占非农就业比例、制造业增加值占GDP比重均从30%降至10%左右。 去工业化受益者众多： 第一，美元资本到世界各地投资建厂并将产品反销美国，赚得盆满钵满； 第二，持续贸易逆差及对外投资扩大使海量美元涌向全世界，筑牢其储备货币地位； 第三，供给极大丰富与汇兑福利叠加，让普通美国人坐享价廉物美的商品。 去工业化的代价也很明显： 第…",
+      "author": "Eastland",
+      "source": "快科技",
+      "sourceId": "mydrivers",
+      "home": "https://www.mydrivers.com",
+      "weight": 1.2,
+      "lang": "zh",
+      "category": "行业动态",
+      "publishedAt": "2026-10-08T23:50:35.000Z",
+      "publishedTs": 1791503435000,
+      "day": "2026-10-09",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 59
+    },
+    {
+      "id": "04nufwp",
+      "title": "福田汽车与卓驭科技战略签约，在商用车高阶智能驾驶领域开展合作",
+      "url": "https://www.ithome.com/1/010/762.htm",
+      "summary": "IT之家 10 月 9 日消息，10 月 8 日，北汽福田汽车股份有限公司（简称：福田汽车）与深圳市卓驭科技有限公司（简称：卓驭科技）正式签署战略合作协议。 IT之家获悉，本次合作聚焦商用车全场景智能驾驶落地，合作范围涵盖重卡高速及国道领航辅助驾驶、城际高速 NOA、无人物流车 Robovan、轻型商用车城市 NOA、海外高阶智能驾驶推广，以及 L3/L4 级智能网联汽车准入试点等核心领域。 根据协议，双方将联合开发适配重卡、轻商、无人…",
+      "author": "",
+      "source": "IT之家",
+      "sourceId": "ithome",
+      "home": "https://www.ithome.com",
+      "weight": 1.6,
+      "lang": "zh",
+      "category": "行业动态",
+      "publishedAt": "2026-10-08T23:44:21.000Z",
+      "publishedTs": 1791503061000,
+      "day": "2026-10-09",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 63
+    },
+    {
+      "id": "0sckia1",
+      "title": "知名分析师重出江湖：公布2027年五大首选科技股 看好“英伟达生态”",
+      "url": "https://news.mydrivers.com/1/1156/1156041.htm",
+      "summary": "知名科技分析师Dan Ives在7月离开韦德布什证券公司后正重返大众视野。他曾在该公司担任股票研究员近八年，之后担任科技研究主管。Ives发布最新声明，宣布将为他的新创企业Yorkville Ives开展科技领域的业务。 Yorkville Ives被描述为一家面向人工智能（AI）时代的现代商业银行，主业包括战略咨询、融资、投资以及研究和调研服务，由Dan Ives与Yorkville证券公司合资创办。 Dan Ives指出： “人工智…",
+      "author": "黄君芝",
+      "source": "快科技",
+      "sourceId": "mydrivers",
+      "home": "https://www.mydrivers.com",
+      "weight": 1.2,
+      "lang": "zh",
+      "category": "行业动态",
+      "publishedAt": "2026-10-08T23:38:43.000Z",
+      "publishedTs": 1791502723000,
+      "day": "2026-10-09",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 72
+    },
+    {
+      "id": "1o6sumz",
+      "title": "3 名遭解雇 OpenAI 研究员发公开信，称公司做法或引发“寒蝉效应”",
+      "url": "https://www.ithome.com/1/010/760.htm",
+      "summary": "IT之家 10 月 9 日消息，上周突然被解雇的 OpenAI 三名前研究人员米基塔 · 巴莱斯尼、托梅克 · 科尔巴克和贾斯敏 · 王今天（9 日）发表公开信。信中提到，担心此举会让其他员工不敢公开表达意见，对 OpenAI 的企业文化产生“寒蝉效应”。 三人在题为《OpenAI 无法独自确保 AI 安全》的公开信中指出，OpenAI“不是一家普通公司”，员工能够放心地与外部机构合作解决安全问题，是 OpenAI 工作文化的重要组成部…",
+      "author": "",
+      "source": "IT之家",
+      "sourceId": "ithome",
+      "home": "https://www.ithome.com",
+      "weight": 1.6,
+      "lang": "zh",
+      "category": "研究前沿",
+      "publishedAt": "2026-10-08T23:36:32.000Z",
+      "publishedTs": 1791502592000,
+      "day": "2026-10-09",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 63
+    },
+    {
+      "id": "110x2cv",
+      "title": "Anthropic 修订使用政策，首次禁止用户虐待 Claude AI 模型",
+      "url": "https://www.ithome.com/1/010/759.htm",
+      "summary": "IT之家 10 月 9 日消息，科技媒体 The Verge 今天（10 月 9 日）发布博文，报道称 Anthropic 修订 Claude 使用政策，将于 2026 年 11 月 12 日生效，首次加入禁止“持续且不必要的虐待或残忍行为”条款。该规则适用于用户反复、无明显目的地对模型实施残忍行为的情况。 执行机制方面，Anthropic 表示主要方式为终止对话，但并未明确时候会引入用户封禁等进一步措施，并强调该条款不适用于常见抱怨…",
+      "author": "",
+      "source": "IT之家",
+      "sourceId": "ithome",
+      "home": "https://www.ithome.com",
+      "weight": 1.6,
+      "lang": "zh",
+      "category": "模型发布",
+      "publishedAt": "2026-10-08T23:31:17.000Z",
+      "publishedTs": 1791502277000,
+      "day": "2026-10-09",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 75
+    },
+    {
+      "id": "1r60vx8",
+      "title": "Meta 首席 AI 官汪滔：不要指望 Muse 会自动帮你赚 1 万美元",
+      "url": "https://www.ithome.com/1/010/754.htm",
+      "summary": "IT之家 10 月 9 日消息，据《商业内幕》今天（9 日）凌晨报道，Meta 首席 AI 官汪滔（Alexandr Wang）将会继续改进 Muse。他同时提醒，用户想让智能体帮忙赚钱，自己也得付出一点努力。“我们一直在想办法提升智能体的能力，让它们能不断处理更复杂的任务。” 汪滔谈到了网上流行的一类提示词：一些用户要求智能体帮自己赚到指定金额。“我觉得挺有意思，很多人直接跟自己的 Muse 说：‘帮我赚 1 万美元（IT之家注：现汇…",
+      "author": "",
+      "source": "IT之家",
+      "sourceId": "ithome",
+      "home": "https://www.ithome.com",
+      "weight": 1.6,
+      "lang": "zh",
+      "category": "产品动态",
+      "publishedAt": "2026-10-08T23:21:05.000Z",
+      "publishedTs": 1791501665000,
+      "day": "2026-10-09",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 63
+    },
+    {
+      "id": "1m6plk7",
+      "title": "OpenAI 年化营收被曝接近 500 亿美元，比预期少了约 200 亿",
+      "url": "https://www.ithome.com/1/010/751.htm",
+      "summary": "IT之家 10 月 9 日消息，据金融时报报道，一份向 OpenAI 投资者披露的最新财务文件显示，其实际年化营收相较于公司此前释放的预期缺口达约 200 亿美元（IT之家注：现汇率约合 1,342.49 亿元人民币）。 OpenAI 向投资者最新披露，截至 9 月底，其年化营收正逼近 500 亿美元（现汇率约合 3,356.23 亿元人民币）。这一数字大幅低于主流媒体上月的报道，彼时媒体根据此前向投资人提供的数据，估算其年化营收高达…",
+      "author": "",
+      "source": "IT之家",
+      "sourceId": "ithome",
+      "home": "https://www.ithome.com",
+      "weight": 1.6,
+      "lang": "zh",
+      "category": "行业动态",
+      "publishedAt": "2026-10-08T23:02:44.000Z",
+      "publishedTs": 1791500564000,
+      "day": "2026-10-09",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 62
+    },
+    {
+      "id": "0l0owpc",
+      "title": "谷歌云发布Gemini智能体：可自主执行企业多步骤任务",
+      "url": "https://news.mydrivers.com/1/1156/1156028.htm",
+      "summary": "快科技10月8日消息，今日，谷歌云在Gemini at Work 2026发布会上宣布，面向企业客户推出Gemini智能体。 该产品定位“通用工作智能体”，支持Gemini Enterprise、Workspace以及第三方服务。 谷歌表示，Gemini智能体只需要用户给出目标就能完成工作，即可通过单一界面处理问答、知识工作、内容创作及代码编写和运行等任务，并能调用企业内部工具和数据，自主完成用户设定的目标。 例如，当你的经理用邮件要求…",
+      "author": "哈尔",
+      "source": "快科技",
+      "sourceId": "mydrivers",
+      "home": "https://www.mydrivers.com",
+      "weight": 1.2,
+      "lang": "zh",
+      "category": "产品动态",
+      "publishedAt": "2026-10-08T21:56:43.000Z",
+      "publishedTs": 1791496603000,
+      "day": "2026-10-09",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 63
+    },
+    {
+      "id": "0xyzldb",
+      "title": "Anthropic launches free AI security scans for open-source projects",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1008521/anthropic-open-source-oss-scanner",
+      "summary": "Anthropic's offering to help open-source projects track down security vulnerabilities with a new service called OSS Scanner. It says open-source projects that opt-in will get \"thorough, periodic security scans by our str…",
+      "author": "Stevie Bonifield",
+      "source": "The Verge AI",
+      "sourceId": "verge-ai",
+      "home": "https://www.theverge.com/ai-artificial-intelligence",
+      "weight": 1.6,
+      "lang": "en",
+      "category": "行业动态",
+      "publishedAt": "2026-10-08T21:53:51.000Z",
+      "publishedTs": 1791496431000,
+      "day": "2026-10-09",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 61
+    },
+    {
+      "id": "1fi7faz",
+      "title": "特朗普把AI改名SI：马斯克跟风 奥尔特曼拒绝改名OpenSI",
+      "url": "https://news.mydrivers.com/1/1156/1156025.htm",
+      "summary": "快科技10月8日消息，美国总统特朗普9月29日在白宫会见黄仁勋、马斯克、扎克伯格等科技企业负责人时，正式宣布将\"人工智能\"改名为\"超级智能\"（SI）。 马斯克10月4日已在社交平台跟进，表示SpaceX是一家超级智能公司，将把SpaceXAI改名为SpaceXSI。 OpenAI首席执行官萨姆·奥尔特曼则明确表示，不会将公司名称OpenAI改为OpenSI。 奥尔特曼认为，尽管超级智能概念日益受到关注，但人们依然会习惯性地称之为AI，改…",
+      "author": "建嘉",
+      "source": "快科技",
+      "sourceId": "mydrivers",
+      "home": "https://www.mydrivers.com",
+      "weight": 1.2,
+      "lang": "zh",
+      "category": "行业动态",
+      "publishedAt": "2026-10-08T21:26:28.000Z",
+      "publishedTs": 1791494788000,
+      "day": "2026-10-09",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 56
+    },
+    {
+      "id": "1db06ne",
+      "title": "Into the Omniverse: How Developers Turn Ideas Into Simulations With Frontier AI Agents",
+      "url": "https://blogs.nvidia.com/blog/developers-simulation-frontier-ai-agents",
+      "summary": "Turning a simulation idea into a working application means assembling assets, connecting physics and rendering, and checking that the scene behaves as intended. Developers are combining frontier AI models with NVIDIA Omn…",
+      "author": "NVIDIA Writers",
+      "source": "NVIDIA",
+      "sourceId": "nvidia",
+      "home": "https://blogs.nvidia.com",
+      "weight": 1.8,
+      "lang": "en",
+      "category": "行业动态",
+      "publishedAt": "2026-10-08T21:06:35.000Z",
+      "publishedTs": 1791493595000,
+      "day": "2026-10-09",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 62
+    },
+    {
+      "id": "1e3v24c",
+      "title": "Pretend you’re sitting at Elizabeth Holmes’ desk on this weirdly detailed website",
+      "url": "https://techcrunch.com/2026/10/08/pretend-youre-sitting-at-elizabeth-holmes-desk-on-this-weirdly-detailed-website",
+      "summary": "With over a thousand emails, slides, texts, and documents from the United States v. Elizabeth Holmes trial, Extend engineer Bo Lau created a website that simulates what it might have been like to rifle through the Theran…",
+      "author": "Amanda Silberling",
+      "source": "TechCrunch AI",
+      "sourceId": "techcrunch-ai",
+      "home": "https://techcrunch.com/category/artificial-intelligence/",
+      "weight": 1.8,
+      "lang": "en",
+      "category": "行业动态",
+      "publishedAt": "2026-10-08T21:00:00.000Z",
+      "publishedTs": 1791493200000,
+      "day": "2026-10-09",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 62
+    },
+    {
+      "id": "0tti616",
+      "title": "AI-ready biological data: $1.8B global commitment",
+      "url": "https://biohub.org/news/virtual-biology-initiative-expansion",
+      "summary": "Article URL: https://biohub.org/news/virtual-biology-initiative-expansion/ Comments URL: https://news.ycombinator.com/item?id=50011999 Points: 69 # Comments: 7",
+      "author": "ray__",
+      "source": "Hacker News",
+      "sourceId": "hn-ai",
+      "home": "https://news.ycombinator.com",
+      "weight": 1.2,
+      "lang": "en",
+      "category": "行业动态",
+      "publishedAt": "2026-10-08T20:46:25.000Z",
+      "publishedTs": 1791492385000,
+      "day": "2026-10-09",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 55
+    },
+    {
+      "id": "1llv3pw",
+      "title": "孙悟空与林黛玉约会全网走红！快手：重点打击AI魔改 相关视频已下线",
+      "url": "https://news.mydrivers.com/1/1156/1156019.htm",
+      "summary": "快科技10月8日消息，近日，社交平台上出现不少林黛玉与孙悟空谈恋爱的AI视频，网友还称他们为“圣黛CP”，受到不少人追捧。 两人保持着80年代改编影视剧里的经典形象，一个身着锦罗绸缎，一个身披行者装，来到现代社会，今天逛北京动物园，明天到迪士尼乐园看烟花……上演了一场“毒舌”少女和“直男”猴哥的纯爱情节。 网友发现，这两个出自中国四大名著的人物，虽然看似八竿子打不着边，拼接起来却毫不违和。 有网友表示，林妹妹和孙悟空都有俏皮、机敏和善良…",
+      "author": "哈尔",
+      "source": "快科技",
+      "sourceId": "mydrivers",
+      "home": "https://www.mydrivers.com",
+      "weight": 1.2,
+      "lang": "zh",
+      "category": "行业动态",
+      "publishedAt": "2026-10-08T20:29:55.000Z",
+      "publishedTs": 1791491395000,
+      "day": "2026-10-09",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 55
+    },
+    {
+      "id": "12dicmm",
+      "title": "California is trying to shut down robot vs. human cage matches",
+      "url": "https://www.theverge.com/tech/1008401/california-shut-down-rek-fighting-robot-company-human",
+      "summary": "The California State Athletic Commission sent a cease-and-desist letter to a startup that hosted a match between a human and a robot last month, as reported by The New York Times. The fight, which took place on September…",
+      "author": "Jay Peters",
+      "source": "The Verge AI",
+      "sourceId": "verge-ai",
+      "home": "https://www.theverge.com/ai-artificial-intelligence",
+      "weight": 1.6,
+      "lang": "en",
+      "category": "行业动态",
+      "publishedAt": "2026-10-08T20:06:56.000Z",
+      "publishedTs": 1791490016000,
+      "day": "2026-10-09",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 59
+    },
+    {
+      "id": "129f3lu",
+      "title": "Fired OpenAI safety researchers dispute misconduct claims, warn of chilling effect",
+      "url": "https://techcrunch.com/2026/10/08/fired-openai-safety-researchers-dispute-misconduct-claims-warn-of-chilling-effect",
+      "summary": "Three fired OpenAI safety researchers dispute allegations of mishandling sensitive information, warning in an open letter that their dismissals are creating a chilling effect on the company’s AI safety culture.",
+      "author": "Rebecca Bellan",
+      "source": "TechCrunch AI",
+      "sourceId": "techcrunch-ai",
+      "home": "https://techcrunch.com/category/artificial-intelligence/",
+      "weight": 1.8,
+      "lang": "en",
+      "category": "行业动态",
+      "publishedAt": "2026-10-08T20:04:26.000Z",
+      "publishedTs": 1791489866000,
+      "day": "2026-10-09",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 61
+    },
+    {
+      "id": "0svpnwi",
+      "title": "Vitalik Buterin backs crypto ‘bunker mode’ amid rapid AI math advances",
+      "url": "https://cointelegraph.com/news/justin-drake-urges-crypto-bunker-mode-as-ai-could-break-wallet-security-within-months",
+      "summary": "Article URL: https://cointelegraph.com/news/justin-drake-urges-crypto-bunker-mode-as-ai-could-break-wallet-security-within-months Comments URL: https://news.ycombinator.com/item?id=50010656 Points: 60 # Comments: 50",
+      "author": "firstcomm",
+      "source": "Hacker News",
+      "sourceId": "hn-ai",
+      "home": "https://news.ycombinator.com",
+      "weight": 1.2,
+      "lang": "en",
+      "category": "行业动态",
+      "publishedAt": "2026-10-08T19:17:51.000Z",
+      "publishedTs": 1791487071000,
+      "day": "2026-10-09",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 54
+    },
+    {
+      "id": "1wy47er",
+      "title": "Claude can now generate animated explainer videos and live data dashboards from text prompts",
+      "url": "https://the-decoder.com/claude-can-now-generate-animated-explainer-videos-and-live-data-dashboards-from-text-prompts",
+      "summary": "Anthropic launched two new beta features for Claude. Dashboards turns data sources like BigQuery and Snowflake into live dashboards from text prompts. Motion generates animated explainer videos from text and images. Docs…",
+      "author": "Matthias Bastian",
+      "source": "The Decoder",
+      "sourceId": "the-decoder",
+      "home": "https://the-decoder.com",
+      "weight": 1.6,
+      "lang": "en",
+      "category": "模型发布",
+      "publishedAt": "2026-10-08T19:17:22.000Z",
+      "publishedTs": 1791487042000,
+      "day": "2026-10-09",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 58
+    },
+    {
+      "id": "04klyj2",
+      "title": "Being mean to Claude can now get your account suspended under Anthropic's new TOS",
+      "url": "https://the-decoder.com/being-mean-to-claude-can-now-get-your-account-suspended-under-anthropics-new-tos",
+      "summary": "Anthropic's updated usage policy bans sustained abuse of Claude and tightens restrictions on propaganda, drone weaponization, and surveillance. The abuse rule builds on an approach that already lets models end some conve…",
+      "author": "Matthias Bastian",
+      "source": "The Decoder",
+      "sourceId": "the-decoder",
+      "home": "https://the-decoder.com",
+      "weight": 1.6,
+      "lang": "en",
+      "category": "模型发布",
+      "publishedAt": "2026-10-08T19:03:14.000Z",
+      "publishedTs": 1791486194000,
+      "day": "2026-10-09",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 57
+    },
+    {
+      "id": "055ljz6",
+      "title": "面筋哥去世后被“复活”！家人用AI制作短剧引争议",
+      "url": "https://news.mydrivers.com/1/1156/1156004.htm",
+      "summary": "网红“面筋哥”程书林去世一年半年后，近日又因为AI内容重新出现在网友视野中。相关贴吧讨论和B站视频显示，其家人及相关账号开始尝试利用AI技术还原面筋哥的形象与声音，并制作成短剧等内容。由于程书林本人已经去世，这种“让面筋哥继续出镜”的做法迅速引发网友争议。 程书林曾凭借《烤面筋》走红网络，后来又因为鬼畜二创成为B站早期极具代表性的网络人物。2025年3月29日，他因病抢救无效在郑州去世，终年52岁。去世后，其家人仍持续运营相关社交账号…",
+      "author": "心态良好的胖子",
+      "source": "快科技",
+      "sourceId": "mydrivers",
+      "home": "https://www.mydrivers.com",
+      "weight": 1.2,
+      "lang": "zh",
+      "category": "观点方法",
+      "publishedAt": "2026-10-08T18:48:56.000Z",
+      "publishedTs": 1791485336000,
+      "day": "2026-10-09",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 59
+    },
+    {
+      "id": "04fmfeg",
+      "title": "Pay-per-inference for AI agents: How BlockRun and Incarna use Amazon Bedrock AgentCore payments",
+      "url": "https://aws.amazon.com/blogs/machine-learning/pay-per-inference-for-ai-agents-how-blockrun-and-incarna-use-amazon-bedrock-agentcore-payments",
+      "summary": "Amazon Bedrock AgentCore payments gives AI agents a managed way to pay for services on demand, with spending limits enforced by the infrastructure. See how Incarna's agents pay BlockRun for model inference one request at…",
+      "author": "Peter Jiang",
+      "source": "AWS 机器学习",
+      "sourceId": "aws-ml",
+      "home": "https://aws.amazon.com/blogs/machine-learning/",
+      "weight": 1.4,
+      "lang": "en",
+      "category": "行业动态",
+      "publishedAt": "2026-10-08T18:33:29.000Z",
+      "publishedTs": 1791484409000,
+      "day": "2026-10-09",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 55
+    },
+    {
+      "id": "0m3k72k",
+      "title": "智谱暗示新一代GLM-5.4/5.5大模型：参数量万亿以上、技术要走2条新路",
+      "url": "https://news.mydrivers.com/1/1155/1155996.htm",
+      "summary": "快科技10月8日消息，之前提到国产大模型最近两个月很低调，但这也意味着新一轮爆发就在眼前，其中智谱下一代大模型应该是GLM-5.4或者GLM-5.5，提升会很大。 智谱创始人唐杰日前在新加坡的一次演讲中又提到了他们的大模型研发方向，主要涉及3个方面，首先是预训练的数据和规模会扩大，目标是做到几个T，提升智能上限。 这个就意味着GLM-5.4/5.5的参数量会从目前7400多亿级别提升到至少1万亿参数量了，通常规模越大意味着知识量和能力上…",
+      "author": "宪瑞",
+      "source": "快科技",
+      "sourceId": "mydrivers",
+      "home": "https://www.mydrivers.com",
+      "weight": 1.2,
+      "lang": "zh",
+      "category": "模型发布",
+      "publishedAt": "2026-10-08T18:30:12.000Z",
+      "publishedTs": 1791484212000,
+      "day": "2026-10-09",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 53
+    },
+    {
+      "id": "1g0k7n3",
+      "title": "Ben Affleck is an AI nerd, and the internet is impressed",
+      "url": "https://techcrunch.com/2026/10/08/ben-affleck-is-an-ai-nerd-and-the-internet-is-impressed",
+      "summary": "Ben Affleck is going viral for his deep knowledge of AI, from neural networks and transformers to open weights. The actor, who sold his AI filmmaking startup to Netflix earlier this year, is proving he's more than just a…",
+      "author": "Sarah Perez",
+      "source": "TechCrunch AI",
+      "sourceId": "techcrunch-ai",
+      "home": "https://techcrunch.com/category/artificial-intelligence/",
+      "weight": 1.8,
+      "lang": "en",
+      "category": "行业动态",
+      "publishedAt": "2026-10-08T18:20:32.000Z",
+      "publishedTs": 1791483632000,
+      "day": "2026-10-09",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 59
+    },
+    {
+      "id": "0ip8kpq",
+      "title": "Popular AI leaderboard Arena nearly doubles valuation to $3.1B valuation in 10 months",
+      "url": "https://techcrunch.com/2026/10/08/popular-ai-leaderboard-arena-nearly-doubles-valuation-to-3-1b-valuation-in-10-months",
+      "summary": "The company behind the popular LMArena leaderboard has raised $200 million led by Lightspeed and Khosla, and is now measuring AI models on alignment issues such as lying.",
+      "author": "Julie Bort",
+      "source": "TechCrunch AI",
+      "sourceId": "techcrunch-ai",
+      "home": "https://techcrunch.com/category/artificial-intelligence/",
+      "weight": 1.8,
+      "lang": "en",
+      "category": "行业动态",
+      "publishedAt": "2026-10-08T18:19:45.000Z",
+      "publishedTs": 1791483585000,
+      "day": "2026-10-09",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 59
+    },
+    {
+      "id": "1b9deng",
+      "title": "OpenAI’s revenue is reportedly $20 billion less than previously projected",
+      "url": "https://techcrunch.com/2026/10/08/openais-revenue-is-reportedly-20-billion-less-than-previously-projected",
+      "summary": "It had previously been reported that the AI lab's annualized revenue was some $70 billion, but a new report claims it's a whole lot less than that.",
+      "author": "Lucas Ropek",
+      "source": "TechCrunch AI",
+      "sourceId": "techcrunch-ai",
+      "home": "https://techcrunch.com/category/artificial-intelligence/",
+      "weight": 1.8,
+      "lang": "en",
+      "category": "行业动态",
+      "publishedAt": "2026-10-08T18:19:42.000Z",
+      "publishedTs": 1791483582000,
+      "day": "2026-10-09",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 59
+    },
+    {
+      "id": "1q194g0",
+      "title": "Google brings agentic AI to Gemini, starting with businesses",
+      "url": "https://techcrunch.com/2026/10/08/google-brings-agentic-ai-to-gemini-starting-with-businesses",
+      "summary": "Google is turning Gemini into an AI agent that can plan, execute tasks, and work across business apps and systems. The agent can delegate work to subagents, use multiple AI models, and even gets its own workplace identit…",
+      "author": "Sarah Perez",
+      "source": "TechCrunch AI",
+      "sourceId": "techcrunch-ai",
+      "home": "https://techcrunch.com/category/artificial-intelligence/",
+      "weight": 1.8,
+      "lang": "en",
+      "category": "模型发布",
+      "publishedAt": "2026-10-08T18:18:00.000Z",
+      "publishedTs": 1791483480000,
+      "day": "2026-10-09",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 59
+    },
+    {
+      "id": "0qapbm1",
+      "title": "Some mathematicians call for OpenAI boycott after AI-generated proofs flood their field",
+      "url": "https://the-decoder.com/some-mathematicians-call-for-openai-boycott-after-ai-generated-proofs-flood-their-field",
+      "summary": "The Association for Human Mathematics is calling for an OpenAI boycott after the company released more than 700 AI-generated math manuscripts at once. OpenAI had to retract three papers the next day over a sign error. Fi…",
+      "author": "Manuel Uth",
+      "source": "The Decoder",
+      "sourceId": "the-decoder",
+      "home": "https://the-decoder.com",
+      "weight": 1.6,
+      "lang": "en",
+      "category": "行业动态",
+      "publishedAt": "2026-10-08T18:17:07.000Z",
+      "publishedTs": 1791483427000,
+      "day": "2026-10-09",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 57
+    },
+    {
+      "id": "0nnxhki",
+      "title": "Anthropic changes usage policy to ban model abuse and election interference",
+      "url": "https://techcrunch.com/2026/10/08/anthropic-changes-usage-policy-to-ban-model-abuse-and-election-interference",
+      "summary": "Anthropic's updated usage policy explicitly prohibits users from repeatedly abusing Claude in extreme cases, though ordinary frustration and criticism are still allowed. The new rules also address election interference…",
+      "author": "Russell Brandom",
+      "source": "TechCrunch AI",
+      "sourceId": "techcrunch-ai",
+      "home": "https://techcrunch.com/category/artificial-intelligence/",
+      "weight": 1.8,
+      "lang": "en",
+      "category": "模型发布",
+      "publishedAt": "2026-10-08T18:16:24.000Z",
+      "publishedTs": 1791483384000,
+      "day": "2026-10-09",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 58
+    },
+    {
+      "id": "0iofpb9",
+      "title": "OpenAI’s math solutions aren’t meeting the field’s standards yet",
+      "url": "https://techcrunch.com/2026/10/08/openais-math-solutions-arent-meeting-the-fields-standards-yet",
+      "summary": "OpenAI's flood of proofs deviated from the guidelines set by a group of mathematical researchers consulted by the frontier lab.",
+      "author": "Tim Fernholz",
+      "source": "TechCrunch AI",
+      "sourceId": "techcrunch-ai",
+      "home": "https://techcrunch.com/category/artificial-intelligence/",
+      "weight": 1.8,
+      "lang": "en",
+      "category": "行业动态",
+      "publishedAt": "2026-10-08T18:10:55.000Z",
+      "publishedTs": 1791483055000,
+      "day": "2026-10-09",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 58
+    },
+    {
+      "id": "0zaspy3",
+      "title": "USA Today becomes the latest publisher to sue OpenAI",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1008198/usa-today-openai-copyright-lawsuit",
+      "summary": "USA Today Co., along with the several local newspapers it owns, is suing OpenAI over claims that the company copied \"hundreds of thousands\" of articles to train its AI models, as reported earlier by Reuters. In a filing…",
+      "author": "Emma Roth",
+      "source": "The Verge AI",
+      "sourceId": "verge-ai",
+      "home": "https://www.theverge.com/ai-artificial-intelligence",
+      "weight": 1.6,
+      "lang": "en",
+      "category": "行业动态",
+      "publishedAt": "2026-10-08T17:58:33.000Z",
+      "publishedTs": 1791482313000,
+      "day": "2026-10-09",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 56
+    },
+    {
+      "id": "13p32tv",
+      "title": "SpaceXAI backs Omarchy, the controversial Linux distro, with $1.5 million in compute",
+      "url": "https://www.theverge.com/tech/1008148/spacexai-omarchy-grok-david-heinemeier-hansson",
+      "summary": "If Elon Musk and SpaceXAI were going to back any Linux distro, it seems obvious they'd back Omarchy. Today it was announced that SpaceXAI would be joining the Omacom Foundation, which oversees Omarchy, as a Founding Corp…",
+      "author": "Terrence O’Brien",
+      "source": "The Verge AI",
+      "sourceId": "verge-ai",
+      "home": "https://www.theverge.com/ai-artificial-intelligence",
+      "weight": 1.6,
+      "lang": "en",
+      "category": "行业动态",
+      "publishedAt": "2026-10-08T17:57:01.000Z",
+      "publishedTs": 1791482221000,
+      "day": "2026-10-09",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 56
+    },
     {
       "id": "0y04x1c",
       "title": "联想放大招！首款RTX Spark AI PC中国市场预售：推动个人计算进入Agent新阶段",
@@ -357,7 +1577,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 62
+      "hot": 52
     },
     {
       "id": "1p2y2qw",
@@ -377,7 +1597,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 75
+      "hot": 64
     },
     {
       "id": "1pm4f8q",
@@ -397,47 +1617,147 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 75
+      "hot": 64
     },
     {
-      "id": "13h4un2",
-      "title": "AI让美国再工业化成泡影",
-      "url": "https://news.mydrivers.com/1/1156/1156044.htm",
-      "summary": "不知从什么时候开始，特朗普很少提“再工业化”了。 从“黄金时代”到无人再提二战后，美国历经漫长的去工业化，制造业占非农就业比例、制造业增加值占GDP比重均从30%降至10%左右。 去工业化受益者众多： 第一，美元资本到世界各地投资建厂并将产品反销美国，赚得盆满钵满； 第二，持续贸易逆差及对外投资扩大使海量美元涌向全世界，筑牢其储备货币地位； 第三，供给极大丰富与汇兑福利叠加，让普通美国人坐享价廉物美的商品。 去工业化的代价也很明显： 第…",
-      "author": "Eastland",
-      "source": "快科技",
-      "sourceId": "mydrivers",
-      "home": "https://www.mydrivers.com",
-      "weight": 1.2,
-      "lang": "zh",
-      "category": "行业动态",
-      "publishedAt": "2026-10-08T15:59:31.223Z",
-      "publishedTs": 1791475171223,
-      "day": "2026-10-08",
-      "estimate": true,
+      "id": "0bs3u6m",
+      "title": "Anthropic bans ‘abusive or cruel behavior’ toward Claude",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1008100/anthropic-new-usage-policy-abuse-claude",
+      "summary": "Anthropic is making changes to its usage policy for the first time in over a year to reflect new and high-risk cases of misuse - including election interference, weapons development, surveillance, and health and financia…",
+      "author": "Hayden Field",
+      "source": "The Verge AI",
+      "sourceId": "verge-ai",
+      "home": "https://www.theverge.com/ai-artificial-intelligence",
+      "weight": 1.6,
+      "lang": "en",
+      "category": "模型发布",
+      "publishedAt": "2026-10-08T17:00:00.000Z",
+      "publishedTs": 1791478800000,
+      "day": "2026-10-09",
+      "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 62
+      "hot": 55
     },
     {
-      "id": "0sckia1",
-      "title": "知名分析师重出江湖：公布2027年五大首选科技股 看好“英伟达生态”",
-      "url": "https://news.mydrivers.com/1/1156/1156041.htm",
-      "summary": "知名科技分析师Dan Ives在7月离开韦德布什证券公司后正重返大众视野。他曾在该公司担任股票研究员近八年，之后担任科技研究主管。Ives发布最新声明，宣布将为他的新创企业Yorkville Ives开展科技领域的业务。 Yorkville Ives被描述为一家面向人工智能（AI）时代的现代商业银行，主业包括战略咨询、融资、投资以及研究和调研服务，由Dan Ives与Yorkville证券公司合资创办。 Dan Ives指出： “人工智…",
-      "author": "黄君芝",
-      "source": "快科技",
-      "sourceId": "mydrivers",
-      "home": "https://www.mydrivers.com",
-      "weight": 1.2,
-      "lang": "zh",
+      "id": "0skklnm",
+      "title": "Share GPU clusters across teams with isolation and fairness using Amazon SageMaker HyperPod",
+      "url": "https://aws.amazon.com/blogs/machine-learning/share-gpu-clusters-across-teams-with-isolation-and-fairness-using-amazon-sagemaker-hyperpod",
+      "summary": "A reference architecture for securely sharing one Amazon SageMaker HyperPod EKS cluster across multiple teams, using AWS IAM Identity Center for authentication, per-team SageMaker Domains and Kubernetes namespaces for is…",
+      "author": "Giuseppe Angelo Porcelli",
+      "source": "AWS 机器学习",
+      "sourceId": "aws-ml",
+      "home": "https://aws.amazon.com/blogs/machine-learning/",
+      "weight": 1.4,
+      "lang": "en",
       "category": "行业动态",
-      "publishedAt": "2026-10-08T15:59:31.223Z",
-      "publishedTs": 1791475171223,
-      "day": "2026-10-08",
-      "estimate": true,
+      "publishedAt": "2026-10-08T16:20:04.000Z",
+      "publishedTs": 1791476404000,
+      "day": "2026-10-09",
+      "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 75
+      "hot": 52
+    },
+    {
+      "id": "1hltlph",
+      "title": "JetBrains Releases Mellum2.1: A 12B MoE Open Model for Coding Agents",
+      "url": "https://www.marktechpost.com/2026/10/08/jetbrains-releases-mellum2-1-a-12b-moe-open-model-for-coding-agents",
+      "summary": "JetBrains released Mellum2.1, an Apache 2.0, 12B mixture-of-experts thinking model with 2.5B active parameters. RL in real repositories lifted its SWE-bench Verified score from 2.0 to 47.0. The post JetBrains Releases Me…",
+      "author": "Asif Razzaq",
+      "source": "MarkTechPost",
+      "sourceId": "marktechpost",
+      "home": "https://www.marktechpost.com",
+      "weight": 1.4,
+      "lang": "en",
+      "category": "模型发布",
+      "publishedAt": "2026-10-08T16:17:35.000Z",
+      "publishedTs": 1791476255000,
+      "day": "2026-10-09",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 52
+    },
+    {
+      "id": "18ffsqj",
+      "title": "How Oracle turns days of work into minutes with ChatGPT and Codex",
+      "url": "https://openai.com/index/oracle",
+      "summary": "Across recruiting, engineering, and operations, Oracle turns specialist knowledge into fast, repeatable workflows with ChatGPT Work and Codex.",
+      "author": "",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "home": "https://openai.com/news",
+      "weight": 2.5,
+      "lang": "en",
+      "category": "行业动态",
+      "publishedAt": "2026-10-08T16:00:00.000Z",
+      "publishedTs": 1791475200000,
+      "day": "2026-10-09",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 63
+    },
+    {
+      "id": "1mo2jgv",
+      "title": "Goodfire says its new ‘inside-out’ monitors catch rogue AI agents at a fraction of the cost",
+      "url": "https://techcrunch.com/2026/10/08/goodfire-says-its-new-inside-out-monitors-catch-rogue-ai-agents-at-a-fraction-of-the-cost",
+      "summary": "Goodfire just launched what it says is a cheaper way to keep AI agents in check: Instead of paying a second AI to read everything an agent does, its monitors peek inside the model while it works and only call in backup w…",
+      "author": "Aditya Mehta",
+      "source": "TechCrunch AI",
+      "sourceId": "techcrunch-ai",
+      "home": "https://techcrunch.com/category/artificial-intelligence/",
+      "weight": 1.8,
+      "lang": "en",
+      "category": "产品动态",
+      "publishedAt": "2026-10-08T16:00:00.000Z",
+      "publishedTs": 1791475200000,
+      "day": "2026-10-09",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 56
+    },
+    {
+      "id": "17gegv3",
+      "title": "Natura’s $99 smart ring puts AI agents on your finger",
+      "url": "https://techcrunch.com/2026/10/08/naturas-smart-ring-puts-ai-agents-on-your-finger",
+      "summary": "Natura’s $99 Interface smart ring lets you summon AI agents with the press of a finger to complete tasks, capture thoughts, and control devices — while doubling as a health tracker.",
+      "author": "Aisha Malik",
+      "source": "TechCrunch AI",
+      "sourceId": "techcrunch-ai",
+      "home": "https://techcrunch.com/category/artificial-intelligence/",
+      "weight": 1.8,
+      "lang": "en",
+      "category": "行业动态",
+      "publishedAt": "2026-10-08T16:00:00.000Z",
+      "publishedTs": 1791475200000,
+      "day": "2026-10-09",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 56
+    },
+    {
+      "id": "1w1hzoz",
+      "title": "Claude Haiku 5.5 降本背后：操作能力暴涨，复杂编程为何仍差一截？",
+      "url": "https://www.leiphone.com/category/ai/n2GjuJRnM4utgaun.html",
+      "summary": "模型开始按任务动态分配推理，超 10 万 Token 后，输入输出单价均涨 5 倍。 作者丨郑佳美 编辑丨岑 峰 刚刚，Anthropic 发布了 Claude Haiku 5.5。 这次升级的幅度不小，尤其是在计算机操作方面，OSWorld 2.1 评测成绩从上一代的 15.7% 提升到了 72.4%。知识工作和复杂推理能力也有明显改善，而按照 Anthropic 公布的数据，新模型的平均运行成本还下降了约 75%。 除此之外，Hai…",
+      "author": "",
+      "source": "雷锋网",
+      "sourceId": "leiphone",
+      "home": "https://www.leiphone.com",
+      "weight": 1.5,
+      "lang": "zh",
+      "category": "模型发布",
+      "publishedAt": "2026-10-08T15:37:00.000Z",
+      "publishedTs": 1791473820000,
+      "day": "2026-10-08",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 65
     },
     {
       "id": "1cvcw5j",
@@ -457,7 +1777,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 72
+      "hot": 60
     },
     {
       "id": "0gjthvy",
@@ -477,7 +1797,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 65
+      "hot": 53
     },
     {
       "id": "15e9ztx",
@@ -497,7 +1817,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 67
+      "hot": 55
     },
     {
       "id": "1fflc44",
@@ -517,7 +1837,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 60
+      "hot": 49
     },
     {
       "id": "0e7lqny",
@@ -537,7 +1857,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 64
+      "hot": 52
     },
     {
       "id": "1jxx3b3",
@@ -557,7 +1877,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 76
+      "hot": 65
     },
     {
       "id": "1kom7yw",
@@ -577,7 +1897,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 64
+      "hot": 52
     },
     {
       "id": "0anqrab",
@@ -597,7 +1917,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 69
+      "hot": 58
     },
     {
       "id": "187rn4z",
@@ -617,7 +1937,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 65
+      "hot": 54
     },
     {
       "id": "0zzgtsu",
@@ -637,7 +1957,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 65
+      "hot": 54
     },
     {
       "id": "1mkts84",
@@ -657,7 +1977,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 63
+      "hot": 52
     },
     {
       "id": "0vur6s1",
@@ -677,27 +1997,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 63
-    },
-    {
-      "id": "0l0owpc",
-      "title": "谷歌云发布Gemini智能体：可自主执行企业多步骤任务",
-      "url": "https://news.mydrivers.com/1/1156/1156028.htm",
-      "summary": "快科技10月8日消息，今日，谷歌云在Gemini at Work 2026发布会上宣布，面向企业客户推出Gemini智能体。 该产品定位“通用工作智能体”，支持Gemini Enterprise、Workspace以及第三方服务。 谷歌表示，Gemini智能体只需要用户给出目标就能完成工作，即可通过单一界面处理问答、知识工作、内容创作及代码编写和运行等任务，并能调用企业内部工具和数据，自主完成用户设定的目标。 例如，当你的经理用邮件要求…",
-      "author": "哈尔",
-      "source": "快科技",
-      "sourceId": "mydrivers",
-      "home": "https://www.mydrivers.com",
-      "weight": 1.2,
-      "lang": "zh",
-      "category": "产品动态",
-      "publishedAt": "2026-10-08T13:56:43.000Z",
-      "publishedTs": 1791467803000,
-      "day": "2026-10-08",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 65
+      "hot": 52
     },
     {
       "id": "0td8au0",
@@ -717,7 +2017,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 63
+      "hot": 52
     },
     {
       "id": "0kaiale",
@@ -737,7 +2037,27 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 69
+      "hot": 58
+    },
+    {
+      "id": "0f6dafh",
+      "title": "Sub-1-Bit LLM Compression via Latent Factorization",
+      "url": "https://github.com/SamsungLabs/LittleBit",
+      "summary": "Article URL: https://github.com/SamsungLabs/LittleBit Comments URL: https://news.ycombinator.com/item?id=50005608 Points: 77 # Comments: 22",
+      "author": "brainless",
+      "source": "Hacker News",
+      "sourceId": "hn-ai",
+      "home": "https://news.ycombinator.com",
+      "weight": 1.2,
+      "lang": "en",
+      "category": "开源工具",
+      "publishedAt": "2026-10-08T13:29:46.000Z",
+      "publishedTs": 1791466186000,
+      "day": "2026-10-08",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 47
     },
     {
       "id": "1dvno3d",
@@ -757,7 +2077,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 65
+      "hot": 53
     },
     {
       "id": "1boywlz",
@@ -777,27 +2097,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 69
-    },
-    {
-      "id": "1fi7faz",
-      "title": "特朗普把AI改名SI：马斯克跟风 奥尔特曼拒绝改名OpenSI",
-      "url": "https://news.mydrivers.com/1/1156/1156025.htm",
-      "summary": "快科技10月8日消息，美国总统特朗普9月29日在白宫会见黄仁勋、马斯克、扎克伯格等科技企业负责人时，正式宣布将\"人工智能\"改名为\"超级智能\"（SI）。 马斯克10月4日已在社交平台跟进，表示SpaceX是一家超级智能公司，将把SpaceXAI改名为SpaceXSI。 OpenAI首席执行官萨姆·奥尔特曼则明确表示，不会将公司名称OpenAI改为OpenSI。 奥尔特曼认为，尽管超级智能概念日益受到关注，但人们依然会习惯性地称之为AI，改…",
-      "author": "建嘉",
-      "source": "快科技",
-      "sourceId": "mydrivers",
-      "home": "https://www.mydrivers.com",
-      "weight": 1.2,
-      "lang": "zh",
-      "category": "行业动态",
-      "publishedAt": "2026-10-08T13:26:28.000Z",
-      "publishedTs": 1791465988000,
-      "day": "2026-10-08",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 59
+      "hot": 57
     },
     {
       "id": "0wff4y7",
@@ -817,7 +2117,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 69
+      "hot": 58
     },
     {
       "id": "1ybvjs9",
@@ -837,7 +2137,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 64
+      "hot": 53
     },
     {
       "id": "01n4367",
@@ -857,7 +2157,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 60
+      "hot": 49
     },
     {
       "id": "0fmzc9j",
@@ -877,7 +2177,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 62
+      "hot": 51
     },
     {
       "id": "0t63hc5",
@@ -897,7 +2197,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 64
+      "hot": 53
     },
     {
       "id": "0mjktzm",
@@ -917,27 +2217,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 80
-    },
-    {
-      "id": "1llv3pw",
-      "title": "孙悟空与林黛玉约会全网走红！快手：重点打击AI魔改 相关视频已下线",
-      "url": "https://news.mydrivers.com/1/1156/1156019.htm",
-      "summary": "快科技10月8日消息，近日，社交平台上出现不少林黛玉与孙悟空谈恋爱的AI视频，网友还称他们为“圣黛CP”，受到不少人追捧。 两人保持着80年代改编影视剧里的经典形象，一个身着锦罗绸缎，一个身披行者装，来到现代社会，今天逛北京动物园，明天到迪士尼乐园看烟花……上演了一场“毒舌”少女和“直男”猴哥的纯爱情节。 网友发现，这两个出自中国四大名著的人物，虽然看似八竿子打不着边，拼接起来却毫不违和。 有网友表示，林妹妹和孙悟空都有俏皮、机敏和善良…",
-      "author": "哈尔",
-      "source": "快科技",
-      "sourceId": "mydrivers",
-      "home": "https://www.mydrivers.com",
-      "weight": 1.2,
-      "lang": "zh",
-      "category": "行业动态",
-      "publishedAt": "2026-10-08T12:29:55.000Z",
-      "publishedTs": 1791462595000,
-      "day": "2026-10-08",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 57
+      "hot": 69
     },
     {
       "id": "1hutb9f",
@@ -957,7 +2237,47 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 60
+      "hot": 49
+    },
+    {
+      "id": "0k5bou2",
+      "title": "LegalOn halves Codex costs while maintaining development speed",
+      "url": "https://openai.com/index/legalon-halves-codex-costs",
+      "summary": "LegalOn cut estimated daily Codex costs by 65% while maintaining development speed. It matched Astra, Sol, and Luna to tasks and managed budgets strategically.",
+      "author": "",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "home": "https://openai.com/news",
+      "weight": 2.5,
+      "lang": "en",
+      "category": "行业动态",
+      "publishedAt": "2026-10-08T12:00:00.000Z",
+      "publishedTs": 1791460800000,
+      "day": "2026-10-08",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 59
+    },
+    {
+      "id": "0srbye2",
+      "title": "Pollo AI turns creative ideas into campaigns with OpenAI",
+      "url": "https://openai.com/index/pollo-ai",
+      "summary": "With GPT-5.6, GPT-6 Astra, and GPT‑Image‑2.5, Pollo AI helps creators turn bold ideas into detailed images and cinematic video ads.",
+      "author": "",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "home": "https://openai.com/news",
+      "weight": 2.5,
+      "lang": "en",
+      "category": "模型发布",
+      "publishedAt": "2026-10-08T12:00:00.000Z",
+      "publishedTs": 1791460800000,
+      "day": "2026-10-08",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 59
     },
     {
       "id": "1ozxm27",
@@ -977,7 +2297,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 60
+      "hot": 49
     },
     {
       "id": "0itxuer",
@@ -997,7 +2317,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 72
+      "hot": 61
     },
     {
       "id": "143twbv",
@@ -1017,7 +2337,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 66
+      "hot": 55
     },
     {
       "id": "1pg993w",
@@ -1037,7 +2357,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 57
+      "hot": 47
     },
     {
       "id": "0hfexyx",
@@ -1057,7 +2377,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 65
+      "hot": 55
     },
     {
       "id": "0ld5i4p",
@@ -1077,7 +2397,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 63
+      "hot": 52
     },
     {
       "id": "0l0ogls",
@@ -1097,27 +2417,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 63
-    },
-    {
-      "id": "055ljz6",
-      "title": "面筋哥去世后被“复活”！家人用AI制作短剧引争议",
-      "url": "https://news.mydrivers.com/1/1156/1156004.htm",
-      "summary": "网红“面筋哥”程书林去世一年半年后，近日又因为AI内容重新出现在网友视野中。相关贴吧讨论和B站视频显示，其家人及相关账号开始尝试利用AI技术还原面筋哥的形象与声音，并制作成短剧等内容。由于程书林本人已经去世，这种“让面筋哥继续出镜”的做法迅速引发网友争议。 程书林曾凭借《烤面筋》走红网络，后来又因为鬼畜二创成为B站早期极具代表性的网络人物。2025年3月29日，他因病抢救无效在郑州去世，终年52岁。去世后，其家人仍持续运营相关社交账号…",
-      "author": "心态良好的胖子",
-      "source": "快科技",
-      "sourceId": "mydrivers",
-      "home": "https://www.mydrivers.com",
-      "weight": 1.2,
-      "lang": "zh",
-      "category": "观点方法",
-      "publishedAt": "2026-10-08T10:48:56.000Z",
-      "publishedTs": 1791456536000,
-      "day": "2026-10-08",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 62
+      "hot": 52
     },
     {
       "id": "0arzzx2",
@@ -1137,7 +2437,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 58
+      "hot": 48
     },
     {
       "id": "07gm1bf",
@@ -1157,27 +2457,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 59
-    },
-    {
-      "id": "0m3k72k",
-      "title": "智谱暗示新一代GLM-5.4/5.5大模型：参数量万亿以上、技术要走2条新路",
-      "url": "https://news.mydrivers.com/1/1155/1155996.htm",
-      "summary": "快科技10月8日消息，之前提到国产大模型最近两个月很低调，但这也意味着新一轮爆发就在眼前，其中智谱下一代大模型应该是GLM-5.4或者GLM-5.5，提升会很大。 智谱创始人唐杰日前在新加坡的一次演讲中又提到了他们的大模型研发方向，主要涉及3个方面，首先是预训练的数据和规模会扩大，目标是做到几个T，提升智能上限。 这个就意味着GLM-5.4/5.5的参数量会从目前7400多亿级别提升到至少1万亿参数量了，通常规模越大意味着知识量和能力上…",
-      "author": "宪瑞",
-      "source": "快科技",
-      "sourceId": "mydrivers",
-      "home": "https://www.mydrivers.com",
-      "weight": 1.2,
-      "lang": "zh",
-      "category": "模型发布",
-      "publishedAt": "2026-10-08T10:30:12.000Z",
-      "publishedTs": 1791455412000,
-      "day": "2026-10-08",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 55
+      "hot": 49
     },
     {
       "id": "1fzz9z0",
@@ -1197,7 +2477,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 65
+      "hot": 55
     },
     {
       "id": "1vep8a5",
@@ -1217,7 +2497,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 58
+      "hot": 48
     },
     {
       "id": "0lun9op",
@@ -1237,7 +2517,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 55
+      "hot": 45
     },
     {
       "id": "0f82xw3",
@@ -1257,7 +2537,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 70
+      "hot": 60
     },
     {
       "id": "0cpnz5o",
@@ -1277,7 +2557,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 64
+      "hot": 54
     },
     {
       "id": "0cwwjy5",
@@ -1297,7 +2577,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 58
+      "hot": 48
     },
     {
       "id": "01ldrkq",
@@ -1317,7 +2597,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 64
+      "hot": 54
     },
     {
       "id": "1ylgtxw",
@@ -1337,7 +2617,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 55
+      "hot": 45
     },
     {
       "id": "0habn87",
@@ -1357,7 +2637,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 70
+      "hot": 60
     },
     {
       "id": "1d3c0u5",
@@ -1377,7 +2657,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 56
+      "hot": 46
     },
     {
       "id": "1l877d9",
@@ -1397,7 +2677,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 60
+      "hot": 50
     },
     {
       "id": "16qqr9z",
@@ -1417,7 +2697,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 55
+      "hot": 45
     },
     {
       "id": "1sstku3",
@@ -1437,7 +2717,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 55
+      "hot": 45
     },
     {
       "id": "0tnbx68",
@@ -1457,7 +2737,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 55
+      "hot": 46
     },
     {
       "id": "0q3wrjq",
@@ -1477,7 +2757,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 54
+      "hot": 45
     },
     {
       "id": "0zcvfqx",
@@ -1497,7 +2777,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 59
+      "hot": 50
     },
     {
       "id": "01d7mz7",
@@ -1517,7 +2797,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 60
+      "hot": 51
     },
     {
       "id": "1rpry4u",
@@ -1537,7 +2817,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 59
+      "hot": 49
     },
     {
       "id": "0lwggoe",
@@ -1557,7 +2837,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 54
+      "hot": 45
     },
     {
       "id": "1pne5wv",
@@ -1577,7 +2857,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 54
+      "hot": 45
     },
     {
       "id": "146ico3",
@@ -1597,7 +2877,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 61
+      "hot": 52
     },
     {
       "id": "0luqf6o",
@@ -1617,7 +2897,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 52
+      "hot": 43
     },
     {
       "id": "1urzwfs",
@@ -1637,7 +2917,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 52
+      "hot": 43
     },
     {
       "id": "01x6ud5",
@@ -1657,7 +2937,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 53
+      "hot": 44
     },
     {
       "id": "1vxdjnq",
@@ -1677,7 +2957,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 54
+      "hot": 44
     },
     {
       "id": "1b4u02b",
@@ -1697,7 +2977,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 54
+      "hot": 44
     },
     {
       "id": "0nfy7mg",
@@ -1717,7 +2997,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 52
+      "hot": 43
     },
     {
       "id": "1wlihr6",
@@ -1737,7 +3017,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 52
+      "hot": 43
     },
     {
       "id": "0kk1c6o",
@@ -1757,7 +3037,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 53
+      "hot": 44
     },
     {
       "id": "18jnwkw",
@@ -1777,7 +3057,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 52
+      "hot": 43
     },
     {
       "id": "0qki4rl",
@@ -1797,7 +3077,7 @@
       "estimate": false,
       "bulk": true,
       "alsoIn": [],
-      "hot": 48
+      "hot": 39
     },
     {
       "id": "1txilfx",
@@ -1817,7 +3097,7 @@
       "estimate": false,
       "bulk": true,
       "alsoIn": [],
-      "hot": 48
+      "hot": 39
     },
     {
       "id": "17wkojq",
@@ -1837,7 +3117,7 @@
       "estimate": false,
       "bulk": true,
       "alsoIn": [],
-      "hot": 48
+      "hot": 39
     },
     {
       "id": "0dn4pq5",
@@ -1857,7 +3137,7 @@
       "estimate": false,
       "bulk": true,
       "alsoIn": [],
-      "hot": 48
+      "hot": 39
     },
     {
       "id": "0c93jrb",
@@ -1877,7 +3157,7 @@
       "estimate": false,
       "bulk": true,
       "alsoIn": [],
-      "hot": 48
+      "hot": 39
     },
     {
       "id": "1s8nzdv",
@@ -1897,7 +3177,7 @@
       "estimate": false,
       "bulk": true,
       "alsoIn": [],
-      "hot": 48
+      "hot": 39
     },
     {
       "id": "0i68qk7",
@@ -1917,7 +3197,7 @@
       "estimate": false,
       "bulk": true,
       "alsoIn": [],
-      "hot": 48
+      "hot": 39
     },
     {
       "id": "1czhx6s",
@@ -1937,7 +3217,7 @@
       "estimate": false,
       "bulk": true,
       "alsoIn": [],
-      "hot": 48
+      "hot": 39
     },
     {
       "id": "1duazy8",
@@ -1957,7 +3237,7 @@
       "estimate": false,
       "bulk": true,
       "alsoIn": [],
-      "hot": 48
+      "hot": 39
     },
     {
       "id": "00olpjl",
@@ -1977,7 +3257,7 @@
       "estimate": false,
       "bulk": true,
       "alsoIn": [],
-      "hot": 48
+      "hot": 39
     },
     {
       "id": "0q8sych",
@@ -1997,7 +3277,7 @@
       "estimate": false,
       "bulk": true,
       "alsoIn": [],
-      "hot": 48
+      "hot": 39
     },
     {
       "id": "0uj1b0u",
@@ -2017,7 +3297,7 @@
       "estimate": false,
       "bulk": true,
       "alsoIn": [],
-      "hot": 48
+      "hot": 39
     },
     {
       "id": "0xvwdim",
@@ -2037,7 +3317,7 @@
       "estimate": false,
       "bulk": true,
       "alsoIn": [],
-      "hot": 48
+      "hot": 39
     },
     {
       "id": "0b421a6",
@@ -2057,7 +3337,7 @@
       "estimate": false,
       "bulk": true,
       "alsoIn": [],
-      "hot": 48
+      "hot": 39
     },
     {
       "id": "0nmjpep",
@@ -2077,7 +3357,7 @@
       "estimate": false,
       "bulk": true,
       "alsoIn": [],
-      "hot": 48
+      "hot": 39
     },
     {
       "id": "13kvfsa",
@@ -2097,7 +3377,7 @@
       "estimate": false,
       "bulk": true,
       "alsoIn": [],
-      "hot": 48
+      "hot": 39
     },
     {
       "id": "1azvnn2",
@@ -2117,7 +3397,7 @@
       "estimate": false,
       "bulk": true,
       "alsoIn": [],
-      "hot": 48
+      "hot": 39
     },
     {
       "id": "1720qv7",
@@ -2137,7 +3417,7 @@
       "estimate": false,
       "bulk": true,
       "alsoIn": [],
-      "hot": 48
+      "hot": 39
     },
     {
       "id": "1k97pil",
@@ -2157,7 +3437,7 @@
       "estimate": false,
       "bulk": true,
       "alsoIn": [],
-      "hot": 48
+      "hot": 39
     },
     {
       "id": "0wx8281",
@@ -2177,7 +3457,7 @@
       "estimate": false,
       "bulk": true,
       "alsoIn": [],
-      "hot": 48
+      "hot": 39
     },
     {
       "id": "1djb91i",
@@ -2197,7 +3477,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 61
+      "hot": 53
     },
     {
       "id": "1ts7zxj",
@@ -2217,7 +3497,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 50
+      "hot": 41
     },
     {
       "id": "1gvkv8n",
@@ -2237,7 +3517,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 56
+      "hot": 48
     },
     {
       "id": "1k7qqo3",
@@ -2257,7 +3537,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 49
+      "hot": 41
     },
     {
       "id": "00wz00t",
@@ -2277,7 +3557,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 50
+      "hot": 41
     },
     {
       "id": "1wubcya",
@@ -2297,7 +3577,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 50
+      "hot": 41
     },
     {
       "id": "0cq9mb7",
@@ -2317,7 +3597,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 50
+      "hot": 41
     },
     {
       "id": "0fll3gf",
@@ -2337,7 +3617,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 55
+      "hot": 46
     },
     {
       "id": "0wi92h0",
@@ -2357,7 +3637,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 62
+      "hot": 54
     },
     {
       "id": "1eczhrp",
@@ -2377,7 +3657,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 48
+      "hot": 40
     },
     {
       "id": "0dpo4cc",
@@ -2397,7 +3677,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 54
+      "hot": 46
     },
     {
       "id": "1unn4fb",
@@ -2417,7 +3697,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 48
+      "hot": 39
     },
     {
       "id": "1l46jdo",
@@ -2437,7 +3717,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 53
+      "hot": 45
     },
     {
       "id": "1oq4iwa",
@@ -2457,7 +3737,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 59
+      "hot": 51
     },
     {
       "id": "1ek9ld6",
@@ -2477,7 +3757,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 61
+      "hot": 53
     },
     {
       "id": "0p6mg3o",
@@ -2497,7 +3777,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 61
+      "hot": 53
     },
     {
       "id": "1kua36o",
@@ -2517,7 +3797,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 52
+      "hot": 44
     },
     {
       "id": "0g7kjl3",
@@ -2537,13 +3817,13 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 47
+      "hot": 39
     },
     {
       "id": "0jw3szx",
       "title": "Port of the TypeScript compiler, checker and lsp to Rust, by LLM",
       "url": "https://github.com/pingdotgg/ts-rust",
-      "summary": "Article URL: https://github.com/pingdotgg/ts-rust Comments URL: https://news.ycombinator.com/item?id=50000676 Points: 96 # Comments: 187",
+      "summary": "Article URL: https://github.com/pingdotgg/ts-rust Comments URL: https://news.ycombinator.com/item?id=50000676 Points: 109 # Comments: 207",
       "author": "jcbhmr",
       "source": "Hacker News",
       "sourceId": "hn-ai",
@@ -2557,7 +3837,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 45
+      "hot": 37
     },
     {
       "id": "1a4a4sg",
@@ -2577,7 +3857,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 59
+      "hot": 51
     },
     {
       "id": "0llcw6s",
@@ -2597,7 +3877,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 57
+      "hot": 49
     },
     {
       "id": "1l49ovn",
@@ -2617,7 +3897,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 51
+      "hot": 44
     },
     {
       "id": "0nvbe20",
@@ -2637,7 +3917,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 42
+      "hot": 35
     },
     {
       "id": "1975du9",
@@ -2657,7 +3937,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 47
+      "hot": 40
     },
     {
       "id": "16mkiy6",
@@ -2677,7 +3957,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 43
+      "hot": 36
     },
     {
       "id": "0b53mj6",
@@ -2697,7 +3977,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 47
+      "hot": 40
     },
     {
       "id": "043g74h",
@@ -2717,7 +3997,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 44
+      "hot": 37
     },
     {
       "id": "19lndep",
@@ -2737,7 +4017,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 44
+      "hot": 37
     },
     {
       "id": "1o5t9qk",
@@ -2757,13 +4037,13 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 42
+      "hot": 35
     },
     {
       "id": "0lu9a8b",
       "title": "Meta and Microsoft take steps to reduce employee usage of Claude AI",
       "url": "https://www.rswebsols.com/news/meta-and-microsoft-take-steps-to-reduce-employee-usage-of-claude-ai",
-      "summary": "Article URL: https://www.rswebsols.com/news/meta-and-microsoft-take-steps-to-reduce-employee-usage-of-claude-ai/ Comments URL: https://news.ycombinator.com/item?id=49997161 Points: 358 # Comments: 370",
+      "summary": "Article URL: https://www.rswebsols.com/news/meta-and-microsoft-take-steps-to-reduce-employee-usage-of-claude-ai/ Comments URL: https://news.ycombinator.com/item?id=49997161 Points: 367 # Comments: 381",
       "author": "speckx",
       "source": "Hacker News",
       "sourceId": "hn-ai",
@@ -2777,7 +4057,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 40
+      "hot": 33
     },
     {
       "id": "1ovj7su",
@@ -2797,7 +4077,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 44
+      "hot": 37
     },
     {
       "id": "1qucfny",
@@ -2817,7 +4097,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 46
+      "hot": 39
     },
     {
       "id": "0j1p01m",
@@ -2837,7 +4117,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 44
+      "hot": 37
     },
     {
       "id": "1i52q6n",
@@ -2857,7 +4137,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 42
+      "hot": 35
     },
     {
       "id": "1imf14y",
@@ -2877,7 +4157,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 46
+      "hot": 39
     },
     {
       "id": "1n34yuj",
@@ -2897,7 +4177,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 41
+      "hot": 35
     },
     {
       "id": "08unurp",
@@ -2917,7 +4197,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 45
+      "hot": 39
     },
     {
       "id": "17hvbvi",
@@ -2937,7 +4217,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 43
+      "hot": 37
     },
     {
       "id": "1q9h18a",
@@ -2957,7 +4237,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 45
+      "hot": 39
     },
     {
       "id": "1pqqhfy",
@@ -2977,7 +4257,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 43
+      "hot": 37
     },
     {
       "id": "13jr0g6",
@@ -2997,7 +4277,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 43
+      "hot": 37
     },
     {
       "id": "1hlc3mw",
@@ -3017,7 +4297,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 43
+      "hot": 37
     },
     {
       "id": "1g3lq15",
@@ -3037,7 +4317,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 38
+      "hot": 32
     },
     {
       "id": "1cwo4io",
@@ -3057,7 +4337,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 44
+      "hot": 38
     },
     {
       "id": "154ef13",
@@ -3077,7 +4357,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 42
+      "hot": 36
     },
     {
       "id": "1nfyfks",
@@ -3097,7 +4377,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 40
+      "hot": 33
     },
     {
       "id": "14xbabl",
@@ -3117,7 +4397,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 40
+      "hot": 33
     },
     {
       "id": "0m5hhea",
@@ -3137,7 +4417,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 40
+      "hot": 33
     },
     {
       "id": "0vv1w3c",
@@ -3157,7 +4437,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 39
+      "hot": 33
     },
     {
       "id": "1rsz406",
@@ -3177,7 +4457,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 39
+      "hot": 33
     },
     {
       "id": "139g1xw",
@@ -3197,7 +4477,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 41
+      "hot": 35
     },
     {
       "id": "0u4lotx",
@@ -3217,7 +4497,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 41
+      "hot": 35
     },
     {
       "id": "0zpdry2",
@@ -3237,7 +4517,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 43
+      "hot": 37
     },
     {
       "id": "0ok5xgz",
@@ -3257,7 +4537,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 41
+      "hot": 35
     },
     {
       "id": "1bumkmz",
@@ -3277,7 +4557,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 43
+      "hot": 37
     },
     {
       "id": "1fg5f3n",
@@ -3297,7 +4577,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 43
+      "hot": 37
     },
     {
       "id": "0gk6otw",
@@ -3317,7 +4597,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 43
+      "hot": 37
     },
     {
       "id": "1p37av7",
@@ -3337,13 +4617,13 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 42
+      "hot": 37
     },
     {
       "id": "1cy7kzw",
       "title": "AI-assisted proof of optimal packing for 11 squares",
       "url": "https://github.com/Queuingtheorydotcom/11SquaresFormalized",
-      "summary": "Article URL: https://github.com/Queuingtheorydotcom/11SquaresFormalized Comments URL: https://news.ycombinator.com/item?id=49993121 Points: 116 # Comments: 54",
+      "summary": "Article URL: https://github.com/Queuingtheorydotcom/11SquaresFormalized Comments URL: https://news.ycombinator.com/item?id=49993121 Points: 117 # Comments: 54",
       "author": "bluepeter",
       "source": "Hacker News",
       "sourceId": "hn-ai",
@@ -3357,7 +4637,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 36
+      "hot": 31
     },
     {
       "id": "1qi378y",
@@ -3377,7 +4657,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 42
+      "hot": 36
     },
     {
       "id": "05oujrv",
@@ -3397,7 +4677,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 42
+      "hot": 36
     },
     {
       "id": "1le9akm",
@@ -3417,7 +4697,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 49
+      "hot": 43
     },
     {
       "id": "1dykbvb",
@@ -3437,7 +4717,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 48
+      "hot": 42
     },
     {
       "id": "1oq7oe9",
@@ -3457,13 +4737,13 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 48
+      "hot": 43
     },
     {
       "id": "1sbriin",
       "title": "Reasons to Dislike AI Coding",
       "url": "https://www.sicpers.info/2026/10/reasons-to-dislike-ai-coding",
-      "summary": "Article URL: https://www.sicpers.info/2026/10/reasons-to-dislike-ai-coding/ Comments URL: https://news.ycombinator.com/item?id=49990204 Points: 75 # Comments: 108",
+      "summary": "Article URL: https://www.sicpers.info/2026/10/reasons-to-dislike-ai-coding/ Comments URL: https://news.ycombinator.com/item?id=49990204 Points: 77 # Comments: 112",
       "author": "signa11",
       "source": "Hacker News",
       "sourceId": "hn-ai",
@@ -3477,13 +4757,13 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 33
+      "hot": 28
     },
     {
       "id": "1fsovda",
       "title": "Forever junior: Skills AI can't develop for you",
       "url": "https://tech.criteo.com/blog/human-skills-ai-cant-develop-junior-engineers",
-      "summary": "Article URL: https://tech.criteo.com/blog/human-skills-ai-cant-develop-junior-engineers/ Comments URL: https://news.ycombinator.com/item?id=49989684 Points: 76 # Comments: 59",
+      "summary": "Article URL: https://tech.criteo.com/blog/human-skills-ai-cant-develop-junior-engineers/ Comments URL: https://news.ycombinator.com/item?id=49989684 Points: 79 # Comments: 59",
       "author": "brugidou",
       "source": "Hacker News",
       "sourceId": "hn-ai",
@@ -3497,7 +4777,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 33
+      "hot": 28
     },
     {
       "id": "0mo88vq",
@@ -3517,7 +4797,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 34
+      "hot": 30
     },
     {
       "id": "1gce18o",
@@ -3537,7 +4817,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 45
+      "hot": 40
     },
     {
       "id": "0n1m96z",
@@ -3557,7 +4837,27 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 34
+      "hot": 29
+    },
+    {
+      "id": "10pywev",
+      "title": "Show HN: NanoMuse – An open-source AI agent for your phone and computer",
+      "url": "https://github.com/nano-muse/nanoMuse",
+      "summary": "Article URL: https://github.com/nano-muse/nanoMuse Comments URL: https://news.ycombinator.com/item?id=49987765 Points: 62 # Comments: 22",
+      "author": "ilreb",
+      "source": "Hacker News",
+      "sourceId": "hn-ai",
+      "home": "https://news.ycombinator.com",
+      "weight": 1.2,
+      "lang": "en",
+      "category": "产品动态",
+      "publishedAt": "2026-10-07T03:30:44.000Z",
+      "publishedTs": 1791343844000,
+      "day": "2026-10-07",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 26
     },
     {
       "id": "0x7ipga",
@@ -3577,7 +4877,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 31
+      "hot": 27
     },
     {
       "id": "0p6zco3",
@@ -3597,7 +4897,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 31
+      "hot": 27
     },
     {
       "id": "0clmk2h",
@@ -3617,7 +4917,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 43
+      "hot": 39
     },
     {
       "id": "1eb0h4c",
@@ -3637,7 +4937,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 30
+      "hot": 26
     },
     {
       "id": "0anf7hz",
@@ -3659,13 +4959,13 @@
       "alsoIn": [
         "Hacker News"
       ],
-      "hot": 41
+      "hot": 38
     },
     {
       "id": "0x5xfrh",
       "title": "South Korea says AI agents appear to have been used to hack the country's banks",
       "url": "https://www.reuters.com/world/south-koreas-lee-says-ai-appears-have-been-used-bank-hacks-2026-10-06",
-      "summary": "Article URL: https://www.reuters.com/world/south-koreas-lee-says-ai-appears-have-been-used-bank-hacks-2026-10-06/ Comments URL: https://news.ycombinator.com/item?id=49985861 Points: 99 # Comments: 31",
+      "summary": "Article URL: https://www.reuters.com/world/south-koreas-lee-says-ai-appears-have-been-used-bank-hacks-2026-10-06/ Comments URL: https://news.ycombinator.com/item?id=49985861 Points: 100 # Comments: 32",
       "author": "thoughtpeddler",
       "source": "Hacker News",
       "sourceId": "hn-ai",
@@ -3679,7 +4979,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 28
+      "hot": 24
     },
     {
       "id": "1v5wzky",
@@ -3699,7 +4999,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 29
+      "hot": 25
     },
     {
       "id": "1q8k8ku",
@@ -3719,13 +5019,13 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 34
+      "hot": 30
     },
     {
       "id": "1ntlxru",
       "title": "Penguin Mail – open-source Rust email client for Linux with AI",
       "url": "https://penguin-mail.com/",
-      "summary": "Article URL: https://penguin-mail.com/ Comments URL: https://news.ycombinator.com/item?id=49984716 Points: 237 # Comments: 184",
+      "summary": "Article URL: https://penguin-mail.com/ Comments URL: https://news.ycombinator.com/item?id=49984716 Points: 238 # Comments: 184",
       "author": "kavourias",
       "source": "Hacker News",
       "sourceId": "hn-ai",
@@ -3739,7 +5039,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 28
+      "hot": 24
     },
     {
       "id": "18o06ee",
@@ -3759,7 +5059,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 28
+      "hot": 25
     },
     {
       "id": "0rt2dc2",
@@ -3779,7 +5079,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 33
+      "hot": 29
     },
     {
       "id": "09jhbip",
@@ -3799,7 +5099,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 28
+      "hot": 24
     },
     {
       "id": "11rgbx5",
@@ -3819,7 +5119,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 38
+      "hot": 34
     },
     {
       "id": "0h763ds",
@@ -3839,7 +5139,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 28
+      "hot": 25
     },
     {
       "id": "1paa1a6",
@@ -3859,7 +5159,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 40
+      "hot": 36
     },
     {
       "id": "0oyagx2",
@@ -3879,7 +5179,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 28
+      "hot": 25
     },
     {
       "id": "1js37ui",
@@ -3899,7 +5199,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 27
+      "hot": 24
     },
     {
       "id": "14pqz6p",
@@ -3919,13 +5219,13 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 28
+      "hot": 24
     },
     {
       "id": "1qca2p7",
       "title": "Utah to let AI examine patients and prescribe medication without human oversight",
       "url": "https://www.techspot.com/news/114111-utah-become-first-state-ai-examine-patients-prescribe.html",
-      "summary": "Article URL: https://www.techspot.com/news/114111-utah-become-first-state-ai-examine-patients-prescribe.html Comments URL: https://news.ycombinator.com/item?id=49981197 Points: 139 # Comments: 130",
+      "summary": "Article URL: https://www.techspot.com/news/114111-utah-become-first-state-ai-examine-patients-prescribe.html Comments URL: https://news.ycombinator.com/item?id=49981197 Points: 140 # Comments: 131",
       "author": "healsdata",
       "source": "Hacker News",
       "sourceId": "hn-ai",
@@ -3939,13 +5239,13 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 26
+      "hot": 22
     },
     {
       "id": "1leonwl",
       "title": "OpenTPU – An open-source AI accelerator, developed by AI",
       "url": "https://github.com/FeSens/openTPU",
-      "summary": "Article URL: https://github.com/FeSens/openTPU Comments URL: https://news.ycombinator.com/item?id=49980715 Points: 340 # Comments: 399",
+      "summary": "Article URL: https://github.com/FeSens/openTPU Comments URL: https://news.ycombinator.com/item?id=49980715 Points: 342 # Comments: 400",
       "author": "fsbonetto",
       "source": "Hacker News",
       "sourceId": "hn-ai",
@@ -3959,7 +5259,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 25
+      "hot": 22
     },
     {
       "id": "12mxdqa",
@@ -3979,7 +5279,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 38
+      "hot": 35
     },
     {
       "id": "061j2zw",
@@ -3999,7 +5299,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 27
+      "hot": 24
     },
     {
       "id": "00rurap",
@@ -4019,7 +5319,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 27
+      "hot": 24
     },
     {
       "id": "0ncd1pn",
@@ -4039,7 +5339,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 27
+      "hot": 24
     },
     {
       "id": "0ltx6bt",
@@ -4059,7 +5359,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 27
+      "hot": 24
     },
     {
       "id": "03ycsqo",
@@ -4079,7 +5379,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 26
+      "hot": 23
     },
     {
       "id": "02h61r3",
@@ -4099,7 +5399,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 27
+      "hot": 24
     },
     {
       "id": "0sk0bke",
@@ -4119,7 +5419,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 30
+      "hot": 27
     },
     {
       "id": "0r8fecu",
@@ -4139,7 +5439,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 24
+      "hot": 21
     },
     {
       "id": "03sxmqi",
@@ -4159,7 +5459,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 26
+      "hot": 23
     },
     {
       "id": "048301v",
@@ -4181,7 +5481,7 @@
       "alsoIn": [
         "Hacker News"
       ],
-      "hot": 37
+      "hot": 34
     },
     {
       "id": "1ui06fh",
@@ -4201,7 +5501,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 37
+      "hot": 34
     },
     {
       "id": "14d5qb8",
@@ -4221,7 +5521,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 36
+      "hot": 33
     },
     {
       "id": "1ksmull",
@@ -4241,7 +5541,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 23
+      "hot": 21
     },
     {
       "id": "0zyyzhv",
@@ -4261,7 +5561,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 23
+      "hot": 21
     },
     {
       "id": "0f3izb8",
@@ -4281,13 +5581,13 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 29
+      "hot": 27
     },
     {
       "id": "0jpmrag",
       "title": "AI tutoring with Khanmigo in a two-year school experiment",
       "url": "https://edworkingpapers.com/ai26-1551",
-      "summary": "Article URL: https://edworkingpapers.com/ai26-1551 Comments URL: https://news.ycombinator.com/item?id=49972419 Points: 73 # Comments: 69",
+      "summary": "Article URL: https://edworkingpapers.com/ai26-1551 Comments URL: https://news.ycombinator.com/item?id=49972419 Points: 73 # Comments: 70",
       "author": "bryan0",
       "source": "Hacker News",
       "sourceId": "hn-ai",
@@ -4301,7 +5601,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 20
+      "hot": 18
     },
     {
       "id": "1oqatw8",
@@ -4321,7 +5621,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 34
+      "hot": 32
     },
     {
       "id": "1vq0ywr",
@@ -4341,7 +5641,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 22
+      "hot": 20
     },
     {
       "id": "1hmg40l",
@@ -4361,7 +5661,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 22
+      "hot": 20
     },
     {
       "id": "1plti1r",
@@ -4381,7 +5681,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 19
+      "hot": 18
     },
     {
       "id": "0o6x6su",
@@ -4401,7 +5701,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 21
+      "hot": 19
     },
     {
       "id": "09idp2p",
@@ -4421,7 +5721,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 21
+      "hot": 19
     },
     {
       "id": "0s8ylcv",
@@ -4441,7 +5741,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 21
+      "hot": 19
     },
     {
       "id": "1mpq6ed",
@@ -4461,7 +5761,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 21
+      "hot": 19
     },
     {
       "id": "02qi3gv",
@@ -4481,7 +5781,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 21
+      "hot": 19
     },
     {
       "id": "0u3xqij",
@@ -4501,7 +5801,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 21
+      "hot": 19
     },
     {
       "id": "0u3byi7",
@@ -4521,7 +5821,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 32
+      "hot": 30
     },
     {
       "id": "147cbzm",
@@ -4541,7 +5841,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 20
+      "hot": 19
     },
     {
       "id": "05lh93b",
@@ -4561,7 +5861,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 24
+      "hot": 23
     },
     {
       "id": "0zpbdrp",
@@ -4581,7 +5881,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 18
+      "hot": 17
     },
     {
       "id": "162qkqd",
@@ -4601,7 +5901,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 31
+      "hot": 29
     },
     {
       "id": "0fni6p6",
@@ -4621,7 +5921,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 26
+      "hot": 25
     },
     {
       "id": "0dzkkjc",
@@ -4641,7 +5941,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 18
+      "hot": 17
     },
     {
       "id": "1idp8cs",
@@ -4661,7 +5961,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 16
+      "hot": 15
     },
     {
       "id": "1p0afl7",
@@ -4681,7 +5981,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 23
+      "hot": 22
     },
     {
       "id": "15baqri",
@@ -4721,7 +6021,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 30
+      "hot": 29
     },
     {
       "id": "1rl94m9",
@@ -4741,7 +6041,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 15
+      "hot": 14
     },
     {
       "id": "0dl2kjp",
@@ -4761,7 +6061,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 15
+      "hot": 14
     },
     {
       "id": "0y3jp6j",
@@ -4781,7 +6081,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 15
+      "hot": 14
     },
     {
       "id": "1nb7jxx",
@@ -4801,7 +6101,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 17
+      "hot": 16
     },
     {
       "id": "0bgeqle",
@@ -4821,7 +6121,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 17
+      "hot": 16
     },
     {
       "id": "0bqecad",
@@ -4841,7 +6141,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 17
+      "hot": 16
     },
     {
       "id": "09sh4fk",
@@ -4861,7 +6161,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 23
+      "hot": 22
     },
     {
       "id": "1qo81r1",
@@ -5041,7 +6341,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 26
+      "hot": 25
     },
     {
       "id": "1vlvnkd",
@@ -5061,7 +6361,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 19
+      "hot": 18
     },
     {
       "id": "1nrywdf",
@@ -5201,7 +6501,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 21
+      "hot": 20
     },
     {
       "id": "0a2dkmk",
@@ -8237,46 +9537,6 @@
       "category": "行业动态",
       "publishedAt": "2026-08-25T07:00:00.000Z",
       "publishedTs": 1787641200000,
-      "day": "2026-08-25",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 25
-    },
-    {
-      "id": "1wtfps8",
-      "title": "Disrupting a new covert influence campaign from Russia",
-      "url": "https://openai.com/index/disrupting-malicious-uses-of-ai-influence-campaign-russia",
-      "summary": "OpenAI banned Russia-origin accounts using AI to promote a fake Israel-based think tank and a “sovereignty” index praising Russia and criticizing the West.",
-      "author": "",
-      "source": "OpenAI",
-      "sourceId": "openai",
-      "home": "https://openai.com/news",
-      "weight": 2.5,
-      "lang": "en",
-      "category": "行业动态",
-      "publishedAt": "2026-08-25T00:00:00.000Z",
-      "publishedTs": 1787616000000,
-      "day": "2026-08-25",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 25
-    },
-    {
-      "id": "08mr795",
-      "title": "Introducing the Admin plugin for ChatGPT Work and Codex",
-      "url": "https://openai.com/index/introducing-admin-plugin",
-      "summary": "Use the Admin plugin for ChatGPT Work and Codex to analyze workspace usage, manage members and permissions, adjust limits, and act on admin requests.",
-      "author": "",
-      "source": "OpenAI",
-      "sourceId": "openai",
-      "home": "https://openai.com/news",
-      "weight": 2.5,
-      "lang": "en",
-      "category": "行业动态",
-      "publishedAt": "2026-08-25T00:00:00.000Z",
-      "publishedTs": 1787616000000,
       "day": "2026-08-25",
       "estimate": false,
       "bulk": false,
