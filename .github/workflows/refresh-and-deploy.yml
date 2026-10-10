@@ -63,8 +63,8 @@ jobs:
           OSS_ACCESS_KEY_SECRET: ${{ secrets.OSS_ACCESS_KEY_SECRET }}
           # 桶名，例如 ai-news-daily
           OSS_BUCKET: ${{ vars.OSS_BUCKET }}
-          # 地域 endpoint 的二级域名形式，本项目用香港：oss-cn-hongkong.aliyuncs.com（免备案）
-          # 想上大陆节点则改成如 oss-cn-hangzhou.aliyuncs.com（需先备案），不要带 https://
+          # 地域 endpoint，本项目用香港：oss-cn-hongkong.aliyuncs.com（免备案）
+          # 带不带 https:// 都行，脚本会自动补——因为 Bucket Policy 的「拒绝非加密传输」连自己人也拒
           OSS_ENDPOINT: ${{ vars.OSS_ENDPOINT }}
         run: |
           set -euo pipefail
@@ -73,19 +73,26 @@ jobs:
             echo "::error::OSS_BUCKET 或 OSS_ENDPOINT 为空。这两个必须建在 Variables 页签（不是 Secrets 页签）"
             exit 1
           fi
+          # endpoint 统一补上 https://：Bucket Policy 里那条「拒绝非加密传输」条件对所有人生效
+          # （Principal: ["*"]，RAM 账号也不例外），走明文 HTTP 会被 AccessDenied 掉
+          case "$OSS_ENDPOINT" in
+            http://*|https://*) ENDPOINT="$OSS_ENDPOINT" ;;
+            *) ENDPOINT="https://$OSS_ENDPOINT" ;;
+          esac
+          echo "实际使用的 endpoint: $ENDPOINT"
           echo "--- 下载 ossutil 1.7.19 ---"
           curl -fsSL --retry 3 --retry-all-errors --connect-timeout 20 -o /tmp/ossutil.zip \
             https://gosspublic.alicdn.com/ossutil/1.7.19/ossutil-v1.7.19-linux-amd64.zip
           ls -l /tmp/ossutil.zip
           echo "dcc512e4a893e16bbee63bc769339d8e56b21744fd83c8212a9d8baf28767343  /tmp/ossutil.zip" | sha256sum -c -
-          # -j 把 zip 内的目录层级去掉：包内其实是 ossutil-v1.7.19-linux-amd64/ossutil64
-          unzip -q -j /tmp/ossutil.zip -d /tmp/ossutil
+          # -o 覆盖不询问，-j 去掉 zip 内的目录层级（包内其实是 ossutil-v1.7.19-linux-amd64/ossutil64）
+          unzip -q -o -j /tmp/ossutil.zip -d /tmp/ossutil
           ls -l /tmp/ossutil
           chmod +x /tmp/ossutil/ossutil64
           echo "--- 开始同步 ---"
           /tmp/ossutil/ossutil64 --version
           /tmp/ossutil/ossutil64 sync ./dist "oss://$OSS_BUCKET/" \
-            -e "$OSS_ENDPOINT" -i "$OSS_ACCESS_KEY_ID" -k "$OSS_ACCESS_KEY_SECRET" \
+            -e "$ENDPOINT" -i "$OSS_ACCESS_KEY_ID" -k "$OSS_ACCESS_KEY_SECRET" \
             --delete -f --jobs 10
 
       - uses: actions/configure-pages@v5

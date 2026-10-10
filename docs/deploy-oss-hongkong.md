@@ -180,7 +180,9 @@
       | Secret | `OSS_ACCESS_KEY_ID` | RAM 子账号的 AccessKey ID |
       | Secret | `OSS_ACCESS_KEY_SECRET` | RAM 子账号的 AccessKey Secret |
       | Variable | `OSS_BUCKET` | 桶名，如 `ai-news-daily` |
-      | Variable | `OSS_ENDPOINT` | `oss-cn-hongkong.aliyuncs.com`（**不要带 `https://`**） |
+      | Variable | `OSS_ENDPOINT` | `oss-cn-hongkong.aliyuncs.com`（带不带 `https://` 都行，脚本会自动补）。
+      ⚠️ **必须是 `https://`**：如果加了「拒绝非加密传输」的 Bucket Policy，明文 HTTP 会被它拒掉——
+      那条策略的 `Principal` 是 `["*"]`，**连 RAM 账号自己也一样被拒**（表现为同步报 `Access denied by bucket policy`） |
       | Variable | `SITE_URL` | 可选：填**实际能打开的**那个地址（如 `https://latestainews.cn/`），让 RSS 自链接指向新域名。
       它只影响 `data/feed.xml` 的 `<link>` 与 `atom:link`，**不会让别的域名变得可访问**——
       想用 `www.你的域名` 得先绑定 www + 加它的 CNAME + 让证书覆盖它 |

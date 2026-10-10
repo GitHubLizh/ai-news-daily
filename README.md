@@ -281,8 +281,10 @@ OSS 没有"盯着仓库自动构建"的能力，所以由 workflow 直传。`.gi
 1. 建一个 **RAM 子账号**（别用主账号 AccessKey），只授予**该 Bucket 的读写权限**，生成 AccessKey；
 2. 仓库 `Settings → Secrets and variables → Actions` 加两个 secret：`OSS_ACCESS_KEY_ID`、`OSS_ACCESS_KEY_SECRET`；
 3. 加两个 variable：`OSS_BUCKET`（桶名，如 `ai-news-daily`）、`OSS_ENDPOINT`
-   （地域 endpoint 的**二级域名**形式，本项目用 **`oss-cn-hongkong.aliyuncs.com`**（香港，免备案）；
-   换大陆节点就是 `oss-cn-hangzhou.aliyuncs.com` 之类，**不要带 `https://`**）。
+   （地域 endpoint，本项目用 **`oss-cn-hongkong.aliyuncs.com`**（香港，免备案）；换大陆节点就是
+   `oss-cn-hangzhou.aliyuncs.com` 之类。**带不带 `https://` 都行，脚本会自动补**——
+   但如果加了「拒绝非加密传输」的 Bucket Policy，就必须走 TLS：那条策略对**所有人**生效，
+   明文 HTTP 连 RAM 账号自己都会被拒，同步会报 `Access denied by bucket policy`）。
 
 **没配 secret 时这一步会自动跳过**，GitHub Pages 那条线路照常发布，所以可以先合进去、准备好再启用。
 参数要点（都用 ossutil 1.7.19 的 `--help` 实测核对过）：`-e/-i/-k` 分别是 endpoint / AccessKeyID / AccessKeySecret，
