@@ -23,9 +23,9 @@ const HTTPS_TIMEOUT_MS = 15000;
 const PUBLIC_DNS = ['8.8.8.8', '1.1.1.1'];
 
 const DEFAULT_TARGETS = [
-  ['线上站点（GitHub Pages）', 'https://githublizh.github.io/ai-news-daily/'],
-  ['阿里云 OSS 香港（本项目选用）', 'https://oss-cn-hongkong.aliyuncs.com/'],
-  ['阿里云 OSS 杭州（需备案）', 'https://oss-cn-hangzhou.aliyuncs.com/'],
+  ['线上主站（阿里云 OSS 香港）', 'https://latestainews.cn/'],
+  ['备用线路（GitHub Pages）', 'https://githublizh.github.io/ai-news-daily/'],
+  ['阿里云 OSS 杭州（需备案，仅作对照）', 'https://oss-cn-hangzhou.aliyuncs.com/'],
   ['Cloudflare 对照', 'https://docs.pages.dev/'],
 ];
 

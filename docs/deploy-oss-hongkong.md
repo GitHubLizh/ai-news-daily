@@ -197,10 +197,22 @@
       配好后才会真正执行同步）
 - [ ] 4. 检查 Bucket 根目录出现了 `index.html`、`assets/`、`data/`，然后访问你的域名
 
-> **这一步失败了怎么看？** 展开这一步的日志，它会按顺序打印
-> 「变量检查 → 下载 ossutil → SHA256 校验 → 解压后的 `ls -l` → 同步」，**在哪一段停下就是哪一段的问题**。
-> 已知坑（已在 workflow 中修复）：ossutil 的 zip 包里含一层 `ossutil-v1.7.19-linux-amd64/` 目录，
-> 解压时必须用 `unzip -j` 去掉层级，否则 `chmod` 找不到二进制，步骤会在 1 秒内失败。
+> 已踩过的坑（都已修复或给出处理办法）：
+>
+> | 报错 / 现象 | 原因 | 处理 |
+> | --- | --- | --- |
+> | `chmod: cannot access '/tmp/ossutil/ossutil64'`，步骤 1 秒内失败 | ossutil 的 zip 包里含一层 `ossutil-v1.7.19-linux-amd64/` 目录 | 已改成 `unzip -j` 去层级（workflow 已修） |
+> | `Access denied by bucket policy` | 加了「拒绝非加密传输」策略，而 ossutil 走了明文 HTTP；该策略 `Principal` 是 `["*"]`，**连 RAM 账号自己也拒** | 已由 workflow 自动补 `https://` 解决 |
+> | `The bucket you access does not belong to you.` | ①RAM 用户**没被授权**这个桶，或 ②AccessKey 属于**另一个阿里云账号** | 见下面「授权核对」 |
+> | `OSS_BUCKET 或 OSS_ENDPOINT 为空` | 变量建在了 Secrets 页签 | 移到 **Variables** 页签 |
+
+> **授权核对（对应 `does not belong to you`）**：
+> 1. **RAM → 身份管理 → 用户 → 你的子账号 → 权限管理**：必须有策略（自定义的最小权限策略，或临时用 `AliyunOSSFullAccess` 兜底）
+> 2. 确认你操作 RAM 时登录的是**拥有这个 OSS 桶的那个阿里云账号**（对比右上角账号名/UID——多账号时最容易踩）
+> 3. 自定义策略的 `Resource` 里**两处**桶名都要换：`acs:oss:*:*:latest-ai-news` 与 `acs:oss:*:*:latest-ai-news/*`
+> 4. **认证管理**页签里的 AccessKey ID 要与 GitHub Secret 里填的一致
+> 5. 快速隔离：先挂系统策略 `AliyunOSSFullAccess` 再跑一次——**变绿**说明是自定义策略写错了（再收紧），
+>    **仍报同样错**说明 AK 或账号不对
 
 ### 阶段 4 附：RAM 最小权限策略
 
@@ -239,22 +251,32 @@
 
 ## 阶段 5 · 上线后收尾
 
-- [ ] 1. 改 `data/feeds.json` 的 `site.url` 为新域名（或者用上面的 `SITE_URL` 变量覆盖），
+- [x] 1. 改 `data/feeds.json` 的 `site.url` 为新域名（或者用仓库变量 `SITE_URL` 覆盖），
       否则 `data/feed.xml` 里的 `<link>` 与 `atom:link` 还指向 `githublizh.github.io`
-- [ ] 2. 改 README 开头的线上地址，以及站点「关于」弹窗里的地址文案（`assets/app.js`）
+      —— **本项目已完成**：两处都指向 `https://latestainews.cn`
+- [x] 2. 改 README 开头的线上地址 —— **已完成**。
+      注意：站点「关于」弹窗（`assets/app.js`）里**没有写死线上地址**，不用改
 - [ ] 3. 给 OSS 设**费用/流量告警**——按量计费，被人刷流量会直接出账单
-- [ ] 4. **晚高峰（20:00–23:00）再跑一次线路抽样**：
+- [ ] 4. **证书到期前续期**（⚠️ 别漏）：本项目启用了「拒绝非加密传输」，一旦证书过期，
+      HTTP 被策略拒绝、HTTPS 握不上手，网站会**彻底打不开、没有任何降级路径**。
+      去 OSS `域名管理 → 证书详情` 看到期时间，并开启证书托管自动续期
+- [ ] 5. **晚高峰（20:00–23:00）再跑一次线路抽样**：
       ```bash
-      npm run check:lines -- --n=8 https://news.你的域名.com/
+      npm run check:lines -- --n=8 https://你的域名/
       ```
       判定标准：失败率 0%、p95 < 3s 就可以长期用；
       如果失败率 >5% 或 p95 >5s，再考虑走大陆节点（需要备案 + 一个可备案实例）
 
 ---
 
-## 四项最终验收
+## 最终验收（本项目 2026-10-10 已全部通过）
 
-1. `https://news.你的域名.com/` 打开有安全锁，资讯正常渲染
-2. `https://news.你的域名.com/data/news.json` 能直接下载到 JSON（说明公共读生效）
+1. `https://你的域名/` 打开有安全锁，资讯正常渲染
+   —— 实测 `https://latestainews.cn/` → **200**，证书校验 `ssl_verify=0`
+2. `https://你的域名/data/news.json` 能直接下载到 JSON（说明公共读生效）
+   —— 实测同域名下 `/`、`/index.html`、`/assets/app.js`、`/assets/styles.css`、
+   `/data/news.json`、`/data/feed.xml` **全部 200**
 3. GitHub Actions 手动触发一次，`同步到阿里云 OSS` 这一步是绿色 ✅
 4. 第二天定时任务跑完后，页面上「最新」出现当天的新条目
+5. `data/feed.xml` 的 `atom:link` 指向新域名（说明 `SITE_URL` 生效）
+   —— 实测为 `https://latestainews.cn/data/feed.xml`

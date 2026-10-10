@@ -2,7 +2,7 @@
   "_comment": "资讯源配置。enabled=false 不抓取；weight(1~3) 影响热度排序；relevance=ai 表示整站都是 AI 内容，tech 表示综合科技站、需按关键词过滤；timeShiftHours 用于修正源站标注错误的时区；bulkLimit 用于高频源（如 arXiv）按新闻性择优截断。npm run fetch 会打印每个源的成功/失败。",
   "site": {
     "title": "AI 资讯速递",
-    "url": "https://githublizh.github.io/ai-news-daily",
+    "url": "https://latestainews.cn",
     "description": "每日聚合国内外 AI 资讯：模型发布、产品动态、研究前沿、行业动态，按天归档，可按日期检索。",
     "language": "zh-CN"
   },

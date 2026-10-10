@@ -1,6 +1,7 @@
 # AI 资讯速递
 
-**线上地址：<https://githublizh.github.io/ai-news-daily/>**（每天北京时间 06:00 自动更新）
+**线上主站：<https://latestainews.cn/>**（阿里云 OSS · 香港地域，免备案，每天北京时间 06:00 自动更新）
+**海外备用：<https://githublizh.github.io/ai-news-daily/>**（同一条流水线发布，互为备份）
 
 一个自建的 AI 资讯聚合站：每天抓取国内外公开 RSS 源，去重、分类、按天归档后写入一份静态 JSON，
 页面纯前端渲染。没有账号、没有广告，适合自己和朋友每天花几分钟扫一眼 AI 圈发生了什么。
@@ -102,7 +103,7 @@ npm test
 │     └─ text.mjs           # HTML 清洗、实体解码、URL 规范化、语种识别
 ├─ test/                    # node:test 单元测试
 ├─ dist/                    # npm run build 产物（已 gitignore）
-└─ .github/workflows/       # 定时刷新数据并发布到 GitHub Pages（可选）
+└─ .github/workflows/       # 定时刷新数据，同时发布到 GitHub Pages 与阿里云 OSS
 ```
 
 ## 数据管线
@@ -149,9 +150,9 @@ npm run fetch && npm run build     # 生成 dist/
 
 站点是纯静态产物，把 `dist/` 作为站点根目录发布即可（也可以直接发布仓库根目录）。
 
-- **GitHub Pages**：仓库已带 `.github/workflows/refresh-and-deploy.yml`，每天北京时间 06:00
-  自动抓取、提交 `data/news.json` 与 `data/feed.xml`、构建 `dist/` 并发布站点。
-  本项目已按此方式部署在 <https://githublizh.github.io/ai-news-daily/>；换仓库时需在
+- **GitHub Pages（备用线路）**：仓库已带 `.github/workflows/refresh-and-deploy.yml`，每天北京时间 06:00
+  自动抓取、提交 `data/news.json` 与 `data/feed.xml`、构建 `dist/` 并发布站点；
+  **同一条流水线会同时更新 GitHub Pages 与阿里云 OSS（国内主站）**。换仓库时需在
   `Settings → Pages → Build and deployment` 把 Source 选为 **GitHub Actions**。
 - **Vercel / Netlify**：构建命令填 `npm run fetch && npm run build`，发布目录填 `dist`。
 - **本地自用**：`npm run fetch && npm run dev`，局域网内其他设备可通过 `HOST=0.0.0.0` 访问。
@@ -325,16 +326,26 @@ Cloudflare Pages 免费、可直传。如果不想买域名，可以去申请一
           command: pages deploy dist --project-name=ai-news-daily
 ```
 
-#### 换域名后必须同步修改的地方
+#### 域名分工与「换域名后要改什么」
 
-- `data/feeds.json` 的 `site.url` —— 它决定 `data/feed.xml` 里 `<link>` 与 `atom:link` 的地址，
-  不改就会继续指向 `githublizh.github.io`。只在 CI 里换的话可以用环境变量覆盖，不必改配置文件：
+当前两条线路：
 
-  ```bash
-  SITE_URL=https://新域名/ npm run fetch
-  ```
+- **主站**：<https://latestainews.cn/>（阿里云 OSS 香港，免备案）
+- **备用**：<https://githublizh.github.io/ai-news-daily/>（GitHub Pages）
 
-- 本文件开头的线上地址，以及站点「关于」弹窗里的地址文案。
+两处都已经指向主站：`data/feeds.json` 的 `site.url`，以及 GitHub 仓库变量 `SITE_URL`。
+
+以后若再换域名，只需要改这三处：
+
+1. `data/feeds.json` 的 `site.url`（决定 `data/feed.xml` 里 `<link>` 与 `atom:link` 的地址）；
+   只想在 CI 里换、不动配置文件的话，用环境变量覆盖即可：
+
+   ```bash
+   SITE_URL=https://新域名/ npm run fetch
+   ```
+
+2. 本文件开头的线上地址
+3. （站点「关于」弹窗里**没有写死线上地址**，不用改）
 
 #### 先实测，再决定
 
@@ -352,8 +363,8 @@ npm run check:lines -- https://你的域名/   # 加上自己的线路一起比
 
 | 线路 | DNS | TCP p50 | HTTPS 成功 | HTTPS p50 / p95 |
 | --- | --- | --- | --- | --- |
-| GitHub Pages（现状） | 正常 | 135ms | 4/4 | 711ms / 3010ms |
-| **阿里云 OSS 香港** | 正常 | 382ms | **4/4** | 390ms / 1560ms |
+| GitHub Pages（备用） | 正常 | 135ms | 4/4 | 711ms / 3010ms |
+| **阿里云 OSS 香港（主站）** | 正常 | 382ms | **4/4** | 390ms / 1560ms |
 | 阿里云 OSS 杭州（需备案） | 正常 | **25ms** | 4/4 | **35ms** / 142ms |
 | Cloudflare（对照） | 正常 | 251ms | **1/4** ⚠️ | 7882ms |
 
@@ -362,6 +373,10 @@ npm run check:lines -- https://你的域名/   # 加上自己的线路一起比
 而 Cloudflare 那次抽样 3/4 失败，正好说明「默认域名在国内不可靠」不是危言耸听。
 
 日常最稳的形态是**两条线路都留着**：香港线路给国内访客，GitHub Pages 留给海外和 CI 归档，互为备用入口。
+
+> 上线后复测（2026-10-10 16:xx，`npm run check:lines`）：
+> `https://latestainews.cn/` 全资源 200，主站 HTTPS 首包约 1.4–1.6s、`data/news.json`（约 590 KB）约 3.7s。
+> 数值仍属"能开但偏慢"，符合"境外节点"的预期。
 
 ### 当前源（27 个抓取中）
 
