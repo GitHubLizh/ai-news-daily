@@ -104,6 +104,9 @@ html[data-theme='dark'] {
 
 html {
   scroll-behavior: smooth;
+  /* iOS 横屏/大字号下不要自动放大正文 */
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 body {
@@ -121,12 +124,14 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+  touch-action: manipulation;
 }
 
 button {
   font: inherit;
   color: inherit;
   cursor: pointer;
+  touch-action: manipulation;
 }
 
 h1,
@@ -236,12 +241,6 @@ ul {
   transition: color 0.15s, background 0.15s, border-color 0.15s;
 }
 
-.nav a:hover,
-.link-btn:hover {
-  color: var(--text);
-  background: var(--bg-soft);
-}
-
 .nav a.is-active {
   color: var(--brand-ink);
   background: var(--brand-soft);
@@ -321,12 +320,12 @@ ul {
   transition: color 0.15s, border-color 0.15s, background 0.15s;
 }
 
-.icon-btn:hover {
-  color: var(--brand);
-  border-color: var(--brand);
+.menu-btn {
+  display: none;
 }
 
-.menu-btn {
+/* 移动端菜单里的「日期查询 / 热度榜」快捷跳转，仅在 ≤860px 显示 */
+.jump-btn {
   display: none;
 }
 
@@ -417,11 +416,6 @@ ul {
   max-width: 46ch;
 }
 
-.hero-title a:hover {
-  text-decoration: underline;
-  text-underline-offset: 4px;
-}
-
 .hero-summary {
   position: relative;
   z-index: 1;
@@ -464,10 +458,6 @@ ul {
   font-size: 13px;
   font-weight: 600;
   box-shadow: var(--shadow-1);
-}
-
-.hero-cta:hover {
-  background: #eef3ff;
 }
 
 .hero-stats {
@@ -522,11 +512,6 @@ ul {
   color: var(--text-2);
   font-size: 13px;
   transition: all 0.15s;
-}
-
-.chip:hover {
-  border-color: var(--brand);
-  color: var(--brand-ink);
 }
 
 .chip.is-active {
@@ -600,11 +585,6 @@ ul {
   background: transparent;
   color: var(--text-3);
   font-size: 12.5px;
-}
-
-.ghost-btn:hover {
-  color: var(--brand);
-  border-color: var(--brand);
 }
 
 /* ---------------------------------------------------------------- 资讯流 */
@@ -681,10 +661,6 @@ ul {
   color: var(--text-3);
 }
 
-.day-head .day-link:hover {
-  color: var(--brand);
-}
-
 .items {
   display: flex;
   flex-direction: column;
@@ -704,10 +680,6 @@ ul {
 
 .item:last-child {
   border-radius: 0 0 calc(var(--radius-lg) - 1px) calc(var(--radius-lg) - 1px);
-}
-
-.item:hover {
-  background: var(--bg-hover);
 }
 
 .item.is-read .item-title a {
@@ -763,10 +735,6 @@ ul {
   transition: color 0.15s;
 }
 
-.item:hover .item-title a {
-  color: var(--brand-ink);
-}
-
 .item-summary {
   margin-top: 6px;
   color: var(--text-2);
@@ -820,12 +788,6 @@ ul {
   transition: all 0.15s;
 }
 
-.act:hover {
-  color: var(--brand);
-  border-color: var(--brand-border);
-  background: var(--brand-soft);
-}
-
 .act.is-on {
   color: var(--brand-ink);
   background: var(--brand-soft);
@@ -847,11 +809,6 @@ ul {
   color: var(--text-2);
   font-size: 13.5px;
   box-shadow: var(--shadow-1);
-}
-
-.more-btn:hover {
-  border-color: var(--brand);
-  color: var(--brand-ink);
 }
 
 .empty {
@@ -969,11 +926,6 @@ ul {
   line-height: 1;
 }
 
-.cal-nav button:hover:not(:disabled) {
-  border-color: var(--brand);
-  color: var(--brand);
-}
-
 .cal-nav button:disabled {
   opacity: 0.35;
   cursor: not-allowed;
@@ -1081,10 +1033,6 @@ ul {
   color: var(--text-2);
 }
 
-.stat:hover .stat-name {
-  color: var(--brand);
-}
-
 .stat-name {
   white-space: nowrap;
   overflow: hidden;
@@ -1152,10 +1100,6 @@ ul {
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
-}
-
-.hot-title:hover {
-  color: var(--brand-ink);
 }
 
 .hot-meta {
@@ -1283,11 +1227,6 @@ ul {
   color: var(--text-2);
 }
 
-.src-grid a:hover {
-  border-color: var(--brand);
-  color: var(--brand-ink);
-}
-
 .src-grid a.is-off {
   opacity: 0.55;
 }
@@ -1312,6 +1251,82 @@ ul {
   transform: translateX(-50%) translateY(0);
 }
 
+/* ------------------------------------------------- 悬停态（仅指针设备） */
+
+/* 触摸设备点击后会一直保留 :hover，导致高亮粘住；这里只在支持 hover 的指针设备上启用 */
+@media (hover: hover) and (pointer: fine) {
+  .nav a:hover:not(.is-active),
+  .link-btn:hover {
+    color: var(--text);
+    background: var(--bg-soft);
+  }
+
+  .icon-btn:hover {
+    color: var(--brand);
+    border-color: var(--brand);
+  }
+
+  .hero-title a:hover {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
+
+  .hero-cta:hover {
+    background: #eef3ff;
+  }
+
+  .chip:hover:not(.is-active) {
+    border-color: var(--brand);
+    color: var(--brand-ink);
+  }
+
+  .ghost-btn:hover {
+    color: var(--brand);
+    border-color: var(--brand);
+  }
+
+  .day-head .day-link:hover {
+    color: var(--brand);
+  }
+
+  .item:hover {
+    background: var(--bg-hover);
+  }
+
+  .item:hover .item-title a {
+    color: var(--brand-ink);
+  }
+
+  .act:hover:not(.is-on) {
+    color: var(--brand);
+    border-color: var(--brand-border);
+    background: var(--brand-soft);
+  }
+
+  .more-btn:hover {
+    border-color: var(--brand);
+    color: var(--brand-ink);
+  }
+
+  .cal-nav button:hover:not(:disabled) {
+    border-color: var(--brand);
+    color: var(--brand);
+  }
+
+  .stat:hover .stat-name {
+    color: var(--brand);
+  }
+
+  .hot-title:hover {
+    color: var(--brand-ink);
+  }
+
+  .src-grid a:hover {
+    border-color: var(--brand);
+    color: var(--brand-ink);
+  }
+}
+
 /* ---------------------------------------------------------------- 响应式 */
 
 @media (max-width: 1080px) {
@@ -1331,8 +1346,49 @@ ul {
 }
 
 @media (max-width: 860px) {
+  :root {
+    --topbar-h: 56px;
+  }
+
   .menu-btn {
     display: grid;
+  }
+
+  .jump-btn {
+    display: flex;
+  }
+
+  /* 关键修复：允许收缩。否则搜索框的 min-content 会把整条顶栏撑到 475px，
+     手机右侧的「深浅色 / 菜单」按钮被挤出屏幕，整页还能横向拖动 */
+  .topbar-tools {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+
+  .search {
+    width: auto;
+    flex: 1 1 auto;
+    min-width: 0;
+    height: 44px;
+  }
+
+  .search input {
+    /* 小于 16px 时 iOS Safari 会在聚焦输入框时放大整个页面 */
+    font-size: 16px;
+  }
+
+  .search kbd {
+    display: none;
+  }
+
+  .icon-btn {
+    flex: 0 0 auto;
+    width: 44px;
+    height: 44px;
+  }
+
+  .brand-text small {
+    display: none;
   }
 
   .nav {
@@ -1356,63 +1412,308 @@ ul {
 
   .nav a,
   .link-btn {
+    display: flex;
+    align-items: center;
+    min-height: 44px;
     text-align: left;
     border-radius: var(--radius-sm);
   }
 
-  .search {
-    width: 100%;
-    min-width: 0;
-  }
-
-  .topbar-tools {
-    flex: 1;
-  }
-
-  .search kbd {
-    display: none;
-  }
-
-  .brand-text small {
-    display: none;
-  }
-
+  /* Hero：压进首屏，头条与三个数字都不丢 */
   .hero {
-    padding: 20px;
+    padding: 16px 16px 18px;
+    margin-bottom: 14px;
+    border-radius: 14px;
+  }
+
+  .hero::after {
+    width: 220px;
+    height: 220px;
+    right: -90px;
+    top: -110px;
+  }
+
+  .hero-eyebrow {
+    font-size: 11px;
+    letter-spacing: 2px;
+  }
+
+  .hero-date {
+    padding: 2px 8px;
+    font-size: 11.5px;
   }
 
   .hero-title {
-    font-size: 21px;
+    margin: 10px 0 6px;
+    font-size: 19px;
+    line-height: 1.4;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    overflow-wrap: anywhere;
   }
 
+  .hero-summary {
+    font-size: 13px;
+    overflow-wrap: anywhere;
+  }
+
+  .hero-foot {
+    gap: 8px;
+    margin-top: 12px;
+  }
+
+  .hero-chip {
+    padding: 3px 9px;
+    font-size: 11.5px;
+  }
+
+  .hero-cta {
+    display: inline-flex;
+    align-items: center;
+    min-height: 40px;
+    padding: 8px 14px;
+  }
+
+  /* 三个数字改成一行内联文本：既省高度，也不再隐藏「归档条目」 */
   .hero-stats {
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 14px;
+    margin-top: 12px;
+  }
+
+  .hero-stat {
+    flex: 0 1 auto;
+    padding: 0;
+    border: 0;
+    background: none;
+  }
+
+  .hero-stat b {
+    display: inline;
+    font-size: 15px;
+  }
+
+  .hero-stat span {
+    font-size: 11.5px;
+  }
+
+  /* 筛选面板：分类芯片一行横向滚动，其余控件压成两行 */
+  .panel {
+    padding: 12px;
+    margin-bottom: 14px;
+    border-radius: 14px;
+  }
+
+  .chip-row {
+    flex-wrap: nowrap;
+    gap: 8px;
+    overflow-x: auto;
+    padding-bottom: 2px;
+    scrollbar-width: none;
+  }
+
+  .chip-row::-webkit-scrollbar {
+    display: none;
+  }
+
+  .chip {
+    display: inline-flex;
+    align-items: center;
+    flex: 0 0 auto;
+    min-height: 40px;
+    padding: 7px 14px;
+  }
+
+  .filter-row {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    align-items: stretch;
+    gap: 8px;
+    margin-top: 10px;
+    padding-top: 10px;
+  }
+
+  #langSeg,
+  #sortSeg {
+    grid-column: span 3;
+    width: 100%;
+  }
+
+  .seg button {
+    flex: 1 1 auto;
+    min-height: 40px;
+    padding: 6px 4px;
+    font-size: 12px;
+  }
+
+  .switch {
+    grid-column: span 2;
+    min-height: 44px;
+    padding: 0 4px;
+  }
+
+  .switch input {
+    width: 20px;
+    height: 20px;
+  }
+
+  .ghost-btn {
+    grid-column: span 2;
+    margin-left: 0;
+    min-height: 40px;
+  }
+
+  /* 资讯流与日期分组 */
+  .feed-head {
+    margin: 0 2px 8px;
+    font-size: 12.5px;
+  }
+
+  .day-head {
+    flex-wrap: nowrap;
+    gap: 6px;
+    padding: 8px 12px;
+  }
+
+  .day-head h3 {
+    font-size: 14.5px;
+    white-space: nowrap;
+  }
+
+  .day-head .day-count {
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 12px;
+  }
+
+  .day-head .day-link {
+    display: inline-flex;
+    align-items: center;
+    min-height: 40px;
+    white-space: nowrap;
   }
 
   .item {
-    padding: 14px;
+    padding: 13px 12px;
   }
 
   .item-title {
-    font-size: 15.5px;
+    font-size: 16px;
+    overflow-wrap: anywhere;
+  }
+
+  .item-summary {
+    overflow-wrap: anywhere;
+  }
+
+  .more-btn {
+    min-height: 44px;
+  }
+
+  .empty {
+    padding: 32px 16px;
+  }
+
+  /* 侧栏卡片是移动端菜单跳转的目标，别被粘性顶栏盖住标题 */
+  .side-col .card {
+    scroll-margin-top: calc(var(--topbar-h) + 12px);
+  }
+}
+
+/* 触控目标：主操作 ≥44px，次要控件 ≥40px（粗指针设备在宽屏同样受益） */
+@media (max-width: 860px), (pointer: coarse) {
+  .act {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    min-width: 44px;
+    min-height: 44px;
+    padding: 6px 10px;
+    font-size: 13px;
+  }
+
+  .tabs button {
+    min-height: 40px;
+  }
+
+  .cal-day,
+  .cal-month,
+  .cal-year {
+    min-height: 40px;
+  }
+
+  .cal-nav button {
+    width: 40px;
+    height: 40px;
+  }
+
+  .stat {
+    min-height: 40px;
+  }
+}
+
+/* 窄屏手机：顶栏只留 logo，hero 去掉装饰性眉标，窄格子里收缩开关文字避免折行 */
+@media (max-width: 460px) {
+  .topbar-inner {
+    gap: 10px;
+  }
+
+  .brand-text {
+    display: none;
+  }
+
+  .hero-eyebrow {
+    display: none;
+  }
+}
+
+@media (max-width: 380px) {
+  .switch {
+    padding: 0;
+    font-size: 12px;
+  }
+
+  .ghost-btn {
+    padding: 8px 6px;
+    font-size: 12px;
   }
 }
 
 @media (max-width: 520px) {
+  /* 刘海屏横屏时避免内容贴边 */
   .wrap {
-    padding: 0 14px;
+    padding-left: max(14px, env(safe-area-inset-left));
+    padding-right: max(14px, env(safe-area-inset-right));
   }
 
-  .hero-stat:nth-child(3) {
+  .toast {
+    bottom: calc(28px + env(safe-area-inset-bottom));
+  }
+}
+
+/* 短屏（横屏手机、小屏老机型）：优先让资讯露出来，
+   只留头条与「查看当天」入口，摘要与三个数字在侧栏「数据概览」里仍可看到 */
+@media (max-width: 860px) and (max-height: 720px) {
+  .hero {
+    padding: 12px 14px 14px;
+  }
+
+  .hero-summary {
     display: none;
   }
 
-  .item-actions .act span {
-    display: none;
+  .hero-foot {
+    margin-top: 8px;
   }
 
-  .ghost-btn {
-    margin-left: 0;
+  .hero-stats {
+    display: none;
   }
 }
 

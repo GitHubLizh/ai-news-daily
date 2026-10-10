@@ -9,7 +9,8 @@
     "build": "node scripts/build.mjs",
     "dev": "node scripts/serve.mjs",
     "start": "node scripts/serve.mjs",
-    "test": "node --test"
+    "test": "node --test",
+    "check:mobile": "node scripts/mobile-check.mjs"
   },
   "engines": {
     "node": ">=20"

@@ -726,6 +726,19 @@ function toggleRead(id) {
   saveSet(STORAGE_KEYS.read, state.read);
 }
 
+/** 展开 / 收起移动端导航下拉，并同步按钮的 aria-expanded */
+function setNavOpen(open) {
+  $('#nav')?.classList.toggle('is-open', open);
+  $('.menu-btn')?.setAttribute('aria-expanded', String(open));
+}
+
+/** 移动端菜单里的「日期查询 / 热度榜」：滚到对应的侧栏卡片 */
+function jumpToSideCard(kind) {
+  setNavOpen(false);
+  const anchor = kind === 'hot' ? '#hotList' : '#calendar';
+  $(anchor)?.closest('.card')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
 function bindEvents() {
   $('#search').addEventListener(
     'input',
@@ -865,6 +878,17 @@ function bindEvents() {
     }
   });
 
+  // 点导航链接 / 点菜单以外的地方都收起移动端菜单（点「最新」时 hash 不变，不能只靠 hashchange）
+  $('#nav').addEventListener('click', (event) => {
+    if (event.target.closest('a[href]')) setNavOpen(false);
+  });
+
+  document.addEventListener('pointerdown', (event) => {
+    if (!$('#nav').classList.contains('is-open')) return;
+    if (event.target.closest('.topbar')) return;
+    setNavOpen(false);
+  });
+
   document.addEventListener('click', (event) => {
     const action = event.target.closest('[data-action]');
     if (!action) return;
@@ -872,6 +896,7 @@ function bindEvents() {
     if (kind === 'theme') {
       applyTheme(document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark');
     } else if (kind === 'about') {
+      setNavOpen(false);
       renderAbout();
       $('#aboutDialog').showModal?.();
     } else if (kind === 'reset') {
@@ -891,10 +916,10 @@ function bindEvents() {
         /* 忽略 */
       }
       render();
+    } else if (kind === 'jump') {
+      jumpToSideCard(action.dataset.jump);
     } else if (kind === 'menu') {
-      const nav = $('#nav');
-      const open = nav.classList.toggle('is-open');
-      action.setAttribute('aria-expanded', String(open));
+      setNavOpen(!$('#nav').classList.contains('is-open'));
     }
   });
 
@@ -904,7 +929,7 @@ function bindEvents() {
       $('#search').focus();
     }
     if (event.key === 'Escape') {
-      $('#nav').classList.remove('is-open');
+      setNavOpen(false);
       if (document.activeElement === $('#search')) {
         $('#search').value = '';
         state.query = '';
@@ -913,7 +938,10 @@ function bindEvents() {
     }
   });
 
-  window.addEventListener('hashchange', applyRoute);
+  window.addEventListener('hashchange', () => {
+    setNavOpen(false);
+    applyRoute();
+  });
 }
 
 /* --------------------------------------------------------------- 启动 */

@@ -2,7 +2,7 @@
 <html lang="zh-CN">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <title>AI 资讯速递 · 每日 AI 动态聚合</title>
     <meta
       name="description"
@@ -39,6 +39,12 @@
           <a href="#/bookmarks" data-nav="bookmarks">
             收藏 <span class="count-badge" id="bmCount" hidden>0</span>
           </a>
+          <button type="button" class="link-btn jump-btn" data-action="jump" data-jump="calendar">
+            日期查询
+          </button>
+          <button type="button" class="link-btn jump-btn" data-action="jump" data-jump="hot">
+            热度榜
+          </button>
           <button type="button" class="link-btn" data-action="about">关于</button>
         </nav>
 
@@ -72,6 +78,7 @@
             class="icon-btn menu-btn"
             data-action="menu"
             aria-label="展开导航"
+            aria-controls="nav"
             aria-expanded="false"
           >
             <svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true">
