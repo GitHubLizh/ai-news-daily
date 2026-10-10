@@ -10,7 +10,8 @@
     "dev": "node scripts/serve.mjs",
     "start": "node scripts/serve.mjs",
     "test": "node --test",
-    "check:mobile": "node scripts/mobile-check.mjs"
+    "check:mobile": "node scripts/mobile-check.mjs",
+    "check:lines": "node scripts/check-lines.mjs"
   },
   "engines": {
     "node": ">=20"

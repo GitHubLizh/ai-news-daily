@@ -193,8 +193,11 @@ async function main() {
   await writeFile(OUTPUT_FILE, `${JSON.stringify(dataset, null, 2)}\n`, 'utf8');
   console.log(`💾 已写入 ${path.relative(ROOT, OUTPUT_FILE)}（${(JSON.stringify(dataset).length / 1024).toFixed(1)} KB）`);
 
-  // 顺带导出站点自己的订阅源，方便用阅读器订阅
-  const feedXml = buildRssXml(dataset, config.site, { limit: 120 });
+  // 顺带导出站点自己的订阅源，方便用阅读器订阅。
+  // SITE_URL 可在换域名或同时发布到多条线路时覆盖 data/feeds.json 里的 site.url，
+  // 让每个托管上生成的 atom:link 指向自己。
+  const site = process.env.SITE_URL ? { ...config.site, url: process.env.SITE_URL } : config.site;
+  const feedXml = buildRssXml(dataset, site, { limit: 120 });
   await writeFile(FEED_FILE, feedXml, 'utf8');
   console.log(`📡 已写入 ${path.relative(ROOT, FEED_FILE)}（最多 120 条，可用阅读器订阅）`);
 
