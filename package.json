@@ -11,7 +11,8 @@
     "start": "node scripts/serve.mjs",
     "test": "node --test",
     "check:mobile": "node scripts/mobile-check.mjs",
-    "check:lines": "node scripts/check-lines.mjs"
+    "check:lines": "node scripts/check-lines.mjs",
+    "check:refresh": "node scripts/check-refresh.mjs"
   },
   "engines": {
     "node": ">=20"

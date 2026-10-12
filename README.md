@@ -59,6 +59,7 @@ npm test
 | `npm test` | 运行 `test/` 下的单元测试 |
 | `npm run check:mobile` | 用本机 Chrome / Edge 无头校验移动端布局（零依赖，找不到浏览器时自动跳过） |
 | `npm run check:lines` | 抽样多条线路的 DNS / TCP / HTTPS 可达性与延迟（`--n=8` 调抽样次数，也可直接传 URL） |
+| `npm run check:refresh` | 校验「数据自动刷新」链路：真实 `assets/app.js` + 最小 DOM 桩，断言切回标签页 / 轮询到点会重取、`generatedAt` 没变不重绘、最小间隔内不重复请求（零依赖、不联网、不写文件、不需要浏览器） |
 
 ## 移动端适配
 
