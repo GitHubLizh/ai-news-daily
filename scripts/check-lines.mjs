@@ -18,6 +18,8 @@ import dns from 'node:dns/promises';
 import net from 'node:net';
 import { performance } from 'node:perf_hooks';
 
+import { certInfo, daysUntil } from './lib/cert.mjs';
+
 const TCP_TIMEOUT_MS = 8000;
 const HTTPS_TIMEOUT_MS = 15000;
 const PUBLIC_DNS = ['8.8.8.8', '1.1.1.1'];
@@ -58,6 +60,45 @@ async function resolveBoth(host) {
     .catch(() => []);
   const same = system.length > 0 && viaPublic.length > 0 && system.join() === viaPublic.join();
   return { system, viaPublic, same };
+}
+
+/** 保留 / 环回 / 链路本地地址——这些才是有力的污染证据（`*.github.io` 被污染时常解析到这类地址） */
+function isReservedAddress(ip) {
+  if (ip.includes(':')) {
+    const lower = ip.toLowerCase();
+    return lower === '::1' || lower.startsWith('fc') || lower.startsWith('fd') || lower.startsWith('fe80');
+  }
+  const octets = ip.split('.').map(Number);
+  if (octets.length !== 4 || octets.some((n) => !Number.isInteger(n))) return false;
+  const [a, b] = octets;
+  return (
+    a === 0 ||
+    a === 10 ||
+    a === 127 ||
+    (a === 100 && b >= 64 && b <= 127) ||
+    (a === 169 && b === 254) ||
+    (a === 172 && b >= 16 && b <= 31) ||
+    (a === 192 && b === 168) ||
+    a >= 224
+  );
+}
+
+/**
+ * 判断系统 DNS 与公共 DNS 的解析差异意味着什么。
+ * 注意：**两边不一致不等于污染**——对象存储 / CDN 的域名本来就会多 IP 轮换
+ * （例如阿里云 OSS 的 CNAME 目标会返回同段不同 IP），误报会让人白紧张。
+ * 只有解析到保留/环回地址才作为污染证据；其余只如实报告「不一致」。
+ */
+function dnsVerdict(system, viaPublic, same) {
+  if (system.length === 0) return { text: '系统解析失败', polluted: false };
+  if (same) return { text: '一致（未见污染）', polluted: false };
+  if (system.some(isReservedAddress) || viaPublic.some(isReservedAddress)) {
+    return { text: '❌ 疑似 DNS 污染（解析到保留/环回地址）', polluted: true };
+  }
+  return {
+    text: '⚠️ 两侧解析不同（CDN / 对象存储多 IP 轮换属正常，未必是污染）',
+    polluted: false,
+  };
 }
 
 /** 纯 TCP 建连耗时，不涉及 HTTP */
@@ -101,9 +142,9 @@ async function checkLine(label, url) {
   console.log(`  ${url}`);
 
   const { system, viaPublic, same } = await resolveBoth(host);
-  const verdict = system.length === 0 ? '系统解析失败' : same ? '一致（未见污染）' : '⚠️ 不一致，疑似 DNS 污染';
+  const verdict = dnsVerdict(system, viaPublic, same);
   console.log(`  DNS  系统: ${system.join(', ') || '—'}`);
-  console.log(`       8.8.8.8: ${viaPublic.join(', ') || '—'}   → ${verdict}`);
+  console.log(`       8.8.8.8: ${viaPublic.join(', ') || '—'}   → ${verdict.text}`);
 
   const connects = [];
   let tcpFail = 0;
@@ -135,7 +176,18 @@ async function checkLine(label, url) {
       `   状态码 ${[...statuses].join(',') || '—'}`,
   );
 
-  return { label, url, dnsPolluted: system.length > 0 && !same, tcpFail, httpsFail, samples: SAMPLES };
+  // 证书到期时间：本项目启用了「拒绝非加密传输」，证书一过期整站就打不开，所以顺手报出来
+  const cert = await certInfo(host);
+  if (cert) {
+    const left = daysUntil(cert.expiresTs);
+    const warn = left <= 0 ? ' ❌ 已过期' : left <= 30 ? ' ⚠️ 即将到期，尽快续期' : '';
+    console.log(
+      `  证书 ${cert.authorized ? '有效' : '校验未通过'}   到期 ${cert.expires.toISOString().slice(0, 10)}` +
+        `   剩余 ${left} 天${warn}`,
+    );
+  }
+
+  return { label, url, dnsVerdict: verdict.text, dnsPolluted: verdict.polluted, tcpFail, httpsFail, samples: SAMPLES };
 }
 
 async function main() {
@@ -151,7 +203,7 @@ async function main() {
 
   console.log('\n──── 汇总 ────');
   for (const row of results) {
-    const dnsNote = row.dnsPolluted ? 'DNS 疑似污染' : 'DNS 正常';
+    const dnsNote = row.dnsVerdict;
     const netNote =
       row.httpsFail === 0 && row.tcpFail === 0
         ? '全程无失败'

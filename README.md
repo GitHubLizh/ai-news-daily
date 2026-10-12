@@ -58,7 +58,9 @@ npm test
 | `npm run dev` / `npm start` | 启动本地静态预览服务（`PORT`、`HOST`、`CACHE_SECONDS` 可覆盖） |
 | `npm test` | 运行 `test/` 下的单元测试 |
 | `npm run check:mobile` | 用本机 Chrome / Edge 无头校验移动端布局（零依赖，找不到浏览器时自动跳过） |
-| `npm run check:lines` | 抽样多条线路的 DNS / TCP / HTTPS 可达性与延迟（`--n=8` 调抽样次数，也可直接传 URL） |
+| `npm run check:lines` | 抽样多条线路的 DNS / TCP / HTTPS 可达性与延迟，并打印证书到期天数（`--n=8` 调抽样次数，也可直接传 URL） |
+| `npm run check:cert` | 只查某个域名的证书到期日与剩余天数（默认主站，可传域名 / `--threshold=45`） |
+| `npm run check:refresh` | 零依赖校验「页面自动跟随新数据」链路（不联网、不写文件、不需要浏览器） |
 | `npm run check:refresh` | 校验「数据自动刷新」链路：真实 `assets/app.js` + 最小 DOM 桩，断言切回标签页 / 轮询到点会重取、`generatedAt` 没变不重绘、最小间隔内不重复请求（零依赖、不联网、不写文件、不需要浏览器） |
 
 ## 移动端适配
@@ -100,14 +102,18 @@ npm test
 │  ├─ build.mjs             # 组装可发布的 dist/
 │  ├─ serve.mjs             # 零依赖本地静态服务器
 │  ├─ mobile-check.mjs      # 移动端/桌面端布局回归检查（无头浏览器 + CDP）
+│  ├─ check-lines.mjs       # 多线路可达性/延迟抽样，并打印证书到期天数
+│  ├─ cert-days.mjs         # 只查证书到期日与剩余天数（CI 用它决定是否提醒续期）
+│  ├─ check-refresh.mjs     # 校验「页面自动跟随新数据」链路
 │  └─ lib/
 │     ├─ rss.mjs            # 极简 RSS/Atom 解析、日期解析
 │     ├─ normalize.mjs      # 相关性判断、分类、去重、按天分组、热度
 │     ├─ feed.mjs           # 导出站点 RSS
+│     ├─ cert.mjs           # 证书有效期探测（check-lines 与 cert-days 共用）
 │     └─ text.mjs           # HTML 清洗、实体解码、URL 规范化、语种识别
 ├─ test/                    # node:test 单元测试
 ├─ dist/                    # npm run build 产物（已 gitignore）
-└─ .github/workflows/       # 定时刷新数据，同时发布到 GitHub Pages 与阿里云 OSS
+└─ .github/workflows/       # 定时刷新数据并发布到 Pages/OSS；另每月检查证书到期
 ```
 
 ## 数据管线
@@ -301,6 +307,23 @@ OSS 没有"盯着仓库自动构建"的能力，所以由 workflow 直传。`.gi
 > 费用：OSS 是**按量计费**（存储 + 外网流出流量 + 请求次数），没有"免费版"。
 > 这个站 `dist/` 只有几百 KB，日常开销很小，但**流量费按 GB 计**，被人刷了会直接出账单——
 > 建议在 Bucket 上设流量或费用告警。
+
+#### 证书续期（约 3 个月一次，别忘）
+
+⚠️ **免费证书不支持自动续期。** 阿里云官方限制：**个人测试证书（免费版 / pro）、上传证书均不支持「证书自动托管」服务**。
+而 OSS 域名管理里的「证书托管」按钮只是**把证书挂上去**，不是自动续期——两者容易混。
+
+而本项目启用了「拒绝非加密传输」的 Bucket Policy：**证书一过期，HTTP 被策略拒绝、HTTPS 握不上手，
+网站彻底打不开，没有任何降级路径**。所以这件事必须有人盯着。
+
+当前证书到期：**2027-01-07**（免费证书有效期约 3 个月，一年要换 3~4 次）。
+
+| 做法 | 说明 |
+| --- | --- |
+| **到期提醒（已配好）** | `.github/workflows/cert-expiry-check.yml` 每月 1 日 / 15 日自动检查，剩余不足 30 天就**开一个 Issue 并指派给你**；GitHub 会因「被指派」发邮件——**零凭据即可收到邮件提醒** |
+| **手动续期（约 5 分钟）** | 数字证书管理服务申请新证书（域名 `latestainews.cn`）→ 签发后到 OSS `域名管理 → 证书托管` 换成新证书 |
+| **随时自查** | `npm run check:cert`（到期日 + 剩余天数），或 `npm run check:lines`（抽样时顺带打印） |
+| **想要真正自动续期** | 只能买**正式证书**并选专业版/旗舰版自动服务化，然后开「自动托管」；免费证书做不到 |
 
 > 另外，workflow 的抓取步骤支持仓库变量 `SITE_URL`（`Settings → Secrets and variables → Actions → Variables`）：
 > 设成国内线路的地址，`data/feed.xml` 的 `<link>` 与 `atom:link` 就会指向它；不设则沿用 `data/feeds.json` 里的值。

@@ -1,0 +1,68 @@
+name: 证书到期检查
+
+# 免费证书不支持阿里云的自动续期，只能手动换；而本项目启用了「拒绝非加密传输」的 Bucket Policy，
+# 证书一过期整站就打不开。所以用这个 workflow 定期体检，快到期就开 Issue 并指派给你
+# —— GitHub 对「被指派 / 被 @」的 Issue 会发邮件，等于邮件提醒，无需配置任何邮件凭据。
+
+on:
+  schedule:
+    # 每月 1 日与 15 日 UTC 02:00 = 北京时间 10:00
+    - cron: '0 2 1,15 * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: 查证书剩余天数
+        id: cert
+        run: |
+          set -euo pipefail
+          OUT=$(node scripts/cert-days.mjs latestainews.cn)
+          echo "$OUT"
+          # 只把 key=value 行写进 GITHUB_OUTPUT（人类可读那行不能进去，否则格式非法）
+          echo "$OUT" | grep -E '^(days|expires|need_renew|authorized)=' >> "$GITHUB_OUTPUT"
+
+      - name: 剩余不足 30 天就开 Issue 提醒
+        if: steps.cert.outputs.need_renew == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          DAYS: ${{ steps.cert.outputs.days }}
+          EXPIRES: ${{ steps.cert.outputs.expires }}
+        run: |
+          set -euo pipefail
+          read -r -d '' BODY <<'EOF' || true
+          ⚠️ **证书即将到期（免费证书不支持自动续期，阿里云官方限制），请在到期前手动换掉。**
+
+          本项目启用了「拒绝非加密传输」的 Bucket Policy：**证书一过期，HTTP 会被策略拒绝、
+          HTTPS 握不上手，网站彻底打不开，没有任何降级路径。**
+
+          续期步骤（约 5 分钟）：
+
+          1. **数字证书管理服务** → 「个人测试证书（原免费证书）」→ 申请新证书，域名填 `latestainews.cn`
+             （额度 20 张/年；自动DNS验证可能仍需手动加一条 `_dnsauth` 的 TXT 记录）
+          2. 签发后 → **OSS `域名管理` → `latestainews.cn` → 操作列「证书托管」→ 选新证书 → 上传**
+          3. 验证：`curl -sS -o NUL -w '%{ssl_verify_result}' https://latestainews.cn/` 应返回 `0`
+
+          完整清单见 `docs/deploy-oss-hongkong.md`。
+          EOF
+          EXISTING=$(gh issue list --state open --search '证书到期 in:title' --json number --jq '.[0].number // empty')
+          if [ -n "$EXISTING" ]; then
+            echo "已有未关闭的提醒 Issue #$EXISTING，追加评论"
+            gh issue comment "$EXISTING" --body "仍未续期：到期日 $EXPIRES，剩余 $DAYS 天。"
+          else
+            gh issue create \
+              --title "⚠️ 证书将于 $EXPIRES 到期（剩余 $DAYS 天）" \
+              --body "$BODY" \
+              --assignee "${{ github.repository_owner }}"
+          fi

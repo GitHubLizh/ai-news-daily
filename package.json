@@ -12,6 +12,7 @@
     "test": "node --test",
     "check:mobile": "node scripts/mobile-check.mjs",
     "check:lines": "node scripts/check-lines.mjs",
+    "check:cert": "node scripts/cert-days.mjs",
     "check:refresh": "node scripts/check-refresh.mjs"
   },
   "engines": {
