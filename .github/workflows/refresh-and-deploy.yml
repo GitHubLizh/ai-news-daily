@@ -4,6 +4,12 @@ on:
   schedule:
     # UTC 22:00 = 北京时间 06:00
     - cron: '0 22 * * *'
+    # 兜底：GitHub 的 schedule 是「尽力而为」，本仓库连续三天被排队推迟 2h44m–3h34m
+    # （06:00 的槽位实际 08:44–09:34 才开跑）。UTC 00:30 = 北京时间 08:30 再排一次，
+    # 万一 06:00 那次被延迟或被丢弃，当天资讯也还能在早上就位。
+    # 重复执行是幂等的：数据没变化时提交步骤会跳过，OSS 同步 / Pages 部署重跑无副作用；
+    # 下面 concurrency 组（cancel-in-progress: false）保证两个槽位排队串行，不会并发写同一分支。
+    - cron: '30 0 * * *'
   workflow_dispatch:
 
 permissions:

@@ -11,6 +11,7 @@ import {
   parseHashString,
   selectItems,
 } from './filters.mjs';
+import { REFRESH_INTERVAL_MS, datasetChanged, shouldRecheck } from './refresh.mjs';
 
 const DATA_URL = 'data/news.json';
 const PAGE_SIZE = 40;
@@ -202,18 +203,71 @@ function applyRoute() {
 
 /* --------------------------------------------------------------- 数据加载 */
 
-async function loadData() {
+async function fetchDataset() {
+  // no-cache：每次都向服务端校验一遍，避免看到浏览器缓存里的旧数据
   const response = await fetch(DATA_URL, { cache: 'no-cache' });
   if (!response.ok) throw new Error(`HTTP ${response.status}`);
   const data = await response.json();
   if (!Array.isArray(data.items)) throw new Error('数据格式不正确');
+  return data;
+}
+
+/**
+ * 把一份数据集写进 state。
+ * initial 时顺带把日历定位到最新一天；后台刷新时不碰 state.cal，
+ * 免得把用户正在翻的月份拽回去。
+ */
+function applyDataset(data, { initial = false } = {}) {
   state.data = data;
   state.sourceHome = new Map(
     data.items.filter((item) => item.source && item.home).map((item) => [item.source, item.home]),
   );
   const latest = data.days?.[0]?.day || todayKey();
   const [year, month] = latest.split('-').map(Number);
-  state.cal = { mode: 'day', year, month };
+  if (initial || !state.cal.year) state.cal = { mode: 'day', year, month };
+}
+
+async function loadData() {
+  applyDataset(await fetchDataset(), { initial: true });
+}
+
+/* --------------------------------------------------------------- 自动刷新 */
+
+/** 上次向服务端校验数据的时刻，0 表示本次会话还没查过 */
+let lastCheckedAt = 0;
+
+/**
+ * 页面是纯静态的：流水线跑完后只有再取一次 data/news.json 才看得到当天资讯。
+ * 数据没变就什么都不做（不重绘、不打扰）；变了才重绘，并保留当前筛选、
+ * 路由与已加载的条数，让「正在看的内容」不被换掉。
+ */
+async function refreshData() {
+  if (!shouldRecheck({ hidden: document.hidden, lastCheckedAt, now: Date.now() })) return;
+  lastCheckedAt = Date.now();
+
+  let next;
+  try {
+    next = await fetchDataset();
+  } catch {
+    return; // 网络抖动不打扰用户，等下一次轮询
+  }
+  if (!datasetChanged(state.data, next)) return;
+
+  const added = next.count - (state.data?.count || 0);
+  // 如果用户正停在某个较深的位置，把已加载条数按新增量补齐，避免新条目把视线往下顶
+  if (state.limit > PAGE_SIZE) state.limit += Math.max(0, added);
+  applyDataset(next);
+  render();
+  toast(added > 0 ? `已更新到最新数据，新增 ${added} 条` : '已更新到最新数据');
+}
+
+function startAutoRefresh() {
+  setInterval(refreshData, REFRESH_INTERVAL_MS);
+  // 切回标签页 / 断网恢复时立刻校验一次，不用等下一个轮询周期
+  document.addEventListener('visibilitychange', () => {
+    if (!document.hidden) refreshData();
+  });
+  window.addEventListener('online', () => refreshData());
 }
 
 /* --------------------------------------------------------------- 筛选范围 */
@@ -642,6 +696,7 @@ function renderAbout() {
 
     <h3>浏览方式</h3>
     <p>默认只显示中文资讯，切换「英文 / 全部语言」后会记住你的选择。日期、分类、语言、排序状态都会写进地址栏，可以直接把链接分享给别人。</p>
+    <p>页面每 ${REFRESH_INTERVAL_MS / 60000} 分钟、以及从别的标签页切回来时会自动校验一次数据，有更新就直接刷新列表 —— 不用手动重载，也不会打断你正在看的位置。</p>
 
     <h3>去重与分类</h3>
     <p>按规范化 URL 与标题去重，跨源转载会合并并标注「另见」；分类由关键词规则自动判定（标题命中权重更高），可能有个别误判。</p>
@@ -976,6 +1031,7 @@ async function main() {
 
   applyRouteState(true);
   render();
+  startAutoRefresh();
 }
 
 main();

@@ -1,6 +1,7 @@
 # AI 资讯速递
 
-**线上主站：<https://latestainews.cn/>**（阿里云 OSS · 香港地域，免备案，每天北京时间 06:00 自动更新）
+**线上主站：<https://latestainews.cn/>**（阿里云 OSS · 香港地域，免备案；每天北京时间 06:00 定时抓取并发布，
+GitHub 的定时任务会排队延迟，实际通常 08:30–09:40 之间就位 —— 见[已知问题](#已知问题)）
 **海外备用：<https://githublizh.github.io/ai-news-daily/>**（同一条流水线发布，互为备份）
 
 一个自建的 AI 资讯聚合站：每天抓取国内外公开 RSS 源，去重、分类、按天归档后写入一份静态 JSON，
@@ -22,6 +23,8 @@
 - **热度榜与来源分布**：侧栏实时统计当前范围的分类、来源与 TOP 10
 - **收藏与已读**：浏览器本地记录，支持「隐藏已读」和只看收藏
 - **站点自带订阅源**：每次抓取同步导出 `data/feed.xml`，可直接加进 RSS 阅读器
+- **页面自己跟上新数据**：每 10 分钟、以及从别的标签页切回来时自动校验一次 `data/news.json`，
+  有新数据就直接刷新列表并提示一句，不用手动重载，也不会打断你正在看的位置
 - **一条命令打包**：`npm run build` 生成 `dist/`，丢到任意静态托管即可发布
 - **深色模式 / 手机适配 / 可分享 URL**：`#/day/2026-10-08`、`#/all/cat/研究前沿` 等状态直接进地址栏；
   手机上没有横向滚动、首屏就能看到资讯，控件按触控尺寸放大（见「移动端适配」）
@@ -151,9 +154,12 @@ npm run fetch && npm run build     # 生成 dist/
 站点是纯静态产物，把 `dist/` 作为站点根目录发布即可（也可以直接发布仓库根目录）。
 
 - **GitHub Pages（备用线路）**：仓库已带 `.github/workflows/refresh-and-deploy.yml`，每天北京时间 06:00
-  自动抓取、提交 `data/news.json` 与 `data/feed.xml`、构建 `dist/` 并发布站点；
+  与 08:30 各触发一次自动抓取、提交 `data/news.json` 与 `data/feed.xml`、构建 `dist/` 并发布站点；
   **同一条流水线会同时更新 GitHub Pages 与阿里云 OSS（国内主站）**。换仓库时需在
   `Settings → Pages → Build and deployment` 把 Source 选为 **GitHub Actions**。
+  为什么挂两个时间点：GitHub 的 `schedule` 不保证准点（实测 06:00 的槽位要 08:44–09:34 才开跑），
+  08:30 那个槽位是兜底；重复执行是幂等的 —— 数据没有变化时提交步骤会跳过，
+  OSS 同步与 Pages 部署重跑也没有副作用（workflow 里的 `concurrency` 会串行排队）。
 - **Vercel / Netlify**：构建命令填 `npm run fetch && npm run build`，发布目录填 `dist`。
 - **本地自用**：`npm run fetch && npm run dev`，局域网内其他设备可通过 `HOST=0.0.0.0` 访问。
 
@@ -399,6 +405,11 @@ Google AI、Hugging Face、Google Research、Meta AI（本机网络不可达）�
   源未提供发布时间的条目会标记「时间待确认」。
 - **分类误判**：分类基于关键词规则，个别稿件可能归错类，可在 `scripts/lib/normalize.mjs`
   的 `CATEGORY_RULES` 中调整。
+- **定时更新会被 GitHub 排队推迟**：workflow 的 `schedule` 是「尽力而为」的事件，实测
+  2026-10-10 ~ 10-12 三天，06:00 的槽位分别晚了 3h34m / 2h44m / 3h05m 才开跑（08:44–09:34 才就位）。
+  所以除 06:00 外，北京时间 08:30 还挂了一个兜底槽位；两者幂等，先跑完的那个生效。
+  如果一定要 06:00 准点，只能改用外部定时器去调 `workflow_dispatch`（GitHub 侧无法保证准点）。
+  页面侧已经做了自动校验（见「特性」），页面开着就不用管，切回来或最多 10 分钟内会自己刷新。
 
 ## 免责声明
 
