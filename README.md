@@ -168,6 +168,10 @@ npm run fetch && npm run build     # 生成 dist/
   08:30 那个槽位是兜底；重复执行是幂等的 —— 数据没有变化时提交步骤会跳过，
   OSS 同步与 Pages 部署重跑也没有副作用（workflow 里的 `concurrency` 会串行排队）。
 - **Vercel / Netlify**：构建命令填 `npm run fetch && npm run build`，发布目录填 `dist`。
+- **让早上的更新准点**：`bash ops/refresh-trigger/wizard.sh`（一次性设置，约 10 分钟，需要你在
+  浏览器里建一个细粒度令牌和一个 Cloudflare 免费账号）—— 用 Cloudflare 的定时触发器在北京
+  06:07 调一次 `workflow_dispatch`，不再受 GitHub 排队延迟影响。细节见
+  [ops/refresh-trigger](ops/refresh-trigger/README.md)。
 - **本地自用**：`npm run fetch && npm run dev`，局域网内其他设备可通过 `HOST=0.0.0.0` 访问。
 
 ### 国内访问不稳定怎么办
@@ -431,9 +435,11 @@ Google AI、Hugging Face、Google Research、Meta AI（本机网络不可达）�
 - **分类误判**：分类基于关键词规则，个别稿件可能归错类，可在 `scripts/lib/normalize.mjs`
   的 `CATEGORY_RULES` 中调整。
 - **定时更新会被 GitHub 排队推迟**：workflow 的 `schedule` 是「尽力而为」的事件，实测
-  2026-10-10 ~ 10-12 三天，06:00 的槽位分别晚了 3h34m / 2h44m / 3h05m 才开跑（08:44–09:34 才就位）。
-  所以除 06:00 外，北京时间 08:30 还挂了一个兜底槽位；两者幂等，先跑完的那个生效。
-  如果一定要 06:00 准点，只能改用外部定时器去调 `workflow_dispatch`（GitHub 侧无法保证准点）。
+  2026-10-10 ~ 10-13，06:00 的槽位分别晚了 3h34m / 2h44m / 3h05m，10-13 更是到 09:46 还没被派发。
+  08:30 那个兜底槽位救不了这种情况 —— 它排在同一条队里，延迟一视同仁。
+  **想早上准点就用外部触发器**：[ops/refresh-trigger](ops/refresh-trigger/README.md) 里的
+  Cloudflare Worker 每天北京时间 06:07 调一次 `workflow_dispatch`，数据约 06:09 上线；
+  GitHub 自带的两个槽位继续作兜底（三者幂等，谁先跑完谁生效）。
   页面侧已经做了自动校验（见「特性」），页面开着就不用管，切回来或最多 10 分钟内会自己刷新。
 
 ## 免责声明

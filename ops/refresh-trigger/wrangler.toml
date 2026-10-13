@@ -1,0 +1,12 @@
+# 外部定时触发器（Cloudflare Worker + Cron Trigger）
+# 部署：cd ops/refresh-trigger && npx wrangler deploy
+# 密钥：npx wrangler secret bulk <临时 json>（GH_TOKEN、TRIGGER_KEY），见 README.md
+name = "ai-news-refresh-trigger"
+main = "worker.js"
+compatibility_date = "2026-10-01"
+
+# UTC 22:07 = 北京时间 06:07。
+# 用 :07 而不是 :00，一是避开 GitHub 自己 06:00 的槽位（免得两个运行在 concurrency 组里排队），
+# 二是避开各家调度器“整点最堵”的时段。
+[triggers]
+crons = ["7 22 * * *"]
