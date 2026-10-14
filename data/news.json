@@ -1,17 +1,17 @@
 {
-  "generatedAt": "2026-10-14T00:59:49.042Z",
+  "generatedAt": "2026-10-14T05:09:53.511Z",
   "timezone": "Asia/Shanghai",
-  "count": 1103,
+  "count": 1145,
   "days": [
     {
       "day": "2026-10-14",
       "label": "10月14日 · 周三",
-      "count": 80
+      "count": 117
     },
     {
       "day": "2026-10-13",
       "label": "10月13日 · 周二",
-      "count": 178
+      "count": 183
     },
     {
       "day": "2026-10-12",
@@ -208,23 +208,23 @@
     "categories": [
       {
         "name": "行业动态",
-        "count": 505
+        "count": 520
       },
       {
         "name": "模型发布",
-        "count": 236
+        "count": 247
       },
       {
         "name": "产品动态",
-        "count": 220
+        "count": 233
       },
       {
         "name": "研究前沿",
-        "count": 90
+        "count": 92
       },
       {
         "name": "开源工具",
-        "count": 30
+        "count": 31
       },
       {
         "name": "观点方法",
@@ -234,55 +234,55 @@
     "sources": [
       {
         "name": "IT之家",
-        "count": 146
+        "count": 152
       },
       {
         "name": "快科技",
-        "count": 113
+        "count": 123
       },
       {
         "name": "OpenAI",
         "count": 98
       },
       {
+        "name": "钛媒体",
+        "count": 71
+      },
+      {
         "name": "TechCrunch AI",
         "count": 70
       },
       {
-        "name": "钛媒体",
-        "count": 65
+        "name": "开源中国",
+        "count": 60
       },
       {
-        "name": "开源中国",
-        "count": 59
+        "name": "Hacker News",
+        "count": 57
       },
       {
         "name": "arXiv cs.AI",
         "count": 56
       },
       {
-        "name": "Hacker News",
-        "count": 50
-      },
-      {
         "name": "量子位",
         "count": 47
+      },
+      {
+        "name": "InfoQ 中文",
+        "count": 46
       },
       {
         "name": "The Decoder",
         "count": 45
       },
       {
-        "name": "InfoQ 中文",
-        "count": 45
+        "name": "界面新闻",
+        "count": 44
       },
       {
         "name": "The Verge AI",
         "count": 40
-      },
-      {
-        "name": "界面新闻",
-        "count": 39
       },
       {
         "name": "极客公园",
@@ -294,11 +294,11 @@
       },
       {
         "name": "MarkTechPost",
-        "count": 29
+        "count": 30
       },
       {
         "name": "雷锋网",
-        "count": 27
+        "count": 29
       },
       {
         "name": "NVIDIA",
@@ -306,14 +306,14 @@
       },
       {
         "name": "爱范儿",
-        "count": 19
-      },
-      {
-        "name": "Simon Willison",
-        "count": 15
+        "count": 21
       },
       {
         "name": "Google DeepMind",
+        "count": 16
+      },
+      {
+        "name": "Simon Willison",
         "count": 15
       },
       {
@@ -338,12 +338,192 @@
       }
     ],
     "languages": {
-      "zh": 603,
-      "en": 500
+      "zh": 636,
+      "en": 509
     },
-    "estimatedTime": 37
+    "estimatedTime": 47
   },
   "items": [
+    {
+      "id": "1l43lay",
+      "title": "豆包工作支持一键迁移GPT、Claude Code 历史会话完整保留",
+      "url": "https://news.mydrivers.com/1/1157/1157341.htm",
+      "summary": "快科技10月14日消息，豆包工作正式上线数据导入同步新能力，用户可以一键把ChatGPT、Claude Code、Trae Work上面的技能、历史对话、工作记忆迁移过来，实现不同AI工具之间无缝切换。 很多人会同时用好几个AI工具，换到新平台最麻烦的就是搬家。之前换AI，旧的自定义技能、项目对话、工作偏好全部要手动复制粘贴，还要重新交代一遍项目背景，浪费不少时间。 这次更新就是解决这个痛点，迁移范围包含任务指令、自定义技能、连接器、工…",
+      "author": "随心",
+      "source": "快科技",
+      "sourceId": "mydrivers",
+      "home": "https://www.mydrivers.com",
+      "weight": 1.2,
+      "lang": "zh",
+      "category": "模型发布",
+      "publishedAt": "2026-10-14T05:09:53.511Z",
+      "publishedTs": 1791954593511,
+      "day": "2026-10-14",
+      "estimate": true,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 68
+    },
+    {
+      "id": "1wmimqd",
+      "title": "全球最大陆路单体口岸正式开通 海光国产CPU成通关算力底座",
+      "url": "https://news.mydrivers.com/1/1157/1157339.htm",
+      "summary": "快科技10月14日消息，全球最大陆路单体口岸——深圳新皇岗口岸正式开通运行。作为粤港澳大湾区互联互通的核心陆路口岸，新皇岗口岸设计日通关客流可达20万人次，旅客通关时间压缩至约5分钟，大幅提升深港跨境人员往来效率。 在这座超级智慧口岸背后，海光国产CPU规模化部署于旅检闸机等核心查验终端，为口岸通关业务筑牢自主可控的算力底座。 新皇岗口岸是深港两地重要的24小时纯旅检口岸，口岸信息化系统承担证件核验、生物识别、数据交互、网络安全防护等关…",
+      "author": "鹿角",
+      "source": "快科技",
+      "sourceId": "mydrivers",
+      "home": "https://www.mydrivers.com",
+      "weight": 1.2,
+      "lang": "zh",
+      "category": "行业动态",
+      "publishedAt": "2026-10-14T05:09:53.511Z",
+      "publishedTs": 1791954593511,
+      "day": "2026-10-14",
+      "estimate": true,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 62
+    },
+    {
+      "id": "02yggxq",
+      "title": "国产光刻机突围！海思8英寸全自动光刻机发运：专攻Micro LED芯片制造",
+      "url": "https://news.mydrivers.com/1/1157/1157330.htm",
+      "summary": "快科技10月14日消息，据报道，江苏海思半导体一台8英寸全自动掩模对准光刻机于10月13日完成出厂调试与客户验收，正式装车发运。该设备主要用于硅基Micro LED晶圆图形化制程，将设计图形转移至晶圆表面。 这台光刻机面向8英寸即200毫米晶圆，配备双SMIF自动天车上下料系统及两套独立双机械手臂传输系统，可支持晶圆自动传输与批量化运行。正面对准精度优于正负0.5微米，并可选配背面对准模块，对准精度优于正负2微米。 该设备采用全自动三点…",
+      "author": "红茶",
+      "source": "快科技",
+      "sourceId": "mydrivers",
+      "home": "https://www.mydrivers.com",
+      "weight": 1.2,
+      "lang": "zh",
+      "category": "行业动态",
+      "publishedAt": "2026-10-14T05:09:53.511Z",
+      "publishedTs": 1791954593511,
+      "day": "2026-10-14",
+      "estimate": true,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 62
+    },
+    {
+      "id": "0zeyanp",
+      "title": "1.3L机身塞进128GB统一内存！微星AI主机发布：本地跑120B大模型",
+      "url": "https://news.mydrivers.com/1/1157/1157313.htm",
+      "summary": "快科技10月14日消息，微星近日正式发布EdgeMesa N AI+紧凑型AI智能体主机。该机搭载NVIDIA RTX Spark平台，在仅1.3L的机身内实现了最高128GB统一内存，可在本地流畅运行120B参数的大语言模型。 核心算力来自RTX Spark N1X超级芯片。它集成20核Grace CPU与拥有6144个CUDA核心的Blackwell RTX GPU，FP4稀疏AI算力最高可达1 Petaflop。这一GPU核心规模…",
+      "author": "红茶",
+      "source": "快科技",
+      "sourceId": "mydrivers",
+      "home": "https://www.mydrivers.com",
+      "weight": 1.2,
+      "lang": "zh",
+      "category": "模型发布",
+      "publishedAt": "2026-10-14T05:09:53.511Z",
+      "publishedTs": 1791954593511,
+      "day": "2026-10-14",
+      "estimate": true,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 68
+    },
+    {
+      "id": "16fdkk9",
+      "title": "两家大厂接连挖人 昔日明星AI公司申请破产保护！",
+      "url": "https://news.mydrivers.com/1/1157/1157270.htm",
+      "summary": "谷歌挖走创始人，迪士尼接走大半团队。这家被两大巨头看中的AI明星公司，如今终于撑不下去，申请了破产保护。 美国当地时间10月12日，Character.AI运营公司申请破产保护，准备出售资产。这个让用户与虚拟角色聊天、交朋友的平台，还有约1200万活跃用户，每月却亏损约800万至900万美元。 这么多人还在用，为什么依然养不活这家公司？平台靠订阅和广告赚钱，用户与AI聊天消耗的算力，却需要持续付费。再加上人员等开支，赚来的钱仍赶不上花出…",
+      "author": "小小",
+      "source": "快科技",
+      "sourceId": "mydrivers",
+      "home": "https://www.mydrivers.com",
+      "weight": 1.2,
+      "lang": "zh",
+      "category": "产品动态",
+      "publishedAt": "2026-10-14T05:09:53.511Z",
+      "publishedTs": 1791954593511,
+      "day": "2026-10-14",
+      "estimate": true,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 62
+    },
+    {
+      "id": "0bvs8w9",
+      "title": "Manus正式进入手机圈！掌上 Agent将在OPPO Find X10系列首发",
+      "url": "https://news.mydrivers.com/1/1157/1157263.htm",
+      "summary": "快科技10月14日消息，OPPO与 AI Agent平台Manus于昨日正式宣布达成合作，双方将把 Manus 的智能体能力整合进 OPPO AI Mind Pilot，进一步提升手机处理复杂任务的能力。相关功能计划在搭载 ColorOS 17 的 OPPO Find X10 系列上率先推出。 值得一提的是，Manus 此前推出的 2.0 版本采用了新一代 Cascade 架构，能够根据任务需求调用不同工具，提升复杂任务的执行效率。官方…",
+      "author": "寄云",
+      "source": "快科技",
+      "sourceId": "mydrivers",
+      "home": "https://www.mydrivers.com",
+      "weight": 1.2,
+      "lang": "zh",
+      "category": "产品动态",
+      "publishedAt": "2026-10-14T05:09:53.511Z",
+      "publishedTs": 1791954593511,
+      "day": "2026-10-14",
+      "estimate": true,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 62
+    },
+    {
+      "id": "1727omy",
+      "title": "最高提升35%！英伟达帧生成新增性能模式：RTX 5060实测跑到348帧",
+      "url": "https://news.mydrivers.com/1/1157/1157262.htm",
+      "summary": "快科技10月14日消息，英伟达（NVIDIA）近日连续发布多项AI渲染技术更新，除了更新DLSS 5模型之外，还重点推出了针对RTX 40和RTX 50系列显卡的帧生成性能模式。 该模式通过引入全新的预设C（Preset C），可让支持该技术的游戏帧率额外提升最高35%。 英伟达官方解释称，在现有的多帧生成技术中，英伟达通常使用双模型并行方案：第一模型利用运动矢量和深度信息捕捉物体运动，第二模型则负责计算光流以处理用户界面或光线追踪特效…",
+      "author": "青山",
+      "source": "快科技",
+      "sourceId": "mydrivers",
+      "home": "https://www.mydrivers.com",
+      "weight": 1.2,
+      "lang": "zh",
+      "category": "产品动态",
+      "publishedAt": "2026-10-14T05:09:53.511Z",
+      "publishedTs": 1791954593511,
+      "day": "2026-10-14",
+      "estimate": true,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 68
+    },
+    {
+      "id": "1g6yams",
+      "title": "同比下滑44%！报告：英伟达在中国AI芯片市场份额降至34% 华为升至28%",
+      "url": "https://news.mydrivers.com/1/1157/1157260.htm",
+      "summary": "快科技10月14日消息，根据市场研究机构IDC提供的最新统计数据，2026年上半年英伟达在中国数据中心人工智能芯片市场的份额已经降至34%，而华为同期的市场份额已经攀升至28%，二者的市场占比差距正在快速收窄。 美国对华先进芯片出口限制持续冲击英伟达在中国市场的正常供货能力，中国本土芯片厂商则依托国产替代扶持政策和持续扩张的市场需求快速成长，原本由海外厂商主导的中国AI计算基础设施市场的竞争格局正在发生前所未有的深刻变化。 IDC公开的…",
+      "author": "雪花",
+      "source": "快科技",
+      "sourceId": "mydrivers",
+      "home": "https://www.mydrivers.com",
+      "weight": 1.2,
+      "lang": "zh",
+      "category": "行业动态",
+      "publishedAt": "2026-10-14T05:09:53.511Z",
+      "publishedTs": 1791954593511,
+      "day": "2026-10-14",
+      "estimate": true,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 62
+    },
+    {
+      "id": "117j64k",
+      "title": "性能再提30%！英伟达DLSS 5公布十月重大更新：显存占用直降20%",
+      "url": "https://news.mydrivers.com/1/1157/1157255.htm",
+      "summary": "快科技10月14日消息，英伟达（NVIDIA）近日正式公布了DLSS 5技术的十月重大版本更新。根据官方披露的最新进度，经过优化后的DLSS 5模型在执行效率上实现了翻倍增长，同时显著降低了对硬件资源的索取。 英伟达官方表示，相比今年3月在GTC 2026大会上初次亮相的原型，最新版DLSS 5的运行速度已经实现了100%的提升。 在技术细节方面，新版DLSS 5模型通过大幅削减非必要参数，将参数规模从此前水平下调了24%，目前仅包含1…",
+      "author": "青山",
+      "source": "快科技",
+      "sourceId": "mydrivers",
+      "home": "https://www.mydrivers.com",
+      "weight": 1.2,
+      "lang": "zh",
+      "category": "产品动态",
+      "publishedAt": "2026-10-14T05:09:53.511Z",
+      "publishedTs": 1791954593511,
+      "day": "2026-10-14",
+      "estimate": true,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 62
+    },
     {
       "id": "05jkwy7",
       "title": "男子发布AI视频造谣问界 赛力斯起诉索赔百万",
@@ -356,8 +536,8 @@
       "weight": 1.2,
       "lang": "zh",
       "category": "研究前沿",
-      "publishedAt": "2026-10-14T00:59:49.042Z",
-      "publishedTs": 1791939589042,
+      "publishedAt": "2026-10-14T05:09:53.511Z",
+      "publishedTs": 1791954593511,
       "day": "2026-10-14",
       "estimate": true,
       "bulk": false,
@@ -376,8 +556,8 @@
       "weight": 1.2,
       "lang": "zh",
       "category": "产品动态",
-      "publishedAt": "2026-10-14T00:59:49.042Z",
-      "publishedTs": 1791939589042,
+      "publishedAt": "2026-10-14T05:09:53.511Z",
+      "publishedTs": 1791954593511,
       "day": "2026-10-14",
       "estimate": true,
       "bulk": false,
@@ -396,8 +576,8 @@
       "weight": 1.2,
       "lang": "zh",
       "category": "行业动态",
-      "publishedAt": "2026-10-14T00:59:49.042Z",
-      "publishedTs": 1791939589042,
+      "publishedAt": "2026-10-14T05:09:53.511Z",
+      "publishedTs": 1791954593511,
       "day": "2026-10-14",
       "estimate": true,
       "bulk": false,
@@ -416,8 +596,8 @@
       "weight": 1.2,
       "lang": "zh",
       "category": "模型发布",
-      "publishedAt": "2026-10-14T00:59:49.042Z",
-      "publishedTs": 1791939589042,
+      "publishedAt": "2026-10-14T05:09:53.511Z",
+      "publishedTs": 1791954593511,
       "day": "2026-10-14",
       "estimate": true,
       "bulk": false,
@@ -436,8 +616,8 @@
       "weight": 1.2,
       "lang": "zh",
       "category": "产品动态",
-      "publishedAt": "2026-10-14T00:59:49.042Z",
-      "publishedTs": 1791939589042,
+      "publishedAt": "2026-10-14T05:09:53.511Z",
+      "publishedTs": 1791954593511,
       "day": "2026-10-14",
       "estimate": true,
       "bulk": false,
@@ -456,13 +636,533 @@
       "weight": 1.2,
       "lang": "zh",
       "category": "行业动态",
-      "publishedAt": "2026-10-14T00:59:49.042Z",
-      "publishedTs": 1791939589042,
+      "publishedAt": "2026-10-14T05:09:53.511Z",
+      "publishedTs": 1791954593511,
       "day": "2026-10-14",
       "estimate": true,
       "bulk": false,
       "alsoIn": [],
       "hot": 62
+    },
+    {
+      "id": "15di8ov",
+      "title": "凌晨解禁的Gemini4 可能是目前最适合普通人的AI",
+      "url": "https://news.mydrivers.com/1/1157/1157333.htm",
+      "summary": "在网上已经讨论了两周的，谷歌 AI 新旗舰 Gemini 4 Argon 终于正式上线。 要知道，上一次 Gemini 进行大版本更新，而非搞些 Flash/Flash-Lite 这种轻量化版本更新，还是遥远的 Gemini 3.1Pro。 当时的我们还在过春节，而如今，我们甚至已经过完了 2026 年的所有法定假日。。。 在这接近 8 个月的时间里，江江作为一个并不坚定的谷歌粉，看到隔壁两家 AI 模型的进化速度，简直要被谷歌气死…",
+      "author": "江江",
+      "source": "快科技",
+      "sourceId": "mydrivers",
+      "home": "https://www.mydrivers.com",
+      "weight": 1.2,
+      "lang": "zh",
+      "category": "模型发布",
+      "publishedAt": "2026-10-14T05:09:53.511Z",
+      "publishedTs": 1791954593511,
+      "day": "2026-10-14",
+      "estimate": true,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 68
+    },
+    {
+      "id": "0r3z2w7",
+      "title": "Google Releases Gemini 4 Argon API With 1M Token Output Limit",
+      "url": "https://www.marktechpost.com/2026/10/13/google-gemini-4-argon-api-release",
+      "summary": "Google has made Gemini 4 Argon generally available on the Gemini API, AI Studio and the Gemini app. The sparse MoE model writes up to 1M output tokens and leads the Vals Index at 68.90%. The post Google Releases Gemini 4…",
+      "author": "Asif Razzaq",
+      "source": "MarkTechPost",
+      "sourceId": "marktechpost",
+      "home": "https://www.marktechpost.com",
+      "weight": 1.4,
+      "lang": "en",
+      "category": "模型发布",
+      "publishedAt": "2026-10-14T05:03:34.000Z",
+      "publishedTs": 1791954214000,
+      "day": "2026-10-14",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 64
+    },
+    {
+      "id": "1tsudcn",
+      "title": "豆包工作上线数据导入与同步功能：支持从 ChatGPT 等一键导入对话与记忆",
+      "url": "https://www.ithome.com/1/012/807.htm",
+      "summary": "IT之家 10 月 14 日消息，今日豆包工作宣布上线数据导入与同步功能，支持用户将已有对话、技能和记忆迁移至豆包工作继续使用。 用户可一键导入任务偏好指令、技能、连接器、工作记忆、项目及历史会话，支持从 ChatGPT、Claude Code、Trae Work 等产品迁移。导入内容将自动归档至对应入口或列表，历史会话保留原有上下文，用户可直接在豆包工作内继续对话，无需重复配置或重新交代背景。 此外IT之家注意到，豆包工作同步优化多项…",
+      "author": "",
+      "source": "IT之家",
+      "sourceId": "ithome",
+      "home": "https://www.ithome.com",
+      "weight": 1.6,
+      "lang": "zh",
+      "category": "产品动态",
+      "publishedAt": "2026-10-14T04:50:45.000Z",
+      "publishedTs": 1791953445000,
+      "day": "2026-10-14",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 72
+    },
+    {
+      "id": "1hveslw",
+      "title": "周鸿祎谈AI：尽头不是能源，是安全 | 钛媒体刘湘明×360集团周鸿祎",
+      "url": "https://www.tmtpost.com/8167924.html",
+      "summary": "“AI失控是一个确定性的事，不可避免。” “谁要不说自家的模型失控，谁要不说自家的AI玩了一把黑客，都不好意思说自己是AGI。” “一边踩油门，一边喊刹车。” 这三个判断，出自做了二十年安全的360集团创始人周鸿祎。这是钛媒体视频播客《DeepPratice深度实践》新一期的录制，钛媒体联合创始人&联席CEO刘湘明与相识近30年的周鸿祎聊了近两个小时。访谈沿着一条暗线铺开：AI会不会失控，失控了怎么办，中国的路线怎么选。 他说AI失控是…",
+      "author": "深度实践",
+      "source": "钛媒体",
+      "sourceId": "tmtpost",
+      "home": "https://www.tmtpost.com",
+      "weight": 1.5,
+      "lang": "zh",
+      "category": "模型发布",
+      "publishedAt": "2026-10-14T04:48:00.000Z",
+      "publishedTs": 1791953280000,
+      "day": "2026-10-14",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 64
+    },
+    {
+      "id": "1hqu8lc",
+      "title": "一群东亚做题家，用 AI 反向输出 \"卷\"：韩国第一、越南第一、北美前五",
+      "url": "https://www.tmtpost.com/8167704.html",
+      "summary": "当一套被本土内卷折磨了几十年的方法论，遇上 AI 的冲击与重组，会发生什么商业变局？ 答案是 —— 它不再内耗，而是开始输出“卷”。",
+      "author": "针尖",
+      "source": "钛媒体",
+      "sourceId": "tmtpost",
+      "home": "https://www.tmtpost.com",
+      "weight": 1.5,
+      "lang": "zh",
+      "category": "行业动态",
+      "publishedAt": "2026-10-14T04:42:49.000Z",
+      "publishedTs": 1791952969000,
+      "day": "2026-10-14",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 64
+    },
+    {
+      "id": "18c4cd7",
+      "title": "国内外大厂疯抢Muse入口，但个人Agent仍是伪命题",
+      "url": "https://www.tmtpost.com/8167729.html",
+      "summary": "（本文作者为 青橙财经，钛媒体经授权发布） 文 | 青橙财经，作者丨青风，编辑丨六子 一个月前，Meta推出个人智能体Muse，舆论把它捧成ChatGPT之后最性感的产品——替你填表、比价、退订、跟客服吵架，关掉App它还在后台替你跑腿。 短短一个月，这场风潮就从硅谷席卷到国内。字节赶工“小豆”，腾讯三条线同时卡位，阿里10月13日刚放出“千问Go！”，蚂蚁内测灵光2.0，连刚融了33亿元的Manus也推出个人应用Cue。 一时间“下一…",
+      "author": "青橙财经",
+      "source": "钛媒体",
+      "sourceId": "tmtpost",
+      "home": "https://www.tmtpost.com",
+      "weight": 1.5,
+      "lang": "zh",
+      "category": "产品动态",
+      "publishedAt": "2026-10-14T04:26:20.000Z",
+      "publishedTs": 1791951980000,
+      "day": "2026-10-14",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 70
+    },
+    {
+      "id": "0wbog52",
+      "title": "机器人看人类视频，究竟能学到哪一步？",
+      "url": "https://www.tmtpost.com/8167669.html",
+      "summary": "一百万小时的人类操作视频，让机器人转动了一把钥匙。但从看懂任务、预测画面，到真正控制机械臂，人类视频究竟能替代多少机器人训练？",
+      "author": "具身志",
+      "source": "钛媒体",
+      "sourceId": "tmtpost",
+      "home": "https://www.tmtpost.com",
+      "weight": 1.5,
+      "lang": "zh",
+      "category": "研究前沿",
+      "publishedAt": "2026-10-14T04:26:16.000Z",
+      "publishedTs": 1791951976000,
+      "day": "2026-10-14",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 64
+    },
+    {
+      "id": "0o9yjmk",
+      "title": "阶跃首款智能体手机屏幕供应商为TCL华星",
+      "url": "https://www.jiemian.com/article/15188247.html",
+      "summary": "",
+      "author": "jianli@jiemian.com(界面)",
+      "source": "界面新闻",
+      "sourceId": "jiemian",
+      "home": "https://www.jiemian.com",
+      "weight": 1.2,
+      "lang": "zh",
+      "category": "产品动态",
+      "publishedAt": "2026-10-14T04:20:48.000Z",
+      "publishedTs": 1791951648000,
+      "day": "2026-10-14",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 61
+    },
+    {
+      "id": "1j98fkr",
+      "title": "AI硬件与智能家居新品密集落地，港股通互联网ETF永赢(159170)受关注",
+      "url": "https://www.jiemian.com/article/15188051.html",
+      "summary": "10月14日，港股科技股走强。阿里新一代AI硬件与海外智能家居新品落地受到关注，港股通互联网ETF永赢（159170）活跃。",
+      "author": "jianli@jiemian.com(有连云)",
+      "source": "界面新闻",
+      "sourceId": "jiemian",
+      "home": "https://www.jiemian.com",
+      "weight": 1.2,
+      "lang": "zh",
+      "category": "行业动态",
+      "publishedAt": "2026-10-14T03:59:46.000Z",
+      "publishedTs": 1791950386000,
+      "day": "2026-10-14",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 60
+    },
+    {
+      "id": "18eda7q",
+      "title": "国内首个人工智能全产业链评测基准发布，科创50ETF平安(589150)交投活跃",
+      "url": "https://www.jiemian.com/article/15188058.html",
+      "summary": "截至2026年10月14日 11:23，科创50ETF平安(589150)标的指数上证科创板50成份指数(000688)下跌0.94%。",
+      "author": "jianli@jiemian.com(有连云)",
+      "source": "界面新闻",
+      "sourceId": "jiemian",
+      "home": "https://www.jiemian.com",
+      "weight": 1.2,
+      "lang": "zh",
+      "category": "研究前沿",
+      "publishedAt": "2026-10-14T03:59:34.000Z",
+      "publishedTs": 1791950374000,
+      "day": "2026-10-14",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 73
+    },
+    {
+      "id": "0p55z6k",
+      "title": "国内AI基础设施需求有望延续高景气，场内布局人工智能选哪个产品好？汇聚AI产业链核心标的的科创创业人工智能ETF景顺(159142)备受关注",
+      "url": "https://www.jiemian.com/article/15188100.html",
+      "summary": "10月12日，在第二十六届中国国际工业博览会开幕式上，“上海市加快发展新一代智能制造行动”正式启动。上海将实施四大工程、开展19项重点任务，推动人工智能与制造业深度融合。",
+      "author": "jianli@jiemian.com(有连云)",
+      "source": "界面新闻",
+      "sourceId": "jiemian",
+      "home": "https://www.jiemian.com",
+      "weight": 1.2,
+      "lang": "zh",
+      "category": "行业动态",
+      "publishedAt": "2026-10-14T03:59:11.000Z",
+      "publishedTs": 1791950351000,
+      "day": "2026-10-14",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 60
+    },
+    {
+      "id": "1bqll09",
+      "title": "传媒ETF鹏华(159805)标的指数涨超2.1%，AI漫剧持续高景气，平台投入加码",
+      "url": "https://www.jiemian.com/article/15188112.html",
+      "summary": "消息面上，AI漫剧延续高景气，供需同步扩张、平台投入加码。QuestMobile数据显示，红果免费漫剧6月月活达4427.6万、较2月增长84.1%。",
+      "author": "jianli@jiemian.com(有连云)",
+      "source": "界面新闻",
+      "sourceId": "jiemian",
+      "home": "https://www.jiemian.com",
+      "weight": 1.2,
+      "lang": "zh",
+      "category": "产品动态",
+      "publishedAt": "2026-10-14T03:59:03.000Z",
+      "publishedTs": 1791950343000,
+      "day": "2026-10-14",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 67
+    },
+    {
+      "id": "1gfo23i",
+      "title": "Claude写代码太快，Git扛不住了：Anthropic仅靠7人，5个月重造版本控制系统",
+      "url": "https://www.infoq.cn/article/6iRATYfkqF7aITPaFR2R",
+      "summary": "点击查看原文>",
+      "author": "蔡芳芳",
+      "source": "InfoQ 中文",
+      "sourceId": "infoq-cn",
+      "home": "https://www.infoq.cn",
+      "weight": 1.4,
+      "lang": "zh",
+      "category": "模型发布",
+      "publishedAt": "2026-10-14T03:46:46.000Z",
+      "publishedTs": 1791949606000,
+      "day": "2026-10-14",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 62
+    },
+    {
+      "id": "10wrwj2",
+      "title": "彭博社报告：云游戏与 AI 或将终结传统游戏主机",
+      "url": "https://www.ithome.com/1/012/783.htm",
+      "summary": "IT之家 10 月 14 日消息，彭博社今天（14 日）发布的《深度分析：云游戏与 AI 或最终终结游戏主机》行业研究报告预测，到 2035 年，云游戏市场规模将达到 380 亿美元（IT之家注：现汇率约合 2,547.91 亿元人民币）。随着云游戏日益普及，传统游戏主机可能最终失去自身在大众消费市场的地位。 报告指出，AI 将使游戏越来越复杂，对硬件性能的要求也会不断提高。相比每隔几年推出一代性能更强的新主机，利用数据中心运行游戏，再…",
+      "author": "",
+      "source": "IT之家",
+      "sourceId": "ithome",
+      "home": "https://www.ithome.com",
+      "weight": 1.6,
+      "lang": "zh",
+      "category": "行业动态",
+      "publishedAt": "2026-10-14T03:45:48.000Z",
+      "publishedTs": 1791949548000,
+      "day": "2026-10-14",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 70
+    },
+    {
+      "id": "1pkheld",
+      "title": "Gemini 4 Argon 全球上线，主打 Coding、企业工作流和网络安全",
+      "url": "https://www.oschina.net/news/503010/google-deepmind-gemini4-models-argon",
+      "summary": "Google DeepMind 今早官宣：Gemini 4 Argon 全球可用，公司把它定义为『从头到尾解决你最棘手问题的模型』，押注的三个方向是人尽皆知的码农旧战场——coding、企业工作流——外加一个冷门到有点意外的词：cyber defense（网络安全防御）。 发布口径把人群切得很清楚。普通用户走 @GeminiApp 和 Search 里的 AI Mode，限...",
+      "author": "",
+      "source": "开源中国",
+      "sourceId": "oschina",
+      "home": "https://www.oschina.net",
+      "weight": 1.3,
+      "lang": "zh",
+      "category": "模型发布",
+      "publishedAt": "2026-10-14T02:59:16.000Z",
+      "publishedTs": 1791946756000,
+      "day": "2026-10-14",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 73
+    },
+    {
+      "id": "1havoxl",
+      "title": "⁤⁢‬⁣⁣⁢⁢⁡⁡⁢⁡‬⁤⁢⁡⁤⁡⁣⁡⁤⁢⁤⁤⁢‬⁣⁡刚刚，Gemini 4 发布！性价比「斩杀」GPT-6 和 Opus 5.5，重回御三家",
+      "url": "https://www.ifanr.com/1684241",
+      "summary": "哈基米终于支棱起来了。#欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。",
+      "author": "莫崇宇",
+      "source": "爱范儿",
+      "sourceId": "ifanr",
+      "home": "https://www.ifanr.com",
+      "weight": 1.4,
+      "lang": "zh",
+      "category": "模型发布",
+      "publishedAt": "2026-10-14T02:56:48.000Z",
+      "publishedTs": 1791946608000,
+      "day": "2026-10-14",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 67
+    },
+    {
+      "id": "0oh49p8",
+      "title": "宾大茅佳源：从单次演示到 83% 真机泛化，破解具身智能数据困局｜IROS 2026",
+      "url": "https://www.leiphone.com/category/private/x6DMLw9up0rlycKH.html",
+      "summary": "剖析视觉与动作脱节，引入 TR 指标与自适应引导，重构具身泛化机制。 作者丨张璐 编辑丨岑峰 在机械臂的实机测试中，不少团队都遇到过类似的困扰：为了让机器人学会抓取某个马克杯，往往需要人类抓着机械臂录入上百条示范轨迹。然而只要把杯子换成未见过的款式，或者稍微改变物体的摆放位置，策略的成功率就会急剧下降。 这种靠海量遥操作数据硬堆技能的方式，很难让机器人真正具备应对新环境的泛化能力。更棘手的是，即便当前的视频预测模型已经能准确画出合理的未…",
+      "author": "",
+      "source": "雷锋网",
+      "sourceId": "leiphone",
+      "home": "https://www.leiphone.com",
+      "weight": 1.5,
+      "lang": "zh",
+      "category": "模型发布",
+      "publishedAt": "2026-10-14T02:35:00.000Z",
+      "publishedTs": 1791945300000,
+      "day": "2026-10-14",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 62
+    },
+    {
+      "id": "1h2wjap",
+      "title": "微软 Win11 26H2 首个累积更新：Copilot 键可改回右 Ctrl，上线 Emoji 17.0",
+      "url": "https://www.ithome.com/1/012/719.htm",
+      "summary": "IT之家 10 月 14 日消息，在 10 月补丁星期二活动日（10 月 13 日），微软面向 Windows 11 24H2、25H2 以及 26H2 系统推送累积更新 KB5127648，对应系统版本号为 26100.9711、26200.9711、26300.9711，这也是 26H2 推送的首个累积更新。 在推送本次安全更新之后，Windows11 24H2 家庭版、专业版已结束支持。到期之后，设备将不再接收漏洞修复与问题补丁…",
+      "author": "",
+      "source": "IT之家",
+      "sourceId": "ithome",
+      "home": "https://www.ithome.com",
+      "weight": 1.6,
+      "lang": "zh",
+      "category": "产品动态",
+      "publishedAt": "2026-10-14T02:34:59.000Z",
+      "publishedTs": 1791945299000,
+      "day": "2026-10-14",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 75
+    },
+    {
+      "id": "0jpv602",
+      "title": "企业微信和 WorkBuddy 组了个「王炸局」，AI 终于不用人伺候了",
+      "url": "https://www.ifanr.com/1684200",
+      "summary": "原地升级的 AI 办公#欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。",
+      "author": "张子豪",
+      "source": "爱范儿",
+      "sourceId": "ifanr",
+      "home": "https://www.ifanr.com",
+      "weight": 1.4,
+      "lang": "zh",
+      "category": "行业动态",
+      "publishedAt": "2026-10-14T02:30:24.000Z",
+      "publishedTs": 1791945024000,
+      "day": "2026-10-14",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 60
+    },
+    {
+      "id": "17np64w",
+      "title": "9 月“AI 魔改”视频治理成果：清理违规视频近 1.3 万条、处置违规账号 30 余个",
+      "url": "https://www.ithome.com/1/012/701.htm",
+      "summary": "IT之家 10 月 14 日消息，据央视新闻报道，国家广播电视总局消息称，2026 年 1 月开展的“AI 魔改”视频专项治理工作已取得实效。部分重点网络视听平台近期公布了 9 月的处置情况，共清理违规视频近 13000 条、处置违规账号 30 余个。 截至IT之家发稿，具体平台清理信息暂未公布。 据了解，为进一步巩固治理成果，自 2026 年 2 月 1 日起，“AI 魔改”视频治理工作通过常态化、制度化长效机制持续开展。广电总局督导…",
+      "author": "",
+      "source": "IT之家",
+      "sourceId": "ithome",
+      "home": "https://www.ithome.com",
+      "weight": 1.6,
+      "lang": "zh",
+      "category": "行业动态",
+      "publishedAt": "2026-10-14T02:12:34.000Z",
+      "publishedTs": 1791943954000,
+      "day": "2026-10-14",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 62
+    },
+    {
+      "id": "0x5qzc3",
+      "title": "Counterpoint：到 2030 年全球处方助听器销量将超 3100 万台，近半支持端侧 AI",
+      "url": "https://www.ithome.com/1/012/696.htm",
+      "summary": "IT之家 10 月 14 日消息，Counterpoint 《全球端侧 AI 可穿戴设备预测》报告指出，到 2030 年，全球处方助听器销量预计将突破 3100 万台，2025 至 2030 年的年复合增长率为 4%。随着 AI 在助听器领域的应用普及，预计到 2030 年，近 50% 的助听器产品将搭载端侧 AI 能力。 多年来，助听器在小型化、连接性、续航方面持续进步，但核心难题始终存在：用户在嘈杂环境中难以听清对话。传统助听器主要…",
+      "author": "",
+      "source": "IT之家",
+      "sourceId": "ithome",
+      "home": "https://www.ithome.com",
+      "weight": 1.6,
+      "lang": "zh",
+      "category": "产品动态",
+      "publishedAt": "2026-10-14T02:07:47.000Z",
+      "publishedTs": 1791943667000,
+      "day": "2026-10-14",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 68
+    },
+    {
+      "id": "1km35oe",
+      "title": "Google DeepMind and Singapore Government announce new AI tool to protect citizens against scams",
+      "url": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi",
+      "summary": "Learn how Google DeepMind and GovTech Singapore uses lightweight on-device Gemma models to intercept conversational scams in private chats with zero cloud data egress.",
+      "author": "",
+      "source": "Google DeepMind",
+      "sourceId": "deepmind",
+      "home": "https://deepmind.google/discover/blog/",
+      "weight": 2.3,
+      "lang": "en",
+      "category": "行业动态",
+      "publishedAt": "2026-10-14T02:00:14.000Z",
+      "publishedTs": 1791943214000,
+      "day": "2026-10-14",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 69
+    },
+    {
+      "id": "009ilk3",
+      "title": "消息称具身智能独角兽公司智元启动新一轮融资，估值约 500 亿元",
+      "url": "https://www.ithome.com/1/012/674.htm",
+      "summary": "IT之家 10 月 14 日消息，据财经杂志 10 月 13 日报道，具身智能独角兽公司智元创新近期启动了新一轮融资，融资额约 10 亿元 —15 亿元，本轮融资已接近收尾，最新估值约 500 亿元。 报道提到，根据港交所的相关要求，上市申请公司如果在递表后、上市前完成新融资，除非获得特殊豁免，上市申请公司需要等到融资完成后满 120 日，才可挂牌交易。投资人称，新一轮融资意味着智元在今年内无法完成 IPO（首次公开募股）。 智元是一家…",
+      "author": "",
+      "source": "IT之家",
+      "sourceId": "ithome",
+      "home": "https://www.ithome.com",
+      "weight": 1.6,
+      "lang": "zh",
+      "category": "行业动态",
+      "publishedAt": "2026-10-14T01:51:00.000Z",
+      "publishedTs": 1791942660000,
+      "day": "2026-10-14",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 74
+    },
+    {
+      "id": "02o831k",
+      "title": "当二十年老牌行情软件遇上 AI：大智慧的智能化跃迁之路",
+      "url": "https://www.tmtpost.com/8166729.html",
+      "summary": "对大智慧而言，这场改造的意义不只是在产品里加了一个 AI 对话框，而是重新定义了金融软件与用户的关系。从提供数据的工具变为理解需求的伙伴。",
+      "author": "智客ZhiKer",
+      "source": "钛媒体",
+      "sourceId": "tmtpost",
+      "home": "https://www.tmtpost.com",
+      "weight": 1.5,
+      "lang": "zh",
+      "category": "开源工具",
+      "publishedAt": "2026-10-14T01:47:24.000Z",
+      "publishedTs": 1791942444000,
+      "day": "2026-10-14",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 61
+    },
+    {
+      "id": "0lfizns",
+      "title": "腾讯WorkBuddy企业版上线「可观测中心」破解规模化用Agent四大痛点",
+      "url": "https://www.leiphone.com/category/industrynews/f1Qk7Zv1CTpAQhYX.html",
+      "summary": "打通企业上下文或只是Agent智能体走进企业办公场景的开始，“成本效率是否可管控、安全合规是否可追溯，应用效果是否可优化”企业经营管理最关心的核心问题。 10月13日，腾讯 WorkBuddy 企业版管理后台上线“可观测中心”，作为企业级 Agent 智能体运行管理的「仪表盘」——从统计观测到轨迹分析，让企业级 Agent 全链路「看得全、看得清、看得透」。 即日起，“可观测中心”开启公测。企业管理员可以在管理后台中（https://w…",
+      "author": "",
+      "source": "雷锋网",
+      "sourceId": "leiphone",
+      "home": "https://www.leiphone.com",
+      "weight": 1.5,
+      "lang": "zh",
+      "category": "产品动态",
+      "publishedAt": "2026-10-14T01:36:00.000Z",
+      "publishedTs": 1791941760000,
+      "day": "2026-10-14",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 67
+    },
+    {
+      "id": "0za50fi",
+      "title": "所有App都在塞AI，但用户已经烦了",
+      "url": "https://www.tmtpost.com/8167377.html",
+      "summary": "（本文作者为 镜相工作室，钛媒体经授权发布） 文丨镜相工作室，作者 | 阮怡玲，编辑丨胡苗 Seany的手机里装了四五百个App，基本都保持最新版。他并非全部认可这些更新，更多时候，他是在观察它们更新了什么。 过去两年，他眼看着这些App一个个长出了AI功能：搜索框旁边多了AI图标，边栏出现了AI助手，有的App直接把AI入口放在了底部导航栏原来“首页”按钮的位置。 他在一家头部游戏企业做过游戏社区AI，现在在深圳做产品设计咨询，对这套…",
+      "author": "镜相工作室",
+      "source": "钛媒体",
+      "sourceId": "tmtpost",
+      "home": "https://www.tmtpost.com",
+      "weight": 1.5,
+      "lang": "zh",
+      "category": "产品动态",
+      "publishedAt": "2026-10-14T01:02:43.000Z",
+      "publishedTs": 1791939763000,
+      "day": "2026-10-14",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 66
     },
     {
       "id": "11j7u9z",
@@ -482,7 +1182,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 66
+      "hot": 60
     },
     {
       "id": "1lb7fwl",
@@ -502,7 +1202,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 77
+      "hot": 72
     },
     {
       "id": "1npxcki",
@@ -522,7 +1222,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 74
+      "hot": 69
     },
     {
       "id": "1cuhlbw",
@@ -542,7 +1242,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 72
+      "hot": 66
     },
     {
       "id": "048igpu",
@@ -562,7 +1262,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 65
+      "hot": 60
     },
     {
       "id": "0k488tz",
@@ -582,7 +1282,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 76
+      "hot": 70
     },
     {
       "id": "0hhs8l0",
@@ -602,7 +1302,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 65
+      "hot": 60
     },
     {
       "id": "1fm2ijy",
@@ -622,7 +1322,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 61
+      "hot": 56
     },
     {
       "id": "1ggie5l",
@@ -642,7 +1342,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 61
+      "hot": 56
     },
     {
       "id": "1v4xnh1",
@@ -662,7 +1362,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 71
+      "hot": 66
     },
     {
       "id": "09ysr3y",
@@ -682,7 +1382,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 61
+      "hot": 56
     },
     {
       "id": "0nslwjt",
@@ -702,7 +1402,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 75
+      "hot": 70
     },
     {
       "id": "0clju0n",
@@ -722,7 +1422,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 71
+      "hot": 66
     },
     {
       "id": "0d1fh6j",
@@ -742,7 +1442,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 67
+      "hot": 62
     },
     {
       "id": "1d1xhoh",
@@ -762,7 +1462,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 71
+      "hot": 66
     },
     {
       "id": "17n1jfq",
@@ -782,7 +1482,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 67
+      "hot": 61
     },
     {
       "id": "0u4csfn",
@@ -802,7 +1502,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 64
+      "hot": 59
     },
     {
       "id": "0hkv4do",
@@ -822,7 +1522,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 64
+      "hot": 59
     },
     {
       "id": "0sx0nro",
@@ -842,7 +1542,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 71
+      "hot": 65
     },
     {
       "id": "0rllfam",
@@ -862,7 +1562,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 60
+      "hot": 55
     },
     {
       "id": "0js9v5c",
@@ -882,7 +1582,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 70
+      "hot": 65
     },
     {
       "id": "0vd9gc2",
@@ -902,7 +1602,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 64
+      "hot": 59
     },
     {
       "id": "02m6pio",
@@ -922,7 +1622,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 88
+      "hot": 83
     },
     {
       "id": "1oh5wv5",
@@ -942,7 +1642,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 64
+      "hot": 59
     },
     {
       "id": "1cdfwe8",
@@ -962,7 +1662,27 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 66
+      "hot": 60
+    },
+    {
+      "id": "0cjok52",
+      "title": "Show HN: Pulse Local, a Mac budgeting app whose AI models run on your machine",
+      "url": "https://pulseos.finance/",
+      "summary": "Hi HN, I'm Niz. Pulse Local is a budgeting app for Mac (Apple Silicon, beta) that answers questions about your spending with models that run on your machine. Local mode needs no account. The ledger and your questions sta…",
+      "author": "niztk",
+      "source": "Hacker News",
+      "sourceId": "hn-ai",
+      "home": "https://news.ycombinator.com",
+      "weight": 1.2,
+      "lang": "en",
+      "category": "产品动态",
+      "publishedAt": "2026-10-13T23:13:23.000Z",
+      "publishedTs": 1791933203000,
+      "day": "2026-10-14",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 54
     },
     {
       "id": "0f5l8p8",
@@ -982,7 +1702,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 70
+      "hot": 65
     },
     {
       "id": "0sdw95f",
@@ -1002,7 +1722,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 63
+      "hot": 58
     },
     {
       "id": "0lhxds4",
@@ -1022,7 +1742,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 65
+      "hot": 60
     },
     {
       "id": "0zmi9r4",
@@ -1042,7 +1762,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 60
+      "hot": 55
     },
     {
       "id": "0kfe01v",
@@ -1062,7 +1782,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 65
+      "hot": 60
     },
     {
       "id": "1xn24zx",
@@ -1082,7 +1802,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 63
+      "hot": 58
     },
     {
       "id": "1qrn117",
@@ -1102,7 +1822,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 61
+      "hot": 56
     },
     {
       "id": "102whe7",
@@ -1122,7 +1842,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 65
+      "hot": 60
     },
     {
       "id": "0ea8xg9",
@@ -1142,7 +1862,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 60
+      "hot": 55
     },
     {
       "id": "0as9bd4",
@@ -1162,7 +1882,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 65
+      "hot": 60
     },
     {
       "id": "1qcodx1",
@@ -1182,7 +1902,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 60
+      "hot": 55
     },
     {
       "id": "1c2yhxi",
@@ -1202,7 +1922,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 70
+      "hot": 65
     },
     {
       "id": "1yxjj0c",
@@ -1222,7 +1942,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 64
+      "hot": 59
     },
     {
       "id": "1077kwh",
@@ -1242,7 +1962,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 63
+      "hot": 58
     },
     {
       "id": "0wnl2oy",
@@ -1262,7 +1982,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 63
+      "hot": 58
     },
     {
       "id": "00wjo5c",
@@ -1282,7 +2002,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 57
+      "hot": 52
     },
     {
       "id": "18me203",
@@ -1302,7 +2022,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 60
+      "hot": 56
     },
     {
       "id": "071j7re",
@@ -1322,7 +2042,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 56
+      "hot": 52
     },
     {
       "id": "1rc6kd5",
@@ -1342,7 +2062,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 63
+      "hot": 58
     },
     {
       "id": "061dx94",
@@ -1362,7 +2082,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 62
+      "hot": 57
     },
     {
       "id": "0pliyn8",
@@ -1382,7 +2102,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 62
+      "hot": 58
     },
     {
       "id": "1wtimf7",
@@ -1402,7 +2122,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 58
+      "hot": 53
     },
     {
       "id": "03xz9bh",
@@ -1422,7 +2142,27 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 55
+      "hot": 51
+    },
+    {
+      "id": "1trap9l",
+      "title": "Show HN: Parsimony – an open-source benchmark for how much code AI models add",
+      "url": "https://parsimony.lasu.dev/",
+      "summary": "Existing benchmarks measure solve rate and token output/cost, but don't punish excess code, which makes a codebase harder to work with in the long term. I wanted to measure this since it matters most for long-term projec…",
+      "author": "lasu",
+      "source": "Hacker News",
+      "sourceId": "hn-ai",
+      "home": "https://news.ycombinator.com",
+      "weight": 1.2,
+      "lang": "en",
+      "category": "模型发布",
+      "publishedAt": "2026-10-13T19:50:31.000Z",
+      "publishedTs": 1791921031000,
+      "day": "2026-10-14",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 51
     },
     {
       "id": "06iagvx",
@@ -1442,7 +2182,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 66
+      "hot": 61
     },
     {
       "id": "0631vb1",
@@ -1462,7 +2202,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 59
+      "hot": 54
     },
     {
       "id": "0pv9tjc",
@@ -1482,7 +2222,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 58
+      "hot": 54
     },
     {
       "id": "0140c49",
@@ -1502,7 +2242,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 58
+      "hot": 54
     },
     {
       "id": "0tugsr8",
@@ -1522,7 +2262,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 66
+      "hot": 62
     },
     {
       "id": "199u7zs",
@@ -1542,7 +2282,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 60
+      "hot": 56
     },
     {
       "id": "1fjuotb",
@@ -1562,7 +2302,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 60
+      "hot": 55
     },
     {
       "id": "1eb2lfj",
@@ -1582,7 +2322,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 60
+      "hot": 55
     },
     {
       "id": "0olhm4z",
@@ -1602,7 +2342,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 53
+      "hot": 49
     },
     {
       "id": "1hauiv4",
@@ -1622,7 +2362,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 59
+      "hot": 55
     },
     {
       "id": "1mgpr33",
@@ -1642,7 +2382,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 57
+      "hot": 53
     },
     {
       "id": "1l46yw7",
@@ -1662,7 +2402,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 57
+      "hot": 53
     },
     {
       "id": "1mnqnvi",
@@ -1682,7 +2422,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 59
+      "hot": 54
     },
     {
       "id": "03qpkek",
@@ -1702,7 +2442,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 58
+      "hot": 54
     },
     {
       "id": "0mnkvvg",
@@ -1722,7 +2462,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 54
+      "hot": 50
     },
     {
       "id": "1xyuy8b",
@@ -1742,7 +2482,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 56
+      "hot": 52
     },
     {
       "id": "1kyjhkn",
@@ -1762,7 +2502,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 56
+      "hot": 52
     },
     {
       "id": "1jpkjkp",
@@ -1782,7 +2522,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 58
+      "hot": 54
     },
     {
       "id": "046r5ed",
@@ -1802,7 +2542,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 56
+      "hot": 52
     },
     {
       "id": "1civp5o",
@@ -1822,7 +2562,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 56
+      "hot": 51
     },
     {
       "id": "1x8l6pj",
@@ -1842,7 +2582,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 57
+      "hot": 53
     },
     {
       "id": "09t8vnj",
@@ -1862,7 +2602,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 61
+      "hot": 57
     },
     {
       "id": "0io8hao",
@@ -1882,7 +2622,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 53
+      "hot": 49
     },
     {
       "id": "1hxp4hb",
@@ -1902,7 +2642,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 62
+      "hot": 58
     },
     {
       "id": "03vis94",
@@ -1922,7 +2662,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 62
+      "hot": 58
     },
     {
       "id": "09jdvjj",
@@ -1942,7 +2682,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 55
+      "hot": 51
     },
     {
       "id": "04p4l4i",
@@ -1962,7 +2702,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 53
+      "hot": 49
     },
     {
       "id": "0pf0kjo",
@@ -1982,7 +2722,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 53
+      "hot": 49
     },
     {
       "id": "12poty4",
@@ -2002,7 +2742,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 54
+      "hot": 50
     },
     {
       "id": "0nqx4wg",
@@ -2022,7 +2762,27 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 67
+      "hot": 63
+    },
+    {
+      "id": "0b87vmo",
+      "title": "I posted to HN, and then my website was flooded with AI bot traffic",
+      "url": "https://www.sammystraus.com/",
+      "summary": "Article URL: https://www.sammystraus.com/#i-posted-to-hn-and-then-my-website-was-flooded-with-ai-bot-traffic Comments URL: https://news.ycombinator.com/item?id=50073221 Points: 299 # Comments: 160",
+      "author": "sammy0910",
+      "source": "Hacker News",
+      "sourceId": "hn-ai",
+      "home": "https://news.ycombinator.com",
+      "weight": 1.2,
+      "lang": "en",
+      "category": "行业动态",
+      "publishedAt": "2026-10-13T15:25:50.000Z",
+      "publishedTs": 1791905150000,
+      "day": "2026-10-13",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 46
     },
     {
       "id": "0jkusg9",
@@ -2042,7 +2802,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 52
+      "hot": 48
     },
     {
       "id": "0xwz0ky",
@@ -2062,7 +2822,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 54
+      "hot": 50
     },
     {
       "id": "0bvjzy2",
@@ -2082,7 +2842,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 53
+      "hot": 49
     },
     {
       "id": "0n437g9",
@@ -2102,7 +2862,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 53
+      "hot": 49
     },
     {
       "id": "0pkt6ug",
@@ -2122,7 +2882,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 53
+      "hot": 49
     },
     {
       "id": "1tk3rma",
@@ -2142,7 +2902,27 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 51
+      "hot": 47
+    },
+    {
+      "id": "1nfvhy9",
+      "title": "How to engineer an AI harness for game development",
+      "url": "https://kylekukshtel.com/ai-harness-engineering-game-development-claude-code",
+      "summary": "Article URL: https://kylekukshtel.com/ai-harness-engineering-game-development-claude-code Comments URL: https://news.ycombinator.com/item?id=50072120 Points: 142 # Comments: 64",
+      "author": "kkukshtel",
+      "source": "Hacker News",
+      "sourceId": "hn-ai",
+      "home": "https://news.ycombinator.com",
+      "weight": 1.2,
+      "lang": "en",
+      "category": "模型发布",
+      "publishedAt": "2026-10-13T14:14:23.000Z",
+      "publishedTs": 1791900863000,
+      "day": "2026-10-13",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 45
     },
     {
       "id": "103lxu2",
@@ -2162,7 +2942,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 55
+      "hot": 51
     },
     {
       "id": "01xdv0d",
@@ -2182,7 +2962,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 53
+      "hot": 49
     },
     {
       "id": "1e4betz",
@@ -2202,7 +2982,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 55
+      "hot": 51
     },
     {
       "id": "09oau5q",
@@ -2222,7 +3002,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 52
+      "hot": 48
     },
     {
       "id": "14jb95j",
@@ -2242,7 +3022,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 54
+      "hot": 50
     },
     {
       "id": "0mpsnlf",
@@ -2262,7 +3042,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 52
+      "hot": 48
     },
     {
       "id": "0s5fyls",
@@ -2282,7 +3062,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 58
+      "hot": 54
     },
     {
       "id": "1v776lg",
@@ -2302,7 +3082,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 50
+      "hot": 46
     },
     {
       "id": "0iji9ef",
@@ -2322,7 +3102,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 58
+      "hot": 54
     },
     {
       "id": "0xh5pku",
@@ -2342,7 +3122,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 54
+      "hot": 50
     },
     {
       "id": "07prz40",
@@ -2362,7 +3142,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 53
+      "hot": 49
     },
     {
       "id": "1vaidhz",
@@ -2382,7 +3162,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 53
+      "hot": 49
     },
     {
       "id": "0j2goop",
@@ -2402,7 +3182,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 60
+      "hot": 56
     },
     {
       "id": "1wajtge",
@@ -2422,7 +3202,27 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 47
+      "hot": 44
+    },
+    {
+      "id": "1kxi8cr",
+      "title": "Character.ai Files for Bankruptcy",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1009802/character-ai-files-for-bankruptcy-disney",
+      "summary": "Article URL: https://www.theverge.com/ai-artificial-intelligence/1009802/character-ai-files-for-bankruptcy-disney Comments URL: https://news.ycombinator.com/item?id=50069942 Points: 145 # Comments: 22",
+      "author": "yanis_t",
+      "source": "Hacker News",
+      "sourceId": "hn-ai",
+      "home": "https://news.ycombinator.com",
+      "weight": 1.2,
+      "lang": "en",
+      "category": "行业动态",
+      "publishedAt": "2026-10-13T11:24:08.000Z",
+      "publishedTs": 1791890648000,
+      "day": "2026-10-13",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 43
     },
     {
       "id": "1gvrnz8",
@@ -2442,7 +3242,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 50
+      "hot": 46
     },
     {
       "id": "0m79hwr",
@@ -2462,7 +3262,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 56
+      "hot": 52
     },
     {
       "id": "0cqt3to",
@@ -2482,7 +3282,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 49
+      "hot": 46
     },
     {
       "id": "1burmzp",
@@ -2502,7 +3302,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 47
+      "hot": 44
     },
     {
       "id": "0mblchm",
@@ -2522,7 +3322,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 53
+      "hot": 50
     },
     {
       "id": "1kk33q9",
@@ -2542,7 +3342,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 47
+      "hot": 43
     },
     {
       "id": "1e57fy9",
@@ -2562,7 +3362,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 55
+      "hot": 51
     },
     {
       "id": "1puwrzq",
@@ -2582,7 +3382,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 53
+      "hot": 49
     },
     {
       "id": "0hzxyhc",
@@ -2602,7 +3402,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 54
+      "hot": 50
     },
     {
       "id": "19bvdmg",
@@ -2622,7 +3422,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 47
+      "hot": 44
     },
     {
       "id": "1xei88a",
@@ -2642,7 +3442,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 45
+      "hot": 42
     },
     {
       "id": "0im8bpf",
@@ -2662,7 +3462,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 46
+      "hot": 42
     },
     {
       "id": "1rv7dri",
@@ -2682,7 +3482,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 51
+      "hot": 48
     },
     {
       "id": "0mtbrt7",
@@ -2702,7 +3502,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 52
+      "hot": 48
     },
     {
       "id": "053njoi",
@@ -2722,7 +3522,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 46
+      "hot": 42
     },
     {
       "id": "0w5rkk4",
@@ -2742,7 +3542,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 45
+      "hot": 42
     },
     {
       "id": "1s56zgh",
@@ -2762,7 +3562,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 44
+      "hot": 41
     },
     {
       "id": "16v2jbc",
@@ -2782,7 +3582,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 43
+      "hot": 40
     },
     {
       "id": "1md7rjh",
@@ -2802,7 +3602,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 43
+      "hot": 40
     },
     {
       "id": "1q79rlo",
@@ -2822,7 +3622,27 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 50
+      "hot": 47
+    },
+    {
+      "id": "0ttfs2w",
+      "title": "Character.ai has initiated voluntary Chapter 11 bankruptcy",
+      "url": "https://blog.character.ai/an-update-on-character-ai",
+      "summary": "https://www.theverge.com/ai-artificial-intelligence/1009802/... https://techcrunch.com/2026/10/13/just-5-years-in-interactiv... https://www.reuters.com/legal/litigation/characterai-files-b... https://variety.com/2026/biz…",
+      "author": "nryoo",
+      "source": "Hacker News",
+      "sourceId": "hn-ai",
+      "home": "https://news.ycombinator.com",
+      "weight": 1.2,
+      "lang": "en",
+      "category": "行业动态",
+      "publishedAt": "2026-10-13T07:28:34.000Z",
+      "publishedTs": 1791876514000,
+      "day": "2026-10-13",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 39
     },
     {
       "id": "0hi49fq",
@@ -2842,7 +3662,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 53
+      "hot": 49
     },
     {
       "id": "1513rbw",
@@ -2862,7 +3682,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 53
+      "hot": 49
     },
     {
       "id": "1de9i67",
@@ -2882,7 +3702,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 49
+      "hot": 45
     },
     {
       "id": "01f4rc9",
@@ -2902,7 +3722,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 49
+      "hot": 45
     },
     {
       "id": "1o0ipmr",
@@ -2922,7 +3742,7 @@
       "estimate": true,
       "bulk": false,
       "alsoIn": [],
-      "hot": 49
+      "hot": 45
     },
     {
       "id": "1kxiock",
@@ -2942,7 +3762,7 @@
       "estimate": true,
       "bulk": false,
       "alsoIn": [],
-      "hot": 49
+      "hot": 45
     },
     {
       "id": "1wyjx3f",
@@ -2962,7 +3782,7 @@
       "estimate": true,
       "bulk": false,
       "alsoIn": [],
-      "hot": 42
+      "hot": 39
     },
     {
       "id": "11orsoa",
@@ -2982,7 +3802,7 @@
       "estimate": true,
       "bulk": false,
       "alsoIn": [],
-      "hot": 42
+      "hot": 39
     },
     {
       "id": "0v67civ",
@@ -3002,7 +3822,7 @@
       "estimate": true,
       "bulk": false,
       "alsoIn": [],
-      "hot": 49
+      "hot": 45
     },
     {
       "id": "0eivz89",
@@ -3022,7 +3842,7 @@
       "estimate": true,
       "bulk": false,
       "alsoIn": [],
-      "hot": 42
+      "hot": 39
     },
     {
       "id": "0t9colm",
@@ -3042,7 +3862,7 @@
       "estimate": true,
       "bulk": false,
       "alsoIn": [],
-      "hot": 49
+      "hot": 45
     },
     {
       "id": "0r2at9q",
@@ -3062,7 +3882,7 @@
       "estimate": true,
       "bulk": false,
       "alsoIn": [],
-      "hot": 49
+      "hot": 45
     },
     {
       "id": "0feh487",
@@ -3082,7 +3902,7 @@
       "estimate": true,
       "bulk": false,
       "alsoIn": [],
-      "hot": 42
+      "hot": 39
     },
     {
       "id": "1n9xd8i",
@@ -3102,7 +3922,7 @@
       "estimate": true,
       "bulk": false,
       "alsoIn": [],
-      "hot": 42
+      "hot": 39
     },
     {
       "id": "1j35t7i",
@@ -3122,7 +3942,7 @@
       "estimate": true,
       "bulk": false,
       "alsoIn": [],
-      "hot": 49
+      "hot": 45
     },
     {
       "id": "043wum2",
@@ -3142,7 +3962,7 @@
       "estimate": true,
       "bulk": false,
       "alsoIn": [],
-      "hot": 42
+      "hot": 39
     },
     {
       "id": "0d8nglw",
@@ -3162,7 +3982,7 @@
       "estimate": true,
       "bulk": false,
       "alsoIn": [],
-      "hot": 49
+      "hot": 45
     },
     {
       "id": "1wf4vxt",
@@ -3182,7 +4002,7 @@
       "estimate": true,
       "bulk": false,
       "alsoIn": [],
-      "hot": 49
+      "hot": 45
     },
     {
       "id": "09zfk23",
@@ -3202,7 +4022,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 43
+      "hot": 40
     },
     {
       "id": "0n4j7v7",
@@ -3222,7 +4042,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 46
+      "hot": 43
     },
     {
       "id": "0rxsgzu",
@@ -3242,7 +4062,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 46
+      "hot": 43
     },
     {
       "id": "1rufiv3",
@@ -3262,7 +4082,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 52
+      "hot": 49
     },
     {
       "id": "15uwhm0",
@@ -3282,7 +4102,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 46
+      "hot": 43
     },
     {
       "id": "1jhepo0",
@@ -3302,7 +4122,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 46
+      "hot": 43
     },
     {
       "id": "03rrdat",
@@ -3322,7 +4142,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 52
+      "hot": 49
     },
     {
       "id": "15n7rbx",
@@ -3342,7 +4162,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 46
+      "hot": 43
     },
     {
       "id": "13ty3uc",
@@ -3362,7 +4182,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 42
+      "hot": 38
     },
     {
       "id": "0gvl9md",
@@ -3382,7 +4202,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 42
+      "hot": 38
     },
     {
       "id": "08yeo2n",
@@ -3402,7 +4222,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 58
+      "hot": 55
     },
     {
       "id": "0z8gggx",
@@ -3422,7 +4242,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 48
+      "hot": 45
     },
     {
       "id": "1phiez5",
@@ -3442,7 +4262,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 42
+      "hot": 38
     },
     {
       "id": "0aeaiqd",
@@ -3462,7 +4282,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 42
+      "hot": 38
     },
     {
       "id": "1kih5xe",
@@ -3482,7 +4302,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 42
+      "hot": 38
     },
     {
       "id": "1cpriwg",
@@ -3502,7 +4322,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 42
+      "hot": 38
     },
     {
       "id": "1y4720w",
@@ -3522,7 +4342,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 52
+      "hot": 48
     },
     {
       "id": "0o4mrz8",
@@ -3542,7 +4362,27 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 52
+      "hot": 49
+    },
+    {
+      "id": "0ig2zux",
+      "title": "Threat of AI share crash puts world financial stability at risk, says IMF",
+      "url": "https://www.theguardian.com/business/2026/oct/13/ai-share-crash-risk-global-imf-debt-corrowing-cyber-attacks",
+      "summary": "Article URL: https://www.theguardian.com/business/2026/oct/13/ai-share-crash-risk-global-imf-debt-corrowing-cyber-attacks Comments URL: https://news.ycombinator.com/item?id=50067356 Points: 111 # Comments: 125",
+      "author": "novaRom",
+      "source": "Hacker News",
+      "sourceId": "hn-ai",
+      "home": "https://news.ycombinator.com",
+      "weight": 1.2,
+      "lang": "en",
+      "category": "行业动态",
+      "publishedAt": "2026-10-13T05:57:32.000Z",
+      "publishedTs": 1791871052000,
+      "day": "2026-10-13",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 38
     },
     {
       "id": "16kzh8m",
@@ -3562,7 +4402,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 44
+      "hot": 41
     },
     {
       "id": "0njfarp",
@@ -3582,7 +4422,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 44
+      "hot": 41
     },
     {
       "id": "1jr15cb",
@@ -3602,7 +4442,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 51
+      "hot": 48
     },
     {
       "id": "17pzwlg",
@@ -3622,7 +4462,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 51
+      "hot": 48
     },
     {
       "id": "0jnepro",
@@ -3642,7 +4482,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 47
+      "hot": 44
     },
     {
       "id": "0wgnt06",
@@ -3662,7 +4502,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 49
+      "hot": 46
     },
     {
       "id": "0jw6t1d",
@@ -3682,7 +4522,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 56
+      "hot": 53
     },
     {
       "id": "1pbl11f",
@@ -3702,7 +4542,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 49
+      "hot": 46
     },
     {
       "id": "0fdxtcv",
@@ -3722,7 +4562,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 50
+      "hot": 47
     },
     {
       "id": "05x8ed4",
@@ -3742,7 +4582,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 50
+      "hot": 47
     },
     {
       "id": "1f4ruf0",
@@ -3762,7 +4602,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 62
+      "hot": 59
     },
     {
       "id": "13m61du",
@@ -3782,7 +4622,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 42
+      "hot": 39
     },
     {
       "id": "1jmo68p",
@@ -3802,7 +4642,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 47
+      "hot": 44
     },
     {
       "id": "05pnc4b",
@@ -3822,7 +4662,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 44
+      "hot": 41
     },
     {
       "id": "16gv2i2",
@@ -3842,7 +4682,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 42
+      "hot": 39
     },
     {
       "id": "1nxdign",
@@ -3862,7 +4702,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 48
+      "hot": 45
     },
     {
       "id": "1qakviz",
@@ -3882,7 +4722,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 42
+      "hot": 39
     },
     {
       "id": "0d93gc9",
@@ -3902,7 +4742,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 50
+      "hot": 47
     },
     {
       "id": "0rat0x6",
@@ -3922,7 +4762,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 44
+      "hot": 41
     },
     {
       "id": "0rjlzb7",
@@ -3942,7 +4782,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 49
+      "hot": 46
     },
     {
       "id": "1cut0ty",
@@ -3962,7 +4802,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 49
+      "hot": 46
     },
     {
       "id": "12g908y",
@@ -3982,7 +4822,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 42
+      "hot": 39
     },
     {
       "id": "08ovdek",
@@ -4002,7 +4842,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 56
+      "hot": 53
     },
     {
       "id": "1lqd1co",
@@ -4022,7 +4862,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 40
+      "hot": 37
     },
     {
       "id": "11frg1d",
@@ -4042,7 +4882,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 48
+      "hot": 45
     },
     {
       "id": "1140dno",
@@ -4062,7 +4902,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 48
+      "hot": 45
     },
     {
       "id": "027gpg8",
@@ -4082,7 +4922,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 49
+      "hot": 46
     },
     {
       "id": "17ywg8e",
@@ -4102,7 +4942,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 55
+      "hot": 52
     },
     {
       "id": "1g6s1fg",
@@ -4122,7 +4962,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 42
+      "hot": 39
     },
     {
       "id": "0vfhm6x",
@@ -4142,7 +4982,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 55
+      "hot": 52
     },
     {
       "id": "0dei2rt",
@@ -4162,7 +5002,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 48
+      "hot": 45
     },
     {
       "id": "1rlacq3",
@@ -4182,7 +5022,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 49
+      "hot": 46
     },
     {
       "id": "005rem0",
@@ -4202,7 +5042,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 48
+      "hot": 45
     },
     {
       "id": "0b5gyhz",
@@ -4222,7 +5062,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 49
+      "hot": 46
     },
     {
       "id": "12iwxod",
@@ -4242,7 +5082,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 60
+      "hot": 57
     },
     {
       "id": "15q4y8c",
@@ -4262,13 +5102,13 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 42
+      "hot": 39
     },
     {
       "id": "1w24equ",
-      "title": "AI Models Can Provably Hide Arbitrary Capabilities",
+      "title": "AI models can provably hide arbitrary capabilities",
       "url": "https://arxiv.org/abs/2610.13928",
-      "summary": "Article URL: https://arxiv.org/abs/2610.13928 Comments URL: https://news.ycombinator.com/item?id=50065692 Points: 140 # Comments: 73",
+      "summary": "Article URL: https://arxiv.org/abs/2610.13928 Comments URL: https://news.ycombinator.com/item?id=50065692 Points: 273 # Comments: 137",
       "author": "sbulaev",
       "source": "Hacker News",
       "sourceId": "hn-ai",
@@ -4282,7 +5122,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 38
+      "hot": 36
     },
     {
       "id": "00n1n5k",
@@ -4302,7 +5142,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 48
+      "hot": 46
     },
     {
       "id": "1e2q14s",
@@ -4322,7 +5162,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 61
+      "hot": 58
     },
     {
       "id": "0u0uxr4",
@@ -4342,7 +5182,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 48
+      "hot": 46
     },
     {
       "id": "0xratjb",
@@ -4362,7 +5202,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 54
+      "hot": 51
     },
     {
       "id": "0f14fbu",
@@ -4382,7 +5222,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 47
+      "hot": 45
     },
     {
       "id": "0dzbewq",
@@ -4402,7 +5242,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 38
+      "hot": 35
     },
     {
       "id": "1f06k80",
@@ -4422,7 +5262,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 38
+      "hot": 35
     },
     {
       "id": "08fpfkr",
@@ -4442,7 +5282,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 42
+      "hot": 39
     },
     {
       "id": "0ewk5m8",
@@ -4462,7 +5302,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 47
+      "hot": 44
     },
     {
       "id": "0yc2mom",
@@ -4482,7 +5322,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 47
+      "hot": 44
     },
     {
       "id": "00k5ei7",
@@ -4502,7 +5342,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 47
+      "hot": 44
     },
     {
       "id": "16r5sxg",
@@ -4522,7 +5362,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 47
+      "hot": 44
     },
     {
       "id": "1j4abxs",
@@ -4542,7 +5382,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 48
+      "hot": 45
     },
     {
       "id": "19icmqf",
@@ -4562,7 +5402,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 42
+      "hot": 39
     },
     {
       "id": "1x33fxi",
@@ -4582,7 +5422,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 38
+      "hot": 35
     },
     {
       "id": "0emsdum",
@@ -4602,7 +5442,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 44
+      "hot": 41
     },
     {
       "id": "0huvx13",
@@ -4622,7 +5462,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 48
+      "hot": 45
     },
     {
       "id": "0kn5c28",
@@ -4642,7 +5482,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 42
+      "hot": 39
     },
     {
       "id": "0bhbb9n",
@@ -4662,7 +5502,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 44
+      "hot": 41
     },
     {
       "id": "0qs4voa",
@@ -4682,7 +5522,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 48
+      "hot": 45
     },
     {
       "id": "1f4nunv",
@@ -4702,7 +5542,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 42
+      "hot": 39
     },
     {
       "id": "0vxzs1y",
@@ -4722,7 +5562,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 48
+      "hot": 45
     },
     {
       "id": "02n7cf8",
@@ -4742,7 +5582,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 53
+      "hot": 50
     },
     {
       "id": "1l5ec0y",
@@ -4762,7 +5602,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 52
+      "hot": 49
     },
     {
       "id": "0k0um9v",
@@ -4782,7 +5622,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 45
+      "hot": 43
     },
     {
       "id": "0lkgvsf",
@@ -4802,7 +5642,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 46
+      "hot": 44
     },
     {
       "id": "1yf3qcw",
@@ -4822,7 +5662,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 37
+      "hot": 34
     },
     {
       "id": "0r0yshl",
@@ -4842,7 +5682,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 41
+      "hot": 38
     },
     {
       "id": "1ay5foa",
@@ -4862,7 +5702,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 52
+      "hot": 50
     },
     {
       "id": "0f7kxo7",
@@ -4882,7 +5722,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 38
+      "hot": 35
     },
     {
       "id": "1p7hwor",
@@ -4902,7 +5742,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 37
+      "hot": 34
     },
     {
       "id": "04giwxi",
@@ -4922,7 +5762,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 37
+      "hot": 34
     },
     {
       "id": "0bg1y51",
@@ -4942,7 +5782,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 43
+      "hot": 40
     },
     {
       "id": "0upze34",
@@ -4962,7 +5802,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 43
+      "hot": 40
     },
     {
       "id": "0st5yw1",
@@ -4982,7 +5822,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 47
+      "hot": 44
     },
     {
       "id": "1o99e8w",
@@ -5002,7 +5842,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 56
+      "hot": 54
     },
     {
       "id": "06q1bg2",
@@ -5022,7 +5862,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 47
+      "hot": 44
     },
     {
       "id": "0dd59tk",
@@ -5042,7 +5882,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 59
+      "hot": 57
     },
     {
       "id": "1a4avha",
@@ -5062,13 +5902,13 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 40
+      "hot": 38
     },
     {
       "id": "09d317m",
       "title": "I turned my unused Kindle into a photo frame with GPT-6 Astra",
       "url": "https://nirajrajgor.com/blog/kindle-photo-frame-with-ai",
-      "summary": "Article URL: https://nirajrajgor.com/blog/kindle-photo-frame-with-ai Comments URL: https://news.ycombinator.com/item?id=50064318 Points: 141 # Comments: 92",
+      "summary": "Article URL: https://nirajrajgor.com/blog/kindle-photo-frame-with-ai Comments URL: https://news.ycombinator.com/item?id=50064318 Points: 146 # Comments: 103",
       "author": "nirajrajgor",
       "source": "Hacker News",
       "sourceId": "hn-ai",
@@ -5082,7 +5922,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 36
+      "hot": 34
     },
     {
       "id": "1wyvwk4",
@@ -5102,7 +5942,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 40
+      "hot": 38
     },
     {
       "id": "0vjje23",
@@ -5122,13 +5962,13 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 37
+      "hot": 35
     },
     {
       "id": "0xrpmml",
       "title": "AI is a tool and using it well takes skill",
       "url": "https://yyhh.org/blog/2026/10/ai-is-a-tool",
-      "summary": "Article URL: https://yyhh.org/blog/2026/10/ai-is-a-tool/ Comments URL: https://news.ycombinator.com/item?id=50063427 Points: 353 # Comments: 281",
+      "summary": "Article URL: https://yyhh.org/blog/2026/10/ai-is-a-tool/ Comments URL: https://news.ycombinator.com/item?id=50063427 Points: 657 # Comments: 526",
       "author": "layer8",
       "source": "Hacker News",
       "sourceId": "hn-ai",
@@ -5142,13 +5982,13 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 35
+      "hot": 33
     },
     {
       "id": "1nbbsin",
       "title": "Intel D270 GPU AI Accelerator–Up to 480 GB LPDDR5X",
       "url": "https://www.intel.com/content/www/us/en/products/details/discrete-gpus/data-center-gpu/d-series.html",
-      "summary": "Article URL: https://www.intel.com/content/www/us/en/products/details/discrete-gpus/data-center-gpu/d-series.html Comments URL: https://news.ycombinator.com/item?id=50063365 Points: 161 # Comments: 72",
+      "summary": "Article URL: https://www.intel.com/content/www/us/en/products/details/discrete-gpus/data-center-gpu/d-series.html Comments URL: https://news.ycombinator.com/item?id=50063365 Points: 302 # Comments: 176",
       "author": "hurricanepootis",
       "source": "Hacker News",
       "sourceId": "hn-ai",
@@ -5162,7 +6002,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 35
+      "hot": 33
     },
     {
       "id": "08tduqp",
@@ -5182,7 +6022,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 41
+      "hot": 39
     },
     {
       "id": "1seh7nc",
@@ -5202,7 +6042,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 41
+      "hot": 39
     },
     {
       "id": "0q4irby",
@@ -5222,13 +6062,13 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 35
+      "hot": 32
     },
     {
       "id": "1v7b0mn",
       "title": "Epic Games tells employees to use AI to get Disney game done",
       "url": "https://www.avclub.com/epic-games-disney-ai-delay",
-      "summary": "Article URL: https://www.avclub.com/epic-games-disney-ai-delay Comments URL: https://news.ycombinator.com/item?id=50062237 Points: 82 # Comments: 66",
+      "summary": "Article URL: https://www.avclub.com/epic-games-disney-ai-delay Comments URL: https://news.ycombinator.com/item?id=50062237 Points: 84 # Comments: 77",
       "author": "pavel_lishin",
       "source": "Hacker News",
       "sourceId": "hn-ai",
@@ -5242,13 +6082,13 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 34
+      "hot": 32
     },
     {
       "id": "1mm1i9z",
       "title": "AI models may be capable of self-replicating without access to a datacenter",
       "url": "https://www.anthropic.com/research/self-replicating-ai",
-      "summary": "Article URL: https://www.anthropic.com/research/self-replicating-ai Comments URL: https://news.ycombinator.com/item?id=50061603 Points: 85 # Comments: 99",
+      "summary": "Article URL: https://www.anthropic.com/research/self-replicating-ai Comments URL: https://news.ycombinator.com/item?id=50061603 Points: 107 # Comments: 109",
       "author": "artninja1988",
       "source": "Hacker News",
       "sourceId": "hn-ai",
@@ -5262,7 +6102,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 34
+      "hot": 32
     },
     {
       "id": "035y71k",
@@ -5282,7 +6122,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 34
+      "hot": 32
     },
     {
       "id": "0716oc9",
@@ -5302,7 +6142,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 40
+      "hot": 38
     },
     {
       "id": "16nmodo",
@@ -5322,13 +6162,13 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 38
+      "hot": 35
     },
     {
       "id": "19vadjk",
       "title": "'AI' Is Not a Tool by Rich Hickey",
       "url": "https://www.linkedin.com/pulse/ai-tool-rich-hickey-kjl8e",
-      "summary": "https://gist.github.com/svieira/619d60dea942a8d4498cba3bb6b1... Comments URL: https://news.ycombinator.com/item?id=50060269 Points: 255 # Comments: 130",
+      "summary": "https://gist.github.com/svieira/619d60dea942a8d4498cba3bb6b1... Comments URL: https://news.ycombinator.com/item?id=50060269 Points: 302 # Comments: 176",
       "author": "svieira",
       "source": "Hacker News",
       "sourceId": "hn-ai",
@@ -5342,7 +6182,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 33
+      "hot": 31
     },
     {
       "id": "1e11b1i",
@@ -5362,7 +6202,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 37
+      "hot": 35
     },
     {
       "id": "05b1yap",
@@ -5382,7 +6222,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 39
+      "hot": 37
     },
     {
       "id": "0v2551y",
@@ -5402,7 +6242,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 35
+      "hot": 33
     },
     {
       "id": "08efm6m",
@@ -5422,13 +6262,13 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 39
+      "hot": 36
     },
     {
       "id": "1gf3xab",
       "title": "AI coding agents generate more code, but not more software",
       "url": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software",
-      "summary": "Article URL: https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/ Comments URL: https://news.ycombinator.com/item?id=50059523 Points: 331 # Comments: 277",
+      "summary": "Article URL: https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/ Comments URL: https://news.ycombinator.com/item?id=50059523 Points: 361 # Comments: 300",
       "author": "gumby",
       "source": "Hacker News",
       "sourceId": "hn-ai",
@@ -5442,7 +6282,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 33
+      "hot": 30
     },
     {
       "id": "1a4q4or",
@@ -5462,7 +6302,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 37
+      "hot": 34
     },
     {
       "id": "04ejr1i",
@@ -5482,7 +6322,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 36
+      "hot": 34
     },
     {
       "id": "0z6lqwm",
@@ -5502,7 +6342,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 34
+      "hot": 32
     },
     {
       "id": "1uti0sf",
@@ -5522,7 +6362,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 34
+      "hot": 32
     },
     {
       "id": "150sjta",
@@ -5542,7 +6382,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 34
+      "hot": 32
     },
     {
       "id": "1w3hml1",
@@ -5562,7 +6402,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 38
+      "hot": 36
     },
     {
       "id": "0iskxn4",
@@ -5582,7 +6422,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 38
+      "hot": 36
     },
     {
       "id": "14dvgl4",
@@ -5602,7 +6442,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 38
+      "hot": 36
     },
     {
       "id": "122iqz1",
@@ -5622,13 +6462,13 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 36
+      "hot": 34
     },
     {
       "id": "05yb16m",
       "title": "Kevin Kelly's 2016 AI Predictions, 10 Years Later",
       "url": "https://taylor.town/kk-ai-2026",
-      "summary": "Article URL: https://taylor.town/kk-ai-2026 Comments URL: https://news.ycombinator.com/item?id=50057668 Points: 175 # Comments: 64",
+      "summary": "Article URL: https://taylor.town/kk-ai-2026 Comments URL: https://news.ycombinator.com/item?id=50057668 Points: 215 # Comments: 86",
       "author": "surprisetalk",
       "source": "Hacker News",
       "sourceId": "hn-ai",
@@ -5642,7 +6482,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 32
+      "hot": 29
     },
     {
       "id": "1acg7v2",
@@ -5662,13 +6502,13 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 37
+      "hot": 35
     },
     {
       "id": "0ao2o3o",
       "title": "Why aren't AI companies being charged for hacking?",
       "url": "https://mortoray.com/why-arent-ai-companies-being-charged-for-hacking",
-      "summary": "Article URL: https://mortoray.com/why-arent-ai-companies-being-charged-for-hacking/ Comments URL: https://news.ycombinator.com/item?id=50057278 Points: 319 # Comments: 338",
+      "summary": "Article URL: https://mortoray.com/why-arent-ai-companies-being-charged-for-hacking/ Comments URL: https://news.ycombinator.com/item?id=50057278 Points: 329 # Comments: 367",
       "author": "ingve",
       "source": "Hacker News",
       "sourceId": "hn-ai",
@@ -5682,7 +6522,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 31
+      "hot": 29
     },
     {
       "id": "1bxkat3",
@@ -5702,7 +6542,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 42
+      "hot": 39
     },
     {
       "id": "1oigobp",
@@ -5722,7 +6562,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 41
+      "hot": 39
     },
     {
       "id": "0d5e058",
@@ -5742,7 +6582,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 41
+      "hot": 39
     },
     {
       "id": "1scbxv5",
@@ -5762,7 +6602,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 40
+      "hot": 38
     },
     {
       "id": "00rpdc1",
@@ -5782,7 +6622,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 37
+      "hot": 35
     },
     {
       "id": "1t0icqk",
@@ -5802,7 +6642,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 32
+      "hot": 30
     },
     {
       "id": "0evfuff",
@@ -5822,7 +6662,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 35
+      "hot": 33
     },
     {
       "id": "1owtvs0",
@@ -5842,7 +6682,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 35
+      "hot": 32
     },
     {
       "id": "07z0lpf",
@@ -5862,7 +6702,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 34
+      "hot": 32
     },
     {
       "id": "0b3dai8",
@@ -5882,7 +6722,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 34
+      "hot": 32
     },
     {
       "id": "026grof",
@@ -5902,13 +6742,13 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 36
+      "hot": 34
     },
     {
       "id": "0erbeq3",
       "title": "AI less regulated than milk, Microsoft president says in warning over safety",
       "url": "https://www.theguardian.com/technology/2026/oct/12/ai-less-regulated-than-milk-microsoft-president-calls-for-tougher-rules",
-      "summary": "Article URL: https://www.theguardian.com/technology/2026/oct/12/ai-less-regulated-than-milk-microsoft-president-calls-for-tougher-rules Comments URL: https://news.ycombinator.com/item?id=50055654 Points: 70 # Comments: 7…",
+      "summary": "Article URL: https://www.theguardian.com/technology/2026/oct/12/ai-less-regulated-than-milk-microsoft-president-calls-for-tougher-rules Comments URL: https://news.ycombinator.com/item?id=50055654 Points: 71 # Comments: 8…",
       "author": "nephihaha",
       "source": "Hacker News",
       "sourceId": "hn-ai",
@@ -5922,7 +6762,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 30
+      "hot": 28
     },
     {
       "id": "1jrgbk3",
@@ -5942,7 +6782,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 32
+      "hot": 30
     },
     {
       "id": "1s167qa",
@@ -5962,13 +6802,13 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 31
+      "hot": 29
     },
     {
       "id": "0m0dq0e",
       "title": "QGIS enacts moratorium on AI contributions",
       "url": "https://github.com/qgis/QGIS-Enhancement-Proposals/pull/387",
-      "summary": "https://lists.osgeo.org/pipermail/qgis-developer/2026-Septem... Comments URL: https://news.ycombinator.com/item?id=50054751 Points: 372 # Comments: 402",
+      "summary": "https://lists.osgeo.org/pipermail/qgis-developer/2026-Septem... Comments URL: https://news.ycombinator.com/item?id=50054751 Points: 387 # Comments: 407",
       "author": "bwnkl",
       "source": "Hacker News",
       "sourceId": "hn-ai",
@@ -5982,7 +6822,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 30
+      "hot": 28
     },
     {
       "id": "128kj1a",
@@ -6002,7 +6842,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 31
+      "hot": 29
     },
     {
       "id": "1e96tub",
@@ -6022,7 +6862,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 32
+      "hot": 30
     },
     {
       "id": "1uyfkld",
@@ -6042,7 +6882,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 30
+      "hot": 28
     },
     {
       "id": "1pycm93",
@@ -6062,7 +6902,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 33
+      "hot": 31
     },
     {
       "id": "1x6g97h",
@@ -6082,7 +6922,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 31
+      "hot": 29
     },
     {
       "id": "0rbrv3x",
@@ -6102,7 +6942,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 30
+      "hot": 28
     },
     {
       "id": "0pdekgb",
@@ -6122,7 +6962,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 30
+      "hot": 28
     },
     {
       "id": "1ymvzpq",
@@ -6142,7 +6982,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 31
+      "hot": 29
     },
     {
       "id": "11elpyd",
@@ -6162,7 +7002,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 29
+      "hot": 28
     },
     {
       "id": "02on769",
@@ -6182,7 +7022,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 37
+      "hot": 35
     },
     {
       "id": "0vsuzbj",
@@ -6202,7 +7042,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 37
+      "hot": 35
     },
     {
       "id": "0rokl99",
@@ -6222,7 +7062,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 30
+      "hot": 28
     },
     {
       "id": "0uj1b0u",
@@ -6242,7 +7082,7 @@
       "estimate": false,
       "bulk": true,
       "alsoIn": [],
-      "hot": 26
+      "hot": 25
     },
     {
       "id": "1qli28p",
@@ -6262,7 +7102,7 @@
       "estimate": false,
       "bulk": true,
       "alsoIn": [],
-      "hot": 26
+      "hot": 25
     },
     {
       "id": "1t054xv",
@@ -6282,7 +7122,7 @@
       "estimate": false,
       "bulk": true,
       "alsoIn": [],
-      "hot": 26
+      "hot": 25
     },
     {
       "id": "1g3qmnq",
@@ -6302,7 +7142,7 @@
       "estimate": false,
       "bulk": true,
       "alsoIn": [],
-      "hot": 26
+      "hot": 25
     },
     {
       "id": "0znczyd",
@@ -6322,7 +7162,7 @@
       "estimate": false,
       "bulk": true,
       "alsoIn": [],
-      "hot": 26
+      "hot": 25
     },
     {
       "id": "174appz",
@@ -6342,7 +7182,7 @@
       "estimate": false,
       "bulk": true,
       "alsoIn": [],
-      "hot": 26
+      "hot": 25
     },
     {
       "id": "0tdlp7c",
@@ -6362,7 +7202,7 @@
       "estimate": false,
       "bulk": true,
       "alsoIn": [],
-      "hot": 26
+      "hot": 25
     },
     {
       "id": "1y8g2of",
@@ -6382,7 +7222,7 @@
       "estimate": false,
       "bulk": true,
       "alsoIn": [],
-      "hot": 26
+      "hot": 25
     },
     {
       "id": "088zbsw",
@@ -6402,7 +7242,7 @@
       "estimate": false,
       "bulk": true,
       "alsoIn": [],
-      "hot": 26
+      "hot": 25
     },
     {
       "id": "188yhz0",
@@ -6422,7 +7262,7 @@
       "estimate": false,
       "bulk": true,
       "alsoIn": [],
-      "hot": 26
+      "hot": 25
     },
     {
       "id": "1jv5cy4",
@@ -6442,7 +7282,7 @@
       "estimate": false,
       "bulk": true,
       "alsoIn": [],
-      "hot": 26
+      "hot": 25
     },
     {
       "id": "0li098t",
@@ -6462,7 +7302,7 @@
       "estimate": false,
       "bulk": true,
       "alsoIn": [],
-      "hot": 26
+      "hot": 25
     },
     {
       "id": "1i4x63z",
@@ -6482,7 +7322,7 @@
       "estimate": false,
       "bulk": true,
       "alsoIn": [],
-      "hot": 26
+      "hot": 25
     },
     {
       "id": "01t11lq",
@@ -6502,7 +7342,7 @@
       "estimate": false,
       "bulk": true,
       "alsoIn": [],
-      "hot": 26
+      "hot": 25
     },
     {
       "id": "0e7kc6o",
@@ -6522,7 +7362,7 @@
       "estimate": false,
       "bulk": true,
       "alsoIn": [],
-      "hot": 26
+      "hot": 25
     },
     {
       "id": "06hwj9e",
@@ -6542,7 +7382,7 @@
       "estimate": false,
       "bulk": true,
       "alsoIn": [],
-      "hot": 26
+      "hot": 25
     },
     {
       "id": "099al3h",
@@ -6562,7 +7402,7 @@
       "estimate": false,
       "bulk": true,
       "alsoIn": [],
-      "hot": 26
+      "hot": 25
     },
     {
       "id": "0uhdxrl",
@@ -6582,7 +7422,7 @@
       "estimate": false,
       "bulk": true,
       "alsoIn": [],
-      "hot": 26
+      "hot": 25
     },
     {
       "id": "05dg5dv",
@@ -6602,7 +7442,7 @@
       "estimate": false,
       "bulk": true,
       "alsoIn": [],
-      "hot": 26
+      "hot": 25
     },
     {
       "id": "1vierzb",
@@ -6622,7 +7462,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 33
+      "hot": 32
     },
     {
       "id": "0rzhgkp",
@@ -6642,7 +7482,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 28
+      "hot": 27
     },
     {
       "id": "1am7oml",
@@ -6662,7 +7502,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 29
+      "hot": 27
     },
     {
       "id": "0e966td",
@@ -6682,7 +7522,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 36
+      "hot": 34
     },
     {
       "id": "1rmh6rq",
@@ -6702,7 +7542,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 27
+      "hot": 25
     },
     {
       "id": "1jzwq68",
@@ -6722,7 +7562,7 @@
       "estimate": true,
       "bulk": false,
       "alsoIn": [],
-      "hot": 26
+      "hot": 24
     },
     {
       "id": "0wpbkpq",
@@ -6742,7 +7582,7 @@
       "estimate": true,
       "bulk": false,
       "alsoIn": [],
-      "hot": 32
+      "hot": 31
     },
     {
       "id": "06a6nco",
@@ -6762,7 +7602,7 @@
       "estimate": true,
       "bulk": false,
       "alsoIn": [],
-      "hot": 26
+      "hot": 24
     },
     {
       "id": "18mexsf",
@@ -6782,7 +7622,7 @@
       "estimate": true,
       "bulk": false,
       "alsoIn": [],
-      "hot": 32
+      "hot": 31
     },
     {
       "id": "1jwjlqq",
@@ -6802,7 +7642,7 @@
       "estimate": true,
       "bulk": false,
       "alsoIn": [],
-      "hot": 26
+      "hot": 24
     },
     {
       "id": "0zggmhn",
@@ -6822,7 +7662,7 @@
       "estimate": true,
       "bulk": false,
       "alsoIn": [],
-      "hot": 26
+      "hot": 24
     },
     {
       "id": "1hxtusv",
@@ -6842,7 +7682,7 @@
       "estimate": true,
       "bulk": false,
       "alsoIn": [],
-      "hot": 26
+      "hot": 24
     },
     {
       "id": "1f3wuwq",
@@ -6862,7 +7702,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 30
+      "hot": 28
     },
     {
       "id": "11o9d6k",
@@ -6882,7 +7722,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 26
+      "hot": 24
     },
     {
       "id": "11pdt11",
@@ -6902,7 +7742,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 28
+      "hot": 26
     },
     {
       "id": "1bqzqfv",
@@ -6922,7 +7762,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 26
+      "hot": 24
     },
     {
       "id": "0fbo0w6",
@@ -6942,7 +7782,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 32
+      "hot": 30
     },
     {
       "id": "04b8wyi",
@@ -6962,7 +7802,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 32
+      "hot": 30
     },
     {
       "id": "1la9l57",
@@ -6982,7 +7822,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 42
+      "hot": 40
     },
     {
       "id": "1eqgmkl",
@@ -7002,7 +7842,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 29
+      "hot": 28
     },
     {
       "id": "1qeh4iv",
@@ -7022,7 +7862,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 29
+      "hot": 28
     },
     {
       "id": "1vdsevw",
@@ -7042,7 +7882,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 29
+      "hot": 28
     },
     {
       "id": "1jod7gz",
@@ -7062,7 +7902,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 29
+      "hot": 28
     },
     {
       "id": "16g4emk",
@@ -7082,7 +7922,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 29
+      "hot": 28
     },
     {
       "id": "0ktacba",
@@ -7102,7 +7942,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 35
+      "hot": 34
     },
     {
       "id": "000sy5f",
@@ -7122,7 +7962,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 41
+      "hot": 39
     },
     {
       "id": "0zzbtk5",
@@ -7142,7 +7982,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 31
+      "hot": 30
     },
     {
       "id": "1bi6e00",
@@ -7162,7 +8002,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 50
+      "hot": 49
     },
     {
       "id": "1sjvjrr",
@@ -7182,7 +8022,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 29
+      "hot": 28
     },
     {
       "id": "1j9e6ys",
@@ -7202,7 +8042,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 31
+      "hot": 30
     },
     {
       "id": "0e9xaqo",
@@ -7222,7 +8062,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 27
+      "hot": 25
     },
     {
       "id": "0ir16hf",
@@ -7242,7 +8082,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 29
+      "hot": 27
     },
     {
       "id": "1xxpe64",
@@ -7262,7 +8102,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 37
+      "hot": 36
     },
     {
       "id": "0nab1wh",
@@ -7282,7 +8122,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 27
+      "hot": 25
     },
     {
       "id": "03m1jes",
@@ -7302,7 +8142,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 35
+      "hot": 34
     },
     {
       "id": "1ggx5ut",
@@ -7322,7 +8162,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 29
+      "hot": 27
     },
     {
       "id": "18s3x41",
@@ -7342,7 +8182,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 25
+      "hot": 23
     },
     {
       "id": "1l888iy",
@@ -7362,7 +8202,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 27
+      "hot": 25
     },
     {
       "id": "1x48y64",
@@ -7382,7 +8222,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 35
+      "hot": 33
     },
     {
       "id": "1i99sk2",
@@ -7402,7 +8242,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 35
+      "hot": 33
     },
     {
       "id": "07626to",
@@ -7422,7 +8262,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 31
+      "hot": 29
     },
     {
       "id": "03yx5ej",
@@ -7442,7 +8282,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 26
+      "hot": 25
     },
     {
       "id": "00c3ur7",
@@ -7462,7 +8302,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 30
+      "hot": 29
     },
     {
       "id": "0c6ucdd",
@@ -7482,7 +8322,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 24
+      "hot": 23
     },
     {
       "id": "1i41xte",
@@ -7502,7 +8342,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 30
+      "hot": 29
     },
     {
       "id": "11wdq6k",
@@ -7522,13 +8362,13 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 24
+      "hot": 22
     },
     {
       "id": "08upu0z",
       "title": "The gap in shared understanding of LLM capability is widening",
       "url": "https://twitter.com/karpathy/status/2109361546505966046",
-      "summary": "Article URL: https://twitter.com/karpathy/status/2109361546505966046 Comments URL: https://news.ycombinator.com/item?id=50047422 Points: 689 # Comments: 1010",
+      "summary": "Article URL: https://twitter.com/karpathy/status/2109361546505966046 Comments URL: https://news.ycombinator.com/item?id=50047422 Points: 716 # Comments: 1046",
       "author": "albertzeyer",
       "source": "Hacker News",
       "sourceId": "hn-ai",
@@ -7542,7 +8382,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 24
+      "hot": 22
     },
     {
       "id": "0f15lxe",
@@ -7562,7 +8402,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 29
+      "hot": 28
     },
     {
       "id": "1h1grj6",
@@ -7582,7 +8422,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 27
+      "hot": 26
     },
     {
       "id": "19cmj96",
@@ -7602,7 +8442,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 29
+      "hot": 28
     },
     {
       "id": "0d8i931",
@@ -7622,7 +8462,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 29
+      "hot": 27
     },
     {
       "id": "1qolf71",
@@ -7642,7 +8482,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 29
+      "hot": 28
     },
     {
       "id": "1b6g6yw",
@@ -7662,7 +8502,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 29
+      "hot": 28
     },
     {
       "id": "0dzuexw",
@@ -7682,7 +8522,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 22
+      "hot": 21
     },
     {
       "id": "1ojntta",
@@ -7702,7 +8542,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 26
+      "hot": 25
     },
     {
       "id": "1yl44ch",
@@ -7722,7 +8562,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 35
+      "hot": 33
     },
     {
       "id": "18e0u9d",
@@ -7742,7 +8582,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 32
+      "hot": 31
     },
     {
       "id": "0t7j5g0",
@@ -7762,7 +8602,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 34
+      "hot": 33
     },
     {
       "id": "1oj8zkd",
@@ -7782,7 +8622,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 28
+      "hot": 27
     },
     {
       "id": "1kosijb",
@@ -7802,7 +8642,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 26
+      "hot": 25
     },
     {
       "id": "0p30676",
@@ -7822,7 +8662,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 22
+      "hot": 21
     },
     {
       "id": "1mdpjrb",
@@ -7842,7 +8682,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 28
+      "hot": 27
     },
     {
       "id": "1eeaf85",
@@ -7862,7 +8702,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 31
+      "hot": 30
     },
     {
       "id": "03pdc1c",
@@ -7882,7 +8722,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 28
+      "hot": 27
     },
     {
       "id": "0ahxt1n",
@@ -7902,7 +8742,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 25
+      "hot": 24
     },
     {
       "id": "0aiverp",
@@ -7922,7 +8762,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 21
+      "hot": 20
     },
     {
       "id": "09ksbke",
@@ -7942,7 +8782,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 21
+      "hot": 20
     },
     {
       "id": "0lnjyr1",
@@ -7962,7 +8802,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 25
+      "hot": 24
     },
     {
       "id": "07zfxrl",
@@ -7982,7 +8822,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 25
+      "hot": 24
     },
     {
       "id": "03391tx",
@@ -8002,7 +8842,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 21
+      "hot": 20
     },
     {
       "id": "1jo3wjy",
@@ -8022,7 +8862,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 25
+      "hot": 24
     },
     {
       "id": "14y9a92",
@@ -8042,7 +8882,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 25
+      "hot": 24
     },
     {
       "id": "0f9euh6",
@@ -8102,7 +8942,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 37
+      "hot": 36
     },
     {
       "id": "088ot84",
@@ -8122,7 +8962,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 30
+      "hot": 29
     },
     {
       "id": "1xqwiq2",
@@ -8142,7 +8982,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 24
+      "hot": 23
     },
     {
       "id": "00zluyi",
@@ -8162,7 +9002,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 22
+      "hot": 21
     },
     {
       "id": "1uea27h",
@@ -8182,7 +9022,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 27
+      "hot": 26
     },
     {
       "id": "0fodlt7",
@@ -8202,7 +9042,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 30
+      "hot": 29
     },
     {
       "id": "1b71lb2",
@@ -8222,7 +9062,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 30
+      "hot": 29
     },
     {
       "id": "12nn904",
@@ -8242,7 +9082,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 30
+      "hot": 29
     },
     {
       "id": "1c38wvl",
@@ -8262,7 +9102,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 23
+      "hot": 22
     },
     {
       "id": "1u5ynqm",
@@ -8282,7 +9122,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 29
+      "hot": 28
     },
     {
       "id": "17h9zl4",
@@ -8302,7 +9142,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 23
+      "hot": 22
     },
     {
       "id": "0ppifex",
@@ -8322,7 +9162,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 41
+      "hot": 40
     },
     {
       "id": "1j3tk68",
@@ -8362,7 +9202,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 29
+      "hot": 28
     },
     {
       "id": "0w9u9yk",
@@ -8382,7 +9222,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 21
+      "hot": 20
     },
     {
       "id": "0c0tdy0",
@@ -8402,7 +9242,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 19
+      "hot": 18
     },
     {
       "id": "1vhd9pk",
@@ -8422,7 +9262,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 21
+      "hot": 20
     },
     {
       "id": "0lmdfqn",
@@ -8442,7 +9282,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 27
+      "hot": 26
     },
     {
       "id": "14b9lh5",
@@ -8462,7 +9302,7 @@
       "estimate": true,
       "bulk": false,
       "alsoIn": [],
-      "hot": 19
+      "hot": 18
     },
     {
       "id": "1224pd2",
@@ -8482,7 +9322,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 28
+      "hot": 27
     },
     {
       "id": "0uzdu40",
@@ -8502,7 +9342,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 23
+      "hot": 22
     },
     {
       "id": "12fj29l",
@@ -8522,7 +9362,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 28
+      "hot": 27
     },
     {
       "id": "1shvb0v",
@@ -8542,7 +9382,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 29
+      "hot": 28
     },
     {
       "id": "1n04mnc",
@@ -8562,7 +9402,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 29
+      "hot": 28
     },
     {
       "id": "0wxmj43",
@@ -8742,7 +9582,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 20
+      "hot": 19
     },
     {
       "id": "0kij5o6",
@@ -8762,7 +9602,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 18
+      "hot": 17
     },
     {
       "id": "132iwk0",
@@ -8802,7 +9642,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 24
+      "hot": 23
     },
     {
       "id": "17dme82",
@@ -8822,7 +9662,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 18
+      "hot": 17
     },
     {
       "id": "1ufdnxq",
@@ -8842,7 +9682,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 18
+      "hot": 17
     },
     {
       "id": "1djmmrc",
@@ -8862,7 +9702,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 22
+      "hot": 21
     },
     {
       "id": "1qdb3lr",
@@ -8882,7 +9722,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 18
+      "hot": 17
     },
     {
       "id": "0fjkeiz",
@@ -8902,7 +9742,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 24
+      "hot": 23
     },
     {
       "id": "0b925ky",
@@ -9082,7 +9922,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 21
+      "hot": 20
     },
     {
       "id": "1n9urma",
@@ -9102,7 +9942,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 23
+      "hot": 22
     },
     {
       "id": "04ciw10",
@@ -9122,7 +9962,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 21
+      "hot": 20
     },
     {
       "id": "18ax7pv",
@@ -9142,7 +9982,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 21
+      "hot": 20
     },
     {
       "id": "19szr6q",
@@ -9162,7 +10002,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 21
+      "hot": 20
     },
     {
       "id": "1ni09zr",
@@ -9182,7 +10022,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 21
+      "hot": 20
     },
     {
       "id": "1o9f1ko",
@@ -9202,7 +10042,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 21
+      "hot": 20
     },
     {
       "id": "18u1mc4",
@@ -9222,7 +10062,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 21
+      "hot": 20
     },
     {
       "id": "16jjm5r",
@@ -9242,7 +10082,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 20
+      "hot": 19
     },
     {
       "id": "1qifmhv",
@@ -9262,7 +10102,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 24
+      "hot": 23
     },
     {
       "id": "01c94ld",
@@ -9282,7 +10122,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 21
+      "hot": 20
     },
     {
       "id": "0zfpo9t",
@@ -9302,7 +10142,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 17
+      "hot": 16
     },
     {
       "id": "0iuup32",
@@ -9322,7 +10162,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 27
+      "hot": 26
     },
     {
       "id": "15lp625",
@@ -9342,7 +10182,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 19
+      "hot": 18
     },
     {
       "id": "1rwdmyq",
@@ -9362,7 +10202,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 18
+      "hot": 17
     },
     {
       "id": "1apfdgo",
@@ -9462,7 +10302,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 26
+      "hot": 25
     },
     {
       "id": "1arund0",
@@ -9502,7 +10342,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 26
+      "hot": 25
     },
     {
       "id": "0os297a",
@@ -9522,7 +10362,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 25
+      "hot": 24
     },
     {
       "id": "0gvvedl",
@@ -9582,7 +10422,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 33
+      "hot": 32
     },
     {
       "id": "13oex97",
@@ -9702,7 +10542,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 24
+      "hot": 23
     },
     {
       "id": "0uujln3",
@@ -10082,7 +10922,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 29
+      "hot": 28
     },
     {
       "id": "04yhikv",
@@ -10162,7 +11002,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 30
+      "hot": 29
     },
     {
       "id": "1g2ru5g",
@@ -10182,7 +11022,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 33
+      "hot": 32
     },
     {
       "id": "0uf84tp",
@@ -10502,7 +11342,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 18
+      "hot": 17
     },
     {
       "id": "1htd2wz",
@@ -10522,7 +11362,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 18
+      "hot": 17
     },
     {
       "id": "1sie0pk",
@@ -10562,7 +11402,7 @@
       "estimate": false,
       "bulk": true,
       "alsoIn": [],
-      "hot": 16
+      "hot": 15
     },
     {
       "id": "04ywt3z",
@@ -10582,7 +11422,7 @@
       "estimate": false,
       "bulk": true,
       "alsoIn": [],
-      "hot": 16
+      "hot": 15
     },
     {
       "id": "1y0u8me",
@@ -10602,7 +11442,7 @@
       "estimate": false,
       "bulk": true,
       "alsoIn": [],
-      "hot": 16
+      "hot": 15
     },
     {
       "id": "0h10z55",
@@ -10622,7 +11462,7 @@
       "estimate": false,
       "bulk": true,
       "alsoIn": [],
-      "hot": 16
+      "hot": 15
     },
     {
       "id": "0xx6efx",
@@ -10642,7 +11482,7 @@
       "estimate": false,
       "bulk": true,
       "alsoIn": [],
-      "hot": 16
+      "hot": 15
     },
     {
       "id": "0ttjdw4",
@@ -10662,7 +11502,7 @@
       "estimate": false,
       "bulk": true,
       "alsoIn": [],
-      "hot": 16
+      "hot": 15
     },
     {
       "id": "1duazy8",
@@ -10682,7 +11522,7 @@
       "estimate": false,
       "bulk": true,
       "alsoIn": [],
-      "hot": 16
+      "hot": 15
     },
     {
       "id": "1bcizua",
@@ -10702,7 +11542,7 @@
       "estimate": false,
       "bulk": true,
       "alsoIn": [],
-      "hot": 16
+      "hot": 15
     },
     {
       "id": "0eez0so",
@@ -10722,7 +11562,7 @@
       "estimate": false,
       "bulk": true,
       "alsoIn": [],
-      "hot": 16
+      "hot": 15
     },
     {
       "id": "0rlmkcc",
@@ -10742,7 +11582,7 @@
       "estimate": false,
       "bulk": true,
       "alsoIn": [],
-      "hot": 16
+      "hot": 15
     },
     {
       "id": "19nh7q6",
@@ -10762,7 +11602,7 @@
       "estimate": false,
       "bulk": true,
       "alsoIn": [],
-      "hot": 16
+      "hot": 15
     },
     {
       "id": "0j7503x",
@@ -10782,7 +11622,7 @@
       "estimate": false,
       "bulk": true,
       "alsoIn": [],
-      "hot": 16
+      "hot": 15
     },
     {
       "id": "13xp5i8",
@@ -10802,7 +11642,7 @@
       "estimate": false,
       "bulk": true,
       "alsoIn": [],
-      "hot": 16
+      "hot": 15
     },
     {
       "id": "1x1cvxo",
@@ -10822,7 +11662,7 @@
       "estimate": false,
       "bulk": true,
       "alsoIn": [],
-      "hot": 16
+      "hot": 15
     },
     {
       "id": "11f6z90",
@@ -10842,7 +11682,7 @@
       "estimate": false,
       "bulk": true,
       "alsoIn": [],
-      "hot": 16
+      "hot": 15
     },
     {
       "id": "1mtqw9f",
@@ -10862,7 +11702,7 @@
       "estimate": false,
       "bulk": true,
       "alsoIn": [],
-      "hot": 16
+      "hot": 15
     },
     {
       "id": "0mfaeon",
@@ -10882,7 +11722,7 @@
       "estimate": false,
       "bulk": true,
       "alsoIn": [],
-      "hot": 16
+      "hot": 15
     },
     {
       "id": "1i1ma5t",
@@ -10902,7 +11742,7 @@
       "estimate": false,
       "bulk": true,
       "alsoIn": [],
-      "hot": 16
+      "hot": 15
     },
     {
       "id": "02rbhga",
@@ -10922,7 +11762,7 @@
       "estimate": false,
       "bulk": true,
       "alsoIn": [],
-      "hot": 16
+      "hot": 15
     },
     {
       "id": "12ncwo5",
@@ -10942,7 +11782,7 @@
       "estimate": false,
       "bulk": true,
       "alsoIn": [],
-      "hot": 16
+      "hot": 15
     },
     {
       "id": "1nn9he3",
@@ -10962,7 +11802,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 19
+      "hot": 18
     },
     {
       "id": "18a5bh3",
@@ -10982,7 +11822,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 18
+      "hot": 17
     },
     {
       "id": "07ssaa0",
@@ -11002,7 +11842,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 19
+      "hot": 18
     },
     {
       "id": "0go6dwb",
@@ -11022,7 +11862,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 19
+      "hot": 18
     },
     {
       "id": "0bx5tj3",
@@ -11042,7 +11882,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 18
+      "hot": 17
     },
     {
       "id": "0whqdc6",
@@ -11062,7 +11902,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 20
+      "hot": 19
     },
     {
       "id": "06c8eo5",
@@ -11082,7 +11922,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 24
+      "hot": 23
     },
     {
       "id": "0uwtewl",
@@ -11102,7 +11942,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 25
+      "hot": 24
     },
     {
       "id": "0d13xp3",
@@ -11122,7 +11962,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 25
+      "hot": 24
     },
     {
       "id": "0zwdban",
@@ -11142,7 +11982,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 25
+      "hot": 24
     },
     {
       "id": "1o80u4x",
@@ -11202,7 +12042,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 25
+      "hot": 24
     },
     {
       "id": "0ixznif",
@@ -11222,7 +12062,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 26
+      "hot": 25
     },
     {
       "id": "000t5sl",
@@ -11242,7 +12082,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 25
+      "hot": 24
     },
     {
       "id": "11u17sx",
@@ -11282,7 +12122,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 26
+      "hot": 25
     },
     {
       "id": "168xkae",
@@ -11382,7 +12222,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 22
+      "hot": 21
     },
     {
       "id": "0ogx2xu",
@@ -11402,7 +12242,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 26
+      "hot": 25
     },
     {
       "id": "0z196mp",
@@ -11442,7 +12282,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 26
+      "hot": 25
     },
     {
       "id": "1cehlyt",
@@ -11462,7 +12302,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 22
+      "hot": 21
     },
     {
       "id": "1ov10bc",
@@ -11502,7 +12342,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 26
+      "hot": 25
     },
     {
       "id": "06xpv8k",
@@ -11602,7 +12442,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 28
+      "hot": 27
     },
     {
       "id": "0rlldwz",
@@ -11682,7 +12522,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 28
+      "hot": 27
     },
     {
       "id": "1wu00qg",
@@ -11922,7 +12762,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 15
+      "hot": 14
     },
     {
       "id": "0h2eltd",
@@ -11942,7 +12782,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 21
+      "hot": 20
     },
     {
       "id": "01n66kr",
@@ -11962,7 +12802,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 21
+      "hot": 20
     },
     {
       "id": "07d394x",
@@ -11982,7 +12822,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 21
+      "hot": 20
     },
     {
       "id": "0742671",
@@ -12002,7 +12842,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 21
+      "hot": 20
     },
     {
       "id": "0u49a4f",
@@ -12022,7 +12862,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 15
+      "hot": 14
     },
     {
       "id": "0qq0z2d",
@@ -12042,7 +12882,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 21
+      "hot": 20
     },
     {
       "id": "05v5v8m",
@@ -12062,7 +12902,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 17
+      "hot": 16
     },
     {
       "id": "0i95yqu",
@@ -12082,7 +12922,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 17
+      "hot": 16
     },
     {
       "id": "15bspv5",
@@ -12102,7 +12942,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 17
+      "hot": 16
     },
     {
       "id": "1ivpmom",
@@ -12142,7 +12982,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 19
+      "hot": 18
     },
     {
       "id": "12s6b3x",
@@ -12162,7 +13002,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 15
+      "hot": 14
     },
     {
       "id": "0eoc1ki",
@@ -12202,7 +13042,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 21
+      "hot": 20
     },
     {
       "id": "1nfra05",
@@ -12222,7 +13062,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 19
+      "hot": 18
     },
     {
       "id": "1f8g1ke",
@@ -12342,7 +13182,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 24
+      "hot": 23
     },
     {
       "id": "14czn4k",
@@ -12382,7 +13222,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 24
+      "hot": 23
     },
     {
       "id": "0d4b65u",
@@ -12402,7 +13242,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 24
+      "hot": 23
     },
     {
       "id": "1jbjcb7",
@@ -13902,7 +14742,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 35
+      "hot": 34
     },
     {
       "id": "1r6ncw5",
@@ -14262,7 +15102,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 18
+      "hot": 17
     },
     {
       "id": "1fi7faz",
@@ -14282,7 +15122,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 14
+      "hot": 13
     },
     {
       "id": "1db06ne",
@@ -14302,7 +15142,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 20
+      "hot": 19
     },
     {
       "id": "1e3v24c",
@@ -14322,7 +15162,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 20
+      "hot": 19
     },
     {
       "id": "0tti616",
@@ -14342,7 +15182,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 14
+      "hot": 13
     },
     {
       "id": "1llv3pw",
@@ -14362,7 +15202,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 14
+      "hot": 13
     },
     {
       "id": "12dicmm",
@@ -14382,7 +15222,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 18
+      "hot": 17
     },
     {
       "id": "129f3lu",
@@ -14402,7 +15242,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 20
+      "hot": 19
     },
     {
       "id": "0svpnwi",
@@ -14422,7 +15262,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 14
+      "hot": 13
     },
     {
       "id": "1wy47er",
@@ -14442,7 +15282,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 18
+      "hot": 17
     },
     {
       "id": "04klyj2",
@@ -14462,7 +15302,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 18
+      "hot": 17
     },
     {
       "id": "055ljz6",
@@ -14942,7 +15782,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 24
+      "hot": 23
     },
     {
       "id": "0gjthvy",
@@ -15202,7 +16042,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 24
+      "hot": 23
     },
     {
       "id": "0f6dafh",
@@ -15282,7 +16122,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 24
+      "hot": 23
     },
     {
       "id": "1ybvjs9",
@@ -17922,7 +18762,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 26
+      "hot": 25
     },
     {
       "id": "0n1m96z",
@@ -17942,7 +18782,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 15
+      "hot": 14
     },
     {
       "id": "10pywev",
@@ -17962,7 +18802,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 13
+      "hot": 12
     },
     {
       "id": "0x7ipga",
