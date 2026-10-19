@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * 组装可发布的静态目录 dist/（index.html + assets/ + data/ + .nojekyll）。
+ * 组装可发布的静态目录 dist/（index.html + favicon.ico + assets/ + data/ + .nojekyll）。
  * 用法：npm run build   （部署时把 dist/ 作为站点根目录发布即可）
  */
 import { cp, mkdir, rm, stat, writeFile } from 'node:fs/promises';
@@ -10,7 +10,7 @@ import { fileURLToPath } from 'node:url';
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const DIST = path.join(ROOT, 'dist');
 
-const FILES = ['index.html', '.nojekyll', 'assets', 'data/news.json', 'data/feed.xml'];
+const FILES = ['index.html', 'favicon.ico', '.nojekyll', 'assets', 'data/news.json', 'data/feed.xml'];
 
 async function exists(target) {
   try {

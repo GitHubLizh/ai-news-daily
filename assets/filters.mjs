@@ -5,11 +5,11 @@
  * 丢分类」两个 bug 都没有测试兜底。
  * ============================================================================= */
 
-export const VIEWS = ['all', 'today', 'day', 'bookmarks'];
+export const VIEWS = ['all', 'today', 'day', 'bookmarks', 'archive', 'stats'];
 export const LANGS = ['zh', 'en', 'all'];
 export const DEFAULT_LANG = 'zh';
 
-/** 解析地址栏哈希：#/all、#/today、#/bookmarks、#/day/2026-10-08、#/all/lang/en/cat/模型发布 */
+/** 解析地址栏哈希：#/all、#/today、#/bookmarks、#/archive、#/stats、#/day/2026-10-08 */
 export function parseHashString(hash) {
   const raw = String(hash || '').replace(/^#\/?/, '');
   const parts = raw.split('/').filter(Boolean).map((part) => {
@@ -23,7 +23,7 @@ export function parseHashString(hash) {
   const next = { view: 'all', day: null, category: 'all', lang: null };
   const head = parts[0];
 
-  if (head === 'all' || head === 'today' || head === 'bookmarks') next.view = head;
+  if (['all', 'today', 'bookmarks', 'archive', 'stats'].includes(head)) next.view = head;
   else if (head === 'day' && parts[1]) {
     next.view = 'day';
     next.day = parts[1];
@@ -44,7 +44,7 @@ export function parseHashString(hash) {
 /** 由状态生成哈希（省略默认值，保持链接简洁） */
 export function buildHashString(state) {
   const parts = [];
-  if (state.view === 'bookmarks') parts.push('bookmarks');
+  if (['bookmarks', 'archive', 'stats'].includes(state.view)) parts.push(state.view);
   else if (state.view === 'today') parts.push('today');
   else if (state.view === 'day' && state.day) parts.push('day', state.day);
   else parts.push('all');

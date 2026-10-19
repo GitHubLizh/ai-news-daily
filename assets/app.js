@@ -23,15 +23,7 @@ const STORAGE_KEYS = {
   lang: 'ainews.lang',
 };
 
-/** 分类 -> 标签配色（见 styles.css 的 tone-*） */
-const CATEGORY_TONES = {
-  模型发布: 'tone-1',
-  产品动态: 'tone-2',
-  研究前沿: 'tone-3',
-  行业动态: 'tone-4',
-  开源工具: 'tone-5',
-  观点方法: 'tone-6',
-};
+const CATEGORIES = ['模型发布', '产品动态', '研究前沿', '行业动态', '开源工具', '观点方法'];
 
 const $ = (selector, scope = document) => scope.querySelector(selector);
 const $$ = (selector, scope = document) => [...scope.querySelectorAll(selector)];
@@ -310,7 +302,7 @@ function scopeItems() {
 function renderHero() {
   const box = $('#hero');
   const all = state.data.items;
-  if (!all.length) {
+  if (!['all', 'today', 'day'].includes(state.view) || !all.length) {
     box.hidden = true;
     return;
   }
@@ -321,12 +313,11 @@ function renderHero() {
   const pool = preferred.length ? preferred : todays;
   const featured = [...pool].sort((a, b) => b.hot - a.hot)[0] || all[0];
   const isToday = featured.day === todayKey();
-  const scopeLabel = state.lang === 'zh' ? '中文更新' : state.lang === 'en' ? '英文更新' : '当日更新';
 
   box.hidden = false;
   box.innerHTML = `
     <div class="hero-top">
-      <span class="hero-eyebrow">Today Top News</span>
+      <span class="hero-eyebrow">今日头条 <span>TODAY'S LEAD</span></span>
       <span class="hero-date">${escapeHtml(dayLabelOf(featured.day))}${isToday ? ' · 今日' : ''}</span>
     </div>
     <h1 class="hero-title">
@@ -334,15 +325,10 @@ function renderHero() {
     </h1>
     <p class="hero-summary">${escapeHtml(featured.summary || '点击查看原文详情。')}</p>
     <div class="hero-foot">
-      <span class="hero-chip">${escapeHtml(featured.category)}</span>
-      <span class="hero-chip">来源 ${escapeHtml(featured.source)}</span>
-      <span class="hero-chip">${escapeHtml(relativeTime(featured.publishedTs))}</span>
+      <span class="hero-source">${escapeHtml(featured.source)}</span>
+      <span>${escapeHtml(featured.category)}</span>
+      <span>${escapeHtml(relativeTime(featured.publishedTs))}</span>
       <a class="hero-cta" href="#/day/${encodeURIComponent(featured.day)}">查看当天 ${pool.length} 条 →</a>
-    </div>
-    <div class="hero-stats">
-      <div class="hero-stat"><b>${pool.length}</b><span>${scopeLabel}</span></div>
-      <div class="hero-stat"><b>${state.data.stats.sources.length}</b><span>覆盖来源</span></div>
-      <div class="hero-stat"><b>${all.length}</b><span>归档条目</span></div>
     </div>
   `;
 }
@@ -356,7 +342,7 @@ function renderFilters() {
 
   const chips = [
     `<button type="button" class="chip ${state.category === 'all' ? 'is-active' : ''}" data-cat="all">全部<span class="chip-n">${base.length}</span></button>`,
-    ...Object.keys(CATEGORY_TONES).map(
+    ...CATEGORIES.map(
       (name) =>
         `<button type="button" class="chip ${state.category === name ? 'is-active' : ''}" data-cat="${escapeHtml(name)}">${escapeHtml(name)}<span class="chip-n">${counts.get(name) || 0}</span></button>`,
     ),
@@ -371,31 +357,35 @@ function renderFilters() {
   });
   $('#hideRead').checked = state.hideRead;
   $('#onlyPapers').checked = state.onlyPapers;
+  $('#filterStatus').hidden = !(state.lang !== 'zh' || state.sort !== 'time' || state.hideRead || state.onlyPapers);
 }
 
 /* --------------------------------------------------------------- 资讯流 */
 
 function itemHtml(item) {
-  const tone = CATEGORY_TONES[item.category] || 'tone-6';
   const isRead = state.read.has(item.id);
   const isSaved = state.bookmarks.has(item.id);
-  const alsoIn = item.alsoIn?.length ? ` · 另见 ${item.alsoIn.slice(0, 2).map(escapeHtml).join('、')}` : '';
+  const alsoIn = item.alsoIn?.length
+    ? `<span>另见 ${item.alsoIn.slice(0, 2).map(escapeHtml).join('、')}</span>`
+    : '';
   return `
     <article class="item ${isRead ? 'is-read' : ''}" data-id="${escapeHtml(item.id)}">
       <div class="item-top">
-        <span class="tag ${tone}">${escapeHtml(item.category)}</span>
-        ${item.bulk ? '<span class="tag paper">论文</span>' : ''}
-        ${item.estimate ? '<span class="tag paper">时间待确认</span>' : ''}
-        <span class="item-hot">热度 ${item.hot}</span>
+        <span class="item-source">${escapeHtml(item.source)}</span>
+        <span class="item-category">${escapeHtml(item.category)}</span>
+        <span class="item-time">${escapeHtml(relativeTime(item.publishedTs))}</span>
+        <span class="item-hot">HOT ${item.hot}</span>
       </div>
       <h3 class="item-title">
         <a href="${escapeHtml(item.url)}" target="_blank" rel="noopener noreferrer" data-act="open">${escapeHtml(item.title)}</a>
       </h3>
       ${item.summary ? `<p class="item-summary">${escapeHtml(item.summary)}</p>` : ''}
       <div class="item-bottom">
-        <span class="item-source"><i></i>${escapeHtml(item.source)}</span>
-        <span>${escapeHtml(relativeTime(item.publishedTs))}</span>
-        <span>${escapeHtml(item.lang === 'zh' ? '中文' : 'EN')}</span>${alsoIn ? `<span>${alsoIn}</span>` : ''}
+        <span class="item-flags">
+          ${item.bulk ? '<span>论文</span>' : ''}
+          ${item.estimate ? '<span>时间待确认</span>' : ''}
+          <span>${escapeHtml(item.lang === 'zh' ? '中文' : 'EN')}</span>${alsoIn}
+        </span>
         <span class="item-actions">
           <button type="button" class="act ${isSaved ? 'is-on' : ''}" data-act="save" title="收藏">
             ${isSaved ? '★' : '☆'}<span> 收藏</span>
@@ -716,6 +706,7 @@ function renderAbout() {
 
 function render() {
   if (!state.data) return;
+  document.body.dataset.view = state.view;
   renderHero();
   renderFilters();
   renderFeed();
@@ -740,17 +731,27 @@ function renderFooter() {
 }
 
 function updateNav() {
+  const isLatest = ['all', 'today', 'day'].includes(state.view);
+  const setActive = (link, active) => {
+    link.classList.toggle('is-active', active);
+    if (active) link.setAttribute('aria-current', 'page');
+    else link.removeAttribute('aria-current');
+  };
+
   $$('#nav a[data-nav]').forEach((link) => {
     const key = link.dataset.nav;
-    const active =
-      (key === 'all' && (state.view === 'all' || state.view === 'today' || state.view === 'day')) ||
-      (key === 'bookmarks' && state.view === 'bookmarks');
-    link.classList.toggle('is-active', active);
+    setActive(link, (key === 'all' && isLatest) || (key === 'bookmarks' && state.view === 'bookmarks'));
   });
+  $$('[data-mobile-nav]').forEach((link) => {
+    const key = link.dataset.mobileNav;
+    setActive(link, (key === 'all' && isLatest) || key === state.view);
+  });
+
   const count = state.bookmarks.size;
-  const badge = $('#bmCount');
-  badge.hidden = count === 0;
-  badge.textContent = String(count);
+  $$('[data-bookmark-count]').forEach((badge) => {
+    badge.hidden = count === 0;
+    badge.textContent = String(count);
+  });
 }
 
 /* --------------------------------------------------------------- 事件绑定 */
@@ -785,13 +786,6 @@ function toggleRead(id) {
 function setNavOpen(open) {
   $('#nav')?.classList.toggle('is-open', open);
   $('.menu-btn')?.setAttribute('aria-expanded', String(open));
-}
-
-/** 移动端菜单里的「日期查询 / 热度榜」：滚到对应的侧栏卡片 */
-function jumpToSideCard(kind) {
-  setNavOpen(false);
-  const anchor = kind === 'hot' ? '#hotList' : '#calendar';
-  $(anchor)?.closest('.card')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
 function bindEvents() {
@@ -971,8 +965,6 @@ function bindEvents() {
         /* 忽略 */
       }
       render();
-    } else if (kind === 'jump') {
-      jumpToSideCard(action.dataset.jump);
     } else if (kind === 'menu') {
       setNavOpen(!$('#nav').classList.contains('is-open'));
     }

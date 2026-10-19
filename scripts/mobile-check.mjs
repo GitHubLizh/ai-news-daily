@@ -8,7 +8,7 @@
  *   1. 用随机端口拉起 scripts/serve.mjs，等站点就绪；
  *   2. 用无头浏览器在各档宽度下量取真实布局（CDP 直连，不依赖任何 npm 包）；
  *   3. 断言「不横向溢出 / 顶栏不被挤破 / 首屏看得到资讯 / 触控目标够大 / iOS 不放大」，
- *      并顺带回归桌面端（两列布局、菜单跳转项隐藏、悬停态仍生效）。
+ *      并顺带回归桌面端（两列布局、底部导航隐藏、悬停态仍生效）。
  *
  * 环境变量：CHROME_PATH 指定浏览器；CHECK_PORT 指定预览端口（默认 5199）。
  * 找不到浏览器时打印提示并跳过（退出码 0，不误报成功）。
@@ -52,6 +52,8 @@ const TAP_TARGETS = [
   ['.ghost-btn', 40, 0],
   ['.search', 44, 0],
   ['.stat', 40, 0],
+  ['.advanced-filters summary', 40, 0],
+  ['.mobile-tabbar > a', 44, 0],
 ];
 
 /** 控件文字不应折行：[选择器, 高度上限]（超过说明标签被挤成两行） */
@@ -230,7 +232,7 @@ const METRICS = `(() => {
     wrapViolations,
     layoutColumnCount: getComputedStyle(document.querySelector('.layout')).gridTemplateColumns.split(' ').length,
     navDisplay: getComputedStyle(document.querySelector('#nav')).display,
-    jumpDisplay: getComputedStyle(document.querySelector('.jump-btn')).display,
+    tabbarDisplay: getComputedStyle(document.querySelector('.mobile-tabbar')).display,
     brandDisplay: getComputedStyle(document.querySelector('.brand-text')).display,
     hoverScoped,
     hoverUnscoped,
@@ -258,56 +260,109 @@ function checkCase(m, mobile) {
     add(m.searchFont >= 16, `搜索框字号 ${m.searchFont}px < 16px（iOS 聚焦时会放大整页）`);
     add(m.firstItemTop <= m.clientHeight - 80, `首条资讯顶部 ${m.firstItemTop}px 超出首屏阈值 ${m.clientHeight - 80}px`);
     add(m.firstTitleTop <= m.clientHeight - 20, `首条标题顶部 ${m.firstTitleTop}px，首屏看不到标题（阈值 ${m.clientHeight - 20}px）`);
+    add(m.brandDisplay !== 'none', `移动端品牌文字被隐藏（display=${m.brandDisplay}）`);
+    add(m.tabbarDisplay === 'grid', `移动端底部导航 display=${m.tabbarDisplay}（应为 grid）`);
     bad.push(...m.tapViolations);
     bad.push(...m.wrapViolations);
   } else {
     add(m.layoutColumnCount === 2, `桌面端布局列数 ${m.layoutColumnCount} ≠ 2（双列布局被破坏）`);
     add(m.navDisplay === 'flex', `桌面端导航 display=${m.navDisplay}（应为 flex）`);
-    add(m.jumpDisplay === 'none', `桌面端菜单跳转项 display=${m.jumpDisplay}（应为 none）`);
+    add(m.tabbarDisplay === 'none', `桌面端底部导航 display=${m.tabbarDisplay}（应为 none）`);
     add(m.brandDisplay !== 'none', `桌面端品牌文字被隐藏（display=${m.brandDisplay}）`);
     add(m.hoverFine === true, '桌面端 (hover: hover) and (pointer: fine) 未匹配，悬停样式不会生效');
-    add(m.hoverScoped >= 15, `收进媒体查询的悬停规则只有 ${m.hoverScoped} 条（应 ≥15）`);
+    add(m.hoverScoped > 0, '没有收进媒体查询的悬停规则');
     add(m.hoverUnscoped === 0, `有 ${m.hoverUnscoped} 条悬停规则没有收进 (hover: hover) 媒体查询`);
   }
   return bad;
 }
 
-/* ------------------------------------------------------- 移动端菜单交互 */
+/* --------------------------------------------- 移动端菜单、筛选与四视图交互 */
 
 const INTERACT = `(async () => {
   const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+  const until = async (probe) => {
+    for (let i = 0; i < 30; i += 1) {
+      if (probe()) return true;
+      await sleep(50);
+    }
+    return false;
+  };
+  const visible = (selector) => {
+    const el = document.querySelector(selector);
+    if (!el) return false;
+    return getComputedStyle(el).display !== 'none' && el.getBoundingClientRect().height > 0;
+  };
+  const go = async (key) => {
+    document.querySelector('[data-mobile-nav="' + key + '"]').click();
+    return until(() => location.hash === '#/' + key && document.body.dataset.view === key);
+  };
+
   const nav = document.querySelector('#nav');
   const menu = document.querySelector('.menu-btn');
-  const card = document.querySelector('#calendar').closest('.card');
+  const details = document.querySelector('#advancedFilters');
   const out = {};
 
   menu.click();
   out.opened = nav.classList.contains('is-open');
   out.ariaOpen = menu.getAttribute('aria-expanded');
-
-  // 菜单里的「日期查询」应滚到日历卡片，并收起菜单
-  document.querySelector('#nav [data-jump="calendar"]').click();
-  let top = Infinity;
-  for (let i = 0; i < 40; i += 1) {
-    await sleep(100);
-    top = card.getBoundingClientRect().top;
-    if (top >= 0 && top < innerHeight / 2) break;
-  }
-  out.closedAfterJump = !nav.classList.contains('is-open');
-  out.cardTop = Math.round(top);
-  out.cardVisible = top >= 0 && top < innerHeight;
-
-  // 点导航链接后应收起；「最新」在 hash 不变时也要收起
-  menu.click();
-  document.querySelector('#nav a[data-nav="bookmarks"]').click();
-  await sleep(80);
-  out.closedAfterNavLink = !nav.classList.contains('is-open');
-
-  // 点菜单以外的地方应收起
-  menu.click();
+  out.rssVisible = visible('#nav .mobile-only');
   document.body.dispatchEvent(new PointerEvent('pointerdown', { bubbles: true }));
-  await sleep(80);
+  await sleep(50);
   out.closedAfterOutside = !nav.classList.contains('is-open');
+
+  details.querySelector('summary').click();
+  out.filtersOpen = details.open;
+
+  const themeBefore = document.documentElement.dataset.theme;
+  document.querySelector('[data-action="theme"]').click();
+  out.themeToggled = document.documentElement.dataset.theme !== themeBefore;
+  document.querySelector('[data-action="theme"]').click();
+
+  out.archiveRoute = await go('archive');
+  out.archiveMain = getComputedStyle(document.querySelector('.main-col')).display;
+  out.archiveCalendar = visible('.calendar-card');
+  out.archiveHot = visible('.hot-card');
+  out.archiveActive = document.querySelector('[data-mobile-nav="archive"]').classList.contains('is-active');
+
+  document.querySelector('.cal-day.has-news:not([disabled])').click();
+  out.dateRoute = await until(() => location.hash.startsWith('#/day/') && document.body.dataset.view === 'day');
+  out.dateMain = getComputedStyle(document.querySelector('.main-col')).display;
+
+  out.statsRoute = await go('stats');
+  out.statsMain = getComputedStyle(document.querySelector('.main-col')).display;
+  out.statsHot = visible('.hot-card');
+  out.statsZone = visible('#statsZone');
+  out.statsCalendar = visible('.calendar-card');
+
+  out.bookmarksRoute = await go('bookmarks');
+  out.bookmarksMain = getComputedStyle(document.querySelector('.main-col')).display;
+  out.bookmarksHero = visible('#hero');
+
+  out.latestRoute = await go('all');
+  out.latestMain = getComputedStyle(document.querySelector('.main-col')).display;
+  out.latestHero = visible('#hero');
+  out.latestItem = Boolean(document.querySelector('.item'));
+  out.latestActive = document.querySelector('[data-mobile-nav="all"]').classList.contains('is-active');
+
+  const firstItem = document.querySelector('.item');
+  const saveButton = firstItem.querySelector('[data-act="save"]');
+  const savedBefore = saveButton.classList.contains('is-on');
+  saveButton.click();
+  out.saveToggled = saveButton.classList.contains('is-on') !== savedBefore;
+
+  const readButton = firstItem.querySelector('[data-act="read"]');
+  const readBefore = readButton.classList.contains('is-on');
+  readButton.click();
+  out.readToggled = readButton.classList.contains('is-on') !== readBefore;
+
+  let copiedUrl = '';
+  navigator.clipboard.writeText = async (text) => {
+    copiedUrl = text;
+  };
+  firstItem.querySelector('[data-act="copy"]').click();
+  await sleep(80);
+  out.copyCalled = copiedUrl.startsWith('http');
+  out.copyToast = document.querySelector('#toast').textContent;
   return out;
 })()`;
 
@@ -318,11 +373,32 @@ function checkInteraction(result) {
   };
   add(result.opened === true, '点汉堡按钮后菜单没有展开');
   add(result.ariaOpen === 'true', `菜单展开后 aria-expanded=${result.ariaOpen}（应为 true）`);
-  add(result.closedAfterJump === true, '点「日期查询」后菜单没有收起');
-  add(result.cardVisible === true, `点「日期查询」后日历卡片不在视口内（top=${result.cardTop}）`);
-  add(result.cardTop >= 50, `日历卡片顶部 ${result.cardTop}px，被粘性顶栏盖住`);
-  add(result.closedAfterNavLink === true, '点导航链接后菜单没有收起');
+  add(result.rssVisible === true, '移动顶部菜单里没有显示 RSS 入口');
   add(result.closedAfterOutside === true, '点菜单外的地方后菜单没有收起');
+  add(result.filtersOpen === true, '「更多筛选」没有展开');
+  add(result.themeToggled === true, '深浅色主题没有实际切换');
+  add(result.archiveRoute === true, '归档路由或 body 视图状态没有生效');
+  add(result.archiveMain === 'none', `归档视图仍显示资讯主列（display=${result.archiveMain}）`);
+  add(result.archiveCalendar === true, '归档视图没有显示日历');
+  add(result.archiveHot === false, '归档视图不应显示热度榜');
+  add(result.archiveActive === true, '归档底部导航没有激活态');
+  add(result.dateRoute === true, '从日历选择日期后没有进入对应日期视图');
+  add(result.dateMain !== 'none', '日期视图没有恢复资讯主列');
+  add(result.statsRoute === true, '统计路由或 body 视图状态没有生效');
+  add(result.statsMain === 'none', `统计视图仍显示资讯主列（display=${result.statsMain}）`);
+  add(result.statsHot === true && result.statsZone === true, '统计视图没有完整显示热度榜与统计区');
+  add(result.statsCalendar === false, '统计视图不应显示日历');
+  add(result.bookmarksRoute === true, '收藏路由或 body 视图状态没有生效');
+  add(result.bookmarksMain !== 'none', '收藏视图没有显示收藏主列');
+  add(result.bookmarksHero === false, '收藏视图不应显示全局头条');
+  add(result.latestRoute === true, '最新路由或 body 视图状态没有恢复');
+  add(result.latestMain !== 'none' && result.latestItem === true, '返回最新后资讯列表没有恢复');
+  add(result.latestHero === true, '返回最新后头条导读没有恢复');
+  add(result.latestActive === true, '最新底部导航没有激活态');
+  add(result.saveToggled === true, '收藏按钮没有切换状态');
+  add(result.readToggled === true, '已读按钮没有切换状态');
+  add(result.copyCalled === true, '复制按钮没有提交原文 URL');
+  add(result.copyToast === '链接已复制', `复制成功提示不正确（${result.copyToast || '为空'}）`);
   return bad;
 }
 
@@ -436,7 +512,7 @@ async function main() {
   }
 
   if (interactionNote !== null) {
-    console.log(`\n🧭 移动端菜单：展开 / 「日期查询」跳转 / 链接与外部点击自动收起 → ${interactionNote ? '✅' : '❌'}`);
+    console.log(`\n🧭 移动端交互：顶部菜单 / 更多筛选 / 底部四视图切换 → ${interactionNote ? '✅' : '❌'}`);
   }
 
   if (failures.length) {

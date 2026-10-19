@@ -91,6 +91,30 @@ describe('buildHashString', () => {
   });
 });
 
+describe('archive / stats 视图', () => {
+  it('与 hash 路由往返一致', () => {
+    for (const view of ['archive', 'stats']) {
+      const state = { view, day: null, lang: 'all', category: '研究前沿' };
+      assert.deepEqual(parseHashString(buildHashString(state)), {
+        view,
+        day: null,
+        category: '研究前沿',
+        lang: 'all',
+      });
+    }
+  });
+
+  it('使用全部资讯范围，不改变现有筛选口径', () => {
+    for (const view of ['archive', 'stats']) {
+      assert.equal(selectItems(SAMPLE, { ...base, view, lang: 'all' }).length, 6);
+      assert.deepEqual(
+        selectItems(SAMPLE, { ...base, view, lang: 'zh', category: '模型发布' }).map((entry) => entry.id),
+        ['a', 'b'],
+      );
+    }
+  });
+});
+
 describe('selectItems 视图范围', () => {
   it('全部视图返回所有条目', () => {
     assert.equal(selectItems(SAMPLE, { ...base, view: 'all', lang: 'all' }).length, 6);
