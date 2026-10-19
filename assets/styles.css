@@ -1182,6 +1182,32 @@ summary {
   transform: translateX(-50%) translateY(0);
 }
 
+.back-to-top {
+  position: fixed;
+  right: 24px;
+  bottom: 28px;
+  z-index: 35;
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--border-2);
+  border-radius: 50%;
+  background: var(--bg-elev);
+  color: var(--text-2);
+  box-shadow: var(--shadow-menu);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(8px);
+  transition: opacity 0.2s, transform 0.2s, visibility 0.2s, color 0.15s, border-color 0.15s;
+}
+
+.back-to-top.is-on {
+  opacity: 1;
+  visibility: visible;
+  transform: none;
+}
+
 @media (hover: hover) and (pointer: fine) {
   .nav a:hover:not(.is-active),
   .link-btn:hover {
@@ -1216,6 +1242,11 @@ summary {
 
   .more-btn:hover,
   .cal-nav button:hover:not(:disabled) {
+    border-color: var(--brand);
+    color: var(--brand-ink);
+  }
+
+  .back-to-top:hover {
     border-color: var(--brand);
     color: var(--brand-ink);
   }
@@ -1535,6 +1566,11 @@ summary {
   .toast {
     bottom: calc(var(--tabbar-h) + 16px + env(safe-area-inset-bottom));
   }
+
+  .back-to-top {
+    right: 16px;
+    bottom: calc(var(--tabbar-h) + 16px + env(safe-area-inset-bottom));
+  }
 }
 
 @media (max-width: 860px), (pointer: coarse) {
@@ -1646,6 +1682,7 @@ summary {
   .panel,
   .item-actions,
   .mobile-tabbar,
+  .back-to-top,
   .stats-zone {
     display: none !important;
   }

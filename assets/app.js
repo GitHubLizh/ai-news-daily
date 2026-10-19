@@ -788,6 +788,31 @@ function setNavOpen(open) {
   $('.menu-btn')?.setAttribute('aria-expanded', String(open));
 }
 
+function initBackToTop() {
+  const button = $('#backToTop');
+  const reduced = window.matchMedia?.('(prefers-reduced-motion: reduce)');
+
+  let ticking = false;
+  const update = () => {
+    ticking = false;
+    button.classList.toggle('is-on', window.scrollY > 400);
+  };
+  window.addEventListener(
+    'scroll',
+    () => {
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(update);
+    },
+    { passive: true },
+  );
+  update();
+
+  button.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: reduced?.matches ? 'auto' : 'smooth' });
+  });
+}
+
 function bindEvents() {
   $('#search').addEventListener(
     'input',
@@ -989,6 +1014,8 @@ function bindEvents() {
     setNavOpen(false);
     applyRoute();
   });
+
+  initBackToTop();
 }
 
 /* --------------------------------------------------------------- 启动 */
