@@ -102,20 +102,23 @@ jobs:
             -e "$ENDPOINT" -i "$OSS_ACCESS_KEY_ID" -k "$OSS_ACCESS_KEY_SECRET" \
             --delete -f --jobs 10
 
-      # 百度主动推送：把 sitemap 里的全部 URL（首页 + 日期归档页）POST 给百度「普通收录」接口，
-      # 加快未备案站的收录。token 取自百度站长平台，未配置时本步自动跳过，workflow 照常绿
+      # 百度主动推送：把 sitemap 里的 URL POST 给百度「普通收录」接口，加快未备案站的收录。
+      # token 取自百度站长平台，未配置时本步自动跳过，workflow 照常绿。
+      # ⚠️ 新站每日配额很小（实测 10 条/天，随收录表现增长），只推前 10 条（首页 + 最新日期页），
+      # 超出配额百度返回 4xx 属预期，打印返回体但不让 workflow 变红
       - name: 百度主动推送
         if: ${{ env.BAIDU_PUSH_TOKEN != '' }}
         env:
           BAIDU_PUSH_TOKEN: ${{ secrets.BAIDU_PUSH_TOKEN }}
         run: |
           set -euo pipefail
-          grep -o '<loc>[^<]*</loc>' dist/sitemap.xml | sed -e 's|<loc>||' -e 's|</loc>||' > /tmp/urls.txt
+          grep -o '<loc>[^<]*</loc>' dist/sitemap.xml | sed -e 's|<loc>||' -e 's|</loc>||' | head -10 > /tmp/urls.txt
           SITE=$(head -1 /tmp/urls.txt | sed 's:/$::')
           echo "推送 $(wc -l < /tmp/urls.txt) 条 URL 到百度（site=$SITE）"
-          # 返回 JSON 里的 success / remain 分别是本次成功条数与当日剩余配额
-          curl -fsSL -H 'Content-Type:text/plain' --data-binary @/tmp/urls.txt \
-            "http://data.zz.baidu.com/urls?site=$SITE&token=$BAIDU_PUSH_TOKEN"
+          # 返回 JSON：success=本次成功条数，remain=当日剩余配额；超额时返回 4xx 错误说明
+          RESP=$(curl -sS -H 'Content-Type:text/plain' --data-binary @/tmp/urls.txt \
+            "http://data.zz.baidu.com/urls?site=$SITE&token=$BAIDU_PUSH_TOKEN" || true)
+          echo "百度返回: $RESP"
 
       - uses: actions/configure-pages@v5
 
