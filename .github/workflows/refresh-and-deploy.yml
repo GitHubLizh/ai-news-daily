@@ -120,6 +120,11 @@ jobs:
             "http://data.zz.baidu.com/urls?site=$SITE&token=$BAIDU_PUSH_TOKEN" || true)
           echo "百度返回: $RESP"
 
+      # IndexNow：部署后把 sitemap 全部 URL 秒级通知必应等引擎（无每日配额限制）。
+      # 所有权验证文件 <key>.txt 已随构建发布在站点根目录；脚本失败只告警不变红
+      - name: IndexNow 推送（必应）
+        run: node scripts/indexnow.mjs
+
       - uses: actions/configure-pages@v5
 
       - uses: actions/upload-pages-artifact@v3

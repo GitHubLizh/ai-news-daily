@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 
 import { buildDayPage, escapeHtml, groupByDay, itemStaticHtml } from '../scripts/prerender.mjs';
 import { buildSitemapXml } from '../scripts/sitemap.mjs';
+import { parseSitemapUrls } from '../scripts/indexnow.mjs';
 
 const ITEM = {
   id: 'a1',
@@ -95,5 +96,19 @@ describe('buildSitemapXml', () => {
     const xml = buildSitemapXml('https://latestainews.cn///', [DAY], '2026-10-19');
     assert.ok(!xml.includes('latestainews.cn///'));
     assert.ok(xml.includes('<loc>https://latestainews.cn/day/2026-10-19/</loc>'));
+  });
+});
+
+describe('parseSitemapUrls', () => {
+  it('从 sitemap.xml 提取全部 URL', () => {
+    const xml = buildSitemapXml('https://latestainews.cn', [DAY], '2026-10-19');
+    assert.deepEqual(parseSitemapUrls(xml), [
+      'https://latestainews.cn/',
+      'https://latestainews.cn/day/2026-10-19/',
+    ]);
+  });
+
+  it('空 sitemap 返回空数组', () => {
+    assert.deepEqual(parseSitemapUrls('<urlset></urlset>'), []);
   });
 });

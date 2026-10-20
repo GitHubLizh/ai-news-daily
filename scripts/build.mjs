@@ -12,7 +12,7 @@ import { writeSitemap } from './sitemap.mjs';
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const DIST = path.join(ROOT, 'dist');
 
-const FILES = ['index.html', 'favicon.ico', '.nojekyll', 'robots.txt', 'assets', 'data/news.json', 'data/feed.xml'];
+const FILES = ['index.html', 'favicon.ico', '.nojekyll', 'robots.txt', '351251db2aeb48e5b0eae7538c56d5fa.txt', 'assets', 'data/news.json', 'data/feed.xml'];
 
 async function exists(target) {
   try {
