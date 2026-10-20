@@ -28,6 +28,7 @@ jobs:
     # （secrets 上下文不允许直接在 step 的 if 里引用）
     env:
       OSS_ACCESS_KEY_ID: ${{ secrets.OSS_ACCESS_KEY_ID }}
+      BAIDU_PUSH_TOKEN: ${{ secrets.BAIDU_PUSH_TOKEN }}
     steps:
       - uses: actions/checkout@v4
 
@@ -100,6 +101,21 @@ jobs:
           /tmp/ossutil/ossutil64 sync ./dist "oss://$OSS_BUCKET/" \
             -e "$ENDPOINT" -i "$OSS_ACCESS_KEY_ID" -k "$OSS_ACCESS_KEY_SECRET" \
             --delete -f --jobs 10
+
+      # 百度主动推送：把 sitemap 里的全部 URL（首页 + 日期归档页）POST 给百度「普通收录」接口，
+      # 加快未备案站的收录。token 取自百度站长平台，未配置时本步自动跳过，workflow 照常绿
+      - name: 百度主动推送
+        if: ${{ env.BAIDU_PUSH_TOKEN != '' }}
+        env:
+          BAIDU_PUSH_TOKEN: ${{ secrets.BAIDU_PUSH_TOKEN }}
+        run: |
+          set -euo pipefail
+          grep -o '<loc>[^<]*</loc>' dist/sitemap.xml | sed -e 's|<loc>||' -e 's|</loc>||' > /tmp/urls.txt
+          SITE=$(head -1 /tmp/urls.txt | sed 's:/$::')
+          echo "推送 $(wc -l < /tmp/urls.txt) 条 URL 到百度（site=$SITE）"
+          # 返回 JSON 里的 success / remain 分别是本次成功条数与当日剩余配额
+          curl -fsSL -H 'Content-Type:text/plain' --data-binary @/tmp/urls.txt \
+            "http://data.zz.baidu.com/urls?site=$SITE&token=$BAIDU_PUSH_TOKEN"
 
       - uses: actions/configure-pages@v5
 

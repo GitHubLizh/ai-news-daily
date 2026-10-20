@@ -179,6 +179,8 @@
       | --- | --- | --- |
       | Secret | `OSS_ACCESS_KEY_ID` | RAM 子账号的 AccessKey ID |
       | Secret | `OSS_ACCESS_KEY_SECRET` | RAM 子账号的 AccessKey Secret |
+      | Secret | `BAIDU_PUSH_TOKEN` | 可选：百度站长平台「普通收录 → API 提交」接口地址里的 token，
+      配置后每天部署完自动把 sitemap 里的全部 URL 主动推送给百度，加快收录；未配置时该步骤自动跳过 |
       | Variable | `OSS_BUCKET` | 桶名，如 `ai-news-daily` |
       | Variable | `OSS_ENDPOINT` | `oss-cn-hongkong.aliyuncs.com`（带不带 `https://` 都行，脚本会自动补）。
       ⚠️ **必须是 `https://`**：如果加了「拒绝非加密传输」的 Bucket Policy，明文 HTTP 会被它拒掉——
