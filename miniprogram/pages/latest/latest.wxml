@@ -1,0 +1,120 @@
+<view class="wrap">
+    <!-- Hero 头条 -->
+    <view class="hero" wx:if="{{hero}}">
+      <view class="hero-top">
+        <text class="hero-eyebrow">今日头条 <text class="hero-eyebrow-en">TODAY'S LEAD</text></text>
+        <text class="hero-date">{{hero.dateLabel}}</text>
+      </view>
+      <view class="hero-title" bindtap="onHeroOpen">{{hero.title}}</view>
+      <view class="hero-summary" bindtap="onHeroOpen">{{hero.summary}}</view>
+      <view class="hero-foot">
+        <text class="hero-source">{{hero.source}}</text>
+        <text>{{hero.category}}</text>
+        <text>{{hero.timeText}}</text>
+        <text class="hero-cta" bindtap="onHeroDayTap" data-day="{{hero.day}}">查看当天 {{hero.dayCount}} 条 →</text>
+      </view>
+    </view>
+
+    <!-- 搜索与筛选 -->
+    <view class="card controls">
+      <view class="search">
+        <input
+          class="search-input"
+          type="text"
+          placeholder="搜索标题 / 摘要 / 来源"
+          confirm-type="search"
+          value="{{query}}"
+          bindinput="onSearchInput"
+        />
+      </view>
+      <scroll-view scroll-x class="chip-row" enhanced show-scrollbar="{{false}}">
+        <view
+          wx:for="{{chips}}"
+          wx:key="key"
+          class="chip {{item.active ? 'is-active' : ''}}"
+          data-cat="{{item.key}}"
+          bindtap="onChipTap"
+        >
+          <text>{{item.name}}</text>
+          <text class="chip-n">{{item.count}}</text>
+        </view>
+      </scroll-view>
+
+      <view class="filters-toggle" bindtap="onToggleFilters">
+        <text>更多筛选 {{filtersOpen ? '▴' : '▾'}}</text>
+        <text class="filter-status" wx:if="{{filterAdjusted && !filtersOpen}}">已调整</text>
+      </view>
+
+      <view class="filter-row" wx:if="{{filtersOpen}}">
+        <view class="seg">
+          <view class="seg-item {{lang === 'zh' ? 'is-active' : ''}}" data-lang="zh" bindtap="onLangTap">中文</view>
+          <view class="seg-item {{lang === 'en' ? 'is-active' : ''}}" data-lang="en" bindtap="onLangTap">英文</view>
+          <view class="seg-item {{lang === 'all' ? 'is-active' : ''}}" data-lang="all" bindtap="onLangTap">全部语言</view>
+        </view>
+        <view class="seg">
+          <view class="seg-item {{sort === 'time' ? 'is-active' : ''}}" data-sort="time" bindtap="onSortTap">按时间</view>
+          <view class="seg-item {{sort === 'hot' ? 'is-active' : ''}}" data-sort="hot" bindtap="onSortTap">按热度</view>
+        </view>
+        <label class="switch">
+          <switch checked="{{hideRead}}" bindchange="onHideReadChange" color="#c64132" style="transform:scale(0.7)" />
+          <text>隐藏已读</text>
+        </label>
+        <label class="switch">
+          <switch checked="{{onlyPapers}}" bindchange="onPapersChange" color="#c64132" style="transform:scale(0.7)" />
+          <text>只看论文</text>
+        </label>
+        <view class="ghost-btn" bindtap="onResetFilters">重置筛选</view>
+      </view>
+    </view>
+
+    <!-- 加载 / 错误 -->
+    <block wx:if="{{loading}}">
+      <view class="skeleton"></view>
+      <view class="skeleton"></view>
+      <view class="skeleton"></view>
+    </block>
+    <view class="empty" wx:elif="{{error}}">
+      <text class="empty-title">数据加载失败</text>
+      <text>{{error}}</text>
+    </view>
+
+    <block wx:else>
+      <view class="feed-head">
+        <text class="feed-scope">{{scopeText}}</text>
+        <text>{{totalText}}</text>
+      </view>
+      <view class="back-all" wx:if="{{groups.length && hero === null}}" bindtap="onBackAll">← 返回全部归档</view>
+
+      <view class="empty" wx:if="{{emptyShow}}">
+        <text class="empty-title">{{emptyTitle}}</text>
+        <text>{{emptyDesc}}</text>
+        <view class="ghost-btn empty-reset" wx:if="{{emptyReset}}" bindtap="onResetFilters">重置筛选</view>
+      </view>
+
+      <view class="day-group" wx:for="{{groups}}" wx:key="key">
+        <view class="day-head">
+          <text class="triangle">▸</text>
+          <text class="day-title">{{item.label}}</text>
+          <text class="today-tag" wx:if="{{item.isToday}}">今天</text>
+          <text class="day-count">{{item.countText}}</text>
+          <text class="day-link" wx:if="{{item.day}}" data-day="{{item.day}}" bindtap="onDayOnlyTap">仅看这天 →</text>
+        </view>
+        <news-item
+          wx:for="{{item.items}}"
+          wx:for-item="news"
+          wx:key="id"
+          item="{{news}}"
+          read="{{news.isRead}}"
+          saved="{{news.isSaved}}"
+          bindopen="onItemOpen"
+          bindsave="onItemSave"
+          bindread="onItemRead"
+          bindcopy="onItemCopy"
+        />
+      </view>
+
+      <view class="more-wrap" wx:if="{{hasMore}}">
+        <view class="more-btn" bindtap="onReachBottom">{{moreText}}</view>
+      </view>
+    </block>
+  </view>

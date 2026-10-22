@@ -323,7 +323,7 @@ function renderHero() {
     <h1 class="hero-title">
       <a href="${escapeHtml(featured.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(featured.title)}</a>
     </h1>
-    <p class="hero-summary">${escapeHtml(featured.summary || '点击查看原文详情。')}</p>
+    <p class="hero-summary"><a href="${escapeHtml(featured.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(featured.summary || '点击查看原文详情。')}</a></p>
     <div class="hero-foot">
       <span class="hero-source">${escapeHtml(featured.source)}</span>
       <span>${escapeHtml(featured.category)}</span>
@@ -379,7 +379,7 @@ function itemHtml(item) {
       <h3 class="item-title">
         <a href="${escapeHtml(item.url)}" target="_blank" rel="noopener noreferrer" data-act="open">${escapeHtml(item.title)}</a>
       </h3>
-      ${item.summary ? `<p class="item-summary">${escapeHtml(item.summary)}</p>` : ''}
+      ${item.summary ? `<p class="item-summary"><a href="${escapeHtml(item.url)}" target="_blank" rel="noopener noreferrer" data-act="open">${escapeHtml(item.summary)}</a></p>` : ''}
       <div class="item-bottom">
         <span class="item-flags">
           ${item.bulk ? '<span>论文</span>' : ''}

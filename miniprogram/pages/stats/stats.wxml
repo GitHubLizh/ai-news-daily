@@ -1,0 +1,73 @@
+<view class="wrap">
+  <block wx:if="{{ready}}">
+    <!-- 热度榜 -->
+    <view class="card">
+      <view class="card-title">热度榜 <text class="small">TOP 10</text></view>
+      <view class="hot-row" wx:for="{{hotList}}" wx:key="rank" data-url="{{item.url}}" data-title="{{item.title}}" data-source="{{item.source}}" bindtap="onHotTap">
+        <text class="hot-rank">{{item.rank}}</text>
+        <view class="hot-body">
+          <text class="hot-title">{{item.title}}</text>
+          <text class="hot-meta">{{item.meta}}</text>
+        </view>
+      </view>
+      <view class="muted card-empty" wx:if="{{!hotList.length}}">当前范围暂无数据</view>
+    </view>
+
+    <!-- 分类分布 -->
+    <view class="card">
+      <view class="card-title">分类分布</view>
+      <view class="stat" wx:for="{{catStats}}" wx:key="name">
+        <text class="stat-name">{{item.name}}</text>
+        <text class="stat-n">{{item.count}}</text>
+        <view class="stat-bar"><view class="stat-bar-i" style="width: {{item.width}}%"></view></view>
+      </view>
+      <view class="muted card-empty" wx:if="{{!catStats.length}}">当前范围暂无数据</view>
+    </view>
+
+    <!-- 来源分布 -->
+    <view class="card">
+      <view class="card-title">来源分布 <text class="small">TOP 8 · 点击复制主页</text></view>
+      <view class="stat" wx:for="{{srcStats}}" wx:key="name" data-name="{{item.name}}" bindtap="onSourceTap">
+        <text class="stat-name">{{item.name}}</text>
+        <text class="stat-n">{{item.count}}</text>
+        <view class="stat-bar"><view class="stat-bar-i" style="width: {{item.width}}%"></view></view>
+      </view>
+      <view class="muted card-empty" wx:if="{{!srcStats.length}}">当前范围暂无数据</view>
+    </view>
+
+    <!-- 数据概览 -->
+    <view class="card" wx:if="{{meta}}">
+      <view class="card-title">数据概览</view>
+      <view class="meta-line">条目 {{meta.count}} 条 · 覆盖 {{meta.days}} 天</view>
+      <view class="meta-line">中文 {{meta.zh}} / 英文 {{meta.en}}</view>
+      <view class="meta-line">最近更新：{{meta.generatedAt}}</view>
+      <view class="meta-line" wx:if="{{meta.partial}}">{{meta.partial}}</view>
+      <view class="meta-line" wx:if="{{meta.estimated}}">{{meta.estimated}} 条时间待确认（源未提供发布时间）</view>
+    </view>
+
+    <!-- 关于 -->
+    <view class="card">
+      <view class="card-title">关于本站</view>
+      <view class="about-p">AI 资讯速递是一个自建的 AI 资讯聚合站：每天定时抓取公开 RSS 源，去重、分类后写入一份静态 JSON。没有账号、没有广告，方便自己和朋友每天花几分钟扫一眼 AI 圈发生了什么。</view>
+      <view class="about-p">热度 = 50% 时效衰减（36 小时半衰期）+ 25% 来源权重 + 25% 热点关键词命中，归一到 0~100。它只是排序辅助，不代表真实阅读量。</view>
+      <view class="about-p">所有内容版权归原作者与原网站所有，本站只做标题、摘要与链接的聚合。小程序内无法直接打开外部网页，点击标题或「复制」即把原文链接放入剪贴板，可在浏览器中打开。</view>
+
+      <view class="about-links">
+        <view class="ghost-btn" bindtap="onCopySite">复制网站地址</view>
+        <view class="ghost-btn" bindtap="onCopyRss">复制 RSS 订阅源</view>
+      </view>
+
+      <view class="about-sub">来源（点击复制主页链接）</view>
+      <view class="src-grid">
+        <view class="src-cell" wx:for="{{sources}}" wx:key="name" data-name="{{item.name}}" bindtap="onAboutSourceTap">
+          <text>{{item.name}}</text>
+          <text class="src-n">{{item.count}}</text>
+        </view>
+      </view>
+    </view>
+  </block>
+  <block wx:else>
+    <view class="skeleton"></view>
+    <view class="skeleton"></view>
+  </block>
+</view>

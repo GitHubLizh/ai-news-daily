@@ -1,0 +1,285 @@
+/* =============================================================================
+ * AI 资讯速递小程序 — 全局样式
+ * 设计 token 移植自 assets/styles.css（当代编辑部：纸白 / 墨黑 / 信号朱红）。
+ * 深色模式跟随系统（app.json "darkmode": true）。
+ * ========================================================================== */
+
+page {
+  --bg: #f5f1e9;
+  --bg-elev: #fffdf8;
+  --bg-soft: #ece7dc;
+  --bg-hover: #efe9de;
+
+  --text: #1d1c19;
+  --text-2: #57534b;
+  --text-3: #847d72;
+
+  --border: #ddd5c8;
+  --border-2: #c8beaf;
+
+  --brand: #c64132;
+  --brand-ink: #a83227;
+  --brand-soft: #f1dfd8;
+  --brand-border: #d9a99e;
+
+  --title-font: 'Noto Serif SC', 'Source Han Serif SC', 'Songti SC', 'STSong', serif;
+  --body-font: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB',
+    'Microsoft YaHei', 'Noto Sans SC', 'Source Han Sans SC', sans-serif;
+
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--body-font);
+  font-size: 30rpx;
+  line-height: 1.65;
+}
+
+@media (prefers-color-scheme: dark) {
+  page {
+    --bg: #181917;
+    --bg-elev: #20211e;
+    --bg-soft: #292a26;
+    --bg-hover: #242521;
+
+    --text: #e9e5dc;
+    --text-2: #b8b2a8;
+    --text-3: #89847b;
+
+    --border: #373832;
+    --border-2: #4b4a42;
+
+    --brand: #d87a6b;
+    --brand-ink: #e09284;
+    --brand-soft: #3c2925;
+    --brand-border: #68453d;
+  }
+}
+
+.wrap {
+  padding: 0 28rpx;
+  box-sizing: border-box;
+}
+
+.muted {
+  color: var(--text-3);
+}
+
+/* 卡片 */
+.card {
+  background: var(--bg-elev);
+  border: 1rpx solid var(--border);
+  border-radius: 8rpx;
+  padding: 28rpx;
+  margin-bottom: 24rpx;
+}
+
+.card-title {
+  font-family: var(--title-font);
+  font-size: 32rpx;
+  font-weight: 700;
+  margin-bottom: 20rpx;
+}
+
+.card-title .small {
+  font-size: 24rpx;
+  color: var(--text-3);
+  font-weight: 400;
+  margin-left: 10rpx;
+}
+
+/* 分类 chips */
+.chip-row {
+  white-space: nowrap;
+  margin: 20rpx 0 4rpx;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8rpx;
+  padding: 12rpx 24rpx;
+  margin-right: 16rpx;
+  border: 1rpx solid var(--border-2);
+  border-radius: 999rpx;
+  background: var(--bg-elev);
+  color: var(--text-2);
+  font-size: 26rpx;
+  line-height: 1.4;
+}
+
+.chip.is-active {
+  background: var(--brand);
+  border-color: var(--brand);
+  color: #fff;
+}
+
+.chip-n {
+  font-size: 22rpx;
+  opacity: 0.75;
+}
+
+/* 分段选择（语言 / 排序） */
+.seg {
+  display: inline-flex;
+  border: 1rpx solid var(--border-2);
+  border-radius: 8rpx;
+  overflow: hidden;
+}
+
+.seg-item {
+  padding: 14rpx 28rpx;
+  font-size: 26rpx;
+  color: var(--text-2);
+  background: var(--bg-elev);
+  border-right: 1rpx solid var(--border);
+}
+
+.seg-item:last-child {
+  border-right: none;
+}
+
+.seg-item.is-active {
+  background: var(--bg-soft);
+  color: var(--text);
+  font-weight: 600;
+}
+
+/* 幽灵按钮 */
+.ghost-btn {
+  display: inline-block;
+  padding: 12rpx 28rpx;
+  border: 1rpx solid var(--border-2);
+  border-radius: 8rpx;
+  background: transparent;
+  color: var(--text-2);
+  font-size: 26rpx;
+}
+
+/* 开关（隐藏已读 / 只看论文） */
+.switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 10rpx;
+  font-size: 26rpx;
+  color: var(--text-2);
+}
+
+/* 资讯流日期分组头 */
+.day-head {
+  display: flex;
+  align-items: baseline;
+  gap: 14rpx;
+  padding: 26rpx 4rpx 14rpx;
+  border-bottom: 1rpx solid var(--border-2);
+  margin-bottom: 4rpx;
+}
+
+.day-head .triangle {
+  color: var(--brand);
+  font-size: 24rpx;
+}
+
+.day-head .day-title {
+  font-family: var(--title-font);
+  font-size: 34rpx;
+  font-weight: 700;
+}
+
+.today-tag {
+  background: var(--brand);
+  color: #fff;
+  font-size: 20rpx;
+  padding: 2rpx 12rpx;
+  border-radius: 4rpx;
+}
+
+.day-count {
+  color: var(--text-3);
+  font-size: 24rpx;
+}
+
+.day-link {
+  margin-left: auto;
+  color: var(--brand);
+  font-size: 24rpx;
+}
+
+/* 列表头部（当前范围说明） */
+.feed-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16rpx;
+  padding: 24rpx 4rpx 8rpx;
+  font-size: 26rpx;
+  color: var(--text-3);
+}
+
+.feed-head .feed-scope {
+  color: var(--text);
+  font-weight: 600;
+}
+
+/* 空态 */
+.empty {
+  padding: 80rpx 40rpx;
+  text-align: center;
+  color: var(--text-2);
+  font-size: 28rpx;
+  line-height: 2;
+}
+
+.empty .empty-title {
+  display: block;
+  font-family: var(--title-font);
+  font-size: 34rpx;
+  color: var(--text);
+  margin-bottom: 12rpx;
+}
+
+/* 加载骨架 */
+.skeleton {
+  height: 160rpx;
+  background: var(--bg-soft);
+  border-radius: 8rpx;
+  margin-bottom: 20rpx;
+}
+
+/* 统计条（分类 / 来源分布） */
+.stat {
+  display: flex;
+  align-items: center;
+  gap: 16rpx;
+  padding: 14rpx 0;
+}
+
+.stat-name {
+  width: 180rpx;
+  flex-shrink: 0;
+  font-size: 26rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.stat-n {
+  width: 70rpx;
+  flex-shrink: 0;
+  text-align: right;
+  font-size: 26rpx;
+  color: var(--text-3);
+}
+
+.stat-bar {
+  flex: 1;
+  height: 12rpx;
+  background: var(--bg-soft);
+  border-radius: 999rpx;
+  overflow: hidden;
+}
+
+.stat-bar-i {
+  display: block;
+  height: 100%;
+  background: var(--brand);
+  border-radius: 999rpx;
+}

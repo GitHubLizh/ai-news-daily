@@ -1,0 +1,32 @@
+{
+  "pages": [
+    "pages/latest/latest",
+    "pages/archive/archive",
+    "pages/bookmarks/bookmarks",
+    "pages/stats/stats",
+    "pages/reader/reader"
+  ],
+  "window": {
+    "navigationBarTitleText": "AI 资讯速递",
+    "navigationBarBackgroundColor": "@navBgColor",
+    "navigationBarTextStyle": "@navTxtStyle",
+    "backgroundColor": "@bgColor"
+  },
+  "tabBar": {
+    "color": "@tabColor",
+    "selectedColor": "@tabSelectedColor",
+    "backgroundColor": "@tabBgColor",
+    "borderStyle": "black",
+    "list": [
+      { "pagePath": "pages/latest/latest", "text": "最新" },
+      { "pagePath": "pages/archive/archive", "text": "归档" },
+      { "pagePath": "pages/bookmarks/bookmarks", "text": "收藏" },
+      { "pagePath": "pages/stats/stats", "text": "统计" }
+    ]
+  },
+  "darkmode": true,
+  "themeLocation": "theme.json",
+  "style": "v2",
+  "lazyCodeLoading": "requiredComponents",
+  "sitemapLocation": "sitemap.json"
+}

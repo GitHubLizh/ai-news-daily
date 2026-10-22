@@ -1,0 +1,103 @@
+.wrap {
+  padding-top: 24rpx;
+  padding-bottom: 40rpx;
+}
+
+.card-empty {
+  font-size: 26rpx;
+  padding: 12rpx 0;
+}
+
+/* 热度榜 */
+.hot-row {
+  display: flex;
+  gap: 18rpx;
+  padding: 16rpx 0;
+  border-bottom: 1rpx solid var(--border);
+}
+
+.hot-row:last-child {
+  border-bottom: none;
+}
+
+.hot-rank {
+  width: 44rpx;
+  flex-shrink: 0;
+  font-family: var(--title-font);
+  font-size: 32rpx;
+  font-weight: 700;
+  color: var(--brand);
+  text-align: center;
+}
+
+.hot-body {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.hot-title {
+  font-size: 28rpx;
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.hot-meta {
+  margin-top: 6rpx;
+  font-size: 22rpx;
+  color: var(--text-3);
+}
+
+/* 数据概览 */
+.meta-line {
+  font-size: 26rpx;
+  color: var(--text-2);
+  padding: 6rpx 0;
+}
+
+/* 关于 */
+.about-p {
+  font-size: 26rpx;
+  color: var(--text-2);
+  line-height: 1.8;
+  margin-bottom: 16rpx;
+}
+
+.about-links {
+  display: flex;
+  gap: 16rpx;
+  margin: 20rpx 0 8rpx;
+}
+
+.about-sub {
+  font-size: 26rpx;
+  font-weight: 600;
+  margin: 24rpx 0 12rpx;
+}
+
+.src-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12rpx;
+}
+
+.src-cell {
+  display: inline-flex;
+  align-items: center;
+  gap: 8rpx;
+  border: 1rpx solid var(--border-2);
+  border-radius: 8rpx;
+  padding: 10rpx 18rpx;
+  font-size: 24rpx;
+  color: var(--text-2);
+  background: var(--bg);
+}
+
+.src-n {
+  color: var(--text-3);
+  font-size: 20rpx;
+}

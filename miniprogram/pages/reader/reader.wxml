@@ -1,0 +1,44 @@
+<view class="wrap">
+  <view class="skeleton" wx:if="{{loading}}"></view>
+  <view class="skeleton" wx:if="{{loading}}"></view>
+  <view class="skeleton" wx:if="{{loading}}"></view>
+
+  <block wx:elif="{{error}}">
+    <view class="empty">
+      <text class="empty-title">无法在微信内阅读这篇</text>
+      <text>{{error}}</text>
+      <view class="ghost-btn error-copy" bindtap="onCopy">复制原文链接，去浏览器打开</view>
+    </view>
+  </block>
+
+  <block wx:else>
+    <view class="reader-head">
+      <view class="reader-title">{{title}}</view>
+      <view class="reader-meta" wx:if="{{source}}">来源：{{source}} · 正文由系统自动提取</view>
+    </view>
+
+    <view class="reader-body">
+      <block wx:for="{{blocks}}" wx:key="index">
+        <view wx:if="{{item.type === 'p'}}" class="b-p">{{item.text}}</view>
+        <view wx:elif="{{item.type === 'h'}}" class="b-h">{{item.text}}</view>
+        <view wx:elif="{{item.type === 'quote'}}" class="b-quote">{{item.text}}</view>
+        <view wx:elif="{{item.type === 'li'}}" class="b-li">· {{item.text}}</view>
+        <image
+          wx:elif="{{item.type === 'img' && !item.gone}}"
+          class="b-img"
+          src="{{item.src}}"
+          mode="widthFix"
+          lazy-load
+          show-menu-by-longpress
+          data-idx="{{index}}"
+          binderror="onImgError"
+        />
+      </block>
+    </view>
+
+    <view class="reader-foot">
+      <view class="ghost-btn" bindtap="onCopy">复制原文链接</view>
+      <text class="reader-note">内容版权归原作者与原网站所有</text>
+    </view>
+  </block>
+</view>

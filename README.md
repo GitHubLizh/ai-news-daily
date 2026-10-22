@@ -65,6 +65,44 @@ npm test
 | `npm run check:refresh` | 零依赖校验「页面自动跟随新数据」链路（不联网、不写文件、不需要浏览器） |
 | `npm run check:refresh` | 校验「数据自动刷新」链路：真实 `assets/app.js` + 最小 DOM 桩，断言切回标签页 / 轮询到点会重取、`generatedAt` 没变不重绘、最小间隔内不重复请求（零依赖、不联网、不写文件、不需要浏览器） |
 
+## 微信小程序
+
+移动版的四个视图（最新 / 归档 / 收藏 / 统计）有一个平行的微信小程序实现，
+代码在 `miniprogram/`，云函数在 `cloudfunctions/news/`，与 Web 版互不影响（Web 版与流水线均不需要改动）。
+
+### 为什么数据走云函数
+
+正式版小程序的 `request` 合法域名必须 ICP 备案，而本站主域名是刻意的香港免备案方案。
+云开发云函数访问外网不受域名白名单限制，所以由 `cloudfunctions/news` 代为请求
+`https://latestainews.cn/data/news.json`，裁掉页面用不到的字段（`author`、`sourceId`、`weight`、`publishedAt`）后返回。
+数据是**分页下发**的（每页 200 条，首包约 100KB）：最新页触底时向云函数翻页，收藏页按 id 补取旧条目，
+统计页打开时后台补齐全量；云函数实例内对上游数据有 5 分钟 TTL 缓存，翻页不会重复回源。
+小程序端再把已加载的数据缓存进本地 storage，冷启动先渲染缓存、再向云函数校验。
+
+### 平台约束带来的差异
+
+- **微信内阅读正文**：个人主体小程序没有 `web-view`（[官方限制](https://developers.weixin.qq.com/miniprogram/dev/framework/ability/domain.html)），
+  无法内嵌原文网页。替代方案是 `cloudfunctions/article` 云函数抓取原文 HTML、零依赖提取正文（段落/小标题/引用/图片），
+  由 `pages/reader` 阅读页原生渲染 —— 点击标题即可在微信内读完；提取失败（如界面新闻这类 JS 渲染的页面）
+  会回退为「复制链接去浏览器」。卡片上的「⧉ 复制」按钮与来源主页复制保留。
+- **无 hash 路由**：`#/day/2026-10-08` 这类可分享链接不存在于小程序，跨页跳转（归档 → 某天）走内存状态。
+- **时间不依赖 Intl**：为兼容老机型 JSCore，小程序侧手写 UTC+8 换算（`miniprogram/utils/time.js`，有测试覆盖）。
+- **tabBar 为纯文字**：第一版不带图标，保持编辑杂志感。
+
+### 上手步骤（需要你自己的小程序账号）
+
+1. 注册微信小程序（个人主体即可），拿到 AppID；在「云开发」里开通并创建一个环境，复制环境 ID。
+2. 微信开发者工具「导入项目」，目录选本仓库根目录（`project.config.json` 已就位），填入真实 AppID。
+3. 环境 ID：默认不用改——`miniprogram/app.js` 在占位符状态下会自动使用云开发的「默认环境」；
+   如果你建了多个环境要指定其一，再把 `app.js` 里的 `YOUR_CLOUD_ENV_ID` 换成目标环境 ID。
+4. 在开发者工具中分别右键 `cloudfunctions/news`、`cloudfunctions/article`、`cloudfunctions/img` →「上传并部署：云端安装依赖」。
+   （`img` 是图片代理：源站防盗链导致 `<image>` 直连失败时，阅读页会自动走它重试）
+5. 模拟器走查：四个 tab、搜索/筛选/排序、归档点日期跳转、收藏跨页同步、深浅色跟随系统、点标题进阅读页。
+
+> 发布提示：个人主体没有「新闻资讯」类目，提审时选「工具 > 信息查询」之类的类目；
+> 阅读页的正文是**实时抓取、不做存储**的，页面底部标注了来源与版权声明。
+> 游客模式（`touristappid`）只能本地预览 UI，云函数必须用自己的 AppID + 云开发环境才能调通。
+
 ## 移动端适配
 
 ![移动端预览](docs/preview-mobile.png)
@@ -115,6 +153,11 @@ npm test
 │     ├─ feed.mjs           # 导出站点 RSS
 │     ├─ cert.mjs           # 证书有效期探测（check-lines 与 cert-days 共用）
 │     └─ text.mjs           # HTML 清洗、实体解码、URL 规范化、语种识别
+├─ miniprogram/             # 微信小程序（最新/归档/收藏/统计四页 + 阅读页 + 共用卡片组件）
+├─ cloudfunctions/
+│  ├─ news/                 # 云函数：中转拉取 latestainews.cn 的 news.json（绕过域名备案限制）
+│  └─ article/              # 云函数：抓取原文并提取正文（extract.mjs 零依赖，有单元测试）
+├─ project.config.json      # 微信开发者工具项目配置
 ├─ test/                    # node:test 单元测试
 ├─ dist/                    # npm run build 产物（已 gitignore）
 └─ .github/workflows/       # 定时刷新数据并发布到 Pages/OSS；另每月检查证书到期

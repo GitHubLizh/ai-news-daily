@@ -1,0 +1,141 @@
+/* Hero 头条 */
+.hero {
+  background: var(--bg-elev);
+  border: 1rpx solid var(--border);
+  border-left: 6rpx solid var(--brand);
+  border-radius: 8rpx;
+  padding: 30rpx 28rpx 24rpx;
+  margin: 24rpx 0;
+}
+
+.hero-top {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16rpx;
+  margin-bottom: 16rpx;
+}
+
+.hero-eyebrow {
+  color: var(--brand);
+  font-size: 24rpx;
+  font-weight: 700;
+  letter-spacing: 2rpx;
+}
+
+.hero-eyebrow-en {
+  font-size: 20rpx;
+  opacity: 0.7;
+  letter-spacing: 3rpx;
+}
+
+.hero-date {
+  color: var(--text-3);
+  font-size: 24rpx;
+}
+
+.hero-title {
+  font-family: var(--title-font);
+  font-size: 40rpx;
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+.hero-summary {
+  margin-top: 14rpx;
+  color: var(--text-2);
+  font-size: 28rpx;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.hero-foot {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 18rpx;
+  margin-top: 18rpx;
+  padding-top: 16rpx;
+  border-top: 1rpx solid var(--border);
+  font-size: 24rpx;
+  color: var(--text-3);
+}
+
+.hero-source {
+  color: var(--brand);
+  font-weight: 600;
+}
+
+.hero-cta {
+  margin-left: auto;
+  color: var(--brand);
+  font-weight: 600;
+}
+
+/* 搜索与筛选 */
+.controls {
+  margin-bottom: 8rpx;
+}
+
+.search {
+  border: 1rpx solid var(--border-2);
+  border-radius: 8rpx;
+  background: var(--bg);
+  padding: 6rpx 20rpx;
+}
+
+.search-input {
+  height: 64rpx;
+  font-size: 28rpx;
+}
+
+.filters-toggle {
+  display: flex;
+  align-items: center;
+  gap: 12rpx;
+  padding: 16rpx 4rpx 4rpx;
+  font-size: 26rpx;
+  color: var(--text-2);
+}
+
+.filter-status {
+  color: var(--brand);
+  font-size: 22rpx;
+  border: 1rpx solid var(--brand-border);
+  border-radius: 4rpx;
+  padding: 0 10rpx;
+}
+
+.filter-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20rpx;
+  padding-top: 18rpx;
+}
+
+.back-all {
+  padding: 8rpx 4rpx 16rpx;
+  color: var(--brand);
+  font-size: 26rpx;
+}
+
+.more-wrap {
+  padding: 12rpx 0 40rpx;
+}
+
+.more-btn {
+  text-align: center;
+  padding: 22rpx 0;
+  border: 1rpx solid var(--border-2);
+  border-radius: 8rpx;
+  background: var(--bg-elev);
+  color: var(--text-2);
+  font-size: 28rpx;
+}
+
+.empty-reset {
+  margin-top: 24rpx;
+}

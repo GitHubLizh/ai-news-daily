@@ -1,0 +1,23 @@
+<view class="item {{read ? 'is-read' : ''}}">
+  <view class="item-top">
+    <text class="item-source">{{item.source}}</text>
+    <text class="item-category">{{item.category}}</text>
+    <text class="item-time">{{item.timeText}}</text>
+    <text class="item-hot">HOT {{item.hot}}</text>
+  </view>
+  <view class="item-title" bindtap="onOpen">{{item.title}}</view>
+  <view class="item-summary" wx:if="{{item.summary}}" bindtap="onOpen">{{item.summary}}</view>
+  <view class="item-bottom">
+    <view class="item-flags">
+      <text wx:if="{{item.bulk}}">论文</text>
+      <text wx:if="{{item.estimate}}">时间待确认</text>
+      <text>{{item.lang === 'zh' ? '中文' : 'EN'}}</text>
+      <text wx:if="{{item.alsoInText}}">另见 {{item.alsoInText}}</text>
+    </view>
+    <view class="item-actions">
+      <view class="act {{saved ? 'is-on' : ''}}" catchtap="onSave">{{saved ? '★' : '☆'}} 收藏</view>
+      <view class="act {{read ? 'is-on' : ''}}" catchtap="onRead">{{read ? '✓' : '○'}} 已读</view>
+      <view class="act" catchtap="onCopy">⧉ 复制</view>
+    </view>
+  </view>
+</view>

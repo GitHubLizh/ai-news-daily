@@ -1,0 +1,142 @@
+.cal-tabs {
+  margin-bottom: 24rpx;
+}
+
+.cal-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18rpx;
+}
+
+.cal-head-label {
+  font-family: var(--title-font);
+  font-size: 32rpx;
+  font-weight: 700;
+}
+
+.cal-nav {
+  display: flex;
+  gap: 12rpx;
+}
+
+.cal-nav-btn {
+  width: 64rpx;
+  height: 64rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1rpx solid var(--border-2);
+  border-radius: 8rpx;
+  font-size: 36rpx;
+  color: var(--text-2);
+  background: var(--bg-elev);
+}
+
+.cal-nav-btn.is-disabled {
+  opacity: 0.35;
+}
+
+.cal-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cal-cell {
+  width: 14.2857%;
+  box-sizing: border-box;
+  padding: 10rpx 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8rpx;
+}
+
+.cal-num {
+  font-size: 28rpx;
+  line-height: 1.5;
+}
+
+.cal-sub {
+  font-size: 20rpx;
+  color: var(--text-3);
+}
+
+.cal-dot {
+  width: 8rpx;
+  height: 8rpx;
+  border-radius: 50%;
+  background: var(--brand);
+  margin-top: 4rpx;
+}
+
+.cal-day.has-news {
+  background: var(--brand-soft);
+}
+
+.cal-day.has-news .cal-num {
+  color: var(--brand-ink);
+  font-weight: 600;
+}
+
+.cal-day.is-today {
+  border: 1rpx solid var(--brand);
+}
+
+.cal-cell.is-disabled {
+  opacity: 0.3;
+}
+
+.cal-year,
+.cal-month {
+  background: var(--bg-elev);
+  border: 1rpx solid var(--border);
+  margin-bottom: 12rpx;
+  padding: 24rpx 0;
+}
+
+.cal-year {
+  width: 33.3333%;
+  border-radius: 0;
+}
+
+.cal-year:nth-child(3n + 1) {
+  border-radius: 8rpx 0 0 8rpx;
+}
+
+.cal-year:nth-child(3n) {
+  border-radius: 0 8rpx 8rpx 0;
+}
+
+.cal-month {
+  width: 25%;
+  border-radius: 0;
+}
+
+.cal-month.has-news .cal-num {
+  color: var(--brand-ink);
+  font-weight: 600;
+}
+
+.cal-month:nth-child(4n + 1) {
+  border-radius: 8rpx 0 0 8rpx;
+}
+
+.cal-month:nth-child(4n) {
+  border-radius: 0 8rpx 8rpx 0;
+}
+
+.weekdays .cal-wd {
+  width: 14.2857%;
+  text-align: center;
+  font-size: 22rpx;
+  color: var(--text-3);
+  padding: 8rpx 0;
+}
+
+.cal-tip {
+  margin-top: 24rpx;
+  font-size: 24rpx;
+  color: var(--text-3);
+}

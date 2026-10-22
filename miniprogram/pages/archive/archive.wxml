@@ -1,0 +1,74 @@
+<view class="wrap">
+  <view class="card" wx:if="{{ready}}">
+    <view class="card-title">按日期查询</view>
+
+    <view class="seg cal-tabs">
+      <view class="seg-item {{mode === 'year' ? 'is-active' : ''}}" data-mode="year" bindtap="onModeTap">年</view>
+      <view class="seg-item {{mode === 'month' ? 'is-active' : ''}}" data-mode="month" bindtap="onModeTap">月</view>
+      <view class="seg-item {{mode === 'day' ? 'is-active' : ''}}" data-mode="day" bindtap="onModeTap">日</view>
+    </view>
+
+    <view class="cal-head" wx:if="{{mode !== 'year'}}">
+      <text class="cal-head-label">{{headLabel}}</text>
+      <view class="cal-nav">
+        <view class="cal-nav-btn {{canPrev ? '' : 'is-disabled'}}" data-step="-1" bindtap="onStep">‹</view>
+        <view class="cal-nav-btn {{canNext ? '' : 'is-disabled'}}" data-step="1" bindtap="onStep">›</view>
+      </view>
+    </view>
+    <view class="cal-head" wx:else>
+      <text class="cal-head-label">{{headLabel}}</text>
+    </view>
+
+    <!-- 年 -->
+    <view class="cal-grid years" wx:if="{{mode === 'year'}}">
+      <view class="cal-cell cal-year" wx:for="{{years}}" wx:key="year" data-year="{{item.year}}" bindtap="onYearTap">
+        <text class="cal-num">{{item.year}}</text>
+        <text class="cal-sub">{{item.count}} 条</text>
+      </view>
+    </view>
+
+    <!-- 月 -->
+    <view class="cal-grid months" wx:elif="{{mode === 'month'}}">
+      <view
+        class="cal-cell cal-month {{item.count ? 'has-news' : ''}} {{item.inRange ? '' : 'is-disabled'}}"
+        wx:for="{{months}}"
+        wx:key="month"
+        data-month="{{item.month}}"
+        data-enabled="{{item.inRange}}"
+        bindtap="onMonthTap"
+      >
+        <text class="cal-num">{{item.month}} 月</text>
+        <text class="cal-sub" wx:if="{{item.count}}">{{item.count}}</text>
+      </view>
+    </view>
+
+    <!-- 日 -->
+    <block wx:else>
+      <view class="cal-grid weekdays">
+        <text class="cal-wd" wx:for="{{weekdays}}" wx:key="*this">{{item}}</text>
+      </view>
+      <view class="cal-grid">
+        <block wx:for="{{cells}}" wx:key="key">
+          <view wx:if="{{item.pad}}" class="cal-cell cal-pad"></view>
+          <view
+            wx:else
+            class="cal-cell cal-day {{item.count ? 'has-news' : ''}} {{item.isToday ? 'is-today' : ''}} {{item.inRange ? '' : 'is-disabled'}}"
+            data-day="{{item.key}}"
+            data-enabled="{{item.inRange}}"
+            bindtap="onDayTap"
+          >
+            <text class="cal-num">{{item.label}}</text>
+            <text class="cal-dot" wx:if="{{item.count}}"></text>
+          </view>
+        </block>
+      </view>
+    </block>
+
+    <view class="cal-tip">点有标记的日期，跳到「最新」看当天的资讯。</view>
+  </view>
+
+  <view class="empty" wx:else>
+    <text class="empty-title">加载中</text>
+    <text>正在读取归档数据……</text>
+  </view>
+</view>
