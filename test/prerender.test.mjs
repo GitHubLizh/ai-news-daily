@@ -68,6 +68,8 @@ describe('buildDayPage', () => {
     assert.ok(html.includes('<link rel="canonical" href="https://latestainews.cn/day/2026-10-19/"'));
     assert.ok(html.includes('href="/day/2026-10-20/"'));
     assert.ok(html.includes('href="/day/2026-10-18/"'));
+    assert.ok(html.includes('<link rel="icon" href="/favicon.ico" sizes="any" />'));
+    assert.ok(html.includes('<img src="/assets/logo.png" width="34" height="34" alt="" />'));
   });
 
   it('没有前后日期时不输出对应链接', () => {

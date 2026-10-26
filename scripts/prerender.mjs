@@ -90,12 +90,17 @@ export function buildDayPage({ site, dayEntry, items, newerDay, olderDay, timezo
     <meta property="og:type" content="website" />
     <meta property="og:title" content="${escapeHtml(`${site.title} · ${dayEntry.label}`)}" />
     <meta property="og:url" content="${escapeHtml(canonical)}" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="apple-touch-icon" href="/assets/logo.png" />
     <link rel="stylesheet" href="../../assets/styles.css" />
   </head>
   <body>
     <header class="topbar">
       <div class="wrap topbar-inner">
-        <a class="brand" href="/">
+        <a class="brand" href="/" aria-label="回到最新资讯">
+          <span class="brand-mark" aria-hidden="true">
+            <img src="/assets/logo.png" width="34" height="34" alt="" />
+          </span>
           <span class="brand-text">
             <strong>${escapeHtml(site.title)}</strong>
             <small>LATEST AI NEWS</small>
