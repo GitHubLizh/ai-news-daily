@@ -1,17 +1,17 @@
 {
-  "generatedAt": "2026-11-07T01:43:35.131Z",
+  "generatedAt": "2026-11-07T06:20:35.479Z",
   "timezone": "Asia/Shanghai",
   "count": 2500,
   "days": [
     {
       "day": "2026-11-07",
       "label": "11月7日 · 周六",
-      "count": 38
+      "count": 47
     },
     {
       "day": "2026-11-06",
       "label": "11月6日 · 周五",
-      "count": 117
+      "count": 110
     },
     {
       "day": "2026-11-05",
@@ -221,30 +221,30 @@
     {
       "day": "2026-09-23",
       "label": "9月23日 · 周三",
-      "count": 10
+      "count": 8
     }
   ],
   "stats": {
     "categories": [
       {
         "name": "行业动态",
-        "count": 1287
+        "count": 1284
       },
       {
         "name": "模型发布",
-        "count": 521
+        "count": 518
       },
       {
         "name": "产品动态",
-        "count": 479
+        "count": 481
       },
       {
         "name": "研究前沿",
-        "count": 112
+        "count": 115
       },
       {
         "name": "开源工具",
-        "count": 55
+        "count": 56
       },
       {
         "name": "观点方法",
@@ -254,11 +254,11 @@
     "sources": [
       {
         "name": "IT之家",
-        "count": 833
+        "count": 841
       },
       {
         "name": "钛媒体",
-        "count": 362
+        "count": 363
       },
       {
         "name": "TechCrunch AI",
@@ -282,11 +282,11 @@
       },
       {
         "name": "OpenAI",
-        "count": 121
+        "count": 120
       },
       {
         "name": "NVIDIA",
-        "count": 59
+        "count": 58
       },
       {
         "name": "MIT 科技评论",
@@ -298,28 +298,204 @@
       },
       {
         "name": "AWS 机器学习",
-        "count": 8
-      },
-      {
-        "name": "MarkTechPost",
-        "count": 4
+        "count": 6
       },
       {
         "name": "极客公园",
-        "count": 3
+        "count": 2
       },
       {
-        "name": "Solidot",
+        "name": "MarkTechPost",
         "count": 1
       }
     ],
     "languages": {
-      "zh": 1564,
-      "en": 936
+      "zh": 1571,
+      "en": 929
     },
     "estimatedTime": 0
   },
   "items": [
+    {
+      "id": "1304cx8",
+      "title": "国内首个科技法学院在雄安新区成立，聚焦人工智能、自动驾驶等",
+      "url": "https://www.ithome.com/1/023/680.htm",
+      "summary": "IT之家 11 月 7 日消息，据央视新闻报道，今天（11 月 7 日），国内首个科技法学院 —— 北京科技大学科技法学院在雄安新区成立。 IT之家从报道获悉，学院内设知识产权、科技法、科技政策、法学基础 4 个教学科研机构，与研究生招生分步推进。初期设置工法复合知识产权本科专业，专业硕士培养也将逐步布局雄安。 科技法学院未来规划逐步建成百人左右的高水平师资队伍，主干专业教师中具有产业实战经历者不低于 50%。科技法学院聚焦人工智能、自…",
+      "author": "",
+      "source": "IT之家",
+      "sourceId": "ithome",
+      "home": "https://www.ithome.com",
+      "weight": 1.6,
+      "lang": "zh",
+      "category": "研究前沿",
+      "publishedAt": "2026-11-07T06:01:54.000Z",
+      "publishedTs": 1794031314000,
+      "day": "2026-11-07",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 72
+    },
+    {
+      "id": "0iqjacw",
+      "title": "机器人行业卸下租赁“缓冲垫”",
+      "url": "https://www.tmtpost.com/8196810.html",
+      "summary": "（本文作者为 机器最前线，钛媒体经授权发布） 文 | 机器最前线 2026年，机器人租赁赛道租金下掉的速度简直触目惊心。 人形机器人日租已跌至千元档，较2025年初跌去七成以上；机器狗日租跌破500元；华强北超九成租赁档口撤场，整体租赁价从万元档一路下滑。 按常理，租金跌了一年多，投资者理应犹豫观望，但事实却并非如此。 今年初，擎天租启动城市合伙人计划，原计划招募600人，报名却涌至约两万人；京东自营也下场，将人形与四足机器人摆上自营货…",
+      "author": "机器最前线",
+      "source": "钛媒体",
+      "sourceId": "tmtpost",
+      "home": "https://www.tmtpost.com",
+      "weight": 1.5,
+      "lang": "zh",
+      "category": "行业动态",
+      "publishedAt": "2026-11-07T05:56:37.000Z",
+      "publishedTs": 1794030997000,
+      "day": "2026-11-07",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 71
+    },
+    {
+      "id": "15ggbxk",
+      "title": "马斯克：特斯拉 Optimus 机器人考虑只租不卖，生产力是人类的 5 倍、初期造价约 3 万美元",
+      "url": "https://www.ithome.com/1/023/675.htm",
+      "summary": "IT之家 11 月 7 日消息，科技媒体 Not a Tesla App 昨日（11 月 6 日）发布博文，报道称当地时间周五在美国纽约市林肯中心举行的第 33 届巴伦投资大会上，全球首富埃隆 · 马斯克（Elon Musk）透露特斯拉 Optimus 机器人可能会采用“只租不售”方式。 在被问及特斯拉 Optimus 机器人的具体销售方式时，马斯克表示：“我想可能会采用租赁模式。”对于外界最关心的“租一台多少钱、能完成哪些工作”，目前…",
+      "author": "",
+      "source": "IT之家",
+      "sourceId": "ithome",
+      "home": "https://www.ithome.com",
+      "weight": 1.6,
+      "lang": "zh",
+      "category": "产品动态",
+      "publishedAt": "2026-11-07T05:32:39.000Z",
+      "publishedTs": 1794029559000,
+      "day": "2026-11-07",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 71
+    },
+    {
+      "id": "14m8jm7",
+      "title": "OpenAI 窃听案进入抗辩阶段：被告拒不认罪，若定罪最高监禁五年",
+      "url": "https://www.ithome.com/1/023/674.htm",
+      "summary": "北京时间 11 月 7 日，据《华尔街日报》报道，沙特公民阿卜杜勒拉赫曼 · 阿尔福赞 (Abdulrahman Alfozan) 被指控在 OpenAI 一间限制进入的会议室内安装窃听设备。当地时间周五，他在旧金山联邦法院出庭，对相关指控表示不认罪。 周五，阿尔福赞参加了美国联邦治安法官的提审听证会。他的律师戴维 ·W· 里兹 (David W. Rizk) 表示，其当事人对检方提出的唯一一项指控拒不认罪。该罪名为截取口头通信内容，最…",
+      "author": "",
+      "source": "IT之家",
+      "sourceId": "ithome",
+      "home": "https://www.ithome.com",
+      "weight": 1.6,
+      "lang": "zh",
+      "category": "研究前沿",
+      "publishedAt": "2026-11-07T05:22:44.000Z",
+      "publishedTs": 1794028964000,
+      "day": "2026-11-07",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 65
+    },
+    {
+      "id": "12zqcjd",
+      "title": "曝 Anthropic 计划下周启动 IPO 路演，目标是在感恩节前完成上市",
+      "url": "https://www.ithome.com/1/023/672.htm",
+      "summary": "IT之家 11 月 7 日消息，据 The Information 今日报道，美国人工智能初创公司 Anthropic 正加快推进首次公开募股（IPO）计划。 消息人士称，Anthropic 计划于下周启动 IPO 正式推介，向潜在投资者介绍公司业务及上市计划，计划于 11 月 16 日当周在美国资本市场挂牌，争取在美国感恩节（11 月 26 日）假期前完成上市。 不过，近期美国科技股市场波动加剧，投资者对 AI 企业巨额资本开支及商业…",
+      "author": "",
+      "source": "IT之家",
+      "sourceId": "ithome",
+      "home": "https://www.ithome.com",
+      "weight": 1.6,
+      "lang": "zh",
+      "category": "行业动态",
+      "publishedAt": "2026-11-07T05:17:43.000Z",
+      "publishedTs": 1794028663000,
+      "day": "2026-11-07",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 71
+    },
+    {
+      "id": "0dd3sty",
+      "title": "机械革命推出无界 15X 暴风雪电竞版：锐龙 AI 9 365、16GB + 1TB，首发 6499 元",
+      "url": "https://www.ithome.com/1/023/668.htm",
+      "summary": "IT之家 11 月 7 日消息，机械革命新上架了一款“无界 15X 暴风雪电竞版”，搭载 AMD 锐龙 AI 9 365 处理器、240Hz 电竞屏，首发价 6499 元，叠加国补后 5524.15 元。 IT之家从商品页面获悉，这款新机采用了 15.3 英寸 2.5K 240Hz 电竞屏，拥有 2560*1600 分辨率、100% sRGB 色域、500nits 亮度，支持 DC 调光 + 雾面防眩光，支持约 180° 开合；采用全金…",
+      "author": "",
+      "source": "IT之家",
+      "sourceId": "ithome",
+      "home": "https://www.ithome.com",
+      "weight": 1.6,
+      "lang": "zh",
+      "category": "产品动态",
+      "publishedAt": "2026-11-07T04:17:07.000Z",
+      "publishedTs": 1794025027000,
+      "day": "2026-11-07",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 63
+    },
+    {
+      "id": "08g50vd",
+      "title": "男子利用 AI 眼镜、智能戒指驾考作弊被成都交管查获：罚款 1900 元 + 禁考一年",
+      "url": "https://www.ithome.com/1/023/665.htm",
+      "summary": "IT之家 11 月 7 日消息，据成都交警，近日，成都公安交管部门查处一起机动车驾驶人考试舞弊案。 10 月 16 日上午，成都公安交管十分局摩托车考场驻场民警在开展机动车驾驶员理论考试巡查过程中，发现一男子神色紧张，答题状态异常，行为举止不自然，当即对其开展核查。 男子佩戴的眼镜暗藏玄机，手上还配有一枚智能戒指，长按可触发扫描，答案就显示在眼镜上。面对询问，该男子承认自己利用高科技设备作弊的违法行为。 经了解，该男子早年申领汽车驾驶证…",
+      "author": "",
+      "source": "IT之家",
+      "sourceId": "ithome",
+      "home": "https://www.ithome.com",
+      "weight": 1.6,
+      "lang": "zh",
+      "category": "研究前沿",
+      "publishedAt": "2026-11-07T03:49:42.000Z",
+      "publishedTs": 1794023382000,
+      "day": "2026-11-07",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 63
+    },
+    {
+      "id": "1s4qhz3",
+      "title": "肉眼不可见：苹果 iOS 27.2 新增隐形水印，图像工具 AI 生图 / 修图均有迹可查",
+      "url": "https://www.ithome.com/1/023/663.htm",
+      "summary": "IT之家 11 月 7 日消息，苹果公司于 11 月 5 日更新官方支持文档，宣布从 iOS / iPadOS / macOS 27.2 等版本系统开始，为部分 Apple Intelligence 图像工具引入 SynthID 隐形水印。 IT之家援引博文介绍，在涉及的图像工具方面，涵盖图乐园（Image Playground）和图像魔法棒（Image Wand），以及“照片”中的清理（Clean Up）、扩展（Extend）和空间重…",
+      "author": "",
+      "source": "IT之家",
+      "sourceId": "ithome",
+      "home": "https://www.ithome.com",
+      "weight": 1.6,
+      "lang": "zh",
+      "category": "开源工具",
+      "publishedAt": "2026-11-07T03:41:42.000Z",
+      "publishedTs": 1794022902000,
+      "day": "2026-11-07",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 62
+    },
+    {
+      "id": "0areo79",
+      "title": "AI 热潮撞上资源争议，微软荷兰在建数据中心遭抗议",
+      "url": "https://www.ithome.com/1/023/650.htm",
+      "summary": "IT之家 11 月 7 日消息，路透社最新发布博文，报道称荷兰当地时间昨日（11 月 6 日）百余名活动人士聚集并闯入微软在建的数据中心工地，抗议 AI 基建扩张。 报道称百余名活动人士在现场集结，随后进入施工区域，部分人爬上起重机、悬挂气球并展示抗议标语。抗议者主要关注大型数据中心的电力、水资源消耗及环境影响，要求暂停大规模新建项目。组织方“Stop Dirty Data Centres”表示，环保与数字权利团体计划于 11 月 6…",
+      "author": "",
+      "source": "IT之家",
+      "sourceId": "ithome",
+      "home": "https://www.ithome.com",
+      "weight": 1.6,
+      "lang": "zh",
+      "category": "行业动态",
+      "publishedAt": "2026-11-07T02:27:50.000Z",
+      "publishedTs": 1794018470000,
+      "day": "2026-11-07",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 73
+    },
     {
       "id": "06rvvjf",
       "title": "Crusoe sells troubled Wyoming data center project to Google",
@@ -338,7 +514,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 68
+      "hot": 62
     },
     {
       "id": "073r2pc",
@@ -358,7 +534,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 78
+      "hot": 72
     },
     {
       "id": "0kycnbo",
@@ -378,7 +554,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 78
+      "hot": 72
     },
     {
       "id": "0kyrzvb",
@@ -398,7 +574,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 77
+      "hot": 71
     },
     {
       "id": "0xd8blh",
@@ -418,7 +594,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 63
+      "hot": 57
     },
     {
       "id": "16puhjp",
@@ -438,7 +614,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 64
+      "hot": 58
     },
     {
       "id": "09931hc",
@@ -458,7 +634,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 63
+      "hot": 57
     },
     {
       "id": "0a946z6",
@@ -478,7 +654,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 64
+      "hot": 58
     },
     {
       "id": "0eaa1si",
@@ -498,7 +674,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 64
+      "hot": 58
     },
     {
       "id": "1bii459",
@@ -518,7 +694,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 63
+      "hot": 58
     },
     {
       "id": "1n0hbr1",
@@ -538,7 +714,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 69
+      "hot": 64
     },
     {
       "id": "04t9g50",
@@ -558,7 +734,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 69
+      "hot": 64
     },
     {
       "id": "0x6qrln",
@@ -578,7 +754,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 75
+      "hot": 70
     },
     {
       "id": "16jx1ux",
@@ -598,7 +774,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 63
+      "hot": 57
     },
     {
       "id": "1mm3v37",
@@ -618,7 +794,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 69
+      "hot": 63
     },
     {
       "id": "0wp2f7b",
@@ -638,7 +814,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 62
+      "hot": 57
     },
     {
       "id": "0pzh5cu",
@@ -658,7 +834,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 64
+      "hot": 59
     },
     {
       "id": "0t5n4vh",
@@ -678,7 +854,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 75
+      "hot": 69
     },
     {
       "id": "0u257zi",
@@ -698,7 +874,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 62
+      "hot": 56
     },
     {
       "id": "1cskppi",
@@ -718,7 +894,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 59
+      "hot": 54
     },
     {
       "id": "159bozj",
@@ -738,7 +914,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 58
+      "hot": 53
     },
     {
       "id": "1acvdt9",
@@ -758,7 +934,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 59
+      "hot": 54
     },
     {
       "id": "0i8phks",
@@ -778,7 +954,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 59
+      "hot": 54
     },
     {
       "id": "1e56fff",
@@ -798,7 +974,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 57
+      "hot": 52
     },
     {
       "id": "1agv2qv",
@@ -818,7 +994,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 54
+      "hot": 50
     },
     {
       "id": "173d33v",
@@ -838,7 +1014,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 58
+      "hot": 53
     },
     {
       "id": "0t9afft",
@@ -858,7 +1034,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 54
+      "hot": 49
     },
     {
       "id": "183ilk2",
@@ -878,7 +1054,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 58
+      "hot": 53
     },
     {
       "id": "1n7fxdu",
@@ -898,7 +1074,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 53
+      "hot": 49
     },
     {
       "id": "00cvfrs",
@@ -918,7 +1094,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 53
+      "hot": 49
     },
     {
       "id": "0qefvbw",
@@ -938,7 +1114,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 55
+      "hot": 51
     },
     {
       "id": "179gd0t",
@@ -958,7 +1134,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 53
+      "hot": 48
     },
     {
       "id": "18c879t",
@@ -978,7 +1154,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 53
+      "hot": 48
     },
     {
       "id": "0d575gp",
@@ -998,7 +1174,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 55
+      "hot": 50
     },
     {
       "id": "0c0cuwg",
@@ -1018,7 +1194,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 53
+      "hot": 48
     },
     {
       "id": "0pnlhom",
@@ -1038,7 +1214,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 55
+      "hot": 50
     },
     {
       "id": "0ohc815",
@@ -1058,7 +1234,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 55
+      "hot": 50
     },
     {
       "id": "0db4o41",
@@ -1078,7 +1254,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 56
+      "hot": 52
     },
     {
       "id": "1bfkrgz",
@@ -1098,7 +1274,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 54
+      "hot": 49
     },
     {
       "id": "0qi3ygo",
@@ -1118,7 +1294,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 56
+      "hot": 51
     },
     {
       "id": "1doin6m",
@@ -1138,7 +1314,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 53
+      "hot": 49
     },
     {
       "id": "09pa3u5",
@@ -1158,7 +1334,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 53
+      "hot": 49
     },
     {
       "id": "05ec0sn",
@@ -1178,7 +1354,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 53
+      "hot": 49
     },
     {
       "id": "0gplruk",
@@ -1198,7 +1374,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 53
+      "hot": 48
     },
     {
       "id": "0npernn",
@@ -1218,7 +1394,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 53
+      "hot": 48
     },
     {
       "id": "0l7f5sd",
@@ -1238,7 +1414,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 54
+      "hot": 50
     },
     {
       "id": "0fug1uc",
@@ -1258,7 +1434,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 52
+      "hot": 48
     },
     {
       "id": "0r430ex",
@@ -1278,7 +1454,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 52
+      "hot": 47
     },
     {
       "id": "0hrjldn",
@@ -1298,7 +1474,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 58
+      "hot": 54
     },
     {
       "id": "146ifw3",
@@ -1318,7 +1494,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 52
+      "hot": 47
     },
     {
       "id": "0ciu7tk",
@@ -1338,7 +1514,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 51
+      "hot": 47
     },
     {
       "id": "0coqp8q",
@@ -1358,7 +1534,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 50
+      "hot": 46
     },
     {
       "id": "0ilcsac",
@@ -1378,7 +1554,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 53
+      "hot": 49
     },
     {
       "id": "0j6w6x6",
@@ -1398,7 +1574,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 53
+      "hot": 49
     },
     {
       "id": "0xx7izf",
@@ -1418,7 +1594,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 61
+      "hot": 57
     },
     {
       "id": "1jupeid",
@@ -1438,7 +1614,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 50
+      "hot": 46
     },
     {
       "id": "0fj5ikf",
@@ -1458,7 +1634,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 50
+      "hot": 46
     },
     {
       "id": "16nj5vn",
@@ -1478,7 +1654,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 50
+      "hot": 46
     },
     {
       "id": "1hysstr",
@@ -1498,27 +1674,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 60
-    },
-    {
-      "id": "1efcziz",
-      "title": "NASA 通过 AI 生成图像宣布 X-70 试验机",
-      "url": "https://www.solidot.org/story?sid=85818",
-      "summary": "NASA 宣布了新试验机 X-70 Fractal，它展示了一幅生成图像——即并非实图，而是 AI 生成的。NASA 称，X-70 是载人飞行器，设计巡航速度为 0.75 马赫，最大飞行高度约 13700 米，航程 2778 公里。X-70 起飞重量为 4536 公斤，设计可容纳 900 公斤的机内外试验载荷。NASA 局长 Jared Isaacman 表示，这架试验机有望在两年内首飞。关于其具体设计细节和研发时间表目前知之甚少。NA…",
-      "author": "",
-      "source": "Solidot",
-      "sourceId": "solidot",
-      "home": "https://www.solidot.org",
-      "weight": 1.4,
-      "lang": "zh",
-      "category": "行业动态",
-      "publishedAt": "2026-11-06T10:00:11.000Z",
-      "publishedTs": 1793959211000,
-      "day": "2026-11-06",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 46
+      "hot": 56
     },
     {
       "id": "12q2xsf",
@@ -1538,7 +1694,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 53
+      "hot": 49
     },
     {
       "id": "0u3w1zi",
@@ -1558,7 +1714,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 59
+      "hot": 56
     },
     {
       "id": "17zbo9h",
@@ -1578,7 +1734,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 53
+      "hot": 49
     },
     {
       "id": "02kvotw",
@@ -1598,7 +1754,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 47
+      "hot": 43
     },
     {
       "id": "0m2q7lz",
@@ -1618,7 +1774,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 56
+      "hot": 52
     },
     {
       "id": "1mfey46",
@@ -1638,7 +1794,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 46
+      "hot": 42
     },
     {
       "id": "0evcjs5",
@@ -1658,7 +1814,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 45
+      "hot": 41
     },
     {
       "id": "1n99h7k",
@@ -1678,7 +1834,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 52
+      "hot": 48
     },
     {
       "id": "1um2nav",
@@ -1698,7 +1854,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 46
+      "hot": 42
     },
     {
       "id": "13qsz9d",
@@ -1718,7 +1874,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 46
+      "hot": 42
     },
     {
       "id": "1m5f6sl",
@@ -1738,7 +1894,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 52
+      "hot": 48
     },
     {
       "id": "0jhk74w",
@@ -1758,7 +1914,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 52
+      "hot": 48
     },
     {
       "id": "08vu6bp",
@@ -1778,7 +1934,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 51
+      "hot": 47
     },
     {
       "id": "0ceefz9",
@@ -1798,7 +1954,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 51
+      "hot": 48
     },
     {
       "id": "0winhfg",
@@ -1818,7 +1974,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 45
+      "hot": 42
     },
     {
       "id": "19uexxf",
@@ -1838,7 +1994,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 45
+      "hot": 42
     },
     {
       "id": "0q7nbgk",
@@ -1858,7 +2014,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 47
+      "hot": 44
     },
     {
       "id": "1vmn96n",
@@ -1878,7 +2034,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 51
+      "hot": 47
     },
     {
       "id": "130f7xb",
@@ -1898,7 +2054,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 64
+      "hot": 60
     },
     {
       "id": "0wcu9nk",
@@ -1918,7 +2074,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 51
+      "hot": 48
     },
     {
       "id": "03l14to",
@@ -1938,7 +2094,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 50
+      "hot": 47
     },
     {
       "id": "07sq8f6",
@@ -1958,7 +2114,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 51
+      "hot": 48
     },
     {
       "id": "1gepd18",
@@ -1978,7 +2134,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 45
+      "hot": 41
     },
     {
       "id": "1neicub",
@@ -1998,7 +2154,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 45
+      "hot": 41
     },
     {
       "id": "08tlukt",
@@ -2018,27 +2174,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 63
-    },
-    {
-      "id": "1hpa87h",
-      "title": "Thinking Machines Releases Inkling 2 Small, a 594B MoE With 17B Active",
-      "url": "https://www.marktechpost.com/2026/11/05/thinking-machines-inkling-2-small-release",
-      "summary": "Thinking Machines Lab released Inkling 2 Small, a 594B-parameter MoE with 17B active parameters. It scores 31 on the Artificial Analysis Intelligence Index and runs on Tinker, with Apache 2.0 weights planned. The post Th…",
-      "author": "Asif Razzaq",
-      "source": "MarkTechPost",
-      "sourceId": "marktechpost",
-      "home": "https://www.marktechpost.com",
-      "weight": 1.4,
-      "lang": "en",
-      "category": "模型发布",
-      "publishedAt": "2026-11-06T04:25:07.000Z",
-      "publishedTs": 1793939107000,
-      "day": "2026-11-06",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 42
+      "hot": 59
     },
     {
       "id": "1hgn6kb",
@@ -2058,7 +2194,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 43
+      "hot": 40
     },
     {
       "id": "0t447kq",
@@ -2078,7 +2214,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 43
+      "hot": 40
     },
     {
       "id": "1bh8ocf",
@@ -2098,7 +2234,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 56
+      "hot": 52
     },
     {
       "id": "1nerg9b",
@@ -2118,7 +2254,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 49
+      "hot": 46
     },
     {
       "id": "14y1phk",
@@ -2138,7 +2274,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 43
+      "hot": 40
     },
     {
       "id": "0l7ehjw",
@@ -2158,7 +2294,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 49
+      "hot": 46
     },
     {
       "id": "057b0k9",
@@ -2178,7 +2314,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 43
+      "hot": 40
     },
     {
       "id": "1b3nocy",
@@ -2198,7 +2334,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 48
+      "hot": 45
     },
     {
       "id": "05o225z",
@@ -2218,7 +2354,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 47
+      "hot": 44
     },
     {
       "id": "17ffqh2",
@@ -2238,7 +2374,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 54
+      "hot": 51
     },
     {
       "id": "154vcbq",
@@ -2258,7 +2394,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 42
+      "hot": 39
     },
     {
       "id": "0gq883f",
@@ -2278,7 +2414,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 47
+      "hot": 44
     },
     {
       "id": "1cfsalu",
@@ -2298,7 +2434,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 42
+      "hot": 39
     },
     {
       "id": "0b3ogkv",
@@ -2318,7 +2454,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 47
+      "hot": 44
     },
     {
       "id": "0gsxsny",
@@ -2338,7 +2474,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 42
+      "hot": 39
     },
     {
       "id": "0bz7ril",
@@ -2358,7 +2494,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 41
+      "hot": 38
     },
     {
       "id": "12sz6tf",
@@ -2378,7 +2514,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 54
+      "hot": 51
     },
     {
       "id": "0ph7qbg",
@@ -2398,7 +2534,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 48
+      "hot": 45
     },
     {
       "id": "01s204x",
@@ -2418,7 +2554,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 47
+      "hot": 44
     },
     {
       "id": "1wqprnd",
@@ -2438,7 +2574,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 54
+      "hot": 51
     },
     {
       "id": "100dt6z",
@@ -2458,7 +2594,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 48
+      "hot": 45
     },
     {
       "id": "1qcwb80",
@@ -2478,27 +2614,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 48
-    },
-    {
-      "id": "1ekslf5",
-      "title": "中期选举后美国芯片股重挫，纳指单日暴跌 5.52%；民主党宣布推动《禁止人工智能法案》；OpenAI 推出 GPT-6 Cyber",
-      "url": "http://www.geekpark.net/news/373554",
-      "summary": "芯片股惨遭重挫，华尔街迎来 1896 年以来中期选举后表现最差的第二个交易日 据路透社报道，美国民主党在国会中期选举中大胜，引发投资者对 AI 监管加强、数据中心建设放缓的担忧。 当地时间周四，美国科技股遭遇大规模抛售，华尔街股票市值单日蒸发约 3.2 万亿美元（约合人民币 22.7 万亿元）。纳斯达克综合指数暴跌 5.52%，创下自 2025 年 4 月以来最大单日跌幅，较 10 月初创下的历史高点累计下跌近 12%，进入技术性回调区…",
-      "author": "",
-      "source": "极客公园",
-      "sourceId": "geekpark",
-      "home": "https://www.geekpark.net",
-      "weight": 1.4,
-      "lang": "zh",
-      "category": "行业动态",
-      "publishedAt": "2026-11-06T01:01:57.000Z",
-      "publishedTs": 1793926917000,
-      "day": "2026-11-06",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 39
+      "hot": 45
     },
     {
       "id": "1ltgc2y",
@@ -2518,7 +2634,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 46
+      "hot": 43
     },
     {
       "id": "0etdazp",
@@ -2538,7 +2654,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 41
+      "hot": 38
     },
     {
       "id": "0gkleag",
@@ -2558,7 +2674,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 41
+      "hot": 38
     },
     {
       "id": "0psxfqy",
@@ -2578,7 +2694,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 41
+      "hot": 38
     },
     {
       "id": "05u8odx",
@@ -2598,7 +2714,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 47
+      "hot": 44
     },
     {
       "id": "1paiwk7",
@@ -2618,7 +2734,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 41
+      "hot": 38
     },
     {
       "id": "0yejn4j",
@@ -2638,7 +2754,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 59
+      "hot": 56
     },
     {
       "id": "0zytr8y",
@@ -2658,7 +2774,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 49
+      "hot": 47
     },
     {
       "id": "1uhtau9",
@@ -2678,7 +2794,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 47
+      "hot": 44
     },
     {
       "id": "02185f7",
@@ -2698,7 +2814,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 46
+      "hot": 43
     },
     {
       "id": "04mlgzx",
@@ -2718,7 +2834,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 46
+      "hot": 43
     },
     {
       "id": "0je79yi",
@@ -2738,7 +2854,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 52
+      "hot": 49
     },
     {
       "id": "0bssmf3",
@@ -2758,27 +2874,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 46
-    },
-    {
-      "id": "12tp0mp",
-      "title": "Google Releases Gemini Omni 1.2 Flash: 15-Second AI Video at $0.07 per Second",
-      "url": "https://www.marktechpost.com/2026/11/05/google-gemini-omni-1-2-flash-15-second-video",
-      "summary": "Google released Gemini Omni 1.2 Flash, a video generation and editing model with native 15-second clips, multi-turn conversational editing and a 30% price cut to $0.07 per second of 720p video. The post Google Releases G…",
-      "author": "Asif Razzaq",
-      "source": "MarkTechPost",
-      "sourceId": "marktechpost",
-      "home": "https://www.marktechpost.com",
-      "weight": 1.4,
-      "lang": "en",
-      "category": "模型发布",
-      "publishedAt": "2026-11-05T22:58:21.000Z",
-      "publishedTs": 1793919501000,
-      "day": "2026-11-06",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 38
+      "hot": 43
     },
     {
       "id": "1xws976",
@@ -2798,7 +2894,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 52
+      "hot": 49
     },
     {
       "id": "0dsd7gy",
@@ -2818,7 +2914,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 42
+      "hot": 39
     },
     {
       "id": "08qxx5g",
@@ -2834,46 +2930,6 @@
       "category": "行业动态",
       "publishedAt": "2026-11-05T22:26:50.000Z",
       "publishedTs": 1793917610000,
-      "day": "2026-11-06",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 39
-    },
-    {
-      "id": "0cwxg1n",
-      "title": "Baidu Releases ERNIE 5.5 Flash Base: A 280B MoE Base Model With 14B Active Parameters",
-      "url": "https://www.marktechpost.com/2026/11/05/baidu-ernie-5-5-flash-base-280b-moe",
-      "summary": "Baidu has released ERNIE 5.5 Flash Base, a 280B sparse MoE base model with 14B active parameters, trained on 33.5T tokens and published before any mid- or post-training. The post Baidu Releases ERNIE 5.5 Flash Base: A 28…",
-      "author": "Michal Sutter",
-      "source": "MarkTechPost",
-      "sourceId": "marktechpost",
-      "home": "https://www.marktechpost.com",
-      "weight": 1.4,
-      "lang": "en",
-      "category": "模型发布",
-      "publishedAt": "2026-11-05T21:33:00.000Z",
-      "publishedTs": 1793914380000,
-      "day": "2026-11-06",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 37
-    },
-    {
-      "id": "1bez3i6",
-      "title": "Getting started with Web Answer on Amazon Bedrock AgentCore",
-      "url": "https://aws.amazon.com/blogs/machine-learning/getting-started-with-web-answer-on-amazon-bedrock-agentcore",
-      "summary": "Web Answer on Amazon Bedrock AgentCore returns a synthesized, source-cited answer to a natural-language question in a single tool call, with no search, retrieve, synthesize, and citation pipeline to build. Learn how it w…",
-      "author": "Adrianna Chudy",
-      "source": "AWS 机器学习",
-      "sourceId": "aws-ml",
-      "home": "https://aws.amazon.com/blogs/machine-learning/",
-      "weight": 1.4,
-      "lang": "en",
-      "category": "行业动态",
-      "publishedAt": "2026-11-05T21:04:24.000Z",
-      "publishedTs": 1793912664000,
       "day": "2026-11-06",
       "estimate": false,
       "bulk": false,
@@ -2898,7 +2954,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 38
+      "hot": 36
     },
     {
       "id": "1p6wj2w",
@@ -2918,7 +2974,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 40
+      "hot": 37
     },
     {
       "id": "01vagxv",
@@ -2938,7 +2994,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 47
+      "hot": 44
     },
     {
       "id": "00jodpq",
@@ -2958,7 +3014,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 40
+      "hot": 37
     },
     {
       "id": "171l870",
@@ -2978,7 +3034,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 39
+      "hot": 37
     },
     {
       "id": "08r2rro",
@@ -2998,7 +3054,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 39
+      "hot": 37
     },
     {
       "id": "0wn0sil",
@@ -3018,7 +3074,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 37
+      "hot": 35
     },
     {
       "id": "100zmh1",
@@ -3034,26 +3090,6 @@
       "category": "产品动态",
       "publishedAt": "2026-11-05T19:03:04.000Z",
       "publishedTs": 1793905384000,
-      "day": "2026-11-06",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 37
-    },
-    {
-      "id": "1fgay18",
-      "title": "How Amazon Marketplace evaluates content quality with Amazon SageMaker AI",
-      "url": "https://aws.amazon.com/blogs/machine-learning/how-amazon-marketplace-evaluates-content-quality-with-amazon-sagemaker-ai",
-      "summary": "Learn how Amazon Marketplace evaluates A+ Content quality at scale on Amazon SageMaker AI by rendering each product page as a single snapshot, scoring it with a vision-language model fused with OCR readability signals in…",
-      "author": "James Kim",
-      "source": "AWS 机器学习",
-      "sourceId": "aws-ml",
-      "home": "https://aws.amazon.com/blogs/machine-learning/",
-      "weight": 1.4,
-      "lang": "en",
-      "category": "行业动态",
-      "publishedAt": "2026-11-05T18:06:43.000Z",
-      "publishedTs": 1793902003000,
       "day": "2026-11-06",
       "estimate": false,
       "bulk": false,
@@ -3078,7 +3114,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 39
+      "hot": 36
     },
     {
       "id": "1vo7s57",
@@ -3098,7 +3134,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 39
+      "hot": 36
     },
     {
       "id": "0enlbvd",
@@ -3118,7 +3154,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 37
+      "hot": 34
     },
     {
       "id": "0lxif2k",
@@ -3138,7 +3174,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 37
+      "hot": 34
     },
     {
       "id": "1quqrfx",
@@ -3158,7 +3194,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 37
+      "hot": 34
     },
     {
       "id": "0yojc65",
@@ -3178,7 +3214,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 43
+      "hot": 41
     },
     {
       "id": "1db06ne",
@@ -3198,7 +3234,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 38
+      "hot": 36
     },
     {
       "id": "062zo2g",
@@ -3218,7 +3254,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 45
+      "hot": 43
     },
     {
       "id": "0hmetqd",
@@ -3238,7 +3274,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 36
+      "hot": 34
     },
     {
       "id": "0gjjsls",
@@ -3258,7 +3294,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 36
+      "hot": 34
     },
     {
       "id": "0k94ofs",
@@ -3278,7 +3314,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 36
+      "hot": 34
     },
     {
       "id": "02kmofg",
@@ -3298,7 +3334,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 38
+      "hot": 35
     },
     {
       "id": "0by7bkq",
@@ -3318,7 +3354,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 36
+      "hot": 33
     },
     {
       "id": "17sw68j",
@@ -3338,7 +3374,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 38
+      "hot": 35
     },
     {
       "id": "0w29z92",
@@ -3358,7 +3394,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 36
+      "hot": 33
     },
     {
       "id": "1jjj8zb",
@@ -3378,7 +3414,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 36
+      "hot": 33
     },
     {
       "id": "1mbqgeo",
@@ -3398,7 +3434,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 36
+      "hot": 33
     },
     {
       "id": "1lzzamk",
@@ -3418,7 +3454,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 38
+      "hot": 35
     },
     {
       "id": "0enjdf2",
@@ -3438,7 +3474,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 35
+      "hot": 33
     },
     {
       "id": "0jtyuuq",
@@ -3458,7 +3494,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 37
+      "hot": 35
     },
     {
       "id": "10detgh",
@@ -3478,7 +3514,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 35
+      "hot": 33
     },
     {
       "id": "14qj2lj",
@@ -3498,7 +3534,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 35
+      "hot": 33
     },
     {
       "id": "0wtinw4",
@@ -3518,7 +3554,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 35
+      "hot": 33
     },
     {
       "id": "1leo9mc",
@@ -3538,7 +3574,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 37
+      "hot": 35
     },
     {
       "id": "0bwcexm",
@@ -3558,7 +3594,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 35
+      "hot": 33
     },
     {
       "id": "1pl2v7f",
@@ -3578,7 +3614,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 35
+      "hot": 32
     },
     {
       "id": "01gjx1y",
@@ -3598,7 +3634,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 35
+      "hot": 32
     },
     {
       "id": "06k2idr",
@@ -3618,7 +3654,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 35
+      "hot": 32
     },
     {
       "id": "0fn4qkf",
@@ -3638,7 +3674,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 37
+      "hot": 34
     },
     {
       "id": "11eqwgu",
@@ -3658,7 +3694,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 37
+      "hot": 34
     },
     {
       "id": "1regtel",
@@ -3678,7 +3714,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 46
+      "hot": 44
     },
     {
       "id": "132wvh6",
@@ -3698,7 +3734,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 33
+      "hot": 31
     },
     {
       "id": "1nv55ic",
@@ -3718,7 +3754,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 36
+      "hot": 34
     },
     {
       "id": "1v372es",
@@ -3738,7 +3774,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 36
+      "hot": 33
     },
     {
       "id": "12t5wlv",
@@ -3758,7 +3794,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 38
+      "hot": 36
     },
     {
       "id": "1vuy933",
@@ -3778,7 +3814,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 38
+      "hot": 36
     },
     {
       "id": "18ssata",
@@ -3800,7 +3836,7 @@
       "alsoIn": [
         "Hacker News"
       ],
-      "hot": 41
+      "hot": 39
     },
     {
       "id": "0ezscun",
@@ -3820,7 +3856,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 41
+      "hot": 39
     },
     {
       "id": "0fjd4ci",
@@ -3840,7 +3876,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 50
+      "hot": 48
     },
     {
       "id": "1gmh6gz",
@@ -3860,7 +3896,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 37
+      "hot": 35
     },
     {
       "id": "0ir12fp",
@@ -3880,7 +3916,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 38
+      "hot": 36
     },
     {
       "id": "1xbn9ul",
@@ -3900,7 +3936,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 30
+      "hot": 28
     },
     {
       "id": "1r9tv14",
@@ -3920,7 +3956,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 31
+      "hot": 29
     },
     {
       "id": "0o42ym6",
@@ -3940,7 +3976,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 31
+      "hot": 29
     },
     {
       "id": "0e3rp3n",
@@ -3960,7 +3996,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 31
+      "hot": 29
     },
     {
       "id": "17d0d9n",
@@ -3980,7 +4016,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 31
+      "hot": 29
     },
     {
       "id": "1yafqlc",
@@ -4000,7 +4036,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 30
+      "hot": 28
     },
     {
       "id": "1olxdqa",
@@ -4020,7 +4056,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 30
+      "hot": 28
     },
     {
       "id": "1seiyek",
@@ -4040,7 +4076,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 30
+      "hot": 28
     },
     {
       "id": "1f8vfp0",
@@ -4060,7 +4096,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 37
+      "hot": 35
     },
     {
       "id": "1t0memw",
@@ -4080,7 +4116,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 43
+      "hot": 41
     },
     {
       "id": "08tm7sq",
@@ -4100,7 +4136,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 36
+      "hot": 34
     },
     {
       "id": "0qs01aj",
@@ -4120,7 +4156,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 42
+      "hot": 40
     },
     {
       "id": "0lf897u",
@@ -4140,7 +4176,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 30
+      "hot": 28
     },
     {
       "id": "1t16vt3",
@@ -4160,7 +4196,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 29
+      "hot": 27
     },
     {
       "id": "06blvvj",
@@ -4180,7 +4216,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 30
+      "hot": 28
     },
     {
       "id": "19tub0a",
@@ -4200,7 +4236,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 30
+      "hot": 28
     },
     {
       "id": "1t39b4h",
@@ -4220,7 +4256,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 36
+      "hot": 34
     },
     {
       "id": "0nt84hz",
@@ -4240,7 +4276,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 36
+      "hot": 34
     },
     {
       "id": "0o09cpo",
@@ -4260,7 +4296,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 29
+      "hot": 27
     },
     {
       "id": "0a5azx5",
@@ -4280,7 +4316,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 42
+      "hot": 40
     },
     {
       "id": "11wrybl",
@@ -4300,7 +4336,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 35
+      "hot": 33
     },
     {
       "id": "1cmzzjf",
@@ -4320,7 +4356,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 36
+      "hot": 34
     },
     {
       "id": "1a5vwb1",
@@ -4340,7 +4376,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 35
+      "hot": 34
     },
     {
       "id": "0c50sgo",
@@ -4360,7 +4396,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 38
+      "hot": 37
     },
     {
       "id": "0zby7nu",
@@ -4380,7 +4416,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 42
+      "hot": 40
     },
     {
       "id": "1io9ga0",
@@ -4400,7 +4436,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 35
+      "hot": 33
     },
     {
       "id": "0qkfw5c",
@@ -4420,7 +4456,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 35
+      "hot": 34
     },
     {
       "id": "0dphp8p",
@@ -4440,7 +4476,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 35
+      "hot": 34
     },
     {
       "id": "1au5ncz",
@@ -4460,7 +4496,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 29
+      "hot": 28
     },
     {
       "id": "029apnw",
@@ -4480,7 +4516,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 41
+      "hot": 40
     },
     {
       "id": "07dadan",
@@ -4500,7 +4536,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 35
+      "hot": 34
     },
     {
       "id": "0jshqsq",
@@ -4520,7 +4556,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 35
+      "hot": 34
     },
     {
       "id": "0gtbff4",
@@ -4540,7 +4576,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 31
+      "hot": 30
     },
     {
       "id": "03lew8n",
@@ -4560,7 +4596,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 35
+      "hot": 34
     },
     {
       "id": "1qov6f1",
@@ -4580,7 +4616,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 35
+      "hot": 34
     },
     {
       "id": "0vmhgbc",
@@ -4600,7 +4636,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 41
+      "hot": 40
     },
     {
       "id": "0uvsbnj",
@@ -4620,7 +4656,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 41
+      "hot": 40
     },
     {
       "id": "09obufd",
@@ -4640,7 +4676,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 35
+      "hot": 34
     },
     {
       "id": "1qrai76",
@@ -4660,7 +4696,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 31
+      "hot": 29
     },
     {
       "id": "0x5ajwa",
@@ -4680,7 +4716,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 29
+      "hot": 27
     },
     {
       "id": "0o83suv",
@@ -4700,7 +4736,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 35
+      "hot": 34
     },
     {
       "id": "1h9n1ho",
@@ -4720,7 +4756,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 38
+      "hot": 36
     },
     {
       "id": "1084op8",
@@ -4740,7 +4776,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 29
+      "hot": 27
     },
     {
       "id": "02t2d0h",
@@ -4760,7 +4796,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 41
+      "hot": 40
     },
     {
       "id": "0yrf0e8",
@@ -4780,7 +4816,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 35
+      "hot": 33
     },
     {
       "id": "107tq0k",
@@ -4800,7 +4836,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 28
+      "hot": 26
     },
     {
       "id": "04vowro",
@@ -4820,7 +4856,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 29
+      "hot": 27
     },
     {
       "id": "0srpk4x",
@@ -4840,7 +4876,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 28
+      "hot": 26
     },
     {
       "id": "1s8z658",
@@ -4860,7 +4896,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 47
+      "hot": 46
     },
     {
       "id": "0lc41yx",
@@ -4880,7 +4916,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 38
+      "hot": 36
     },
     {
       "id": "0p0n647",
@@ -4900,7 +4936,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 28
+      "hot": 27
     },
     {
       "id": "1wor1vp",
@@ -4920,7 +4956,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 27
+      "hot": 26
     },
     {
       "id": "1ef7dtx",
@@ -4940,7 +4976,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 35
+      "hot": 33
     },
     {
       "id": "07p8wro",
@@ -4960,7 +4996,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 34
+      "hot": 33
     },
     {
       "id": "1g907on",
@@ -4980,7 +5016,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 30
+      "hot": 29
     },
     {
       "id": "12iwdhf",
@@ -5000,7 +5036,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 28
+      "hot": 27
     },
     {
       "id": "06fwqm5",
@@ -5020,7 +5056,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 30
+      "hot": 29
     },
     {
       "id": "0sxqg11",
@@ -5040,7 +5076,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 30
+      "hot": 28
     },
     {
       "id": "0abelr7",
@@ -5060,7 +5096,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 28
+      "hot": 26
     },
     {
       "id": "0hs3z9p",
@@ -5080,7 +5116,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 30
+      "hot": 28
     },
     {
       "id": "1dazttf",
@@ -5100,7 +5136,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 30
+      "hot": 28
     },
     {
       "id": "1bdzggh",
@@ -5120,7 +5156,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 27
+      "hot": 26
     },
     {
       "id": "089ltg0",
@@ -5140,7 +5176,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 27
+      "hot": 26
     },
     {
       "id": "12d78sl",
@@ -5160,7 +5196,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 29
+      "hot": 28
     },
     {
       "id": "0dz027r",
@@ -5180,7 +5216,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 29
+      "hot": 28
     },
     {
       "id": "0j21r2l",
@@ -5200,7 +5236,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 27
+      "hot": 26
     },
     {
       "id": "0lb21bj",
@@ -5220,7 +5256,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 26
+      "hot": 25
     },
     {
       "id": "0ftas4e",
@@ -5240,7 +5276,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 29
+      "hot": 28
     },
     {
       "id": "10v3vc2",
@@ -5260,7 +5296,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 27
+      "hot": 26
     },
     {
       "id": "0zyxsod",
@@ -5280,7 +5316,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 27
+      "hot": 25
     },
     {
       "id": "075fbvz",
@@ -5300,7 +5336,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 27
+      "hot": 25
     },
     {
       "id": "01u712r",
@@ -5320,7 +5356,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 27
+      "hot": 25
     },
     {
       "id": "1k47juh",
@@ -5340,7 +5376,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 28
+      "hot": 27
     },
     {
       "id": "153x4io",
@@ -5360,7 +5396,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 26
+      "hot": 25
     },
     {
       "id": "14vwweg",
@@ -5380,7 +5416,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 39
+      "hot": 38
     },
     {
       "id": "12enk38",
@@ -5400,7 +5436,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 31
+      "hot": 30
     },
     {
       "id": "0g6vry5",
@@ -5420,7 +5456,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 28
+      "hot": 27
     },
     {
       "id": "08ik0mj",
@@ -5440,7 +5476,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 32
+      "hot": 31
     },
     {
       "id": "144v8aq",
@@ -5460,7 +5496,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 26
+      "hot": 25
     },
     {
       "id": "0mswjd9",
@@ -5480,7 +5516,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 26
+      "hot": 25
     },
     {
       "id": "0fb16vt",
@@ -5500,7 +5536,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 26
+      "hot": 25
     },
     {
       "id": "0o1q76a",
@@ -5520,7 +5556,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 26
+      "hot": 25
     },
     {
       "id": "06rosj2",
@@ -5540,7 +5576,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 26
+      "hot": 25
     },
     {
       "id": "0fhic8w",
@@ -5560,7 +5596,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 35
+      "hot": 33
     },
     {
       "id": "1xka2ny",
@@ -5580,7 +5616,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 27
+      "hot": 26
     },
     {
       "id": "0n68wp4",
@@ -5600,7 +5636,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 25
+      "hot": 24
     },
     {
       "id": "1ojtm5h",
@@ -5620,7 +5656,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 25
+      "hot": 24
     },
     {
       "id": "09g7ans",
@@ -5640,7 +5676,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 30
+      "hot": 29
     },
     {
       "id": "02em359",
@@ -5660,7 +5696,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 36
+      "hot": 35
     },
     {
       "id": "1ruz991",
@@ -5680,7 +5716,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 37
+      "hot": 36
     },
     {
       "id": "169k3nd",
@@ -5700,7 +5736,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 25
+      "hot": 24
     },
     {
       "id": "0ig78at",
@@ -5720,7 +5756,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 30
+      "hot": 29
     },
     {
       "id": "1e2ijvl",
@@ -5740,7 +5776,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 36
+      "hot": 35
     },
     {
       "id": "1ord9dd",
@@ -5760,7 +5796,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 30
+      "hot": 29
     },
     {
       "id": "0nvx1i4",
@@ -5780,7 +5816,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 36
+      "hot": 35
     },
     {
       "id": "03u03ry",
@@ -5800,7 +5836,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 30
+      "hot": 29
     },
     {
       "id": "0vqipw2",
@@ -5820,7 +5856,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 43
+      "hot": 42
     },
     {
       "id": "0g126op",
@@ -5840,7 +5876,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 23
+      "hot": 22
     },
     {
       "id": "14bh2u1",
@@ -5860,7 +5896,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 33
+      "hot": 32
     },
     {
       "id": "0ivppks",
@@ -5880,7 +5916,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 23
+      "hot": 22
     },
     {
       "id": "1lvhceo",
@@ -5900,7 +5936,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 33
+      "hot": 32
     },
     {
       "id": "0lvmbj8",
@@ -5920,7 +5956,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 36
+      "hot": 35
     },
     {
       "id": "1r1w6ms",
@@ -5940,7 +5976,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 24
+      "hot": 23
     },
     {
       "id": "00kv7m1",
@@ -5960,7 +5996,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 42
+      "hot": 41
     },
     {
       "id": "16herzl",
@@ -5980,7 +6016,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 30
+      "hot": 29
     },
     {
       "id": "03r3l2l",
@@ -6000,7 +6036,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 35
+      "hot": 34
     },
     {
       "id": "0oguw31",
@@ -6020,7 +6056,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 30
+      "hot": 29
     },
     {
       "id": "0ssjep7",
@@ -6080,7 +6116,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 23
+      "hot": 22
     },
     {
       "id": "004h7ck",
@@ -6100,7 +6136,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 36
+      "hot": 35
     },
     {
       "id": "1i3a37b",
@@ -6120,7 +6156,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 29
+      "hot": 28
     },
     {
       "id": "1ck8zii",
@@ -6140,7 +6176,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 35
+      "hot": 34
     },
     {
       "id": "0do4fb9",
@@ -6160,7 +6196,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 29
+      "hot": 28
     },
     {
       "id": "1drmm8l",
@@ -6200,7 +6236,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 22
+      "hot": 21
     },
     {
       "id": "0djox7k",
@@ -6240,7 +6276,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 22
+      "hot": 21
     },
     {
       "id": "16j87tn",
@@ -6260,7 +6296,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 23
+      "hot": 22
     },
     {
       "id": "1q02hnf",
@@ -6280,7 +6316,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 35
+      "hot": 34
     },
     {
       "id": "1k42w68",
@@ -6300,7 +6336,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 22
+      "hot": 21
     },
     {
       "id": "00tdw1u",
@@ -6320,7 +6356,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 28
+      "hot": 27
     },
     {
       "id": "095nm3d",
@@ -6340,7 +6376,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 35
+      "hot": 34
     },
     {
       "id": "0ivkwe5",
@@ -6360,7 +6396,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 23
+      "hot": 22
     },
     {
       "id": "1yw1whk",
@@ -6400,7 +6436,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 22
+      "hot": 21
     },
     {
       "id": "06qn28z",
@@ -6420,7 +6456,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 29
+      "hot": 28
     },
     {
       "id": "0e1acg5",
@@ -6440,7 +6476,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 28
+      "hot": 27
     },
     {
       "id": "10guvwr",
@@ -6460,7 +6496,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 29
+      "hot": 28
     },
     {
       "id": "0zzqogs",
@@ -6480,7 +6516,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 28
+      "hot": 27
     },
     {
       "id": "0cbaait",
@@ -6500,7 +6536,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 28
+      "hot": 27
     },
     {
       "id": "0ltxavy",
@@ -6520,7 +6556,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 22
+      "hot": 21
     },
     {
       "id": "1eym1z1",
@@ -6540,7 +6576,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 23
+      "hot": 22
     },
     {
       "id": "1sr08x7",
@@ -6640,7 +6676,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 29
+      "hot": 28
     },
     {
       "id": "1fe974v",
@@ -6660,7 +6696,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 29
+      "hot": 28
     },
     {
       "id": "100vzdg",
@@ -6680,7 +6716,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 35
+      "hot": 34
     },
     {
       "id": "1v0er2g",
@@ -6700,7 +6736,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 24
+      "hot": 23
     },
     {
       "id": "1jfnjij",
@@ -6720,7 +6756,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 22
+      "hot": 21
     },
     {
       "id": "0m1wfk6",
@@ -6740,7 +6776,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 35
+      "hot": 34
     },
     {
       "id": "01rsrk5",
@@ -6760,7 +6796,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 24
+      "hot": 23
     },
     {
       "id": "007dve4",
@@ -6780,7 +6816,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 24
+      "hot": 23
     },
     {
       "id": "1rvbcdz",
@@ -6800,7 +6836,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 24
+      "hot": 23
     },
     {
       "id": "011d210",
@@ -6820,7 +6856,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 22
+      "hot": 21
     },
     {
       "id": "03qlj0d",
@@ -6840,7 +6876,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 28
+      "hot": 27
     },
     {
       "id": "0cy3uwc",
@@ -6860,7 +6896,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 41
+      "hot": 40
     },
     {
       "id": "18zgnop",
@@ -6880,7 +6916,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 22
+      "hot": 21
     },
     {
       "id": "057wgbc",
@@ -6900,7 +6936,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 22
+      "hot": 21
     },
     {
       "id": "1g4mygx",
@@ -6920,7 +6956,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 28
+      "hot": 27
     },
     {
       "id": "0p8t89u",
@@ -6940,7 +6976,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 22
+      "hot": 21
     },
     {
       "id": "1qk8ta0",
@@ -6960,7 +6996,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 24
+      "hot": 23
     },
     {
       "id": "0ar1zkg",
@@ -6980,7 +7016,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 34
+      "hot": 33
     },
     {
       "id": "03m9oi4",
@@ -7000,7 +7036,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 24
+      "hot": 23
     },
     {
       "id": "1bpfws5",
@@ -7020,7 +7056,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 22
+      "hot": 21
     },
     {
       "id": "1iktii9",
@@ -7040,7 +7076,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 22
+      "hot": 21
     },
     {
       "id": "0u7okuc",
@@ -7100,7 +7136,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 34
+      "hot": 33
     },
     {
       "id": "02t43ne",
@@ -7280,7 +7316,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 23
+      "hot": 22
     },
     {
       "id": "112wu73",
@@ -7300,7 +7336,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 21
+      "hot": 20
     },
     {
       "id": "053kj3h",
@@ -7320,7 +7356,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 23
+      "hot": 22
     },
     {
       "id": "0kq7698",
@@ -7340,7 +7376,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 23
+      "hot": 22
     },
     {
       "id": "07dymw1",
@@ -7380,7 +7416,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 27
+      "hot": 26
     },
     {
       "id": "0abm8sz",
@@ -7420,7 +7456,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 20
+      "hot": 19
     },
     {
       "id": "13fnblh",
@@ -7440,7 +7476,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 20
+      "hot": 19
     },
     {
       "id": "0jkbeyw",
@@ -7460,7 +7496,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 27
+      "hot": 26
     },
     {
       "id": "0t84cqa",
@@ -7480,7 +7516,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 21
+      "hot": 20
     },
     {
       "id": "1uydk6e",
@@ -7500,7 +7536,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 21
+      "hot": 20
     },
     {
       "id": "11m0gos",
@@ -7520,7 +7556,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 30
+      "hot": 29
     },
     {
       "id": "0qbsvre",
@@ -7540,7 +7576,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 21
+      "hot": 20
     },
     {
       "id": "09c1ow2",
@@ -7560,7 +7596,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 27
+      "hot": 26
     },
     {
       "id": "0ipn3ba",
@@ -7620,7 +7656,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 32
+      "hot": 31
     },
     {
       "id": "181ssmo",
@@ -7640,7 +7676,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 26
+      "hot": 25
     },
     {
       "id": "1uu2cbq",
@@ -7960,7 +7996,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 20
+      "hot": 19
     },
     {
       "id": "19gjtb9",
@@ -7980,7 +8016,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 26
+      "hot": 25
     },
     {
       "id": "11kcev6",
@@ -8000,7 +8036,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 38
+      "hot": 37
     },
     {
       "id": "0mgp79z",
@@ -8060,7 +8096,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 26
+      "hot": 25
     },
     {
       "id": "17nmho2",
@@ -8080,7 +8116,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 20
+      "hot": 19
     },
     {
       "id": "02auhrl",
@@ -8120,7 +8156,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 20
+      "hot": 19
     },
     {
       "id": "0m6j0pk",
@@ -8200,7 +8236,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 20
+      "hot": 19
     },
     {
       "id": "08sxpkb",
@@ -8220,7 +8256,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 19
+      "hot": 18
     },
     {
       "id": "0dk882n",
@@ -8240,7 +8276,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 26
+      "hot": 25
     },
     {
       "id": "0bu7mi1",
@@ -8260,7 +8296,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 22
+      "hot": 21
     },
     {
       "id": "0wx6y2q",
@@ -8280,7 +8316,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 20
+      "hot": 19
     },
     {
       "id": "011tsik",
@@ -8320,7 +8356,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 19
+      "hot": 18
     },
     {
       "id": "0ar15st",
@@ -8340,7 +8376,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 19
+      "hot": 18
     },
     {
       "id": "14vs96c",
@@ -8360,7 +8396,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 26
+      "hot": 25
     },
     {
       "id": "05gsk3d",
@@ -8420,7 +8456,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 19
+      "hot": 18
     },
     {
       "id": "1qrixh8",
@@ -8440,7 +8476,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 20
+      "hot": 19
     },
     {
       "id": "0vhr5js",
@@ -8480,7 +8516,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 19
+      "hot": 18
     },
     {
       "id": "0f0cqa6",
@@ -8500,7 +8536,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 25
+      "hot": 24
     },
     {
       "id": "1obuet7",
@@ -8520,7 +8556,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 20
+      "hot": 19
     },
     {
       "id": "0ro0pxa",
@@ -8540,7 +8576,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 26
+      "hot": 25
     },
     {
       "id": "1u32hof",
@@ -8560,7 +8596,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 26
+      "hot": 25
     },
     {
       "id": "17esbmw",
@@ -8580,7 +8616,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 20
+      "hot": 19
     },
     {
       "id": "16kkjbj",
@@ -8600,7 +8636,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 26
+      "hot": 25
     },
     {
       "id": "1dqz44h",
@@ -8620,7 +8656,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 20
+      "hot": 19
     },
     {
       "id": "09odtv7",
@@ -8640,7 +8676,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 19
+      "hot": 18
     },
     {
       "id": "0iteuc1",
@@ -8660,7 +8696,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 26
+      "hot": 25
     },
     {
       "id": "0xk72sf",
@@ -8680,7 +8716,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 20
+      "hot": 19
     },
     {
       "id": "0y6dktc",
@@ -8700,7 +8736,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 19
+      "hot": 18
     },
     {
       "id": "12nur55",
@@ -8720,7 +8756,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 32
+      "hot": 31
     },
     {
       "id": "0xm7a9k",
@@ -8740,7 +8776,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 26
+      "hot": 25
     },
     {
       "id": "10g8h8n",
@@ -8800,7 +8836,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 26
+      "hot": 25
     },
     {
       "id": "02c78dt",
@@ -8840,7 +8876,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 26
+      "hot": 25
     },
     {
       "id": "19e46ba",
@@ -8860,7 +8896,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 26
+      "hot": 25
     },
     {
       "id": "001t7la",
@@ -9202,7 +9238,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 19
+      "hot": 18
     },
     {
       "id": "0qhm2oo",
@@ -9222,7 +9258,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 19
+      "hot": 18
     },
     {
       "id": "133ew2q",
@@ -9242,7 +9278,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 28
+      "hot": 27
     },
     {
       "id": "0e2mmku",
@@ -9262,7 +9298,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 28
+      "hot": 27
     },
     {
       "id": "1glbin6",
@@ -9282,7 +9318,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 19
+      "hot": 18
     },
     {
       "id": "1mifbdx",
@@ -9302,7 +9338,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 21
+      "hot": 20
     },
     {
       "id": "1c73bdt",
@@ -9322,7 +9358,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 19
+      "hot": 18
     },
     {
       "id": "1aprwgg",
@@ -9342,7 +9378,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 21
+      "hot": 20
     },
     {
       "id": "0rly4mv",
@@ -9362,7 +9398,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 19
+      "hot": 18
     },
     {
       "id": "1ggvfl4",
@@ -9382,7 +9418,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 28
+      "hot": 27
     },
     {
       "id": "0jmj0gm",
@@ -9402,7 +9438,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 28
+      "hot": 27
     },
     {
       "id": "1obguho",
@@ -9422,7 +9458,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 21
+      "hot": 20
     },
     {
       "id": "1dqdxmt",
@@ -9462,7 +9498,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 21
+      "hot": 20
     },
     {
       "id": "0wbud76",
@@ -9482,7 +9518,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 21
+      "hot": 20
     },
     {
       "id": "0saeoyu",
@@ -9502,7 +9538,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 31
+      "hot": 30
     },
     {
       "id": "18vishh",
@@ -9582,7 +9618,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 24
+      "hot": 23
     },
     {
       "id": "1j7hh40",
@@ -9642,7 +9678,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 30
+      "hot": 29
     },
     {
       "id": "12487xy",
@@ -9702,7 +9738,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 30
+      "hot": 29
     },
     {
       "id": "12lyvi2",
@@ -9802,7 +9838,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 31
+      "hot": 30
     },
     {
       "id": "0sj65uq",
@@ -9842,7 +9878,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 30
+      "hot": 29
     },
     {
       "id": "141kb2k",
@@ -10042,7 +10078,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 37
+      "hot": 36
     },
     {
       "id": "1ghe9hq",
@@ -10362,7 +10398,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 27
+      "hot": 26
     },
     {
       "id": "0w812p4",
@@ -10382,7 +10418,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 27
+      "hot": 26
     },
     {
       "id": "1kv5ck8",
@@ -10442,7 +10478,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 18
+      "hot": 17
     },
     {
       "id": "13lmfvj",
@@ -10462,7 +10498,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 20
+      "hot": 19
     },
     {
       "id": "1h4kp1o",
@@ -10482,7 +10518,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 20
+      "hot": 19
     },
     {
       "id": "0pw21um",
@@ -10542,7 +10578,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 24
+      "hot": 23
     },
     {
       "id": "0fnalnu",
@@ -10622,7 +10658,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 30
+      "hot": 29
     },
     {
       "id": "1hjio89",
@@ -11862,7 +11898,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 23
+      "hot": 22
     },
     {
       "id": "10xhmkq",
@@ -11902,7 +11938,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 23
+      "hot": 22
     },
     {
       "id": "06t533a",
@@ -13282,7 +13318,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 23
+      "hot": 22
     },
     {
       "id": "0zfi68d",
@@ -13322,7 +13358,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 23
+      "hot": 22
     },
     {
       "id": "118980x",
@@ -13362,7 +13398,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 22
+      "hot": 21
     },
     {
       "id": "0kk00xa",
@@ -13382,7 +13418,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 23
+      "hot": 22
     },
     {
       "id": "0tn7ujg",
@@ -13442,7 +13478,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 23
+      "hot": 22
     },
     {
       "id": "1i48g54",
@@ -13462,7 +13498,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 23
+      "hot": 22
     },
     {
       "id": "1im7q32",
@@ -13482,7 +13518,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 22
+      "hot": 21
     },
     {
       "id": "1gq79i0",
@@ -13522,7 +13558,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 29
+      "hot": 28
     },
     {
       "id": "0lwr75k",
@@ -13542,7 +13578,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 23
+      "hot": 22
     },
     {
       "id": "0s14lln",
@@ -13562,7 +13598,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 23
+      "hot": 22
     },
     {
       "id": "1mmji49",
@@ -50278,46 +50314,6 @@
       "category": "模型发布",
       "publishedAt": "2026-09-23T10:00:00.000Z",
       "publishedTs": 1790157600000,
-      "day": "2026-09-23",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 25
-    },
-    {
-      "id": "1sd4r37",
-      "title": "At AI Day Singapore, NVIDIA and Partners Showcase AI Advancements Across Southeast Asia",
-      "url": "https://blogs.nvidia.com/blog/ai-day-singapore",
-      "summary": "NVIDIA AI Day Singapore, which takes place Sept. 22-23 at the Raffles City Convention Centre, is offering attendees opportunities to explore the hands-on training, expert-led sessions and advanced tools to accelerate the…",
-      "author": "NVIDIA Writers",
-      "source": "NVIDIA",
-      "sourceId": "nvidia",
-      "home": "https://blogs.nvidia.com",
-      "weight": 1.8,
-      "lang": "en",
-      "category": "行业动态",
-      "publishedAt": "2026-09-23T02:30:22.000Z",
-      "publishedTs": 1790130622000,
-      "day": "2026-09-23",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 18
-    },
-    {
-      "id": "1w651xe",
-      "title": "ChatGPT Ads expands to Southeast Asia and Taiwan",
-      "url": "https://openai.com/index/chatgpt-ads-expands-southeast-asia-taiwan",
-      "summary": "ChatGPT Ads is expanding to Southeast Asia and Taiwan, giving eligible businesses new ways to reach people across more than 60 countries.",
-      "author": "",
-      "source": "OpenAI",
-      "sourceId": "openai",
-      "home": "https://openai.com/news",
-      "weight": 2.5,
-      "lang": "en",
-      "category": "行业动态",
-      "publishedAt": "2026-09-23T02:00:00.000Z",
-      "publishedTs": 1790128800000,
       "day": "2026-09-23",
       "estimate": false,
       "bulk": false,
