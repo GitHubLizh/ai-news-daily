@@ -60,7 +60,8 @@ describe('首页静态 SEO', () => {
     const html = await readFile(new URL('../index.html', import.meta.url), 'utf8');
     assert.ok(html.includes('<title>每日AI新闻聚合｜AI资讯速递</title>'));
     assert.ok(html.includes('class="site-intro"'));
-    assert.ok(html.includes('<a href="/day/">每日 AI 新闻归档</a>'));
+    assert.ok(html.includes('<a class="calendar-archive-link" href="/day/">查看全部日期归档</a>'));
+    assert.ok(!html.includes('<a href="/day/">每日 AI 新闻归档</a>'));
   });
 });
 

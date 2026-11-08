@@ -918,6 +918,23 @@ summary {
   font-weight: 600;
 }
 
+.calendar-archive-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 40px;
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+  color: var(--text-3);
+  font-size: 12px;
+}
+
+.calendar-archive-link::after {
+  content: '→';
+  color: var(--brand-ink);
+}
+
 .cal-head {
   display: flex;
   align-items: center;
