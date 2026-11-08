@@ -1275,7 +1275,7 @@ summary {
 
 .back-to-top {
   position: fixed;
-  right: 24px;
+  right: max(385px, calc((100vw - 1180px) / 2 + 385px));
   bottom: 28px;
   z-index: 35;
   display: grid;
@@ -1368,6 +1368,10 @@ summary {
     max-height: none;
     overflow: visible;
     padding-top: 0;
+  }
+
+  .back-to-top {
+    right: 24px;
   }
 }
 

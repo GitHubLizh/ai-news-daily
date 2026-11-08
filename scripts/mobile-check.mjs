@@ -212,6 +212,9 @@ const METRICS = `(() => {
   const panel = box('.panel');
   const dayHead = box('.day-head');
   const inner = document.querySelector('.topbar-inner');
+  const backToTop = box('#backToTop');
+  const read = box('.item [data-act="read"]');
+  const copy = box('.item [data-act="copy"]');
   return {
     clientWidth: de.clientWidth,
     clientHeight: de.clientHeight,
@@ -228,6 +231,8 @@ const METRICS = `(() => {
     dayHeadHeight: dayHead ? px(dayHead.height) : 0,
     firstItemTop: item ? px(item.top) : -1,
     firstTitleTop: title ? px(title.top) : -1,
+    backToTopCenterX: backToTop ? px(backToTop.left + backToTop.width / 2) : 0,
+    itemActionGapX: read && copy ? px((read.right + copy.left) / 2) : 0,
     tapViolations,
     wrapViolations,
     layoutColumnCount: getComputedStyle(document.querySelector('.layout')).gridTemplateColumns.split(' ').length,
@@ -269,6 +274,10 @@ function checkCase(m, mobile) {
     add(m.navDisplay === 'flex', `桌面端导航 display=${m.navDisplay}（应为 flex）`);
     add(m.tabbarDisplay === 'none', `桌面端底部导航 display=${m.tabbarDisplay}（应为 none）`);
     add(m.brandDisplay !== 'none', `桌面端品牌文字被隐藏（display=${m.brandDisplay}）`);
+    add(
+      Math.abs(m.backToTopCenterX - m.itemActionGapX) <= 2,
+      `返回顶部按钮中心 ${m.backToTopCenterX}px 未对齐已读 / 复制间隙 ${m.itemActionGapX}px`,
+    );
     add(m.hoverFine === true, '桌面端 (hover: hover) and (pointer: fine) 未匹配，悬停样式不会生效');
     add(m.hoverScoped > 0, '没有收进媒体查询的悬停规则');
     add(m.hoverUnscoped === 0, `有 ${m.hoverUnscoped} 条悬停规则没有收进 (hover: hover) 媒体查询`);
