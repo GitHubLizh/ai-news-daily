@@ -3,8 +3,9 @@
  * 构建时把资讯静态化，让不执行 JS 的搜索引擎爬虫也能抓到内容：
  * 1. 把最新一天的条目以静态 HTML 注入 dist/index.html 的 #feed
  *    （assets/app.js 渲染时整体替换 #feed 内容，访客侧无感）；
- * 2. 为 data/news.json 里的每个日期生成 dist/day/YYYY-MM-DD/index.html 独立静态归档页，
- *    让搜索引擎有可收录的真实 URL（线上 SPA 的 #/day/... hash 路由不会被当作独立页面）。
+ * 2. 生成 dist/day/index.html 归档索引，并为 data/news.json 里的每个日期生成
+ *    dist/day/YYYY-MM-DD/index.html 独立静态归档页，让搜索引擎有可收录的真实 URL
+ *    （线上 SPA 的 #/day/... hash 路由不会被当作独立页面）。
  * 由 build.mjs 调用；纯函数单独导出供 test/prerender.test.mjs 使用。
  */
 import { mkdir, readFile, writeFile } from 'node:fs/promises';
@@ -67,10 +68,67 @@ function dayGroupHtml(label, items, timezone) {
   </section>`;
 }
 
+export function buildArchivePage({ site, days }) {
+  const canonical = `${site.url}/day/`;
+  const list = days
+    .map(
+      (day) => `<li>
+        <a href="/day/${encodeURIComponent(day.day)}/"><time datetime="${escapeHtml(day.day)}">${escapeHtml(day.label)}</time></a>
+        <span>${day.count} 条</span>
+      </li>`,
+    )
+    .join('\n');
+  return `<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>每日AI新闻归档｜${escapeHtml(site.title)}</title>
+    <meta name="description" content="按日期浏览每日 AI 新闻归档，查找国内外模型发布、产品动态、研究前沿与行业动态。" />
+    <link rel="canonical" href="${escapeHtml(canonical)}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="每日AI新闻归档｜${escapeHtml(site.title)}" />
+    <meta property="og:url" content="${escapeHtml(canonical)}" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="apple-touch-icon" href="/assets/logo.png" />
+    <link rel="stylesheet" href="../assets/styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="wrap topbar-inner">
+        <a class="brand" href="/" aria-label="回到最新资讯">
+          <span class="brand-mark" aria-hidden="true"><img src="/assets/logo.png" width="34" height="34" alt="" /></span>
+          <span class="brand-text"><strong>${escapeHtml(site.title)}</strong><small>LATEST AI NEWS</small></span>
+        </a>
+        <nav class="nav" aria-label="站点导航">
+          <a href="/">最新</a>
+          <a href="/day/" class="is-active">每日 AI 新闻归档</a>
+          <a href="/data/feed.xml" target="_blank" rel="noopener">RSS 订阅</a>
+        </nav>
+      </div>
+    </header>
+    <main class="wrap archive-page">
+      <header class="archive-header">
+        <h1>每日 AI 新闻归档</h1>
+        <p>按日期浏览每日 AI 新闻聚合，查找国内外模型发布、产品动态、研究前沿与行业动态。</p>
+      </header>
+      <ol class="archive-list">${list}</ol>
+    </main>
+    <footer class="footer">
+      <div class="wrap footer-inner">
+        <p class="muted">${escapeHtml(site.title)} — 个人自建的 AI 资讯聚合站，内容来自公开 RSS 源，仅保留标题、摘要与原文链接，版权归原作者所有。</p>
+      </div>
+    </footer>
+  </body>
+</html>
+`;
+}
+
 export function buildDayPage({ site, dayEntry, items, newerDay, olderDay, timezone }) {
   const canonical = `${site.url}/day/${dayEntry.day}/`;
   const nav = [
     newerDay ? `<a href="/day/${newerDay.day}/">← ${escapeHtml(newerDay.label)}</a>` : '',
+    '<a href="/day/">全部归档</a>',
     `<a href="/#/day/${encodeURIComponent(dayEntry.day)}">交互版</a>`,
     olderDay ? `<a href="/day/${olderDay.day}/">${escapeHtml(olderDay.label)} →</a>` : '',
   ]
@@ -81,14 +139,14 @@ export function buildDayPage({ site, dayEntry, items, newerDay, olderDay, timezo
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <title>${escapeHtml(site.title)} · ${escapeHtml(dayEntry.label)} AI 新闻（${items.length} 条）</title>
+    <title>${escapeHtml(dayEntry.day)} 每日AI新闻（${items.length} 条）｜${escapeHtml(site.title)}</title>
     <meta
       name="description"
       content="${escapeHtml(`${dayEntry.day} 每日 AI 新闻聚合，共 ${items.length} 条：模型发布、产品动态、研究前沿、行业动态。`)}"
     />
     <link rel="canonical" href="${escapeHtml(canonical)}" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="${escapeHtml(`${site.title} · ${dayEntry.label}`)}" />
+    <meta property="og:title" content="${escapeHtml(`${dayEntry.day} 每日AI新闻｜${site.title}`)}" />
     <meta property="og:url" content="${escapeHtml(canonical)}" />
     <link rel="icon" href="/favicon.ico" sizes="any" />
     <link rel="apple-touch-icon" href="/assets/logo.png" />
@@ -108,12 +166,13 @@ export function buildDayPage({ site, dayEntry, items, newerDay, olderDay, timezo
         </a>
         <nav class="nav" aria-label="站点导航">
           <a href="/">最新</a>
+          <a href="/day/">每日 AI 新闻归档</a>
           <a href="/data/feed.xml" target="_blank" rel="noopener">RSS 订阅</a>
         </nav>
       </div>
     </header>
     <main class="wrap">
-      <h1 class="sr-only">${escapeHtml(site.title)} · ${escapeHtml(dayEntry.label)} AI 新闻</h1>
+      <h1 class="archive-day-title">${escapeHtml(dayEntry.day)} 每日 AI 新闻</h1>
       ${dayGroupHtml(dayEntry.label, items, timezone)}
       <p class="muted" style="margin:16px 0">${nav}</p>
     </main>
@@ -171,7 +230,13 @@ export async function prerenderSite(root, dist) {
   );
   await writeFile(path.join(dist, 'index.html'), rendered, 'utf8');
 
-  // 2. 按日期静态页：每个日期一个可收录的独立 URL
+  // 2. 按日期静态页：归档索引 + 每个日期一个可收录的独立 URL
+  const archiveDays = days
+    .map((dayEntry) => ({ ...dayEntry, count: (byDay.get(dayEntry.day) || []).length }))
+    .filter((dayEntry) => dayEntry.count > 0);
+  await mkdir(path.join(dist, 'day'), { recursive: true });
+  await writeFile(path.join(dist, 'day', 'index.html'), buildArchivePage({ site, days: archiveDays }), 'utf8');
+
   let pageCount = 0;
   for (let i = 0; i < days.length; i += 1) {
     const dayEntry = days[i];

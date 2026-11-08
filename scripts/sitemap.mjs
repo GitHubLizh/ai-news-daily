@@ -17,6 +17,12 @@ export function buildSitemapXml(siteUrl, days, homepageLastmod) {
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>`,
+    `  <url>
+    <loc>${base}/day/</loc>
+    <lastmod>${homepageLastmod}</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>`,
   ];
   for (const day of days) {
     entries.push(`  <url>
@@ -45,7 +51,7 @@ export async function writeSitemap(root, dist) {
   const homepageLastmod = String(data.generatedAt || '').slice(0, 10);
   const xml = buildSitemapXml(siteUrl, days, homepageLastmod);
   await writeFile(path.join(dist, 'sitemap.xml'), xml, 'utf8');
-  return { urls: days.length + 1 };
+  return { urls: days.length + 2 };
 }
 
 // 独立运行：node scripts/sitemap.mjs [dist 目录]
