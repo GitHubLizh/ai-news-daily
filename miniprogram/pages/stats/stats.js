@@ -13,10 +13,16 @@ Page({
     hotList: [],
     meta: null,
     sources: [],
+    backTopVisible: false,
   },
 
   sourceHome: new Map(),
   unsubscribe: null,
+
+  onPageScroll({ scrollTop }) {
+    const backTopVisible = scrollTop > 600;
+    if (backTopVisible !== this.data.backTopVisible) this.setData({ backTopVisible });
+  },
 
   onLoad() {
     this.unsubscribe = app.onDataset(({ data }) => {

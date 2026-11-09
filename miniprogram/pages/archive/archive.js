@@ -18,9 +18,15 @@ Page({
     years: [],
     months: [],
     cells: [],
+    backTopVisible: false,
   },
 
   unsubscribe: null,
+
+  onPageScroll({ scrollTop }) {
+    const backTopVisible = scrollTop > 600;
+    if (backTopVisible !== this.data.backTopVisible) this.setData({ backTopVisible });
+  },
 
   onLoad() {
     this.unsubscribe = app.onDataset(({ data }) => {

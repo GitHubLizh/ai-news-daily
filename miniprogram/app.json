@@ -6,6 +6,9 @@
     "pages/stats/stats",
     "pages/reader/reader"
   ],
+  "usingComponents": {
+    "back-top": "/components/back-top/index"
+  },
   "window": {
     "navigationBarTitleText": "AI 资讯速递",
     "navigationBarBackgroundColor": "@navBgColor",

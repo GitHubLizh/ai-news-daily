@@ -8,6 +8,12 @@ Page({
     title: '',
     source: '',
     blocks: [],
+    backTopVisible: false,
+  },
+
+  onPageScroll({ scrollTop }) {
+    const backTopVisible = scrollTop > 600;
+    if (backTopVisible !== this.data.backTopVisible) this.setData({ backTopVisible });
   },
 
   onLoad(query) {

@@ -9,11 +9,17 @@ Page({
     ready: false,
     items: [],
     total: 0,
+    backTopVisible: false,
   },
 
   read: new Set(),
   bookmarks: new Set(),
   unsubscribe: null,
+
+  onPageScroll({ scrollTop }) {
+    const backTopVisible = scrollTop > 600;
+    if (backTopVisible !== this.data.backTopVisible) this.setData({ backTopVisible });
+  },
 
   onLoad() {
     this.unsubscribe = app.onDataset(({ data }) => {

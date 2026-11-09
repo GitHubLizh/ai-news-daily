@@ -1,0 +1,20 @@
+.back-top {
+  position: fixed;
+  right: 28rpx;
+  bottom: calc(40rpx + env(safe-area-inset-bottom));
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 88rpx;
+  height: 88rpx;
+  padding: 0;
+  margin: 0;
+  border: 1rpx solid var(--border-2);
+  border-radius: 50%;
+  background: var(--bg-elev);
+  color: var(--brand);
+  box-shadow: 0 8rpx 24rpx rgb(0 0 0 / 12%);
+  font-size: 40rpx;
+  line-height: 1;
+}

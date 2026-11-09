@@ -31,6 +31,7 @@ Page({
     emptyTitle: '',
     emptyDesc: '',
     emptyReset: false,
+    backTopVisible: false,
   },
 
   state: {
@@ -43,6 +44,11 @@ Page({
   bookmarks: new Set(),
   unsubscribe: null,
   searchTimer: null,
+
+  onPageScroll({ scrollTop }) {
+    const backTopVisible = scrollTop > 600;
+    if (backTopVisible !== this.data.backTopVisible) this.setData({ backTopVisible });
+  },
 
   onLoad() {
     this.read = loadSet(STORAGE_KEYS.read);
