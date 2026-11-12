@@ -43,6 +43,10 @@ jobs:
           # 让 data/feed.xml 的 atom:link 指向当前主入口（未设置时用配置文件里的值）
           SITE_URL: ${{ vars.SITE_URL }}
 
+      # 「免费优惠」页的数据：平台直连（OpenRouter 免费模型）+ 定向搜索 + 资讯命中的渠道条目
+      - name: 抓取渠道数据
+        run: node scripts/fetch-deals.mjs
+
       - name: 运行单元测试
         run: npm test
 
@@ -50,7 +54,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/news.json data/feed.xml
+          git add data/news.json data/feed.xml data/deals.json
           if git diff --staged --quiet; then
             echo "数据无变化，跳过提交"
           else

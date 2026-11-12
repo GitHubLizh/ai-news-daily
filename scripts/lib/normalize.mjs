@@ -80,6 +80,47 @@ const HOT_KEYWORDS = [
   '超越', '暴涨', '上线', '禁用', '叫停', '争议', '泄露',
 ];
 
+/** 「免费使用 / 优惠购买大模型」渠道条目的判定关键词，只按标题匹配 */
+const DEAL_FREE_KEYWORDS = ['免费', '白嫖', 'free', 'giveaway', 'giveaways'];
+/** 关键词覆盖不到的句式用正则补位 */
+const DEAL_FREE_PATTERNS = [/赠送.{0,6}(?:token|额度|积分|会员)/i];
+const DEAL_DISCOUNT_KEYWORDS = [
+  '优惠', '折扣', '打折', '半价', '降价', '特惠', '促销', '特价', '大促',
+  'discount', 'discounts', 'discounted', 'coupon', 'coupons', 'promo', 'promos',
+  'promotion', 'promotions', 'price cut', 'price cuts', 'price drop', 'half price',
+];
+const DEAL_DISCOUNT_PATTERNS = [
+  /(?:cut|cutting|cuts|drop|drops|dropping|slash|slashes|slashing|lower|lowers|lowering|reduce|reduces|reduced)\s+(?:\w+\s+){0,1}price/i,
+  /[0-9一二三四五六七八九十](?:\.\d+)?\s*折(?![扣叠])/,
+  /价格.{0,2}下调/,
+];
+/**
+ * 具体模型 / 厂商 / Agent 产品名。渠道信息说的必须是「某个具体产品」，
+ * 所以不含 ai、模型、大模型这类泛指——它们会让「奔驰降价」「免费上门修水电」混进来。
+ */
+const DEAL_PRODUCT_KEYWORDS = [
+  'gpt', 'chatgpt', 'claude', 'gemini', 'deepseek', 'qwen', '千问', 'kimi', 'glm', 'grok',
+  'llama', 'mistral', '豆包', 'doubao', '文心', 'ernie', '通义', 'minimax', 'ling', 'phi',
+  'gemma', '混元', '元宝', '讯飞', '星火', '商汤', '日日新', '秘塔', '月之暗面', 'moonshot',
+  '智谱', '阶跃', 'openai', 'anthropic', 'meta ai', 'xai', 'cohere', 'perplexity', 'groq',
+  'openrouter', 'siliconflow', '硅基流动', 'character ai',
+  'copilot', 'cursor', 'codex', 'windsurf', 'devin', 'manus',
+  'qoder', 'zcode', 'trae', 'codegeex', 'codebuddy', '灵码', '快码', 'marscode', '扣子', 'coze',
+  'sora', 'veo', 'midjourney', 'suno', '可灵', '即梦',
+];
+/** 计费面：API、token、订阅、套餐等——产品正在「被卖/被送」的信号 */
+const DEAL_SURFACE_KEYWORDS = [
+  'api', 'token', 'tokens', '订阅', '会员', '套餐', '充值', '额度', '积分', '免费版', '试用',
+  'coding plan', 'free tier',
+];
+/** 早报/合集类标题会把无关的免费信息混进来，直接排除 */
+const DEAL_EXCLUDE_PATTERNS = [/早报|晨报|晚报|日报|周报|快讯|简报|一周|盘点|合集/];
+/** 命中了交易信号、但说的不是模型/订阅本身的句式：估值下调、免费安全扫描一类 */
+const DEAL_NOISE_PATTERNS = [
+  /\bfree\s+(?:ai\s+)?(?:security\s+)?(?:scanner|scans?)\b/i,
+  /免费.{0,4}(?:扫描|查杀|上门)/,
+];
+
 const asciiOnly = /^[a-z0-9 .\-+]+$/;
 
 function escapeRegExp(value) {
@@ -99,6 +140,34 @@ export function matchesKeyword(haystack, keyword) {
 export function isAiRelated(title) {
   const head = String(title ?? '');
   return AI_KEYWORDS.some((keyword) => matchesKeyword(head, keyword));
+}
+
+/**
+ * 识别「免费使用 / 优惠购买」的渠道条目，返回 'free' | 'discount' | null。
+ * 只看标题（与 isAiRelated 同理：摘要里免费/优惠常作为背景词出现，噪声大），且标题必须
+ * 指向具体产品——命中模型/厂商/Agent 产品名，或 API/token/订阅/套餐等计费面，
+ * 才算是「某模型能免费用 / 某订阅在打折」；泛泛的「AI 免费」「起售价下调」不算。
+ * 同时命中免费与优惠信号时按「免费」归类——对找渠道的读者而言免费信息价值更高。
+ * arXiv 等论文源（bulk）的标题常含 free/cheaper 等词（如 No Free Lunch），不参与判定。
+ */
+export function detectDealType(title) {
+  const head = String(title ?? '');
+  if (DEAL_EXCLUDE_PATTERNS.some((pattern) => pattern.test(head))) return null;
+  if (DEAL_NOISE_PATTERNS.some((pattern) => pattern.test(head))) return null;
+  const isProduct = DEAL_PRODUCT_KEYWORDS.some((keyword) => matchesKeyword(head, keyword));
+  const isSurface = DEAL_SURFACE_KEYWORDS.some((keyword) => matchesKeyword(head, keyword));
+  if (!isProduct && !isSurface) return null;
+  // screen-free / hands-free 一类复合词不是「免费」信号，屏蔽后再匹配
+  const masked = head.replace(/[\w]+-free\b/gi, 'X');
+  const hitFree = (keyword) => matchesKeyword(masked, keyword);
+  if (DEAL_FREE_KEYWORDS.some(hitFree) || DEAL_FREE_PATTERNS.some((pattern) => pattern.test(masked))) return 'free';
+  if (
+    DEAL_DISCOUNT_KEYWORDS.some(hitFree) ||
+    DEAL_DISCOUNT_PATTERNS.some((pattern) => pattern.test(masked))
+  ) {
+    return 'discount';
+  }
+  return null;
 }
 
 /** 基于关键词的分类器：标题命中 3 分，摘要命中 1 分 */
@@ -184,6 +253,7 @@ export function makeItem(raw, { now = Date.now(), timezone = DEFAULT_TIMEZONE } 
     weight: Number(raw.weight) || 1,
     lang: detected || raw.lang || 'en',
     category: classify(title, summary),
+    dealType: raw.bulk ? null : detectDealType(title),
     publishedAt: publishedAt.toISOString(),
     publishedTs,
     day: dayKey(publishedAt, timezone),

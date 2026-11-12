@@ -285,7 +285,7 @@ function checkCase(m, mobile) {
   return bad;
 }
 
-/* --------------------------------------------- 移动端菜单、筛选与四视图交互 */
+/* --------------------------------------------- 移动端菜单、筛选与五视图交互 */
 
 const INTERACT = `(async () => {
   const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
@@ -521,7 +521,7 @@ async function main() {
   }
 
   if (interactionNote !== null) {
-    console.log(`\n🧭 移动端交互：顶部菜单 / 更多筛选 / 底部四视图切换 → ${interactionNote ? '✅' : '❌'}`);
+    console.log(`\n🧭 移动端交互：顶部菜单 / 更多筛选 / 底部五视图切换 → ${interactionNote ? '✅' : '❌'}`);
   }
 
   if (failures.length) {

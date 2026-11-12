@@ -14,6 +14,7 @@ import {
 import { REFRESH_INTERVAL_MS, datasetChanged, shouldRecheck } from './refresh.mjs';
 
 const DATA_URL = 'data/news.json';
+const DEALS_URL = 'data/deals.json';
 const PAGE_SIZE = 40;
 
 const STORAGE_KEYS = {
@@ -25,14 +26,20 @@ const STORAGE_KEYS = {
 
 const CATEGORIES = ['模型发布', '产品动态', '研究前沿', '行业动态', '开源工具', '观点方法'];
 
+const DEAL_TYPE_LABELS = { free: '免费使用', discount: '优惠购买' };
+
 const $ = (selector, scope = document) => scope.querySelector(selector);
 const $$ = (selector, scope = document) => [...scope.querySelectorAll(selector)];
 
 const state = {
   data: null,
-  view: 'all', // all | today | day | bookmarks（默认展示全部归档，最新在前）
+  deals: null, // data/deals.json：免费优惠视图的数据集（进入该视图时才懒加载）
+  dealsLoading: false,
+  dealsFailed: false,
+  view: 'all', // all | today | day | bookmarks | deals（默认展示全部归档，最新在前）
   day: null,
   category: 'all',
+  dealType: 'all', // 免费优惠视图的类型筛选：all | free | discount
   lang: 'zh', // 默认只看中文，切换后会记在本地
   sort: 'time',
   query: '',
@@ -185,7 +192,10 @@ function applyRouteState(initial = false) {
   state.day = next.day;
   state.category = next.category;
   if (next.lang) state.lang = next.lang;
+  // 类型与分类一样，跟随哈希无条件同步（#/deals 不带 type 时复位为全部）
+  if (state.view === 'deals') state.dealType = next.dealType || 'all';
   state.limit = PAGE_SIZE;
+  if (state.view === 'deals') ensureDeals();
   if (!initial) render();
 }
 
@@ -195,9 +205,9 @@ function applyRoute() {
 
 /* --------------------------------------------------------------- 数据加载 */
 
-async function fetchDataset() {
+async function fetchDataset(url = DATA_URL) {
   // no-cache：每次都向服务端校验一遍，避免看到浏览器缓存里的旧数据
-  const response = await fetch(DATA_URL, { cache: 'no-cache' });
+  const response = await fetch(url, { cache: 'no-cache' });
   if (!response.ok) throw new Error(`HTTP ${response.status}`);
   const data = await response.json();
   if (!Array.isArray(data.items)) throw new Error('数据格式不正确');
@@ -220,7 +230,43 @@ function applyDataset(data, { initial = false } = {}) {
 }
 
 async function loadData() {
-  applyDataset(await fetchDataset(), { initial: true });
+  applyDataset(await fetchDataset(DATA_URL), { initial: true });
+}
+
+/* ------------------------------------------------------ 免费优惠数据集 */
+
+/**
+ * data/deals.json 只服务「免费优惠」视图：首次进入该视图时才加载，
+ * 不给默认资讯流增加任何请求。失败时置空数据集并在空态里给出重试入口。
+ */
+async function ensureDeals() {
+  if (state.view !== 'deals' || state.deals || state.dealsLoading) return;
+  state.dealsLoading = true;
+  try {
+    const next = await fetchDataset(DEALS_URL);
+    state.deals = next;
+    state.dealsFailed = false;
+  } catch {
+    state.deals = { items: [], days: [], count: 0, timezone: timezone(), generatedAt: '', stats: { sources: [], languages: { zh: 0, en: 0 }, kinds: [], estimatedTime: 0 } };
+    state.dealsFailed = true;
+  } finally {
+    state.dealsLoading = false;
+    if (state.view === 'deals') render();
+  }
+}
+
+/** 已进入过免费优惠视图后，轮询刷新时顺带校验渠道数据 */
+async function refreshDeals() {
+  if (!state.deals || state.dealsFailed) return;
+  let next;
+  try {
+    next = await fetchDataset(DEALS_URL);
+  } catch {
+    return;
+  }
+  if (!datasetChanged(state.deals, next)) return;
+  state.deals = next;
+  render();
 }
 
 /* --------------------------------------------------------------- 自动刷新 */
@@ -251,6 +297,8 @@ async function refreshData() {
   applyDataset(next);
   render();
   toast(added > 0 ? `已更新到最新数据，新增 ${added} 条` : '已更新到最新数据');
+  // 免费优惠视图的数据独立成文件，进入过该视图才顺带校验（不打扰没看过的用户）
+  refreshDeals();
 }
 
 function startAutoRefresh() {
@@ -271,6 +319,7 @@ function scopeOptions() {
     day: state.day,
     today: todayKey(),
     category: state.category,
+    dealType: state.dealType,
     lang: state.lang,
     query: state.query,
     hideRead: state.hideRead,
@@ -284,11 +333,17 @@ function scopeOptions() {
 /**
  * 应用全部筛选条件（见 assets/filters.mjs）。
  * ignoreCategory 用于统计分类数量：分类芯片与侧栏分布需要的是「除了分类本身之外
- * 其余条件都生效」的分布，否则选中某个分类后其它分类的条数就没有意义了。
+ * 其余条件都生效」的分布，否则选中某个分类后其它分类的条数就没有意义了；
+ * ignoreDealType 是类型芯片计数的同款口径。
+ * 渠道数据集（data/deals.json）独立于资讯数据集，只在免费优惠视图下启用。
  */
-function scopedItems({ ignoreCategory = false } = {}) {
+function scopedItems({ ignoreCategory = false, ignoreDealType = false } = {}) {
   if (!state.data) return [];
-  return selectItems(state.data.items, { ...scopeOptions(), ignoreCategory });
+  if (state.view === 'deals') {
+    if (!state.deals) return [];
+    return selectItems(state.deals.items, { ...scopeOptions(), ignoreCategory, ignoreDealType });
+  }
+  return selectItems(state.data.items, { ...scopeOptions(), ignoreCategory, ignoreDealType });
 }
 
 /** 当前列表内容（应用了全部分类筛选 + 排序） */
@@ -336,18 +391,35 @@ function renderHero() {
 /* --------------------------------------------------------------- 筛选控件 */
 
 function renderFilters() {
-  // 计数随语言/搜索/已读等条件变化，但不随分类本身变化
-  const base = scopedItems({ ignoreCategory: true });
-  const counts = countByCategory(base);
+  if (state.view === 'deals') {
+    // 免费优惠视图：类型芯片替代分类芯片，计数不受已选类型影响
+    const base = scopedItems({ ignoreCategory: true, ignoreDealType: true });
+    const counts = {
+      free: base.filter((item) => item.dealType === 'free').length,
+      discount: base.filter((item) => item.dealType === 'discount').length,
+    };
+    const typeChips = [
+      `<button type="button" class="chip ${state.dealType === 'all' ? 'is-active' : ''}" data-type="all">全部<span class="chip-n">${base.length}</span></button>`,
+      ...Object.entries(DEAL_TYPE_LABELS).map(
+        ([type, label]) =>
+          `<button type="button" class="chip ${state.dealType === type ? 'is-active' : ''}" data-type="${type}">${label}<span class="chip-n">${counts[type] || 0}</span></button>`,
+      ),
+    ];
+    $('#catRow').innerHTML = typeChips.join('');
+  } else {
+    // 计数随语言/搜索/已读等条件变化，但不随分类本身变化
+    const base = scopedItems({ ignoreCategory: true });
+    const counts = countByCategory(base);
 
-  const chips = [
-    `<button type="button" class="chip ${state.category === 'all' ? 'is-active' : ''}" data-cat="all">全部<span class="chip-n">${base.length}</span></button>`,
-    ...CATEGORIES.map(
-      (name) =>
-        `<button type="button" class="chip ${state.category === name ? 'is-active' : ''}" data-cat="${escapeHtml(name)}">${escapeHtml(name)}<span class="chip-n">${counts.get(name) || 0}</span></button>`,
-    ),
-  ];
-  $('#catRow').innerHTML = chips.join('');
+    const chips = [
+      `<button type="button" class="chip ${state.category === 'all' ? 'is-active' : ''}" data-cat="all">全部<span class="chip-n">${base.length}</span></button>`,
+      ...CATEGORIES.map(
+        (name) =>
+          `<button type="button" class="chip ${state.category === name ? 'is-active' : ''}" data-cat="${escapeHtml(name)}">${escapeHtml(name)}<span class="chip-n">${counts.get(name) || 0}</span></button>`,
+      ),
+    ];
+    $('#catRow').innerHTML = chips.join('');
+  }
 
   $$('#langSeg button').forEach((button) => {
     button.classList.toggle('is-active', button.dataset.lang === state.lang);
@@ -368,11 +440,13 @@ function itemHtml(item) {
   const alsoIn = item.alsoIn?.length
     ? `<span>另见 ${item.alsoIn.slice(0, 2).map(escapeHtml).join('、')}</span>`
     : '';
+  const isDealsView = state.view === 'deals';
+  const topTag = isDealsView && item.dealType ? DEAL_TYPE_LABELS[item.dealType] : item.category;
   return `
     <article class="item ${isRead ? 'is-read' : ''}" data-id="${escapeHtml(item.id)}">
       <div class="item-top">
         <span class="item-source">${escapeHtml(item.source)}</span>
-        <span class="item-category">${escapeHtml(item.category)}</span>
+        <span class="item-category ${isDealsView && item.dealType ? 'item-deal' : ''}">${escapeHtml(topTag)}</span>
         <span class="item-time">${escapeHtml(relativeTime(item.publishedTs))}</span>
         <span class="item-hot">HOT ${item.hot}</span>
       </div>
@@ -382,6 +456,7 @@ function itemHtml(item) {
       ${item.summary ? `<p class="item-summary"><a href="${escapeHtml(item.url)}" target="_blank" rel="noopener noreferrer" data-act="open">${escapeHtml(item.summary)}</a></p>` : ''}
       <div class="item-bottom">
         <span class="item-flags">
+          ${item.kind === 'platform' ? '<span>平台直连</span>' : ''}
           ${item.bulk ? '<span>论文</span>' : ''}
           ${item.estimate ? '<span>时间待确认</span>' : ''}
           <span>${escapeHtml(item.lang === 'zh' ? '中文' : 'EN')}</span>${alsoIn}
@@ -413,25 +488,56 @@ function renderFeed() {
       ? `${dayLabelOf(todayKey())} · 今天`
       : state.view === 'day' && state.day
         ? dayLabelOf(state.day)
-        : '全部归档 · 最新在前';
+        : state.view === 'deals'
+          ? '免费 / 优惠大模型渠道 · 按日归档'
+          : '全部归档 · 最新在前';
+
+  const activeChip =
+    state.view === 'deals'
+      ? state.dealType !== 'all'
+        ? ` · ${DEAL_TYPE_LABELS[state.dealType]}`
+        : ''
+      : state.category !== 'all'
+        ? ` · ${escapeHtml(state.category)}`
+        : '';
 
   head.innerHTML = `<b>${escapeHtml(scopeText)}</b><span>共 ${items.length} 条${
     state.query ? ` · 关键词“${escapeHtml(state.query)}”` : ''
-  }${state.category !== 'all' ? ` · ${escapeHtml(state.category)}` : ''}</span>`;
+  }${activeChip}</span>`;
+
+  // 渠道数据还在路上：骨架屏占位，不出空态
+  if (state.view === 'deals' && !state.deals && state.dealsLoading) {
+    feed.innerHTML = '<div class="skeleton"></div><div class="skeleton"></div>';
+    empty.hidden = true;
+    moreWrap.hidden = true;
+    return;
+  }
 
   if (!items.length) {
     feed.innerHTML = '';
     moreWrap.hidden = true;
     empty.hidden = false;
-    const langScope = scopedItems({ ignoreCategory: true });
+    if (state.view === 'deals' && state.dealsFailed) {
+      empty.innerHTML =
+        '<b>渠道数据加载失败</b>请检查网络后重试。<br /><button type="button" class="ghost-btn" data-action="retry-deals" style="margin-top:12px">重新加载</button>';
+      return;
+    }
+    const langScope = scopedItems({ ignoreCategory: true, ignoreDealType: true });
     const otherLang = langScope.filter((item) => item.lang !== state.lang);
     const langHint =
       state.lang !== 'all' && otherLang.length
         ? `<br />当前范围还有 ${otherLang.length} 条${state.lang === 'zh' ? '英文' : '中文'}资讯，可切换语言查看。`
         : '';
-    empty.innerHTML = state.view === 'bookmarks' && !state.bookmarks.size
-      ? '<b>还没有收藏</b>点击资讯卡片右下角的「☆ 收藏」，之后可以在这里集中查看。'
-      : `<b>没有符合条件的资讯</b>试试放宽筛选条件，或切换日期 / 分类。${langHint}<br /><button type="button" class="ghost-btn" data-action="reset" style="margin-top:12px">重置筛选</button>`;
+    if (state.view === 'deals') {
+      const hasAny = langScope.some((item) => item.dealType);
+      empty.innerHTML = hasAny
+        ? `<b>当前条件下没有渠道条目</b>试试切换类型芯片，或放宽语言筛选。${langHint}`
+        : `<b>暂未识别到渠道条目</b>本页数据来自三路来源：平台直连（OpenRouter / 硅基流动免费模型清单，火山方舟、智谱与阿里云的官方活动页）、定向资讯搜索与资讯流水线识别，每天随流水线更新一次；<br />也可以切换到「全部语言」看看英文渠道。`;
+    } else if (state.view === 'bookmarks' && !state.bookmarks.size) {
+      empty.innerHTML = '<b>还没有收藏</b>点击资讯卡片右下角的「☆ 收藏」，之后可以在这里集中查看。';
+    } else {
+      empty.innerHTML = `<b>没有符合条件的资讯</b>试试放宽筛选条件，或切换日期 / 分类。${langHint}<br /><button type="button" class="ghost-btn" data-action="reset" style="margin-top:12px">重置筛选</button>`;
+    }
     return;
   }
 
@@ -468,7 +574,7 @@ function renderFeed() {
           <h3>${escapeHtml(group.label)}</h3>
           ${group.day === today ? '<span class="today-tag">今天</span>' : ''}
           <span class="day-count">${group.items.length < group.total ? `显示 ${group.items.length} / 共 ${group.total} 条` : `${group.total} 条`}</span>
-          ${group.day ? `<a class="day-link" href="#/day/${encodeURIComponent(group.day)}">仅看这天 →</a>` : ''}
+          ${group.day && state.view !== 'deals' ? `<a class="day-link" href="#/day/${encodeURIComponent(group.day)}">仅看这天 →</a>` : ''}
         </header>
         <div class="items">${group.items.map(itemHtml).join('')}</div>
       </section>`,
@@ -586,26 +692,51 @@ function renderCalendar() {
 
 function renderSidebar() {
   const items = scopeItems();
-  // 分类分布同样不受「当前选中的分类」影响，否则切换分类后这张表就只剩一行
-  const catScope = scopedItems({ ignoreCategory: true });
 
-  const catCounts = countByCategory(catScope);
+  const isDealsView = state.view === 'deals';
+  $('#catStatsTitle').textContent = isDealsView ? '类型分布' : '分类分布';
+  if (isDealsView) {
+    // 免费优惠视图：类型分布（不受已选类型影响），点击行可筛选类型
+    const typeScope = scopedItems({ ignoreCategory: true, ignoreDealType: true });
+    const typeEntries = Object.entries(DEAL_TYPE_LABELS).map(([type, label]) => ({
+      type,
+      label,
+      count: typeScope.filter((item) => item.dealType === type).length,
+    }));
+    const typeMax = Math.max(1, ...typeEntries.map((entry) => entry.count));
+    $('#catStats').innerHTML =
+      typeEntries
+        .map(
+          ({ type, label, count }) => `
+        <button type="button" class="stat" data-type="${type}">
+          <span class="stat-name">${escapeHtml(label)}</span>
+          <span class="stat-n">${count}</span>
+          <span class="stat-bar"><i style="width:${Math.round((count / typeMax) * 100)}%"></i></span>
+        </button>`,
+        )
+        .join('') || '<p class="muted">当前范围暂无数据</p>';
+  } else {
+    // 分类分布不受「当前选中的分类」影响，否则切换分类后这张表就只剩一行
+    const catScope = scopedItems({ ignoreCategory: true });
+    const catCounts = countByCategory(catScope);
+    const catMax = Math.max(1, ...catCounts.values());
+    $('#catStats').innerHTML = [...catCounts.entries()]
+      .sort((a, b) => b[1] - a[1])
+      .map(
+        ([name, count]) => `
+        <button type="button" class="stat" data-cat="${escapeHtml(name)}">
+          <span class="stat-name">${escapeHtml(name)}</span>
+          <span class="stat-n">${count}</span>
+          <span class="stat-bar"><i style="width:${Math.round((count / catMax) * 100)}%"></i></span>
+        </button>`,
+      )
+      .join('') || '<p class="muted">当前范围暂无数据</p>';
+  }
+
   const srcCounts = new Map();
   for (const item of items) {
     srcCounts.set(item.source, (srcCounts.get(item.source) || 0) + 1);
   }
-  const catMax = Math.max(1, ...catCounts.values());
-  $('#catStats').innerHTML = [...catCounts.entries()]
-    .sort((a, b) => b[1] - a[1])
-    .map(
-      ([name, count]) => `
-      <button type="button" class="stat" data-cat="${escapeHtml(name)}">
-        <span class="stat-name">${escapeHtml(name)}</span>
-        <span class="stat-n">${count}</span>
-        <span class="stat-bar"><i style="width:${Math.round((count / catMax) * 100)}%"></i></span>
-      </button>`,
-    )
-    .join('') || '<p class="muted">当前范围暂无数据</p>';
 
   // 来源分布
   const srcMax = Math.max(1, ...srcCounts.values());
@@ -637,7 +768,17 @@ function renderSidebar() {
     )
     .join('') || '<li class="muted">当前范围暂无数据</li>';
 
-  // 数据信息
+  // 数据信息（免费优惠视图展示渠道数据集与来源构成，其余视图展示资讯数据集）
+  if (state.view === 'deals') {
+    const kinds = Object.fromEntries((state.deals?.stats?.kinds || []).map((entry) => [entry.name, entry.count]));
+    $('#dataMeta').innerHTML = `
+      <b>渠道数据概览</b><br />
+      条目 ${state.deals?.count ?? 0} 条 · 覆盖 ${state.deals?.days?.length ?? 0} 天<br />
+      来源构成：平台直连 ${kinds.platform || 0} · 定向搜索 ${kinds.search || 0} · 资讯识别 ${kinds.news || 0}<br />
+      免费使用 ${state.deals?.items?.filter((item) => item.dealType === 'free').length ?? 0} / 优惠购买 ${state.deals?.items?.filter((item) => item.dealType === 'discount').length ?? 0}
+    `;
+    return;
+  }
   const generated = new Date(state.data.generatedAt);
   const estimated = state.data.stats.estimatedTime || 0;
   $('#dataMeta').innerHTML = `
@@ -675,6 +816,7 @@ function renderAbout() {
     <h3>数据是怎么来的</h3>
     <ul>
       <li><code>npm run fetch</code> 抓取 <code>data/feeds.json</code> 中启用的源，写入 <code>data/news.json</code></li>
+      <li><code>npm run fetch:deals</code> 聚合「免费优惠」页的渠道数据（平台直连 + 定向搜索 + 资讯识别），写入 <code>data/deals.json</code></li>
       <li><code>npm run build</code> 生成可发布的 <code>dist/</code> 目录（也可直接部署仓库根目录）</li>
       <li>同时导出订阅源 <a class="footer-link" href="data/feed.xml" target="_blank" rel="noopener">data/feed.xml</a>，可直接加进 RSS 阅读器</li>
       <li><code>npm run dev</code> 本地预览（默认 http://127.0.0.1:5173）</li>
@@ -686,6 +828,7 @@ function renderAbout() {
 
     <h3>浏览方式</h3>
     <p>默认只显示中文资讯，切换「英文 / 全部语言」后会记住你的选择。日期、分类、语言、排序状态都会写进地址栏，可以直接把链接分享给别人。</p>
+    <p>「免费优惠」页的数据来自三路来源，按日归档，可用类型芯片切换「免费使用 / 优惠购买」：① 平台直连——每天抓取各平台官方页面与公开接口，梳理主流模型的免费与优惠渠道：OpenRouter、硅基流动的免费模型清单，火山方舟 Agent / Coding Plan 指定模型折扣（含起止时间、只留进行中的），智谱 BigModel 在售的 Coding Plan / 资源包优惠，阿里云百炼新人免费额度与 Token Plan 在售折扣，标记「平台直连」的条目即官方一手信息；② 定向资讯——按关键词搜索「某模型在某 Agent 免费 / 某订阅打折 / 新用户福利」的动态；③ 资讯流水线——每日抓取的资讯中标题明确指向具体产品免费或折扣的条目。平台直连实时性最好，资讯类识别可能有遗漏或误判。</p>
     <p>页面每 ${REFRESH_INTERVAL_MS / 60000} 分钟、以及从别的标签页切回来时会自动校验一次数据，有更新就直接刷新列表 —— 不用手动重载，也不会打断你正在看的位置。</p>
 
     <h3>去重与分类</h3>
@@ -740,7 +883,12 @@ function updateNav() {
 
   $$('#nav a[data-nav]').forEach((link) => {
     const key = link.dataset.nav;
-    setActive(link, (key === 'all' && isLatest) || (key === 'bookmarks' && state.view === 'bookmarks'));
+    setActive(
+      link,
+      (key === 'all' && isLatest) ||
+        (key === 'bookmarks' && state.view === 'bookmarks') ||
+        (key === 'deals' && state.view === 'deals'),
+    );
   });
   $$('[data-mobile-nav]').forEach((link) => {
     const key = link.dataset.mobileNav;
@@ -758,6 +906,12 @@ function updateNav() {
 
 function setCategory(category) {
   state.category = state.category === category ? 'all' : category;
+  state.limit = PAGE_SIZE;
+  render();
+}
+
+function setDealType(type) {
+  state.dealType = state.dealType === type ? 'all' : type;
   state.limit = PAGE_SIZE;
   render();
 }
@@ -826,12 +980,16 @@ function bindEvents() {
 
   $('#catRow').addEventListener('click', (event) => {
     const chip = event.target.closest('.chip');
-    if (chip) setCategory(chip.dataset.cat);
+    if (!chip) return;
+    if (chip.dataset.type) setDealType(chip.dataset.type);
+    else if (chip.dataset.cat) setCategory(chip.dataset.cat);
   });
 
   $('#catStats').addEventListener('click', (event) => {
     const stat = event.target.closest('.stat');
-    if (stat) setCategory(stat.dataset.cat);
+    if (!stat) return;
+    if (stat.dataset.type) setDealType(stat.dataset.type);
+    else if (stat.dataset.cat) setCategory(stat.dataset.cat);
   });
 
   $('#langSeg').addEventListener('click', (event) => {
@@ -975,6 +1133,7 @@ function bindEvents() {
       $('#aboutDialog').showModal?.();
     } else if (kind === 'reset') {
       state.category = 'all';
+      state.dealType = 'all';
       state.lang = 'zh';
       state.sort = 'time';
       state.query = '';
@@ -990,6 +1149,10 @@ function bindEvents() {
         /* 忽略 */
       }
       render();
+    } else if (kind === 'retry-deals') {
+      state.deals = null;
+      state.dealsFailed = false;
+      ensureDeals();
     } else if (kind === 'menu') {
       setNavOpen(!$('#nav').classList.contains('is-open'));
     }

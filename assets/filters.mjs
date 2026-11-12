@@ -5,11 +5,13 @@
  * 丢分类」两个 bug 都没有测试兜底。
  * ============================================================================= */
 
-export const VIEWS = ['all', 'today', 'day', 'bookmarks', 'archive', 'stats'];
+export const VIEWS = ['all', 'today', 'day', 'bookmarks', 'archive', 'stats', 'deals'];
 export const LANGS = ['zh', 'en', 'all'];
 export const DEFAULT_LANG = 'zh';
+/** 「免费优惠」视图下的渠道类型：免费使用 / 优惠购买 */
+export const DEAL_TYPES = ['all', 'free', 'discount'];
 
-/** 解析地址栏哈希：#/all、#/today、#/bookmarks、#/archive、#/stats、#/day/2026-10-08 */
+/** 解析地址栏哈希：#/all、#/today、#/bookmarks、#/archive、#/stats、#/deals、#/day/2026-10-08 */
 export function parseHashString(hash) {
   const raw = String(hash || '').replace(/^#\/?/, '');
   const parts = raw.split('/').filter(Boolean).map((part) => {
@@ -20,10 +22,10 @@ export function parseHashString(hash) {
     }
   });
 
-  const next = { view: 'all', day: null, category: 'all', lang: null };
+  const next = { view: 'all', day: null, category: 'all', lang: null, dealType: null };
   const head = parts[0];
 
-  if (['all', 'today', 'bookmarks', 'archive', 'stats'].includes(head)) next.view = head;
+  if (['all', 'today', 'bookmarks', 'archive', 'stats', 'deals'].includes(head)) next.view = head;
   else if (head === 'day' && parts[1]) {
     next.view = 'day';
     next.day = parts[1];
@@ -37,6 +39,9 @@ export function parseHashString(hash) {
     const value = parts[i + 1];
     if (key === 'cat' && value) next.category = value;
     else if (key === 'lang' && LANGS.includes(value)) next.lang = value;
+    else if (key === 'type' && next.view === 'deals' && DEAL_TYPES.includes(value) && value !== 'all') {
+      next.dealType = value;
+    }
   }
   return next;
 }
@@ -44,22 +49,26 @@ export function parseHashString(hash) {
 /** 由状态生成哈希（省略默认值，保持链接简洁） */
 export function buildHashString(state) {
   const parts = [];
-  if (['bookmarks', 'archive', 'stats'].includes(state.view)) parts.push(state.view);
+  if (['bookmarks', 'archive', 'stats', 'deals'].includes(state.view)) parts.push(state.view);
   else if (state.view === 'today') parts.push('today');
   else if (state.view === 'day' && state.day) parts.push('day', state.day);
   else parts.push('all');
 
   if ((state.lang || DEFAULT_LANG) !== DEFAULT_LANG) parts.push('lang', state.lang);
   if (state.category && state.category !== 'all') parts.push('cat', state.category);
+  if (state.view === 'deals' && state.dealType && state.dealType !== 'all') {
+    parts.push('type', state.dealType);
+  }
   return `#/${parts.map(encodeURIComponent).join('/')}`;
 }
 
-/** 视图范围：某个日期 / 今天 / 收藏 / 全部 */
+/** 视图范围：某个日期 / 今天 / 收藏 / 全部 / 免费优惠渠道 */
 function baseScope(items, options) {
   const { view, day, today, bookmarkIds } = options;
   if (view === 'bookmarks') return items.filter((item) => bookmarkIds.has(item.id));
   if (view === 'today') return items.filter((item) => item.day === today);
   if (view === 'day' && day) return items.filter((item) => item.day === day);
+  if (view === 'deals') return items.filter((item) => item.dealType);
   return items;
 }
 
@@ -67,11 +76,14 @@ function baseScope(items, options) {
  * 应用筛选并返回列表。
  * ignoreCategory=true 时跳过分类筛选本身——分类计数要的正是这个口径：
  * 语言/搜索/已读等条件都生效，但不因为「已经选了某个分类」而把其它分类抹掉。
+ * 免费优惠视图用类型芯片替代分类芯片，因此该视图下分类筛选不生效（同 ignoreCategory 的口径）。
  */
 export function selectItems(items, options = {}) {
   const {
     ignoreCategory = false,
+    ignoreDealType = false,
     category = 'all',
+    dealType = 'all',
     lang = 'all',
     query = '',
     hideRead = false,
@@ -86,7 +98,12 @@ export function selectItems(items, options = {}) {
 
   let result = baseScope(items, { view, day, today, bookmarkIds });
 
-  if (!ignoreCategory && category !== 'all') result = result.filter((item) => item.category === category);
+  if (!ignoreCategory && category !== 'all' && view !== 'deals') {
+    result = result.filter((item) => item.category === category);
+  }
+  if (!ignoreDealType && view === 'deals' && dealType !== 'all') {
+    result = result.filter((item) => item.dealType === dealType);
+  }
   if (lang !== 'all') result = result.filter((item) => item.lang === lang);
   if (onlyPapers) result = result.filter((item) => item.bulk);
   if (hideRead) result = result.filter((item) => !readIds.has(item.id));

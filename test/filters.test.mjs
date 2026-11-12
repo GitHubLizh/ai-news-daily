@@ -42,7 +42,13 @@ const base = { today: TODAY, bookmarkIds: new Set(), readIds: new Set() };
 
 describe('parseHashString', () => {
   it('空哈希回落到默认状态', () => {
-    assert.deepEqual(parseHashString(''), { view: 'all', day: null, category: 'all', lang: null });
+    assert.deepEqual(parseHashString(''), {
+      view: 'all',
+      day: null,
+      category: 'all',
+      lang: null,
+      dealType: null,
+    });
   });
 
   it('解析日期视图', () => {
@@ -51,6 +57,7 @@ describe('parseHashString', () => {
       day: '2026-10-08',
       category: 'all',
       lang: null,
+      dealType: null,
     });
   });
 
@@ -65,6 +72,16 @@ describe('parseHashString', () => {
     assert.equal(parseHashString('#/all/lang/en').lang, 'en');
     assert.equal(parseHashString('#/all/lang/全部').lang, null);
     assert.equal(parseHashString('#/all/lang/en/cat/模型发布').category, '模型发布');
+  });
+
+  it('解析免费优惠视图与类型参数', () => {
+    assert.equal(parseHashString('#/deals').view, 'deals');
+    assert.equal(parseHashString('#/deals/type/free').dealType, 'free');
+    assert.equal(parseHashString('#/deals/type/discount').dealType, 'discount');
+    assert.equal(parseHashString('#/deals/type/all').dealType, null);
+    assert.equal(parseHashString('#/deals/type/乱码').dealType, null);
+    assert.equal(parseHashString('#/deals/lang/en').lang, 'en');
+    assert.equal(parseHashString('#/all/type/free').dealType, null, 'type 只在 deals 视图生效');
   });
 
   it('分类名含中文时能正确解码', () => {
@@ -100,6 +117,7 @@ describe('archive / stats 视图', () => {
         day: null,
         category: '研究前沿',
         lang: 'all',
+        dealType: null,
       });
     }
   });
@@ -112,6 +130,70 @@ describe('archive / stats 视图', () => {
         ['a', 'b'],
       );
     }
+  });
+});
+
+describe('deals（免费优惠）视图', () => {
+  const DEALS = [
+    ...SAMPLE,
+    item({ id: 'h', lang: 'zh', category: '产品动态', day: '2026-10-09', hot: 60, title: '某大模型限时免费开放', dealType: 'free' }),
+    item({ id: 'i', lang: 'en', category: '产品动态', day: '2026-10-08', hot: 40, title: 'API price cut announced', dealType: 'discount' }),
+    item({ id: 'j', lang: 'zh', category: '产品动态', day: '2026-10-08', hot: 20, title: '会员优惠购', dealType: 'discount' }),
+  ];
+
+  it('hash 路由往返一致', () => {
+    assert.equal(buildHashString({ view: 'deals', lang: 'zh', category: 'all', dealType: 'free' }), '#/deals/type/free');
+    assert.equal(buildHashString({ view: 'deals', lang: 'all', category: 'all', dealType: 'all' }), '#/deals/lang/all');
+    const parsed = parseHashString(buildHashString({ view: 'deals', lang: 'en', category: 'all', dealType: 'discount' }));
+    assert.equal(parsed.view, 'deals');
+    assert.equal(parsed.dealType, 'discount');
+    assert.equal(parsed.lang, 'en');
+  });
+
+  it('只保留带渠道标记的条目', () => {
+    assert.deepEqual(
+      selectItems(DEALS, { ...base, view: 'deals', lang: 'all' }).map((entry) => entry.id),
+      ['h', 'i', 'j'],
+    );
+  });
+
+  it('类型筛选生效，且不把未选中类型的计数抹掉', () => {
+    const options = { ...base, view: 'deals', lang: 'all' };
+    assert.deepEqual(
+      selectItems(DEALS, { ...options, dealType: 'free' }).map((entry) => entry.id),
+      ['h'],
+    );
+    assert.deepEqual(
+      selectItems(DEALS, { ...options, dealType: 'discount' }).map((entry) => entry.id),
+      ['i', 'j'],
+    );
+    assert.equal(selectItems(DEALS, { ...options, dealType: 'free', ignoreDealType: true }).length, 3);
+  });
+
+  it('deals 视图下分类筛选不生效（类型芯片替代分类芯片）', () => {
+    const options = { ...base, view: 'deals', lang: 'all', category: '模型发布' };
+    assert.equal(selectItems(DEALS, options).length, 3);
+  });
+
+  it('deals 视图下语言、搜索、已读等其余筛选照常叠加', () => {
+    assert.deepEqual(
+      selectItems(DEALS, { ...base, view: 'deals', lang: 'zh' }).map((entry) => entry.id),
+      ['h', 'j'],
+    );
+    assert.deepEqual(
+      selectItems(DEALS, { ...base, view: 'deals', lang: 'all', query: 'price' }).map((entry) => entry.id),
+      ['i'],
+    );
+    assert.deepEqual(
+      selectItems(DEALS, {
+        ...base,
+        view: 'deals',
+        lang: 'all',
+        hideRead: true,
+        readIds: new Set(['h']),
+      }).map((entry) => entry.id),
+      ['i', 'j'],
+    );
   });
 });
 

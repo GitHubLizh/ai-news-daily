@@ -405,6 +405,23 @@ summary {
   margin-top: 16px;
 }
 
+/* 「免费优惠」视图：换一版页面说明，并隐藏按全量资讯计数的日历卡（口径不一致） */
+.intro-deals {
+  display: none;
+}
+
+body[data-view='deals'] .site-intro:not(.intro-deals) {
+  display: none;
+}
+
+body[data-view='deals'] .intro-deals {
+  display: block;
+}
+
+body[data-view='deals'] .calendar-card {
+  display: none;
+}
+
 .archive-page {
   padding: 32px 0 56px;
 }
@@ -751,6 +768,12 @@ summary {
 .item-category {
   padding-left: 11px;
   border-left: 1px solid var(--border-2);
+}
+
+/* 免费优惠视图里的类型标签（免费使用 / 优惠购买），用信号朱红突出 */
+.item-category.item-deal {
+  color: var(--brand-ink);
+  font-weight: 650;
 }
 
 .item-time,
@@ -1473,7 +1496,7 @@ summary {
     bottom: 0;
     z-index: 40;
     display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(5, minmax(0, 1fr));
     min-height: calc(var(--tabbar-h) + env(safe-area-inset-bottom));
     padding-bottom: env(safe-area-inset-bottom);
     border-top: 1px solid var(--border-2);

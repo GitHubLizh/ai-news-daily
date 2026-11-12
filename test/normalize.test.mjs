@@ -8,6 +8,7 @@ import {
   dayKey,
   dayLabel,
   dedupeItems,
+  detectDealType,
   hotKeywordHits,
   hotScore,
   isAiRelated,
@@ -99,6 +100,72 @@ describe('dayKey / dayLabel', () => {
   });
 });
 
+describe('detectDealType（免费/优惠渠道识别）', () => {
+  it('识别具体模型的免费使用信号', () => {
+    assert.equal(detectDealType('OpenAI 向免费用户开放 GPT-6'), 'free');
+    assert.equal(detectDealType('Kimi 赠送新用户百万 token'), 'free');
+    assert.equal(detectDealType('Gemini 2.5 免费版扩容'), 'free');
+    assert.equal(detectDealType('Anthropic makes Claude free for everyone'), 'free');
+  });
+
+  it('识别 API 降价与折扣信号', () => {
+    assert.equal(detectDealType('DeepSeek API 宣布降价'), 'discount');
+    assert.equal(detectDealType('OpenAI offers a discount on API'), 'discount');
+    assert.equal(detectDealType('New price cut for Gemini API'), 'discount');
+    assert.equal(detectDealType('OpenAI cuts the price of its API'), 'discount');
+    assert.equal(detectDealType('Claude Haiku 5.5 arrives with price cuts'), 'discount');
+  });
+
+  it('识别订阅 / Coding Plan 优惠', () => {
+    assert.equal(detectDealType('Claude 会员 5 折结算'), 'discount');
+    assert.equal(detectDealType('Cursor Coding Plan 限时优惠 5 折'), 'discount');
+    assert.equal(detectDealType('GitHub Copilot 学生免费认证开放'), 'free');
+    assert.equal(detectDealType('免费领取 Claude API，叠加限时折扣'), 'free', '免费与优惠同时命中按免费归类');
+  });
+
+  it('识别国内 Agent 上的具体渠道信息', () => {
+    assert.equal(detectDealType('DeepSeek V4.1 Flash 在 Qoder CN 限时免费使用'), 'free');
+    assert.equal(detectDealType('智谱 Zcode 新用户每天可免费领取 token'), 'free');
+    assert.equal(detectDealType('Trae Coding Plan 限时 5 折'), 'discount');
+    assert.equal(detectDealType('腾讯 CodeBuddy 上线某模型免费额度'), 'free');
+  });
+
+  it('只认具体产品：泛指 AI / 模型的免费信息不算渠道', () => {
+    assert.equal(detectDealType('被这个新出的免费国产 AI 接住了！'), null);
+    assert.equal(detectDealType('奔驰 E 300 L 起售价下调 1.6 万元，首发 AI 座舱'), null);
+    assert.equal(detectDealType('AI 公司免费上门修水电，只为录像训练机器人'), null);
+    assert.equal(detectDealType('Epic 喜加二：游戏限时免费领取'), null);
+    assert.equal(detectDealType('罗技又侮辱用户像狗，「一打折就凑上来」'), null);
+    assert.equal(detectDealType('Meta may train AI on news sites for free'), null);
+  });
+
+  it('早报 / 合集类标题直接排除', () => {
+    assert.equal(detectDealType('AI 早报 1023：GPT-6 限时免费开放'), null);
+  });
+
+  it('交易词指向的不是模型/订阅本身时排除', () => {
+    assert.equal(detectDealType('消息称 OpenAI 融资磋商进入尾声，估值目标下调至 1.25 万亿美元'), null);
+    assert.equal(detectDealType('Anthropic launches a free AI scanner for open-source projects'), null);
+    assert.equal(detectDealType('AI 公司免费上门修水电，只为录像训练机器人'), null);
+  });
+
+  it('价格下调句式仍算折扣', () => {
+    assert.equal(detectDealType('Claude API 价格下调 30%'), 'discount');
+  });
+
+  it('英文按词边界匹配，复合词不算信号', () => {
+    assert.equal(detectDealType('Mistral discounting plans leak'), null);
+    assert.equal(detectDealType('Nothing teases a screen-free AI device'), null);
+    assert.equal(detectDealType('Nvidia makes robot labeling cheaper than GPT-6'), null);
+  });
+
+  it('没有渠道信号时返回 null', () => {
+    assert.equal(detectDealType('OpenAI 发布 GPT-6 模型'), null);
+    assert.equal(detectDealType('某某公司完成新一轮融资'), null);
+    assert.equal(detectDealType(''), null);
+  });
+});
+
 describe('makeItem', () => {
   const now = Date.parse('2026-10-08T12:00:00Z');
 
@@ -137,6 +204,13 @@ describe('makeItem', () => {
   it('汇总源标注 lang 与 bulk', () => {
     const item = makeItem(raw({ bulk: true }), { now });
     assert.equal(item.bulk, true);
+  });
+
+  it('按标题打渠道标记，bulk 论文源不参与', () => {
+    const deal = makeItem(raw({ title: '某大模型 API 宣布降价' }), { now });
+    assert.equal(deal.dealType, 'discount');
+    const paper = makeItem(raw({ title: 'No Free Lunch in Model Training', bulk: true }), { now });
+    assert.equal(paper.dealType, null);
   });
 });
 
