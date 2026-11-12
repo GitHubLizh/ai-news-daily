@@ -11,7 +11,7 @@ export const DEFAULT_LANG = 'zh';
 /** 「免费优惠」视图下的渠道类型：免费使用 / 优惠购买 */
 export const DEAL_TYPES = ['all', 'free', 'discount'];
 
-/** 解析地址栏哈希：#/all、#/today、#/bookmarks、#/archive、#/stats、#/deals、#/day/2026-10-08 */
+/** 解析地址栏哈希：#/all、#/today、#/bookmarks、#/archive、#/stats、#/deals、#/deals/day/2026-10-08、#/day/2026-10-08 */
 export function parseHashString(hash) {
   const raw = String(hash || '').replace(/^#\/?/, '');
   const parts = raw.split('/').filter(Boolean).map((part) => {
@@ -31,10 +31,15 @@ export function parseHashString(hash) {
     next.day = parts[1];
   }
 
-  // 视图段（day 还带一个日期）之后的才是 key/value 对；
-  // 漏掉这个偏移会把 cat 当成值吃掉，分类筛选就会失效。
-  const start = head === 'day' ? 2 : VIEWS.includes(head) ? 1 : 0;
-  for (let i = start; i + 1 < parts.length; i += 2) {
+  // 消费头部段：视图名，普通 day 视图的日期，deals 视图的 day/日期段；
+  // 之后剩下的才是 key/value 对（漏掉偏移会把 cat 当成值吃掉）
+  let index = 1;
+  if (next.view === 'day' && parts[1]) index = 2;
+  else if (next.view === 'deals' && parts[1] === 'day' && parts[2]) {
+    next.day = parts[2];
+    index = 3;
+  }
+  for (let i = index; i + 1 < parts.length; i += 2) {
     const key = parts[i];
     const value = parts[i + 1];
     if (key === 'cat' && value) next.category = value;
@@ -49,8 +54,10 @@ export function parseHashString(hash) {
 /** 由状态生成哈希（省略默认值，保持链接简洁） */
 export function buildHashString(state) {
   const parts = [];
-  if (['bookmarks', 'archive', 'stats', 'deals'].includes(state.view)) parts.push(state.view);
-  else if (state.view === 'today') parts.push('today');
+  if (['bookmarks', 'archive', 'stats', 'deals'].includes(state.view)) {
+    parts.push(state.view);
+    if (state.view === 'deals' && state.day) parts.push('day', state.day);
+  } else if (state.view === 'today') parts.push('today');
   else if (state.view === 'day' && state.day) parts.push('day', state.day);
   else parts.push('all');
 
@@ -62,13 +69,16 @@ export function buildHashString(state) {
   return `#/${parts.map(encodeURIComponent).join('/')}`;
 }
 
-/** 视图范围：某个日期 / 今天 / 收藏 / 全部 / 免费优惠渠道 */
+/** 视图范围：某个日期 / 今天 / 收藏 / 全部 / 免费优惠渠道（可再限定到某天） */
 function baseScope(items, options) {
   const { view, day, today, bookmarkIds } = options;
   if (view === 'bookmarks') return items.filter((item) => bookmarkIds.has(item.id));
   if (view === 'today') return items.filter((item) => item.day === today);
   if (view === 'day' && day) return items.filter((item) => item.day === day);
-  if (view === 'deals') return items.filter((item) => item.dealType);
+  if (view === 'deals') {
+    const pool = items.filter((item) => item.dealType);
+    return day ? pool.filter((item) => item.day === day) : pool;
+  }
   return items;
 }
 

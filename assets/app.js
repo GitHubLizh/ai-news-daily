@@ -101,8 +101,13 @@ function relativeTime(timestamp) {
   return `${Number(month)}月${Number(dayOfMonth)}日 ${clockOf(timestamp)}`;
 }
 
+/** 当前视图使用的数据集：免费优惠视图读渠道数据，其余读资讯数据 */
+function activeDataset() {
+  return state.view === 'deals' ? state.deals : state.data;
+}
+
 function dayLabelOf(day) {
-  const found = state.data?.days?.find((entry) => entry.day === day);
+  const found = activeDataset()?.days?.find((entry) => entry.day === day);
   if (found) return found.label;
   const [year, month, dayOfMonth] = day.split('-').map(Number);
   const weekday = new Intl.DateTimeFormat('zh-CN', { timeZone: 'UTC', weekday: 'short' }).format(
@@ -489,7 +494,9 @@ function renderFeed() {
       : state.view === 'day' && state.day
         ? dayLabelOf(state.day)
         : state.view === 'deals'
-          ? '免费 / 优惠大模型渠道 · 按日归档'
+          ? state.day
+            ? `免费 / 优惠渠道 · ${dayLabelOf(state.day)}`
+            : '免费 / 优惠大模型渠道 · 按日归档'
           : '全部归档 · 最新在前';
 
   const activeChip =
@@ -503,7 +510,7 @@ function renderFeed() {
 
   head.innerHTML = `<b>${escapeHtml(scopeText)}</b><span>共 ${items.length} 条${
     state.query ? ` · 关键词“${escapeHtml(state.query)}”` : ''
-  }${activeChip}</span>`;
+  }${activeChip}${state.view === 'deals' && state.day ? ' · <a class="day-link" href="#/deals">全部日期 →</a>' : ''}</span>`;
 
   // 渠道数据还在路上：骨架屏占位，不出空态
   if (state.view === 'deals' && !state.deals && state.dealsLoading) {
@@ -574,7 +581,7 @@ function renderFeed() {
           <h3>${escapeHtml(group.label)}</h3>
           ${group.day === today ? '<span class="today-tag">今天</span>' : ''}
           <span class="day-count">${group.items.length < group.total ? `显示 ${group.items.length} / 共 ${group.total} 条` : `${group.total} 条`}</span>
-          ${group.day && state.view !== 'deals' ? `<a class="day-link" href="#/day/${encodeURIComponent(group.day)}">仅看这天 →</a>` : ''}
+          ${group.day ? `<a class="day-link" href="#/${state.view === 'deals' ? `deals/day/${encodeURIComponent(group.day)}` : `day/${encodeURIComponent(group.day)}`}">仅看这天 →</a>` : ''}
         </header>
         <div class="items">${group.items.map(itemHtml).join('')}</div>
       </section>`,
@@ -591,14 +598,16 @@ function renderFeed() {
 
 function daysWithNews() {
   const map = new Map();
-  for (const entry of state.data.days || []) map.set(entry.day, entry.count);
+  for (const entry of activeDataset()?.days || []) map.set(entry.day, entry.count);
   return map;
 }
 
 function renderCalendar() {
   const box = $('#calendar');
+  const days = activeDataset()?.days || [];
   const withNews = daysWithNews();
-  const days = state.data.days || [];
+  // 该链接指向资讯流的日期归档页，免费优惠视图下口径不符，先藏掉
+  $('.calendar-archive-link')?.setAttribute('hidden', state.view === 'deals' ? '' : null);
   if (!days.length) {
     box.innerHTML = '<p class="muted">暂无数据</p>';
     return;
@@ -917,8 +926,13 @@ function setDealType(type) {
 }
 
 function selectDay(day) {
-  state.view = 'day';
-  state.day = day;
+  // 免费优惠视图下日期选择保持在渠道数据集内（否则会跳到资讯流的当天）
+  if (state.view === 'deals') {
+    state.day = day;
+  } else {
+    state.view = 'day';
+    state.day = day;
+  }
   state.limit = PAGE_SIZE;
   render();
   $('#feed')?.scrollIntoView({ behavior: 'smooth', block: 'start' });

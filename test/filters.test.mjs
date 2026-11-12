@@ -150,6 +150,25 @@ describe('deals（免费优惠）视图', () => {
     assert.equal(parsed.lang, 'en');
   });
 
+  it('支持渠道的日期链接 #/deals/day/YYYY-MM-DD', () => {
+    const parsed = parseHashString('#/deals/day/2026-10-08/type/free');
+    assert.equal(parsed.view, 'deals');
+    assert.equal(parsed.day, '2026-10-08');
+    assert.equal(parsed.dealType, 'free');
+    const hash = buildHashString({ view: 'deals', day: '2026-10-08', lang: 'zh', category: 'all', dealType: 'all' });
+    assert.equal(hash, '#/deals/day/2026-10-08');
+    // 不带日期时不应误读后续参数
+    assert.equal(parseHashString('#/deals/type/free').day, null);
+  });
+
+  it('deals 视图限定某天时只返回当天的渠道条目', () => {
+    const options = { ...base, view: 'deals', day: '2026-10-08', lang: 'all' };
+    assert.deepEqual(
+      selectItems(DEALS, options).map((entry) => entry.id),
+      ['i', 'j'],
+    );
+  });
+
   it('只保留带渠道标记的条目', () => {
     assert.deepEqual(
       selectItems(DEALS, { ...base, view: 'deals', lang: 'all' }).map((entry) => entry.id),

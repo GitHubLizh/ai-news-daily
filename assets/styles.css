@@ -405,7 +405,7 @@ summary {
   margin-top: 16px;
 }
 
-/* 「免费优惠」视图：换一版页面说明，并隐藏按全量资讯计数的日历卡（口径不一致） */
+/* 「免费优惠」视图：换一版页面说明；日历卡与热度榜照常显示（数据集已在 app.js 按视图切换） */
 .intro-deals {
   display: none;
 }
@@ -416,10 +416,6 @@ body[data-view='deals'] .site-intro:not(.intro-deals) {
 
 body[data-view='deals'] .intro-deals {
   display: block;
-}
-
-body[data-view='deals'] .calendar-card {
-  display: none;
 }
 
 .archive-page {
@@ -1678,7 +1674,8 @@ body[data-view='deals'] .calendar-card {
   }
 
   body[data-view='archive'] .side-col,
-  body[data-view='stats'] .side-col {
+  body[data-view='stats'] .side-col,
+  body[data-view='deals'] .side-col {
     display: block;
   }
 
