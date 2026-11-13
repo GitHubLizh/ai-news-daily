@@ -825,7 +825,7 @@ function renderAbout() {
     <h3>数据是怎么来的</h3>
     <ul>
       <li><code>npm run fetch</code> 抓取 <code>data/feeds.json</code> 中启用的源，写入 <code>data/news.json</code></li>
-      <li><code>npm run fetch:deals</code> 聚合「免费优惠」页的渠道数据（平台直连 + 定向搜索 + 资讯识别），写入 <code>data/deals.json</code></li>
+      <li><code>npm run fetch:deals</code> 聚合「免费与优惠」页的渠道数据（平台直连 + 定向搜索 + 资讯识别），写入 <code>data/deals.json</code></li>
       <li><code>npm run build</code> 生成可发布的 <code>dist/</code> 目录（也可直接部署仓库根目录）</li>
       <li>同时导出订阅源 <a class="footer-link" href="data/feed.xml" target="_blank" rel="noopener">data/feed.xml</a>，可直接加进 RSS 阅读器</li>
       <li><code>npm run dev</code> 本地预览（默认 http://127.0.0.1:5173）</li>
@@ -837,7 +837,7 @@ function renderAbout() {
 
     <h3>浏览方式</h3>
     <p>默认只显示中文资讯，切换「英文 / 全部语言」后会记住你的选择。日期、分类、语言、排序状态都会写进地址栏，可以直接把链接分享给别人。</p>
-    <p>「免费优惠」页的数据来自三路来源，按日归档，可用类型芯片切换「免费使用 / 优惠购买」：① 平台直连——每天抓取各平台官方页面与公开接口，梳理主流模型的免费与优惠渠道：OpenRouter、硅基流动的免费模型清单，火山方舟 Agent / Coding Plan 指定模型折扣（含起止时间、只留进行中的），智谱 BigModel 在售的 Coding Plan / 资源包优惠，阿里云百炼新人免费额度与 Token Plan 在售折扣，标记「平台直连」的条目即官方一手信息；② 定向资讯——按关键词搜索「某模型在某 Agent 免费 / 某订阅打折 / 新用户福利」的动态；③ 资讯流水线——每日抓取的资讯中标题明确指向具体产品免费或折扣的条目。平台直连实时性最好，资讯类识别可能有遗漏或误判。</p>
+    <p>「免费与优惠」页的数据来自三路来源，按日归档，可用类型芯片切换「免费使用 / 优惠购买」：① 平台直连——每天抓取各平台官方页面与公开接口，梳理主流模型的免费与优惠渠道：OpenRouter、硅基流动的免费模型清单，火山方舟 Agent / Coding Plan 指定模型折扣（含起止时间、只留进行中的），智谱 BigModel 在售的 Coding Plan / 资源包优惠，阿里云百炼新人免费额度与 Token Plan 在售折扣，标记「平台直连」的条目即官方一手信息；② 定向资讯——按关键词搜索「某模型在某 Agent 免费 / 某订阅打折 / 新用户福利」的动态；③ 资讯流水线——每日抓取的资讯中标题明确指向具体产品免费或折扣的条目。平台直连实时性最好，资讯类识别可能有遗漏或误判。</p>
     <p>页面每 ${REFRESH_INTERVAL_MS / 60000} 分钟、以及从别的标签页切回来时会自动校验一次数据，有更新就直接刷新列表 —— 不用手动重载，也不会打断你正在看的位置。</p>
 
     <h3>去重与分类</h3>
