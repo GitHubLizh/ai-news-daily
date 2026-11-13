@@ -85,6 +85,19 @@ Page({
     if (this.unsubscribe) this.unsubscribe();
   },
 
+  onShareAppMessage() {
+    return {
+      title: 'AI 资讯速递',
+      path: '/pages/latest/latest',
+    };
+  },
+
+  onShareTimeline() {
+    return {
+      title: 'AI 资讯速递',
+    };
+  },
+
   scopeOptions(overrides = {}) {
     return {
       view: this.state.view,

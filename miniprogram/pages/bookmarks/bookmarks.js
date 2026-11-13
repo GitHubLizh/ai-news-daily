@@ -41,6 +41,19 @@ Page({
     if (this.unsubscribe) this.unsubscribe();
   },
 
+  onShareAppMessage() {
+    return {
+      title: 'AI 资讯速递',
+      path: '/pages/bookmarks/bookmarks',
+    };
+  },
+
+  onShareTimeline() {
+    return {
+      title: 'AI 资讯速递',
+    };
+  },
+
   async render() {
     const data = app.globalData.data;
     if (!data) return;

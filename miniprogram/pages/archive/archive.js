@@ -45,6 +45,19 @@ Page({
     if (this.unsubscribe) this.unsubscribe();
   },
 
+  onShareAppMessage() {
+    return {
+      title: 'AI 资讯速递',
+      path: '/pages/archive/archive',
+    };
+  },
+
+  onShareTimeline() {
+    return {
+      title: 'AI 资讯速递',
+    };
+  },
+
   daysMap() {
     const data = app.globalData.data;
     const map = new Map();

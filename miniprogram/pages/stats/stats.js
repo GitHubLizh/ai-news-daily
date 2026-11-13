@@ -50,6 +50,19 @@ Page({
     if (this.unsubscribe) this.unsubscribe();
   },
 
+  onShareAppMessage() {
+    return {
+      title: 'AI 资讯速递',
+      path: '/pages/stats/stats',
+    };
+  },
+
+  onShareTimeline() {
+    return {
+      title: 'AI 资讯速递',
+    };
+  },
+
   render(data) {
     const items = data.items;
 

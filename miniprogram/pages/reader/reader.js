@@ -79,4 +79,11 @@ Page({
       path: `/pages/reader/reader?url=${encodeURIComponent(this.data.url)}&title=${encodeURIComponent(this.data.title)}&source=${encodeURIComponent(this.data.source)}`,
     };
   },
+
+  onShareTimeline() {
+    return {
+      title: this.data.title || 'AI 资讯速递',
+      query: `url=${encodeURIComponent(this.data.url)}&title=${encodeURIComponent(this.data.title)}&source=${encodeURIComponent(this.data.source)}`,
+    };
+  },
 });
