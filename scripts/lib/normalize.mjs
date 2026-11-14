@@ -105,7 +105,7 @@ const DEAL_PRODUCT_KEYWORDS = [
   '智谱', '阶跃', 'openai', 'anthropic', 'meta ai', 'xai', 'cohere', 'perplexity', 'groq',
   'openrouter', 'siliconflow', '硅基流动', 'character ai',
   'copilot', 'cursor', 'codex', 'windsurf', 'devin', 'manus',
-  'qoder', 'zcode', 'trae', 'codegeex', 'codebuddy', '灵码', '快码', 'marscode', '扣子', 'coze',
+  'qoder', 'zcode', 'workbuddy', 'trae', 'codegeex', 'codebuddy', '灵码', '快码', 'marscode', '扣子', 'coze',
   'sora', 'veo', 'midjourney', 'suno', '可灵', '即梦',
 ];
 /** 计费面：API、token、订阅、套餐等——产品正在「被卖/被送」的信号 */

@@ -20,20 +20,24 @@ import { parseFeed } from './lib/rss.mjs';
 import {
   ALIYUN_BAILIAN_FREE_URL,
   ALIYUN_TOKENPLAN_URL,
+  DEEPSEEK_PRICING_URL,
   SEARCH_FEED_META,
   SEARCH_QUERIES,
   SILICONFLOW_PRICING_URL,
   VOLCENGINE_DISCOUNT_PAGES,
   VOLCENGINE_DOC_BASE,
+  ZCODE_CN_URL,
   aliyunBailianFreeQuota,
   aliyunTokenPlanRaws,
   buildDealsDataset,
   dealsFromSearchItems,
+  deepseekDiscountRaws,
   googleNewsUrl,
   newsItemsToDealRaws,
   openRouterFreeModels,
   siliconFlowFreeModels,
   volcEngineDiscountRaws,
+  zcodePlanRaws,
 } from './lib/deals.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -159,6 +163,28 @@ async function fetchAliyun(userAgent) {
   return raws;
 }
 
+/** 抓取 ZCode 官网套餐区，解析 GLM Coding 套餐的促销价 */
+async function fetchZCode(userAgent) {
+  const html = await withRetry('ZCode', async () =>
+    requestText(ZCODE_CN_URL, userAgent, 'text/html,application/xhtml+xml;q=0.9,*/*;q=0.5'),
+  );
+  if (!html) return [];
+  const items = zcodePlanRaws(html, { now: Date.now() });
+  console.log(`  ${items.length ? '✅' : '⚠️'} ZCode：GLM Coding 在售促销套餐 ${items.length} 个`);
+  return items;
+}
+
+/** 抓取 DeepSeek API 定价文档页，解析「限时折扣价」表格 */
+async function fetchDeepSeek(userAgent) {
+  const html = await withRetry('DeepSeek', async () =>
+    requestText(DEEPSEEK_PRICING_URL, userAgent, 'text/html,application/xhtml+xml;q=0.9,*/*;q=0.5'),
+  );
+  if (!html) return [];
+  const items = deepseekDiscountRaws(html, { now: Date.now() });
+  console.log(`  ${items.length ? '✅' : '⚠️'} DeepSeek：限时折扣表 ${items.length} 张`);
+  return items;
+}
+
 async function fetchSearchFeed(query, userAgent) {
   return withRetry(`搜索「${query}」`, async () => {
     const xml = await requestText(
@@ -207,6 +233,8 @@ async function main() {
   platformRaws.push(...(await fetchVolcEngine(userAgent)));
   platformRaws.push(...(await fetchSiliconFlow(userAgent)));
   platformRaws.push(...(await fetchAliyun(userAgent)));
+  platformRaws.push(...(await fetchZCode(userAgent)));
+  platformRaws.push(...(await fetchDeepSeek(userAgent)));
 
   // 2. 定向资讯搜索（每路独立容错）
   const searchResults = await mapLimit(SEARCH_QUERIES, CONCURRENCY, (query) => fetchSearchFeed(query, userAgent));

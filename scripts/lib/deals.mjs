@@ -4,7 +4,9 @@
  *   1. 平台直连（kind: 'platform'）：平台官方页面 / 公开接口，按日梳理各家的免费与优惠——
  *      - OpenRouter 公开模型清单里的 :free 模型（快照 + 近 N 天新增）；
  *      - 硅基流动定价页（当前免费开放的模型清单）；
- *      - 火山方舟 Agent / Coding Plan 折扣活动页（某模型 X 折 + 起止时间，只留进行中的）。
+ *      - 火山方舟 Agent / Coding Plan 折扣活动页（某模型 X 折 + 起止时间，只留进行中的）；
+ *      - ZCode 官网（GLM Coding 套餐现价 vs 原价，有促销价才成条）；
+ *      - DeepSeek API 定价文档页（「限时折扣价」表格，改版后自动停发）。
  *   2. 定向资讯搜索（kind: 'search'）：Google News RSS 按关键词搜索，
  *      复用 detectDealType 过滤出「具体产品免费 / 优惠」的条目；
  *   3. 资讯流水线（kind: 'news'）：data/news.json 中命中 dealType 的条目原样带入。
@@ -29,6 +31,12 @@ export const SILICONFLOW_HOME = 'https://siliconflow.cn';
 export const SILICONFLOW_PRICING_URL = `${SILICONFLOW_HOME}/pricing`;
 export const ALIYUN_BAILIAN_FREE_URL = 'https://help.aliyun.com/zh/model-studio/new-free-quota';
 export const ALIYUN_TOKENPLAN_URL = 'https://www.aliyun.com/benefit/scene/tokenplan';
+export const DEEPSEEK_DOCS_HOME = 'https://api-docs.deepseek.com';
+export const DEEPSEEK_PRICING_URL = `${DEEPSEEK_DOCS_HOME}/zh-cn/quick_start/pricing`;
+export const ZCODE_HOME = 'https://zcode.z.ai';
+export const ZCODE_CN_URL = `${ZCODE_HOME}/cn`;
+/** ZCode 套餐的实际订阅页（官网套餐卡上标注「最终信息以 BigModel 订阅页为准」） */
+export const GLM_CODING_BUY_URL = 'https://bigmodel.cn/glm-coding';
 
 /** 火山方舟两个折扣活动页（Agent Plan 与 Coding Plan 的指定模型抵扣折扣） */
 export const VOLCENGINE_DISCOUNT_PAGES = [
@@ -47,7 +55,7 @@ export const SEARCH_FEED_META = {
 
 /** 定向搜索词：先国内 Agent 场景（哪个模型在哪个 Agent 免费、Coding Plan 优惠、新用户福利），再覆盖海外动态 */
 export const SEARCH_QUERIES = [
-  'Qoder OR Trae OR Zcode OR CodeBuddy 免费 OR 优惠',
+  'Qoder OR Trae OR Zcode OR CodeBuddy OR WorkBuddy 免费 OR 优惠',
   'AI 编程 免费 领取 token OR 额度',
   'Coding Plan 优惠 OR 折扣 OR discount',
   '新用户 免费 大模型 OR AI 领取',
@@ -232,6 +240,88 @@ export function aliyunTokenPlanRaws(html, options = {}) {
       source: '阿里云 Token Plan',
       sourceId: 'aliyun-tokenplan',
       home: ALIYUN_TOKENPLAN_URL,
+      lang: 'zh',
+      weight: 2.5,
+      dealType: 'discount',
+      kind: 'platform',
+    });
+    if (raws.length >= maxItems) break;
+  }
+  return raws;
+}
+
+/**
+ * ZCode 官网套餐区 -> 渠道条目。
+ * 页面（SSR）把 GLM Coding 套餐数据以转义 JSON 内嵌：`\"name\":\"Lite\"…\"price\":\"¥94.4\"
+ * ,\"originalPrice\":\"¥118\"`。逐个套餐配对现价与原价，仅当现价低于原价（真有促销）才成条，
+ * 促销结束价格持平即自动停发；`?plan=` 参数保证同一次运行内各套餐条目互不去重。
+ */
+export function zcodePlanRaws(html, options = {}) {
+  const { now = Date.now(), maxItems = 3 } = options;
+  const text = String(html || '');
+  const raws = [];
+  // 引号前可有可无的转义反斜杠：同时兼容内嵌 JSON（\"price\"）与未转义渲染（"price"）两种形态
+  const pattern =
+    /\\{0,2}"name\\{0,2}":\s*\\{0,2}"(Lite|Pro|Max)\\{0,2}"[\s\S]{0,600}?\\{0,2}"price\\{0,2}":\s*\\{0,2}"¥\s*([\d.]+)\\{0,2}"[\s\S]{0,160}?\\{0,2}"originalPrice\\{0,2}":\s*\\{0,2}"¥\s*([\d.]+)\\{0,2}"/g;
+  for (const match of text.matchAll(pattern)) {
+    const [, name, promoRaw, origRaw] = match;
+    const promo = Number(promoRaw);
+    const original = Number(origRaw);
+    if (!promo || !original || promo >= original) continue;
+    const discount = String(Number(((promo / original) * 10).toFixed(1)));
+    // 套餐描述在 name 与 price 之间的邻近窗口里，拿得到就拼进摘要
+    const desc = match[0].match(/\\{0,2}"description\\{0,2}":\s*\\{0,2}"([\s\S]{2,60}?)\\{0,2}"/)?.[1] || '';
+    raws.push({
+      title: `ZCode：GLM Coding ${name} 订阅 ${discount} 折（¥${promoRaw}/月，原价 ¥${origRaw}）`,
+      url: `${GLM_CODING_BUY_URL}?plan=${name}`,
+      summary: `GLM Coding ${name}${desc ? `（${decodeBasicEntities(desc)}）` : ''}当前订阅价 ¥${promoRaw}/月、原价 ¥${origRaw}，约 ${discount} 折，适配 ZCode 等 20+ 编程工具。价格与权益以 BigModel 订阅页为准。`,
+      publishedRaw: new Date(now).toISOString(),
+      source: 'ZCode',
+      sourceId: 'zcode',
+      home: ZCODE_HOME,
+      lang: 'zh',
+      weight: 2.5,
+      dealType: 'discount',
+      kind: 'platform',
+    });
+    if (raws.length >= maxItems) break;
+  }
+  return raws;
+}
+
+/**
+ * DeepSeek API 定价文档页 -> 渠道条目。
+ * Docusaurus SSR 页面，限时折扣以表格呈现：表头「限时折扣价（5 折）」，行内是
+ * 「产品 / 计费单位 / 刊例价 / 折扣价」。只解析带折扣表头的表格，一个表格合并成
+ * 一条（各行共用同一折扣）；页面改版或折扣下线后解析不到即自动停发。
+ */
+export function deepseekDiscountRaws(html, options = {}) {
+  const { now = Date.now(), maxItems = 3 } = options;
+  const text = String(html || '');
+  const raws = [];
+  for (const table of text.matchAll(/<table[\s\S]*?<\/table>/g)) {
+    const block = table[0];
+    const header = block.match(/限时折扣价\s*（\s*([\d.]+)\s*折\s*）/);
+    if (!header) continue;
+    const rows = [...block.matchAll(/<tr>([\s\S]*?)<\/tr>/g)]
+      .map((row) =>
+        [...row[1].matchAll(/<td[^>]*>([\s\S]*?)<\/td>/g)].map((cell) =>
+          decodeBasicEntities(cell[1].replace(/<[^>]*>/g, '')).replace(/\s+/g, ' ').trim(),
+        ),
+      )
+      .filter((cells) => cells.length >= 4 && cells[0]);
+    if (!rows.length) continue;
+    const names = rows.map((cells) => cells[0]).join('、');
+    const detail = rows.map((cells) => `${cells[0]} ${cells[2]} → ${cells[3]}（${cells[1]}）`).join('；');
+    raws.push({
+      title: `DeepSeek API 限时折扣：${names} ${header[1]} 折`,
+      // ?discount= 区分同一次运行里解析到的多张折扣表；同名表格跨天同 URL 不影响每日归档
+      url: `${DEEPSEEK_PRICING_URL}?discount=${encodeURIComponent(names.slice(0, 24))}`,
+      summary: `DeepSeek API 部分能力当前执行限时折扣价（${header[1]} 折）：${detail}。价格以官方定价页为准。`,
+      publishedRaw: new Date(now).toISOString(),
+      source: 'DeepSeek',
+      sourceId: 'deepseek',
+      home: DEEPSEEK_DOCS_HOME,
       lang: 'zh',
       weight: 2.5,
       dealType: 'discount',

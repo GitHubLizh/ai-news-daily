@@ -3,9 +3,12 @@ import assert from 'node:assert/strict';
 
 import {
   ALIYUN_BAILIAN_FREE_URL,
+  DEEPSEEK_PRICING_URL,
+  GLM_CODING_BUY_URL,
   SILICONFLOW_PRICING_URL,
   buildDealsDataset,
   dealsFromSearchItems,
+  deepseekDiscountRaws,
   googleNewsUrl,
   newsItemsToDealRaws,
   openRouterFreeModels,
@@ -13,6 +16,7 @@ import {
   aliyunBailianFreeQuota,
   aliyunTokenPlanRaws,
   volcEngineDiscountRaws,
+  zcodePlanRaws,
   SEARCH_QUERIES,
 } from '../scripts/lib/deals.mjs';
 
@@ -271,10 +275,80 @@ describe('aliyunTokenPlanRaws（阿里云 Token Plan 活动页）', () => {
   });
 });
 
+describe('zcodePlanRaws（ZCode 官网 GLM Coding 套餐）', () => {
+  // 页面把套餐数据以转义 JSON 内嵌（与真实页面同构）：现价低于原价才有促销
+  const HTML = [
+    '<script>window.__DATA__="{\\"note\\":\\"价格和权益可能变化，最终信息以 BigModel 订阅页为准。\\",',
+    '\\"href\\":\\"https://bigmodel.cn/glm-coding\\",\\"plans\\":[{\\"name\\":\\"Lite\\",\\"description\\":\\"适合小型 Repo 轻量级迭代\\",',
+    '\\"price\\":\\"¥94.4\\",\\"originalPrice\\":\\"¥118\\",\\"period\\":\\"/ 月\\",\\"highlights\\":[\\"每周 10,000 积分\\"]},',
+    '{\\"name\\":\\"Pro\\",\\"badge\\":\\"推荐\\",\\"description\\":\\"适合中型 Repo 日常开发\\",\\"price\\":\\"¥430.4\\",\\"originalPrice\\":\\"¥538\\",\\"period\\":\\"/ 月\\"},',
+    '{\\"name\\":\\"Max\\",\\"description\\":\\"适合高阶用户\\",\\"price\\":\\"¥1078\\",\\"originalPrice\\":\\"¥1078\\",\\"period\\":\\"/ 月\\"}]}"</script>',
+  ].join('');
+  const NOW = Date.parse('2026-11-12T04:00:00Z');
+
+  it('只给有促销价的套餐成条，折扣按现价/原价计算', () => {
+    const raws = zcodePlanRaws(HTML, { now: NOW });
+    // Lite 与 Pro 在促销（8 折）；Max 现价等于原价，不成条
+    assert.equal(raws.length, 2);
+    assert.match(raws[0].title, /ZCode：GLM Coding Lite 订阅 8 折（¥94\.4\/月，原价 ¥118）$/);
+    assert.equal(raws[0].url, `${GLM_CODING_BUY_URL}?plan=Lite`);
+    assert.match(raws[0].summary, /适合小型 Repo 轻量级迭代/);
+    assert.match(raws[1].title, /GLM Coding Pro 订阅 8 折/);
+    assert.equal(raws[0].dealType, 'discount');
+    assert.equal(raws[0].kind, 'platform');
+    assert.equal(raws[0].lang, 'zh');
+    assert.notEqual(raws[0].url, raws[1].url);
+  });
+
+  it('促销结束（现价等于原价）或页面改版时 0 条', () => {
+    const noPromo = HTML.replaceAll('¥94.4', '¥118').replaceAll('¥430.4', '¥538');
+    assert.deepEqual(zcodePlanRaws(noPromo, { now: NOW }), []);
+    assert.deepEqual(zcodePlanRaws('', { now: NOW }), []);
+  });
+
+  it('未转义引号的同构数据也能解析', () => {
+    const plain = '{"plans":[{"name":"Lite","description":"轻量","price":"¥9.4","originalPrice":"¥10","period":"/ 月"}]}';
+    const raws = zcodePlanRaws(plain, { now: NOW });
+    assert.equal(raws.length, 1);
+    assert.match(raws[0].title, /9\.4 折/);
+  });
+});
+
+describe('deepseekDiscountRaws（DeepSeek API 定价文档页）', () => {
+  // 与真实页面同构：带「限时折扣价」表头的表格 + 无折扣表头的普通表格
+  const HTML = `
+    <h2 id="speech-pricing">语音价格​</h2>
+    <table><thead><tr><th>API</th><th>计费单位</th><th>刊例价</th><th>限时折扣价（5 折）</th></tr></thead><tbody>
+    <tr><td><a href="/zh-cn/guides/tts">语音合成（TTS）</a></td><td>每 10,000 字符</td><td>3元</td><td>1.5元</td></tr>
+    <tr><td><a href="/zh-cn/guides/asr">语音识别（ASR）</a></td><td>每小时音频</td><td>0.78元</td><td>0.39元</td></tr>
+    </tbody></table>
+    <table><thead><tr><th>模型</th><th>计费单位</th><th>价格</th></tr></thead><tbody>
+    <tr><td>deepseek-chat</td><td>百万 tokens</td><td>2元</td></tr>
+    </tbody></table>`;
+  const NOW = Date.parse('2026-11-12T04:00:00Z');
+
+  it('一张折扣表合并成一条，含产品名与刊例价→折扣价', () => {
+    const raws = deepseekDiscountRaws(HTML, { now: NOW });
+    assert.equal(raws.length, 1);
+    assert.match(raws[0].title, /DeepSeek API 限时折扣：语音合成（TTS）、语音识别（ASR） 5 折$/);
+    assert.match(raws[0].summary, /语音合成（TTS） 3元 → 1\.5元（每 10,000 字符）/);
+    assert.ok(raws[0].url.startsWith(DEEPSEEK_PRICING_URL));
+    assert.equal(raws[0].dealType, 'discount');
+    assert.equal(raws[0].kind, 'platform');
+    assert.equal(raws[0].lang, 'zh');
+  });
+
+  it('没有折扣表头（活动下线 / 页面改版）时 0 条', () => {
+    assert.deepEqual(deepseekDiscountRaws('<table><tr><td>普通表格</td></tr></table>', { now: NOW }), []);
+    assert.deepEqual(deepseekDiscountRaws('', { now: NOW }), []);
+  });
+});
+
 describe('搜索配置', () => {
   it('查询词覆盖国内 Agent、新用户福利与海外订阅三类信号', () => {
     assert.ok(SEARCH_QUERIES.length >= 8);
     assert.ok(SEARCH_QUERIES.some((query) => query.includes('Qoder')));
+    assert.ok(SEARCH_QUERIES.some((query) => query.includes('WorkBuddy')));
     assert.ok(SEARCH_QUERIES.some((query) => query.includes('新用户')));
     assert.ok(SEARCH_QUERIES.some((query) => query.includes('Coding Plan')));
   });
