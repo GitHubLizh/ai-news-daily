@@ -222,9 +222,9 @@ async function fetchTrae(userAgent) {
   if (!intlHtml) return [];
   const items = traeIntlFreeRaws(intlHtml, { now: Date.now() });
   if (!items.length) {
-    // 诊断：CI 收到的页面可能与本地不同（CDN 分区域出包 / 人机校验页），打出关键标记分布
+    // 诊断：CI 收到的页面可能与本地不同（字节两站对海外机房都有拦截），打出标题与大小辅助定位
     console.log(
-      `  · Trae 国际站诊断：${intlHtml.length}B，cardTitle=${intlHtml.includes('cardTitle')}，Free 卡=${/<h2 class="cardTitle[^"]*"><span[^>]*>Free<\/span><\/h2>/.test(intlHtml)}`,
+      `  · Trae 国际站诊断：${intlHtml.length}B，title=${intlHtml.match(/<title[^>]*>([^<]{0,80})/)?.[1] || '（无）'}`,
     );
   }
   console.log(`  ${items.length ? '✅' : '⚠️'} Trae：国际站免费套餐条目 ${items.length} 条`);
