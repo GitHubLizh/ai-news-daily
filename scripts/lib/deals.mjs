@@ -43,6 +43,7 @@ export const GLM_CODING_BUY_URL = 'https://bigmodel.cn/glm-coding';
 export const QODER_HOME = 'https://qoder.com';
 export const TRAE_HOME = 'https://www.trae.cn';
 export const TRAE_PRICING_URL = `${TRAE_HOME}/pricing`;
+export const TRAE_INTL_PRICING_URL = 'https://www.trae.ai/pricing';
 export const MIMO_HOME = 'https://mimo.mi.com';
 export const MIMO_PRICING_DOC_URL = `${MIMO_HOME}/docs/zh-CN/price/pay-as-you-go`;
 
@@ -531,6 +532,40 @@ export function mimoFreeRaws(html, options = {}) {
     if (raws.length >= maxItems) break;
   }
   return raws;
+}
+
+/**
+ * Trae 国际站定价页 -> 免费条目（trae.cn 对海外机房 GeoIP 拦截，CI 上自动回退到这里）。
+ * 页面（SSR）是 HTML 套餐卡：`<h2 class="cardTitle…"><span>Free</span></h2>` +
+ * `<div class="price…"><span>$0</span></div>` + 功能列表。免费卡存在才成条。
+ */
+export function traeIntlFreeRaws(html, options = {}) {
+  const { now = Date.now() } = options;
+  const text = String(html || '');
+  const freeIdx = text.search(/<h2 class="cardTitle[^"]*"><span[^>]*>Free<\/span><\/h2>/);
+  if (freeIdx < 0) return [];
+  const card = text.slice(freeIdx, freeIdx + 4000);
+  const price = card.match(/<div class="price[^"]*"><span>(\$[\d.]+)<\/span>/)?.[1];
+  if (!price || Number(price.slice(1)) !== 0) return [];
+  const features = [...card.matchAll(/<li class="descriptionItem[^"]*">([\s\S]*?)<\/li>/g)]
+    .map((li) => decodeBasicEntities(li[1].replace(/<[^>]*>/g, '')).replace(/\s+/g, ' ').trim())
+    .filter(Boolean)
+    .slice(0, 4);
+  return [
+    {
+      title: 'Trae：Free 套餐 $0（Auto 模式，限量额度）',
+      url: `${TRAE_INTL_PRICING_URL}?plan=free`,
+      summary: `Trae 国际版 Free 套餐价格 $0${features.length ? `：${features.join('；')}` : ''}。国内站免费版权益详见 trae.cn 定价页。`,
+      publishedRaw: new Date(now).toISOString(),
+      source: 'Trae',
+      sourceId: 'trae',
+      home: TRAE_INTL_PRICING_URL,
+      lang: 'zh',
+      weight: 2.5,
+      dealType: 'free',
+      kind: 'platform',
+    },
+  ];
 }
 
 /** 资讯流水线条目 -> 渠道条目：news.json 里带 dealType 的直接带入 */

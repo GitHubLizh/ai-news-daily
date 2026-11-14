@@ -20,6 +20,7 @@ import {
   siliconFlowFreeModels,
   aliyunBailianFreeQuota,
   aliyunTokenPlanRaws,
+  traeIntlFreeRaws,
   traePlanRaws,
   volcEngineDiscountRaws,
   zcodePlanRaws,
@@ -459,6 +460,36 @@ describe('mimoPromoRaws / mimoFreeRaws（小米 MiMo）', () => {
   it('标记消失时 0 条', () => {
     assert.deepEqual(mimoPromoRaws('<h4>常规动态</h4><p>限时特惠已结束</p>', { now: NOW }), []);
     assert.deepEqual(mimoFreeRaws('缓存写入：按刊例价计费', { now: NOW }), []);
+  });
+});
+
+describe('traeIntlFreeRaws（Trae 国际站回退源）', () => {
+  // 与 trae.ai/pricing 同构的 HTML 套餐卡：Free $0 + Pro $20（无促销原价）
+  const HTML = `
+    <h2 class="cardTitle-uCLU09"><span class="">Free</span></h2>
+    <div class="priceBox-q2chUZ"><div class="price-ohflUE"><span>$0</span></div></div>
+    <ul class="description-iNQROA">
+      <li class="descriptionItem-OzMXZ2"><svg .../>Auto mode only</li>
+      <li class="descriptionItem-OzMXZ2"><svg .../>Limited usage</li>
+    </ul>
+    <h2 class="cardTitle-uCLU09"><span class="brand-RBOjkl">Pro</span></h2>
+    <div class="priceBox-q2chUZ"><div class="price-ohflUE"><span>$20</span></div></div>`;
+  const NOW = Date.parse('2026-11-12T04:00:00Z');
+
+  it('解析 Free 套餐卡成免费条目，带功能说明', () => {
+    const raws = traeIntlFreeRaws(HTML, { now: NOW });
+    assert.equal(raws.length, 1);
+    assert.match(raws[0].title, /Trae：Free 套餐 \$0/);
+    assert.match(raws[0].summary, /Auto mode only；Limited usage/);
+    assert.equal(raws[0].dealType, 'free');
+    assert.equal(raws[0].kind, 'platform');
+    assert.equal(raws[0].lang, 'zh');
+  });
+
+  it('免费卡缺失或价格非 0 时不产出', () => {
+    assert.deepEqual(traeIntlFreeRaws(HTML.replaceAll('$0', '$3'), { now: NOW }), []);
+    assert.deepEqual(traeIntlFreeRaws('<h2>Enterprise</h2>', { now: NOW }), []);
+    assert.deepEqual(traeIntlFreeRaws('', { now: NOW }), []);
   });
 });
 

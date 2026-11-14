@@ -29,6 +29,7 @@ import {
   MIMO_HOME,
   MIMO_PRICING_DOC_URL,
   QODER_HOME,
+  TRAE_INTL_PRICING_URL,
   TRAE_PRICING_URL,
   ZCODE_CN_URL,
   aliyunBailianFreeQuota,
@@ -43,6 +44,7 @@ import {
   openRouterFreeModels,
   qoderFreeTrialRaws,
   siliconFlowFreeModels,
+  traeIntlFreeRaws,
   traePlanRaws,
   volcEngineDiscountRaws,
   zcodePlanRaws,
@@ -204,14 +206,22 @@ async function fetchQoder(userAgent) {
   return items;
 }
 
-/** 抓取 Trae（字节）定价页，解析免费版、会员促销与会员内模型折扣 */
+/** 抓取 Trae 定价页：优先国内站（有首月优惠与模型折扣），海外机房被 403 时回退国际站解析 Free 套餐 */
 async function fetchTrae(userAgent) {
-  const html = await withRetry('Trae', async () =>
+  const cnHtml = await withRetry('Trae 国内站', async () =>
     requestText(TRAE_PRICING_URL, userAgent, 'text/html,application/xhtml+xml;q=0.9,*/*;q=0.5'),
   );
-  if (!html) return [];
-  const items = traePlanRaws(html, { now: Date.now() });
-  console.log(`  ${items.length ? '✅' : '⚠️'} Trae：套餐与折扣条目 ${items.length} 条`);
+  if (cnHtml) {
+    const items = traePlanRaws(cnHtml, { now: Date.now() });
+    console.log(`  ${items.length ? '✅' : '⚠️'} Trae：国内站套餐与折扣条目 ${items.length} 条`);
+    return items;
+  }
+  const intlHtml = await withRetry('Trae 国际站', async () =>
+    requestText(TRAE_INTL_PRICING_URL, userAgent, 'text/html,application/xhtml+xml;q=0.9,*/*;q=0.5'),
+  );
+  if (!intlHtml) return [];
+  const items = traeIntlFreeRaws(intlHtml, { now: Date.now() });
+  console.log(`  ${items.length ? '✅' : '⚠️'} Trae：国际站免费套餐条目 ${items.length} 条`);
   return items;
 }
 
