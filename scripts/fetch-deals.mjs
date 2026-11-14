@@ -222,9 +222,19 @@ async function fetchTrae(userAgent) {
   if (!intlHtml) return [];
   const items = traeIntlFreeRaws(intlHtml, { now: Date.now() });
   if (!items.length) {
-    // 诊断：CI 收到的页面可能与本地不同（字节两站对海外机房都有拦截），打出标题与大小辅助定位
+    // 诊断：CI 收到的页面可能与本地不同（字节两站对海外机房都有拦截），打出关键标记辅助定位
+    const markers = {
+      cardTitle: 'cardTitle',
+      price: '"price"',
+      free: '>Free<',
+      nextData: '__NEXT_DATA__',
+      flight: 'self.__next_f',
+    };
+    const found = Object.entries(markers)
+      .filter(([, needle]) => intlHtml.includes(needle))
+      .map(([name]) => name);
     console.log(
-      `  · Trae 国际站诊断：${intlHtml.length}B，title=${intlHtml.match(/<title[^>]*>([^<]{0,80})/)?.[1] || '（无）'}`,
+      `  · Trae 国际站诊断：${intlHtml.length}B，title=${intlHtml.match(/<title[^>]*>([^<]{0,80})/)?.[1] || '（无）'}，标记=[${found.join(',') || '无'}]`,
     );
   }
   console.log(`  ${items.length ? '✅' : '⚠️'} Trae：国际站免费套餐条目 ${items.length} 条`);
