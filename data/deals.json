@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-11-14T03:27:20.425Z",
+  "generatedAt": "2026-11-14T03:58:01.662Z",
   "timezone": "Asia/Shanghai",
-  "count": 57,
+  "count": 56,
   "days": [
     {
       "day": "2026-11-14",
       "label": "11月14日 · 周六",
-      "count": 16
+      "count": 17
     },
     {
       "day": "2026-11-13",
@@ -31,7 +31,12 @@
     {
       "day": "2026-11-09",
       "label": "11月9日 · 周一",
-      "count": 6
+      "count": 5
+    },
+    {
+      "day": "2026-11-08",
+      "label": "11月8日 · 周日",
+      "count": 1
     },
     {
       "day": "2026-11-06",
@@ -52,11 +57,6 @@
       "day": "2026-10-27",
       "label": "10月27日 · 周二",
       "count": 2
-    },
-    {
-      "day": "2026-10-26",
-      "label": "10月26日 · 周一",
-      "count": 1
     },
     {
       "day": "2026-10-25",
@@ -86,7 +86,7 @@
     {
       "day": "2026-10-08",
       "label": "10月8日 · 周四",
-      "count": 5
+      "count": 4
     },
     {
       "day": "2026-10-07",
@@ -103,7 +103,7 @@
     "sources": [
       {
         "name": "Google 资讯",
-        "count": 27
+        "count": 25
       },
       {
         "name": "OpenRouter",
@@ -138,6 +138,10 @@
         "count": 2
       },
       {
+        "name": "Qoder",
+        "count": 1
+      },
+      {
         "name": "DeepSeek",
         "count": 1
       },
@@ -155,17 +159,17 @@
       }
     ],
     "languages": {
-      "zh": 54,
+      "zh": 53,
       "en": 3
     },
     "kinds": [
       {
         "name": "search",
-        "count": 27
+        "count": 25
       },
       {
         "name": "platform",
-        "count": 18
+        "count": 19
       },
       {
         "name": "news",
@@ -175,6 +179,28 @@
     "estimatedTime": 0
   },
   "items": [
+    {
+      "id": "11s6223",
+      "title": "Qoder：新用户免费试用 Pro 两周（Pro 专属功能全开放）",
+      "url": "https://qoder.com/",
+      "summary": "Qoder 新用户可免费试用 2 周 Pro 版，开放全部 Pro 专属功能；试用结束不订阅会自动降级为 Free 版继续使用。额度与权益以官方定价页为准。",
+      "author": "",
+      "source": "Qoder",
+      "sourceId": "qoder",
+      "home": "https://qoder.com",
+      "weight": 2.5,
+      "lang": "zh",
+      "category": "产品动态",
+      "dealType": "free",
+      "publishedAt": "2026-11-14T03:58:15.655Z",
+      "publishedTs": 1794628695655,
+      "day": "2026-11-14",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 81,
+      "kind": "platform"
+    },
     {
       "id": "1g7usiq",
       "title": "DeepSeek API 限时折扣：语音合成（TTS）、语音识别（ASR） 5 折",
@@ -188,8 +214,8 @@
       "lang": "zh",
       "category": "产品动态",
       "dealType": "discount",
-      "publishedAt": "2026-11-14T03:27:35.466Z",
-      "publishedTs": 1794626855466,
+      "publishedAt": "2026-11-14T03:58:14.143Z",
+      "publishedTs": 1794628694143,
       "day": "2026-11-14",
       "estimate": false,
       "bulk": false,
@@ -210,8 +236,8 @@
       "lang": "zh",
       "category": "产品动态",
       "dealType": "discount",
-      "publishedAt": "2026-11-14T03:27:33.825Z",
-      "publishedTs": 1794626853825,
+      "publishedAt": "2026-11-14T03:58:12.993Z",
+      "publishedTs": 1794628692993,
       "day": "2026-11-14",
       "estimate": false,
       "bulk": false,
@@ -232,8 +258,8 @@
       "lang": "zh",
       "category": "产品动态",
       "dealType": "discount",
-      "publishedAt": "2026-11-14T03:27:33.825Z",
-      "publishedTs": 1794626853825,
+      "publishedAt": "2026-11-14T03:58:12.993Z",
+      "publishedTs": 1794628692993,
       "day": "2026-11-14",
       "estimate": false,
       "bulk": false,
@@ -254,8 +280,8 @@
       "lang": "zh",
       "category": "产品动态",
       "dealType": "discount",
-      "publishedAt": "2026-11-14T03:27:33.825Z",
-      "publishedTs": 1794626853825,
+      "publishedAt": "2026-11-14T03:58:12.993Z",
+      "publishedTs": 1794628692993,
       "day": "2026-11-14",
       "estimate": false,
       "bulk": false,
@@ -276,8 +302,8 @@
       "lang": "zh",
       "category": "模型发布",
       "dealType": "discount",
-      "publishedAt": "2026-11-14T03:27:32.470Z",
-      "publishedTs": 1794626852470,
+      "publishedAt": "2026-11-14T03:58:11.711Z",
+      "publishedTs": 1794628691711,
       "day": "2026-11-14",
       "estimate": false,
       "bulk": false,
@@ -298,8 +324,8 @@
       "lang": "zh",
       "category": "行业动态",
       "dealType": "discount",
-      "publishedAt": "2026-11-14T03:27:32.470Z",
-      "publishedTs": 1794626852470,
+      "publishedAt": "2026-11-14T03:58:11.711Z",
+      "publishedTs": 1794628691711,
       "day": "2026-11-14",
       "estimate": false,
       "bulk": false,
@@ -320,8 +346,8 @@
       "lang": "zh",
       "category": "模型发布",
       "dealType": "free",
-      "publishedAt": "2026-11-14T03:27:31.336Z",
-      "publishedTs": 1794626851336,
+      "publishedAt": "2026-11-14T03:58:10.608Z",
+      "publishedTs": 1794628690608,
       "day": "2026-11-14",
       "estimate": false,
       "bulk": false,
@@ -342,8 +368,8 @@
       "lang": "zh",
       "category": "产品动态",
       "dealType": "free",
-      "publishedAt": "2026-11-14T03:27:29.223Z",
-      "publishedTs": 1794626849223,
+      "publishedAt": "2026-11-14T03:58:08.523Z",
+      "publishedTs": 1794628688523,
       "day": "2026-11-14",
       "estimate": false,
       "bulk": false,
@@ -364,8 +390,8 @@
       "lang": "zh",
       "category": "模型发布",
       "dealType": "discount",
-      "publishedAt": "2026-11-14T03:27:25.699Z",
-      "publishedTs": 1794626845699,
+      "publishedAt": "2026-11-14T03:58:04.706Z",
+      "publishedTs": 1794628684706,
       "day": "2026-11-14",
       "estimate": false,
       "bulk": false,
@@ -386,8 +412,8 @@
       "lang": "zh",
       "category": "模型发布",
       "dealType": "discount",
-      "publishedAt": "2026-11-14T03:27:25.699Z",
-      "publishedTs": 1794626845699,
+      "publishedAt": "2026-11-14T03:58:04.706Z",
+      "publishedTs": 1794628684706,
       "day": "2026-11-14",
       "estimate": false,
       "bulk": false,
@@ -408,8 +434,8 @@
       "lang": "zh",
       "category": "模型发布",
       "dealType": "discount",
-      "publishedAt": "2026-11-14T03:27:25.699Z",
-      "publishedTs": 1794626845699,
+      "publishedAt": "2026-11-14T03:58:04.706Z",
+      "publishedTs": 1794628684706,
       "day": "2026-11-14",
       "estimate": false,
       "bulk": false,
@@ -430,8 +456,8 @@
       "lang": "zh",
       "category": "模型发布",
       "dealType": "discount",
-      "publishedAt": "2026-11-14T03:27:23.930Z",
-      "publishedTs": 1794626843930,
+      "publishedAt": "2026-11-14T03:58:03.500Z",
+      "publishedTs": 1794628683500,
       "day": "2026-11-14",
       "estimate": false,
       "bulk": false,
@@ -452,8 +478,8 @@
       "lang": "zh",
       "category": "模型发布",
       "dealType": "discount",
-      "publishedAt": "2026-11-14T03:27:23.930Z",
-      "publishedTs": 1794626843930,
+      "publishedAt": "2026-11-14T03:58:03.500Z",
+      "publishedTs": 1794628683500,
       "day": "2026-11-14",
       "estimate": false,
       "bulk": false,
@@ -474,8 +500,8 @@
       "lang": "zh",
       "category": "模型发布",
       "dealType": "discount",
-      "publishedAt": "2026-11-14T03:27:23.930Z",
-      "publishedTs": 1794626843930,
+      "publishedAt": "2026-11-14T03:58:03.500Z",
+      "publishedTs": 1794628683500,
       "day": "2026-11-14",
       "estimate": false,
       "bulk": false,
@@ -496,8 +522,8 @@
       "lang": "zh",
       "category": "模型发布",
       "dealType": "free",
-      "publishedAt": "2026-11-14T03:27:20.425Z",
-      "publishedTs": 1794626840425,
+      "publishedAt": "2026-11-14T03:58:01.662Z",
+      "publishedTs": 1794628681662,
       "day": "2026-11-14",
       "estimate": false,
       "bulk": false,
@@ -568,7 +594,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 58,
+      "hot": 57,
       "kind": "search"
     },
     {
@@ -678,14 +704,14 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 50,
+      "hot": 49,
       "kind": "search"
     },
     {
-      "id": "04mblct",
-      "title": "豆包工作接入更多模型 并推出限时额度优惠 - 每日经济新闻",
-      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFB6cURiNXU0ano2TFY4c1J6U2I0MEl6RFJ3TWxKczhVbVNSZjB3MmVPdkhlMEVKQVY4NWhOT1lIWjNuXzFlQ3RXNzFqYnhJNUJfOGpRSnlVREpvRHc2UFRRYk5lanlQdw?oc=5",
-      "summary": "豆包工作接入更多模型 并推出限时额度优惠 每日经济新闻",
+      "id": "0wo8ts5",
+      "title": "豆包工作接入更多模型 并推出限时额度优惠 - https://www.mrjjxw.com/",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBFeE9XZzNydTFRY0oyd2ctcnFzT3lyaHhLSGd6T252QlVwZ2dmQm9HS1JCa2VfTVh4dnZSNmpfY0tVcGxVUzVtTlVDNjNNUG5KeUJiM1B0eGIwb1JpUk5tOHFtX1plUQ?oc=5",
+      "summary": "豆包工作接入更多模型 并推出限时额度优惠 https://www.mrjjxw.com/",
       "author": "",
       "source": "Google 资讯",
       "sourceId": "gnews-deals",
@@ -694,8 +720,8 @@
       "lang": "zh",
       "category": "产品动态",
       "dealType": "discount",
-      "publishedAt": "2026-11-12T09:53:00.000Z",
-      "publishedTs": 1794477180000,
+      "publishedAt": "2026-11-12T09:53:48.000Z",
+      "publishedTs": 1794477228000,
       "day": "2026-11-12",
       "estimate": false,
       "bulk": false,
@@ -958,13 +984,13 @@
       "lang": "zh",
       "category": "产品动态",
       "dealType": "free",
-      "publishedAt": "2026-11-08T16:07:08.000Z",
-      "publishedTs": 1794154028000,
-      "day": "2026-11-09",
+      "publishedAt": "2026-11-08T08:19:46.000Z",
+      "publishedTs": 1794125986000,
+      "day": "2026-11-08",
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 23,
+      "hot": 22,
       "kind": "search"
     },
     {
@@ -1097,28 +1123,6 @@
       "bulk": false,
       "alsoIn": [],
       "hot": 15,
-      "kind": "search"
-    },
-    {
-      "id": "1q1n3q7",
-      "title": "To B的AI生意没有免费：WorkBuddy本地部署叫价150万 - ThePaper.cn",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBxNjNnTWkxdmt6cmlqdXhucW9YN1E2NEZvVlUydXcyaXNfZFFyRHRZUnZRckhCNGFUVFdMTm16YXhDZDcyYkl3bkRXVFpJdU1ENXBaVGUwaU4xNWlQMnhEYQ?oc=5",
-      "summary": "To B的AI生意没有免费：WorkBuddy本地部署叫价150万 ThePaper.cn",
-      "author": "",
-      "source": "Google 资讯",
-      "sourceId": "gnews-deals",
-      "home": "https://news.google.com",
-      "weight": 1.5,
-      "lang": "zh",
-      "category": "开源工具",
-      "dealType": "free",
-      "publishedAt": "2026-10-26T07:00:00.000Z",
-      "publishedTs": 1792998000000,
-      "day": "2026-10-26",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 21,
       "kind": "search"
     },
     {
@@ -1320,28 +1324,6 @@
       "kind": "search"
     },
     {
-      "id": "1bikg5d",
-      "title": "刚刚，GPT-6全面开放！免费用户也能用了 - 投资界",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5SN3ktMTZBQ3ktT3BvZXpfYndsLV9jZVpXNFZLVElPbDlyejRXLWxZMVhDLU44aWMzNHhOZVc2Sl8tWWNfRVMzQW5JZXBKYV8zZEpWZ2Z3?oc=5",
-      "summary": "刚刚，GPT-6全面开放！免费用户也能用了 投资界",
-      "author": "",
-      "source": "Google 资讯",
-      "sourceId": "gnews-deals",
-      "home": "https://news.google.com",
-      "weight": 1.5,
-      "lang": "zh",
-      "category": "产品动态",
-      "dealType": "free",
-      "publishedAt": "2026-10-08T07:00:00.000Z",
-      "publishedTs": 1791442800000,
-      "day": "2026-10-08",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 28,
-      "kind": "search"
-    },
-    {
       "id": "1ek9ld6",
       "title": "GPT-6今起免费用！拒答变少，话变多了",
       "url": "https://www.qbitai.com/2026/10/501834.html",
@@ -1364,17 +1346,17 @@
       "kind": "news"
     },
     {
-      "id": "1oo444k",
-      "title": "Google将收紧Gemini免费版模型权限 仅保留Flash Lite模型 - 凤凰网",
-      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE1PTFhUcDYwcW9wNTdIc25oSGE5YnBWTTBmV0FscGhoQjd5SXZKSTBnbDVWbGN6ZHkxQ08xc25lTU8zZ2U2cGhjUA?oc=5",
-      "summary": "Google将收紧Gemini免费版模型权限 仅保留Flash Lite模型 凤凰网",
+      "id": "12lxyx5",
+      "title": "刚刚，GPT-6全面开放，免费用户也能用了 - 36Kr",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9zQWYxS2NfSFZDNmdBRkh2U1RvcGViM1JncmRwMGpqbnA2aTc5RDBuVVduRnJIRG5vejdia0F6TDZkbW1FWmlibkJ5LXcxZw?oc=5",
+      "summary": "刚刚，GPT-6全面开放，免费用户也能用了 36Kr",
       "author": "",
       "source": "Google 资讯",
       "sourceId": "gnews-deals",
       "home": "https://news.google.com",
       "weight": 1.5,
       "lang": "zh",
-      "category": "模型发布",
+      "category": "产品动态",
       "dealType": "free",
       "publishedAt": "2026-10-07T07:00:00.000Z",
       "publishedTs": 1791356400000,
@@ -1382,7 +1364,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 21,
+      "hot": 28,
       "kind": "search"
     },
     {
