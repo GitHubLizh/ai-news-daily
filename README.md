@@ -18,7 +18,7 @@ GitHub 的定时任务会排队延迟，实际通常 08:30–09:40 之间就位 
   可分享链接 / 分组表头「仅看这天」）。三路来源（`npm run fetch:deals` 写入 `data/deals.json`）：
   ① **平台直连**——每天抓取各平台官方页面与公开接口：OpenRouter、硅基流动的免费模型清单
   （当前哪些模型可零成本调用）、火山方舟 Agent / Coding Plan 指定模型折扣（含起止时间、只留进行中的）、
-  智谱 BigModel 在售的 Coding Plan / 资源包优惠，覆盖 DeepSeek / Kimi / GLM / Qwen / 混元等主流模型；
+  阿里云百炼新人免费额度与 Token Plan 在售折扣，覆盖 DeepSeek / Kimi / GLM / Qwen / 混元等主流模型；
   ② **定向搜索**——按关键词搜索「某模型在某 Agent 免费 / 某订阅打折 / 新用户福利」动态
   （Google News RSS，在 CI 的海外机器上执行）；③ **资讯流水线**——每日抓取的资讯中
   标题明确指向具体产品免费或折扣的条目。渠道数据独立成文件，页面进入该视图时才懒加载
@@ -77,16 +77,20 @@ npm test
 
 ## 微信小程序
 
-移动版的四个视图（最新 / 归档 / 收藏 / 统计）有一个平行的微信小程序实现，
+移动版的五个视图（最新 / 优惠 / 归档 / 收藏 / 统计）有一个平行的微信小程序实现，
 代码在 `miniprogram/`，云函数在 `cloudfunctions/news/`，与 Web 版互不影响（Web 版与流水线均不需要改动）。
+「优惠」页即 Web 版「免费与优惠」栏目：同一份 `data/deals.json` 渠道数据，
+类型芯片（免费使用 / 优惠购买）与按天分组的口径一致，已读 / 收藏与资讯流共用存储（条目 id 由 URL 派生）。
 
 ### 为什么数据走云函数
 
 正式版小程序的 `request` 合法域名必须 ICP 备案，而本站主域名是刻意的香港免备案方案。
 云开发云函数访问外网不受域名白名单限制，所以由 `cloudfunctions/news` 代为请求
-`https://latestainews.cn/data/news.json`，裁掉页面用不到的字段（`author`、`sourceId`、`weight`、`publishedAt`）后返回。
+`https://latestainews.cn/data/news.json`（资讯流）与 `https://latestainews.cn/data/deals.json`（优惠渠道，
+入参 `dataset: 'deals'`），裁掉页面用不到的字段（`author`、`sourceId`、`weight`、`publishedAt`）后返回。
 数据是**分页下发**的（每页 200 条，首包约 100KB）：最新页触底时向云函数翻页，收藏页按 id 补取旧条目，
-统计页打开时后台补齐全量；云函数实例内对上游数据有 5 分钟 TTL 缓存，翻页不会重复回源。
+统计页打开时后台补齐全量；优惠页数据量小（45 天保留窗口），一次拉全量。
+云函数实例内对上游数据有 5 分钟 TTL 缓存（两路数据集独立），翻页不会重复回源。
 小程序端再把已加载的数据缓存进本地 storage，冷启动先渲染缓存、再向云函数校验。
 
 ### 平台约束带来的差异
@@ -107,7 +111,7 @@ npm test
    如果你建了多个环境要指定其一，再把 `app.js` 里的 `YOUR_CLOUD_ENV_ID` 换成目标环境 ID。
 4. 在开发者工具中分别右键 `cloudfunctions/news`、`cloudfunctions/article`、`cloudfunctions/img` →「上传并部署：云端安装依赖」。
    （`img` 是图片代理：源站防盗链导致 `<image>` 直连失败时，阅读页会自动走它重试）
-5. 模拟器走查：四个 tab、搜索/筛选/排序、归档点日期跳转、收藏跨页同步、深浅色跟随系统、点标题进阅读页。
+5. 模拟器走查：五个 tab、搜索/筛选/排序、优惠页类型切换、归档点日期跳转、收藏跨页同步、深浅色跟随系统、点标题进阅读页。
 
 > 发布提示：个人主体没有「新闻资讯」类目，提审时选「工具 > 信息查询」之类的类目；
 > 阅读页的正文是**实时抓取、不做存储**的，页面底部标注了来源与版权声明。
@@ -170,9 +174,9 @@ npm test
 │     ├─ feed.mjs           # 导出站点 RSS
 │     ├─ cert.mjs           # 证书有效期探测（check-lines 与 cert-days 共用）
 │     └─ text.mjs           # HTML 清洗、实体解码、URL 规范化、语种识别
-├─ miniprogram/             # 微信小程序（最新/归档/收藏/统计四页 + 阅读页 + 共用卡片组件）
+├─ miniprogram/             # 微信小程序（最新/优惠/归档/收藏/统计五页 + 阅读页 + 共用卡片组件）
 ├─ cloudfunctions/
-│  ├─ news/                 # 云函数：中转拉取 latestainews.cn 的 news.json（绕过域名备案限制）
+│  ├─ news/                 # 云函数：中转拉取 latestainews.cn 的 news.json / deals.json（绕过域名备案限制）
 │  └─ article/              # 云函数：抓取原文并提取正文（extract.mjs 零依赖，有单元测试）
 ├─ project.config.json      # 微信开发者工具项目配置
 ├─ test/                    # node:test 单元测试
@@ -209,8 +213,6 @@ npm test
      产出当日免费模型清单快照；
    - **火山方舟**（Agent / Coding Plan 指定模型折扣活动页，SSR）：解析「某模型 X 折 + 起止时间」，
      只保留当前进行中的活动（页面挂着已结束的历史活动，必须按时间过滤）；
-   - **智谱 BigModel**（「上新活动」页，SSR）：提取在售的 Coding Plan / 资源包优惠，
-     拼好模、推荐有礼这类拉新营销不算渠道；
    - **阿里云**（百炼「新人免费额度」文档页 + Token Plan 活动页，均 SSR）：前者是长期政策
      （新用户各模型免费额度、90 天有效），用「关键标记存在性验证」——标记消失（页面改版 /
      政策下线）条目自动停止出现；后者提取「低至 / 限时 X 折」的折扣句，按「模型 + 折扣」去重。

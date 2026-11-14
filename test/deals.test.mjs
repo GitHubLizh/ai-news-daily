@@ -3,7 +3,6 @@ import assert from 'node:assert/strict';
 
 import {
   ALIYUN_BAILIAN_FREE_URL,
-  BIGMODEL_PROMOTION_URL,
   SILICONFLOW_PRICING_URL,
   buildDealsDataset,
   dealsFromSearchItems,
@@ -14,7 +13,6 @@ import {
   aliyunBailianFreeQuota,
   aliyunTokenPlanRaws,
   volcEngineDiscountRaws,
-  bigModelPromotionRaws,
   SEARCH_QUERIES,
 } from '../scripts/lib/deals.mjs';
 
@@ -195,39 +193,6 @@ describe('volcEngineDiscountRaws（火山方舟官方折扣页）', () => {
   it('空页面与未匹配格式不崩溃', () => {
     assert.deepEqual(volcEngineDiscountRaws('', { now: NOW }), []);
     assert.deepEqual(volcEngineDiscountRaws('<li>deepseek 模型：没有时间</li>', { now: NOW }), []);
-  });
-});
-
-describe('bigModelPromotionRaws（智谱上新活动页）', () => {
-  const HTML = `
-    <span><strong>活动一：GLM Coding Plan 编码畅享计划</strong></span>
-    <span data-as="p">为庆祝 GLM Coding Plan 正式上线，提供限时优惠。</span>
-    <ul><li>活动内容：活动期间，GLM Coding Plan 低至 20 元/月，适用于 Claude Code、Cline 等主流编码工具。</li></ul>
-    <span><strong>活动二：拼好模 · 邀请有礼</strong></span>
-    <ul><li>活动内容：邀请好友注册可获得 &amp;quotTokens&amp;quot 奖励。</li></ul>
-    <span><strong>活动三：精选资源包 · 专享特惠</strong></span>
-    <ul><li>活动内容：活动期间，将特别上线 GLM-4.6 专属资源包，尊享低至 4 折超值优惠。</li></ul>`;
-  const NOW = Date.parse('2026-11-12T04:00:00Z');
-
-  it('只保留渠道类活动（Coding Plan / 资源包），拉新营销排除', () => {
-    const raws = bigModelPromotionRaws(HTML, { now: NOW });
-    assert.equal(raws.length, 2);
-    assert.equal(raws[0].title, '智谱 BigModel 在售活动：GLM Coding Plan 编码畅享计划');
-    assert.match(raws[0].summary, /低至 20 元\/月/);
-    assert.equal(raws[1].title, '智谱 BigModel 在售活动：精选资源包 · 专享特惠');
-    assert.equal(raws[0].dealType, 'discount');
-    assert.equal(raws[0].kind, 'platform');
-    assert.equal(raws[0].lang, 'zh');
-  });
-
-  it('同页多个活动用查询参数区分 URL，不会被去重合并', () => {
-    const raws = bigModelPromotionRaws(HTML, { now: NOW });
-    assert.notEqual(raws[0].url, raws[1].url);
-    assert.ok(raws[0].url.startsWith(BIGMODEL_PROMOTION_URL));
-  });
-
-  it('空页面不崩溃', () => {
-    assert.deepEqual(bigModelPromotionRaws('', { now: NOW }), []);
   });
 });
 

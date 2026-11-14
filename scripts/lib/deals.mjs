@@ -4,8 +4,7 @@
  *   1. 平台直连（kind: 'platform'）：平台官方页面 / 公开接口，按日梳理各家的免费与优惠——
  *      - OpenRouter 公开模型清单里的 :free 模型（快照 + 近 N 天新增）；
  *      - 硅基流动定价页（当前免费开放的模型清单）；
- *      - 火山方舟 Agent / Coding Plan 折扣活动页（某模型 X 折 + 起止时间，只留进行中的）；
- *      - 智谱 BigModel「上新活动」页（在售的 Coding Plan / 资源包优惠）。
+ *      - 火山方舟 Agent / Coding Plan 折扣活动页（某模型 X 折 + 起止时间，只留进行中的）。
  *   2. 定向资讯搜索（kind: 'search'）：Google News RSS 按关键词搜索，
  *      复用 detectDealType 过滤出「具体产品免费 / 优惠」的条目；
  *   3. 资讯流水线（kind: 'news'）：data/news.json 中命中 dealType 的条目原样带入。
@@ -26,7 +25,6 @@ const OPENROUTER_FREE_URL = `${OPENROUTER_HOME}/models?max_price=0`;
 const GOOGLE_NEWS_HOME = 'https://news.google.com';
 
 export const VOLCENGINE_DOC_BASE = 'https://ark.volcengine.com';
-export const BIGMODEL_HOME = 'https://docs.bigmodel.cn';
 export const SILICONFLOW_HOME = 'https://siliconflow.cn';
 export const SILICONFLOW_PRICING_URL = `${SILICONFLOW_HOME}/pricing`;
 export const ALIYUN_BAILIAN_FREE_URL = 'https://help.aliyun.com/zh/model-studio/new-free-quota';
@@ -37,8 +35,6 @@ export const VOLCENGINE_DISCOUNT_PAGES = [
   { planName: '火山方舟 Coding Plan', path: '/region:cn-beijing/docs/coding-plan-personal-model-discount' },
   { planName: '火山方舟 Agent Plan', path: '/region:cn-beijing/docs/agent-plan-personal-model-discount' },
 ];
-
-export const BIGMODEL_PROMOTION_URL = `${BIGMODEL_HOME}/cn/update/promotion`;
 
 /** 定向搜索的 feed 元信息（parseFeed 的 feedMeta 参数） */
 export const SEARCH_FEED_META = {
@@ -298,43 +294,6 @@ export function volcEngineDiscountRaws(html, options = {}) {
       source: planName,
       sourceId: 'volcengine',
       home: VOLCENGINE_DOC_BASE,
-      lang: 'zh',
-      weight: 2.5,
-      dealType: 'discount',
-      kind: 'platform',
-    });
-  }
-  return raws;
-}
-
-/**
- * 智谱 BigModel「上新活动」页 -> 渠道条目。
- * 页面是 SSR，活动形如 `<strong>活动一：GLM Coding Plan 编码畅享计划</strong>` +
- * 紧随其后的 `<li>活动内容：…</li>`。只保留渠道类活动（Coding Plan / 资源包优惠），
- * 拼好模、推荐有礼这类拉新营销不算「模型免费 / 优惠购买」。
- */
-export function bigModelPromotionRaws(html, options = {}) {
-  const { now = Date.now() } = options;
-  const text = String(html || '');
-  const raws = [];
-  const pattern = /<strong>(活动[一二三四五六七八九十]+：[^<]{2,60})<\/strong>/g;
-  for (const match of text.matchAll(pattern)) {
-    const [, fullTitle] = match;
-    const name = decodeBasicEntities(fullTitle.replace(/^活动[一二三四五六七八九十]+[：:]/, '').trim());
-    if (!/Coding Plan|资源包/.test(name)) continue;
-    // 活动内容 li 在标题之后的邻近窗口内；窗口内可能出现嵌套结构，取第一个「活动内容：」
-    const window = text.slice(match.index, match.index + 2000);
-    const contentMatch = window.match(/活动内容[：:]\s*([^<]{10,300})</);
-    const content = contentMatch ? decodeBasicEntities(contentMatch[1]).trim() : '';
-    if (!content) continue;
-    raws.push({
-      title: `智谱 BigModel 在售活动：${name}`,
-      url: `${BIGMODEL_PROMOTION_URL}?act=${encodeURIComponent(name)}`,
-      summary: `${content} 详情以官方页面为准。`,
-      publishedRaw: new Date(now).toISOString(),
-      source: '智谱 BigModel',
-      sourceId: 'bigmodel',
-      home: BIGMODEL_HOME,
       lang: 'zh',
       weight: 2.5,
       dealType: 'discount',

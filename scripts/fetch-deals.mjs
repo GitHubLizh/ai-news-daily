@@ -20,7 +20,6 @@ import { parseFeed } from './lib/rss.mjs';
 import {
   ALIYUN_BAILIAN_FREE_URL,
   ALIYUN_TOKENPLAN_URL,
-  BIGMODEL_PROMOTION_URL,
   SEARCH_FEED_META,
   SEARCH_QUERIES,
   SILICONFLOW_PRICING_URL,
@@ -28,7 +27,6 @@ import {
   VOLCENGINE_DOC_BASE,
   aliyunBailianFreeQuota,
   aliyunTokenPlanRaws,
-  bigModelPromotionRaws,
   buildDealsDataset,
   dealsFromSearchItems,
   googleNewsUrl,
@@ -128,17 +126,6 @@ async function fetchVolcEngine(userAgent) {
   return raws;
 }
 
-/** 抓取智谱「上新活动」页，解析出在售的 Coding Plan / 资源包优惠 */
-async function fetchBigModel(userAgent) {
-  const html = await withRetry('智谱 BigModel', async () =>
-    requestText(BIGMODEL_PROMOTION_URL, userAgent, 'text/html,application/xhtml+xml;q=0.9,*/*;q=0.5'),
-  );
-  if (!html) return [];
-  const items = bigModelPromotionRaws(html, { now: Date.now() });
-  console.log(`  ${items.length ? '✅' : '⚠️'} 智谱 BigModel：在售渠道活动 ${items.length} 个`);
-  return items;
-}
-
 /** 抓取硅基流动定价页，解析出当前免费开放的模型 */
 async function fetchSiliconFlow(userAgent) {
   const html = await withRetry('硅基流动', async () =>
@@ -218,7 +205,6 @@ async function main() {
     console.log(`  · OpenRouter：每日快照 1 条；近 7 天新增免费模型 ${fresh.length} 条`);
   }
   platformRaws.push(...(await fetchVolcEngine(userAgent)));
-  platformRaws.push(...(await fetchBigModel(userAgent)));
   platformRaws.push(...(await fetchSiliconFlow(userAgent)));
   platformRaws.push(...(await fetchAliyun(userAgent)));
 
