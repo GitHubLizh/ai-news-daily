@@ -545,9 +545,12 @@ export function traeIntlFreeRaws(html, options = {}) {
   const freeIdx = text.search(/<h2 class="cardTitle[^"]*"><span[^>]*>Free<\/span><\/h2>/);
   if (freeIdx < 0) return [];
   const card = text.slice(freeIdx, freeIdx + 4000);
-  const price = card.match(/<div class="price[^"]*"><span>(\$[\d.]+)<\/span>/)?.[1];
+  // 功能列表只取 Free 卡自身（到下一张套餐卡为止），避免把 Pro 卡的说明收进来
+  const nextCard = card.slice(1).search(/<h2 class="cardTitle/);
+  const scope = nextCard >= 0 ? card.slice(0, nextCard + 1) : card;
+  const price = scope.match(/<div class="price[^"]*"><span>(\$[\d.]+)<\/span>/)?.[1];
   if (!price || Number(price.slice(1)) !== 0) return [];
-  const features = [...card.matchAll(/<li class="descriptionItem[^"]*">([\s\S]*?)<\/li>/g)]
+  const features = [...scope.matchAll(/<li class="descriptionItem[^"]*">([\s\S]*?)<\/li>/g)]
     .map((li) => decodeBasicEntities(li[1].replace(/<[^>]*>/g, '')).replace(/\s+/g, ' ').trim())
     .filter(Boolean)
     .slice(0, 4);
