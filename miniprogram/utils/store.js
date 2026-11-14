@@ -13,6 +13,7 @@ export const STORAGE_KEYS = {
   bookmarks: 'ainews.bookmarks',
   lang: 'ainews.lang',
   data: 'ainews.data',
+  deals: 'ainews.deals',
 };
 
 /** 服务端分页粒度（与 cloudfunctions/news/paginate.mjs 的默认值一致） */
@@ -77,9 +78,9 @@ async function callNews(payload) {
   return data;
 }
 
-function persist(dataset) {
+function persist(dataset, key = STORAGE_KEYS.data) {
   try {
-    wx.setStorageSync(STORAGE_KEYS.data, dataset);
+    wx.setStorageSync(key, dataset);
   } catch {
     /* 缓存写不进去不致命 */
   }
@@ -119,6 +120,41 @@ export async function fetchByIds(ids) {
   if (!ids.length) return [];
   const payload = await callNews({ ids });
   return payload.items;
+}
+
+/* ---------------------------------------------------- 免费与优惠数据集 */
+
+/** 「免费与优惠」数据集整体较小（45 天保留窗口），一次拉全量后本地整包缓存 */
+export function getCachedDeals() {
+  try {
+    const raw = wx.getStorageSync(STORAGE_KEYS.deals);
+    if (!raw || !Array.isArray(raw.items) || !raw.items.length) return null;
+    return raw;
+  } catch {
+    return null;
+  }
+}
+
+/** 拉取全量优惠数据集：循环翻页到没有下一页（当前数据量一页即完，循环只是兜底） */
+export async function fetchDeals() {
+  let payload = await callNews({ dataset: 'deals', page: 0, pageSize: SERVER_PAGE_SIZE });
+  const items = payload.items.slice();
+  let page = 0;
+  while (payload.hasMore) {
+    page += 1;
+    payload = await callNews({ dataset: 'deals', page, pageSize: SERVER_PAGE_SIZE });
+    items.push(...payload.items);
+  }
+  const dataset = {
+    generatedAt: payload.generatedAt,
+    timezone: payload.timezone,
+    count: payload.count,
+    days: payload.days,
+    stats: payload.stats,
+    items,
+  };
+  persist(dataset, STORAGE_KEYS.deals);
+  return dataset;
 }
 
 /** 列表渲染前补展示字段（WXML 里不能调函数），与 app.js 的渲染口径一致 */

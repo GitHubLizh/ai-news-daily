@@ -4,24 +4,31 @@
  * 正式版小程序的 request 合法域名必须 ICP 备案，而 latestainews.cn 是刻意的
  * 香港免备案域名；云函数访问外网不受域名白名单限制，所以由它代为拉取。
  *
- * 拉取后裁掉页面用不到的字段并整体缓存在实例内存里（TTL 5 分钟）——
- * 翻页请求打的是缓存切片，不会每次都去上游重抓 1.7MB。
+ * 两路数据集由入参 dataset 选择（默认 news）：
+ * - news  ：https://latestainews.cn/data/news.json  资讯流
+ * - deals ：https://latestainews.cn/data/deals.json 「免费与优惠」渠道数据
  *
- * 入参：{ page?, pageSize? } 分页（默认 0 / 200）；{ ids: [] } 按 id 补取。
+ * 拉取后裁掉页面用不到的字段并整体缓存在实例内存里（TTL 5 分钟，两路独立）——
+ * 翻页请求打的是缓存切片，不会每次都去上游重抓。
+ *
+ * 入参：{ dataset?, page?, pageSize? } 分页（默认 news / 0 / 200）；{ ids: [] } 按 id 补取。
  * 返回：{ generatedAt, timezone, count, days, stats, total, items, hasMore, page?, pageSize? }
  * ========================================================================== */
 
 const https = require('https');
 
-const SOURCE_URL = 'https://latestainews.cn/data/news.json';
+const SOURCE_URLS = {
+  news: 'https://latestainews.cn/data/news.json',
+  deals: 'https://latestainews.cn/data/deals.json',
+};
 const TIMEOUT_MS = 10000;
 const CACHE_TTL_MS = 5 * 60 * 1000;
 
-/** 页面用不到的字段（author / sourceId / weight / publishedAt），约省 20~30% 体积 */
-const DROP_FIELDS = new Set(['author', 'sourceId', 'weight', 'publishedAt']);
-
-/** 实例内缓存：{ at, data }，同一实例在 TTL 内复用上游抓取结果 */
-let cache = { at: 0, data: null };
+/** 实例内缓存：每路数据集独立 { at, data }，同一实例在 TTL 内复用上游抓取结果 */
+const caches = {
+  news: { at: 0, data: null },
+  deals: { at: 0, data: null },
+};
 
 function fetchJson(url) {
   return new Promise((resolve, reject) => {
@@ -50,32 +57,21 @@ function fetchJson(url) {
   });
 }
 
-async function getDataset() {
+async function getDataset(name) {
   const now = Date.now();
-  if (cache.data && now - cache.at < CACHE_TTL_MS) return cache.data;
+  const cached = caches[name];
+  if (cached.data && now - cached.at < CACHE_TTL_MS) return cached.data;
 
-  const raw = await fetchJson(SOURCE_URL);
-  if (!Array.isArray(raw.items)) throw new Error('数据格式不正确');
-  const data = {
-    generatedAt: raw.generatedAt,
-    timezone: raw.timezone,
-    count: raw.count,
-    days: raw.days,
-    stats: raw.stats,
-    items: raw.items.map((item) => {
-      const kept = {};
-      for (const [key, value] of Object.entries(item)) {
-        if (!DROP_FIELDS.has(key)) kept[key] = value;
-      }
-      return kept;
-    }),
-  };
-  cache = { at: now, data };
+  const { shapeDataset } = await import('./paginate.mjs');
+  const data = shapeDataset(await fetchJson(SOURCE_URLS[name]));
+  caches[name] = { at: now, data };
   return data;
 }
 
 exports.main = async (event) => {
-  const dataset = await getDataset();
+  const params = event || {};
+  const name = params.dataset === 'deals' ? 'deals' : 'news';
+  const dataset = await getDataset(name);
   const { respond } = await import('./paginate.mjs');
-  return respond(dataset, event || {});
+  return respond(dataset, params);
 };

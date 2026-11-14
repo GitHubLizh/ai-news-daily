@@ -1,0 +1,83 @@
+<view class="wrap">
+    <!-- 栏目说明（对照 web 版 intro-deals） -->
+    <view class="intro">
+      汇集各大平台免费可用的 AI 大模型与优惠购买渠道：OpenRouter / 硅基流动免费模型，火山方舟、智谱、阿里云限时折扣与特价套餐。价格与额度以各平台官方页面为准。
+    </view>
+
+    <!-- 搜索与类型筛选 -->
+    <view class="card controls">
+      <view class="search">
+        <input
+          class="search-input"
+          type="text"
+          placeholder="搜索标题 / 摘要 / 来源"
+          confirm-type="search"
+          value="{{query}}"
+          bindinput="onSearchInput"
+        />
+      </view>
+      <scroll-view scroll-x class="chip-row" enhanced show-scrollbar="{{false}}">
+        <view
+          wx:for="{{chips}}"
+          wx:key="key"
+          class="chip {{item.active ? 'is-active' : ''}}"
+          data-type="{{item.key}}"
+          bindtap="onChipTap"
+        >
+          <text>{{item.name}}</text>
+          <text class="chip-n">{{item.count}}</text>
+        </view>
+      </scroll-view>
+    </view>
+
+    <!-- 加载 / 错误 -->
+    <block wx:if="{{loading}}">
+      <view class="skeleton"></view>
+      <view class="skeleton"></view>
+      <view class="skeleton"></view>
+    </block>
+    <view class="empty" wx:elif="{{error}}">
+      <text class="empty-title">数据加载失败</text>
+      <text>{{error}}</text>
+      <view class="ghost-btn empty-retry" bindtap="onRetry">重新加载</view>
+    </view>
+
+    <block wx:else>
+      <view class="feed-head">
+        <text class="feed-scope">{{scopeText}}</text>
+        <text>{{totalText}}</text>
+      </view>
+      <view class="meta-line">{{metaText}}</view>
+
+      <view class="empty" wx:if="{{emptyShow}}">
+        <text class="empty-title">{{emptyTitle}}</text>
+        <text>{{emptyDesc}}</text>
+      </view>
+
+      <view class="day-group" wx:for="{{groups}}" wx:key="key">
+        <view class="day-head">
+          <text class="triangle">▸</text>
+          <text class="day-title">{{item.label}}</text>
+          <text class="today-tag" wx:if="{{item.isToday}}">今天</text>
+          <text class="day-count">{{item.countText}}</text>
+        </view>
+        <news-item
+          wx:for="{{item.items}}"
+          wx:for-item="news"
+          wx:key="id"
+          item="{{news}}"
+          read="{{news.isRead}}"
+          saved="{{news.isSaved}}"
+          bindopen="onItemOpen"
+          bindsave="onItemSave"
+          bindread="onItemRead"
+          bindcopy="onItemCopy"
+        />
+      </view>
+
+      <view class="more-wrap" wx:if="{{hasMore}}">
+        <view class="more-btn" bindtap="onReachBottom">{{moreText}}</view>
+      </view>
+    </block>
+  </view>
+<back-top visible="{{backTopVisible}}" />

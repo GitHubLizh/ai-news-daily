@@ -1,10 +1,32 @@
 /* =============================================================================
- * news 云函数的分页纯逻辑（不碰网络，便于单元测试，见 test/mp-paginate.test.mjs）
+ * news 云函数的纯逻辑（不碰网络，便于单元测试，见 test/mp-paginate.test.mjs）
  * ========================================================================== */
 
 export const DEFAULT_PAGE_SIZE = 200;
 export const MAX_PAGE_SIZE = 500;
 export const MAX_IDS = 200;
+
+/** 页面用不到的字段（author / sourceId / weight / publishedAt），约省 20~30% 体积 */
+const DROP_FIELDS = new Set(['author', 'sourceId', 'weight', 'publishedAt']);
+
+/** 上游 JSON -> 小程序数据集：meta 原样透传，条目裁掉页面用不到的字段 */
+export function shapeDataset(raw) {
+  if (!Array.isArray(raw.items)) throw new Error('数据格式不正确');
+  return {
+    generatedAt: raw.generatedAt,
+    timezone: raw.timezone,
+    count: raw.count,
+    days: raw.days,
+    stats: raw.stats,
+    items: raw.items.map((item) => {
+      const kept = {};
+      for (const [key, value] of Object.entries(item)) {
+        if (!DROP_FIELDS.has(key)) kept[key] = value;
+      }
+      return kept;
+    }),
+  };
+}
 
 function clampInteger(value, min, max, fallback) {
   const n = Number.parseInt(value, 10);

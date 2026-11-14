@@ -1,0 +1,52 @@
+/* 栏目说明 */
+.intro {
+  background: var(--bg-soft);
+  border-radius: 8rpx;
+  padding: 20rpx 26rpx;
+  margin: 24rpx 0;
+  color: var(--text-2);
+  font-size: 26rpx;
+  line-height: 1.8;
+}
+
+/* 搜索与筛选 */
+.controls {
+  margin-bottom: 8rpx;
+}
+
+.search {
+  border: 1rpx solid var(--border-2);
+  border-radius: 8rpx;
+  background: var(--bg);
+  padding: 6rpx 20rpx;
+}
+
+.search-input {
+  height: 64rpx;
+  font-size: 28rpx;
+}
+
+/* 数据概览 */
+.meta-line {
+  padding: 0 4rpx 8rpx;
+  color: var(--text-3);
+  font-size: 24rpx;
+}
+
+.empty-retry {
+  margin-top: 24rpx;
+}
+
+.more-wrap {
+  padding: 12rpx 0 40rpx;
+}
+
+.more-btn {
+  text-align: center;
+  padding: 22rpx 0;
+  border: 1rpx solid var(--border-2);
+  border-radius: 8rpx;
+  background: var(--bg-elev);
+  color: var(--text-2);
+  font-size: 28rpx;
+}

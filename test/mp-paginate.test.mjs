@@ -1,7 +1,7 @@
 import { describe, it } from 'node:test';
 import assert from 'node:assert/strict';
 
-import { DEFAULT_PAGE_SIZE, MAX_IDS, MAX_PAGE_SIZE, respond } from '../cloudfunctions/news/paginate.mjs';
+import { DEFAULT_PAGE_SIZE, MAX_IDS, MAX_PAGE_SIZE, respond, shapeDataset } from '../cloudfunctions/news/paginate.mjs';
 
 const DATASET = {
   generatedAt: '2026-10-21T01:00:00.000Z',
@@ -70,5 +70,50 @@ describe('news 云函数分页逻辑', () => {
   it('空 ids 数组走分页分支', () => {
     const result = respond(DATASET, { ids: [], pageSize: 2 });
     assert.deepEqual(ids(result), ['a', 'b']);
+  });
+});
+
+describe('上游数据集裁剪 shapeDataset', () => {
+  it('裁掉页面用不到的字段，meta 原样透传', () => {
+    const shaped = shapeDataset({
+      generatedAt: '2026-11-12T13:04:30.645Z',
+      timezone: 'Asia/Shanghai',
+      count: 1,
+      days: [{ day: '2026-11-12', label: '11月12日 · 周四', count: 1 }],
+      stats: { sources: [], kinds: [], estimatedTime: 0 },
+      items: [
+        {
+          id: 'x',
+          title: '标题',
+          author: '佚名',
+          sourceId: 'src',
+          weight: 2.5,
+          publishedAt: '2026-11-12T13:04:40.151Z',
+          dealType: 'free',
+          day: '2026-11-12',
+        },
+      ],
+    });
+    assert.equal(shaped.generatedAt, '2026-11-12T13:04:30.645Z');
+    assert.deepEqual(shaped.days, [{ day: '2026-11-12', label: '11月12日 · 周四', count: 1 }]);
+    assert.deepEqual(shaped.items, [
+      { id: 'x', title: '标题', dealType: 'free', day: '2026-11-12' },
+    ]);
+  });
+
+  it('上游缺 items 抛出与云函数一致的错误', () => {
+    assert.throws(() => shapeDataset({ generatedAt: '' }), /数据格式不正确/);
+  });
+
+  it('deals 与 news 数据集共用同一裁剪口径（deals 条目带 dealType/kind 等额外字段原样保留）', () => {
+    const shaped = shapeDataset({
+      generatedAt: 'g',
+      timezone: 'Asia/Shanghai',
+      count: 1,
+      days: [],
+      stats: {},
+      items: [{ id: 'd', kind: 'platform', dealType: 'discount', hot: 81, weight: 3 }],
+    });
+    assert.deepEqual(shaped.items, [{ id: 'd', kind: 'platform', dealType: 'discount', hot: 81 }]);
   });
 });

@@ -1,6 +1,7 @@
 {
   "pages": [
     "pages/latest/latest",
+    "pages/deals/deals",
     "pages/archive/archive",
     "pages/bookmarks/bookmarks",
     "pages/stats/stats",
@@ -22,6 +23,7 @@
     "borderStyle": "black",
     "list": [
       { "pagePath": "pages/latest/latest", "text": "最新" },
+      { "pagePath": "pages/deals/deals", "text": "优惠" },
       { "pagePath": "pages/archive/archive", "text": "归档" },
       { "pagePath": "pages/bookmarks/bookmarks", "text": "收藏" },
       { "pagePath": "pages/stats/stats", "text": "统计" }
