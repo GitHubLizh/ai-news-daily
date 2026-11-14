@@ -19,7 +19,7 @@ GitHub 的定时任务会排队延迟，实际通常 08:30–09:40 之间就位 
   ① **平台直连**——每天抓取各平台官方页面与公开接口：OpenRouter、硅基流动的免费模型清单
   （当前哪些模型可零成本调用）、火山方舟 Agent / Coding Plan 指定模型折扣（含起止时间、只留进行中的）、
   阿里云百炼新人免费额度与 Token Plan 在售折扣、ZCode 官网的 GLM Coding 套餐促销价、
-  DeepSeek API 定价页的限时折扣，覆盖 DeepSeek / Kimi / GLM / Qwen / 混元等主流模型；
+  Qoder 官网的新人免费试用、DeepSeek API 定价页的限时折扣，覆盖 DeepSeek / Kimi / GLM / Qwen / 混元等主流模型；
   ② **定向搜索**——按关键词搜索「某模型在某 Agent 免费 / 某订阅打折 / 新用户福利」动态
   （Google News RSS，在 CI 的海外机器上执行）；③ **资讯流水线**——每日抓取的资讯中
   标题明确指向具体产品免费或折扣的条目。渠道数据独立成文件，页面进入该视图时才懒加载
@@ -222,6 +222,8 @@ npm test
      促销结束价格持平即自动停发；条目链接指向实际的 BigModel 订阅页。
    - **DeepSeek**（API 定价文档页 `api-docs.deepseek.com`，SSR）：解析带「限时折扣价（X 折）」
      表头的表格（如语音 TTS / ASR 5 折），一张表合并成一条；折扣下线或页面改版解析不到即自动停发。
+   - **Qoder**（官网 `qoder.com`，SSR）：首页 FAQ 写明新人权益——新用户免费试用 Pro 两周、
+     结束不订阅自动降级 Free 版，用「关键标记存在性验证」，文案改版或权益下线即自动停发。
    平台直连条目的说的是官方一手信息——不是「新闻里说免费」，而是「平台此刻就在送 / 在打折」。
 2. **定向搜索**：按关键词（`scripts/lib/deals.mjs` 的 `SEARCH_QUERIES`，覆盖国内 Agent、
    新用户福利与海外订阅）请求 Google News RSS，标题经 `detectDealType` 过滤——要求具体产品名

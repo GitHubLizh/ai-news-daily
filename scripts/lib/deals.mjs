@@ -6,7 +6,8 @@
  *      - 硅基流动定价页（当前免费开放的模型清单）；
  *      - 火山方舟 Agent / Coding Plan 折扣活动页（某模型 X 折 + 起止时间，只留进行中的）；
  *      - ZCode 官网（GLM Coding 套餐现价 vs 原价，有促销价才成条）；
- *      - DeepSeek API 定价文档页（「限时折扣价」表格，改版后自动停发）。
+ *      - DeepSeek API 定价文档页（「限时折扣价」表格，改版后自动停发）；
+ *      - Qoder 官网（新人免费试用 Pro 两周的政策文案，关键标记消失即停发）。
  *   2. 定向资讯搜索（kind: 'search'）：Google News RSS 按关键词搜索，
  *      复用 detectDealType 过滤出「具体产品免费 / 优惠」的条目；
  *   3. 资讯流水线（kind: 'news'）：data/news.json 中命中 dealType 的条目原样带入。
@@ -37,6 +38,7 @@ export const ZCODE_HOME = 'https://zcode.z.ai';
 export const ZCODE_CN_URL = `${ZCODE_HOME}/cn`;
 /** ZCode 套餐的实际订阅页（官网套餐卡上标注「最终信息以 BigModel 订阅页为准」） */
 export const GLM_CODING_BUY_URL = 'https://bigmodel.cn/glm-coding';
+export const QODER_HOME = 'https://qoder.com';
 
 /** 火山方舟两个折扣活动页（Agent Plan 与 Coding Plan 的指定模型抵扣折扣） */
 export const VOLCENGINE_DISCOUNT_PAGES = [
@@ -330,6 +332,35 @@ export function deepseekDiscountRaws(html, options = {}) {
     if (raws.length >= maxItems) break;
   }
   return raws;
+}
+
+/**
+ * Qoder 官网 -> 渠道条目。
+ * 首页（SSR）FAQ 写明新人权益：「New users are eligible for a free 2-week Pro Trial」，
+ * 试用结束不订阅会自动降级为 Free 版。这是长期政策而非活动，用「关键标记存在性验证」——
+ * 文案改版或权益下线后标记消失，条目自动停止出现；限时折扣类动态由定向搜索兜底。
+ */
+export function qoderFreeTrialRaws(html, options = {}) {
+  const { now = Date.now() } = options;
+  const text = String(html || '');
+  const markers = ['New users', 'free 2-week Pro Trial'];
+  if (!markers.every((marker) => text.includes(marker))) return [];
+  return [
+    {
+      title: 'Qoder：新用户免费试用 Pro 两周（Pro 专属功能全开放）',
+      url: `${QODER_HOME}/`,
+      summary:
+        'Qoder 新用户可免费试用 2 周 Pro 版，开放全部 Pro 专属功能；试用结束不订阅会自动降级为 Free 版继续使用。额度与权益以官方定价页为准。',
+      publishedRaw: new Date(now).toISOString(),
+      source: 'Qoder',
+      sourceId: 'qoder',
+      home: QODER_HOME,
+      lang: 'zh',
+      weight: 2.5,
+      dealType: 'free',
+      kind: 'platform',
+    },
+  ];
 }
 
 /** 资讯流水线条目 -> 渠道条目：news.json 里带 dealType 的直接带入 */

@@ -12,6 +12,7 @@ import {
   googleNewsUrl,
   newsItemsToDealRaws,
   openRouterFreeModels,
+  qoderFreeTrialRaws,
   siliconFlowFreeModels,
   aliyunBailianFreeQuota,
   aliyunTokenPlanRaws,
@@ -341,6 +342,30 @@ describe('deepseekDiscountRaws（DeepSeek API 定价文档页）', () => {
   it('没有折扣表头（活动下线 / 页面改版）时 0 条', () => {
     assert.deepEqual(deepseekDiscountRaws('<table><tr><td>普通表格</td></tr></table>', { now: NOW }), []);
     assert.deepEqual(deepseekDiscountRaws('', { now: NOW }), []);
+  });
+});
+
+describe('qoderFreeTrialRaws（Qoder 官网新人权益）', () => {
+  // 与真实首页 FAQ 同构的文案片段
+  const HTML = `
+    <p>Qoder offers flexible pricing to suit a variety of needs. New users are eligible for
+    a free 2-week Pro Trial, giving them full access to all Pro-exclusive features.</p>
+    <p>· Do nothing and be automatically downgraded to our Free plan.</p>`;
+  const NOW = Date.parse('2026-11-12T04:00:00Z');
+
+  it('标记齐全时产出新人免费试用条目', () => {
+    const raws = qoderFreeTrialRaws(HTML, { now: NOW });
+    assert.equal(raws.length, 1);
+    assert.match(raws[0].title, /Qoder：新用户免费试用 Pro 两周/);
+    assert.match(raws[0].summary, /自动降级为 Free 版/);
+    assert.equal(raws[0].dealType, 'free');
+    assert.equal(raws[0].kind, 'platform');
+    assert.equal(raws[0].lang, 'zh');
+  });
+
+  it('关键标记缺失（页面改版 / 权益下线）时不产出', () => {
+    assert.deepEqual(qoderFreeTrialRaws('New users are eligible for a paid trial', { now: NOW }), []);
+    assert.deepEqual(qoderFreeTrialRaws('', { now: NOW }), []);
   });
 });
 

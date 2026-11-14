@@ -26,6 +26,7 @@ import {
   SILICONFLOW_PRICING_URL,
   VOLCENGINE_DISCOUNT_PAGES,
   VOLCENGINE_DOC_BASE,
+  QODER_HOME,
   ZCODE_CN_URL,
   aliyunBailianFreeQuota,
   aliyunTokenPlanRaws,
@@ -35,6 +36,7 @@ import {
   googleNewsUrl,
   newsItemsToDealRaws,
   openRouterFreeModels,
+  qoderFreeTrialRaws,
   siliconFlowFreeModels,
   volcEngineDiscountRaws,
   zcodePlanRaws,
@@ -185,6 +187,17 @@ async function fetchDeepSeek(userAgent) {
   return items;
 }
 
+/** 抓取 Qoder 官网，解析新人免费试用 Pro 的政策文案 */
+async function fetchQoder(userAgent) {
+  const html = await withRetry('Qoder', async () =>
+    requestText(QODER_HOME, userAgent, 'text/html,application/xhtml+xml;q=0.9,*/*;q=0.5'),
+  );
+  if (!html) return [];
+  const items = qoderFreeTrialRaws(html, { now: Date.now() });
+  console.log(`  ${items.length ? '✅' : '⚠️'} Qoder：新人免费试用政策 ${items.length ? '在线' : '标记缺失（页面可能改版）'}`);
+  return items;
+}
+
 async function fetchSearchFeed(query, userAgent) {
   return withRetry(`搜索「${query}」`, async () => {
     const xml = await requestText(
@@ -235,6 +248,7 @@ async function main() {
   platformRaws.push(...(await fetchAliyun(userAgent)));
   platformRaws.push(...(await fetchZCode(userAgent)));
   platformRaws.push(...(await fetchDeepSeek(userAgent)));
+  platformRaws.push(...(await fetchQoder(userAgent)));
 
   // 2. 定向资讯搜索（每路独立容错）
   const searchResults = await mapLimit(SEARCH_QUERIES, CONCURRENCY, (query) => fetchSearchFeed(query, userAgent));
