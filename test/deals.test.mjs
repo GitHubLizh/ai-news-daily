@@ -5,17 +5,22 @@ import {
   ALIYUN_BAILIAN_FREE_URL,
   DEEPSEEK_PRICING_URL,
   GLM_CODING_BUY_URL,
+  MIMO_PRICING_DOC_URL,
   SILICONFLOW_PRICING_URL,
+  TRAE_PRICING_URL,
   buildDealsDataset,
   dealsFromSearchItems,
   deepseekDiscountRaws,
   googleNewsUrl,
+  mimoFreeRaws,
+  mimoPromoRaws,
   newsItemsToDealRaws,
   openRouterFreeModels,
   qoderFreeTrialRaws,
   siliconFlowFreeModels,
   aliyunBailianFreeQuota,
   aliyunTokenPlanRaws,
+  traePlanRaws,
   volcEngineDiscountRaws,
   zcodePlanRaws,
   SEARCH_QUERIES,
@@ -366,6 +371,94 @@ describe('qoderFreeTrialRaws（Qoder 官网新人权益）', () => {
   it('关键标记缺失（页面改版 / 权益下线）时不产出', () => {
     assert.deepEqual(qoderFreeTrialRaws('New users are eligible for a paid trial', { now: NOW }), []);
     assert.deepEqual(qoderFreeTrialRaws('', { now: NOW }), []);
+  });
+});
+
+describe('traePlanRaws（Trae 定价页）', () => {
+  // 与真实页面同构：内嵌 JSON 套餐（free 无原价；lite/pro/pro-plus 首月优惠）+ 套餐卡里的模型折扣说明
+  const HTML = [
+    '<li> 所有功能均可免费使用 </li>',
+    '<script>window.__PLAN__="{\\"plans\\":[{\\"id\\":\\"free\\",\\"title\\":\\"免费 Free\\",\\"price\\":\\"¥0\\"},',
+    '{\\"id\\":\\"lite\\",\\"title\\":\\"会员 Lite\\",\\"tag\\":\\"首月优惠\\",\\"price\\":\\"¥34\\",\\"originalPrice\\":\\"¥49\\",\\"pricePrefix\\":\\"低至\\",\\"priceSuffix\\":\\"\\\\u002F月\\"},',
+    '{\\"id\\":\\"pro\\",\\"title\\":\\"会员 Pro\\",\\"tag\\":\\"首月优惠\\",\\"price\\":\\"¥69\\",\\"originalPrice\\":\\"¥99\\"},',
+    '{\\"id\\":\\"pro-plus\\",\\"title\\":\\"会员 Pro+\\",\\"price\\":\\"¥167\\",\\"originalPrice\\":\\"¥239\\"}]}"</script>',
+    '<span> 模型折扣：Seed 2.1模型 2.5 折，GLM5.3、Deepseek-V4.1-Flash模型 7.5折 </span>',
+    '<span> 模型折扣：Seed 2.1模型 2.5 折，GLM5.3、Deepseek-V4.1-Flash模型 7.5折 </span>',
+  ].join('');
+  const NOW = Date.parse('2026-11-12T04:00:00Z');
+
+  it('免费版成免费条目，有促销价的会员逐个成折扣条目', () => {
+    const raws = traePlanRaws(HTML, { now: NOW });
+    // lite / pro / pro-plus 三张卡都有促销价，加上免费版与模型折扣 = 5 条
+    assert.equal(raws.length, 5);
+    const free = raws.find((raw) => raw.dealType === 'free');
+    assert.match(free.title, /Trae：免费版所有功能均可免费使用/);
+    const lite = raws.find((raw) => raw.url.endsWith('plan=lite'));
+    assert.match(lite.title, /Trae：会员 Lite 首月优惠 ¥34\/月（原价 ¥49，6\.9 折）$/);
+    assert.match(lite.summary, /首月优惠价 ¥34\/月、原价 ¥49（约 6\.9 折）/);
+    const proPlus = raws.find((raw) => raw.url.endsWith('plan=pro-plus'));
+    assert.match(proPlus.title, /¥167\/月（原价 ¥239，7 折）$/);
+    for (const raw of raws) {
+      assert.equal(raw.kind, 'platform');
+      assert.equal(raw.lang, 'zh');
+    }
+  });
+
+  it('会员卡里重复的模型折扣说明只成一条', () => {
+    const raws = traePlanRaws(HTML, { now: NOW });
+    const model = raws.find((raw) => raw.url.endsWith('discount=model'));
+    assert.match(model.title, /Trae：会员模型折扣（Seed 2\.1模型 2\.5 折，GLM5\.3、Deepseek-V4\.1-Flash模型 7\.5折）$/);
+    assert.equal(raws.filter((raw) => raw.url.endsWith('discount=model')).length, 1);
+  });
+
+  it('促销结束或免费版标记缺失时不成条', () => {
+    const noPromo = HTML.replaceAll('¥34', '¥49').replaceAll('¥69', '¥99').replaceAll('¥167', '¥239');
+    const raws = traePlanRaws(noPromo, { now: NOW });
+    assert.ok(!raws.some((raw) => raw.dealType === 'discount' && raw.url.includes('plan=')));
+    assert.deepEqual(traePlanRaws(HTML.replaceAll('所有功能均可免费使用', 'x'), { now: NOW }).filter((raw) => raw.dealType === 'free'), []);
+    assert.deepEqual(traePlanRaws('', { now: NOW }), []);
+  });
+});
+
+describe('mimoPromoRaws / mimoFreeRaws（小米 MiMo）', () => {
+  const HOME_HTML = `
+    <div class="Updates_updatesSmallCardInfo"><h4>MiMo Claw 搭载 V2.6 旗舰模型</h4>
+    <p class="Updates_updatesDesc">限时特惠 ¥14.9 / 月，搭载最新旗舰模型 mimo-v2.6-pro，联合金山一站式办公，Token Plan 一键叠加，免费时长 3h /天。</p></div>
+    <h4>普通动态没有活动</h4><p>模型常规更新说明</p>`;
+  const DOCS_HTML = `
+    <li><p class="mdx-p">缓存写入： 限时免费</p></li>
+    <li><p class="mdx-p"><strong class="mdx-strong">TTS 系列</strong></p>
+    <p class="mdx-p">限时免费：<code class="mdx-code-inline">mimo-v2.5-tts</code>、<code class="mdx-code-inline">mimo-v2.5-tts-voiceclone</code>、<code class="mdx-code-inline">mimo-v2.5-tts-voicedesign</code></p></li>
+    <h3>模型海外定价</h3>
+    <li><p class="mdx-p"><strong class="mdx-strong">TTS 系列</strong></p>
+    <p class="mdx-p">限时免费：<code class="mdx-code-inline">mimo-v2.5-tts</code>、<code class="mdx-code-inline">mimo-v2.5-tts-voiceclone</code>、<code class="mdx-code-inline">mimo-v2.5-tts-voicedesign</code></p></li>`;
+  const NOW = Date.parse('2026-11-12T04:00:00Z');
+
+  it('首页限时特惠卡成折扣条目，普通动态跳过', () => {
+    const raws = mimoPromoRaws(HOME_HTML, { now: NOW });
+    assert.equal(raws.length, 1);
+    assert.match(raws[0].title, /^MiMo：MiMo Claw 搭载 V2\.6 旗舰模型 限时特惠 ¥14\.9\/月$/);
+    assert.match(raws[0].summary, /免费时长 3h \/天/);
+    assert.equal(raws[0].dealType, 'discount');
+    assert.equal(raws[0].kind, 'platform');
+    assert.equal(raws[0].lang, 'zh');
+  });
+
+  it('定价文档「限时免费」按组去重成条，带分类与模型清单', () => {
+    const raws = mimoFreeRaws(DOCS_HTML, { now: NOW });
+    // 缓存写入（无清单）+ TTS 系列（国内 / 海外重复，去重成一条）
+    assert.equal(raws.length, 2);
+    assert.match(raws[0].title, /MiMo API 限时免费：缓存写入$/);
+    const tts = raws.find((raw) => raw.title.includes('TTS'));
+    assert.match(tts.title, /TTS 系列：mimo-v2\.5-tts、mimo-v2\.5-tts-voiceclone、mimo-v2\.5-tts-voicedesign$/);
+    assert.ok(tts.url.startsWith(MIMO_PRICING_DOC_URL));
+    assert.equal(tts.dealType, 'free');
+    assert.equal(tts.kind, 'platform');
+  });
+
+  it('标记消失时 0 条', () => {
+    assert.deepEqual(mimoPromoRaws('<h4>常规动态</h4><p>限时特惠已结束</p>', { now: NOW }), []);
+    assert.deepEqual(mimoFreeRaws('缓存写入：按刊例价计费', { now: NOW }), []);
   });
 });
 

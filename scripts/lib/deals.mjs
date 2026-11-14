@@ -7,7 +7,9 @@
  *      - 火山方舟 Agent / Coding Plan 折扣活动页（某模型 X 折 + 起止时间，只留进行中的）；
  *      - ZCode 官网（GLM Coding 套餐现价 vs 原价，有促销价才成条）；
  *      - DeepSeek API 定价文档页（「限时折扣价」表格，改版后自动停发）；
- *      - Qoder 官网（新人免费试用 Pro 两周的政策文案，关键标记消失即停发）。
+ *      - Qoder 官网（新人免费试用 Pro 两周的政策文案，关键标记消失即停发）；
+ *      - Trae 定价页（免费版 + 会员套餐现价 vs 原价 + 会员内模型折扣，无促销自动停发）；
+ *      - 小米 MiMo（首页「限时特惠」活动卡 + 定价文档「限时免费」组）。
  *   2. 定向资讯搜索（kind: 'search'）：Google News RSS 按关键词搜索，
  *      复用 detectDealType 过滤出「具体产品免费 / 优惠」的条目；
  *   3. 资讯流水线（kind: 'news'）：data/news.json 中命中 dealType 的条目原样带入。
@@ -39,6 +41,10 @@ export const ZCODE_CN_URL = `${ZCODE_HOME}/cn`;
 /** ZCode 套餐的实际订阅页（官网套餐卡上标注「最终信息以 BigModel 订阅页为准」） */
 export const GLM_CODING_BUY_URL = 'https://bigmodel.cn/glm-coding';
 export const QODER_HOME = 'https://qoder.com';
+export const TRAE_HOME = 'https://www.trae.cn';
+export const TRAE_PRICING_URL = `${TRAE_HOME}/pricing`;
+export const MIMO_HOME = 'https://mimo.mi.com';
+export const MIMO_PRICING_DOC_URL = `${MIMO_HOME}/docs/zh-CN/price/pay-as-you-go`;
 
 /** 火山方舟两个折扣活动页（Agent Plan 与 Coding Plan 的指定模型抵扣折扣） */
 export const VOLCENGINE_DISCOUNT_PAGES = [
@@ -361,6 +367,170 @@ export function qoderFreeTrialRaws(html, options = {}) {
       kind: 'platform',
     },
   ];
+}
+
+/**
+ * Trae（字节跳动）定价页 -> 渠道条目。
+ * 页面（SSR）把套餐数据以内嵌 JSON 提供：free（免费版 ¥0）与 lite / pro / pro-plus（会员，
+ * 带 tag「首月优惠」与 price / originalPrice）。会员套餐仅当现价低于原价才成条，
+ * 促销结束价格持平即自动停发；免费版条目要求页面同时存在「所有功能均可免费使用」标记；
+ * 另把会员卡里的「模型折扣」说明句单独成条（多张卡重复出现，按内容去重）。
+ */
+export function traePlanRaws(html, options = {}) {
+  const { now = Date.now(), maxItems = 6 } = options;
+  const text = String(html || '');
+  const raws = [];
+  // 引号前可有可无的转义反斜杠：同时兼容内嵌 JSON（\"id\"）与未转义渲染（"id"）两种形态
+  const pattern =
+    /\\{0,2}"id\\{0,2}":\s*\\{0,2}"(free|lite|pro|pro-plus)\\{0,2}"[\s\S]{0,600}?\\{0,2}"title\\{0,2}":\s*\\{0,2}"([\s\S]{2,30}?)\\{0,2}"[\s\S]{0,300}?\\{0,2}"price\\{0,2}":\s*\\{0,2}"¥\s*([\d.]+)\\{0,2}"/g;
+  for (const match of text.matchAll(pattern)) {
+    const [, id, title, priceRaw] = match;
+    const window = text.slice(match.index, match.index + 1000);
+    if (id === 'free') {
+      if (!text.includes('所有功能均可免费使用')) continue;
+      raws.push({
+        title: 'Trae：免费版所有功能均可免费使用（¥0，积分制）',
+        url: `${TRAE_PRICING_URL}?plan=free`,
+        summary:
+          'Trae（字节跳动）免费版价格 ¥0，所有功能均可免费使用，按积分计量；会员另享模型折扣与更高积分额度。权益以官方定价页为准。',
+        publishedRaw: new Date(now).toISOString(),
+        source: 'Trae',
+        sourceId: 'trae',
+        home: TRAE_HOME,
+        lang: 'zh',
+        weight: 2.5,
+        dealType: 'free',
+        kind: 'platform',
+      });
+      continue;
+    }
+    const orig = window.match(/\\{0,2}"originalPrice\\{0,2}":\s*\\{0,2}"¥\s*([\d.]+)\\{0,2}"/);
+    const price = Number(priceRaw);
+    const original = orig ? Number(orig[1]) : NaN;
+    if (!price || !original || price >= original) continue; // 促销结束（现价 >= 原价）不成条
+    const tag = window.match(/\\{0,2}"tag\\{0,2}":\s*\\{0,2}"([\s\S]{2,20}?)\\{0,2}"/)?.[1] || '';
+    const discount = String(Number(((price / original) * 10).toFixed(1)));
+    const name = decodeBasicEntities(title).trim();
+    const promo = decodeBasicEntities(tag).trim();
+    raws.push({
+      title: `Trae：${name}${promo ? ` ${promo}` : ''} ¥${priceRaw}/月（原价 ¥${orig[1]}，${discount} 折）`,
+      url: `${TRAE_PRICING_URL}?plan=${id}`,
+      summary: `Trae（字节跳动）${name} 当前${promo || '优惠'}价 ¥${priceRaw}/月、原价 ¥${orig[1]}（约 ${discount} 折），包含免费版功能与积分，另享模型折扣。价格与权益以官方定价页为准。`,
+      publishedRaw: new Date(now).toISOString(),
+      source: 'Trae',
+      sourceId: 'trae',
+      home: TRAE_HOME,
+      lang: 'zh',
+      weight: 2.5,
+      dealType: 'discount',
+      kind: 'platform',
+    });
+    if (raws.length >= maxItems) break;
+  }
+  // 套餐卡功能列表里的模型折扣说明（lite / pro 等多张卡会重复同一段，按内容只留一条）
+  const modelPromo = text.match(/模型折扣[：:]([^<>]{5,120}折)/);
+  if (modelPromo) {
+    const detail = decodeBasicEntities(modelPromo[1]).replace(/\s+/g, ' ').trim();
+    raws.push({
+      title: `Trae：会员模型折扣（${detail}）`,
+      url: `${TRAE_PRICING_URL}?discount=model`,
+      summary: `Trae 会员套餐内置模型折扣：${detail}。折扣范围与折后价格以官方定价页为准。`,
+      publishedRaw: new Date(now).toISOString(),
+      source: 'Trae',
+      sourceId: 'trae',
+      home: TRAE_HOME,
+      lang: 'zh',
+      weight: 2.5,
+      dealType: 'discount',
+      kind: 'platform',
+    });
+  }
+  return raws;
+}
+
+/**
+ * 小米 MiMo 首页 -> 渠道条目。
+ * 首页（SSR）「动态」卡片是 `<h4>产品名</h4><p>…限时特惠 ¥X / 月…</p>` 结构，
+ * 提取含「限时特惠」的句子成条（活动语料里有免费时长等细节，原样进摘要）；
+ * 活动下线后解析不到即自动停发。
+ */
+export function mimoPromoRaws(html, options = {}) {
+  const { now = Date.now(), maxItems = 3 } = options;
+  const text = String(html || '');
+  const raws = [];
+  const pattern = /<h4>([^<]{2,60})<\/h4>\s*<p[^>]*>([^<]*限时特惠\s*¥[\d.]+\s*\/\s*月[^<]*)<\/p>/g;
+  for (const match of text.matchAll(pattern)) {
+    const [, product, descRaw] = match;
+    const desc = decodeBasicEntities(descRaw).replace(/\s+/g, ' ').replace(/[。]\s*$/, '').trim();
+    const price = desc.match(/限时特惠\s*(¥[\d.]+)/)?.[1];
+    if (!price) continue;
+    raws.push({
+      title: `MiMo：${decodeBasicEntities(product).trim()} 限时特惠 ${price}/月`,
+      url: `${MIMO_HOME}/?promo=${encodeURIComponent(product.trim().slice(0, 20))}`,
+      summary: `${desc}。活动详情以小米 MiMo 官方页面为准。`,
+      publishedRaw: new Date(now).toISOString(),
+      source: '小米 MiMo',
+      sourceId: 'mimo',
+      home: MIMO_HOME,
+      lang: 'zh',
+      weight: 2.5,
+      dealType: 'discount',
+      kind: 'platform',
+    });
+    if (raws.length >= maxItems) break;
+  }
+  return raws;
+}
+
+/**
+ * 小米 MiMo 定价文档页 -> 渠道条目。
+ * SSR 文档里「限时免费」成组出现：前面是加粗分类（如「TTS 系列」）或「缓存写入：」前缀，
+ * 后面可选 <code> 模型清单；国内 / 海外定价两节会重复同一组，按内容去重。
+ * 标记消失（免费下线 / 页面改版）即自动停发。
+ */
+export function mimoFreeRaws(html, options = {}) {
+  const { now = Date.now(), maxItems = 4 } = options;
+  const text = String(html || '');
+  const raws = [];
+  const seen = new Set();
+  for (const match of text.matchAll(/限时免费/g)) {
+    const back = text.slice(Math.max(0, match.index - 500), match.index);
+    // 分类优先取紧邻的「xxx：」前缀（如「缓存写入：」），它比更上方的章节标题（如「计费说明」）更精确；
+    // 前面被 <p> 标签隔开时（如「TTS 系列</strong></p>」）再回退到最近的加粗分类
+    const category =
+      back.match(/([^\s<>][^<>]{1,18})[：:]\s*$/)?.[1] ||
+      [...back.matchAll(/<strong[^>]*>([^<]{2,30})<\/strong>/g)].pop()?.[1] ||
+      '';
+    // 模型清单只在「限时免费：」后紧跟冒号 + <code> 列表时收集——判断锚定在当前命中位置，
+    // 且清单只取当前段落（</p> 之前），避免把后文下一组「限时免费」的清单误配进来
+    const hasInlineList = /^\s*[：:]/.test(text.slice(match.index + 4, match.index + 20));
+    let models = [];
+    if (hasInlineList) {
+      const paraEnd = text.indexOf('</p>', match.index);
+      const scope = text.slice(match.index, paraEnd >= 0 ? Math.min(paraEnd, match.index + 600) : match.index + 600);
+      models = [...scope.matchAll(/<code[^>]*>([^<]{2,60})<\/code>/g)].map((m) => m[1].trim()).slice(0, 8);
+    }
+    const names =
+      decodeBasicEntities(category).replace(/\s+/g, ' ').trim() +
+      (models.length ? `：${models.join('、')}` : '');
+    if (!names || seen.has(names)) continue;
+    seen.add(names);
+    raws.push({
+      title: `MiMo API 限时免费：${names}`,
+      url: `${MIMO_PRICING_DOC_URL}?free=${encodeURIComponent(names.slice(0, 24))}`,
+      summary: `小米 MiMo 开放平台当前对 ${names} 执行限时免费。免费范围与截止时间以官方定价页为准。`,
+      publishedRaw: new Date(now).toISOString(),
+      source: '小米 MiMo',
+      sourceId: 'mimo',
+      home: MIMO_HOME,
+      lang: 'zh',
+      weight: 2.5,
+      dealType: 'free',
+      kind: 'platform',
+    });
+    if (raws.length >= maxItems) break;
+  }
+  return raws;
 }
 
 /** 资讯流水线条目 -> 渠道条目：news.json 里带 dealType 的直接带入 */

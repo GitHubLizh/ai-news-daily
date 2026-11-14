@@ -26,7 +26,10 @@ import {
   SILICONFLOW_PRICING_URL,
   VOLCENGINE_DISCOUNT_PAGES,
   VOLCENGINE_DOC_BASE,
+  MIMO_HOME,
+  MIMO_PRICING_DOC_URL,
   QODER_HOME,
+  TRAE_PRICING_URL,
   ZCODE_CN_URL,
   aliyunBailianFreeQuota,
   aliyunTokenPlanRaws,
@@ -34,10 +37,13 @@ import {
   dealsFromSearchItems,
   deepseekDiscountRaws,
   googleNewsUrl,
+  mimoFreeRaws,
+  mimoPromoRaws,
   newsItemsToDealRaws,
   openRouterFreeModels,
   qoderFreeTrialRaws,
   siliconFlowFreeModels,
+  traePlanRaws,
   volcEngineDiscountRaws,
   zcodePlanRaws,
 } from './lib/deals.mjs';
@@ -198,6 +204,39 @@ async function fetchQoder(userAgent) {
   return items;
 }
 
+/** 抓取 Trae（字节）定价页，解析免费版、会员促销与会员内模型折扣 */
+async function fetchTrae(userAgent) {
+  const html = await withRetry('Trae', async () =>
+    requestText(TRAE_PRICING_URL, userAgent, 'text/html,application/xhtml+xml;q=0.9,*/*;q=0.5'),
+  );
+  if (!html) return [];
+  const items = traePlanRaws(html, { now: Date.now() });
+  console.log(`  ${items.length ? '✅' : '⚠️'} Trae：套餐与折扣条目 ${items.length} 条`);
+  return items;
+}
+
+/** 小米 MiMo 两路：首页「限时特惠」活动卡 + 定价文档「限时免费」组 */
+async function fetchMimo(userAgent) {
+  const raws = [];
+  const homeHtml = await withRetry('小米 MiMo 首页', async () =>
+    requestText(MIMO_HOME, userAgent, 'text/html,application/xhtml+xml;q=0.9,*/*;q=0.5'),
+  );
+  if (homeHtml) {
+    const items = mimoPromoRaws(homeHtml, { now: Date.now() });
+    console.log(`  ${items.length ? '✅' : '⚠️'} 小米 MiMo：限时特惠活动 ${items.length} 条`);
+    raws.push(...items);
+  }
+  const docsHtml = await withRetry('小米 MiMo 定价文档', async () =>
+    requestText(MIMO_PRICING_DOC_URL, userAgent, 'text/html,application/xhtml+xml;q=0.9,*/*;q=0.5'),
+  );
+  if (docsHtml) {
+    const items = mimoFreeRaws(docsHtml, { now: Date.now() });
+    console.log(`  ${items.length ? '✅' : '⚠️'} 小米 MiMo：限时免费 ${items.length} 组`);
+    raws.push(...items);
+  }
+  return raws;
+}
+
 async function fetchSearchFeed(query, userAgent) {
   return withRetry(`搜索「${query}」`, async () => {
     const xml = await requestText(
@@ -249,6 +288,8 @@ async function main() {
   platformRaws.push(...(await fetchZCode(userAgent)));
   platformRaws.push(...(await fetchDeepSeek(userAgent)));
   platformRaws.push(...(await fetchQoder(userAgent)));
+  platformRaws.push(...(await fetchTrae(userAgent)));
+  platformRaws.push(...(await fetchMimo(userAgent)));
 
   // 2. 定向资讯搜索（每路独立容错）
   const searchResults = await mapLimit(SEARCH_QUERIES, CONCURRENCY, (query) => fetchSearchFeed(query, userAgent));
