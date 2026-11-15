@@ -822,6 +822,9 @@ function renderAbout() {
   body.innerHTML = `
     <p>本站是一个自建的 AI 资讯聚合站：每天定时抓取公开 RSS 源，去重、分类后写入一份静态 JSON，页面纯前端渲染。没有账号、没有广告，方便自己和朋友每天花几分钟扫一眼 AI 圈发生了什么。</p>
 
+    <h3>商务合作</h3>
+    <p>商务合作、广告投放与内容授权请联系：<a class="footer-link" href="mailto:name_lizhenghao@126.com">name_lizhenghao@126.com</a></p>
+
     <h3>数据是怎么来的</h3>
     <ul>
       <li><code>npm run fetch</code> 抓取 <code>data/feeds.json</code> 中启用的源，写入 <code>data/news.json</code></li>
