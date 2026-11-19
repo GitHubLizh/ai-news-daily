@@ -2,7 +2,7 @@ import { describe, it } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 
-import { buildArchivePage, buildDayPage, escapeHtml, groupByDay, itemStaticHtml } from '../scripts/prerender.mjs';
+import { buildArchivePage, buildDayPage, buildDealsPage, escapeHtml, groupByDay, itemStaticHtml } from '../scripts/prerender.mjs';
 import { buildSitemapXml } from '../scripts/sitemap.mjs';
 import { parseSitemapUrls } from '../scripts/indexnow.mjs';
 
@@ -32,12 +32,13 @@ describe('escapeHtml', () => {
 });
 
 describe('itemStaticHtml', () => {
-  it('标题与摘要经过转义，原文链接保留', () => {
+  it('标题与摘要经过转义，原文链接保留且 nofollow', () => {
     const html = itemStaticHtml(ITEM, 'Asia/Shanghai');
     assert.ok(!html.includes('<新版本>'));
     assert.ok(html.includes('&lt;新版本&gt;'));
     assert.ok(!html.includes('<tag>'));
     assert.ok(html.includes('href="https://example.com/news/1"'));
+    assert.ok(html.includes('rel="noopener noreferrer nofollow"'));
     assert.ok(html.includes('量子位'));
   });
 
@@ -63,6 +64,12 @@ describe('首页静态 SEO', () => {
     assert.ok(html.includes('<a class="calendar-archive-link" href="/day/">查看全部日期归档</a>'));
     assert.ok(!html.includes('<a href="/day/">每日 AI 新闻归档</a>'));
   });
+
+  it('页脚有可爬的 /deals/ 与 /day/ 真实内链', async () => {
+    const html = await readFile(new URL('../index.html', import.meta.url), 'utf8');
+    assert.ok(html.includes('<a class="footer-link" href="/deals/">免费与优惠</a>'));
+    assert.ok(html.includes('<a class="footer-link" href="/day/">每日新闻归档</a>'));
+  });
 });
 
 describe('buildArchivePage', () => {
@@ -79,6 +86,7 @@ describe('buildArchivePage', () => {
     assert.ok(html.includes('<span>1 条</span>'));
     assert.ok(html.includes('<span>2 条</span>'));
     assert.ok(html.includes('10月18日 &lt;周日&gt;'));
+    assert.ok(html.includes('<a href="/deals/">免费与优惠</a>'));
   });
 });
 
@@ -100,6 +108,7 @@ describe('buildDayPage', () => {
     assert.ok(html.includes('href="/day/2026-10-18/"'));
     assert.ok(html.includes('<link rel="icon" href="/favicon.ico" sizes="any" />'));
     assert.ok(html.includes('<img src="/assets/logo.png" width="34" height="34" alt="" />'));
+    assert.ok(html.includes('<a href="/deals/">免费与优惠</a>'));
   });
 
   it('没有前后日期时仍保留归档和交互版链接', () => {
@@ -114,6 +123,91 @@ describe('buildDayPage', () => {
     assert.ok(!html.includes('href="/day/2026-10-20/"'));
     assert.ok(html.includes('全部归档'));
     assert.ok(html.includes('交互版'));
+  });
+});
+
+describe('buildDealsPage', () => {
+  const DEALS_DATA = {
+    generatedAt: '2026-11-17T08:15:07.172Z',
+    timezone: 'Asia/Shanghai',
+    items: [
+      {
+        id: 'd1',
+        title: 'OpenRouter 免费模型 <上新> & 清单',
+        url: 'https://openrouter.ai/models?max_price=0',
+        summary: '免费模型摘要里有 "引号"',
+        source: 'OpenRouter',
+        category: '产品动态',
+        dealType: 'free',
+        kind: 'platform',
+        day: '2026-11-17',
+        publishedTs: Date.UTC(2026, 10, 17, 8),
+      },
+      {
+        id: 'd2',
+        title: '火山方舟 Coding Plan 限时折扣',
+        url: 'https://www.volcengine.com/activity/codingplan',
+        summary: '',
+        source: '火山方舟 Coding Plan',
+        category: '产品动态',
+        dealType: 'discount',
+        kind: 'platform',
+        day: '2026-11-16',
+        publishedTs: Date.UTC(2026, 10, 16, 8),
+      },
+      {
+        id: 'd3',
+        title: '某订阅打折传闻',
+        url: 'https://example.com/deal',
+        summary: '搜索来的条目',
+        source: 'Google 资讯',
+        category: '产品动态',
+        dealType: 'free',
+        kind: 'search',
+        day: '2026-11-17',
+        publishedTs: Date.UTC(2026, 10, 17, 9),
+      },
+    ],
+  };
+
+  it('包含独立 title、description、canonical 与可见 H1', () => {
+    const html = buildDealsPage({ site: SITE, data: DEALS_DATA });
+    assert.ok(html.includes('<title>AI大模型免费与优惠（每日更新）｜AI 资讯速递</title>'));
+    assert.ok(html.includes('<link rel="canonical" href="https://latestainews.cn/deals/"'));
+    assert.ok(html.includes('<h1>AI 大模型免费与优惠</h1>'));
+    assert.ok(html.includes('OpenRouter'));
+    assert.ok(html.includes('数据更新于 2026-11-17 · 共 3 条'));
+    assert.ok(html.includes('href="/#/deals"'));
+    assert.ok(html.includes('<a href="/day/">每日 AI 新闻归档</a>'));
+  });
+
+  it('按免费/优惠分组，组内按时间倒序，来源类型替换分类徽章', () => {
+    const html = buildDealsPage({ site: SITE, data: DEALS_DATA });
+    const freeIndex = html.indexOf('<h2>免费使用</h2>');
+    const discountIndex = html.indexOf('<h2>优惠购买</h2>');
+    assert.ok(freeIndex >= 0 && discountIndex > freeIndex);
+    assert.ok(html.includes('<span class="day-count">2 条</span>'));
+    assert.ok(html.includes('<span class="day-count">1 条</span>'));
+    // 免费组里较新的 d3 排在 d1 前
+    assert.ok(html.indexOf('某订阅打折传闻') < html.indexOf('OpenRouter 免费模型'));
+    assert.ok(html.includes('平台直连'));
+    assert.ok(html.includes('定向搜索'));
+    assert.ok(!html.includes('产品动态'));
+  });
+
+  it('标题与摘要转义，外链 nofollow', () => {
+    const html = buildDealsPage({ site: SITE, data: DEALS_DATA });
+    assert.ok(html.includes('&lt;上新&gt;'));
+    assert.ok(!html.includes('<上新>'));
+    assert.ok(html.includes('&quot;引号&quot;'));
+    assert.ok(html.includes('rel="noopener noreferrer nofollow"'));
+  });
+
+  it('空数据仍输出页面骨架', () => {
+    const html = buildDealsPage({ site: SITE, data: { items: [], generatedAt: '' } });
+    assert.ok(html.includes('<h1>AI 大模型免费与优惠</h1>'));
+    assert.ok(html.includes('共 0 条'));
+    assert.ok(!html.includes('<h2>免费使用</h2>'));
   });
 });
 
@@ -134,6 +228,20 @@ describe('buildSitemapXml', () => {
     assert.ok(!xml.includes('latestainews.cn///'));
     assert.ok(xml.includes('<loc>https://latestainews.cn/day/</loc>'));
     assert.ok(xml.includes('<loc>https://latestainews.cn/day/2026-10-19/</loc>'));
+  });
+
+  it('deals 开关打开时 /deals/ 位于首页之后、归档之前', () => {
+    const xml = buildSitemapXml('https://latestainews.cn', [DAY], '2026-10-19', { deals: true });
+    const homepageIndex = xml.indexOf('<loc>https://latestainews.cn/</loc>');
+    const dealsIndex = xml.indexOf('<loc>https://latestainews.cn/deals/</loc>');
+    const archiveIndex = xml.indexOf('<loc>https://latestainews.cn/day/</loc>');
+    assert.ok(homepageIndex >= 0 && homepageIndex < dealsIndex);
+    assert.ok(dealsIndex < archiveIndex);
+  });
+
+  it('默认不含 /deals/（未生成优惠页时不提交死链）', () => {
+    const xml = buildSitemapXml('https://latestainews.cn', [DAY], '2026-10-19');
+    assert.ok(!xml.includes('/deals/'));
   });
 });
 

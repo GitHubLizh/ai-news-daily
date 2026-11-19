@@ -52,7 +52,7 @@ export function itemStaticHtml(item, timezone) {
         <span class="item-time">${escapeHtml(timeOf(item, timezone))}</span>
       </div>
       <h3 class="item-title">
-        <a href="${escapeHtml(item.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(item.title)}</a>
+        <a href="${escapeHtml(item.url)}" target="_blank" rel="noopener noreferrer nofollow">${escapeHtml(item.title)}</a>
       </h3>
       ${item.summary ? `<p class="item-summary">${escapeHtml(item.summary)}</p>` : ''}
     </article>`;
@@ -93,7 +93,7 @@ export function buildArchivePage({ site, days }) {
     <link rel="apple-touch-icon" href="/assets/logo.png" />
     <link rel="stylesheet" href="../assets/styles.css" />
   </head>
-  <body>
+  <body class="static-page">
     <header class="topbar">
       <div class="wrap topbar-inner">
         <a class="brand" href="/" aria-label="回到最新资讯">
@@ -102,6 +102,7 @@ export function buildArchivePage({ site, days }) {
         </a>
         <nav class="nav" aria-label="站点导航">
           <a href="/">最新</a>
+          <a href="/deals/">免费与优惠</a>
           <a href="/day/" class="is-active">每日 AI 新闻归档</a>
           <a href="/data/feed.xml" target="_blank" rel="noopener">RSS 订阅</a>
         </nav>
@@ -152,7 +153,7 @@ export function buildDayPage({ site, dayEntry, items, newerDay, olderDay, timezo
     <link rel="apple-touch-icon" href="/assets/logo.png" />
     <link rel="stylesheet" href="../../assets/styles.css" />
   </head>
-  <body>
+  <body class="static-page">
     <header class="topbar">
       <div class="wrap topbar-inner">
         <a class="brand" href="/" aria-label="回到最新资讯">
@@ -166,6 +167,7 @@ export function buildDayPage({ site, dayEntry, items, newerDay, olderDay, timezo
         </a>
         <nav class="nav" aria-label="站点导航">
           <a href="/">最新</a>
+          <a href="/deals/">免费与优惠</a>
           <a href="/day/">每日 AI 新闻归档</a>
           <a href="/data/feed.xml" target="_blank" rel="noopener">RSS 订阅</a>
         </nav>
@@ -188,6 +190,88 @@ export function buildDayPage({ site, dayEntry, items, newerDay, olderDay, timezo
 `;
 }
 
+const DEAL_TYPE_LABELS = { free: '免费使用', discount: '优惠购买' };
+const DEAL_KIND_LABELS = { platform: '平台直连', search: '定向搜索', news: '资讯识别' };
+
+/**
+ * 「免费与优惠」静态页：SPA 的 #/deals 是 hash 路由，搜索引擎看不到，
+ * 这里把 data/deals.json 的条目按「免费使用 / 优惠购买」分组渲染成独立可收录 URL。
+ */
+export function buildDealsPage({ site, data }) {
+  const canonical = `${site.url}/deals/`;
+  const timezone = data.timezone || 'Asia/Shanghai';
+  const items = [...(data.items || [])].sort((a, b) => (b.publishedTs || 0) - (a.publishedTs || 0));
+  const sections = Object.entries(DEAL_TYPE_LABELS)
+    .map(([type, label]) => ({ label, items: items.filter((item) => item.dealType === type) }))
+    .filter((group) => group.items.length)
+    .map((group) =>
+      dayGroupHtml(
+        group.label,
+        group.items.map((item) => ({ ...item, category: DEAL_KIND_LABELS[item.kind] || item.category })),
+        timezone,
+      ),
+    )
+    .join('\n');
+  const updated = String(data.generatedAt || '').slice(0, 10);
+  return `<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>AI大模型免费与优惠（每日更新）｜${escapeHtml(site.title)}</title>
+    <meta
+      name="description"
+      content="汇总各大平台 AI 大模型免费额度与限时折扣：OpenRouter、硅基流动免费模型清单，火山方舟、智谱 GLM、阿里云百炼新人额度与特价套餐，每日更新，含具体模型与官方入口。"
+    />
+    <link rel="canonical" href="${escapeHtml(canonical)}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="AI大模型免费与优惠（每日更新）｜${escapeHtml(site.title)}" />
+    <meta
+      property="og:description"
+      content="OpenRouter、硅基流动免费模型，火山方舟、智谱、阿里云限时折扣，每日更新，含具体模型与官方入口。"
+    />
+    <meta property="og:url" content="${escapeHtml(canonical)}" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="apple-touch-icon" href="/assets/logo.png" />
+    <link rel="stylesheet" href="../assets/styles.css" />
+  </head>
+  <body class="static-page">
+    <header class="topbar">
+      <div class="wrap topbar-inner">
+        <a class="brand" href="/" aria-label="回到最新资讯">
+          <span class="brand-mark" aria-hidden="true"><img src="/assets/logo.png" width="34" height="34" alt="" /></span>
+          <span class="brand-text"><strong>${escapeHtml(site.title)}</strong><small>LATEST AI NEWS</small></span>
+        </a>
+        <nav class="nav" aria-label="站点导航">
+          <a href="/">最新</a>
+          <a href="/deals/" class="is-active">免费与优惠</a>
+          <a href="/day/">每日 AI 新闻归档</a>
+          <a href="/data/feed.xml" target="_blank" rel="noopener">RSS 订阅</a>
+        </nav>
+      </div>
+    </header>
+    <main class="wrap archive-page">
+      <header class="archive-header">
+        <h1>AI 大模型免费与优惠</h1>
+        <p>
+          汇集各大平台免费可用的 AI 大模型与优惠购买渠道：OpenRouter / 硅基流动免费模型清单，
+          火山方舟、智谱、阿里云百炼的限时折扣与新人额度，含具体模型、免费额度与官方入口。
+          价格与额度以各平台官方页面为准。
+        </p>
+        <p class="muted">数据更新于 ${escapeHtml(updated)} · 共 ${items.length} 条 · <a href="/#/deals">交互版（可按日期 / 类型筛选）→</a></p>
+      </header>
+      ${sections}
+    </main>
+    <footer class="footer">
+      <div class="wrap footer-inner">
+        <p class="muted">${escapeHtml(site.title)} — 个人自建的 AI 资讯聚合站，内容来自公开 RSS 源与平台官方页面，仅保留标题、摘要与原文链接，版权归原作者所有。</p>
+      </div>
+    </footer>
+  </body>
+</html>
+`;
+}
+
 export function groupByDay(data) {
   const map = new Map();
   for (const item of data.items || []) {
@@ -202,10 +286,11 @@ export function groupByDay(data) {
  * 往 DIST 写入预渲染后的 index.html 与全部 day/ 静态页。
  */
 export async function prerenderSite(root, dist) {
-  const [indexHtml, newsRaw, feedsRaw] = await Promise.all([
+  const [indexHtml, newsRaw, feedsRaw, dealsRaw] = await Promise.all([
     readFile(path.join(root, 'index.html'), 'utf8'),
     readFile(path.join(root, 'data/news.json'), 'utf8'),
     readFile(path.join(root, 'data/feeds.json'), 'utf8'),
+    readFile(path.join(root, 'data/deals.json'), 'utf8').catch(() => null),
   ]);
   const data = JSON.parse(newsRaw);
   const feeds = JSON.parse(feedsRaw);
@@ -256,7 +341,18 @@ export async function prerenderSite(root, dist) {
     pageCount += 1;
   }
 
-  return { homepageItems: latestItems.length, latestDay: latest.day, dayPages: pageCount };
+  // 3. 「免费与优惠」静态页：hash 路由 #/deals 不可收录，这里生成独立 URL
+  let dealsItems = 0;
+  if (dealsRaw) {
+    const dealsData = JSON.parse(dealsRaw);
+    dealsItems = (dealsData.items || []).length;
+    if (dealsItems) {
+      await mkdir(path.join(dist, 'deals'), { recursive: true });
+      await writeFile(path.join(dist, 'deals', 'index.html'), buildDealsPage({ site, data: dealsData }), 'utf8');
+    }
+  }
+
+  return { homepageItems: latestItems.length, latestDay: latest.day, dayPages: pageCount, dealsItems };
 }
 
 // 独立运行：node scripts/prerender.mjs [dist 目录]
@@ -264,7 +360,7 @@ if (process.argv[1] && fileURLToPath(import.meta.url) === path.resolve(process.a
   const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
   const dist = process.argv[2] ? path.resolve(process.argv[2]) : path.join(root, 'dist');
   prerenderSite(root, dist)
-    .then((r) => console.log(`🕸️  预渲染完成：首页注入 ${r.homepageItems} 条（${r.latestDay}），日期页 ${r.dayPages} 个`))
+    .then((r) => console.log(`🕸️  预渲染完成：首页注入 ${r.homepageItems} 条（${r.latestDay}），日期页 ${r.dayPages} 个，优惠页 ${r.dealsItems} 条`))
     .catch((error) => {
       console.error(`❌ 预渲染失败：${error.message}`);
       process.exitCode = 1;

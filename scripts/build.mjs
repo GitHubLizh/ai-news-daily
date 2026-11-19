@@ -47,7 +47,7 @@ async function main() {
   // 让不执行 JS 的搜索引擎爬虫也能抓到内容（详见 scripts/prerender.mjs）
   if (copied.includes('data/news.json')) {
     const pre = await prerenderSite(ROOT, DIST);
-    console.log(`🕸️  预渲染完成：首页注入 ${pre.homepageItems} 条（${pre.latestDay}），日期页 ${pre.dayPages} 个`);
+    console.log(`🕸️  预渲染完成：首页注入 ${pre.homepageItems} 条（${pre.latestDay}），日期页 ${pre.dayPages} 个，优惠页 ${pre.dealsItems} 条`);
     const map = await writeSitemap(ROOT, DIST);
     console.log(`🗺️  sitemap.xml 已生成，共 ${map.urls} 个 URL`);
   } else {

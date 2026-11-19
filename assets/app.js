@@ -381,9 +381,9 @@ function renderHero() {
       <span class="hero-date">${escapeHtml(dayLabelOf(featured.day))}${isToday ? ' · 今日' : ''}</span>
     </div>
     <h1 class="hero-title">
-      <a href="${escapeHtml(featured.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(featured.title)}</a>
+      <a href="${escapeHtml(featured.url)}" target="_blank" rel="noopener noreferrer nofollow">${escapeHtml(featured.title)}</a>
     </h1>
-    <p class="hero-summary"><a href="${escapeHtml(featured.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(featured.summary || '点击查看原文详情。')}</a></p>
+    <p class="hero-summary"><a href="${escapeHtml(featured.url)}" target="_blank" rel="noopener noreferrer nofollow">${escapeHtml(featured.summary || '点击查看原文详情。')}</a></p>
     <div class="hero-foot">
       <span class="hero-source">${escapeHtml(featured.source)}</span>
       <span>${escapeHtml(featured.category)}</span>
@@ -456,9 +456,9 @@ function itemHtml(item) {
         <span class="item-hot">HOT ${item.hot}</span>
       </div>
       <h3 class="item-title">
-        <a href="${escapeHtml(item.url)}" target="_blank" rel="noopener noreferrer" data-act="open">${escapeHtml(item.title)}</a>
+        <a href="${escapeHtml(item.url)}" target="_blank" rel="noopener noreferrer nofollow" data-act="open">${escapeHtml(item.title)}</a>
       </h3>
-      ${item.summary ? `<p class="item-summary"><a href="${escapeHtml(item.url)}" target="_blank" rel="noopener noreferrer" data-act="open">${escapeHtml(item.summary)}</a></p>` : ''}
+      ${item.summary ? `<p class="item-summary"><a href="${escapeHtml(item.url)}" target="_blank" rel="noopener noreferrer nofollow" data-act="open">${escapeHtml(item.summary)}</a></p>` : ''}
       <div class="item-bottom">
         <span class="item-flags">
           ${item.kind === 'platform' ? '<span>平台直连</span>' : ''}
@@ -754,7 +754,7 @@ function renderSidebar() {
     .slice(0, 8)
     .map(
       ([name, count]) => `
-      <a class="stat" href="${escapeHtml(state.sourceHome.get(name) || '#')}" target="_blank" rel="noopener noreferrer">
+      <a class="stat" href="${escapeHtml(state.sourceHome.get(name) || '#')}" target="_blank" rel="noopener noreferrer nofollow">
         <span class="stat-name">${escapeHtml(name)}</span>
         <span class="stat-n">${count}</span>
         <span class="stat-bar"><i style="width:${Math.round((count / srcMax) * 100)}%"></i></span>
@@ -770,7 +770,7 @@ function renderSidebar() {
       <li>
         <span class="hot-rank">${index + 1}</span>
         <span>
-          <a class="hot-title" href="${escapeHtml(item.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(item.title)}</a>
+          <a class="hot-title" href="${escapeHtml(item.url)}" target="_blank" rel="noopener noreferrer nofollow">${escapeHtml(item.title)}</a>
           <span class="hot-meta">${escapeHtml(item.source)} · 热度 ${item.hot}</span>
         </span>
       </li>`,
@@ -816,7 +816,7 @@ function renderAbout() {
     .slice(0, 40)
     .map((entry) => {
       const home = state.sourceHome.get(entry.name);
-      return `<a href="${escapeHtml(home || '#')}" target="_blank" rel="noopener noreferrer">${escapeHtml(entry.name)}<small class="muted">${entry.count}</small></a>`;
+      return `<a href="${escapeHtml(home || '#')}" target="_blank" rel="noopener noreferrer nofollow">${escapeHtml(entry.name)}<small class="muted">${entry.count}</small></a>`;
     })
     .join('');
   body.innerHTML = `

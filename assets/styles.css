@@ -1468,6 +1468,38 @@ body[data-view='deals'] .intro-deals {
     display: flex;
   }
 
+  /* 静态页（归档/日期/优惠）没有汉堡按钮：窄屏下导航平铺换行，顶栏高度随内容自适应 */
+  .static-page .topbar-inner {
+    flex-wrap: wrap;
+    height: auto;
+    min-height: var(--topbar-h);
+    padding: 6px 0;
+    gap: 4px 12px;
+  }
+
+  .static-page .nav {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0 12px;
+    padding: 0;
+    border-bottom: 0;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .static-page .nav a {
+    width: auto;
+    min-height: 0;
+    padding: 6px 0;
+    border-bottom: 2px solid transparent;
+  }
+
+  .static-page .nav a.is-active {
+    border-bottom-color: var(--brand);
+  }
+
   .nav a[data-nav] {
     display: none;
   }

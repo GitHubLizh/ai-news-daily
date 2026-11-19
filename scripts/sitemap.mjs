@@ -4,11 +4,11 @@
  * 站点地址取 data/feeds.json 的 site.url，可用 SITE_URL 环境变量覆盖（与 fetch-news.mjs 一致）。
  * 由 build.mjs 调用；buildSitemapXml 为纯函数，供测试使用。
  */
-import { readFile, writeFile } from 'node:fs/promises';
+import { readFile, stat, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-export function buildSitemapXml(siteUrl, days, homepageLastmod) {
+export function buildSitemapXml(siteUrl, days, homepageLastmod, { deals = false } = {}) {
   const base = String(siteUrl || '').replace(/\/+$/, '');
   const entries = [
     `  <url>
@@ -17,13 +17,21 @@ export function buildSitemapXml(siteUrl, days, homepageLastmod) {
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>`,
-    `  <url>
+  ];
+  if (deals) {
+    entries.push(`  <url>
+    <loc>${base}/deals/</loc>
+    <lastmod>${homepageLastmod}</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>`);
+  }
+  entries.push(`  <url>
     <loc>${base}/day/</loc>
     <lastmod>${homepageLastmod}</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
-  </url>`,
-  ];
+  </url>`);
   for (const day of days) {
     entries.push(`  <url>
     <loc>${base}/day/${day.day}/</loc>
@@ -49,9 +57,13 @@ export async function writeSitemap(root, dist) {
   const siteUrl = (process.env.SITE_URL || feeds.site.url || '').replace(/\/+$/, '');
   const days = (data.days || []).filter((d) => d.count > 0);
   const homepageLastmod = String(data.generatedAt || '').slice(0, 10);
-  const xml = buildSitemapXml(siteUrl, days, homepageLastmod);
+  const hasDeals = await stat(path.join(dist, 'deals', 'index.html')).then(
+    () => true,
+    () => false,
+  );
+  const xml = buildSitemapXml(siteUrl, days, homepageLastmod, { deals: hasDeals });
   await writeFile(path.join(dist, 'sitemap.xml'), xml, 'utf8');
-  return { urls: days.length + 2 };
+  return { urls: days.length + 2 + (hasDeals ? 1 : 0) };
 }
 
 // 独立运行：node scripts/sitemap.mjs [dist 目录]
