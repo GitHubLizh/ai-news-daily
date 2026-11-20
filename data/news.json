@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-11-20T02:53:25.203Z",
+  "generatedAt": "2026-11-20T07:35:53.205Z",
   "timezone": "Asia/Shanghai",
   "count": 2500,
   "days": [
     {
       "day": "2026-11-20",
       "label": "11月20日 · 周五",
-      "count": 36
+      "count": 49
     },
     {
       "day": "2026-11-19",
@@ -221,12 +221,12 @@
     {
       "day": "2026-10-08",
       "label": "10月8日 · 周四",
-      "count": 48
+      "count": 36
     },
     {
       "day": "2026-10-07",
       "label": "10月7日 · 周三",
-      "count": 15
+      "count": 14
     },
     {
       "day": "2026-10-06",
@@ -238,15 +238,15 @@
     "categories": [
       {
         "name": "行业动态",
-        "count": 1418
+        "count": 1417
       },
       {
         "name": "产品动态",
-        "count": 471
+        "count": 473
       },
       {
         "name": "模型发布",
-        "count": 433
+        "count": 431
       },
       {
         "name": "研究前沿",
@@ -254,7 +254,7 @@
       },
       {
         "name": "开源工具",
-        "count": 52
+        "count": 53
       },
       {
         "name": "观点方法",
@@ -264,7 +264,7 @@
     "sources": [
       {
         "name": "IT之家",
-        "count": 1066
+        "count": 1076
       },
       {
         "name": "TechCrunch AI",
@@ -272,15 +272,15 @@
       },
       {
         "name": "量子位",
-        "count": 317
+        "count": 319
       },
       {
         "name": "The Decoder",
-        "count": 238
+        "count": 232
       },
       {
         "name": "The Verge AI",
-        "count": 213
+        "count": 207
       },
       {
         "name": "OpenAI",
@@ -296,12 +296,285 @@
       }
     ],
     "languages": {
-      "zh": 1382,
-      "en": 1118
+      "zh": 1394,
+      "en": 1106
     },
     "estimatedTime": 0
   },
   "items": [
+    {
+      "id": "0euqtuj",
+      "title": "约 14MB 内存运行 2.7 亿参数模型：谷歌工程师把 AI 装进打印机，每词元耗时约 60 秒",
+      "url": "https://www.ithome.com/1/029/953.htm",
+      "summary": "IT之家 11 月 20 日消息，谷歌 DeepMind 技术团队成员奥马尔 · 圣塞维耶罗（Omar Sanseviero）于 11 月 17 日在 X 平台发布推文，在只占用 14.1MB 内存的情况下，成功让办公激光打印机运行 2.7 亿参数的 Gemma 3 270M 模型，每输出一个词元（Token）消耗约 60 秒。 圣塞维耶罗借助谷歌的 Gemini 4 Carbon 模型，探索展示了一个特别实验，将小型 Transfor…",
+      "author": "",
+      "source": "IT之家",
+      "sourceId": "ithome",
+      "home": "https://www.ithome.com",
+      "weight": 1.6,
+      "lang": "zh",
+      "category": "模型发布",
+      "dealType": null,
+      "publishedAt": "2026-11-20T07:02:07.000Z",
+      "publishedTs": 1795158127000,
+      "day": "2026-11-20",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 71
+    },
+    {
+      "id": "14gmwcn",
+      "title": "李书福：吉利旗下芯位科技筹备建设芯位大学，主动对接人工智能科技",
+      "url": "https://www.ithome.com/1/029/913.htm",
+      "summary": "IT之家 11 月 20 日消息，据上海证券报消息，11 月 20 日，李书福在三亚举行的 2026 年芯位教育论坛上透露，吉利旗下芯位科技筹备建设芯位大学。 据悉，芯位大学由吉利人才集团支持其本、硕、博学科建设，吉利控股集团将全面开放产业应用场景，建设高水平全球型新型研究型大学。“吉利控股集团将协同芯位大学面向全球招生，因地制宜为吉利培养世界各国的本土化人才，根据吉利在全球不同国家的不同项目，规划招生规模、生源质量、录取流程、专业方向…",
+      "author": "",
+      "source": "IT之家",
+      "sourceId": "ithome",
+      "home": "https://www.ithome.com",
+      "weight": 1.6,
+      "lang": "zh",
+      "category": "产品动态",
+      "dealType": null,
+      "publishedAt": "2026-11-20T06:50:02.000Z",
+      "publishedTs": 1795157402000,
+      "day": "2026-11-20",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 71
+    },
+    {
+      "id": "0q9g3ef",
+      "title": "马斯克太空计划遇阻：SpaceX 债主不允许将作为贷款抵押品的 AI 芯片发射上天",
+      "url": "https://www.ithome.com/1/029/896.htm",
+      "summary": "IT 之家 11 月 20 日消息，据《金融时报》今日报道，SpaceX 最新一笔以英伟达 AI 芯片为抵押的 430 亿美元（IT之家注：现汇率约合 2,877.55 亿元人民币）债务融资，正与其 CEO 埃隆 · 马斯克的太空 AI 数据中心计划产生冲突。 为这笔融资提供支持的贷款方曾试图在合同中加入限制条款，禁止 SpaceX 将作为贷款抵押品的 AI 芯片发射到太空（目前尚不确定该条款是否被纳入最终签署的融资文件）。 债权人担心…",
+      "author": "",
+      "source": "IT之家",
+      "sourceId": "ithome",
+      "home": "https://www.ithome.com",
+      "weight": 1.6,
+      "lang": "zh",
+      "category": "行业动态",
+      "dealType": null,
+      "publishedAt": "2026-11-20T06:33:22.000Z",
+      "publishedTs": 1795156402000,
+      "day": "2026-11-20",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 71
+    },
+    {
+      "id": "17j3rfg",
+      "title": "新浪新闻·2026探索大会在京举行 虚实交融共探智能时代共生新图景",
+      "url": "https://www.qbitai.com/2026/11/511603.html",
+      "summary": "11月19日，由微博与新浪新闻联合主办的“新浪新闻·2026探索大会”在北京举办。",
+      "author": "量子位的朋友们",
+      "source": "量子位",
+      "sourceId": "qbitai",
+      "home": "https://www.qbitai.com",
+      "weight": 2.2,
+      "lang": "zh",
+      "category": "行业动态",
+      "dealType": null,
+      "publishedAt": "2026-11-20T06:16:06.000Z",
+      "publishedTs": 1795155366000,
+      "day": "2026-11-20",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 70
+    },
+    {
+      "id": "1cs47qe",
+      "title": "消息称英伟达将豪掷逾 5 亿美元，收购“比 ChatGPT 更快的 AI”公司 Inception",
+      "url": "https://www.ithome.com/1/029/886.htm",
+      "summary": "IT之家 11 月 20 日消息，科技媒体 The Information 今天（11 月 20 日）发布博文，报道称英伟达计划收购 AI 初创公司 Inception，目前双方已深入谈判，交易估值至少超过 5 亿美元（IT之家注：现汇率约合 33.46 亿元人民币），并可能附加与业绩挂钩的额外奖励。 Amir Efrati 是 The Information 的执行主编IT之家查询公开资料，Inception 成立于 2024 年，总…",
+      "author": "",
+      "source": "IT之家",
+      "sourceId": "ithome",
+      "home": "https://www.ithome.com",
+      "weight": 1.6,
+      "lang": "zh",
+      "category": "行业动态",
+      "dealType": null,
+      "publishedAt": "2026-11-20T06:15:40.000Z",
+      "publishedTs": 1795155340000,
+      "day": "2026-11-20",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 77
+    },
+    {
+      "id": "11s5qsx",
+      "title": "微信短剧审核新规：单集最低时长上调至 1 分钟，AI 制作证明视频 12 月起必填",
+      "url": "https://www.ithome.com/1/029/883.htm",
+      "summary": "IT之家 11 月 20 日消息，据微信短剧内容中心今日发文，为持续建设优质短剧内容生态、提升用户观看体验，平台对短剧审核要求作出两项更新。IT之家整理如下： 一、上调短剧单集最低时长 公告称，为保护用户观看体验、建设优质短剧内容生态，平台将上调短剧单集最低时长标准：单集最低时长由原 45 秒调整至 1 分钟。 本次调整旨在引导创作者保障单集内容的流畅与完整，避免因时长过短导致剧情仓促、情节割裂，影响用户观看体验。请各位创作者在制作过程…",
+      "author": "",
+      "source": "IT之家",
+      "sourceId": "ithome",
+      "home": "https://www.ithome.com",
+      "weight": 1.6,
+      "lang": "zh",
+      "category": "产品动态",
+      "dealType": null,
+      "publishedAt": "2026-11-20T06:04:06.000Z",
+      "publishedTs": 1795154646000,
+      "day": "2026-11-20",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 64
+    },
+    {
+      "id": "1alt1tf",
+      "title": "“这是 AMD 的巨大机遇”：苏姿丰首谈黄仁勋离任英伟达 CEO，他是杰出领袖",
+      "url": "https://www.ithome.com/1/029/878.htm",
+      "summary": "IT之家 11 月 20 日消息，科技媒体 Business Insider 昨日（11 月 19 日）发布博文，报道称在美国奥斯汀（Austin）举行的 TomorrowX 峰会上，AMD 首席执行官苏姿丰（Lisa Su）首次公开谈及其表舅、英伟达前首席执行官黄仁勋（Jensen Huang）离任一事。 视频源：@lesliedqbb苏姿丰在活动中称赞英伟达是“了不起的公司”，黄仁勋是“行业的杰出领袖”，但 AMD 需要与其竞争对手…",
+      "author": "",
+      "source": "IT之家",
+      "sourceId": "ithome",
+      "home": "https://www.ithome.com",
+      "weight": 1.6,
+      "lang": "zh",
+      "category": "行业动态",
+      "dealType": null,
+      "publishedAt": "2026-11-20T05:52:50.000Z",
+      "publishedTs": 1795153970000,
+      "day": "2026-11-20",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 76
+    },
+    {
+      "id": "0h5cblp",
+      "title": "迈特芯 3D-TPU 芯片 Mega188 成功点亮：垂直集成 DRAM，600GB/s 带宽",
+      "url": "https://www.ithome.com/1/029/876.htm",
+      "summary": "IT之家 11 月 20 日消息，国内端侧 LLM 芯片企业迈特芯 (MetaChip) 近日宣布，其 3D-TPU 芯片产品 Mega188 成功实现回片点亮。 IT之家了解到，Mega188 结合了分布式 TPU 计算单元和 3D DRAM，采用三维堆叠与混合键合工艺，集成 2 / 4 / 8GB 内存，峰值内存带宽 600GB/s，支持 5W 低功耗模式，适配多种终端设备，实测可在 Qwen3-8B 上实现 80 TPS 推理速度…",
+      "author": "",
+      "source": "IT之家",
+      "sourceId": "ithome",
+      "home": "https://www.ithome.com",
+      "weight": 1.6,
+      "lang": "zh",
+      "category": "产品动态",
+      "dealType": null,
+      "publishedAt": "2026-11-20T05:50:54.000Z",
+      "publishedTs": 1795153854000,
+      "day": "2026-11-20",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 64
+    },
+    {
+      "id": "1kdditb",
+      "title": "高通携手 Cirrascale，启动自家推理加速器 AI200 客户评估",
+      "url": "https://www.ithome.com/1/029/874.htm",
+      "summary": "IT之家 11 月 20 日消息，Qualcomm（高通）当地时间本月 17 日宣布，其携手 AI 私有云企业 Cirrascale，向部分客户开放 Dragonfly（飞龙）AI200 推理加速器的评估。客户可通过云环境探索其 AI 工作负载在该芯片上的表现。 Dragonfly AI200 是高通的第一款机架级人工智能解决方案，单卡配备 768GB LPDDR5X 内存，支持 PCIe Gen6 纵向扩展、RoCE 横向扩展。 其每…",
+      "author": "",
+      "source": "IT之家",
+      "sourceId": "ithome",
+      "home": "https://www.ithome.com",
+      "weight": 1.6,
+      "lang": "zh",
+      "category": "产品动态",
+      "dealType": null,
+      "publishedAt": "2026-11-20T05:43:03.000Z",
+      "publishedTs": 1795153383000,
+      "day": "2026-11-20",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 63
+    },
+    {
+      "id": "1iju5ee",
+      "title": "双系统决策+双层自进化，Agnes让Agent效率最高提速14倍，成本骤降至1/27！",
+      "url": "https://www.qbitai.com/2026/11/511582.html",
+      "summary": "已开源Agnes Harness",
+      "author": "一水",
+      "source": "量子位",
+      "sourceId": "qbitai",
+      "home": "https://www.qbitai.com",
+      "weight": 2.2,
+      "lang": "zh",
+      "category": "产品动态",
+      "dealType": null,
+      "publishedAt": "2026-11-20T05:24:11.000Z",
+      "publishedTs": 1795152251000,
+      "day": "2026-11-20",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 75
+    },
+    {
+      "id": "105c5c6",
+      "title": "三星 One UI 9.5 版天气 App 酝酿 AI 升级：出发前提醒查看目的地天气",
+      "url": "https://www.ithome.com/1/029/842.htm",
+      "summary": "IT之家 11 月 20 日消息，科技媒体 SamMobile 昨日（11 月 19 日）发布博文，报道称在 One UI 9.5 首个 Beta 测试版中，三星正在为天气（Weather）应用酝酿 AI 升级，在用户出发前提醒其查看目的地天气。 IT之家援引博文介绍，系统识别到用户计划前往另一座城市后，天气应用会显示“出发前查看天气”提示。用户点击“试试”（Try it），即可查看目的地预报。 在后台运行方面，该功能涉及三星正在开发的…",
+      "author": "",
+      "source": "IT之家",
+      "sourceId": "ithome",
+      "home": "https://www.ithome.com",
+      "weight": 1.6,
+      "lang": "zh",
+      "category": "产品动态",
+      "dealType": null,
+      "publishedAt": "2026-11-20T03:51:50.000Z",
+      "publishedTs": 1795146710000,
+      "day": "2026-11-20",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 74
+    },
+    {
+      "id": "1i0o3nr",
+      "title": "腾讯 Hy4 正式开源，混元 LLM 系列实现全量开放",
+      "url": "https://www.ithome.com/1/029/841.htm",
+      "summary": "IT之家 11 月 20 日消息，腾讯混元团队今日宣布 Hy4 大模型正式开源，模型权重已在 GitHub、Hugging Face、ModelScope 和 GitCode 四个平台同步上线，开发者可自行下载部署。 至此，混元 LLM 系列已完成全部开源，覆盖 Hy3 preview、Hy3、Hy4 preview、Hy4 及 Hy4 flash 等版本。 Hy4 正式版最早于 11 月 4 日发布，本次开源的是此前预告的模型权重。H…",
+      "author": "",
+      "source": "IT之家",
+      "sourceId": "ithome",
+      "home": "https://www.ithome.com",
+      "weight": 1.6,
+      "lang": "zh",
+      "category": "开源工具",
+      "dealType": null,
+      "publishedAt": "2026-11-20T03:47:35.000Z",
+      "publishedTs": 1795146455000,
+      "day": "2026-11-20",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 80
+    },
+    {
+      "id": "1hxv7m6",
+      "title": "三星自研 AI 新进展：Gauss 4 现身 One UI 9.5 代码",
+      "url": "https://www.ithome.com/1/029/833.htm",
+      "summary": "IT之家 11 月 20 日消息，科技媒体 SammyGuru 昨日（11 月 19 日）报道，称三星正在积极推进自研 Gauss 系列 AI 模型，在 One UI 9.5 首个 Beta 测试版中，发现了 Gauss 4 E2B 模型踪迹。 相关名称出现在支撑 AI 智能体功能的 Personal Agent Core，以及三星新款 Memory 应用中。内部模型列表还列有 Gauss 3.8 3B、GaussA 26B-A4B 等…",
+      "author": "",
+      "source": "IT之家",
+      "sourceId": "ithome",
+      "home": "https://www.ithome.com",
+      "weight": 1.6,
+      "lang": "zh",
+      "category": "产品动态",
+      "dealType": null,
+      "publishedAt": "2026-11-20T03:27:10.000Z",
+      "publishedTs": 1795145230000,
+      "day": "2026-11-20",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 67
+    },
     {
       "id": "0yqqhuj",
       "title": "英伟达回应数据泄露疑云：正调查第三方事件，未发现自身系统受影响",
@@ -321,7 +594,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 78
+      "hot": 72
     },
     {
       "id": "0t9bjyr",
@@ -342,7 +615,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 65
+      "hot": 59
     },
     {
       "id": "1w4yb4z",
@@ -363,7 +636,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 64
+      "hot": 58
     },
     {
       "id": "08tpgg2",
@@ -384,7 +657,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 83
+      "hot": 77
     },
     {
       "id": "0dxtbxt",
@@ -405,7 +678,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 70
+      "hot": 64
     },
     {
       "id": "0vyjlye",
@@ -426,7 +699,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 70
+      "hot": 64
     },
     {
       "id": "0d6g6l5",
@@ -447,7 +720,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 70
+      "hot": 64
     },
     {
       "id": "1v4hyr2",
@@ -468,7 +741,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 65
+      "hot": 60
     },
     {
       "id": "02amh9y",
@@ -489,7 +762,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 65
+      "hot": 59
     },
     {
       "id": "1n3gt81",
@@ -510,7 +783,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 63
+      "hot": 57
     },
     {
       "id": "1y5rdj9",
@@ -531,7 +804,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 62
+      "hot": 56
     },
     {
       "id": "1ecyd8w",
@@ -552,7 +825,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 68
+      "hot": 62
     },
     {
       "id": "1rrttr4",
@@ -573,7 +846,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 67
+      "hot": 62
     },
     {
       "id": "1t3k48j",
@@ -594,7 +867,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 67
+      "hot": 62
     },
     {
       "id": "1gk2g6k",
@@ -615,7 +888,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 67
+      "hot": 62
     },
     {
       "id": "1rru0dm",
@@ -636,7 +909,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 61
+      "hot": 55
     },
     {
       "id": "1dq4fsp",
@@ -657,7 +930,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 67
+      "hot": 61
     },
     {
       "id": "1cnlfvy",
@@ -678,7 +951,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 60
+      "hot": 54
     },
     {
       "id": "1s2m08v",
@@ -699,7 +972,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 62
+      "hot": 56
     },
     {
       "id": "1uj5s2f",
@@ -720,7 +993,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 61
+      "hot": 56
     },
     {
       "id": "0iakyt4",
@@ -741,7 +1014,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 59
+      "hot": 54
     },
     {
       "id": "1fkf279",
@@ -762,7 +1035,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 58
+      "hot": 53
     },
     {
       "id": "0c44n6d",
@@ -783,7 +1056,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 60
+      "hot": 55
     },
     {
       "id": "0b4igdj",
@@ -804,7 +1077,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 57
+      "hot": 52
     },
     {
       "id": "14jd4to",
@@ -825,7 +1098,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 59
+      "hot": 54
     },
     {
       "id": "08yuwwa",
@@ -846,7 +1119,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 57
+      "hot": 52
     },
     {
       "id": "0g9ho0s",
@@ -867,7 +1140,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 58
+      "hot": 53
     },
     {
       "id": "12bityd",
@@ -888,7 +1161,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 55
+      "hot": 51
     },
     {
       "id": "08qz4dp",
@@ -909,7 +1182,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 57
+      "hot": 52
     },
     {
       "id": "1x2evk4",
@@ -930,7 +1203,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 57
+      "hot": 52
     },
     {
       "id": "1pmqnno",
@@ -951,7 +1224,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 54
+      "hot": 49
     },
     {
       "id": "1db06ne",
@@ -972,7 +1245,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 56
+      "hot": 51
     },
     {
       "id": "1hquqay",
@@ -993,7 +1266,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 56
+      "hot": 51
     },
     {
       "id": "0remblp",
@@ -1014,7 +1287,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 56
+      "hot": 51
     },
     {
       "id": "1mjyrlw",
@@ -1035,7 +1308,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 54
+      "hot": 49
     },
     {
       "id": "031qql8",
@@ -1056,7 +1329,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 55
+      "hot": 51
     },
     {
       "id": "11sfvtx",
@@ -1077,7 +1350,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 53
+      "hot": 48
     },
     {
       "id": "1nyobd0",
@@ -1098,7 +1371,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 52
+      "hot": 48
     },
     {
       "id": "0iwi3mq",
@@ -1119,7 +1392,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 54
+      "hot": 49
     },
     {
       "id": "0teugcz",
@@ -1140,7 +1413,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 51
+      "hot": 47
     },
     {
       "id": "169wlwx",
@@ -1161,7 +1434,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 53
+      "hot": 49
     },
     {
       "id": "0ehpywb",
@@ -1182,7 +1455,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 53
+      "hot": 49
     },
     {
       "id": "1nkl9ey",
@@ -1203,7 +1476,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 50
+      "hot": 46
     },
     {
       "id": "1trxvpj",
@@ -1224,7 +1497,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 50
+      "hot": 46
     },
     {
       "id": "0xwzhf1",
@@ -1245,7 +1518,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 50
+      "hot": 45
     },
     {
       "id": "1u3k5xi",
@@ -1266,7 +1539,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 48
+      "hot": 44
     },
     {
       "id": "1jkoqx0",
@@ -1287,7 +1560,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 47
+      "hot": 43
     },
     {
       "id": "12vwvuk",
@@ -1308,7 +1581,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 52
+      "hot": 48
     },
     {
       "id": "0k00kbc",
@@ -1329,7 +1602,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 58
+      "hot": 54
     },
     {
       "id": "0x4pzhk",
@@ -1350,7 +1623,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 58
+      "hot": 54
     },
     {
       "id": "17qcfx0",
@@ -1371,7 +1644,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 55
+      "hot": 51
     },
     {
       "id": "1ig3y4k",
@@ -1392,7 +1665,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 51
+      "hot": 47
     },
     {
       "id": "147fdz6",
@@ -1413,7 +1686,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 51
+      "hot": 47
     },
     {
       "id": "1cjr5yf",
@@ -1434,7 +1707,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 51
+      "hot": 47
     },
     {
       "id": "1qr78p1",
@@ -1455,7 +1728,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 56
+      "hot": 53
     },
     {
       "id": "05lrzzs",
@@ -1476,7 +1749,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 56
+      "hot": 52
     },
     {
       "id": "0l1sp29",
@@ -1497,7 +1770,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 43
+      "hot": 40
     },
     {
       "id": "0l8eyut",
@@ -1518,7 +1791,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 49
+      "hot": 46
     },
     {
       "id": "1vp3tlf",
@@ -1539,7 +1812,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 49
+      "hot": 46
     },
     {
       "id": "0wu0yfq",
@@ -1560,7 +1833,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 43
+      "hot": 39
     },
     {
       "id": "1tkfdod",
@@ -1581,7 +1854,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 55
+      "hot": 52
     },
     {
       "id": "1gk46is",
@@ -1602,7 +1875,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 61
+      "hot": 58
     },
     {
       "id": "11dw2m7",
@@ -1623,7 +1896,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 42
+      "hot": 39
     },
     {
       "id": "13z3mnx",
@@ -1644,7 +1917,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 55
+      "hot": 52
     },
     {
       "id": "1ijg176",
@@ -1665,7 +1938,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 48
+      "hot": 45
     },
     {
       "id": "0kh6xb9",
@@ -1686,7 +1959,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 48
+      "hot": 45
     },
     {
       "id": "0rurnlj",
@@ -1707,7 +1980,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 42
+      "hot": 38
     },
     {
       "id": "0q1i89q",
@@ -1728,7 +2001,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 41
+      "hot": 38
     },
     {
       "id": "132lika",
@@ -1749,7 +2022,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 41
+      "hot": 38
     },
     {
       "id": "0yy4kaq",
@@ -1770,7 +2043,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 47
+      "hot": 44
     },
     {
       "id": "1o6xpca",
@@ -1791,7 +2064,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 47
+      "hot": 44
     },
     {
       "id": "19ggzyx",
@@ -1812,7 +2085,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 40
+      "hot": 37
     },
     {
       "id": "1cgdbuy",
@@ -1833,7 +2106,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 40
+      "hot": 37
     },
     {
       "id": "1gc6bgf",
@@ -1854,7 +2127,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 42
+      "hot": 39
     },
     {
       "id": "1acc4py",
@@ -1875,7 +2148,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 40
+      "hot": 37
     },
     {
       "id": "1qd8vmk",
@@ -1896,7 +2169,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 40
+      "hot": 37
     },
     {
       "id": "0ubjisc",
@@ -1917,7 +2190,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 46
+      "hot": 43
     },
     {
       "id": "0enzgru",
@@ -1938,7 +2211,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 40
+      "hot": 37
     },
     {
       "id": "148ot50",
@@ -1959,7 +2232,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 59
+      "hot": 56
     },
     {
       "id": "001rbg4",
@@ -1980,7 +2253,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 49
+      "hot": 46
     },
     {
       "id": "1606ae7",
@@ -2001,7 +2274,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 49
+      "hot": 46
     },
     {
       "id": "15x0z9q",
@@ -2022,7 +2295,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 49
+      "hot": 46
     },
     {
       "id": "02go08r",
@@ -2043,7 +2316,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 49
+      "hot": 46
     },
     {
       "id": "198y8sr",
@@ -2064,7 +2337,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 40
+      "hot": 37
     },
     {
       "id": "168xxh3",
@@ -2085,7 +2358,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 42
+      "hot": 39
     },
     {
       "id": "08koccv",
@@ -2106,7 +2379,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 46
+      "hot": 43
     },
     {
       "id": "1qdfo12",
@@ -2127,7 +2400,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 41
+      "hot": 38
     },
     {
       "id": "13fwi11",
@@ -2148,7 +2421,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 39
+      "hot": 36
     },
     {
       "id": "022wtjo",
@@ -2169,7 +2442,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 41
+      "hot": 38
     },
     {
       "id": "10zqdqb",
@@ -2190,7 +2463,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 52
+      "hot": 49
     },
     {
       "id": "0tzxdx8",
@@ -2211,7 +2484,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 45
+      "hot": 42
     },
     {
       "id": "07brwsu",
@@ -2232,7 +2505,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 41
+      "hot": 38
     },
     {
       "id": "0m2t317",
@@ -2253,7 +2526,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 41
+      "hot": 38
     },
     {
       "id": "1nvhwz1",
@@ -2274,7 +2547,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 40
+      "hot": 38
     },
     {
       "id": "1fdy8sb",
@@ -2295,7 +2568,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 45
+      "hot": 42
     },
     {
       "id": "1togd0n",
@@ -2316,7 +2589,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 40
+      "hot": 37
     },
     {
       "id": "1guu75a",
@@ -2337,7 +2610,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 40
+      "hot": 37
     },
     {
       "id": "1wmei5j",
@@ -2358,7 +2631,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 38
+      "hot": 35
     },
     {
       "id": "0ah153y",
@@ -2379,7 +2652,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 39
+      "hot": 37
     },
     {
       "id": "0fseaji",
@@ -2400,7 +2673,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 39
+      "hot": 37
     },
     {
       "id": "0xbs1xh",
@@ -2421,7 +2694,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 37
+      "hot": 34
     },
     {
       "id": "0nke72n",
@@ -2442,7 +2715,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 37
+      "hot": 34
     },
     {
       "id": "1ai4any",
@@ -2463,7 +2736,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 37
+      "hot": 34
     },
     {
       "id": "1a53wdh",
@@ -2484,7 +2757,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 36
+      "hot": 34
     },
     {
       "id": "1lysyas",
@@ -2505,7 +2778,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 43
+      "hot": 41
     },
     {
       "id": "14tf8p7",
@@ -2526,7 +2799,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 38
+      "hot": 36
     },
     {
       "id": "0ngcd3u",
@@ -2547,7 +2820,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 36
+      "hot": 34
     },
     {
       "id": "1ofv1pl",
@@ -2568,7 +2841,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 36
+      "hot": 34
     },
     {
       "id": "1oiexqx",
@@ -2589,7 +2862,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 38
+      "hot": 35
     },
     {
       "id": "0ayk3w2",
@@ -2610,7 +2883,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 37
+      "hot": 35
     },
     {
       "id": "0pfjziv",
@@ -2631,7 +2904,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 42
+      "hot": 39
     },
     {
       "id": "0b2xb6p",
@@ -2652,7 +2925,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 37
+      "hot": 35
     },
     {
       "id": "0tfvbme",
@@ -2673,7 +2946,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 35
+      "hot": 33
     },
     {
       "id": "07fnbi5",
@@ -2694,7 +2967,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 35
+      "hot": 33
     },
     {
       "id": "1bkikx5",
@@ -2715,7 +2988,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 35
+      "hot": 33
     },
     {
       "id": "0zock56",
@@ -2736,7 +3009,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 34
+      "hot": 32
     },
     {
       "id": "0l52nl9",
@@ -2757,7 +3030,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 34
+      "hot": 32
     },
     {
       "id": "0rs3v04",
@@ -2778,7 +3051,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 36
+      "hot": 34
     },
     {
       "id": "0wkz1sm",
@@ -2799,7 +3072,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 34
+      "hot": 32
     },
     {
       "id": "1q4nsox",
@@ -2820,7 +3093,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 33
+      "hot": 31
     },
     {
       "id": "17101pp",
@@ -2841,7 +3114,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 35
+      "hot": 33
     },
     {
       "id": "1ll06np",
@@ -2862,7 +3135,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 35
+      "hot": 33
     },
     {
       "id": "0vn7pl7",
@@ -2883,7 +3156,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 35
+      "hot": 33
     },
     {
       "id": "0i0e076",
@@ -2904,7 +3177,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 33
+      "hot": 31
     },
     {
       "id": "1jsbivk",
@@ -2925,7 +3198,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 41
+      "hot": 39
     },
     {
       "id": "0xjz53j",
@@ -2946,7 +3219,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 38
+      "hot": 36
     },
     {
       "id": "1y4qlx0",
@@ -2967,7 +3240,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 40
+      "hot": 38
     },
     {
       "id": "01qrlnq",
@@ -2988,7 +3261,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 40
+      "hot": 38
     },
     {
       "id": "0s079z7",
@@ -3009,7 +3282,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 40
+      "hot": 38
     },
     {
       "id": "0n2o540",
@@ -3030,7 +3303,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 37
+      "hot": 35
     },
     {
       "id": "1l2x1ru",
@@ -3051,7 +3324,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 49
+      "hot": 48
     },
     {
       "id": "14vq5ya",
@@ -3072,7 +3345,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 31
+      "hot": 29
     },
     {
       "id": "0lge8eb",
@@ -3093,7 +3366,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 31
+      "hot": 29
     },
     {
       "id": "035bhjb",
@@ -3114,7 +3387,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 31
+      "hot": 29
     },
     {
       "id": "1tfu76o",
@@ -3135,7 +3408,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 37
+      "hot": 35
     },
     {
       "id": "0s3rxeb",
@@ -3156,7 +3429,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 31
+      "hot": 29
     },
     {
       "id": "0ji5je8",
@@ -3177,7 +3450,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 31
+      "hot": 29
     },
     {
       "id": "07g9kkt",
@@ -3198,7 +3471,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 37
+      "hot": 35
     },
     {
       "id": "0hn5wo7",
@@ -3219,7 +3492,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 30
+      "hot": 29
     },
     {
       "id": "1gpt3ye",
@@ -3240,7 +3513,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 39
+      "hot": 38
     },
     {
       "id": "0vjb2yi",
@@ -3261,7 +3534,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 30
+      "hot": 28
     },
     {
       "id": "04hy1l4",
@@ -3282,7 +3555,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 36
+      "hot": 34
     },
     {
       "id": "0b1sglp",
@@ -3303,7 +3576,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 36
+      "hot": 34
     },
     {
       "id": "0b2kb7y",
@@ -3324,7 +3597,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 36
+      "hot": 34
     },
     {
       "id": "0d2izap",
@@ -3345,7 +3618,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 48
+      "hot": 47
     },
     {
       "id": "0b5iuo9",
@@ -3366,7 +3639,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 30
+      "hot": 28
     },
     {
       "id": "19xbtie",
@@ -3387,7 +3660,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 42
+      "hot": 40
     },
     {
       "id": "0hmpw6f",
@@ -3408,7 +3681,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 35
+      "hot": 34
     },
     {
       "id": "1yg2j61",
@@ -3429,7 +3702,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 35
+      "hot": 34
     },
     {
       "id": "0ku4uxn",
@@ -3450,7 +3723,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 41
+      "hot": 40
     },
     {
       "id": "0csas7f",
@@ -3471,7 +3744,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 31
+      "hot": 29
     },
     {
       "id": "0dtkrvx",
@@ -3492,7 +3765,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 29
+      "hot": 27
     },
     {
       "id": "1lofjd9",
@@ -3513,7 +3786,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 35
+      "hot": 33
     },
     {
       "id": "1xf4m32",
@@ -3534,7 +3807,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 28
+      "hot": 27
     },
     {
       "id": "1xecrgt",
@@ -3555,7 +3828,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 28
+      "hot": 27
     },
     {
       "id": "0d8uaba",
@@ -3576,7 +3849,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 34
+      "hot": 33
     },
     {
       "id": "0rtpfpf",
@@ -3597,7 +3870,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 28
+      "hot": 27
     },
     {
       "id": "1b93kv6",
@@ -3618,7 +3891,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 35
+      "hot": 33
     },
     {
       "id": "01guoww",
@@ -3639,7 +3912,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 28
+      "hot": 27
     },
     {
       "id": "1d4vqqd",
@@ -3660,7 +3933,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 30
+      "hot": 29
     },
     {
       "id": "14qgvnx",
@@ -3681,7 +3954,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 37
+      "hot": 36
     },
     {
       "id": "18t5zqe",
@@ -3702,7 +3975,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 37
+      "hot": 36
     },
     {
       "id": "09i08f6",
@@ -3723,7 +3996,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 34
+      "hot": 33
     },
     {
       "id": "0k2cc41",
@@ -3744,7 +4017,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 41
+      "hot": 39
     },
     {
       "id": "1wuhawk",
@@ -3765,7 +4038,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 28
+      "hot": 27
     },
     {
       "id": "0xfykqr",
@@ -3786,7 +4059,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 30
+      "hot": 29
     },
     {
       "id": "0ufxz8l",
@@ -3807,7 +4080,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 28
+      "hot": 27
     },
     {
       "id": "12x47lk",
@@ -3828,7 +4101,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 30
+      "hot": 28
     },
     {
       "id": "0nv7vzw",
@@ -3849,7 +4122,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 30
+      "hot": 28
     },
     {
       "id": "1vd2ekx",
@@ -3870,7 +4143,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 30
+      "hot": 28
     },
     {
       "id": "17yryis",
@@ -3891,7 +4164,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 29
+      "hot": 28
     },
     {
       "id": "031vyeg",
@@ -3912,7 +4185,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 27
+      "hot": 26
     },
     {
       "id": "0jx0v6v",
@@ -3933,7 +4206,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 29
+      "hot": 28
     },
     {
       "id": "0drovxf",
@@ -3954,7 +4227,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 27
+      "hot": 26
     },
     {
       "id": "0ul72s9",
@@ -3975,7 +4248,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 29
+      "hot": 27
     },
     {
       "id": "1sv1hfo",
@@ -3996,7 +4269,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 29
+      "hot": 27
     },
     {
       "id": "04f1evm",
@@ -4017,7 +4290,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 29
+      "hot": 27
     },
     {
       "id": "0qg9qq8",
@@ -4038,7 +4311,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 28
+      "hot": 27
     },
     {
       "id": "1yzsou7",
@@ -4059,7 +4332,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 28
+      "hot": 27
     },
     {
       "id": "0b9o95m",
@@ -4079,8 +4352,10 @@
       "day": "2026-11-18",
       "estimate": false,
       "bulk": false,
-      "alsoIn": [],
-      "hot": 35
+      "alsoIn": [
+        "Hacker News"
+      ],
+      "hot": 34
     },
     {
       "id": "05gn2w9",
@@ -4101,7 +4376,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 28
+      "hot": 27
     },
     {
       "id": "0yx1veh",
@@ -4122,7 +4397,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 28
+      "hot": 27
     },
     {
       "id": "1eyo2j7",
@@ -4143,7 +4418,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 26
+      "hot": 25
     },
     {
       "id": "0kdi9yt",
@@ -4164,7 +4439,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 28
+      "hot": 27
     },
     {
       "id": "1dmk6y8",
@@ -4185,7 +4460,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 28
+      "hot": 27
     },
     {
       "id": "12d50rp",
@@ -4206,7 +4481,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 26
+      "hot": 25
     },
     {
       "id": "12rqg1x",
@@ -4227,7 +4502,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 26
+      "hot": 25
     },
     {
       "id": "01mt9da",
@@ -4248,7 +4523,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 25
+      "hot": 24
     },
     {
       "id": "1ix7mgq",
@@ -4269,7 +4544,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 27
+      "hot": 26
     },
     {
       "id": "01to6q6",
@@ -4290,7 +4565,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 25
+      "hot": 24
     },
     {
       "id": "18b5b5x",
@@ -4311,7 +4586,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 25
+      "hot": 24
     },
     {
       "id": "0q1oim5",
@@ -4332,7 +4607,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 25
+      "hot": 24
     },
     {
       "id": "1xqmim6",
@@ -4353,7 +4628,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 27
+      "hot": 26
     },
     {
       "id": "0617p2i",
@@ -4374,7 +4649,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 27
+      "hot": 26
     },
     {
       "id": "0jo74ti",
@@ -4395,7 +4670,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 31
+      "hot": 30
     },
     {
       "id": "1igjopm",
@@ -4416,7 +4691,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 27
+      "hot": 26
     },
     {
       "id": "1yfe3mo",
@@ -4437,7 +4712,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 31
+      "hot": 30
     },
     {
       "id": "0mmiis0",
@@ -4458,7 +4733,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 33
+      "hot": 32
     },
     {
       "id": "1gqf2ig",
@@ -4479,7 +4754,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 30
+      "hot": 29
     },
     {
       "id": "1rtktrq",
@@ -4500,7 +4775,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 24
+      "hot": 23
     },
     {
       "id": "0pdzcm5",
@@ -4521,7 +4796,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 36
+      "hot": 35
     },
     {
       "id": "0j6be72",
@@ -4542,7 +4817,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 30
+      "hot": 29
     },
     {
       "id": "1rsait4",
@@ -4563,7 +4838,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 30
+      "hot": 29
     },
     {
       "id": "1gn1y2y",
@@ -4584,7 +4859,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 30
+      "hot": 29
     },
     {
       "id": "1hrrap5",
@@ -4605,7 +4880,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 36
+      "hot": 35
     },
     {
       "id": "1l8iku4",
@@ -4647,7 +4922,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 23
+      "hot": 22
     },
     {
       "id": "1gdftlj",
@@ -4668,7 +4943,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 29
+      "hot": 28
     },
     {
       "id": "0xb45s5",
@@ -4689,7 +4964,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 23
+      "hot": 22
     },
     {
       "id": "0ysb3fi",
@@ -4710,7 +4985,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 23
+      "hot": 22
     },
     {
       "id": "14zz1ul",
@@ -4731,7 +5006,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 23
+      "hot": 22
     },
     {
       "id": "1rfse6r",
@@ -4752,7 +5027,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 23
+      "hot": 22
     },
     {
       "id": "12ej2a6",
@@ -4794,7 +5069,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 29
+      "hot": 28
     },
     {
       "id": "05uy0dp",
@@ -4815,7 +5090,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 23
+      "hot": 22
     },
     {
       "id": "0j7qv6y",
@@ -4836,7 +5111,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 29
+      "hot": 28
     },
     {
       "id": "1workt0",
@@ -4857,7 +5132,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 29
+      "hot": 28
     },
     {
       "id": "12tfxay",
@@ -4878,7 +5153,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 29
+      "hot": 28
     },
     {
       "id": "1f440co",
@@ -4899,7 +5174,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 29
+      "hot": 28
     },
     {
       "id": "1n12s07",
@@ -4920,7 +5195,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 29
+      "hot": 28
     },
     {
       "id": "0pqdeg2",
@@ -4941,7 +5216,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 29
+      "hot": 28
     },
     {
       "id": "1lkz62a",
@@ -4962,7 +5237,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 29
+      "hot": 28
     },
     {
       "id": "1yciqhn",
@@ -4983,7 +5258,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 29
+      "hot": 28
     },
     {
       "id": "1j4qdhw",
@@ -5025,7 +5300,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 31
+      "hot": 30
     },
     {
       "id": "0kf9qcn",
@@ -5046,7 +5321,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 31
+      "hot": 30
     },
     {
       "id": "09ed4ur",
@@ -5067,7 +5342,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 31
+      "hot": 30
     },
     {
       "id": "1ntiyha",
@@ -5088,7 +5363,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 24
+      "hot": 23
     },
     {
       "id": "130mgby",
@@ -5109,7 +5384,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 22
+      "hot": 21
     },
     {
       "id": "09bks4o",
@@ -5130,7 +5405,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 22
+      "hot": 21
     },
     {
       "id": "1kzsgi7",
@@ -5151,7 +5426,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 24
+      "hot": 23
     },
     {
       "id": "0z48h4c",
@@ -5172,7 +5447,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 24
+      "hot": 23
     },
     {
       "id": "1pw1s9u",
@@ -5193,7 +5468,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 22
+      "hot": 21
     },
     {
       "id": "1xuxt6o",
@@ -5214,7 +5489,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 22
+      "hot": 21
     },
     {
       "id": "0uyoqpt",
@@ -5235,7 +5510,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 22
+      "hot": 21
     },
     {
       "id": "1u8iafm",
@@ -5256,7 +5531,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 24
+      "hot": 23
     },
     {
       "id": "13hgo53",
@@ -5277,7 +5552,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 24
+      "hot": 23
     },
     {
       "id": "1wuimp3",
@@ -5298,7 +5573,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 22
+      "hot": 21
     },
     {
       "id": "18897tc",
@@ -5571,7 +5846,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 21
+      "hot": 20
     },
     {
       "id": "1hh13uc",
@@ -5592,7 +5867,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 23
+      "hot": 22
     },
     {
       "id": "1i6zmgp",
@@ -5613,7 +5888,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 23
+      "hot": 22
     },
     {
       "id": "0o5a1al",
@@ -5634,7 +5909,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 23
+      "hot": 22
     },
     {
       "id": "1mzfa3p",
@@ -5655,7 +5930,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 23
+      "hot": 22
     },
     {
       "id": "0l77k7c",
@@ -5676,7 +5951,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 23
+      "hot": 22
     },
     {
       "id": "0n9ll81",
@@ -5697,7 +5972,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 23
+      "hot": 22
     },
     {
       "id": "0048izf",
@@ -5718,7 +5993,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 23
+      "hot": 22
     },
     {
       "id": "0rxgho7",
@@ -5739,7 +6014,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 23
+      "hot": 22
     },
     {
       "id": "10dh63r",
@@ -5760,7 +6035,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 23
+      "hot": 22
     },
     {
       "id": "1pn1sk8",
@@ -5781,7 +6056,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 21
+      "hot": 20
     },
     {
       "id": "01cwgt1",
@@ -5802,7 +6077,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 21
+      "hot": 20
     },
     {
       "id": "0uovgzo",
@@ -5823,7 +6098,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 23
+      "hot": 22
     },
     {
       "id": "1do601r",
@@ -6033,7 +6308,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 20
+      "hot": 19
     },
     {
       "id": "1ozr58c",
@@ -6054,7 +6329,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 39
+      "hot": 38
     },
     {
       "id": "0669qg6",
@@ -6075,7 +6350,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 29
+      "hot": 28
     },
     {
       "id": "1nnaqx7",
@@ -6096,7 +6371,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 29
+      "hot": 28
     },
     {
       "id": "0v2841v",
@@ -6117,7 +6392,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 26
+      "hot": 25
     },
     {
       "id": "0x9o4nz",
@@ -6138,7 +6413,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 26
+      "hot": 25
     },
     {
       "id": "0j4yfjz",
@@ -6159,7 +6434,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 20
+      "hot": 19
     },
     {
       "id": "0a53owp",
@@ -6180,7 +6455,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 20
+      "hot": 19
     },
     {
       "id": "0tpcgy6",
@@ -6201,7 +6476,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 26
+      "hot": 25
     },
     {
       "id": "1bw4tqx",
@@ -6222,7 +6497,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 26
+      "hot": 25
     },
     {
       "id": "0c0czwr",
@@ -6243,7 +6518,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 26
+      "hot": 25
     },
     {
       "id": "111ddeu",
@@ -6264,7 +6539,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 20
+      "hot": 19
     },
     {
       "id": "12278me",
@@ -6285,7 +6560,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 32
+      "hot": 31
     },
     {
       "id": "11h5p4q",
@@ -6348,7 +6623,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 26
+      "hot": 25
     },
     {
       "id": "0pkdtei",
@@ -6411,7 +6686,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 26
+      "hot": 25
     },
     {
       "id": "1cyzspv",
@@ -6432,7 +6707,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 26
+      "hot": 25
     },
     {
       "id": "0fytdsh",
@@ -6705,7 +6980,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 19
+      "hot": 18
     },
     {
       "id": "12kmvdi",
@@ -6726,7 +7001,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 19
+      "hot": 18
     },
     {
       "id": "1suuxmt",
@@ -6768,7 +7043,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 25
+      "hot": 24
     },
     {
       "id": "1miq2tb",
@@ -7230,7 +7505,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 20
+      "hot": 19
     },
     {
       "id": "11yl6de",
@@ -7251,7 +7526,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 18
+      "hot": 17
     },
     {
       "id": "1l2gzeo",
@@ -7293,7 +7568,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 20
+      "hot": 19
     },
     {
       "id": "1sjz4hh",
@@ -9015,7 +9290,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 23
+      "hot": 22
     },
     {
       "id": "15i2fo1",
@@ -9036,7 +9311,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 26
+      "hot": 25
     },
     {
       "id": "0rkoa25",
@@ -9057,7 +9332,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 23
+      "hot": 22
     },
     {
       "id": "1lsbcby",
@@ -9099,7 +9374,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 23
+      "hot": 22
     },
     {
       "id": "0vuvi3q",
@@ -9141,7 +9416,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 23
+      "hot": 22
     },
     {
       "id": "0nf8ka3",
@@ -9204,7 +9479,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 23
+      "hot": 22
     },
     {
       "id": "1i8eyxx",
@@ -9225,7 +9500,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 23
+      "hot": 22
     },
     {
       "id": "0yuw108",
@@ -9246,7 +9521,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 17
+      "hot": 16
     },
     {
       "id": "1i9hxj4",
@@ -9288,7 +9563,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 17
+      "hot": 16
     },
     {
       "id": "1qkfsbb",
@@ -51732,27 +52007,6 @@
       "hot": 18
     },
     {
-      "id": "0fmzc9j",
-      "title": "A single prompt was enough to hijack every AI agent in an AWS account, Zenity researchers found",
-      "url": "https://the-decoder.com/a-single-prompt-was-enough-to-hijack-every-ai-agent-in-an-aws-account-zenity-researchers-found",
-      "summary": "Zenity Labs researchers say a single publicly accessible AI agent on Amazon's Bedrock AgentCore was enough to take over every AgentCore agent in the same AWS account and region. The attack exploited an internal AWS inter…",
-      "author": "Jonathan Kemper",
-      "source": "The Decoder",
-      "sourceId": "the-decoder",
-      "home": "https://the-decoder.com",
-      "weight": 1.6,
-      "lang": "en",
-      "category": "产品动态",
-      "dealType": null,
-      "publishedAt": "2026-10-08T13:01:01.000Z",
-      "publishedTs": 1791464461000,
-      "day": "2026-10-08",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 16
-    },
-    {
       "id": "0t63hc5",
       "title": "Rally Up: ‘Gears of War: E-Day’ Launches on GeForce NOW",
       "url": "https://blogs.nvidia.com/blog/geforce-now-thursday-gears-of-war-e-day",
@@ -51858,27 +52112,6 @@
       "hot": 22
     },
     {
-      "id": "1vep8a5",
-      "title": "Teen's AI-guided mountain hike ends with a helicopter rescue and a lesson in common sense",
-      "url": "https://the-decoder.com/teens-ai-guided-mountain-hike-ends-with-a-helicopter-rescue-and-a-lesson-in-common-sense",
-      "summary": "A 16-year-old planned his hiking route on Crown Mountain near Vancouver using Anthropic's Claude and had to be airlifted off a steep rock face. The chatbot had sent him down a route that requires climbing gear. Bryce doe…",
-      "author": "Manuel Uth",
-      "source": "The Decoder",
-      "sourceId": "the-decoder",
-      "home": "https://the-decoder.com",
-      "weight": 1.6,
-      "lang": "en",
-      "category": "模型发布",
-      "dealType": null,
-      "publishedAt": "2026-10-08T09:57:42.000Z",
-      "publishedTs": 1791453462000,
-      "day": "2026-10-08",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 16
-    },
-    {
       "id": "0f82xw3",
       "title": "浪子回头！Manus重启北京办公室大举招聘",
       "url": "https://www.qbitai.com/2026/10/502009.html",
@@ -51914,48 +52147,6 @@
       "dealType": null,
       "publishedAt": "2026-10-08T09:28:44.000Z",
       "publishedTs": 1791451724000,
-      "day": "2026-10-08",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 22
-    },
-    {
-      "id": "0cwwjy5",
-      "title": "AI-powered hacking tools enabled a likely single attacker to breach multiple South Korean banks",
-      "url": "https://the-decoder.com/ai-powered-hacking-tools-enabled-a-likely-single-attacker-to-breach-multiple-south-korean-banks",
-      "summary": "According to CrowdStrike, a suspected Chinese-speaking attacker hacked multiple South Korean financial institutions. At Shinhan Bank alone, more than 25,000 customer records were stolen. The attacker used ARTEX, an open-…",
-      "author": "Matthias Bastian",
-      "source": "The Decoder",
-      "sourceId": "the-decoder",
-      "home": "https://the-decoder.com",
-      "weight": 1.6,
-      "lang": "en",
-      "category": "行业动态",
-      "dealType": null,
-      "publishedAt": "2026-10-08T09:24:17.000Z",
-      "publishedTs": 1791451457000,
-      "day": "2026-10-08",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 16
-    },
-    {
-      "id": "01ldrkq",
-      "title": "比亚迪大唐首次 OTA 开启推送：新增生态智能体服务、路面预瞄等功能",
-      "url": "https://www.ithome.com/1/010/631.htm",
-      "summary": "IT之家 10 月 8 日消息，比亚迪今日宣布全尺寸闪充旗舰 SUV 大唐首次 OTA 开启推送，带来 28 项功能新增，19 项功能优化。 IT之家整理如下： 新增路面预瞄功能 新增挂档时前舱盖自动关闭功能 新增灵动掉头功能 新增全地形模式 新增蓝牙、云服务闭锁后下电功能 新增前备箱取物时悬架高度自动调节功能 新增内扣手开关一键开门功能 新增停车助手订单主动提醒功能 新增电话时允许导航播报开关 新增智慧寻车 新增绕行时间和绕行距离信息…",
-      "author": "",
-      "source": "IT之家",
-      "sourceId": "ithome",
-      "home": "https://www.ithome.com",
-      "weight": 1.6,
-      "lang": "zh",
-      "category": "产品动态",
-      "dealType": null,
-      "publishedAt": "2026-10-08T09:20:52.000Z",
-      "publishedTs": 1791451252000,
       "day": "2026-10-08",
       "estimate": false,
       "bulk": false,
@@ -52131,69 +52322,6 @@
       "hot": 18
     },
     {
-      "id": "043g74h",
-      "title": "ChatGPT’s ‘Intelligent UI’ update fills its responses with pictures, charts, and buttons",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1007276/openai-chatgpt-intelligent-ui-gpt-6",
-      "summary": "OpenAI is launching a new Intelligent UI feature in ChatGPT that allows the chatbot to answer your questions with interactive visuals. The update, which is rolling out to all users alongside GPT-6, gives ChatGPT the abil…",
-      "author": "Emma Roth",
-      "source": "The Verge AI",
-      "sourceId": "verge-ai",
-      "home": "https://www.theverge.com/ai-artificial-intelligence",
-      "weight": 1.6,
-      "lang": "en",
-      "category": "模型发布",
-      "dealType": null,
-      "publishedAt": "2026-10-07T19:10:42.000Z",
-      "publishedTs": 1791400242000,
-      "day": "2026-10-08",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 16
-    },
-    {
-      "id": "19lndep",
-      "title": "ChatGPT with GPT-6 ditches mostly text output for interactive UI with charts, buttons, and mini apps",
-      "url": "https://the-decoder.com/chatgpt-with-gpt-6-ditches-mostly-text-output-for-interactive-ui-with-charts-buttons-and-mini-apps",
-      "summary": "OpenAI is rolling out GPT-6 with \"Intelligent UI,\" a feature that turns answers into interactive interfaces with charts, buttons, and forms. The model can now respond while still thinking, cutting wait times by 44 percen…",
-      "author": "Matthias Bastian",
-      "source": "The Decoder",
-      "sourceId": "the-decoder",
-      "home": "https://the-decoder.com",
-      "weight": 1.6,
-      "lang": "en",
-      "category": "模型发布",
-      "dealType": null,
-      "publishedAt": "2026-10-07T19:06:40.000Z",
-      "publishedTs": 1791400000000,
-      "day": "2026-10-08",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 16
-    },
-    {
-      "id": "1ovj7su",
-      "title": "It appears .agent and .agi are about to be the hot new domains",
-      "url": "https://www.theverge.com/tech/1007132/icann-domains-2026-ai-agi",
-      "summary": "For the first time in years, the Internet Corporation for Assigned Names and Numbers - better known as ICANN - is accepting applications for new top-level domains. These are the suffixes at the end of all URLs, and you m…",
-      "author": "David Pierce",
-      "source": "The Verge AI",
-      "sourceId": "verge-ai",
-      "home": "https://www.theverge.com/ai-artificial-intelligence",
-      "weight": 1.6,
-      "lang": "en",
-      "category": "产品动态",
-      "dealType": null,
-      "publishedAt": "2026-10-07T18:46:16.000Z",
-      "publishedTs": 1791398776000,
-      "day": "2026-10-08",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 16
-    },
-    {
       "id": "1qucfny",
       "title": "NVIDIA, Microsoft Kick Off a New Beginning for Windows PCs With RTX Spark and AI Agents",
       "url": "https://blogs.nvidia.com/blog/local-ai-rtx-spark-microsoft-windows-event",
@@ -52213,27 +52341,6 @@
       "bulk": false,
       "alsoIn": [],
       "hot": 18
-    },
-    {
-      "id": "0j1p01m",
-      "title": "Everything announced at Microsoft’s Surface Laptop Ultra event",
-      "url": "https://www.theverge.com/tech/1007147/microsoft-surface-laptop-ultra-windows-event-everything-announced",
-      "summary": "Microsoft just wrapped up a big Windows and Surface-focused keynote in San Francisco. The biggest announcement was arguably the release details about the Surface Laptop Ultra, its new laptop that’s powered by Nvidia’s RT…",
-      "author": "Verge Staff",
-      "source": "The Verge AI",
-      "sourceId": "verge-ai",
-      "home": "https://www.theverge.com/ai-artificial-intelligence",
-      "weight": 1.6,
-      "lang": "en",
-      "category": "行业动态",
-      "dealType": null,
-      "publishedAt": "2026-10-07T18:42:22.000Z",
-      "publishedTs": 1791398542000,
-      "day": "2026-10-08",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 16
     },
     {
       "id": "1imf14y",
@@ -52278,27 +52385,6 @@
       "hot": 18
     },
     {
-      "id": "17hvbvi",
-      "title": "Microsoft is giving Copilot more control over Windows and your files",
-      "url": "https://www.theverge.com/tech/1007113/microsoft-windows-copilot-ai-control-search-hybrid-intelligence",
-      "summary": "At today's Windows and Surface event, Microsoft showed off an upgrade to its Copilot AI system that will give it access to local files on your PC and the ability to take actions across the OS. It's part of an idea Micros…",
-      "author": "Jay Peters",
-      "source": "The Verge AI",
-      "sourceId": "verge-ai",
-      "home": "https://www.theverge.com/ai-artificial-intelligence",
-      "weight": 1.6,
-      "lang": "en",
-      "category": "产品动态",
-      "dealType": null,
-      "publishedAt": "2026-10-07T18:01:20.000Z",
-      "publishedTs": 1791396080000,
-      "day": "2026-10-08",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 16
-    },
-    {
       "id": "1q9h18a",
       "title": "ChatGPT is getting a lot more visual, with the launch of a new interface",
       "url": "https://techcrunch.com/2026/10/07/chatgpt-is-getting-a-lot-more-visual-with-the-launch-of-a-new-interface",
@@ -52320,48 +52406,6 @@
       "hot": 18
     },
     {
-      "id": "13jr0g6",
-      "title": "Google says 180 billion images and videos now carry SynthID watermarks as detector goes public",
-      "url": "https://the-decoder.com/google-says-180-billion-images-and-videos-now-carry-synthid-watermarks-as-detector-goes-public",
-      "summary": "Google's AI watermark detector SynthID is now public. Anyone can check whether images, videos, or audio were created by Google's AI or partners like OpenAI and Nvidia. More than 180 billion pieces of content already carr…",
-      "author": "Manuel Uth",
-      "source": "The Decoder",
-      "sourceId": "the-decoder",
-      "home": "https://the-decoder.com",
-      "weight": 1.6,
-      "lang": "en",
-      "category": "行业动态",
-      "dealType": null,
-      "publishedAt": "2026-10-07T17:50:17.000Z",
-      "publishedTs": 1791395417000,
-      "day": "2026-10-08",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 16
-    },
-    {
-      "id": "1hlc3mw",
-      "title": "Surface RTX Spark Dev Box is available for preorder for $5,999",
-      "url": "https://www.theverge.com/tech/1006915/microsoft-surface-rtx-spark-dev-box-preorder",
-      "summary": "Microsoft's Nvidia-powered Surface RTX Spark Dev Box is available for preorder now and is slated to ship in November for just about $6,000. It's pricier than the DGX Spark mini PC Nvidia launched last year, but PC prices…",
-      "author": "Stevie Bonifield",
-      "source": "The Verge AI",
-      "sourceId": "verge-ai",
-      "home": "https://www.theverge.com/ai-artificial-intelligence",
-      "weight": 1.6,
-      "lang": "en",
-      "category": "行业动态",
-      "dealType": null,
-      "publishedAt": "2026-10-07T17:46:44.000Z",
-      "publishedTs": 1791395204000,
-      "day": "2026-10-08",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 16
-    },
-    {
       "id": "1cwo4io",
       "title": "Meta rolls out new AI tools to detect ads that secretly lead to child sexual abuse material",
       "url": "https://techcrunch.com/2026/10/07/meta-rolls-out-new-ai-tools-to-detect-ads-that-secretly-lead-to-child-sexual-abuse-material",
@@ -52381,48 +52425,6 @@
       "bulk": false,
       "alsoIn": [],
       "hot": 18
-    },
-    {
-      "id": "154ef13",
-      "title": "ChatGPT is getting college planning tools",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1005194/openai-chatgpt-teens-college-planner-notecards",
-      "summary": "OpenAI is bringing new tools to ChatGPT for Teens, a mode for teens introduced in August with safeguards and break reminders, to help users with the college application process. \"College Planner brings together applicati…",
-      "author": "Jay Peters",
-      "source": "The Verge AI",
-      "sourceId": "verge-ai",
-      "home": "https://www.theverge.com/ai-artificial-intelligence",
-      "weight": 1.6,
-      "lang": "en",
-      "category": "行业动态",
-      "dealType": null,
-      "publishedAt": "2026-10-07T16:00:00.000Z",
-      "publishedTs": 1791388800000,
-      "day": "2026-10-08",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 16
-    },
-    {
-      "id": "0u4lotx",
-      "title": "OpenAI launches Decisions API that reduces complex evaluations to yes, no, or pick one",
-      "url": "https://the-decoder.com/openai-launches-decisions-api-that-reduces-complex-evaluations-to-yes-no-or-pick-one",
-      "summary": "OpenAI's new Decisions API classifies text and images about ten times faster than the Responses API, returning yes/no probabilities, category picks, or scale ratings for $0.10 per million input tokens. The company also c…",
-      "author": "Matthias Bastian",
-      "source": "The Decoder",
-      "sourceId": "the-decoder",
-      "home": "https://the-decoder.com",
-      "weight": 1.6,
-      "lang": "en",
-      "category": "产品动态",
-      "dealType": null,
-      "publishedAt": "2026-10-07T15:36:39.000Z",
-      "publishedTs": 1791387399000,
-      "day": "2026-10-07",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 16
     },
     {
       "id": "0zpdry2",
