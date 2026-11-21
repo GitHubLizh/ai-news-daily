@@ -5,9 +5,305 @@
     <link>https://latestainews.cn</link>
     <description>每日聚合国内外 AI 资讯：模型发布、产品动态、研究前沿、行业动态，按天归档，可按日期检索。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 20 Nov 2026 07:35:53 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 21 Nov 2026 03:02:43 GMT</lastBuildDate>
     <generator>ai-news-daily</generator>
     <atom:link href="https://latestainews.cn/data/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>英伟达发布 GeForce 621.35 热修复驱动，修复 SSD 后台异常写入问题</title>
+      <link>https://www.ithome.com/1/030/332.htm</link>
+      <guid isPermaLink="true">https://www.ithome.com/1/030/332.htm</guid>
+      <pubDate>Sat, 21 Nov 2026 02:55:52 GMT</pubDate>
+      <category>行业动态</category>
+      <description>IT之家 11 月 21 日消息，英伟达于当地时间 11 月 20 日发布了 GeForce Hotfix 621.35 显卡驱动，修复此前部分 Game Ready 驱动可能在后台向固态硬盘（SSD）过度写入数据的问题。 这一热修复驱动基于最新的 GeForce Game Ready Driver 621.24 版本，仅包含一项修复： 解决后台可能向 nvlog.nvlgstg 文件过度写入数据的问题，对应 Bug 编号为 71167…（IT之家 · 行业动态）</description>
+    </item>
+    <item>
+      <title>英伟达董事会为何对黄仁勋态度转变？婚外情无关紧要，核心问题在于诚信</title>
+      <link>https://www.ithome.com/1/030/325.htm</link>
+      <guid isPermaLink="true">https://www.ithome.com/1/030/325.htm</guid>
+      <pubDate>Sat, 21 Nov 2026 02:10:48 GMT</pubDate>
+      <category>观点方法</category>
+      <description>IT之家 11 月 21 日消息，据《连线》（WIRED）今日报道，英伟达董事会最终决定接受黄仁勋的辞职，主要原因并不在于婚外情，而是董事会认为他在相关事件中多次存在撒谎行为，导致董事会对其诚信和信任产生严重质疑。 两名知情人士向《连线》透露，黄仁勋于 11 月 8 日承认存在婚外情，但当时董事会仍无法确定相关事件涉及的其他问题。同一天，英伟达董事会宣布启动独立调查。然而，接下来几天，随着更多婚外情指控浮出水面，其中包括一段据称涉及黄仁…（IT之家 · 观点方法）</description>
+    </item>
+    <item>
+      <title>近 200 万条请求揭开 AI 隐私漏洞：“零数据保留”也会泄密</title>
+      <link>https://www.ithome.com/1/030/322.htm</link>
+      <guid isPermaLink="true">https://www.ithome.com/1/030/322.htm</guid>
+      <pubDate>Sat, 21 Nov 2026 02:03:24 GMT</pubDate>
+      <category>研究前沿</category>
+      <description>IT之家 11 月 21 日消息，科技媒体 Ars Technica 今天（11 月 21 日）发布博文，报道称安全公司 Dragos 首席研究官 HD Moore 向多家 AI 服务商发送近 200 万条带有可追踪“诱饵”的请求，发现 AI 服务链存在黑客窃取提示词、转售商泄露数据及未遵守隐私设置等问题。 研究人员故意把一批可追踪的“测试秘密”（并非从真实用户渠道收集）发给 AI，观察之后有没有其他程序或人拿它们去访问系统，从而判断数…（IT之家 · 研究前沿）</description>
+    </item>
+    <item>
+      <title>OpenAI 公布反蒸馏防护进展：GPT-6.2 Astra 思考链提取成功率从 54% 降至 0.2%</title>
+      <link>https://www.ithome.com/1/030/319.htm</link>
+      <guid isPermaLink="true">https://www.ithome.com/1/030/319.htm</guid>
+      <pubDate>Sat, 21 Nov 2026 01:45:22 GMT</pubDate>
+      <category>模型发布</category>
+      <description>IT之家 11 月 21 日消息，当地时间 11 月 20 日，OpenAI 发布公告介绍了针对「对抗性蒸馏」（Adversarial Distillation）的防御措施。 OpenAI 称其已加强 GPT-6.2 Astra 和 GPT-6.2 Sol 对内部推理思考链（Chain-of-Thought）的保护，以降低其他模型通过提取推理过程获取其能力的风险。 OpenAI 表示，对抗性蒸馏是指未经授权地利用前沿 AI 模型的输出训…（IT之家 · 模型发布）</description>
+    </item>
+    <item>
+      <title>黄仁勋下台后有人挖出英伟达 20 年前员工投诉记录，指控其威胁下属、发表色情言论</title>
+      <link>https://www.ithome.com/1/030/316.htm</link>
+      <guid isPermaLink="true">https://www.ithome.com/1/030/316.htm</guid>
+      <pubDate>Sat, 21 Nov 2026 01:33:53 GMT</pubDate>
+      <category>研究前沿</category>
+      <description>IT之家 11 月 21 日消息，彭博社今日报道称，一份 2007 年提交的加州诉讼文件显示，英伟达两名前员工曾对时任 CEO 黄仁勋的管理方式提出投诉，指控其存在辱骂、威胁员工以及发表色情言论等行为。 这些指控涉及大约二十年前的职场事件，近期随着黄仁勋寻求重返英伟达管理层而重新受到关注。 根据这份加州高等法院的诉讼文件，英伟达首任内部法律顾问斯蒂芬・佩蒂格鲁（Stephen Pettigrew）称，他曾亲眼目睹黄仁勋经常辱骂和恐吓员工…（IT之家 · 研究前沿）</description>
+    </item>
+    <item>
+      <title>摩托罗拉首款宽折叠 Razr Flex 手机爆料，配高通未发布的 SM8845 Pro 芯片</title>
+      <link>https://www.ithome.com/1/030/315.htm</link>
+      <guid isPermaLink="true">https://www.ithome.com/1/030/315.htm</guid>
+      <pubDate>Sat, 21 Nov 2026 01:30:20 GMT</pubDate>
+      <category>行业动态</category>
+      <description>IT之家 11 月 21 日消息，科技媒体 GSMArena 昨日（11 月 20 日）发布博文，报道称摩托罗拉首款宽折叠手机 Razr Flex 有望配备高通尚未发布的 SM8845 Pro 芯片，而此前有消息称该芯片由一加 Turbo 7 系列首发搭载。 根据 TrustCB 安全认证文件显示信息，摩托罗拉首款宽折叠手机 Razr Flex 内部代号为 Parker，型号为 XT2761，其芯片型号为 SM8845 Pro，并非高通…（IT之家 · 行业动态）</description>
+    </item>
+    <item>
+      <title>“几乎所有人将永久失业”：Anthropic 研究员预测 2027 年底 AI 在几乎所有领域超越顶尖专家</title>
+      <link>https://www.ithome.com/1/030/308.htm</link>
+      <guid isPermaLink="true">https://www.ithome.com/1/030/308.htm</guid>
+      <pubDate>Sat, 21 Nov 2026 00:53:29 GMT</pubDate>
+      <category>研究前沿</category>
+      <description>IT之家 11 月 21 日消息，11 月 15 日在接受 Palisade Research 采访时，Anthropic 公司技术团队成员 Tao Lin 预测到 2027 年年底，在编程、电影制作等几乎所有领域，人工智能（AI）在发展大约还有 1.3 年后，可以媲美或超过世界顶尖人类专家的水平。 IT之家查询公开资料，Tao Lin 在 Anthropic 担任技术团队成员（MTS）岗位，目前已在该公司工作了约一年半，涉及自动化对齐…（IT之家 · 研究前沿）</description>
+    </item>
+    <item>
+      <title>跌掉一个亚马逊：英伟达市值较 10 月高点蒸发 2.73 万亿美元，纳斯达克创 2020 年 3 月疫情后最差单周表现</title>
+      <link>https://www.ithome.com/1/030/302.htm</link>
+      <guid isPermaLink="true">https://www.ithome.com/1/030/302.htm</guid>
+      <pubDate>Sat, 21 Nov 2026 00:08:12 GMT</pubDate>
+      <category>行业动态</category>
+      <description>IT之家 11 月 21 日消息，英伟达股价持续遭遇抛售。当地时间 11 月 20 日周五收盘，英伟达股价下跌 14%，创下 2025 年 5 月以来最低水平。这也是英伟达连续第七周收跌，为 2008 年金融危机以来最长的周线连跌纪录。 据《华尔街日报》今日报道，英伟达当前市值约为 3.03 万亿美元（IT之家注：现汇率约合 20.28 万亿元人民币）。相比 10 月 6 日创下的约 5.76 万亿美元（现汇率约合 38.55 万亿元人…（IT之家 · 行业动态）</description>
+    </item>
+    <item>
+      <title>OpenAI 推出 MedChemBench 基准，评估 AI 辅助药物研发能力</title>
+      <link>https://www.ithome.com/1/030/301.htm</link>
+      <guid isPermaLink="true">https://www.ithome.com/1/030/301.htm</guid>
+      <pubDate>Sat, 21 Nov 2026 00:06:12 GMT</pubDate>
+      <category>研究前沿</category>
+      <description>IT之家 11 月 21 日消息，当地时间 11 月 20 日，OpenAI 发布 MedChemBench 基准，用于评估 AI 模型在药物化学研究中的推理能力，包括识别分子结构、解读实验结果、比较化合物及预测其性质等。OpenAI 表示，模型在重建分子结构和解释实验依据方面表现较强，但在化合物筛选和数值性质预测方面仍有明显提升空间。 IT之家从官方介绍获悉，该基准包含 99 道题目，取自 117 篇论文与专利，涉及 761 个不同分…（IT之家 · 研究前沿）</description>
+    </item>
+    <item>
+      <title>黎曼猜想真被 Claude 证明了？Anthropic 数学家仅发布 Lean 代码，陶哲轩称验证仍需时间</title>
+      <link>https://www.ithome.com/1/030/297.htm</link>
+      <guid isPermaLink="true">https://www.ithome.com/1/030/297.htm</guid>
+      <pubDate>Fri, 20 Nov 2026 23:40:02 GMT</pubDate>
+      <category>模型发布</category>
+      <description>IT之家 11 月 21 日消息，当地时间 11 月 20 日，Anthropic 数学家莱文特 · 阿尔珀格（Levent Alpöge）宣称他与 Claude 合作，发现了黎曼猜想及其推广形式广义黎曼猜想（GRH）的证明。 阿尔珀格拥有哈佛大学本科学位和普林斯顿大学数学博士学位，目前在 Anthropic 从事研究工作。他在声明中称，Claude 在证明接近完成时“远远超过了我”，“在终点附近飞翔、跳舞、闪耀”。他还表示，自己为 C…（IT之家 · 模型发布）</description>
+    </item>
+    <item>
+      <title>440 亿美元！阿波罗与高盛完成迄今规模最大 GPU 融资定价，SpaceX 要买英伟达芯片</title>
+      <link>https://www.ithome.com/1/030/296.htm</link>
+      <guid isPermaLink="true">https://www.ithome.com/1/030/296.htm</guid>
+      <pubDate>Fri, 20 Nov 2026 23:34:13 GMT</pubDate>
+      <category>行业动态</category>
+      <description>IT之家 11 月 21 日消息，当地时间 11 月 20 日，阿波罗全球管理公司与高盛宣布，已完成约 440 亿美元（IT之家注：现汇率约合 2,944.47 亿元人民币）优先及次级票据融资定价，资金将用于为 SpaceX 购买 GPU 及相关设备。该交易因投资者需求强劲而获得超额认购并扩大规模，成为迄今规模最大的 GPU 融资交易。 阿波罗与高盛共同牵头此次融资，参与方还包括贝莱德、高盛资产管理及 KKR。融资将用于采购下一代英伟达…（IT之家 · 行业动态）</description>
+    </item>
+    <item>
+      <title>国际版三星 Galaxy S27 Pro 手机跑分曝光：Exynos 2700 芯片、12GB 内存</title>
+      <link>https://www.ithome.com/1/030/295.htm</link>
+      <guid isPermaLink="true">https://www.ithome.com/1/030/295.htm</guid>
+      <pubDate>Fri, 20 Nov 2026 23:32:53 GMT</pubDate>
+      <category>行业动态</category>
+      <description>IT之家 11 月 21 日消息，型号“SM-S957B”的三星手机昨日（11 月 20 日）现身 GeekBench 跑分库，7.1.0 版本单核成绩为 3,061 分，多核成绩为 10,967 分，相关线索表明该机上市后为三星 Galaxy S27 Pro。 IT之家注：根据 GSMA IMEI 数据库此前公示的信息，SM-S957B 对应三星 Galaxy S27 Pro，且后缀“B”代表国际市场版本，覆盖欧洲、印度等市场。 根据…（IT之家 · 行业动态）</description>
+    </item>
+    <item>
+      <title>匿名 AI 模型 Gestalt 登顶 Contra 前沿设计榜单：性能远超 Claude Fable 5.2、GPT-6.1 Sol，Elo 评分超越人类参考作品</title>
+      <link>https://www.ithome.com/1/030/291.htm</link>
+      <guid isPermaLink="true">https://www.ithome.com/1/030/291.htm</guid>
+      <pubDate>Fri, 20 Nov 2026 23:17:51 GMT</pubDate>
+      <category>模型发布</category>
+      <description>IT之家 11 月 21 日消息，Contra Labs 于当地时间 11 月 18 日发布 AI 设计能力评测榜单 Frontier Design Benchmark。 其中，一款代号为 Gestalt、目前处于隐身开发状态（Stealth）的匿名 AI 模型成为最大黑马，在专业设计师盲测中以明显优势登顶，超过 Anthropic 的 Claude Fable 5.2、OpenAI 的 GPT-6.1 Sol 等主流模型，甚至在设计师…（IT之家 · 模型发布）</description>
+    </item>
+    <item>
+      <title>谷歌搜索首页新增 AI 侧边栏，让你“接着聊”此前提问话题</title>
+      <link>https://www.ithome.com/1/030/287.htm</link>
+      <guid isPermaLink="true">https://www.ithome.com/1/030/287.htm</guid>
+      <pubDate>Fri, 20 Nov 2026 22:53:45 GMT</pubDate>
+      <category>产品动态</category>
+      <description>IT之家 11 月 21 日消息，谷歌搜索产品副总裁罗比 · 斯坦（Robby Stein）昨日（11 月 20 日）在 X 平台发布推文，宣布 Google Search 首页将迎来新一轮调整，面向全球桌面端逐步推出可折叠侧边栏，让用户直接从首页查找和继续此前的 AI 搜索对话。 根据演示，用户点击页面左侧的灰色条，即可展开侧边栏，查看通过“AI 模式”（AI Mode）进行的搜索记录。面板还提供新建对话、搜索历史对话以及连接 Gem…（IT之家 · 产品动态）</description>
+    </item>
+    <item>
+      <title>OpenAI makes it much harder for attackers to extract how its latest AI models think</title>
+      <link>https://the-decoder.com/openai-makes-it-much-harder-for-attackers-to-extract-how-its-latest-ai-models-think</link>
+      <guid isPermaLink="true">https://the-decoder.com/openai-makes-it-much-harder-for-attackers-to-extract-how-its-latest-ai-models-think</guid>
+      <pubDate>Fri, 20 Nov 2026 20:31:50 GMT</pubDate>
+      <category>模型发布</category>
+      <description>OpenAI has significantly strengthened safeguards against extracting internal reasoning from GPT-6.2 Astra and GPT-6.2 Sol. In adaptive red-teaming tests, the success rate for extracting protected reasoning fell from 54 p…（The Decoder · 模型发布）</description>
+    </item>
+    <item>
+      <title>Daniel Ek backs AI researcher’s fusion power startup. Here’s what they’re building.</title>
+      <link>https://techcrunch.com/2026/11/20/daniel-ek-backs-ai-researchers-fusion-power-startup-heres-what-theyre-building</link>
+      <guid isPermaLink="true">https://techcrunch.com/2026/11/20/daniel-ek-backs-ai-researchers-fusion-power-startup-heres-what-theyre-building</guid>
+      <pubDate>Fri, 20 Nov 2026 19:53:41 GMT</pubDate>
+      <category>行业动态</category>
+      <description>Spotify founder Daniel Ek is backing Europa Fusion, a fusion power startup founded by an AI researcher. Here&apos;s what the startup is building. （TechCrunch AI · 行业动态）</description>
+    </item>
+    <item>
+      <title>Signal blocks screenshots on iOS 27 and Android to stop AI agents from reading private chats</title>
+      <link>https://the-decoder.com/signal-blocks-screenshots-on-ios-27-and-android-to-stop-ai-agents-from-reading-private-chats</link>
+      <guid isPermaLink="true">https://the-decoder.com/signal-blocks-screenshots-on-ios-27-and-android-to-stop-ai-agents-from-reading-private-chats</guid>
+      <pubDate>Fri, 20 Nov 2026 19:50:27 GMT</pubDate>
+      <category>模型发布</category>
+      <description>Signal is blocking screenshots to stop AI agents like Apple&apos;s Siri AI, Google&apos;s Gemini Intelligence, and Meta&apos;s Muse from reading private chats. The app calls it an &quot;existential threat&quot; to privacy, but admits its protect…（The Decoder · 模型发布）</description>
+    </item>
+    <item>
+      <title>AI claimed a solution to the 167-year-old Riemann hypothesis — and a human did, too</title>
+      <link>https://techcrunch.com/2026/11/20/ai-claimed-a-solution-to-the-167-year-old-riemann-hypothesis-and-a-human-did-too</link>
+      <guid isPermaLink="true">https://techcrunch.com/2026/11/20/ai-claimed-a-solution-to-the-167-year-old-riemann-hypothesis-and-a-human-did-too</guid>
+      <pubDate>Fri, 20 Nov 2026 19:32:08 GMT</pubDate>
+      <category>行业动态</category>
+      <description>Mathematicians are having their minds blown by the latest AI-driven result — and there&apos;s a competing human solution, too. （TechCrunch AI · 行业动态）</description>
+    </item>
+    <item>
+      <title>独占特性确认：华为 Mate 系列旗舰机“无缘”OSTA 小星芒、AI 屏等功能</title>
+      <link>https://www.ithome.com/1/030/284.htm</link>
+      <guid isPermaLink="true">https://www.ithome.com/1/030/284.htm</guid>
+      <pubDate>Fri, 20 Nov 2026 19:20:43 GMT</pubDate>
+      <category>模型发布</category>
+      <description>IT之家 11 月 21 日消息，首款为 AI 而生的鸿蒙手机 —— 华为星芒 OSTA O1 Pro 已于昨日下午正式发布，叠加国补后 4999 元起。华为星芒品牌总经理刘赫开通微博，透露最受欢迎的 16G 版本已经在全平台售罄。 ▲ IT之家开箱：华为全新子品牌星芒 OSTA O1 Pro 手机实拍IT之家注意到，刘赫还在自己微博的评论区与网友展开了互动，并解答了不少消费者的疑惑。针对大家最关心的星芒 OSTA O1 Pro 首发新…（IT之家 · 模型发布）</description>
+    </item>
+    <item>
+      <title>Google&apos;s Gemini can now run Mac apps and finish desktop chores in the background while you keep working</title>
+      <link>https://the-decoder.com/googles-gemini-can-now-run-mac-apps-and-finish-desktop-chores-in-the-background-while-you-keep-working</link>
+      <guid isPermaLink="true">https://the-decoder.com/googles-gemini-can-now-run-mac-apps-and-finish-desktop-chores-in-the-background-while-you-keep-working</guid>
+      <pubDate>Fri, 20 Nov 2026 18:50:31 GMT</pubDate>
+      <category>模型发布</category>
+      <description>Google is bringing &quot;Computer Use&quot; to Gemini for Mac, letting the AI operate desktop apps, local files, and websites in an isolated background window with a live preview while users keep working. The article Google&apos;s Gemi…（The Decoder · 模型发布）</description>
+    </item>
+    <item>
+      <title>Trump threatens ‘tremendous tax’ for moving AI data centers outside the US</title>
+      <link>https://www.theverge.com/policy/1038892/trump-foreign-data-centers-tax</link>
+      <guid isPermaLink="true">https://www.theverge.com/policy/1038892/trump-foreign-data-centers-tax</guid>
+      <pubDate>Fri, 20 Nov 2026 18:50:19 GMT</pubDate>
+      <category>行业动态</category>
+      <description>President Donald Trump promised to put a &quot;tremendous tax&quot; on companies that build data centers outside of the US, even as states and cities around the country are placing restrictions on new applications to build them. &quot;…（The Verge AI · 行业动态）</description>
+    </item>
+    <item>
+      <title>Chips can survive the space environment — can their financing?</title>
+      <link>https://techcrunch.com/2026/11/20/chips-can-survive-the-space-environment-can-their-financing</link>
+      <guid isPermaLink="true">https://techcrunch.com/2026/11/20/chips-can-survive-the-space-environment-can-their-financing</guid>
+      <pubDate>Fri, 20 Nov 2026 17:40:01 GMT</pubDate>
+      <category>行业动态</category>
+      <description>Lenders don&apos;t want SpaceX shooting their collateral into orbit. What does that mean for space data centers writ large?（TechCrunch AI · 行业动态）</description>
+    </item>
+    <item>
+      <title>Bloomberg analysis of 10 million job postings shows AI-exposed roles in China fell 10 percentage points faster than others</title>
+      <link>https://the-decoder.com/bloomberg-analysis-of-10-million-job-postings-shows-ai-exposed-roles-in-china-fell-10-percentage-points-faster-than-others</link>
+      <guid isPermaLink="true">https://the-decoder.com/bloomberg-analysis-of-10-million-job-postings-shows-ai-exposed-roles-in-china-fell-10-percentage-points-faster-than-others</guid>
+      <pubDate>Fri, 20 Nov 2026 15:56:03 GMT</pubDate>
+      <category>行业动态</category>
+      <description>A Bloomberg News analysis of 10 million job postings suggests AI is compounding China&apos;s already weak labor market. Entry-level workers and the creative industry are feeling the shift most, with more than 90% of Chinese m…（The Decoder · 行业动态）</description>
+    </item>
+    <item>
+      <title>AI 攻克黎曼猜想？Anthropic 数学家宣称已与 Claude 合作完成证明</title>
+      <link>https://www.ithome.com/1/030/278.htm</link>
+      <guid isPermaLink="true">https://www.ithome.com/1/030/278.htm</guid>
+      <pubDate>Fri, 20 Nov 2026 15:37:46 GMT</pubDate>
+      <category>模型发布</category>
+      <description>IT之家 11 月 20 日消息，据《科学美国人》报道，当地时间 20 日，Anthropic 数学家莱文特 · 阿尔波格宣称，自己与 AI 模型 Claude 合作，攻克了数学界最著名的难题之一 —— 黎曼猜想。 阿尔波格在个人网站发表声明称：“我相信，我与 Claude 合作找到了黎曼猜想的证明。” IT之家注：黎曼猜想由德国数学家伯恩哈德 · 黎曼于 1859 年提出，认为看似随机分布在数轴上的质数，实际上遵循着复杂而有意义的规律…（IT之家 · 模型发布）</description>
+    </item>
+    <item>
+      <title>明基 AK900ST AI 高尔夫投影机发售：6000lm 亮度、短焦镜头设计，52999 元</title>
+      <link>https://www.ithome.com/1/030/277.htm</link>
+      <guid isPermaLink="true">https://www.ithome.com/1/030/277.htm</guid>
+      <pubDate>Fri, 20 Nov 2026 15:37:26 GMT</pubDate>
+      <category>行业动态</category>
+      <description>IT之家 11 月 20 日消息，明基旗下 AK900ST“AI 高尔夫投影机”现已在京东发售，该产品专为高尔夫模拟及多场景娱乐打造，定价为 52999 元。 京东明基（BenQ）AK900ST AI 高尔夫专业模拟投影仪 激光投影（4K 超清 AI 画质臻彩引擎 6000 流明 镜头位移）52999 元直达链接 该机搭载激光光源，正常寿命达 20000 小时（节能为 30000 小时），具备 4K 分辨率、MEMC 240Hz 刷新率…（IT之家 · 行业动态）</description>
+    </item>
+    <item>
+      <title>Apple joins the race for AI agents that control your device while raising new barriers for competitors</title>
+      <link>https://the-decoder.com/apple-joins-the-race-for-ai-agents-that-control-your-device-while-raising-new-barriers-for-competitors</link>
+      <guid isPermaLink="true">https://the-decoder.com/apple-joins-the-race-for-ai-agents-that-control-your-device-while-raising-new-barriers-for-competitors</guid>
+      <pubDate>Fri, 20 Nov 2026 15:03:25 GMT</pubDate>
+      <category>行业动态</category>
+      <description>After Meta, OpenAI, Anthropic, and Google launched their own AI agents, Apple is now building one too - while making it harder for rivals to access its devices. The article Apple joins the race for AI agents that control…（The Decoder · 行业动态）</description>
+    </item>
+    <item>
+      <title>The fallout from Nvidia’s Jensen Huang scandal continues</title>
+      <link>https://techcrunch.com/podcast/the-fallout-from-nvidias-jensen-huang-scandal-continues</link>
+      <guid isPermaLink="true">https://techcrunch.com/podcast/the-fallout-from-nvidias-jensen-huang-scandal-continues</guid>
+      <pubDate>Fri, 20 Nov 2026 14:55:44 GMT</pubDate>
+      <category>行业动态</category>
+      <description>In the midst of dealing with the fallout from its ouster of CEO Jensen Huang, Nvidia delivered its latest earnings report this week, with healthy growth and promises that the good times will continue. At the same time, t…（TechCrunch AI · 行业动态）</description>
+    </item>
+    <item>
+      <title>Nvidia bets at least $500 million on Inception&apos;s diffusion models to strengthen its open-source Nemotron lineup</title>
+      <link>https://the-decoder.com/nvidia-bets-at-least-500-million-on-inceptions-diffusion-models-to-strengthen-its-open-source-nemotron-lineup</link>
+      <guid isPermaLink="true">https://the-decoder.com/nvidia-bets-at-least-500-million-on-inceptions-diffusion-models-to-strengthen-its-open-source-nemotron-lineup</guid>
+      <pubDate>Fri, 20 Nov 2026 14:53:50 GMT</pubDate>
+      <category>行业动态</category>
+      <description>Nvidia is close to acquiring AI startup Inception for at least $500 million, according to The Information. The company is just two years old and builds language models based on diffusion processes, an alternative approac…（The Decoder · 行业动态）</description>
+    </item>
+    <item>
+      <title>三星电子高管：Neocloud 风险有限，AI 投资基于实际需求</title>
+      <link>https://www.ithome.com/1/030/247.htm</link>
+      <guid isPermaLink="true">https://www.ithome.com/1/030/247.htm</guid>
+      <pubDate>Fri, 20 Nov 2026 14:09:40 GMT</pubDate>
+      <category>行业动态</category>
+      <description>IT之家 11 月 20 日消息，据路透社当地时间 18 日报道，三星电子两位高管在本周举行的摩根士丹利会议上表示 Neocloud（新兴 AI 云服务企业）面临的不确定性对整体市场的影响有限，这轮 AI 投资基于实际需求而非投机。 三星 DS（设备解决方案，半导体板块）部门经营战略总管负责人 Kim Yong-kwan 表示，Neocloud 的“市占份额”仅约为 8%，对此类企业的担忧不会对 AI 整体发展轨迹构成重大威胁。这位高管…（IT之家 · 行业动态）</description>
+    </item>
+    <item>
+      <title>The week everything fell apart</title>
+      <link>https://www.theverge.com/podcast/1038419/outage-outlook-ground-stop-tech-failure-vergecast</link>
+      <guid isPermaLink="true">https://www.theverge.com/podcast/1038419/outage-outlook-ground-stop-tech-failure-vergecast</guid>
+      <pubDate>Fri, 20 Nov 2026 14:06:59 GMT</pubDate>
+      <category>行业动态</category>
+      <description>There was a dayslong Outlook outage. A nationwide ground stop for only the second time in 25 years. Banks seemed to suddenly stop working. Even iCloud couldn&apos;t stay up and running. This week, it felt like the technologic…（The Verge AI · 行业动态）</description>
+    </item>
+    <item>
+      <title>Anthropic 上市次日股价下跌 9%，AI 板块雪上加霜</title>
+      <link>https://www.ithome.com/1/030/246.htm</link>
+      <guid isPermaLink="true">https://www.ithome.com/1/030/246.htm</guid>
+      <pubDate>Fri, 20 Nov 2026 14:05:13 GMT</pubDate>
+      <category>行业动态</category>
+      <description>IT之家 11 月 20 日消息，据路透社报道，当地时间 20 日，Anthropic 上市次日股价下跌，令低迷的 AI 板块雪上加霜。这场备受期待的 IPO，也没能重新点燃投资者的热情。 作为 AI 投资热潮的重要风向标，Anthropic 上市曾被寄予厚望，市场期待借此提振经历一段动荡时期后持续疲软的 AI 板块。 然而，Anthropic 股价报 88.25 美元（IT之家注：现汇率约合 590.6 元人民币），较上市首日的收盘价…（IT之家 · 行业动态）</description>
+    </item>
+    <item>
+      <title>Six AI-powered gadgets that could make your home office smarter</title>
+      <link>https://techcrunch.com/2026/11/20/6-ai-powered-gadgets-that-could-make-your-home-office-smarter</link>
+      <guid isPermaLink="true">https://techcrunch.com/2026/11/20/6-ai-powered-gadgets-that-could-make-your-home-office-smarter</guid>
+      <pubDate>Fri, 20 Nov 2026 14:00:00 GMT</pubDate>
+      <category>行业动态</category>
+      <description>From notetakers to webcams, here are six AI-powered gadgets to upgrade your workspace. （TechCrunch AI · 行业动态）</description>
+    </item>
+    <item>
+      <title>Google&apos;s latest homepage update pushes its search engine further toward an AI answer engine</title>
+      <link>https://the-decoder.com/googles-latest-homepage-update-pushes-its-search-engine-further-toward-an-ai-answer-engine</link>
+      <guid isPermaLink="true">https://the-decoder.com/googles-latest-homepage-update-pushes-its-search-engine-further-toward-an-ai-answer-engine</guid>
+      <pubDate>Fri, 20 Nov 2026 13:19:31 GMT</pubDate>
+      <category>行业动态</category>
+      <description>Google is rolling out a collapsible sidebar globally on its Desktop Search homepage. In AI Mode, it lets users reopen recent AI searches, search threads, and create notebooks. Temporary threads that aren&apos;t saved to histo…（The Decoder · 行业动态）</description>
+    </item>
+    <item>
+      <title>Signal is blocking Gemini and Siri AI from reading your screen</title>
+      <link>https://www.theverge.com/ai-artificial-intelligence/1038390/signal-blocking-ai-agent-screenshots-mobile-app</link>
+      <guid isPermaLink="true">https://www.theverge.com/ai-artificial-intelligence/1038390/signal-blocking-ai-agent-screenshots-mobile-app</guid>
+      <pubDate>Fri, 20 Nov 2026 12:30:47 GMT</pubDate>
+      <category>模型发布</category>
+      <description>Signal is restricting the ability to take screenshots on Android and iOS devices in an effort to prevent AI agents from reading users&apos; messages and other data. The agentic AI capabilities built into operating systems tha…（The Verge AI · 模型发布）</description>
+    </item>
+    <item>
+      <title>Combatting adversarial distillation</title>
+      <link>https://openai.com/index/combatting-adversarial-distillation</link>
+      <guid isPermaLink="true">https://openai.com/index/combatting-adversarial-distillation</guid>
+      <pubDate>Fri, 20 Nov 2026 10:00:00 GMT</pubDate>
+      <category>行业动态</category>
+      <description>OpenAI’s layered approach to adversarial distillation combines model training, safeguards, detection, and enforcement to protect against capability extraction. （OpenAI · 行业动态）</description>
+    </item>
+    <item>
+      <title>Hermes Agent&apos;s Collective Wisdom feature turns one employee&apos;s AI trick into the whole team&apos;s skill</title>
+      <link>https://the-decoder.com/hermes-agents-collective-wisdom-feature-turns-one-employees-ai-trick-into-the-whole-teams-skill</link>
+      <guid isPermaLink="true">https://the-decoder.com/hermes-agents-collective-wisdom-feature-turns-one-employees-ai-trick-into-the-whole-teams-skill</guid>
+      <pubDate>Fri, 20 Nov 2026 09:59:51 GMT</pubDate>
+      <category>产品动态</category>
+      <description>Companies will soon be able to run the open-source Hermes Agent from Nous Research directly inside Microsoft Teams. The article Hermes Agent&apos;s Collective Wisdom feature turns one employee&apos;s AI trick into the whole team&apos;s…（The Decoder · 产品动态）</description>
+    </item>
+    <item>
+      <title>昇腾算力训出了双榜SOTA的具身世界模型，华为云这次想把整套底座开放出来</title>
+      <link>https://www.qbitai.com/2026/11/511610.html</link>
+      <guid isPermaLink="true">https://www.qbitai.com/2026/11/511610.html</guid>
+      <pubDate>Fri, 20 Nov 2026 08:04:58 GMT</pubDate>
+      <category>模型发布</category>
+      <description>国产算力的成熟，把具身竞争维度从「芯片有多强」，拉入了一个比拼训练效率、数据规模、部署成本和场景落地速度的多维战场。（量子位 · 模型发布）</description>
+    </item>
     <item>
       <title>约 14MB 内存运行 2.7 亿参数模型：谷歌工程师把 AI 装进打印机，每词元耗时约 60 秒</title>
       <link>https://www.ithome.com/1/029/953.htm</link>
@@ -201,6 +497,22 @@
       <description>IT之家 11 月 20 日消息，11 月 19 日，商务部消费促进司负责人谈 2026 年 1-10 月我国消费市场情况。今年以来，我国消费市场规模稳步扩大，呈现商品消费稳、服务消费旺、新型消费热的特点。1-10 月，社会消费商品和服务零售总额同比（下同）增长 2.5%。 IT之家从公告获悉，在消费品以旧换新政策强有力的带动下，绿色、智能消费持续增长。1-10 月，限额以上单位通讯器材（含手机）、文化办公用品（含电脑、平板）零售额分别…（IT之家 · 行业动态）</description>
     </item>
     <item>
+      <title>Hebbia sees improvements in financial research with GPT-6 Astra</title>
+      <link>https://openai.com/business/customer-stories/hebbia</link>
+      <guid isPermaLink="true">https://openai.com/business/customer-stories/hebbia</guid>
+      <pubDate>Fri, 20 Nov 2026 00:00:00 GMT</pubDate>
+      <category>模型发布</category>
+      <description>Hebbia tested GPT-6 Astra for financial research. Its prerelease evaluations found gains in source coverage, citation relevance, and presentation quality. （OpenAI · 模型发布）</description>
+    </item>
+    <item>
+      <title>Can AI help scientists identify promising drug candidates?</title>
+      <link>https://openai.com/index/introducing-medchembench</link>
+      <guid isPermaLink="true">https://openai.com/index/introducing-medchembench</guid>
+      <pubDate>Fri, 20 Nov 2026 00:00:00 GMT</pubDate>
+      <category>行业动态</category>
+      <description>MedChemBench evaluates how well AI models interpret molecular structures, reason from experimental evidence, and select compounds in early drug discovery. （OpenAI · 行业动态）</description>
+    </item>
+    <item>
       <title>苹果 macOS 27.3 Beta 2 公测版发布：扩展 Siri AI 能力，强化完全磁盘访问权限管理</title>
       <link>https://www.ithome.com/1/029/754.htm</link>
       <guid isPermaLink="true">https://www.ithome.com/1/029/754.htm</guid>
@@ -247,6 +559,14 @@
       <pubDate>Thu, 19 Nov 2026 22:41:40 GMT</pubDate>
       <category>行业动态</category>
       <description>IT之家 11 月 20 日消息，AI 公司 Anthropic 于当地时间 11 月 19 日在美国纳斯达克上市，首日股价以 97.17 美元（IT之家注：现汇率约合 649.2 元人民币）收盘，较 83 美元（现汇率约合 554.5 元人民币）的发行价上涨 17.07%。 该股开盘即报 111.5 美元（现汇率约合 744.9 元人民币），较发行价高出约 34.3%；盘中一度突破 115 美元（现汇率约合 768.3 元人民币），随…（IT之家 · 行业动态）</description>
+    </item>
+    <item>
+      <title>Apple is hiring engineers to build its own AI agent</title>
+      <link>https://www.theverge.com/tech/1038227/apple-ai-agent-engineer-job-listing</link>
+      <guid isPermaLink="true">https://www.theverge.com/tech/1038227/apple-ai-agent-engineer-job-listing</guid>
+      <pubDate>Thu, 19 Nov 2026 22:31:41 GMT</pubDate>
+      <category>产品动态</category>
+      <description>Apple is working on its own AI agent that can perform a range of tasks for you, including browsing the web, working across apps, writing code, and calling services. That&apos;s according to a now-removed job listing spotted b…（The Verge AI · 产品动态）</description>
     </item>
     <item>
       <title>A brief history of Nvidia’s recent stock fluctuations</title>
@@ -647,326 +967,6 @@
       <pubDate>Thu, 19 Nov 2026 02:46:23 GMT</pubDate>
       <category>产品动态</category>
       <description>IT之家 11 月 19 日消息，英伟达在最新财报电话会议上披露，随着 AI 推理需求持续增长，公司旗下不同代际 GPU 的租赁价格均出现上涨。 其中，Hopper 架构 GPU 的多年期续约租赁价格最高达原价 2 倍，Blackwell 架构 B300 GPU 的租赁价格较推出时上涨超过 60%。 据 Wccftech 报道，英伟达临时 CEO、首席财务官科莱特 · 克雷斯（Colette Kress）在财报电话会议上表示，自今年 5…（IT之家 · 产品动态）</description>
-    </item>
-    <item>
-      <title>Anduril 创始人拉奇谈 AI 网络安全：美国 AI 攻防失衡，长期来看善用 AI 防御的一方将占据优势</title>
-      <link>https://www.ithome.com/1/029/176.htm</link>
-      <guid isPermaLink="true">https://www.ithome.com/1/029/176.htm</guid>
-      <pubDate>Thu, 19 Nov 2026 02:02:55 GMT</pubDate>
-      <category>产品动态</category>
-      <description>IT之家 11 月 19 日消息，Anduril 联合创始人帕尔默 · 拉奇（Palmer Luckey）今日在《纽约时报》DealBook 峰会上警告称，美国正面临 AI 网络攻防体系的严重失衡。 拉奇表示，AI 已经能够帮助攻击者开发各种漏洞利用程序，针对美国企业和基础设施发动攻击。“攻击者快速采用新技术，而老旧系统却无法像技术发展那样迅速完成升级，这两者之间存在不匹配。” 他认为，美国需要加快数字基础设施的更新和安全防护建设。“我…（IT之家 · 产品动态）</description>
-    </item>
-    <item>
-      <title>陈立武：英特尔 18A 芯片制造工艺已签下首家外部客户</title>
-      <link>https://www.ithome.com/1/029/172.htm</link>
-      <guid isPermaLink="true">https://www.ithome.com/1/029/172.htm</guid>
-      <pubDate>Thu, 19 Nov 2026 01:44:53 GMT</pubDate>
-      <category>行业动态</category>
-      <description>IT之家 11 月 19 日消息，据 CNBC 今日报道，英特尔 CEO 陈立武当地时间周三表示，英特尔 18A 芯片制造工艺已签下首家外部客户。 陈立武在美国得克萨斯州奥斯汀举行的 TomorrowX 峰会上表示：“代工厂的弹性供应非常重要。然后是 18A 工艺，我参与了生产，我们刚刚签下了第一个客户。” 陈立武并没有透露这家客户的名字。 报道称，对于英特尔 5 年来挑战台积电的努力来说，这是一个里程碑时刻。经历多年失误和低良率后，英…（IT之家 · 行业动态）</description>
-    </item>
-    <item>
-      <title>最高每小时狂写 30GB：英伟达 621.24 驱动反馈加速消耗 SSD 寿命</title>
-      <link>https://www.ithome.com/1/029/169.htm</link>
-      <guid isPermaLink="true">https://www.ithome.com/1/029/169.htm</guid>
-      <pubDate>Thu, 19 Nov 2026 01:42:01 GMT</pubDate>
-      <category>行业动态</category>
-      <description>IT之家 11 月 19 日消息，科技媒体 Tom&apos;s Hardware 今天（11 月 19 日）发布博文，报道称英伟达 GeForce 驱动 621.14 和 621.24 两个版本存在异常后台写入问题，即使电脑处于闲置状态，系统仍持续向 SSD 写入数据。 报道称最早的用户反馈可以追溯到 11 月 4 日，有用户反馈在升级 621.14 版本驱动后，电脑闲置时出现异常后台写入，实测约每小时 3GB。IT之家附上相关截图如下： 该用…（IT之家 · 行业动态）</description>
-    </item>
-    <item>
-      <title>马斯克预警称 AI 或于 2031 年超越全人类智慧总和</title>
-      <link>https://www.ithome.com/1/029/161.htm</link>
-      <guid isPermaLink="true">https://www.ithome.com/1/029/161.htm</guid>
-      <pubDate>Thu, 19 Nov 2026 01:11:17 GMT</pubDate>
-      <category>行业动态</category>
-      <description>IT之家 11 月 19 日消息，在接受《经济学人》采访时，全球首富埃隆 · 马斯克（Elon Musk）大胆预测，称未来约 5 年内，即约 2031 年，人工智能（AI）超过全人类智慧的总和。到那时，除“作为人类”之外，几乎没有什么是 AI 不能比人类做得更好的。 IT之家附上相关视频如下： 马斯克同时描绘了一个乐观图景：若不发生全球热核战争等重大灾难，AI 与机器人将带来“惊人的富足时代”，商品和服务供给大幅增加，任何人都能获得自己…（IT之家 · 行业动态）</description>
-    </item>
-    <item>
-      <title>权志龙母公司 Galaxy 将推机器人女团，与宇树合作的 K-pop 演唱会 12 月首演</title>
-      <link>https://www.ithome.com/1/029/160.htm</link>
-      <guid isPermaLink="true">https://www.ithome.com/1/029/160.htm</guid>
-      <pubDate>Thu, 19 Nov 2026 01:09:13 GMT</pubDate>
-      <category>行业动态</category>
-      <description>IT之家 11 月 19 日消息，据每日经济新闻 11 月 17 日报道，韩国娱乐科技公司 Galaxy Corporation 计划于明年 1 月在全球推出实体机器人女团，今年 12 月将率先在中国澳门举办一场小型机器人 K-pop 演唱会作为预热，随后将表演扩展至阿联酋迪拜和日本东京。 Galaxy 公司的艺人包括权志龙、宋康昊、金钟国、李泰民等，目标推动“明星 IP＋机器人”在实体场景落地。 Galaxy 创始人兼 CEO 崔龙湖…（IT之家 · 行业动态）</description>
-    </item>
-    <item>
-      <title>奥尔特曼称 OpenAI 没法让所有人满意，必须平衡 AI 安全与发展</title>
-      <link>https://www.ithome.com/1/029/158.htm</link>
-      <guid isPermaLink="true">https://www.ithome.com/1/029/158.htm</guid>
-      <pubDate>Thu, 19 Nov 2026 01:00:15 GMT</pubDate>
-      <category>行业动态</category>
-      <description>IT之家 11 月 19 日消息，美国当地时间 11 月 18 日周三召开的 DealBook 峰会上，OpenAI 首席执行官萨姆 · 奥尔特曼（Sam Altman）表示，其公司正在“安全”与“发展”寻找 AI 平衡点。 奥尔特曼和 OpenAI 总裁格雷格 · 布罗克曼（Greg Brockman）共同参与本次活动，他们表示在推进 AI 发展的进程中不可避免地会遇到风险，因此公司必须在优先保障安全和持续创新之间做出取舍。 奥尔特曼…（IT之家 · 行业动态）</description>
-    </item>
-    <item>
-      <title>Microsoft CEO Satya Nadella explains why he asked 60K employees to quit</title>
-      <link>https://techcrunch.com/2026/11/18/microsoft-ceo-satya-nadella-explains-why-he-asked-60k-employees-to-quit</link>
-      <guid isPermaLink="true">https://techcrunch.com/2026/11/18/microsoft-ceo-satya-nadella-explains-why-he-asked-60k-employees-to-quit</guid>
-      <pubDate>Thu, 19 Nov 2026 00:42:56 GMT</pubDate>
-      <category>行业动态</category>
-      <description>Microsoft CEO Satya Nadella explained why he offered buyouts to 60,000 of his employees in October, essentially urging them to voluntarily quit, rather than reducing the workforce via another massive layoff. The short an…（TechCrunch AI · 行业动态）</description>
-    </item>
-    <item>
-      <title>微软纳德拉示警：比“千年虫”更棘手，AI 正让网络变得越来越脆弱</title>
-      <link>https://www.ithome.com/1/029/154.htm</link>
-      <guid isPermaLink="true">https://www.ithome.com/1/029/154.htm</guid>
-      <pubDate>Thu, 19 Nov 2026 00:41:27 GMT</pubDate>
-      <category>行业动态</category>
-      <description>IT之家 11 月 19 日消息，美国当地时间 11 月 18 日在《纽约时报》DealBook 峰会上，微软首席执行官萨提亚 · 纳德拉（Satya Nadella）表示，近期频发的网络中断可能并非偶发事件，随着人工智能系统能力增强，全球数字基础设施的稳定性正面临更复杂的考验。 针对近期接连出现的网络中断究竟是“反常现象”还是“新常态”，纳德拉表示目前尚难判断。 他将当前形势与“千年虫”（Y2K）问题作类比：当年人们担心进入 2000…（IT之家 · 行业动态）</description>
-    </item>
-    <item>
-      <title>供应链确认 OpenAI 首款 AI 硬件年底启动出货：前苹果设计师 Jony Ive 合作打造，立讯精密等中国厂商深度参与</title>
-      <link>https://www.ithome.com/1/029/152.htm</link>
-      <guid isPermaLink="true">https://www.ithome.com/1/029/152.htm</guid>
-      <pubDate>Thu, 19 Nov 2026 00:36:12 GMT</pubDate>
-      <category>行业动态</category>
-      <description>IT之家 11 月 19 日消息，每日经济新闻今日援引供应链消息，OpenAI 首款 AI 硬件产品计划于 2026 年底启动出货，多家中国厂商参与该项目，其中立讯精密独家承担整机制造，并同时供应核心零部件。关于这款硬件的具体形态，OpenAI 官方尚未正式公布。 此前有报道称，该设备由 OpenAI 与前苹果首席设计官 Jony Ive 的 LoveFrom 工作室合作开发，可能是一款外形类似“甜甜圈”、尺寸接近冰球的无屏设备，集成麦…（IT之家 · 行业动态）</description>
-    </item>
-    <item>
-      <title>初中毕业烘焙师，1 人搓出单集千万播放科幻剧，中国AI长片杀疯了！</title>
-      <link>https://www.qbitai.com/2026/11/510947.html</link>
-      <guid isPermaLink="true">https://www.qbitai.com/2026/11/510947.html</guid>
-      <pubDate>Thu, 19 Nov 2026 00:26:40 GMT</pubDate>
-      <category>开源工具</category>
-      <description>国产AI工具实现「一个人就是一个剧组」（量子位 · 开源工具）</description>
-    </item>
-    <item>
-      <title>微软 CEO 纳德拉谈 6 万人自愿离职计划：部分团队尚未适应 AI 转型，公司希望给予员工更多自主权、让合适的人才进入合适的岗位</title>
-      <link>https://www.ithome.com/1/029/147.htm</link>
-      <guid isPermaLink="true">https://www.ithome.com/1/029/147.htm</guid>
-      <pubDate>Thu, 19 Nov 2026 00:19:17 GMT</pubDate>
-      <category>产品动态</category>
-      <description>IT之家 11 月 19 日消息，当地时间 11 月 16 日，微软 CEO 萨提亚 · 纳德拉在接受《The Pragmatic Engineer》播客节目采访时谈到了一些大家关心的问题。 当被问及公司面向约 6 万名员工推出自愿离职计划，是否意味着微软将借助 AI 提高效率并进一步裁员。 对此，纳德拉没有直接给出肯定或否定的答复，而是坦言，随着 AI 改变软件开发方式，微软员工的工作模式和团队组织结构都将发生变化。 纳德拉表示，微软…（IT之家 · 产品动态）</description>
-    </item>
-    <item>
-      <title>OpenAI 自曝模型失控险情：最强 AI 曾突破网络封锁，紧急停训 11 天</title>
-      <link>https://www.ithome.com/1/029/145.htm</link>
-      <guid isPermaLink="true">https://www.ithome.com/1/029/145.htm</guid>
-      <pubDate>Thu, 19 Nov 2026 00:09:16 GMT</pubDate>
-      <category>研究前沿</category>
-      <description>IT之家 11 月 19 日消息，OpenAI 今天（11 月 18 日）发布题为《管理前沿 AI 风险：从训练到部署》的安全政策说明，首次系统披露研发、内部使用到公开发布阶段，如何在高能力模型的全生命周期中管控风险。 IT之家援引博文介绍，OpenAI 称由于前沿模型的能力正快速增强，因此理解、对齐和保障模型的能力必须“始终领先一步”。公司维持引入“安全案例”流程，要求在训练全程提供更有力的行为对齐证据；这些措施虽会拖慢发布节奏，但会…（IT之家 · 研究前沿）</description>
-    </item>
-    <item>
-      <title>Explore the Codex Security Plugin</title>
-      <link>https://openai.com/business/learn/codex-security-plugin-demo</link>
-      <guid isPermaLink="true">https://openai.com/business/learn/codex-security-plugin-demo</guid>
-      <pubDate>Thu, 19 Nov 2026 00:00:00 GMT</pubDate>
-      <category>行业动态</category>
-      <description>Watch a demo of the Codex Security Plugin and see the workflow in action, from getting started to reviewing the results shown in the recording. （OpenAI · 行业动态）</description>
-    </item>
-    <item>
-      <title>Deploying Daybreak Red</title>
-      <link>https://openai.com/business/learn/deploying-daybreak-red</link>
-      <guid isPermaLink="true">https://openai.com/business/learn/deploying-daybreak-red</guid>
-      <pubDate>Thu, 19 Nov 2026 00:00:00 GMT</pubDate>
-      <category>行业动态</category>
-      <description>Explore a reference architecture for supervised security investigations with Daybreak Red, including safety controls, setup, and monitoring. （OpenAI · 行业动态）</description>
-    </item>
-    <item>
-      <title>Get started with Daybreak Blue</title>
-      <link>https://openai.com/business/learn/daybreak-blue-onboarding-demo</link>
-      <guid isPermaLink="true">https://openai.com/business/learn/daybreak-blue-onboarding-demo</guid>
-      <pubDate>Thu, 19 Nov 2026 00:00:00 GMT</pubDate>
-      <category>行业动态</category>
-      <description>Watch a walkthrough of onboarding to Daybreak Blue, with a closer look at the setup experience and how to get started. （OpenAI · 行业动态）</description>
-    </item>
-    <item>
-      <title>See PR scans in action</title>
-      <link>https://openai.com/business/learn/pr-scans-demo</link>
-      <guid isPermaLink="true">https://openai.com/business/learn/pr-scans-demo</guid>
-      <pubDate>Thu, 19 Nov 2026 00:00:00 GMT</pubDate>
-      <category>行业动态</category>
-      <description>Watch a walkthrough of PR scans and see how the presenter reviews scan results in a pull request workflow. （OpenAI · 行业动态）</description>
-    </item>
-    <item>
-      <title>谷歌推出 Gemini 4 Neon 模型，编程 AI 智能体指数超 Claude Opus 5.5 排第一</title>
-      <link>https://www.ithome.com/1/029/144.htm</link>
-      <guid isPermaLink="true">https://www.ithome.com/1/029/144.htm</guid>
-      <pubDate>Wed, 18 Nov 2026 23:53:51 GMT</pubDate>
-      <category>产品动态</category>
-      <description>IT之家 11 月 19 日消息，谷歌今天（11 月 18 日）宣布推出 AI 模型 Gemini 4 Neon，主攻复杂编程、科学研究和企业工作流程，更好平衡推理能力、任务处理速度与成本，目前已开始向开发者、企业及部分付费订阅用户开放。 费用方面，Gemini 4 Neon 在 API 调用方面，每 100 万词元输入费用为 3 美元（IT之家注：现汇率约合 20 元人民币），每 100 万词元输出费用为 15 美元（现汇率约合 10…（IT之家 · 产品动态）</description>
-    </item>
-    <item>
-      <title>Amidst fears of AI cyberattacks, Satya Nadella says lots of critical infrastructure is ‘unpatchable’</title>
-      <link>https://techcrunch.com/2026/11/18/amidst-fears-of-ai-cyberattacks-satya-nadella-says-lots-of-critical-infrastructure-is-unpatchable</link>
-      <guid isPermaLink="true">https://techcrunch.com/2026/11/18/amidst-fears-of-ai-cyberattacks-satya-nadella-says-lots-of-critical-infrastructure-is-unpatchable</guid>
-      <pubDate>Wed, 18 Nov 2026 23:45:00 GMT</pubDate>
-      <category>行业动态</category>
-      <description>The Microsoft CEO downplayed the recent Outlook outage while noting that AI was causing both opportunities and new challenges for securing much of the connected world. （TechCrunch AI · 行业动态）</description>
-    </item>
-    <item>
-      <title>地平线发布 LoFT 原生视频几何基础模型，多项指标达到 SoTA</title>
-      <link>https://www.ithome.com/1/029/140.htm</link>
-      <guid isPermaLink="true">https://www.ithome.com/1/029/140.htm</guid>
-      <pubDate>Wed, 18 Nov 2026 23:30:03 GMT</pubDate>
-      <category>模型发布</category>
-      <description>IT之家 11 月 19 日消息，11 月 18 日，地平线机器人实验室发布原生视频几何基础模型 LoFT（Looped Foundation Transformer for Video Geometry）。据介绍，该模型能够从 RGB 视频中联合预测相机位姿、内参及逐帧深度，恢复场景三维结构，为机器人空间感知、环境理解与具身学习提供几何基础。 官方称，LoFT 原生面向连续视频建模，采用双循环 Transformer 架构，将跨帧视觉…（IT之家 · 模型发布）</description>
-    </item>
-    <item>
-      <title>Elon Musk says ousting Jensen Huang is like ‘kicking Michael Jordan off your team’</title>
-      <link>https://techcrunch.com/2026/11/18/elon-musk-says-ousting-jensen-huang-is-like-kicking-michael-jordan-off-your-team</link>
-      <guid isPermaLink="true">https://techcrunch.com/2026/11/18/elon-musk-says-ousting-jensen-huang-is-like-kicking-michael-jordan-off-your-team</guid>
-      <pubDate>Wed, 18 Nov 2026 23:25:17 GMT</pubDate>
-      <category>行业动态</category>
-      <description>“I don’t think [Huang is] disloyal to the United States,&quot; Musk said. （TechCrunch AI · 行业动态）</description>
-    </item>
-    <item>
-      <title>The nation’s largest school districts consider ditching Google Search</title>
-      <link>https://www.theverge.com/ai-artificial-intelligence/1037151/school-districts-ditching-google</link>
-      <guid isPermaLink="true">https://www.theverge.com/ai-artificial-intelligence/1037151/school-districts-ditching-google</guid>
-      <pubDate>Wed, 18 Nov 2026 23:18:35 GMT</pubDate>
-      <category>行业动态</category>
-      <description>New York, Los Angeles, and Chicago schools are considering Google alternatives after the company said it will disable Search for schools that opt out of its AI features, according to The New York Times. Starting next yea…（The Verge AI · 行业动态）</description>
-    </item>
-    <item>
-      <title>Microsoft CEO Satya Nadella remains confident in Nvidia after Huang’s exit</title>
-      <link>https://techcrunch.com/2026/11/18/microsoft-ceo-satya-nadella-remains-confident-in-nvidia-after-huangs-exit</link>
-      <guid isPermaLink="true">https://techcrunch.com/2026/11/18/microsoft-ceo-satya-nadella-remains-confident-in-nvidia-after-huangs-exit</guid>
-      <pubDate>Wed, 18 Nov 2026 23:17:28 GMT</pubDate>
-      <category>行业动态</category>
-      <description>Microsoft CEO Satya Nadella expressed confidence in Jensen Huang&apos;s successor Colette Kress, who is serving as Nvidia&apos;s interim CEO. （TechCrunch AI · 行业动态）</description>
-    </item>
-    <item>
-      <title>OpenAI 发布芯片设计最新成果：AMD 旗舰 GPU PPA 最高提升 14%，自研芯片 Jalapeño 面积最高减少 13%</title>
-      <link>https://www.ithome.com/1/029/135.htm</link>
-      <guid isPermaLink="true">https://www.ithome.com/1/029/135.htm</guid>
-      <pubDate>Wed, 18 Nov 2026 23:07:38 GMT</pubDate>
-      <category>行业动态</category>
-      <description>IT之家 11 月 19 日消息，OpenAI 于当地时间 11 月 18 日发布最新技术报告《Advancing chip design with OpenAI models》，披露了利用 AI 模型辅助芯片设计的最新进展。 据介绍，OpenAI 已将相关技术应用于自研推理芯片 Jalapeño，以及 AMD 下一代 GPU 和 CPU 的设计优化，并通过开源 RISC-V 处理器测试评估不同代际模型的芯片设计能力。 OpenAI 表…（IT之家 · 行业动态）</description>
-    </item>
-    <item>
-      <title>英伟达员工大会宣布告别“黄仁勋时代”：12 月员工加薪，启动新 CEO 遴选</title>
-      <link>https://www.ithome.com/1/029/134.htm</link>
-      <guid isPermaLink="true">https://www.ithome.com/1/029/134.htm</guid>
-      <pubDate>Wed, 18 Nov 2026 23:01:26 GMT</pubDate>
-      <category>行业动态</category>
-      <description>IT之家 11 月 19 日消息，CNBC 最新报道称美国当地时间 11 月 18 日星期三，英伟达召开了创始人黄仁勋辞职后的首次全体员工大会。临时首席执行官科莱特 · 克雷斯向员工表示“[告别黄仁勋时代]，让我们继续前进”，并提及加薪。 IT之家附上相关截图如下： 这场会议持续约一小时，采取现场会议与线上直播相结合的方式，多名核心高管出席。克雷斯还回顾了公司最新财报，称其为“出色的一个季度”。 在本次全体员工会议上，克雷斯表示为了缓解…（IT之家 · 行业动态）</description>
-    </item>
-    <item>
-      <title>Satya Nadella predicts AI agents will reshuffle the economics of the web</title>
-      <link>https://techcrunch.com/2026/11/18/satya-nadella-predicts-ai-agents-will-reshuffle-the-economics-of-the-web</link>
-      <guid isPermaLink="true">https://techcrunch.com/2026/11/18/satya-nadella-predicts-ai-agents-will-reshuffle-the-economics-of-the-web</guid>
-      <pubDate>Wed, 18 Nov 2026 22:58:11 GMT</pubDate>
-      <category>行业动态</category>
-      <description>Microsoft&apos;s CEO says AI agents could disrupt advertising-driven business models, forcing companies like Amazon to rethink how they compete for customers. （TechCrunch AI · 行业动态）</description>
-    </item>
-    <item>
-      <title>Anthropic prices IPO at $83 a share, above projected range</title>
-      <link>https://techcrunch.com/2026/11/18/anthropic-reportedly-prices-ipo-at-83-a-share-above-projected-range</link>
-      <guid isPermaLink="true">https://techcrunch.com/2026/11/18/anthropic-reportedly-prices-ipo-at-83-a-share-above-projected-range</guid>
-      <pubDate>Wed, 18 Nov 2026 22:11:15 GMT</pubDate>
-      <category>行业动态</category>
-      <description>The long-awaited IPO reportedly values the company at $1.5 trillion on a fully diluted basis. （TechCrunch AI · 行业动态）</description>
-    </item>
-    <item>
-      <title>Nvidia created a weird bit of intrigue by not filing a routine SEC report</title>
-      <link>https://techcrunch.com/2026/11/18/nvidia-created-a-weird-bit-of-intrigue-by-not-filing-a-routine-sec-report</link>
-      <guid isPermaLink="true">https://techcrunch.com/2026/11/18/nvidia-created-a-weird-bit-of-intrigue-by-not-filing-a-routine-sec-report</guid>
-      <pubDate>Wed, 18 Nov 2026 21:57:40 GMT</pubDate>
-      <category>行业动态</category>
-      <description>One Wall Street analyst got to the bottom of Nvidia&apos;s surprise announcement that it wouldn&apos;t be filing its formal quarterly results document, the 10-Q, for weeks. （TechCrunch AI · 行业动态）</description>
-    </item>
-    <item>
-      <title>Introducing Gemini 4 Neon</title>
-      <link>https://deepmind.google/blog/introducing-gemini-4-neon</link>
-      <guid isPermaLink="true">https://deepmind.google/blog/introducing-gemini-4-neon</guid>
-      <pubDate>Wed, 18 Nov 2026 21:35:43 GMT</pubDate>
-      <category>模型发布</category>
-      <description>（Google DeepMind · 模型发布）</description>
-    </item>
-    <item>
-      <title>Palmer Luckey warns AI-powered cyberattacks are outpacing defenses: ‘It’s time to start running’</title>
-      <link>https://techcrunch.com/2026/11/18/palmer-luckey-warns-ai-powered-cyberattacks-are-outpacing-defenses-its-time-to-start-running</link>
-      <guid isPermaLink="true">https://techcrunch.com/2026/11/18/palmer-luckey-warns-ai-powered-cyberattacks-are-outpacing-defenses-its-time-to-start-running</guid>
-      <pubDate>Wed, 18 Nov 2026 21:34:13 GMT</pubDate>
-      <category>行业动态</category>
-      <description>The Anduril co-founder says outdated technology is leaving systems vulnerable to a new wave of AI-enabled attacks. （TechCrunch AI · 行业动态）</description>
-    </item>
-    <item>
-      <title>Palmer Luckey thinks China is ‘thrilled to have Jensen out,’ so he wants the ousted Nvidia CEO reinstated</title>
-      <link>https://techcrunch.com/2026/11/18/palmer-luckey-thinks-china-is-thrilled-to-have-jensen-out-so-he-wants-the-ousted-nvidia-ceo-reinstated</link>
-      <guid isPermaLink="true">https://techcrunch.com/2026/11/18/palmer-luckey-thinks-china-is-thrilled-to-have-jensen-out-so-he-wants-the-ousted-nvidia-ceo-reinstated</guid>
-      <pubDate>Wed, 18 Nov 2026 21:31:21 GMT</pubDate>
-      <category>行业动态</category>
-      <description>&quot;It makes America weaker to knock him out,&quot; the Anduril CEO said about ousted Nvidia leader Jensen Huang. （TechCrunch AI · 行业动态）</description>
-    </item>
-    <item>
-      <title>Google ships Gemini 4 Neon, its fourth new Gemini model in a month</title>
-      <link>https://the-decoder.com/google-ships-gemini-4-neon-its-fourth-new-gemini-model-in-a-month</link>
-      <guid isPermaLink="true">https://the-decoder.com/google-ships-gemini-4-neon-its-fourth-new-gemini-model-in-a-month</guid>
-      <pubDate>Wed, 18 Nov 2026 21:03:23 GMT</pubDate>
-      <category>模型发布</category>
-      <description>Google released Gemini 4 Neon, a new frontier model built for software development, knowledge work, and science. It handles text, images, video, audio, and PDFs with a context window of one million tokens. At $3 per mill…（The Decoder · 模型发布）</description>
-    </item>
-    <item>
-      <title>Sam Altman says his life is so weird that he’s unfazed by Andrew Garfield portraying him in upcoming movie</title>
-      <link>https://techcrunch.com/2026/11/18/sam-altman-says-his-life-is-so-weird-that-hes-unfazed-by-andrew-garfield-portraying-him-in-upcoming-movie</link>
-      <guid isPermaLink="true">https://techcrunch.com/2026/11/18/sam-altman-says-his-life-is-so-weird-that-hes-unfazed-by-andrew-garfield-portraying-him-in-upcoming-movie</guid>
-      <pubDate>Wed, 18 Nov 2026 20:07:01 GMT</pubDate>
-      <category>行业动态</category>
-      <description>&quot;It doesn&apos;t feel like it&apos;s in like the top 10 weirdest things about my life,&quot; Altman said. （TechCrunch AI · 行业动态）</description>
-    </item>
-    <item>
-      <title>Snapchat now lets developers build AR Lenses with AI assistants like Claude Code and Cursor</title>
-      <link>https://techcrunch.com/2026/11/18/snapchat-now-lets-developers-build-ar-lenses-with-ai-coding-assistants-like-claude-code-and-cursor</link>
-      <guid isPermaLink="true">https://techcrunch.com/2026/11/18/snapchat-now-lets-developers-build-ar-lenses-with-ai-coding-assistants-like-claude-code-and-cursor</guid>
-      <pubDate>Wed, 18 Nov 2026 19:56:39 GMT</pubDate>
-      <category>模型发布</category>
-      <description>Lens creators can describe the Lens they want in plain language, and their AI assistant handles the process from start to finish, Snapchat says. （TechCrunch AI · 模型发布）</description>
-    </item>
-    <item>
-      <title>Trump’s latest land grab is an AI hub in the Philippines</title>
-      <link>https://www.theverge.com/policy/1036749/trump-ai-chip-data-center-us-philippines-pax-silica</link>
-      <guid isPermaLink="true">https://www.theverge.com/policy/1036749/trump-ai-chip-data-center-us-philippines-pax-silica</guid>
-      <pubDate>Wed, 18 Nov 2026 19:40:36 GMT</pubDate>
-      <category>行业动态</category>
-      <description>President Donald Trump was greeted by no less than five beauty queens when he landed in the Philippines on Tuesday, according to local news outlet Rappler. As he stepped onto the tarmac, a child handed him small US and P…（The Verge AI · 行业动态）</description>
-    </item>
-    <item>
-      <title>Google Deepmind&apos;s Project Genie update brings Genie 4, chainable worlds, and a community gallery for remixing</title>
-      <link>https://the-decoder.com/google-deepminds-project-genie-update-brings-genie-4-chainable-worlds-and-a-community-gallery-for-remixing</link>
-      <guid isPermaLink="true">https://the-decoder.com/google-deepminds-project-genie-update-brings-genie-4-chainable-worlds-and-a-community-gallery-for-remixing</guid>
-      <pubDate>Wed, 18 Nov 2026 19:26:25 GMT</pubDate>
-      <category>行业动态</category>
-      <description>With Genie 4, Google DeepMind is launching its most realistic world model to date for Google AI Ultra subscribers. It generates interactive 3D worlds that can be modified in real time via text input and, for the first ti…（The Decoder · 行业动态）</description>
-    </item>
-    <item>
-      <title>Microsoft is replacing outside AI models in its own products with cheaper in-house alternatives</title>
-      <link>https://the-decoder.com/microsoft-is-replacing-outside-ai-models-in-its-own-products-with-cheaper-in-house-alternatives</link>
-      <guid isPermaLink="true">https://the-decoder.com/microsoft-is-replacing-outside-ai-models-in-its-own-products-with-cheaper-in-house-alternatives</guid>
-      <pubDate>Wed, 18 Nov 2026 18:47:36 GMT</pubDate>
-      <category>模型发布</category>
-      <description>Microsoft&apos;s AI division MAI unveiled seven new models for code, security, images, language, and routing at Ignite. MAI Code 2 reaches 98 percent of GPT-6.1 Sol&apos;s performance at 40 percent of the cost, according to Micros…（The Decoder · 模型发布）</description>
-    </item>
-    <item>
-      <title>What is Nvidia without AI’s sugar daddy in charge?</title>
-      <link>https://www.theverge.com/ai-artificial-intelligence/1036776/nvidia-earnings-kress-jensen-huang-petition</link>
-      <guid isPermaLink="true">https://www.theverge.com/ai-artificial-intelligence/1036776/nvidia-earnings-kress-jensen-huang-petition</guid>
-      <pubDate>Wed, 18 Nov 2026 18:34:15 GMT</pubDate>
-      <category>行业动态</category>
-      <description>If the glorious AI revolution rests entirely on the well-being of one man, AI is perhaps not as robust a technology as I had previously been led to believe. Nonetheless, chunks of Silicon Valley are now insisting he is i…（The Verge AI · 行业动态）</description>
-    </item>
-    <item>
-      <title>Genie 4 is now available</title>
-      <link>https://deepmind.google/blog/genie-4-is-now-available</link>
-      <guid isPermaLink="true">https://deepmind.google/blog/genie-4-is-now-available</guid>
-      <pubDate>Wed, 18 Nov 2026 18:13:42 GMT</pubDate>
-      <category>行业动态</category>
-      <description>（Google DeepMind · 行业动态）</description>
-    </item>
-    <item>
-      <title>Google’s AI feature in Search gets its own incognito mode</title>
-      <link>https://techcrunch.com/2026/11/18/googles-ai-feature-in-search-gets-its-own-incognito-mode</link>
-      <guid isPermaLink="true">https://techcrunch.com/2026/11/18/googles-ai-feature-in-search-gets-its-own-incognito-mode</guid>
-      <pubDate>Wed, 18 Nov 2026 18:04:05 GMT</pubDate>
-      <category>行业动态</category>
-      <description>Google&apos;s new temporary threads let users have conversations in AI Mode without adding them to their search history or influencing future recommendations. （TechCrunch AI · 行业动态）</description>
-    </item>
-    <item>
-      <title>OpenAI says its models delivered a year&apos;s worth of chip optimization on top of AMD&apos;s own engineering</title>
-      <link>https://the-decoder.com/openai-says-its-models-delivered-a-years-worth-of-chip-optimization-on-top-of-amds-own-engineering</link>
-      <guid isPermaLink="true">https://the-decoder.com/openai-says-its-models-delivered-a-years-worth-of-chip-optimization-on-top-of-amds-own-engineering</guid>
-      <pubDate>Wed, 18 Nov 2026 18:00:33 GMT</pubDate>
-      <category>行业动态</category>
-      <description>Working with AMD, OpenAI achieved up to 14 percent PPA improvement on AMD&apos;s flagship GPU IP in less than five months. According to OpenAI, that&apos;s roughly a year&apos;s worth of progress, and AMD has already folded the changes…（The Decoder · 行业动态）</description>
     </item>
   </channel>
 </rss>
