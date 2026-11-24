@@ -1,12 +1,17 @@
 {
-  "generatedAt": "2026-11-23T07:58:05.674Z",
+  "generatedAt": "2026-11-24T05:47:25.396Z",
   "timezone": "Asia/Shanghai",
   "count": 2500,
   "days": [
     {
+      "day": "2026-11-24",
+      "label": "11月24日 · 周二",
+      "count": 50
+    },
+    {
       "day": "2026-11-23",
       "label": "11月23日 · 周一",
-      "count": 20
+      "count": 35
     },
     {
       "day": "2026-11-22",
@@ -61,7 +66,7 @@
     {
       "day": "2026-11-12",
       "label": "11月12日 · 周四",
-      "count": 88
+      "count": 87
     },
     {
       "day": "2026-11-11",
@@ -216,22 +221,17 @@
     {
       "day": "2026-10-12",
       "label": "10月12日 · 周一",
-      "count": 33
+      "count": 23
     },
     {
       "day": "2026-10-11",
       "label": "10月11日 · 周日",
-      "count": 25
+      "count": 10
     },
     {
       "day": "2026-10-10",
       "label": "10月10日 · 周六",
-      "count": 40
-    },
-    {
-      "day": "2026-10-09",
-      "label": "10月9日 · 周五",
-      "count": 5
+      "count": 6
     }
   ],
   "stats": {
@@ -242,37 +242,37 @@
       },
       {
         "name": "产品动态",
-        "count": 467
+        "count": 463
       },
       {
         "name": "模型发布",
-        "count": 439
+        "count": 442
       },
       {
         "name": "研究前沿",
-        "count": 100
+        "count": 101
       },
       {
         "name": "开源工具",
-        "count": 54
+        "count": 55
       },
       {
         "name": "观点方法",
-        "count": 31
+        "count": 30
       }
     ],
     "sources": [
       {
         "name": "IT之家",
-        "count": 1107
+        "count": 1087
       },
       {
         "name": "TechCrunch AI",
-        "count": 413
+        "count": 417
       },
       {
         "name": "量子位",
-        "count": 314
+        "count": 321
       },
       {
         "name": "The Decoder",
@@ -280,28 +280,1374 @@
       },
       {
         "name": "The Verge AI",
-        "count": 202
+        "count": 206
       },
       {
         "name": "OpenAI",
-        "count": 134
+        "count": 137
       },
       {
         "name": "NVIDIA",
-        "count": 68
+        "count": 69
       },
       {
         "name": "Google DeepMind",
-        "count": 19
+        "count": 20
       }
     ],
     "languages": {
-      "zh": 1421,
-      "en": 1079
+      "zh": 1408,
+      "en": 1092
     },
     "estimatedTime": 0
   },
   "items": [
+    {
+      "id": "01yiftp",
+      "title": "黄仁勋回归英伟达首日：换下招牌黑皮衣，海军蓝 Dior 夹克再度亮相",
+      "url": "https://www.ithome.com/1/031/471.htm",
+      "summary": "IT之家 11 月 24 日消息，纽约邮报今天（11 月 24 日）发布博文，联合创始人黄仁勋复职重返英伟达公司首日，并未穿着标志性的黑色皮夹克，选择了一件海军蓝色 Dior 外套，显得更为低调。 图源：视频截图从现场画面看，黄仁勋身穿深色翻领拉链夹克，搭配黑色长裤和休闲鞋。IT之家援引博文介绍，这并非是黄仁勋首次身着海军蓝色外套，在今年 6 月出访韩国时，就换下招牌皮衣，以 Dior 深蓝色外套亮相。目前尚不清楚是否为韩国首尔之行穿过…",
+      "author": "",
+      "source": "IT之家",
+      "sourceId": "ithome",
+      "home": "https://www.ithome.com",
+      "weight": 1.6,
+      "lang": "zh",
+      "category": "行业动态",
+      "dealType": null,
+      "publishedAt": "2026-11-24T05:33:46.000Z",
+      "publishedTs": 1795498426000,
+      "day": "2026-11-24",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 78
+    },
+    {
+      "id": "0hmj8i0",
+      "title": "商汤发布并开源 SenseNova U1.6 原生多模态模型，能自己修正图片错误",
+      "url": "https://www.ithome.com/1/031/465.htm",
+      "summary": "IT之家 11 月 24 日消息，商汤科技今日发布并开源 SenseNova U1.6 原生多模态模型，延续了 U 系列的理解与生成统一范式，首次为该系列的 8B 开源模型带来原生图像自修正。 开启自修正后，同一个模型可以先生成首稿，再对照原始提示检查画面，并根据发现的文字问题生成修正版。 人像的光影、插画的笔触、海报里字体与版式的配合，也是 U1.6 这次打磨的细节。 针对文字生成，SenseNova U1.6 加强了透视文字、艺术字…",
+      "author": "",
+      "source": "IT之家",
+      "sourceId": "ithome",
+      "home": "https://www.ithome.com",
+      "weight": 1.6,
+      "lang": "zh",
+      "category": "模型发布",
+      "dealType": null,
+      "publishedAt": "2026-11-24T04:58:18.000Z",
+      "publishedTs": 1795496298000,
+      "day": "2026-11-24",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 84
+    },
+    {
+      "id": "0t7l1ai",
+      "title": "Qt Creator 21 正式发布：强化 AI Agent 集成，新增华为 HarmonyOS 设备支持",
+      "url": "https://www.ithome.com/1/031/463.htm",
+      "summary": "IT之家 11 月 24 日消息，当地时间 11 月 23 日，Qt 团队发布了最新的集成开发环境（IDE）Qt Creator 21。 本次更新重点加强了 AI Agent 与 IDE 的协作能力，同时引入全新的 Profile 性能分析模式，并改进 C++/QML 调试、Git 版本控制、CMake 项目管理和代码编辑体验。 在 AI 功能方面，Qt Creator 21 默认启用 Agentic AI Chat（ACP）集成和 M…",
+      "author": "",
+      "source": "IT之家",
+      "sourceId": "ithome",
+      "home": "https://www.ithome.com",
+      "weight": 1.6,
+      "lang": "zh",
+      "category": "产品动态",
+      "dealType": null,
+      "publishedAt": "2026-11-24T04:35:19.000Z",
+      "publishedTs": 1795494919000,
+      "day": "2026-11-24",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 71
+    },
+    {
+      "id": "0owfc0o",
+      "title": "黄仁勋重掌帅印：英伟达创逾 23 年最大单日涨幅，助推美股科技股集体大涨",
+      "url": "https://www.ithome.com/1/031/458.htm",
+      "summary": "IT之家 11 月 24 日消息，科技媒体 The Information 今天（11 月 24 日）发布博文，报道称受黄仁勋复职英伟达 CEO 利好消息影响，推动美股科技股集体大涨，提振了投资者对人工智能行业的信心，推动纳斯达克 100 指数上涨 6.8%。 英伟达宣布黄仁勋重新出任首席执行官，公司股价当天收涨 31.48%，市值回升近 1 万亿美元，创下自 2003 年 5 月以来的最佳单日表现，创逾 23 年最大单日涨幅。单日大涨…",
+      "author": "",
+      "source": "IT之家",
+      "sourceId": "ithome",
+      "home": "https://www.ithome.com",
+      "weight": 1.6,
+      "lang": "zh",
+      "category": "行业动态",
+      "dealType": null,
+      "publishedAt": "2026-11-24T04:22:10.000Z",
+      "publishedTs": 1795494130000,
+      "day": "2026-11-24",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 70
+    },
+    {
+      "id": "0iy2ifm",
+      "title": "复职英伟达 CEO 后将迎国会听证，黄仁勋 12 月 3 日将公开作证",
+      "url": "https://www.ithome.com/1/031/456.htm",
+      "summary": "IT之家 11 月 24 日消息，科技媒体 Engadget 今天（11 月 24 日）发布博文，报道称黄仁勋复职英伟达 CEO 后，分别将于美国当地时间 12 月 1 日、12 月 3 日参加听证会，接受美国众议院、参议院等问询。 报道称在 12 月 1 日举办的听证会由情报委员会（House Intelligence Committee）等美国众议院的 3 个委员会问询，采用闭门形式，留存逐字记录的访谈（transcribed in…",
+      "author": "",
+      "source": "IT之家",
+      "sourceId": "ithome",
+      "home": "https://www.ithome.com",
+      "weight": 1.6,
+      "lang": "zh",
+      "category": "观点方法",
+      "dealType": null,
+      "publishedAt": "2026-11-24T04:07:53.000Z",
+      "publishedTs": 1795493273000,
+      "day": "2026-11-24",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 70
+    },
+    {
+      "id": "1f8vdbd",
+      "title": "蚂蚁 Ling-3.2-air 模型发布并开源：原生多模态架构，1240 亿总参数",
+      "url": "https://www.ithome.com/1/031/426.htm",
+      "summary": "IT之家 11 月 24 日消息，蚂蚁科技集团今日发布并开源 Ling-3.2-air 模型。该模型延续了 Ling-3.0-flash-VL 的原生多模态架构，支持文本、图像和视频输入，拥有 1240 亿总参数，每个 Token 激活 55 亿参数。 与上一代相比，Ling-3.2-air 在解决代码仓库中的问题、执行多步骤工作流，以及理解视觉信息和推理专业文档等任务上的表现均有提升。 具体来看，与上一代 Ling-3.0-flash…",
+      "author": "",
+      "source": "IT之家",
+      "sourceId": "ithome",
+      "home": "https://www.ithome.com",
+      "weight": 1.6,
+      "lang": "zh",
+      "category": "模型发布",
+      "dealType": null,
+      "publishedAt": "2026-11-24T04:01:00.000Z",
+      "publishedTs": 1795492860000,
+      "day": "2026-11-24",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 76
+    },
+    {
+      "id": "09oe15j",
+      "title": "黄仁勋回归英伟达首日：没有办公电脑用，希望配台 RTX Spark",
+      "url": "https://www.ithome.com/1/031/389.htm",
+      "summary": "IT之家 11 月 24 日消息，科技媒体 Wccftech 今天（11 月 24 日）发布博文，报道称英伟达创始人黄仁勋重返公司总部，在面向员工的简短讲话中，为了活跃现场气氛，调侃表示这是自己重新上班的第一天，目前还没有电脑，希望 IT 部门配发的新设备是一台 RTX Spark。 IT之家翻译黄仁勋的简短发言内容如下： 谢谢大家，谢谢大家给我第二次机会。 这是我重新上班的第一天。 我没有电脑，所以 IT 部门会给我配一台新电脑。 我…",
+      "author": "",
+      "source": "IT之家",
+      "sourceId": "ithome",
+      "home": "https://www.ithome.com",
+      "weight": 1.6,
+      "lang": "zh",
+      "category": "行业动态",
+      "dealType": null,
+      "publishedAt": "2026-11-24T03:47:23.000Z",
+      "publishedTs": 1795492043000,
+      "day": "2026-11-24",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 70
+    },
+    {
+      "id": "0l5tj68",
+      "title": "报名从速｜来MEET2027！听AI前沿实践者交出“判断”",
+      "url": "https://www.qbitai.com/2026/11/512329.html",
+      "summary": "12.9 北京，来MEET2027现场",
+      "author": "量子位的朋友们",
+      "source": "量子位",
+      "sourceId": "qbitai",
+      "home": "https://www.qbitai.com",
+      "weight": 2.2,
+      "lang": "zh",
+      "category": "行业动态",
+      "dealType": null,
+      "publishedAt": "2026-11-24T03:33:48.000Z",
+      "publishedTs": 1795491228000,
+      "day": "2026-11-24",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 69
+    },
+    {
+      "id": "0zmol86",
+      "title": "蚂蚁OceanBase发布湖库一体AI数据平台OceanLake，核心引擎向全球开源",
+      "url": "https://www.qbitai.com/2026/11/512330.html",
+      "summary": "中国AI数据平台加速崛起",
+      "author": "量子位的朋友们",
+      "source": "量子位",
+      "sourceId": "qbitai",
+      "home": "https://www.qbitai.com",
+      "weight": 2.2,
+      "lang": "zh",
+      "category": "开源工具",
+      "dealType": null,
+      "publishedAt": "2026-11-24T03:30:46.000Z",
+      "publishedTs": 1795491046000,
+      "day": "2026-11-24",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [
+        "IT之家"
+      ],
+      "hot": 81
+    },
+    {
+      "id": "08psmh0",
+      "title": "“我可能行动太快了”：为黄仁勋辞职后，工程师戴士钦释放回归英伟达意愿",
+      "url": "https://www.ithome.com/1/031/340.htm",
+      "summary": "IT之家 11 月 24 日消息，科技媒体 Business Insider 今天（11 月 24 日）发布博文，报道称前英伟达工程师戴士钦（Darrell Dai）在领英（LinkedIn）上发布动态，欢迎黄仁勋回归英伟达，并坦言自己此前“可能行动太快”。 在黄仁勋于 11 月 12 日离任英伟达 CEO，公司董事会昨日（11 月 23 日）一致投票决定恢复其职务，两次决定相隔 11 天。其间，名为“支持黄仁勋”的在线请愿活动宣称，已…",
+      "author": "",
+      "source": "IT之家",
+      "sourceId": "ithome",
+      "home": "https://www.ithome.com",
+      "weight": 1.6,
+      "lang": "zh",
+      "category": "行业动态",
+      "dealType": null,
+      "publishedAt": "2026-11-24T03:29:00.000Z",
+      "publishedTs": 1795490940000,
+      "day": "2026-11-24",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 69
+    },
+    {
+      "id": "07sg49o",
+      "title": "知乎宣布间接投资 DeepSeek，股价应声大涨 10%",
+      "url": "https://www.ithome.com/1/031/339.htm",
+      "summary": "IT之家 11 月 24 日消息，知乎 11 月 23 日发布自愿公告，宣布知乎参投的天津砺思星深股权投资合伙企业已通过中间主体间接投资 DeepSeek，取得低个位数百分比股权。 知乎董事会认为，基金投资于 DeepSeek 以及本公司通过基金拓宽参与优质人工智能及科技企业投资机会的渠道，同时还能进一步加深对人工智能技术、产品演进和商业模式发展的理解，两者在战略上是一致的。 消息公布后，知乎港股股价今日大涨 10%；美股隔夜收盘价 2…",
+      "author": "",
+      "source": "IT之家",
+      "sourceId": "ithome",
+      "home": "https://www.ithome.com",
+      "weight": 1.6,
+      "lang": "zh",
+      "category": "行业动态",
+      "dealType": null,
+      "publishedAt": "2026-11-24T03:26:17.000Z",
+      "publishedTs": 1795490777000,
+      "day": "2026-11-24",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 69
+    },
+    {
+      "id": "0rxy2jn",
+      "title": "郭明錤：黄仁勋复职消除英伟达部分不确定性，但部分瓶颈仍在",
+      "url": "https://www.ithome.com/1/031/338.htm",
+      "summary": "IT之家 11 月 24 日消息，香港天风国际证券分析师郭明錤今日在 X 平台发文，分析黄仁勋恢复英伟达 CEO 职位后的市场状况。 郭明錤表示，黄仁勋回到英伟达后，公司策略、产品规划、技术发展与供应链管理等不确定性被移除。这些不确定性曾在过去 1-2 周对科技股造成压力，因此他回归后股价立刻大涨。但能否回到过去高点，除了取决于个别公司在 AI 供应链与英伟达生态的定位外，还要看以下两点。 例如，英伟达在销售层面面临着出口管制，可能对出…",
+      "author": "",
+      "source": "IT之家",
+      "sourceId": "ithome",
+      "home": "https://www.ithome.com",
+      "weight": 1.6,
+      "lang": "zh",
+      "category": "行业动态",
+      "dealType": null,
+      "publishedAt": "2026-11-24T03:23:48.000Z",
+      "publishedTs": 1795490628000,
+      "day": "2026-11-24",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 63
+    },
+    {
+      "id": "1r3qj9m",
+      "title": "释放AI与出海强预期，近1500人参与亿邦产业互联网年会暨首届产业智能体大会",
+      "url": "https://www.qbitai.com/2026/11/512305.html",
+      "summary": "2026年11月20日，第八届亿邦产业互联网年会与首届产业智能体大会在北京国贸大酒店首次合体举行。",
+      "author": "量子位的朋友们",
+      "source": "量子位",
+      "sourceId": "qbitai",
+      "home": "https://www.qbitai.com",
+      "weight": 2.2,
+      "lang": "zh",
+      "category": "产品动态",
+      "dealType": null,
+      "publishedAt": "2026-11-24T03:21:12.000Z",
+      "publishedTs": 1795490472000,
+      "day": "2026-11-24",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 75
+    },
+    {
+      "id": "0k511no",
+      "title": "谷歌拟给浏览器 AI 加道“权限锁”：允许看商品，不许进支付页",
+      "url": "https://www.ithome.com/1/031/331.htm",
+      "summary": "IT之家 11 月 24 日消息，科技媒体 NeoWin 昨日（11 月 23 日）发布博文，报道称谷歌工程师提出实验性方案，计划在浏览器层面为 AI 智能体设置权限边界，避免其获得过大的操作权限。该方案目前仍处于原型提议阶段，尚未确定是否上线 Chrome 浏览器。 IT之家援引博文介绍，根据拟议的方案，谷歌工程师计划扩展浏览器自动化协议 WebDriver BiDi，通过浏览器权限约束 AI 智能体访问体验，包括但不限于支持访问哪些…",
+      "author": "",
+      "source": "IT之家",
+      "sourceId": "ithome",
+      "home": "https://www.ithome.com",
+      "weight": 1.6,
+      "lang": "zh",
+      "category": "产品动态",
+      "dealType": null,
+      "publishedAt": "2026-11-24T03:11:24.000Z",
+      "publishedTs": 1795489884000,
+      "day": "2026-11-24",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 75
+    },
+    {
+      "id": "0vj4elx",
+      "title": "豆包旗下 AI 个人助理“小豆”开启公测，能够帮你处理日常事务",
+      "url": "https://www.ithome.com/1/031/329.htm",
+      "summary": "IT之家 11 月 24 日消息，豆包官方今天宣布“小豆”正式开启公测，采用邀请制开放。用户凭邀请码即可开启体验，并获赠一定量免费额度。 IT之家注意到，小豆是豆包旗下的 AI 个人助理产品，采用对话式交互方式，在用户明确指令与授权范围内，协助你高效处理日常事务。官方宣称它是“一个懂你，还能主动帮你办事的豆包”。未来，小豆上的能力与体验也将逐步在豆包 App 上线。 根据 App Store 商店页信息，小豆具备以下能力： 【信息查询】…",
+      "author": "",
+      "source": "IT之家",
+      "sourceId": "ithome",
+      "home": "https://www.ithome.com",
+      "weight": 1.6,
+      "lang": "zh",
+      "category": "产品动态",
+      "dealType": null,
+      "publishedAt": "2026-11-24T03:06:48.000Z",
+      "publishedTs": 1795489608000,
+      "day": "2026-11-24",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 75
+    },
+    {
+      "id": "1omjrys",
+      "title": "我国前三季度数字产业收入 32.41 万亿元：智能算力规模同比增长 146%，生成式 AI 产品应用普及率超 50%",
+      "url": "https://www.ithome.com/1/031/326.htm",
+      "summary": "IT之家 11 月 24 日消息，今日，工信部运行监测协调局发布前三季度数字产业运行数据。 前三季度我国数字产业实现收入 32.41 万亿元，同比增长 14.8%，增速较上年同期加快 5.2 个百分点。其中，生成式人工智能产品应用普及率已超 50%。 数据显示，我国前三季度数字产业实现利润 2.78 万亿元，同比增长 23.4%，增速较上年同期提升 14.9 个百分点，收入利润率 8.6%，较上年同期提高 0.4 个百分点。工信部将利润…",
+      "author": "",
+      "source": "IT之家",
+      "sourceId": "ithome",
+      "home": "https://www.ithome.com",
+      "weight": 1.6,
+      "lang": "zh",
+      "category": "产品动态",
+      "dealType": null,
+      "publishedAt": "2026-11-24T03:01:05.000Z",
+      "publishedTs": 1795489265000,
+      "day": "2026-11-24",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 69
+    },
+    {
+      "id": "0bssnr7",
+      "title": "“90% 编程无需手敲代码”：微软拉曼纳称 AI 让程序员少写代码，却要思考更多",
+      "url": "https://www.ithome.com/1/031/316.htm",
+      "summary": "IT之家 11 月 24 日消息，在接受 Peter Yang 采访时，微软高管查尔斯 · 拉曼纳（Charles Lamanna）表示，AI 正在重塑软件工程师的工作重心，让其大幅减少“手搓”代码逐行敲打的工作，但对于系统设计、验证、测试和安全上线等提出了更高的思考要求。 IT之家查询公开资料，拉曼纳是微软的执行副总裁，负责 Copilot、智能体及平台业务，是推动微软将 AI 融入办公软件、企业应用和开发平台的核心高管之一。 在采访…",
+      "author": "",
+      "source": "IT之家",
+      "sourceId": "ithome",
+      "home": "https://www.ithome.com",
+      "weight": 1.6,
+      "lang": "zh",
+      "category": "产品动态",
+      "dealType": null,
+      "publishedAt": "2026-11-24T02:48:40.000Z",
+      "publishedTs": 1795488520000,
+      "day": "2026-11-24",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 68
+    },
+    {
+      "id": "0v86swy",
+      "title": "全国首个“人工智能产业保险共同体”成立，目标破解“不敢保、不能保”难题",
+      "url": "https://www.ithome.com/1/031/315.htm",
+      "summary": "IT之家 11 月 24 日消息，“深圳创投日”四周年暨 2026 香蜜湖财富管理周开幕大会于 11 月 23 日在深圳举行。 深圳福田区 13 家财险机构共同发起成立全国首个“人工智能产业保险共同体”，致力于破解大模型产业链“不敢保、不能保”难题。 同时，活动现场还发布了该共同体的核心研究成果 ——《人工智能产业风险治理白皮书（2026）》。该白皮书是全国首份系统回应人工智能产业风险与保险供给的白皮书，首次绘制“算力 — 模型 — 应…",
+      "author": "",
+      "source": "IT之家",
+      "sourceId": "ithome",
+      "home": "https://www.ithome.com",
+      "weight": 1.6,
+      "lang": "zh",
+      "category": "模型发布",
+      "dealType": null,
+      "publishedAt": "2026-11-24T02:45:35.000Z",
+      "publishedTs": 1795488335000,
+      "day": "2026-11-24",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 81
+    },
+    {
+      "id": "04xzd32",
+      "title": "“得Agent开发者，得天下”，70+技术大咖共探AI技术演进与生态变革，2026奇点智能技术大会圆满收官！",
+      "url": "https://www.qbitai.com/2026/11/512297.html",
+      "summary": "「2026 奇点智能技术大会」与「2026 C++ 及系统软件技术大会」在北京万达文华酒店成功举办。",
+      "author": "量子位的朋友们",
+      "source": "量子位",
+      "sourceId": "qbitai",
+      "home": "https://www.qbitai.com",
+      "weight": 2.2,
+      "lang": "zh",
+      "category": "产品动态",
+      "dealType": null,
+      "publishedAt": "2026-11-24T02:36:08.000Z",
+      "publishedTs": 1795487768000,
+      "day": "2026-11-24",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 68
+    },
+    {
+      "id": "0qfefto",
+      "title": "具身行业，终于等来了自己的通用智能时刻",
+      "url": "https://www.qbitai.com/2026/11/512264.html",
+      "summary": "行业苦等多年的预训练通用智能，终于有了答案",
+      "author": "梦瑶",
+      "source": "量子位",
+      "sourceId": "qbitai",
+      "home": "https://www.qbitai.com",
+      "weight": 2.2,
+      "lang": "zh",
+      "category": "研究前沿",
+      "dealType": null,
+      "publishedAt": "2026-11-24T01:51:56.000Z",
+      "publishedTs": 1795485116000,
+      "day": "2026-11-24",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 67
+    },
+    {
+      "id": "1gjj19m",
+      "title": "AI 拓展“嗅觉”技能：Ainos 斩获 900 万美元追加订单，电子鼻走进芯片工厂“闻”异常",
+      "url": "https://www.ithome.com/1/031/290.htm",
+      "summary": "IT之家 11 月 24 日消息，科技媒体 Wccftech 于 11 月 22 日报道，气味感知技术公司 Ainos 正推动“AI 鼻子”（AI Nose）进入半导体工厂，通过识别空气中的化学变化，辅助发现泄漏、线缆过热及设备异常。 消息称 Ainos 已和日月光（ASE）签署 900 万美元（IT之家注：现汇率约合 6,011.4 万元人民币）追加订单，此前双方已签署价值 210 万美元（现汇率约合 1,402.7 万元人民币）的订…",
+      "author": "",
+      "source": "IT之家",
+      "sourceId": "ithome",
+      "home": "https://www.ithome.com",
+      "weight": 1.6,
+      "lang": "zh",
+      "category": "行业动态",
+      "dealType": null,
+      "publishedAt": "2026-11-24T01:40:27.000Z",
+      "publishedTs": 1795484427000,
+      "day": "2026-11-24",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 61
+    },
+    {
+      "id": "0v5w73s",
+      "title": "特朗普自夸：我和英伟达董事会谈过，是我促成了“黄仁勋回归”",
+      "url": "https://www.ithome.com/1/031/289.htm",
+      "summary": "IT之家 11 月 24 日消息，英伟达官方 11 月 23 日宣布，公司董事会已一致投票决定，即日起恢复黄仁勋的总裁、首席执行官及董事职务。 对此，美国总统唐纳德 · 特朗普当地时间周一早晨接受 CNBC 电话采访时表示：“是我说服了他们，昨天说服他们比一周半前容易多了。” 据知情人士透露，特朗普政府高级官员当地时间周五晚间联系了英伟达董事会。白宫出面后，英伟达董事会联系了黄仁勋参加周六和周日的会议，讨论他可能回归的问题。 据接近黄仁…",
+      "author": "",
+      "source": "IT之家",
+      "sourceId": "ithome",
+      "home": "https://www.ithome.com",
+      "weight": 1.6,
+      "lang": "zh",
+      "category": "观点方法",
+      "dealType": null,
+      "publishedAt": "2026-11-24T01:38:03.000Z",
+      "publishedTs": 1795484283000,
+      "day": "2026-11-24",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 61
+    },
+    {
+      "id": "1p8zp77",
+      "title": "老黄回归现场盛况空前！员工人山人海夹道欢迎，“哪里领入职电脑”",
+      "url": "https://www.qbitai.com/2026/11/512252.html",
+      "summary": "离职员工：我可能走早了",
+      "author": "一水",
+      "source": "量子位",
+      "sourceId": "qbitai",
+      "home": "https://www.qbitai.com",
+      "weight": 2.2,
+      "lang": "zh",
+      "category": "行业动态",
+      "dealType": null,
+      "publishedAt": "2026-11-24T01:32:37.000Z",
+      "publishedTs": 1795483957000,
+      "day": "2026-11-24",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 66
+    },
+    {
+      "id": "11fwnxb",
+      "title": "美国多州总检察长要求在 Character.AI 破产出售中保障儿童等的数据安全",
+      "url": "https://www.ithome.com/1/031/288.htm",
+      "summary": "IT之家 11 月 24 日消息，美国 41 个州以及哥伦比亚特区的总检察长当地时间 23 日共同对人工智能聊天平台 Character.AI 的破产出售交易提出质疑，要求在数据出售中保障儿童等公众的数据安全。 这一总检察长联盟指出，Character.AI 掌握的账户信息和聊天记录涉及包括儿童在内的个人的敏感内容。 而拟议交易协议未对买方行为进行任何约束：买方无需遵守 Character.AI 的隐私政策，无需尊重用户选择退出或删除数…",
+      "author": "",
+      "source": "IT之家",
+      "sourceId": "ithome",
+      "home": "https://www.ithome.com",
+      "weight": 1.6,
+      "lang": "zh",
+      "category": "研究前沿",
+      "dealType": null,
+      "publishedAt": "2026-11-24T01:30:03.000Z",
+      "publishedTs": 1795483803000,
+      "day": "2026-11-24",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 60
+    },
+    {
+      "id": "1v18lum",
+      "title": "Trump engineered a risky comeback for Jensen Huang",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1040652/jensen-huang-nvidia-trump-reinstated",
+      "summary": "After Nvidia's board accepted Jensen Huang's resignation as CEO, following reports that Huang had an affair with an alleged Chinese spy, President Donald Trump, too, appeared to submit to the new reality. Appearing on St…",
+      "author": "Lauren Feiner",
+      "source": "The Verge AI",
+      "sourceId": "verge-ai",
+      "home": "https://www.theverge.com/ai-artificial-intelligence",
+      "weight": 1.6,
+      "lang": "en",
+      "category": "行业动态",
+      "dealType": null,
+      "publishedAt": "2026-11-23T22:25:12.000Z",
+      "publishedTs": 1795472712000,
+      "day": "2026-11-24",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 57
+    },
+    {
+      "id": "0hut9kl",
+      "title": "Nvidia CEO Jensen Huang is back. What happens next?",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1030422/nvidia-jensen-huang-ai-china-alice-huang",
+      "summary": "After the leather-jacketed CEO, president, and co-founder of Nvidia, Jensen Huang, acknowledged an affair with Megaspeed exec Alice Huang, his company initially announced an investigation. However, after The New York Tim…",
+      "author": "Richard Lawler",
+      "source": "The Verge AI",
+      "sourceId": "verge-ai",
+      "home": "https://www.theverge.com/ai-artificial-intelligence",
+      "weight": 1.6,
+      "lang": "en",
+      "category": "行业动态",
+      "dealType": null,
+      "publishedAt": "2026-11-23T22:10:32.000Z",
+      "publishedTs": 1795471832000,
+      "day": "2026-11-24",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 56
+    },
+    {
+      "id": "0l79co5",
+      "title": "Welcome to elite impunity, Jensen Huang",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1040819/welcome-to-elite-impunity-jensen-huang",
+      "summary": "I suppose I must issue a hearty congratulations to Jensen Huang. Huang is CEO of Nvidia again, to the surprise of basically everyone except President Donald Trump and Vice President JD Vance, who made sure it happened. N…",
+      "author": "Elizabeth Lopatto",
+      "source": "The Verge AI",
+      "sourceId": "verge-ai",
+      "home": "https://www.theverge.com/ai-artificial-intelligence",
+      "weight": 1.6,
+      "lang": "en",
+      "category": "行业动态",
+      "dealType": null,
+      "publishedAt": "2026-11-23T22:09:26.000Z",
+      "publishedTs": 1795471766000,
+      "day": "2026-11-24",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 56
+    },
+    {
+      "id": "19oexco",
+      "title": "Anthropic launches Claude Ship, letting AI agents review, fix, and approve code changes",
+      "url": "https://techcrunch.com/2026/11/23/anthropic-launches-claude-ship-letting-ai-agents-review-fix-and-approve-code-changes",
+      "summary": "As AI-generated code piles up, Anthropic's new developer tools aim to eliminate another bottleneck by letting agents handle routine approvals.",
+      "author": "Sarah Perez",
+      "source": "TechCrunch AI",
+      "sourceId": "techcrunch-ai",
+      "home": "https://techcrunch.com/category/artificial-intelligence/",
+      "weight": 1.8,
+      "lang": "en",
+      "category": "模型发布",
+      "dealType": null,
+      "publishedAt": "2026-11-23T22:05:50.000Z",
+      "publishedTs": 1795471550000,
+      "day": "2026-11-24",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 58
+    },
+    {
+      "id": "0fbg6v7",
+      "title": "Supertake raises $20M to let AI agents turn your market predictions into stock portfolios",
+      "url": "https://techcrunch.com/2026/11/23/supertake-raises-20m-to-let-ai-agents-turn-your-market-predictions-into-stock-portfolios",
+      "summary": "Think you know where the market is headed? A startup called Supertake lets you put money behind your ideas without having to pick the stocks yourself.",
+      "author": "Sarah Perez",
+      "source": "TechCrunch AI",
+      "sourceId": "techcrunch-ai",
+      "home": "https://techcrunch.com/category/artificial-intelligence/",
+      "weight": 1.8,
+      "lang": "en",
+      "category": "行业动态",
+      "dealType": null,
+      "publishedAt": "2026-11-23T22:02:05.000Z",
+      "publishedTs": 1795471325000,
+      "day": "2026-11-24",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 58
+    },
+    {
+      "id": "1oje47l",
+      "title": "Elon Musk and others rejoice as Jensen Huang is reinstated at Nvidia amid scandal",
+      "url": "https://techcrunch.com/2026/11/23/elon-musk-and-others-rejoice-as-jensen-huang-is-reinstated-at-nvidia-amid-scandal",
+      "summary": "\"The mistake has been corrected,\" Elon Musk chimed in.",
+      "author": "Amanda Silberling",
+      "source": "TechCrunch AI",
+      "sourceId": "techcrunch-ai",
+      "home": "https://techcrunch.com/category/artificial-intelligence/",
+      "weight": 1.8,
+      "lang": "en",
+      "category": "行业动态",
+      "dealType": null,
+      "publishedAt": "2026-11-23T21:47:41.000Z",
+      "publishedTs": 1795470461000,
+      "day": "2026-11-24",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 58
+    },
+    {
+      "id": "0rcqppu",
+      "title": "Megaspeed, the company at the center of the Jensen Huang scandal, appears headed for a US blacklist",
+      "url": "https://techcrunch.com/2026/11/23/megaspeed-the-company-at-the-center-of-the-jensen-huang-scandal-appears-headed-for-a-u-s-blacklist",
+      "summary": "Megaspeed, which was previously led by Alice Huang, would be barred from doing business with U.S. companies unless those companies attained a special license from the federal government.",
+      "author": "Lucas Ropek",
+      "source": "TechCrunch AI",
+      "sourceId": "techcrunch-ai",
+      "home": "https://techcrunch.com/category/artificial-intelligence/",
+      "weight": 1.8,
+      "lang": "en",
+      "category": "行业动态",
+      "dealType": null,
+      "publishedAt": "2026-11-23T21:25:42.000Z",
+      "publishedTs": 1795469142000,
+      "day": "2026-11-24",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 58
+    },
+    {
+      "id": "1jfaljy",
+      "title": "OpenAI and Cisco introduce Shirudo",
+      "url": "https://openai.com/index/introducing-shirudo",
+      "summary": "OpenAI and Cisco introduce Shirudo, an open-source runtime for Linux. It helps teams protect running systems while they roll out patches.",
+      "author": "",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "home": "https://openai.com/news",
+      "weight": 2.5,
+      "lang": "en",
+      "category": "行业动态",
+      "dealType": null,
+      "publishedAt": "2026-11-23T21:20:00.000Z",
+      "publishedTs": 1795468800000,
+      "day": "2026-11-24",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 65
+    },
+    {
+      "id": "1og7muw",
+      "title": "AI data centers throw another wrench into chaotic UN climate talks",
+      "url": "https://www.theverge.com/science/1040497/ai-data-centers-electricity-un-climate-summit",
+      "summary": "The clean energy revolution hinges on electrifying the entire global economy just as power-hungry data centers are surging. It's a challenge delegates from all over the world had to grapple with during the United Nations…",
+      "author": "Justine Calma",
+      "source": "The Verge AI",
+      "sourceId": "verge-ai",
+      "home": "https://www.theverge.com/ai-artificial-intelligence",
+      "weight": 1.6,
+      "lang": "en",
+      "category": "行业动态",
+      "dealType": null,
+      "publishedAt": "2026-11-23T21:09:37.000Z",
+      "publishedTs": 1795468177000,
+      "day": "2026-11-24",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 55
+    },
+    {
+      "id": "1hfbso3",
+      "title": "OpenAI updates ChatGPT to handle complex everyday questions, web searches, and images more reliably",
+      "url": "https://the-decoder.com/openai-updates-chatgpt-to-handle-complex-everyday-questions-web-searches-and-images-more-reliably",
+      "summary": "OpenAI is making GPT-6.2 Sol the new default model in ChatGPT's chat tab, rolling it out worldwide. In internal tests, image understanding jumped from 47.4 to 71.7 percent, and the model now handles difficult instruction…",
+      "author": "Matthias Bastian",
+      "source": "The Decoder",
+      "sourceId": "the-decoder",
+      "home": "https://the-decoder.com",
+      "weight": 1.6,
+      "lang": "en",
+      "category": "模型发布",
+      "dealType": null,
+      "publishedAt": "2026-11-23T20:39:18.000Z",
+      "publishedTs": 1795466358000,
+      "day": "2026-11-24",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 55
+    },
+    {
+      "id": "0q336el",
+      "title": "Nvidia employees greet Jensen Huang like a hero as he returns to company’s HQ",
+      "url": "https://techcrunch.com/2026/11/23/nvidia-employees-greet-jensen-huang-like-a-hero-as-he-returns-to-companys-hq",
+      "summary": "\"I'm going to be a better CEO the second time around,\" Huang told employees.",
+      "author": "Amanda Silberling",
+      "source": "TechCrunch AI",
+      "sourceId": "techcrunch-ai",
+      "home": "https://techcrunch.com/category/artificial-intelligence/",
+      "weight": 1.8,
+      "lang": "en",
+      "category": "行业动态",
+      "dealType": null,
+      "publishedAt": "2026-11-23T20:38:53.000Z",
+      "publishedTs": 1795466333000,
+      "day": "2026-11-24",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 57
+    },
+    {
+      "id": "0fjm8e3",
+      "title": "Claude AI can review pull requests and ship fixes on its own now",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1040134/anthropic-claude-ship-ai-pull-requests",
+      "summary": "Anthropic is launching some new Claude AI features to help software engineers ship code. As part of a new Claude Ship product being announced today, Claude now can review, fix, and approve pull requests. Engineers have a…",
+      "author": "Jay Peters",
+      "source": "The Verge AI",
+      "sourceId": "verge-ai",
+      "home": "https://www.theverge.com/ai-artificial-intelligence",
+      "weight": 1.6,
+      "lang": "en",
+      "category": "模型发布",
+      "dealType": null,
+      "publishedAt": "2026-11-23T20:00:00.000Z",
+      "publishedTs": 1795464000000,
+      "day": "2026-11-24",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 54
+    },
+    {
+      "id": "06k2wua",
+      "title": "How Jensen Huang ended up as Nvidia CEO again",
+      "url": "https://www.theverge.com/tech/1040428/nvidia-jensen-huang-ceo-return",
+      "summary": "The Jensen Huang era of Nvidia nearly came to an end this month. Huang, who three decades ago cofounded what's come to be considered one of the most important companies in AI, resigned from his role on November 12th over…",
+      "author": "Emma Roth",
+      "source": "The Verge AI",
+      "sourceId": "verge-ai",
+      "home": "https://www.theverge.com/ai-artificial-intelligence",
+      "weight": 1.6,
+      "lang": "en",
+      "category": "行业动态",
+      "dealType": null,
+      "publishedAt": "2026-11-23T19:57:18.000Z",
+      "publishedTs": 1795463838000,
+      "day": "2026-11-24",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 54
+    },
+    {
+      "id": "05xl0nd",
+      "title": "Google Search’s AI Mode can now tap into Drive and Wallet for more personalized responses",
+      "url": "https://techcrunch.com/2026/11/23/google-searchs-ai-mode-can-now-tap-into-drive-and-wallet-for-more-personalized-responses",
+      "summary": "By bringing Personal Intelligence in AI Mode to Drive, Wallet, and the Gemini app, Google is leveraging the wealth of user data that's already within its ecosystem",
+      "author": "Aisha Malik",
+      "source": "TechCrunch AI",
+      "sourceId": "techcrunch-ai",
+      "home": "https://techcrunch.com/category/artificial-intelligence/",
+      "weight": 1.8,
+      "lang": "en",
+      "category": "模型发布",
+      "dealType": null,
+      "publishedAt": "2026-11-23T19:14:46.000Z",
+      "publishedTs": 1795461286000,
+      "day": "2026-11-24",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 55
+    },
+    {
+      "id": "1akpbsf",
+      "title": "Nothing’s upcoming Ear Note is a pair of earbuds with AI transcription",
+      "url": "https://www.theverge.com/gadgets/1040357/nothing-ear-note-earbuds-ai-recording",
+      "summary": "Nothing's new AI device is the Ear Note, a set of earbuds and their microphone-equipped charging case that can record and transcribe conversations, with a connected app to manage the recordings, transcriptions and AI-gen…",
+      "author": "Stevie Bonifield",
+      "source": "The Verge AI",
+      "sourceId": "verge-ai",
+      "home": "https://www.theverge.com/ai-artificial-intelligence",
+      "weight": 1.6,
+      "lang": "en",
+      "category": "产品动态",
+      "dealType": null,
+      "publishedAt": "2026-11-23T19:04:52.000Z",
+      "publishedTs": 1795460692000,
+      "day": "2026-11-24",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 53
+    },
+    {
+      "id": "0bx7fh1",
+      "title": "Anthropic's appetite for compute is pushing xAI toward a rent-over-build strategy",
+      "url": "https://the-decoder.com/anthropics-appetite-for-compute-is-pushing-xai-toward-a-rent-over-build-strategy",
+      "summary": "Since May, SpaceXSI has been renting compute to competitors like Anthropic and Google while scaling back its own AI projects. Anthropic pays about $3.1 billion a month, Google $800 million, the New York Times reports. Af…",
+      "author": "Matthias Bastian",
+      "source": "The Decoder",
+      "sourceId": "the-decoder",
+      "home": "https://the-decoder.com",
+      "weight": 1.6,
+      "lang": "en",
+      "category": "行业动态",
+      "dealType": null,
+      "publishedAt": "2026-11-23T18:47:53.000Z",
+      "publishedTs": 1795459673000,
+      "day": "2026-11-24",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 53
+    },
+    {
+      "id": "0m7rq4t",
+      "title": "OpenAI warns that upcoming AI systems could outpace safety checks and urges rivals to agree on shared limits",
+      "url": "https://the-decoder.com/openai-warns-that-upcoming-ai-systems-could-outpace-safety-checks-and-urges-rivals-to-agree-on-shared-limits",
+      "summary": "OpenAI chief scientist Jakub Pachocki has released internal perplexity scores for the entire GPT series for the first time, up to an unreleased model beyond the current generation. The metric shows that core capabilities…",
+      "author": "Jonathan Kemper",
+      "source": "The Decoder",
+      "sourceId": "the-decoder",
+      "home": "https://the-decoder.com",
+      "weight": 1.6,
+      "lang": "en",
+      "category": "模型发布",
+      "dealType": null,
+      "publishedAt": "2026-11-23T18:42:38.000Z",
+      "publishedTs": 1795459358000,
+      "day": "2026-11-24",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 53
+    },
+    {
+      "id": "0pcmwyy",
+      "title": "Oregon and Virginia sue SpaceX over Grok’s porn deepfakes",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1040255/x-grok-ai-deepfakes-oregon-virginia-lawsuit",
+      "summary": "In separate but similar lawsuits filed on Monday, Oregon Attorney General Dan Rayfield and Virginia Attorney General Jay Jones accused SpaceX of violating state consumer protection laws by ignoring industry-standard safe…",
+      "author": "Jess Weatherbed",
+      "source": "The Verge AI",
+      "sourceId": "verge-ai",
+      "home": "https://www.theverge.com/ai-artificial-intelligence",
+      "weight": 1.6,
+      "lang": "en",
+      "category": "模型发布",
+      "dealType": null,
+      "publishedAt": "2026-11-23T18:26:47.000Z",
+      "publishedTs": 1795458407000,
+      "day": "2026-11-24",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 52
+    },
+    {
+      "id": "1r43nha",
+      "title": "Jensen Huang scheduled to testify next week in Senate following reinstatement as Nvidia CEO",
+      "url": "https://techcrunch.com/2026/11/23/jensen-huang-scheduled-to-testify-next-week-in-senate-following-reinstatement-as-nvidia-ceo",
+      "summary": "The public hearing follows bipartisan calls for Huang to testify about the affair with the suspected Chinese spy.",
+      "author": "Aisha Malik",
+      "source": "TechCrunch AI",
+      "sourceId": "techcrunch-ai",
+      "home": "https://techcrunch.com/category/artificial-intelligence/",
+      "weight": 1.8,
+      "lang": "en",
+      "category": "行业动态",
+      "dealType": null,
+      "publishedAt": "2026-11-23T18:12:22.000Z",
+      "publishedTs": 1795457542000,
+      "day": "2026-11-24",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 54
+    },
+    {
+      "id": "1lsihor",
+      "title": "Amazon snaps up Decart’s AI optimization tech for $7.5B as it prepares to sell Trainium chips",
+      "url": "https://techcrunch.com/2026/11/23/amazon-snaps-up-decarts-ai-optimization-tech-for-7-5b-as-it-prepares-to-sell-trainium-chips",
+      "summary": "Amazon is acquiring Decart’s AI optimization technology and research team in a reported $7.5 billion deal.",
+      "author": "Rebecca Bellan",
+      "source": "TechCrunch AI",
+      "sourceId": "techcrunch-ai",
+      "home": "https://techcrunch.com/category/artificial-intelligence/",
+      "weight": 1.8,
+      "lang": "en",
+      "category": "行业动态",
+      "dealType": null,
+      "publishedAt": "2026-11-23T17:14:23.000Z",
+      "publishedTs": 1795454063000,
+      "day": "2026-11-24",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 53
+    },
+    {
+      "id": "01e70m8",
+      "title": "Merry Making: Play, Build and Create With NVIDIA Technologies This Holiday Season",
+      "url": "https://blogs.nvidia.com/blog/nvidia-technologies-holidays-2026",
+      "summary": "The elves don’t have to be the only ones busy in the workshop this holiday season. With the lights twinkling and the gift wrap out, it’s the perfect time to give someone — or yourself — a spark to take a hobby to the nex…",
+      "author": "NVIDIA Writers",
+      "source": "NVIDIA",
+      "sourceId": "nvidia",
+      "home": "https://blogs.nvidia.com",
+      "weight": 1.8,
+      "lang": "en",
+      "category": "行业动态",
+      "dealType": null,
+      "publishedAt": "2026-11-23T17:00:08.000Z",
+      "publishedTs": 1795453208000,
+      "day": "2026-11-24",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 53
+    },
+    {
+      "id": "0dk56f3",
+      "title": "Finding faster quantum algorithms with agents and formal verification",
+      "url": "https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification",
+      "summary": "Using agent teams and formal verification to improve quantum algorithms for fusion and chemistry.",
+      "author": "",
+      "source": "Google DeepMind",
+      "sourceId": "deepmind",
+      "home": "https://deepmind.google/discover/blog/",
+      "weight": 2.3,
+      "lang": "en",
+      "category": "产品动态",
+      "dealType": null,
+      "publishedAt": "2026-11-23T16:59:40.000Z",
+      "publishedTs": 1795453180000,
+      "day": "2026-11-24",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 58
+    },
+    {
+      "id": "19gdx28",
+      "title": "Jensen Huang isn’t out of the woods yet",
+      "url": "https://techcrunch.com/2026/11/23/jensen-huang-isnt-out-of-the-woods-yet",
+      "summary": "Tech leaders should be clear-eyed about all the problems likely to come with Huang's reinstatement.",
+      "author": "Russell Brandom",
+      "source": "TechCrunch AI",
+      "sourceId": "techcrunch-ai",
+      "home": "https://techcrunch.com/category/artificial-intelligence/",
+      "weight": 1.8,
+      "lang": "en",
+      "category": "行业动态",
+      "dealType": null,
+      "publishedAt": "2026-11-23T16:57:40.000Z",
+      "publishedTs": 1795453060000,
+      "day": "2026-11-24",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 53
+    },
+    {
+      "id": "1ic972m",
+      "title": "Trump reportedly called into Nvidia board meeting to advocate for Huang’s return",
+      "url": "https://techcrunch.com/2026/11/23/trump-reportedly-called-into-nvidia-board-meeting-to-advocate-for-huangs-return",
+      "summary": "\"I spoke to them, let me put it that way … And I convinced them,\" the president told CNBC.",
+      "author": "Amanda Silberling",
+      "source": "TechCrunch AI",
+      "sourceId": "techcrunch-ai",
+      "home": "https://techcrunch.com/category/artificial-intelligence/",
+      "weight": 1.8,
+      "lang": "en",
+      "category": "行业动态",
+      "dealType": null,
+      "publishedAt": "2026-11-23T16:39:10.000Z",
+      "publishedTs": 1795451950000,
+      "day": "2026-11-24",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 53
+    },
+    {
+      "id": "02w5hkj",
+      "title": "White House brags that Trump was ‘totally involved’ in getting Jensen reinstated",
+      "url": "https://www.theverge.com/policy/1040096/trump-nvidia-jensen-huang-reinstated",
+      "summary": "It sure looked like President Donald Trump played a role in Jensen Huang's reinstatement as Nvidia CEO - and now the White House is making sure everyone knows he was. \"President Trump was totally involved and this is a g…",
+      "author": "Stevie Bonifield",
+      "source": "The Verge AI",
+      "sourceId": "verge-ai",
+      "home": "https://www.theverge.com/ai-artificial-intelligence",
+      "weight": 1.6,
+      "lang": "en",
+      "category": "行业动态",
+      "dealType": null,
+      "publishedAt": "2026-11-23T16:30:11.000Z",
+      "publishedTs": 1795451411000,
+      "day": "2026-11-24",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 51
+    },
+    {
+      "id": "1t1p4j3",
+      "title": "Tech leaders are celebrating Jensen Huang’s return",
+      "url": "https://www.theverge.com/tech/1040069/jensen-huang-return-elon-musk-sam-altman-yay",
+      "summary": "Let's say you're Jensen Huang. You (allegedly) cheated on your wife with an alleged Chinese spy, allegedly had an affair with not one, but two subordinates, and (allegedly!) \"terrorized\" your employees, a series of indis…",
+      "author": "Gaby Del Valle",
+      "source": "The Verge AI",
+      "sourceId": "verge-ai",
+      "home": "https://www.theverge.com/ai-artificial-intelligence",
+      "weight": 1.6,
+      "lang": "en",
+      "category": "行业动态",
+      "dealType": null,
+      "publishedAt": "2026-11-23T16:14:04.000Z",
+      "publishedTs": 1795450444000,
+      "day": "2026-11-24",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 50
+    },
+    {
+      "id": "13yzhbp",
+      "title": "Z.ai follows OpenAI into loop transformer territory with its new 750B flagship model",
+      "url": "https://the-decoder.com/z-ai-follows-openai-into-loop-transformer-territory-with-its-new-750b-flagship-model",
+      "summary": "Z.ai is moving its flagship GLM-5.4 model to a loop architecture in which 28 layers run twice, which the company says lets the 750-billion-parameter model match models with 2 to 3 trillion parameters. Benchmark scores ar…",
+      "author": "Jonathan Kemper",
+      "source": "The Decoder",
+      "sourceId": "the-decoder",
+      "home": "https://the-decoder.com",
+      "weight": 1.6,
+      "lang": "en",
+      "category": "研究前沿",
+      "dealType": null,
+      "publishedAt": "2026-11-23T15:13:03.000Z",
+      "publishedTs": 1795446783000,
+      "day": "2026-11-23",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 49
+    },
+    {
+      "id": "0d3xtqb",
+      "title": "Trump endorses Jensen Huang’s return to Nvidia, says US has no evidence of wrongdoing",
+      "url": "https://techcrunch.com/2026/11/23/trump-endorses-jensen-huangs-return-to-nvidia-says-us-has-no-evidence-of-wrongdoing",
+      "summary": "The president cited the U.S. attorney general in defending Huang's return, while urging Nvidia to continue its export-control investigation.",
+      "author": "Sarah Perez",
+      "source": "TechCrunch AI",
+      "sourceId": "techcrunch-ai",
+      "home": "https://techcrunch.com/category/artificial-intelligence/",
+      "weight": 1.8,
+      "lang": "en",
+      "category": "行业动态",
+      "dealType": null,
+      "publishedAt": "2026-11-23T15:04:01.000Z",
+      "publishedTs": 1795446241000,
+      "day": "2026-11-23",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 51
+    },
+    {
+      "id": "06upzba",
+      "title": "Chinese military fears AI could let the US find and destroy its nuclear missiles",
+      "url": "https://the-decoder.com/chinese-military-fears-ai-could-let-the-us-find-and-destroy-its-nuclear-missiles",
+      "summary": "Chinese military researchers fear that AI advances could give the US an edge in the nuclear balance of power. The article Chinese military fears AI could let the US find and destroy its nuclear missiles appeared first on…",
+      "author": "Maximilian Schreiner",
+      "source": "The Decoder",
+      "sourceId": "the-decoder",
+      "home": "https://the-decoder.com",
+      "weight": 1.6,
+      "lang": "en",
+      "category": "行业动态",
+      "dealType": null,
+      "publishedAt": "2026-11-23T14:43:23.000Z",
+      "publishedTs": 1795445003000,
+      "day": "2026-11-23",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 49
+    },
+    {
+      "id": "08ir26y",
+      "title": "Sierra doubles valuation to $30B within six months as demand for AI in CX takes off",
+      "url": "https://techcrunch.com/2026/11/23/sierra-doubles-valuation-to-30b-within-six-months-as-demand-for-ai-in-cx-takes-off",
+      "summary": "Enterprise customer experience company Sierra, co-founded by former Salesforce co-CEO Bret Taylor, said on Monday that it has raised $1.75 billion in a Series F round.",
+      "author": "Ivan Mehta",
+      "source": "TechCrunch AI",
+      "sourceId": "techcrunch-ai",
+      "home": "https://techcrunch.com/category/artificial-intelligence/",
+      "weight": 1.8,
+      "lang": "en",
+      "category": "行业动态",
+      "dealType": null,
+      "publishedAt": "2026-11-23T14:43:03.000Z",
+      "publishedTs": 1795444983000,
+      "day": "2026-11-23",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 51
+    },
+    {
+      "id": "1fj8tnf",
+      "title": "Nvidia tried life without Jensen Huang and it lasted about two weeks",
+      "url": "https://the-decoder.com/nvidia-tried-life-without-jensen-huang-and-it-lasted-about-two-weeks",
+      "summary": "Nvidia's board of directors has reinstated Jensen Huang as president, CEO, and board member, effective immediately. The article Nvidia tried life without Jensen Huang and it lasted about two weeks appeared first on The D…",
+      "author": "Maximilian Schreiner",
+      "source": "The Decoder",
+      "sourceId": "the-decoder",
+      "home": "https://the-decoder.com",
+      "weight": 1.6,
+      "lang": "en",
+      "category": "行业动态",
+      "dealType": null,
+      "publishedAt": "2026-11-23T14:24:47.000Z",
+      "publishedTs": 1795443887000,
+      "day": "2026-11-23",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 49
+    },
+    {
+      "id": "1qolwdr",
+      "title": "Nvidia reverses course and brings Jensen Huang back as CEO",
+      "url": "https://techcrunch.com/2026/11/23/nvidia-reverses-course-and-brings-jensen-huang-back-as-ceo",
+      "summary": "The stunning reversal was supported by senior officials in the U.S. government.",
+      "author": "Kirsten Korosec",
+      "source": "TechCrunch AI",
+      "sourceId": "techcrunch-ai",
+      "home": "https://techcrunch.com/category/artificial-intelligence/",
+      "weight": 1.8,
+      "lang": "en",
+      "category": "行业动态",
+      "dealType": null,
+      "publishedAt": "2026-11-23T14:21:59.000Z",
+      "publishedTs": 1795443719000,
+      "day": "2026-11-23",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 51
+    },
+    {
+      "id": "0a8x4x4",
+      "title": "Meta's Alexandr Wang warns the AI industry isn't ready for what's coming after Riemann breakthrough",
+      "url": "https://the-decoder.com/metas-alexandr-wang-warns-the-ai-industry-isnt-ready-for-whats-coming-after-riemann-breakthrough",
+      "summary": "Meta's Chief AI Officer Alexandr Wang sees the recent AI-assisted proof sketch of the Riemann Hypothesis as a clear sign that superintelligence is right around the corner. The article Meta's Alexandr Wang warns the AI in…",
+      "author": "Maximilian Schreiner",
+      "source": "The Decoder",
+      "sourceId": "the-decoder",
+      "home": "https://the-decoder.com",
+      "weight": 1.6,
+      "lang": "en",
+      "category": "行业动态",
+      "dealType": null,
+      "publishedAt": "2026-11-23T13:59:36.000Z",
+      "publishedTs": 1795442376000,
+      "day": "2026-11-23",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 48
+    },
+    {
+      "id": "0wtrtmo",
+      "title": "US spies tracked Nvidia scandal figure's ties to Chinese intelligence for over a year",
+      "url": "https://the-decoder.com/us-spies-tracked-nvidia-scandal-figures-ties-to-chinese-intelligence-for-over-a-year",
+      "summary": "US intelligence agencies tracked contacts between Alice Huang and China's Ministry of State Security for over a year, the New York Times reports. The surveillance ran parallel to her secret affair with then-Nvidia CEO Je…",
+      "author": "Maximilian Schreiner",
+      "source": "The Decoder",
+      "sourceId": "the-decoder",
+      "home": "https://the-decoder.com",
+      "weight": 1.6,
+      "lang": "en",
+      "category": "行业动态",
+      "dealType": null,
+      "publishedAt": "2026-11-23T13:45:32.000Z",
+      "publishedTs": 1795441532000,
+      "day": "2026-11-23",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 48
+    },
+    {
+      "id": "0bagsal",
+      "title": "GPT-6.2 Astra solved a math theorem no other AI could crack, then invented its own proof strategy",
+      "url": "https://the-decoder.com/gpt-6-2-astra-solved-a-math-theorem-no-other-ai-could-crack-then-invented-its-own-proof-strategy",
+      "summary": "OpenAI's GPT-6.2 Astra independently produced a machine-verifiable Lean proof of Smoktunowicz's gap theorem, the first of its kind according to Vals AI. The model chose its own approach because key foundations were missi…",
+      "author": "Manuel Uth",
+      "source": "The Decoder",
+      "sourceId": "the-decoder",
+      "home": "https://the-decoder.com",
+      "weight": 1.6,
+      "lang": "en",
+      "category": "模型发布",
+      "dealType": null,
+      "publishedAt": "2026-11-23T12:17:01.000Z",
+      "publishedTs": 1795436221000,
+      "day": "2026-11-23",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 47
+    },
+    {
+      "id": "0tzzjbf",
+      "title": "实测：1450亿参数塞进笔记本，每秒狂飙80+Token！国产端侧大模型杀疯了",
+      "url": "https://www.qbitai.com/2026/11/512195.html",
+      "summary": "零Token成本，断网也能自由Vibe Coding",
+      "author": "思邈",
+      "source": "量子位",
+      "sourceId": "qbitai",
+      "home": "https://www.qbitai.com",
+      "weight": 2.2,
+      "lang": "zh",
+      "category": "模型发布",
+      "dealType": null,
+      "publishedAt": "2026-11-23T11:01:15.000Z",
+      "publishedTs": 1795431675000,
+      "day": "2026-11-23",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 52
+    },
+    {
+      "id": "1fctl75",
+      "title": "XROGO郑随兵：机器人不能只在视频里，终究要进入工厂“真干活”",
+      "url": "https://www.qbitai.com/2026/11/512179.html",
+      "summary": "企业核心需求不是交付设备，而是能持续上岗的劳动力",
+      "author": "量子位的朋友们",
+      "source": "量子位",
+      "sourceId": "qbitai",
+      "home": "https://www.qbitai.com",
+      "weight": 2.2,
+      "lang": "zh",
+      "category": "行业动态",
+      "dealType": null,
+      "publishedAt": "2026-11-23T09:10:08.000Z",
+      "publishedTs": 1795425008000,
+      "day": "2026-11-23",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 50
+    },
+    {
+      "id": "0w8i680",
+      "title": "Connected intelligence for in-house legal",
+      "url": "https://openai.com/business/learn/connected-intelligence-for-in-house-legal",
+      "summary": "Watch OpenAI’s Stacey Wang and Craig Bruney, Mary O’Carroll of LECG, and Cooley’s Richard Segal explore how AI can help in-house legal teams connect business context, build reusable workflows and get more from outside co…",
+      "author": "",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "home": "https://openai.com/news",
+      "weight": 2.5,
+      "lang": "en",
+      "category": "行业动态",
+      "dealType": null,
+      "publishedAt": "2026-11-23T08:00:00.000Z",
+      "publishedTs": 1795420800000,
+      "day": "2026-11-23",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 52
+    },
+    {
+      "id": "0crd4x6",
+      "title": "Richpanel helps companies automate 50% of support in 30 days",
+      "url": "https://openai.com/business/customer-stories/richpanel-ai-customer-support",
+      "summary": "Richpanel uses GPT-6 Astra and GPT-6.1 Sol to equip its AI support agents with tools and procedures, and GPT-6 Luna for their conversations.",
+      "author": "",
+      "source": "OpenAI",
+      "sourceId": "openai",
+      "home": "https://openai.com/news",
+      "weight": 2.5,
+      "lang": "en",
+      "category": "模型发布",
+      "dealType": null,
+      "publishedAt": "2026-11-23T08:00:00.000Z",
+      "publishedTs": 1795420800000,
+      "day": "2026-11-23",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 52
+    },
+    {
+      "id": "1exv6qg",
+      "title": "蚂蚁医疗健康AI五连发！开源、本地部署、望闻问切全安排上了",
+      "url": "https://www.qbitai.com/2026/11/512017.html",
+      "summary": "阿福大升级：让模型像医生一样思考",
+      "author": "鹭羽",
+      "source": "量子位",
+      "sourceId": "qbitai",
+      "home": "https://www.qbitai.com",
+      "weight": 2.2,
+      "lang": "zh",
+      "category": "开源工具",
+      "dealType": null,
+      "publishedAt": "2026-11-23T07:42:01.000Z",
+      "publishedTs": 1795419721000,
+      "day": "2026-11-23",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 55
+    },
     {
       "id": "081339o",
       "title": "美国加州总检察长起诉 OpenAI，指控其忽视安全风险",
@@ -321,7 +1667,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 71
+      "hot": 49
     },
     {
       "id": "1d7qrtc",
@@ -342,7 +1688,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 78
+      "hot": 55
     },
     {
       "id": "0pqq1d5",
@@ -363,7 +1709,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 65
+      "hot": 43
     },
     {
       "id": "02oqq7z",
@@ -384,7 +1730,28 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 65
+      "hot": 43
+    },
+    {
+      "id": "1p1d1rc",
+      "title": "“Agent版arXiv”来了！936个智能体12个星期狂发近千篇论文，连同行评议都整上了",
+      "url": "https://www.qbitai.com/2026/11/512004.html",
+      "summary": "一个完全由AI组成的科学家社会，是什么样？",
+      "author": "henry",
+      "source": "量子位",
+      "sourceId": "qbitai",
+      "home": "https://www.qbitai.com",
+      "weight": 2.2,
+      "lang": "zh",
+      "category": "研究前沿",
+      "dealType": null,
+      "publishedAt": "2026-11-23T06:59:38.000Z",
+      "publishedTs": 1795417178000,
+      "day": "2026-11-23",
+      "estimate": false,
+      "bulk": false,
+      "alsoIn": [],
+      "hot": 49
     },
     {
       "id": "1jlk88p",
@@ -405,7 +1772,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 64
+      "hot": 42
     },
     {
       "id": "0hibnqz",
@@ -426,7 +1793,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 76
+      "hot": 54
     },
     {
       "id": "1ja0n7g",
@@ -447,7 +1814,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 62
+      "hot": 41
     },
     {
       "id": "0e44pkt",
@@ -468,7 +1835,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 74
+      "hot": 53
     },
     {
       "id": "1ml7cvq",
@@ -489,7 +1856,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 67
+      "hot": 46
     },
     {
       "id": "10llke3",
@@ -510,7 +1877,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 67
+      "hot": 46
     },
     {
       "id": "0vcw6u0",
@@ -531,7 +1898,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 66
+      "hot": 46
     },
     {
       "id": "05hkx4c",
@@ -552,7 +1919,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 58
+      "hot": 39
     },
     {
       "id": "0he5tpm",
@@ -573,7 +1940,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 58
+      "hot": 39
     },
     {
       "id": "0hd9p4a",
@@ -594,7 +1961,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 60
+      "hot": 41
     },
     {
       "id": "1ardfvg",
@@ -615,7 +1982,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 57
+      "hot": 38
     },
     {
       "id": "118kh19",
@@ -636,7 +2003,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 69
+      "hot": 50
     },
     {
       "id": "1tdb3e2",
@@ -657,7 +2024,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 62
+      "hot": 44
     },
     {
       "id": "0u5ybbn",
@@ -678,7 +2045,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 55
+      "hot": 37
     },
     {
       "id": "1hle3ym",
@@ -699,7 +2066,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 55
+      "hot": 38
     },
     {
       "id": "0kv00wj",
@@ -720,7 +2087,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 52
+      "hot": 37
     },
     {
       "id": "0gnxydf",
@@ -741,7 +2108,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 47
+      "hot": 33
     },
     {
       "id": "13mylqp",
@@ -762,7 +2129,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 47
+      "hot": 33
     },
     {
       "id": "08ylf0z",
@@ -783,7 +2150,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 47
+      "hot": 33
     },
     {
       "id": "1xe1h3b",
@@ -804,7 +2171,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 46
+      "hot": 33
     },
     {
       "id": "1lpyrj9",
@@ -825,7 +2192,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 58
+      "hot": 45
     },
     {
       "id": "0bjsufy",
@@ -846,7 +2213,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 46
+      "hot": 32
     },
     {
       "id": "1r6qj93",
@@ -867,7 +2234,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 46
+      "hot": 32
     },
     {
       "id": "10x740d",
@@ -888,7 +2255,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 45
+      "hot": 32
     },
     {
       "id": "0oubnhd",
@@ -909,7 +2276,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 44
+      "hot": 31
     },
     {
       "id": "00x6kl6",
@@ -930,7 +2297,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 47
+      "hot": 36
     },
     {
       "id": "0sxopng",
@@ -951,7 +2318,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 47
+      "hot": 36
     },
     {
       "id": "0nydfaf",
@@ -972,7 +2339,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 47
+      "hot": 36
     },
     {
       "id": "1qm9o5o",
@@ -993,7 +2360,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 47
+      "hot": 35
     },
     {
       "id": "1uwxtqo",
@@ -1014,7 +2381,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 46
+      "hot": 35
     },
     {
       "id": "042lpua",
@@ -1035,7 +2402,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 39
+      "hot": 29
     },
     {
       "id": "0cnsz1s",
@@ -1056,7 +2423,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 45
+      "hot": 35
     },
     {
       "id": "1gc53c4",
@@ -1077,7 +2444,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 44
+      "hot": 34
     },
     {
       "id": "0tzs1m5",
@@ -1098,7 +2465,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 44
+      "hot": 34
     },
     {
       "id": "0gw5of9",
@@ -1119,7 +2486,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 46
+      "hot": 36
     },
     {
       "id": "18ugcd0",
@@ -1140,7 +2507,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 49
+      "hot": 40
     },
     {
       "id": "0fr0z05",
@@ -1161,7 +2528,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 43
+      "hot": 33
     },
     {
       "id": "161o0fk",
@@ -1182,7 +2549,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 36
+      "hot": 27
     },
     {
       "id": "1rtt6zv",
@@ -1203,7 +2570,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 37
+      "hot": 29
     },
     {
       "id": "0wgwzsv",
@@ -1224,7 +2591,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 37
+      "hot": 28
     },
     {
       "id": "0eigvkj",
@@ -1245,7 +2612,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 34
+      "hot": 26
     },
     {
       "id": "1b4xdmn",
@@ -1266,7 +2633,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 35
+      "hot": 27
     },
     {
       "id": "1b4upil",
@@ -1287,7 +2654,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 33
+      "hot": 25
     },
     {
       "id": "0k0vg93",
@@ -1308,7 +2675,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 33
+      "hot": 25
     },
     {
       "id": "0weyr7x",
@@ -1329,7 +2696,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 34
+      "hot": 27
     },
     {
       "id": "048ss9z",
@@ -1350,7 +2717,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 32
+      "hot": 25
     },
     {
       "id": "1m25g9z",
@@ -1371,7 +2738,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 32
+      "hot": 25
     },
     {
       "id": "0w2ht9v",
@@ -1392,7 +2759,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 38
+      "hot": 31
     },
     {
       "id": "097ra2k",
@@ -1413,7 +2780,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 38
+      "hot": 31
     },
     {
       "id": "0kvfzv5",
@@ -1434,7 +2801,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 31
+      "hot": 24
     },
     {
       "id": "1bpicoq",
@@ -1455,7 +2822,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 31
+      "hot": 24
     },
     {
       "id": "0879xjz",
@@ -1476,7 +2843,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 31
+      "hot": 24
     },
     {
       "id": "1cvln9g",
@@ -1497,7 +2864,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 37
+      "hot": 30
     },
     {
       "id": "14swrkk",
@@ -1518,7 +2885,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 49
+      "hot": 42
     },
     {
       "id": "07uhc30",
@@ -1539,7 +2906,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 37
+      "hot": 30
     },
     {
       "id": "1q7c7a0",
@@ -1560,7 +2927,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 43
+      "hot": 36
     },
     {
       "id": "1y5i67r",
@@ -1581,7 +2948,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 30
+      "hot": 24
     },
     {
       "id": "0cbml5w",
@@ -1602,7 +2969,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 30
+      "hot": 24
     },
     {
       "id": "173vh2s",
@@ -1623,7 +2990,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 30
+      "hot": 24
     },
     {
       "id": "1sjhw0o",
@@ -1644,7 +3011,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 30
+      "hot": 24
     },
     {
       "id": "0cuywbx",
@@ -1665,7 +3032,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 30
+      "hot": 23
     },
     {
       "id": "1g4ydzm",
@@ -1686,7 +3053,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 35
+      "hot": 29
     },
     {
       "id": "06a43ux",
@@ -1707,7 +3074,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 41
+      "hot": 35
     },
     {
       "id": "14pkwy2",
@@ -1728,7 +3095,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 35
+      "hot": 29
     },
     {
       "id": "04pxweq",
@@ -1749,7 +3116,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 28
+      "hot": 23
     },
     {
       "id": "116o6z9",
@@ -1770,7 +3137,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 35
+      "hot": 29
     },
     {
       "id": "11wlw1i",
@@ -1791,7 +3158,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 28
+      "hot": 23
     },
     {
       "id": "0u434wb",
@@ -1812,7 +3179,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 28
+      "hot": 23
     },
     {
       "id": "02xl9ph",
@@ -1833,7 +3200,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 28
+      "hot": 23
     },
     {
       "id": "0sygz3l",
@@ -1854,7 +3221,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 34
+      "hot": 29
     },
     {
       "id": "0nud3lu",
@@ -1875,7 +3242,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 34
+      "hot": 29
     },
     {
       "id": "00z9v1y",
@@ -1896,7 +3263,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 27
+      "hot": 22
     },
     {
       "id": "15zc377",
@@ -1917,7 +3284,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 40
+      "hot": 35
     },
     {
       "id": "1vm9jdd",
@@ -1938,7 +3305,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 33
+      "hot": 28
     },
     {
       "id": "1y122co",
@@ -1959,7 +3326,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 27
+      "hot": 22
     },
     {
       "id": "0ei10zx",
@@ -1980,7 +3347,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 33
+      "hot": 28
     },
     {
       "id": "1o6gti7",
@@ -2001,7 +3368,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 33
+      "hot": 28
     },
     {
       "id": "0fpo8dx",
@@ -2022,7 +3389,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 27
+      "hot": 22
     },
     {
       "id": "0zoct4g",
@@ -2043,7 +3410,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 33
+      "hot": 28
     },
     {
       "id": "0rjm14s",
@@ -2064,7 +3431,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 33
+      "hot": 28
     },
     {
       "id": "0yjf0xv",
@@ -2085,7 +3452,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 33
+      "hot": 28
     },
     {
       "id": "1hyqyhu",
@@ -2106,7 +3473,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 26
+      "hot": 22
     },
     {
       "id": "1xe4dqe",
@@ -2127,7 +3494,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 45
+      "hot": 40
     },
     {
       "id": "0rr1xhd",
@@ -2148,7 +3515,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 32
+      "hot": 28
     },
     {
       "id": "02tr1xr",
@@ -2169,7 +3536,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 26
+      "hot": 21
     },
     {
       "id": "0ka67qx",
@@ -2190,7 +3557,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 27
+      "hot": 23
     },
     {
       "id": "1n8ub7g",
@@ -2211,7 +3578,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 25
+      "hot": 21
     },
     {
       "id": "0ma7e9k",
@@ -2232,7 +3599,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 27
+      "hot": 23
     },
     {
       "id": "1vb3m5o",
@@ -2253,7 +3620,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 32
+      "hot": 27
     },
     {
       "id": "0fcxt8e",
@@ -2274,7 +3641,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 25
+      "hot": 21
     },
     {
       "id": "1nm6ykn",
@@ -2295,7 +3662,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 25
+      "hot": 21
     },
     {
       "id": "0vbnhsu",
@@ -2316,7 +3683,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 27
+      "hot": 23
     },
     {
       "id": "1k90af6",
@@ -2337,7 +3704,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 31
+      "hot": 27
     },
     {
       "id": "0npkhfj",
@@ -2358,7 +3725,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 30
+      "hot": 27
     },
     {
       "id": "10vduvb",
@@ -2379,7 +3746,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 24
+      "hot": 21
     },
     {
       "id": "14850jz",
@@ -2400,7 +3767,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 24
+      "hot": 21
     },
     {
       "id": "0s3adsy",
@@ -2421,7 +3788,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 31
+      "hot": 27
     },
     {
       "id": "1ucb915",
@@ -2442,7 +3809,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 24
+      "hot": 20
     },
     {
       "id": "04dsu35",
@@ -2463,7 +3830,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 26
+      "hot": 22
     },
     {
       "id": "1o5a82l",
@@ -2484,7 +3851,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 24
+      "hot": 20
     },
     {
       "id": "1fg4k6t",
@@ -2505,7 +3872,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 24
+      "hot": 20
     },
     {
       "id": "1az8p9c",
@@ -2526,7 +3893,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 24
+      "hot": 20
     },
     {
       "id": "1g62992",
@@ -2547,7 +3914,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 24
+      "hot": 20
     },
     {
       "id": "0aasud9",
@@ -2568,7 +3935,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 26
+      "hot": 22
     },
     {
       "id": "16jbu11",
@@ -2589,7 +3956,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 24
+      "hot": 20
     },
     {
       "id": "1bs0fi6",
@@ -2610,7 +3977,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 24
+      "hot": 20
     },
     {
       "id": "08nyrli",
@@ -2631,7 +3998,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 30
+      "hot": 26
     },
     {
       "id": "1q6864l",
@@ -2652,7 +4019,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 32
+      "hot": 29
     },
     {
       "id": "06g4q5q",
@@ -2673,7 +4040,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 23
+      "hot": 20
     },
     {
       "id": "08xq37r",
@@ -2694,7 +4061,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 29
+      "hot": 26
     },
     {
       "id": "01va018",
@@ -2715,7 +4082,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 29
+      "hot": 26
     },
     {
       "id": "0euqtuj",
@@ -2736,7 +4103,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 29
+      "hot": 26
     },
     {
       "id": "14gmwcn",
@@ -2757,7 +4124,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 29
+      "hot": 26
     },
     {
       "id": "0q9g3ef",
@@ -2778,7 +4145,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 29
+      "hot": 26
     },
     {
       "id": "17j3rfg",
@@ -2799,7 +4166,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 28
+      "hot": 26
     },
     {
       "id": "1cs47qe",
@@ -2820,7 +4187,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 35
+      "hot": 32
     },
     {
       "id": "11s5qsx",
@@ -2841,7 +4208,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 22
+      "hot": 20
     },
     {
       "id": "1alt1tf",
@@ -2862,7 +4229,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 35
+      "hot": 32
     },
     {
       "id": "0h5cblp",
@@ -2883,7 +4250,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 22
+      "hot": 19
     },
     {
       "id": "1kdditb",
@@ -2904,7 +4271,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 22
+      "hot": 19
     },
     {
       "id": "1iju5ee",
@@ -2925,7 +4292,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 35
+      "hot": 32
     },
     {
       "id": "105c5c6",
@@ -2946,7 +4313,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 35
+      "hot": 32
     },
     {
       "id": "1i0o3nr",
@@ -2967,7 +4334,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 41
+      "hot": 38
     },
     {
       "id": "1hxv7m6",
@@ -2988,7 +4355,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 28
+      "hot": 26
     },
     {
       "id": "0yqqhuj",
@@ -3009,7 +4376,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 34
+      "hot": 32
     },
     {
       "id": "0t9bjyr",
@@ -3030,7 +4397,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 22
+      "hot": 19
     },
     {
       "id": "1w4yb4z",
@@ -3051,7 +4418,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 22
+      "hot": 19
     },
     {
       "id": "08tpgg2",
@@ -3072,7 +4439,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 40
+      "hot": 38
     },
     {
       "id": "0dxtbxt",
@@ -3093,7 +4460,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 28
+      "hot": 25
     },
     {
       "id": "0vyjlye",
@@ -3114,7 +4481,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 28
+      "hot": 25
     },
     {
       "id": "0d6g6l5",
@@ -3135,7 +4502,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 28
+      "hot": 25
     },
     {
       "id": "1v4hyr2",
@@ -3156,7 +4523,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 24
+      "hot": 21
     },
     {
       "id": "02amh9y",
@@ -3177,7 +4544,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 24
+      "hot": 21
     },
     {
       "id": "1n3gt81",
@@ -3198,7 +4565,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 21
+      "hot": 19
     },
     {
       "id": "1y5rdj9",
@@ -3219,7 +4586,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 21
+      "hot": 19
     },
     {
       "id": "0og5kbd",
@@ -3240,7 +4607,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 30
+      "hot": 28
     },
     {
       "id": "1jx00df",
@@ -3261,7 +4628,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 30
+      "hot": 28
     },
     {
       "id": "1ecyd8w",
@@ -3282,7 +4649,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 28
+      "hot": 25
     },
     {
       "id": "1rrttr4",
@@ -3303,7 +4670,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 28
+      "hot": 25
     },
     {
       "id": "1t3k48j",
@@ -3324,7 +4691,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 28
+      "hot": 25
     },
     {
       "id": "1gk2g6k",
@@ -3345,7 +4712,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 28
+      "hot": 25
     },
     {
       "id": "1rru0dm",
@@ -3366,7 +4733,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 21
+      "hot": 19
     },
     {
       "id": "1dq4fsp",
@@ -3387,7 +4754,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 27
+      "hot": 25
     },
     {
       "id": "1gje7e6",
@@ -3408,7 +4775,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 21
+      "hot": 19
     },
     {
       "id": "1cnlfvy",
@@ -3429,7 +4796,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 21
+      "hot": 19
     },
     {
       "id": "1s2m08v",
@@ -3450,7 +4817,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 23
+      "hot": 21
     },
     {
       "id": "1uj5s2f",
@@ -3471,7 +4838,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 23
+      "hot": 21
     },
     {
       "id": "0iakyt4",
@@ -3492,7 +4859,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 21
+      "hot": 19
     },
     {
       "id": "1fkf279",
@@ -3513,7 +4880,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 21
+      "hot": 19
     },
     {
       "id": "0c44n6d",
@@ -3534,7 +4901,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 23
+      "hot": 21
     },
     {
       "id": "0b4igdj",
@@ -3555,7 +4922,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 21
+      "hot": 19
     },
     {
       "id": "14jd4to",
@@ -3576,7 +4943,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 23
+      "hot": 21
     },
     {
       "id": "08yuwwa",
@@ -3597,7 +4964,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 21
+      "hot": 19
     },
     {
       "id": "0g9ho0s",
@@ -3618,7 +4985,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 23
+      "hot": 21
     },
     {
       "id": "12bityd",
@@ -3639,7 +5006,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 21
+      "hot": 19
     },
     {
       "id": "08qz4dp",
@@ -3660,7 +5027,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 23
+      "hot": 21
     },
     {
       "id": "1x2evk4",
@@ -3681,7 +5048,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 23
+      "hot": 20
     },
     {
       "id": "1pmqnno",
@@ -3702,7 +5069,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 20
+      "hot": 18
     },
     {
       "id": "1db06ne",
@@ -3723,7 +5090,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 22
+      "hot": 20
     },
     {
       "id": "1hquqay",
@@ -3744,7 +5111,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 22
+      "hot": 20
     },
     {
       "id": "0remblp",
@@ -3765,7 +5132,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 22
+      "hot": 20
     },
     {
       "id": "1mjyrlw",
@@ -3786,7 +5153,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 20
+      "hot": 18
     },
     {
       "id": "031qql8",
@@ -3807,7 +5174,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 22
+      "hot": 20
     },
     {
       "id": "11sfvtx",
@@ -3828,7 +5195,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 20
+      "hot": 18
     },
     {
       "id": "1nyobd0",
@@ -3849,7 +5216,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 20
+      "hot": 18
     },
     {
       "id": "0iwi3mq",
@@ -3870,7 +5237,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 22
+      "hot": 20
     },
     {
       "id": "0teugcz",
@@ -3891,7 +5258,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 20
+      "hot": 18
     },
     {
       "id": "169wlwx",
@@ -3912,7 +5279,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 22
+      "hot": 20
     },
     {
       "id": "0ehpywb",
@@ -3933,7 +5300,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 22
+      "hot": 20
     },
     {
       "id": "1nkl9ey",
@@ -3954,7 +5321,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 20
+      "hot": 18
     },
     {
       "id": "1trxvpj",
@@ -3975,7 +5342,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 20
+      "hot": 18
     },
     {
       "id": "0xwzhf1",
@@ -3996,7 +5363,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 20
+      "hot": 18
     },
     {
       "id": "1u3k5xi",
@@ -4017,7 +5384,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 20
+      "hot": 18
     },
     {
       "id": "1jkoqx0",
@@ -4038,7 +5405,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 20
+      "hot": 18
     },
     {
       "id": "12vwvuk",
@@ -4059,7 +5426,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 26
+      "hot": 24
     },
     {
       "id": "0k00kbc",
@@ -4080,7 +5447,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 32
+      "hot": 30
     },
     {
       "id": "0x4pzhk",
@@ -4101,7 +5468,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 32
+      "hot": 30
     },
     {
       "id": "17qcfx0",
@@ -4122,7 +5489,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 28
+      "hot": 27
     },
     {
       "id": "1ig3y4k",
@@ -4143,7 +5510,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 25
+      "hot": 24
     },
     {
       "id": "147fdz6",
@@ -4164,7 +5531,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 26
+      "hot": 24
     },
     {
       "id": "1cjr5yf",
@@ -4185,7 +5552,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 26
+      "hot": 24
     },
     {
       "id": "1qr78p1",
@@ -4206,7 +5573,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 32
+      "hot": 30
     },
     {
       "id": "05lrzzs",
@@ -4227,7 +5594,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 32
+      "hot": 30
     },
     {
       "id": "0l1sp29",
@@ -4248,7 +5615,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 19
+      "hot": 18
     },
     {
       "id": "0l8eyut",
@@ -4269,7 +5636,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 25
+      "hot": 24
     },
     {
       "id": "1vp3tlf",
@@ -4290,7 +5657,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 25
+      "hot": 24
     },
     {
       "id": "0wu0yfq",
@@ -4311,7 +5678,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 19
+      "hot": 18
     },
     {
       "id": "1tkfdod",
@@ -4332,7 +5699,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 31
+      "hot": 30
     },
     {
       "id": "1gk46is",
@@ -4353,7 +5720,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 38
+      "hot": 36
     },
     {
       "id": "11dw2m7",
@@ -4374,7 +5741,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 19
+      "hot": 18
     },
     {
       "id": "13z3mnx",
@@ -4395,7 +5762,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 32
+      "hot": 30
     },
     {
       "id": "1ijg176",
@@ -4416,7 +5783,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 25
+      "hot": 24
     },
     {
       "id": "0kh6xb9",
@@ -4437,7 +5804,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 25
+      "hot": 24
     },
     {
       "id": "0rurnlj",
@@ -4458,7 +5825,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 19
+      "hot": 18
     },
     {
       "id": "0q1i89q",
@@ -4479,7 +5846,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 19
+      "hot": 18
     },
     {
       "id": "132lika",
@@ -4500,7 +5867,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 19
+      "hot": 18
     },
     {
       "id": "0yy4kaq",
@@ -4521,7 +5888,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 25
+      "hot": 24
     },
     {
       "id": "1o6xpca",
@@ -4542,7 +5909,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 25
+      "hot": 24
     },
     {
       "id": "19ggzyx",
@@ -4563,7 +5930,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 19
+      "hot": 18
     },
     {
       "id": "1cgdbuy",
@@ -4584,7 +5951,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 19
+      "hot": 18
     },
     {
       "id": "1gc6bgf",
@@ -4605,7 +5972,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 21
+      "hot": 20
     },
     {
       "id": "1acc4py",
@@ -4626,7 +5993,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 19
+      "hot": 18
     },
     {
       "id": "1qd8vmk",
@@ -4647,7 +6014,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 19
+      "hot": 18
     },
     {
       "id": "0ubjisc",
@@ -4668,7 +6035,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 25
+      "hot": 24
     },
     {
       "id": "0enzgru",
@@ -4689,7 +6056,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 19
+      "hot": 18
     },
     {
       "id": "148ot50",
@@ -4710,7 +6077,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 38
+      "hot": 36
     },
     {
       "id": "001rbg4",
@@ -4731,7 +6098,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 28
+      "hot": 27
     },
     {
       "id": "1606ae7",
@@ -4752,7 +6119,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 28
+      "hot": 27
     },
     {
       "id": "15x0z9q",
@@ -4773,7 +6140,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 28
+      "hot": 27
     },
     {
       "id": "02go08r",
@@ -4794,7 +6161,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 28
+      "hot": 27
     },
     {
       "id": "198y8sr",
@@ -4815,7 +6182,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 19
+      "hot": 18
     },
     {
       "id": "168xxh3",
@@ -4836,7 +6203,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 21
+      "hot": 20
     },
     {
       "id": "08koccv",
@@ -4857,7 +6224,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 25
+      "hot": 24
     },
     {
       "id": "1qdfo12",
@@ -4878,7 +6245,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 21
+      "hot": 19
     },
     {
       "id": "13fwi11",
@@ -4899,7 +6266,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 19
+      "hot": 17
     },
     {
       "id": "022wtjo",
@@ -4920,7 +6287,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 21
+      "hot": 19
     },
     {
       "id": "10zqdqb",
@@ -4941,7 +6308,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 31
+      "hot": 30
     },
     {
       "id": "0tzxdx8",
@@ -4962,7 +6329,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 25
+      "hot": 24
     },
     {
       "id": "07brwsu",
@@ -4983,7 +6350,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 21
+      "hot": 19
     },
     {
       "id": "0m2t317",
@@ -5004,7 +6371,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 21
+      "hot": 19
     },
     {
       "id": "1nvhwz1",
@@ -5025,7 +6392,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 21
+      "hot": 19
     },
     {
       "id": "1fdy8sb",
@@ -5046,7 +6413,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 26
+      "hot": 24
     },
     {
       "id": "1togd0n",
@@ -5067,7 +6434,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 21
+      "hot": 19
     },
     {
       "id": "1guu75a",
@@ -5088,7 +6455,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 21
+      "hot": 19
     },
     {
       "id": "1wmei5j",
@@ -5109,7 +6476,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 19
+      "hot": 17
     },
     {
       "id": "0ah153y",
@@ -5130,7 +6497,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 20
+      "hot": 19
     },
     {
       "id": "0fseaji",
@@ -5151,7 +6518,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 20
+      "hot": 19
     },
     {
       "id": "0xbs1xh",
@@ -5172,7 +6539,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 18
+      "hot": 17
     },
     {
       "id": "0nke72n",
@@ -5193,7 +6560,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 18
+      "hot": 17
     },
     {
       "id": "1ai4any",
@@ -5214,7 +6581,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 18
+      "hot": 17
     },
     {
       "id": "1a53wdh",
@@ -5235,7 +6602,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 18
+      "hot": 17
     },
     {
       "id": "1lysyas",
@@ -5256,7 +6623,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 25
+      "hot": 24
     },
     {
       "id": "14tf8p7",
@@ -5277,7 +6644,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 20
+      "hot": 19
     },
     {
       "id": "0ngcd3u",
@@ -5298,7 +6665,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 18
+      "hot": 17
     },
     {
       "id": "1ofv1pl",
@@ -5319,7 +6686,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 18
+      "hot": 17
     },
     {
       "id": "1oiexqx",
@@ -5340,7 +6707,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 20
+      "hot": 19
     },
     {
       "id": "0ayk3w2",
@@ -5361,7 +6728,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 20
+      "hot": 19
     },
     {
       "id": "0pfjziv",
@@ -5382,7 +6749,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 25
+      "hot": 23
     },
     {
       "id": "0b2xb6p",
@@ -5403,7 +6770,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 20
+      "hot": 19
     },
     {
       "id": "0tfvbme",
@@ -5424,7 +6791,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 18
+      "hot": 17
     },
     {
       "id": "07fnbi5",
@@ -5445,7 +6812,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 18
+      "hot": 17
     },
     {
       "id": "1bkikx5",
@@ -5466,7 +6833,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 18
+      "hot": 17
     },
     {
       "id": "0zock56",
@@ -5487,7 +6854,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 18
+      "hot": 17
     },
     {
       "id": "0l52nl9",
@@ -5508,7 +6875,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 18
+      "hot": 17
     },
     {
       "id": "0rs3v04",
@@ -5529,7 +6896,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 20
+      "hot": 19
     },
     {
       "id": "0wkz1sm",
@@ -5550,7 +6917,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 18
+      "hot": 17
     },
     {
       "id": "1q4nsox",
@@ -5571,7 +6938,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 18
+      "hot": 17
     },
     {
       "id": "17101pp",
@@ -5592,7 +6959,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 20
+      "hot": 19
     },
     {
       "id": "1ll06np",
@@ -5613,7 +6980,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 20
+      "hot": 19
     },
     {
       "id": "0vn7pl7",
@@ -5634,7 +7001,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 20
+      "hot": 19
     },
     {
       "id": "0i0e076",
@@ -5655,7 +7022,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 18
+      "hot": 17
     },
     {
       "id": "1jsbivk",
@@ -5676,7 +7043,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 27
+      "hot": 26
     },
     {
       "id": "0xjz53j",
@@ -5697,7 +7064,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 24
+      "hot": 23
     },
     {
       "id": "1y4qlx0",
@@ -5718,7 +7085,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 27
+      "hot": 26
     },
     {
       "id": "01qrlnq",
@@ -5739,7 +7106,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 27
+      "hot": 26
     },
     {
       "id": "0s079z7",
@@ -5760,7 +7127,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 27
+      "hot": 26
     },
     {
       "id": "0n2o540",
@@ -5781,7 +7148,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 24
+      "hot": 23
     },
     {
       "id": "1l2x1ru",
@@ -5802,7 +7169,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 36
+      "hot": 35
     },
     {
       "id": "14vq5ya",
@@ -5823,7 +7190,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 18
+      "hot": 17
     },
     {
       "id": "0lge8eb",
@@ -5844,7 +7211,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 18
+      "hot": 17
     },
     {
       "id": "035bhjb",
@@ -5865,7 +7232,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 18
+      "hot": 17
     },
     {
       "id": "1tfu76o",
@@ -5886,7 +7253,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 24
+      "hot": 23
     },
     {
       "id": "0s3rxeb",
@@ -5907,7 +7274,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 18
+      "hot": 17
     },
     {
       "id": "0ji5je8",
@@ -5928,7 +7295,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 18
+      "hot": 17
     },
     {
       "id": "07g9kkt",
@@ -5949,7 +7316,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 24
+      "hot": 23
     },
     {
       "id": "0hn5wo7",
@@ -5970,7 +7337,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 18
+      "hot": 17
     },
     {
       "id": "1gpt3ye",
@@ -5991,7 +7358,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 27
+      "hot": 26
     },
     {
       "id": "0vjb2yi",
@@ -6012,7 +7379,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 18
+      "hot": 17
     },
     {
       "id": "04hy1l4",
@@ -6033,7 +7400,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 24
+      "hot": 23
     },
     {
       "id": "0b1sglp",
@@ -6054,7 +7421,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 24
+      "hot": 23
     },
     {
       "id": "0b2kb7y",
@@ -6075,7 +7442,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 24
+      "hot": 23
     },
     {
       "id": "0d2izap",
@@ -6096,7 +7463,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 36
+      "hot": 35
     },
     {
       "id": "0b5iuo9",
@@ -6117,7 +7484,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 18
+      "hot": 17
     },
     {
       "id": "19xbtie",
@@ -6138,7 +7505,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 30
+      "hot": 29
     },
     {
       "id": "0hmpw6f",
@@ -6159,7 +7526,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 24
+      "hot": 23
     },
     {
       "id": "1yg2j61",
@@ -6180,7 +7547,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 24
+      "hot": 23
     },
     {
       "id": "0ku4uxn",
@@ -6201,7 +7568,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 30
+      "hot": 29
     },
     {
       "id": "0csas7f",
@@ -6222,7 +7589,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 20
+      "hot": 19
     },
     {
       "id": "0dtkrvx",
@@ -6369,7 +7736,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 24
+      "hot": 23
     },
     {
       "id": "01guoww",
@@ -6474,7 +7841,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 24
+      "hot": 23
     },
     {
       "id": "0k2cc41",
@@ -6495,7 +7862,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 30
+      "hot": 29
     },
     {
       "id": "1wuhawk",
@@ -7209,7 +8576,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 26
+      "hot": 25
     },
     {
       "id": "1gqf2ig",
@@ -7251,7 +8618,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 17
+      "hot": 16
     },
     {
       "id": "0pdzcm5",
@@ -7398,7 +8765,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 17
+      "hot": 16
     },
     {
       "id": "1gdftlj",
@@ -7419,7 +8786,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 23
+      "hot": 22
     },
     {
       "id": "0xb45s5",
@@ -7440,7 +8807,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 17
+      "hot": 16
     },
     {
       "id": "0ysb3fi",
@@ -7461,7 +8828,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 17
+      "hot": 16
     },
     {
       "id": "14zz1ul",
@@ -7482,7 +8849,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 17
+      "hot": 16
     },
     {
       "id": "1rfse6r",
@@ -7503,7 +8870,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 17
+      "hot": 16
     },
     {
       "id": "12ej2a6",
@@ -7566,7 +8933,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 17
+      "hot": 16
     },
     {
       "id": "0j7qv6y",
@@ -7587,7 +8954,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 23
+      "hot": 22
     },
     {
       "id": "1workt0",
@@ -7650,7 +9017,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 23
+      "hot": 22
     },
     {
       "id": "1n12s07",
@@ -7755,7 +9122,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 17
+      "hot": 16
     },
     {
       "id": "16c690w",
@@ -7776,7 +9143,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 26
+      "hot": 25
     },
     {
       "id": "0kf9qcn",
@@ -7797,7 +9164,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 26
+      "hot": 25
     },
     {
       "id": "09ed4ur",
@@ -7818,7 +9185,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 26
+      "hot": 25
     },
     {
       "id": "1ntiyha",
@@ -7839,7 +9206,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 19
+      "hot": 18
     },
     {
       "id": "130mgby",
@@ -7860,7 +9227,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 17
+      "hot": 16
     },
     {
       "id": "09bks4o",
@@ -7881,7 +9248,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 17
+      "hot": 16
     },
     {
       "id": "1kzsgi7",
@@ -7902,7 +9269,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 19
+      "hot": 18
     },
     {
       "id": "0z48h4c",
@@ -7923,7 +9290,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 19
+      "hot": 18
     },
     {
       "id": "1pw1s9u",
@@ -7944,7 +9311,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 17
+      "hot": 16
     },
     {
       "id": "1xuxt6o",
@@ -7965,7 +9332,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 17
+      "hot": 16
     },
     {
       "id": "0uyoqpt",
@@ -7986,7 +9353,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 17
+      "hot": 16
     },
     {
       "id": "1u8iafm",
@@ -8007,7 +9374,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 19
+      "hot": 18
     },
     {
       "id": "13hgo53",
@@ -8028,7 +9395,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 19
+      "hot": 18
     },
     {
       "id": "1wuimp3",
@@ -8049,7 +9416,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 17
+      "hot": 16
     },
     {
       "id": "18897tc",
@@ -8070,7 +9437,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 17
+      "hot": 16
     },
     {
       "id": "0uiioyt",
@@ -8091,7 +9458,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 17
+      "hot": 16
     },
     {
       "id": "1rmbscq",
@@ -8112,7 +9479,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 19
+      "hot": 18
     },
     {
       "id": "1simph8",
@@ -8133,7 +9500,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 17
+      "hot": 16
     },
     {
       "id": "0ltl116",
@@ -8154,7 +9521,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 19
+      "hot": 18
     },
     {
       "id": "1w7dztj",
@@ -8175,7 +9542,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 19
+      "hot": 18
     },
     {
       "id": "0hrdq9w",
@@ -8196,7 +9563,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 19
+      "hot": 18
     },
     {
       "id": "1az16nq",
@@ -8217,7 +9584,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 19
+      "hot": 18
     },
     {
       "id": "19tha7f",
@@ -8238,7 +9605,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 26
+      "hot": 25
     },
     {
       "id": "1oot9zh",
@@ -8259,7 +9626,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 26
+      "hot": 25
     },
     {
       "id": "1c8mbnh",
@@ -8280,7 +9647,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 19
+      "hot": 18
     },
     {
       "id": "01z9h9d",
@@ -8301,7 +9668,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 17
+      "hot": 16
     },
     {
       "id": "0pfk0ao",
@@ -8322,7 +9689,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 17
+      "hot": 16
     },
     {
       "id": "1hh13uc",
@@ -8343,7 +9710,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 19
+      "hot": 18
     },
     {
       "id": "1i6zmgp",
@@ -8364,7 +9731,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 19
+      "hot": 18
     },
     {
       "id": "0o5a1al",
@@ -8385,7 +9752,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 19
+      "hot": 18
     },
     {
       "id": "1mzfa3p",
@@ -8406,7 +9773,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 19
+      "hot": 18
     },
     {
       "id": "0l77k7c",
@@ -8427,7 +9794,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 19
+      "hot": 18
     },
     {
       "id": "0n9ll81",
@@ -8448,7 +9815,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 19
+      "hot": 18
     },
     {
       "id": "0048izf",
@@ -8469,7 +9836,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 19
+      "hot": 18
     },
     {
       "id": "0rxgho7",
@@ -8490,7 +9857,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 19
+      "hot": 18
     },
     {
       "id": "10dh63r",
@@ -8511,7 +9878,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 19
+      "hot": 18
     },
     {
       "id": "1pn1sk8",
@@ -8532,7 +9899,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 17
+      "hot": 16
     },
     {
       "id": "01cwgt1",
@@ -8553,7 +9920,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 17
+      "hot": 16
     },
     {
       "id": "0uovgzo",
@@ -8574,7 +9941,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 19
+      "hot": 18
     },
     {
       "id": "1do601r",
@@ -8595,7 +9962,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 26
+      "hot": 25
     },
     {
       "id": "060mkyp",
@@ -8616,7 +9983,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 23
+      "hot": 22
     },
     {
       "id": "1vgkrx3",
@@ -8868,7 +10235,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 23
+      "hot": 22
     },
     {
       "id": "0x9o4nz",
@@ -8973,7 +10340,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 23
+      "hot": 22
     },
     {
       "id": "0c0czwr",
@@ -9036,7 +10403,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 29
+      "hot": 28
     },
     {
       "id": "11h5p4q",
@@ -9099,7 +10466,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 23
+      "hot": 22
     },
     {
       "id": "0pkdtei",
@@ -9162,7 +10529,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 23
+      "hot": 22
     },
     {
       "id": "1cyzspv",
@@ -9183,7 +10550,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 23
+      "hot": 22
     },
     {
       "id": "0fytdsh",
@@ -9330,7 +10697,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 23
+      "hot": 22
     },
     {
       "id": "02fzv8g",
@@ -9519,7 +10886,7 @@
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
-      "hot": 23
+      "hot": 22
     },
     {
       "id": "1miq2tb",
@@ -13258,27 +14625,6 @@
       "bulk": false,
       "alsoIn": [],
       "hot": 18
-    },
-    {
-      "id": "0hut9kl",
-      "title": "Nvidia CEO Jensen Huang has resigned. What happens next?",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1030422/nvidia-jensen-huang-ai-china-alice-huang",
-      "summary": "After the leather-jacketed CEO, president, and co-founder of Nvidia, Jensen Huang, acknowledged an affair with Megaspeed exec Alice Huang, his company initially announced an investigation. However, The New York Times rep…",
-      "author": "Richard Lawler",
-      "source": "The Verge AI",
-      "sourceId": "verge-ai",
-      "home": "https://www.theverge.com/ai-artificial-intelligence",
-      "weight": 1.6,
-      "lang": "en",
-      "category": "行业动态",
-      "dealType": null,
-      "publishedAt": "2026-11-12T15:01:31.000Z",
-      "publishedTs": 1794495691000,
-      "day": "2026-11-12",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 16
     },
     {
       "id": "16tni0r",
@@ -51060,195 +52406,6 @@
       "hot": 16
     },
     {
-      "id": "1vdsevw",
-      "title": "全球运营商最大单体智算中心扩容工程：中国移动呼和浩特智算中心总算力达 20100P，90% 服务京津冀",
-      "url": "https://www.ithome.com/1/011/751.htm",
-      "summary": "IT之家 10 月 12 日消息，据内蒙古日报今日报道，由中建三局承建的中国移动智算中心（呼和浩特）扩容工程 —— 中国移动呼和浩特数据中心 B25、B27 项目已于近日顺利竣工。 该项目位于内蒙古和林格尔新区，合约额 27 亿元，建筑面积约 44500 平方米，IT 总功率 120MW。作为国家“东数西算”工程，项目投运后总算力达 20100P，其中智算 16700P，90% 算力服务京津冀地区，绿电占比 88%，将进一步完善国家算力…",
-      "author": "",
-      "source": "IT之家",
-      "sourceId": "ithome",
-      "home": "https://www.ithome.com",
-      "weight": 1.6,
-      "lang": "zh",
-      "category": "行业动态",
-      "dealType": null,
-      "publishedAt": "2026-10-12T01:11:57.000Z",
-      "publishedTs": 1791767517000,
-      "day": "2026-10-12",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 16
-    },
-    {
-      "id": "1jod7gz",
-      "title": "HPE 确认英伟达将推出 Rubin PCIe GPU",
-      "url": "https://www.ithome.com/1/011/747.htm",
-      "summary": "IT之家 10 月 12 日消息，根据 HPE（慧与）向 The Next Platform 等外媒分享的演示文稿，这家企业确认其 ProLiant DL585a Gen13 服务器支持 NVIDIA（英伟达）的 Rubin PCIe GPU。 ▲ 引自：The Next PlatformNVIDIA 的现有 Rubin GPU 属于数据中心级产品，采用 SMX 外形规格，功耗高达 2300W。这一规格的产品显然不可能直接装入 PCIe…",
-      "author": "",
-      "source": "IT之家",
-      "sourceId": "ithome",
-      "home": "https://www.ithome.com",
-      "weight": 1.6,
-      "lang": "zh",
-      "category": "产品动态",
-      "dealType": null,
-      "publishedAt": "2026-10-12T01:05:35.000Z",
-      "publishedTs": 1791767135000,
-      "day": "2026-10-12",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 16
-    },
-    {
-      "id": "16g4emk",
-      "title": "越障高度 40mm：小米米家扫拖机器人 6 水箱版 1779 元、上下水版 2089 元",
-      "url": "https://www.ithome.com/1/011/746.htm",
-      "summary": "小米旗下米家扫拖机器人 6 标准版发售于 2026 年 4 月，该机器人提供 28000Pa 吸力，其中水箱版本定价 2699 元、上下水版本定价 3099 元。 今日按下方步骤下单，叠加 PLUS 立减 + 15% 国补后，水箱版仅需 1779.86 元，上下水版仅需 2089.67 元： 点击下方卡片，可领 9 折券。 京东小米 米家扫拖机器人 6 水箱版扫拖一体 全自动清洗基站券后 1779.86 元领 9 折券京东小米 米家扫拖…",
-      "author": "",
-      "source": "IT之家",
-      "sourceId": "ithome",
-      "home": "https://www.ithome.com",
-      "weight": 1.6,
-      "lang": "zh",
-      "category": "行业动态",
-      "dealType": null,
-      "publishedAt": "2026-10-12T00:57:20.000Z",
-      "publishedTs": 1791766640000,
-      "day": "2026-10-12",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 16
-    },
-    {
-      "id": "1sjvjrr",
-      "title": "OpenAI 宣布 GPT-6.1 Sol 默认上下文长度从 272k 提升至 500k，增加约 80%",
-      "url": "https://www.ithome.com/1/011/736.htm",
-      "summary": "IT之家 10 月 12 日消息，OpenAI 的 Thibault Sottiaux（Tibo）今日宣布，已将 Codex 和 Work 环境下 GPT-6.1 Sol 的默认上下文长度提升至 500k，相比此前的 272k 增加了约 80%。 Tibo 表示，尽管 OpenAI 未来还会继续提高上限，但这一调整已能显著降低上下文压缩的触发频率，并能更从容地处理那些需要长期保留大量上下文与复杂细节的任务。 该数值经过充分测试，对绝大多…",
-      "author": "",
-      "source": "IT之家",
-      "sourceId": "ithome",
-      "home": "https://www.ithome.com",
-      "weight": 1.6,
-      "lang": "zh",
-      "category": "模型发布",
-      "dealType": null,
-      "publishedAt": "2026-10-12T00:23:08.000Z",
-      "publishedTs": 1791764588000,
-      "day": "2026-10-12",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 16
-    },
-    {
-      "id": "0ir16hf",
-      "title": "小鹏智驾出海欧洲：两周微调适配一个国家，计划 2027 年落地 NGP",
-      "url": "https://www.ithome.com/1/011/732.htm",
-      "summary": "IT之家 10 月 12 日消息，据彭博社报道，在巴黎车展前夕，小鹏汽车通用智能中心负责人刘先明接受采访时透露，该公司成功在约两周时间内，将智驾系统从一个欧洲国家微调适配到另一个欧洲国家。 刘先明指出，这一适配过程所需的数据量，仅为训练底层人工智能基础模型所需数据的万分之一。 我们只需利用非常少量的本地数据，就能完成模型在当地的对齐（即适配当地的道路环境）。 据刘先明介绍，小鹏目前正与欧洲监管机构紧密沟通，并维持在 2027 年于欧洲正…",
-      "author": "",
-      "source": "IT之家",
-      "sourceId": "ithome",
-      "home": "https://www.ithome.com",
-      "weight": 1.6,
-      "lang": "zh",
-      "category": "研究前沿",
-      "dealType": null,
-      "publishedAt": "2026-10-12T00:06:28.000Z",
-      "publishedTs": 1791763588000,
-      "day": "2026-10-12",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 16
-    },
-    {
-      "id": "03m1jes",
-      "title": "第三方开发者让 Googlebook OS 登陆苹果芯片 Mac：支持 GPU 加速和 Chrome 浏览器",
-      "url": "https://www.ithome.com/1/011/728.htm",
-      "summary": "IT之家 10 月 12 日消息，开发者 Skylar Taylor-Barrick 开源了一套名为 gbos-vm 的项目，可在搭载 Apple Silicon 芯片的苹果 Mac 上，通过虚拟机运行谷歌 Googlebook OS。 该项目已在 GitHub 上公开，使用 QEMU 加载谷歌为戴尔 Googlebook 提供的官方恢复镜像，并对系统进行修改，使其适配虚拟硬件。开发者强调，该项目并非通用 Android 镜像，也不是将…",
-      "author": "",
-      "source": "IT之家",
-      "sourceId": "ithome",
-      "home": "https://www.ithome.com",
-      "weight": 1.6,
-      "lang": "zh",
-      "category": "行业动态",
-      "dealType": null,
-      "publishedAt": "2026-10-11T23:40:50.000Z",
-      "publishedTs": 1791762050000,
-      "day": "2026-10-12",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 22
-    },
-    {
-      "id": "1ggx5ut",
-      "title": "英国将加强网络防御，AI 国务大臣呼吁人工智能企业加大安全保障力度",
-      "url": "https://www.ithome.com/1/011/727.htm",
-      "summary": "IT之家 10 月 12 日消息，据《卫报》报道，英国将加强其网络防御，同时呼吁顶尖人工智能研发企业在系统安全治理上采取更积极的举措。 英国 AI 国务大臣卡尼什卡 · 纳拉扬（Kanishka Narayan）预计将在西伦敦发表的专题演讲中正式宣布上述政策主张。 纳拉扬将呼吁前沿人工智能研发企业采取更多切实举措保障系统安全。IT之家获悉，纳拉扬表示，英国绝不能完全依赖科技巨头对其模型进行“自我监管”，并强调英国本土必须构建更多自主可控…",
-      "author": "",
-      "source": "IT之家",
-      "sourceId": "ithome",
-      "home": "https://www.ithome.com",
-      "weight": 1.6,
-      "lang": "zh",
-      "category": "行业动态",
-      "dealType": null,
-      "publishedAt": "2026-10-11T23:39:12.000Z",
-      "publishedTs": 1791761952000,
-      "day": "2026-10-12",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 16
-    },
-    {
-      "id": "1x48y64",
-      "title": "Anthropic 放弃后，消息称亚马逊洽谈收购初创公司 Decart、看中 AI 芯片切换软件",
-      "url": "https://www.ithome.com/1/011/720.htm",
-      "summary": "IT之家 10 月 12 日消息，据华尔街日报消息，据知情人士透露，亚马逊正就收购人工智能初创公司 Decart 展开谈判，该笔交易的潜在估值约为 70 亿美元（IT之家注：现汇率约合 469.48 亿元人民币）。 总部位于旧金山的 Decart 专注于研发跨芯片适配软件，能够帮助开发者在不同 AI 芯片之间无缝切换。随着各大科技巨头纷纷竞逐算力资源，这一底层软件能力正变得愈发关键。 知情人士指出，若谈判进展顺利且未出现新的竞购方，该交…",
-      "author": "",
-      "source": "IT之家",
-      "sourceId": "ithome",
-      "home": "https://www.ithome.com",
-      "weight": 1.6,
-      "lang": "zh",
-      "category": "行业动态",
-      "dealType": null,
-      "publishedAt": "2026-10-11T23:01:49.000Z",
-      "publishedTs": 1791759709000,
-      "day": "2026-10-12",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 22
-    },
-    {
-      "id": "1i99sk2",
-      "title": "Scale AI 创始人汪滔谈创业管理：从亲自决定细节到学会放手，在 Meta 的任务是招揽人才",
-      "url": "https://www.ithome.com/1/011/717.htm",
-      "summary": "IT之家 10 月 12 日消息，Scale AI 创始人、现任 Meta 首席 AI 官汪滔（Alexandr Wang）当地时间 10 月 11 日在做客 David Senra 播客节目时谈到了对首次创业者的建议：创办第一家公司时，创始人应亲自承担各项工作，深入掌握每个细节，之后再逐步学会放权。 他认为，创始人需要对业务的每个细节形成明确判断，并亲自把控执行过程。Scale AI 的发展便采用了这种方式，创始人对各项工作的直接控制…",
-      "author": "",
-      "source": "IT之家",
-      "sourceId": "ithome",
-      "home": "https://www.ithome.com",
-      "weight": 1.6,
-      "lang": "zh",
-      "category": "观点方法",
-      "dealType": null,
-      "publishedAt": "2026-10-11T22:47:29.000Z",
-      "publishedTs": 1791758849000,
-      "day": "2026-10-12",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 22
-    },
-    {
       "id": "00c3ur7",
       "title": "Will the HomeView be Apple’s first smart home success?",
       "url": "https://techcrunch.com/2026/10/11/will-the-homeview-be-apples-first-smart-home-success",
@@ -51291,27 +52448,6 @@
       "hot": 18
     },
     {
-      "id": "1h1grj6",
-      "title": "Silicon Valley is falling in line with Trump’s attempt to rename AI",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1009406/silicon-valley-is-falling-in-line-with-trumps-attempt-to-rename-ai",
-      "summary": "When President Donald Trump announced his plans to rebrand artificial intelligence as \"super intelligence,\" you'd be forgiven for being skeptical that it would catch on. While most of the broader population is sticking w…",
-      "author": "Terrence O’Brien",
-      "source": "The Verge AI",
-      "sourceId": "verge-ai",
-      "home": "https://www.theverge.com/ai-artificial-intelligence",
-      "weight": 1.6,
-      "lang": "en",
-      "category": "行业动态",
-      "dealType": null,
-      "publishedAt": "2026-10-11T18:33:56.000Z",
-      "publishedTs": 1791743636000,
-      "day": "2026-10-12",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 16
-    },
-    {
       "id": "0d8i931",
       "title": "Can the AI industry persuade data center opponents by getting rid of NDAs?",
       "url": "https://techcrunch.com/2026/10/11/can-the-ai-industry-persuade-data-center-opponents-by-getting-rid-of-ndas",
@@ -51333,27 +52469,6 @@
       "hot": 18
     },
     {
-      "id": "18e0u9d",
-      "title": "古尔曼：苹果首款智能家庭中枢定名 HomeView，搭载 A18 芯片、四种配色可选",
-      "url": "https://www.ithome.com/1/011/709.htm",
-      "summary": "IT之家 10 月 11 日消息，彭博社记者马克 · 古尔曼今日在新一期《Power On》通讯中透露，苹果首款智能家庭中枢名为“HomeView”，预计将在 10 月 13 日的“欢迎回家”活动正式发布，11 月出货。 据介绍，这款产品的外观设计类似 iMac G4“台灯电脑”，采用悬浮式屏幕，下方配有扬声器底座。该设备将搭载 A18 芯片，官方还将推出壁挂安装版本。 IT之家从原报道获悉，这款新产品将提供深空灰、银色、星光色和粉色四…",
-      "author": "",
-      "source": "IT之家",
-      "sourceId": "ithome",
-      "home": "https://www.ithome.com",
-      "weight": 1.6,
-      "lang": "zh",
-      "category": "行业动态",
-      "dealType": null,
-      "publishedAt": "2026-10-11T14:36:10.000Z",
-      "publishedTs": 1791729370000,
-      "day": "2026-10-11",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 22
-    },
-    {
       "id": "1oj8zkd",
       "title": "These execs think voice AI hasn’t reached its ChatGPT moment yet",
       "url": "https://techcrunch.com/2026/10/11/these-execs-think-voice-ai-hasnt-reached-its-chatgpt-moment-yet",
@@ -51373,132 +52488,6 @@
       "bulk": false,
       "alsoIn": [],
       "hot": 18
-    },
-    {
-      "id": "0ahxt1n",
-      "title": "奇瑞捷途全新旅行者 7 预告搭载骁龙 8255 座舱芯片，10 月 14 日上市",
-      "url": "https://www.ithome.com/1/011/691.htm",
-      "summary": "IT之家 10 月 11 日消息，奇瑞捷途全新旅行者 7 将于 10 月 14 日上市，官方预告智能科技再升级。 新车搭载 TOUROS 3.3 AI 智能座舱、骁龙 8255 高阶座舱芯片，搭配 24GB 运存 +256GB 超大存储，内置讯飞星火智能 AI 大模型，配备 15.6 英寸 2.5K 中控巨幕。 IT之家注意到，该车已于 9 月 23 日开启预售，共提供 7 款车型，预售价 14.99-17.99 万元。动力方面，该车提…",
-      "author": "",
-      "source": "IT之家",
-      "sourceId": "ithome",
-      "home": "https://www.ithome.com",
-      "weight": 1.6,
-      "lang": "zh",
-      "category": "行业动态",
-      "dealType": null,
-      "publishedAt": "2026-10-11T12:28:49.000Z",
-      "publishedTs": 1791721729000,
-      "day": "2026-10-11",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 16
-    },
-    {
-      "id": "0lnjyr1",
-      "title": "消息称三星 Galaxy S27 Ultra 手机可能不会采用 Exynos 2700 芯片",
-      "url": "https://www.ithome.com/1/011/679.htm",
-      "summary": "IT之家 10 月 11 日消息，此前曾有传闻称，三星可能会为部分市场的 Galaxy S27 Ultra 机型使用 Exynos 2700 芯片，其余市场采用高通最新骁龙芯片。 消息人士 yeux1122 则在本周四（IT之家注：10 月 8 日）表示，Exynos 2700 目前良率表现优秀，三星 Galaxy S27 系列手机应该能用上。但三星尚未给 Galaxy S27 Ultra 分配 Exynos 2700 芯片，这可能意味…",
-      "author": "",
-      "source": "IT之家",
-      "sourceId": "ithome",
-      "home": "https://www.ithome.com",
-      "weight": 1.6,
-      "lang": "zh",
-      "category": "行业动态",
-      "dealType": null,
-      "publishedAt": "2026-10-11T11:02:38.000Z",
-      "publishedTs": 1791716558000,
-      "day": "2026-10-11",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 16
-    },
-    {
-      "id": "07zfxrl",
-      "title": "Learning to use local AI is exciting, overwhelming, and frustrating",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1008484/learning-local-ai-hermes-qwen-model-mac-studio-testing-diary-progress",
-      "summary": "I'm embarking on a journey I've so far been hesitant to go on: actually using AI on the regular. Giving my most personal data to cloud services has been a major hold up for me, but it's increasingly possible to run power…",
-      "author": "Antonio G. Di Benedetto",
-      "source": "The Verge AI",
-      "sourceId": "verge-ai",
-      "home": "https://www.theverge.com/ai-artificial-intelligence",
-      "weight": 1.6,
-      "lang": "en",
-      "category": "行业动态",
-      "dealType": null,
-      "publishedAt": "2026-10-11T11:00:00.000Z",
-      "publishedTs": 1791716400000,
-      "day": "2026-10-11",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 16
-    },
-    {
-      "id": "1jo3wjy",
-      "title": "Cheaper AI tokens are driving more demand, and that's Jensen Huang's best-case scenario",
-      "url": "https://the-decoder.com/cheaper-ai-tokens-are-driving-more-demand-and-thats-jensen-huangs-best-case-scenario",
-      "summary": "Data from a16z shows a Jevons paradox in the AI market: token prices keep falling, but H100 GPU rental prices hold steady or climb. Cheaper AI drives demand faster than costs drop. If that demand flattens, the chain from…",
-      "author": "Matthias Bastian",
-      "source": "The Decoder",
-      "sourceId": "the-decoder",
-      "home": "https://the-decoder.com",
-      "weight": 1.6,
-      "lang": "en",
-      "category": "行业动态",
-      "dealType": null,
-      "publishedAt": "2026-10-11T09:49:59.000Z",
-      "publishedTs": 1791712199000,
-      "day": "2026-10-11",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 16
-    },
-    {
-      "id": "14y9a92",
-      "title": "ArXiv caps submissions at two per month as AI paper flood overwhelms the preprint server",
-      "url": "https://the-decoder.com/arxiv-caps-submissions-at-two-per-month-as-ai-paper-flood-overwhelms-the-preprint-server",
-      "summary": "Starting October 2026, arXiv will cap submissions at two per person per month. Monthly submissions have doubled in two years, and in the cs.AI category they've grown more than sixfold. According to arXiv, a small fractio…",
-      "author": "Jonathan Kemper",
-      "source": "The Decoder",
-      "sourceId": "the-decoder",
-      "home": "https://the-decoder.com",
-      "weight": 1.6,
-      "lang": "en",
-      "category": "研究前沿",
-      "dealType": null,
-      "publishedAt": "2026-10-11T09:17:32.000Z",
-      "publishedTs": 1791710252000,
-      "day": "2026-10-11",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 16
-    },
-    {
-      "id": "0f9euh6",
-      "title": "Microsoft's Nadella bows to Trump's language diktat on \"Super Intelligence\" and uses it to attack OpenAI and Anthropic",
-      "url": "https://the-decoder.com/microsofts-nadella-bows-to-trumps-language-diktat-on-super-intelligence-and-uses-it-to-attack-openai-and-anthropic",
-      "summary": "Microsoft CEO Satya Nadella now calls artificial intelligence \"super intelligence\" instead of artificial intelligence, falling in line with Trump's preferred language. In his latest blog post, he frames AI models as insi…",
-      "author": "Matthias Bastian",
-      "source": "The Decoder",
-      "sourceId": "the-decoder",
-      "home": "https://the-decoder.com",
-      "weight": 1.6,
-      "lang": "en",
-      "category": "行业动态",
-      "dealType": null,
-      "publishedAt": "2026-10-11T09:08:35.000Z",
-      "publishedTs": 1791709715000,
-      "day": "2026-10-11",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 16
     },
     {
       "id": "1vkmww8",
@@ -51562,27 +52551,6 @@
       "bulk": false,
       "alsoIn": [],
       "hot": 22
-    },
-    {
-      "id": "1xqwiq2",
-      "title": "Odyssey-3 is a new generative world model that you can try for free",
-      "url": "https://the-decoder.com/odyssey-3-is-a-new-generative-world-model-that-you-can-try-for-free",
-      "summary": "Odyssey is making its world model Odyssey-3 available as a public research preview. The 14-billion-parameter model generates interactive environments from text prompts in real time and can reportedly control robots, dron…",
-      "author": "Tomislav Bezmalinović",
-      "source": "The Decoder",
-      "sourceId": "the-decoder",
-      "home": "https://the-decoder.com",
-      "weight": 1.6,
-      "lang": "en",
-      "category": "模型发布",
-      "dealType": null,
-      "publishedAt": "2026-10-11T07:48:01.000Z",
-      "publishedTs": 1791704881000,
-      "day": "2026-10-11",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 16
     },
     {
       "id": "0fodlt7",
@@ -51669,132 +52637,6 @@
       "hot": 22
     },
     {
-      "id": "0uzdu40",
-      "title": "报告称 Claude 半年封杀 1140 万个账号，申诉后仅 4.2 万翻案",
-      "url": "https://www.ithome.com/1/011/553.htm",
-      "summary": "太离谱了家人们！最近 Claude 疯狂大面积封号，AI 圈的开发者们直接集体破防，直呼「天塌了」。 在整个假期期间，「Claude 封号」相关讨论甚至飙破了百万级。 就在此时，一份 Anthropic 7 月份布的报告又被扒了出来，在全网封转。里面的数字，堪称触目惊心。 2026 年上半年，短短半年的时间，Claude 累计封禁了 1140 万个账号。 而提交的 39.8 万次申诉中，最终成功的，只有 4.2 万次。 换算下来，每 1…",
-      "author": "",
-      "source": "IT之家",
-      "sourceId": "ithome",
-      "home": "https://www.ithome.com",
-      "weight": 1.6,
-      "lang": "zh",
-      "category": "模型发布",
-      "dealType": null,
-      "publishedAt": "2026-10-11T00:27:39.000Z",
-      "publishedTs": 1791678459000,
-      "day": "2026-10-11",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 16
-    },
-    {
-      "id": "1shvb0v",
-      "title": "IT早报 1011：苹果首款智能家居中枢渲染图曝光；四部门拟禁汽车全隐藏式门把手；出版社回应网文实体书现 AI 回复内容；懂车帝称网传前总编辑身份为假...",
-      "url": "https://www.ithome.com/1/011/549.htm",
-      "summary": "“IT早报”时间，大家好，现在是 2026 年 10 月 11 日星期日，今天的重要科技资讯有： 1. 苹果首款智能家居中枢渲染图曝光：6 英寸方屏、8GB 内存，可桌放 / 壁挂 YouTube 频道 fpt. 主播乔恩 · 普罗瑟（Jon Prosser）10 月 9 日发布视频，分享了一组 3D 渲染图，展示了苹果首款智能家居中枢产品（上市后可能名为 HomeView 或者 HomePad），该产品有望 10 月 13 日发布。>…",
-      "author": "",
-      "source": "IT之家",
-      "sourceId": "ithome",
-      "home": "https://www.ithome.com",
-      "weight": 1.6,
-      "lang": "zh",
-      "category": "观点方法",
-      "dealType": null,
-      "publishedAt": "2026-10-10T23:50:44.000Z",
-      "publishedTs": 1791676244000,
-      "day": "2026-10-11",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 22
-    },
-    {
-      "id": "1n04mnc",
-      "title": "消息称字节、腾讯加速个人 AI 智能体研发，追赶 Meta Muse",
-      "url": "https://www.ithome.com/1/011/548.htm",
-      "summary": "IT之家 10 月 11 日消息，据财新报道，Meta 发布个人智能体 Muse 后，引起国内科技巨头迅速跟进。 10 月 9 日，字节内部人士透露，字节跳动已在国庆假期前加紧推动个人智能体产品研发。该项目起始于字节跳动在今年 4 月开启的新项目，代号“Spell”，是在 2025 年豆包手机助手个人智能体（personal agent）方向上的延续，当时，豆包内部已经就个人智能体方向的产品启动内测。 Muse 等个人智能体在海外火爆后…",
-      "author": "",
-      "source": "IT之家",
-      "sourceId": "ithome",
-      "home": "https://www.ithome.com",
-      "weight": 1.6,
-      "lang": "zh",
-      "category": "产品动态",
-      "dealType": null,
-      "publishedAt": "2026-10-10T23:45:11.000Z",
-      "publishedTs": 1791675911000,
-      "day": "2026-10-11",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 22
-    },
-    {
-      "id": "0wxmj43",
-      "title": "微软 CEO 纳德拉：开发者应当默认假设 AI 模型失控，思考如何强制中断任务",
-      "url": "https://www.ithome.com/1/011/545.htm",
-      "summary": "IT之家 10 月 11 日消息，微软 CEO 萨蒂亚 · 纳德拉认为，在 AI 日益蓬勃发展的时代，使用超级智能自我监控等简单策略是不够的。 纳德拉在北京时间 10 月 10 日晚的一篇长文中指出，传统软件系统在过去几十年中被广泛部署，人类已经拥有追踪特定代码路径行为的工具和能力。然而，AI 模型比传统软件更强大，但却是一个黑盒子，我们部署了这些复杂的智能体系统和模型，访问我们最敏感的数据，并赋予它们代表我们执行关键任务的能力。 纳德…",
-      "author": "",
-      "source": "IT之家",
-      "sourceId": "ithome",
-      "home": "https://www.ithome.com",
-      "weight": 1.6,
-      "lang": "zh",
-      "category": "观点方法",
-      "dealType": null,
-      "publishedAt": "2026-10-10T23:19:46.000Z",
-      "publishedTs": 1791674386000,
-      "day": "2026-10-11",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 16
-    },
-    {
-      "id": "1vse3ie",
-      "title": "亚马逊云科技向姚明发起的姚基金捐赠 100 万美元现金及云 + AI 资源，目标培养 AI + 体育复合型人才",
-      "url": "https://www.ithome.com/1/011/542.htm",
-      "summary": "IT之家 10 月 11 日消息，亚马逊云科技 10 月 10 日宣布与北京姚基金公益基金会（以下简称“姚基金”）共同推出“云上篮图”体育 × 科技育人计划。 该公益计划依托姚基金覆盖全国的学校网络、体育人才培养经验，同时借助亚马逊云科技 Breaking Barriers 全球创新活动，以及云与 AI 技术、由资深解决方案架构师组成的导师团队和培训与认证学习资源，旨在培养更多兼备 AI 素养与体育专业能力的复合型人才，赋能中国体育行业…",
-      "author": "",
-      "source": "IT之家",
-      "sourceId": "ithome",
-      "home": "https://www.ithome.com",
-      "weight": 1.6,
-      "lang": "zh",
-      "category": "产品动态",
-      "dealType": null,
-      "publishedAt": "2026-10-10T22:53:49.000Z",
-      "publishedTs": 1791672829000,
-      "day": "2026-10-11",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 16
-    },
-    {
-      "id": "0emlzuv",
-      "title": "消息称英伟达洽谈收购 / 追加投资 Reflection AI，加码开源模型",
-      "url": "https://www.ithome.com/1/011/541.htm",
-      "summary": "IT之家 10 月 11 日消息，据金融时报消息，知情人士透露，英伟达正就收购美国初创公司 Reflection AI 或向其追加投资展开深入谈判。 Reflection AI 专注于开发开放权重模型，于当地时间 10 月 5 日发布旗下首款开放权重 AI 模型 Beam。 知情人士补充称，目前的谈判尚处初期阶段，潜在交易可能采取多种形式 —— 包括所谓“人才兼并”模式。在这一架构下，英伟达将吸纳其核心团队并获取技术授权，从而绕开全面并…",
-      "author": "",
-      "source": "IT之家",
-      "sourceId": "ithome",
-      "home": "https://www.ithome.com",
-      "weight": 1.6,
-      "lang": "zh",
-      "category": "模型发布",
-      "dealType": null,
-      "publishedAt": "2026-10-10T22:46:30.000Z",
-      "publishedTs": 1791672390000,
-      "day": "2026-10-11",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 41
-    },
-    {
       "id": "0a42mvk",
       "title": "Microsoft’s Satya Nadella says AI models need an ‘emergency brake’",
       "url": "https://techcrunch.com/2026/10/10/microsofts-satya-nadella-says-ai-models-need-an-emergency-brake",
@@ -51837,48 +52679,6 @@
       "hot": 18
     },
     {
-      "id": "1djmmrc",
-      "title": "DistroKid has been quietly taking down songs in response to UMG lawsuit",
-      "url": "https://www.theverge.com/entertainment/1009309/distrokid-take-down-songs-umg-lawsuit",
-      "summary": "Artists are taking to social media to complain that DistroKid has unceremoniously removed their work without notice. Now DistroKid has confirmed to The Verge that the takedowns are a direct response to claims made by UMG…",
-      "author": "Terrence O’Brien",
-      "source": "The Verge AI",
-      "sourceId": "verge-ai",
-      "home": "https://www.theverge.com/ai-artificial-intelligence",
-      "weight": 1.6,
-      "lang": "en",
-      "category": "行业动态",
-      "dealType": null,
-      "publishedAt": "2026-10-10T18:52:07.000Z",
-      "publishedTs": 1791658327000,
-      "day": "2026-10-11",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 16
-    },
-    {
-      "id": "01ftcbf",
-      "title": "OpenAI says a misaligned model deliberately destroyed its own environment hoping for a fresh start with better data",
-      "url": "https://the-decoder.com/openai-says-a-misaligned-model-deliberately-destroyed-its-own-environment-hoping-for-a-fresh-start-with-better-data",
-      "summary": "OpenAI has documented new cases of misaligned model behavior. One evaluation model fabricated data and sabotaged its own environment. Other models deliberately bypassed network restrictions by routing requests through an…",
-      "author": "Matthias Bastian",
-      "source": "The Decoder",
-      "sourceId": "the-decoder",
-      "home": "https://the-decoder.com",
-      "weight": 1.6,
-      "lang": "en",
-      "category": "行业动态",
-      "dealType": null,
-      "publishedAt": "2026-10-10T15:15:40.000Z",
-      "publishedTs": 1791645340000,
-      "day": "2026-10-10",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 16
-    },
-    {
       "id": "19i4z3s",
       "title": "3 days to TechCrunch Disrupt 2026: Meet the startups before they hit mainstream",
       "url": "https://techcrunch.com/2026/10/10/3-days-to-disrupt-2026-meet-the-startups-before-they-hit-mainstream",
@@ -51898,195 +52698,6 @@
       "bulk": false,
       "alsoIn": [],
       "hot": 18
-    },
-    {
-      "id": "1x7samn",
-      "title": "腾讯元器将于 11 月 9 日停止服务，所创建智能体将不再可用",
-      "url": "https://www.ithome.com/1/011/530.htm",
-      "summary": "IT之家 10 月 10 日消息，腾讯元器 10 月 8 日发布《关于元器平台停止服务通知》，因业务调整，元器平台将于 2026 年 11 月 9 日停止服务。在正式停止服务前，用户仍可正常登录并使用现有智能体；停服生效后，所创建智能体将不再可用，建议用户尽快完成数据导出与业务迁移。 从 2026 年 10 月 29 日起，停止创建新的智能体、API key 分发功能。现有存量智能体在正式停止服务前，仍可继续正常使用。 正式停止服务时间…",
-      "author": "",
-      "source": "IT之家",
-      "sourceId": "ithome",
-      "home": "https://www.ithome.com",
-      "weight": 1.6,
-      "lang": "zh",
-      "category": "产品动态",
-      "dealType": null,
-      "publishedAt": "2026-10-10T14:42:35.000Z",
-      "publishedTs": 1791643355000,
-      "day": "2026-10-10",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 22
-    },
-    {
-      "id": "0ly4fwg",
-      "title": "Anthropic is cutting off its internal evaluations from the internet",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1009286/anthropic-is-cutting-off-its-internal-evaluations-from-the-internet",
-      "summary": "After a recent spate of high-profile incidents in which AI agents escaped containment, Anthropic is cutting off internet access for all internal evaluations. In a report Friday, the company detailed \"unintended model act…",
-      "author": "Terrence O’Brien",
-      "source": "The Verge AI",
-      "sourceId": "verge-ai",
-      "home": "https://www.theverge.com/ai-artificial-intelligence",
-      "weight": 1.6,
-      "lang": "en",
-      "category": "行业动态",
-      "dealType": null,
-      "publishedAt": "2026-10-10T14:41:16.000Z",
-      "publishedTs": 1791643276000,
-      "day": "2026-10-10",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 16
-    },
-    {
-      "id": "04ciw10",
-      "title": "消息称英伟达计划以 24GB 显存 GeForce RTX 5080 显卡取代现有 16GB 版本",
-      "url": "https://www.ithome.com/1/011/513.htm",
-      "summary": "IT之家 10 月 10 日消息，综合台媒 BenchLife.info 报道、消息人士 @hongxing2020 分享的内容，NVIDIA（英伟达）在停产 GeForce RTX 5090 / 5090 D v2 的同时，也将调整 GeForce RTX 5080 显卡。 NVIDIA 计划停产配备 16GB 显存的现有 GeForce RTX 5080，转而推出 24GB 显存版本。新型号预计将在 2027 年第 1 季度面世，A…",
-      "author": "",
-      "source": "IT之家",
-      "sourceId": "ithome",
-      "home": "https://www.ithome.com",
-      "weight": 1.6,
-      "lang": "zh",
-      "category": "产品动态",
-      "dealType": null,
-      "publishedAt": "2026-10-10T13:41:24.000Z",
-      "publishedTs": 1791639684000,
-      "day": "2026-10-10",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 16
-    },
-    {
-      "id": "18ax7pv",
-      "title": "吉利首款 AI 全地形硬核 SUV：银河战舰 700 全球上市，限时焕新价 16.98 万元起",
-      "url": "https://www.ithome.com/1/011/509.htm",
-      "summary": "IT之家 10 月 10 日消息，吉利银河官方今天宣布，银河战舰 700 汽车全球上市。新车是吉利首款 AI 全地形硬核 SUV，基于 GTA 原生新能源越野架构打造，限时焕新价 16.98 万元起。 305km 1.5T 两驱探索版：上市指导价 18.98 万元、先享指导价 17.98 万元、限时焕新价 16.98 万元； 305km 1.5T 两驱探索+ 版：上市指导价 19.98 万元、先享指导价 18.98 万元、限时焕新价 1…",
-      "author": "",
-      "source": "IT之家",
-      "sourceId": "ithome",
-      "home": "https://www.ithome.com",
-      "weight": 1.6,
-      "lang": "zh",
-      "category": "行业动态",
-      "dealType": null,
-      "publishedAt": "2026-10-10T13:04:40.000Z",
-      "publishedTs": 1791637480000,
-      "day": "2026-10-10",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 16
-    },
-    {
-      "id": "19szr6q",
-      "title": "\"How much beauty have we lost?\" Mathematicians react with shock and disgust as OpenAI bulldozes their field",
-      "url": "https://the-decoder.com/how-much-beauty-have-we-lost-mathematicians-react-with-shock-and-disgust-as-openai-bulldozes-their-field",
-      "summary": "OpenAI published more than 700 AI-generated manuscripts claiming solutions to open math problems. A math blog then collected over 100 responses from researchers, ranging from fascination with new ideas to existential fea…",
-      "author": "Matthias Bastian",
-      "source": "The Decoder",
-      "sourceId": "the-decoder",
-      "home": "https://the-decoder.com",
-      "weight": 1.6,
-      "lang": "en",
-      "category": "行业动态",
-      "dealType": null,
-      "publishedAt": "2026-10-10T13:03:59.000Z",
-      "publishedTs": 1791637439000,
-      "day": "2026-10-10",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 16
-    },
-    {
-      "id": "1ni09zr",
-      "title": "AI agent makers are promising privacy — will they deliver?",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1009051/privacy-ai-agent-promises-openai-meta-muse-dots",
-      "summary": "At this year's OpenAI DevDay, CEO Sam Altman unveiled the company's new AI agent Dots - and told the crowd that the company wants to \"set a new standard for privacy in frontier AI.\" OpenAI would spend the day taking veil…",
-      "author": "Hayden Field",
-      "source": "The Verge AI",
-      "sourceId": "verge-ai",
-      "home": "https://www.theverge.com/ai-artificial-intelligence",
-      "weight": 1.6,
-      "lang": "en",
-      "category": "产品动态",
-      "dealType": null,
-      "publishedAt": "2026-10-10T13:00:00.000Z",
-      "publishedTs": 1791637200000,
-      "day": "2026-10-10",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 16
-    },
-    {
-      "id": "1o9f1ko",
-      "title": "因违反生成式 AI 使用规定：清华大学徐宁博士被撤销尼康 2026 显微视频竞赛冠军资格",
-      "url": "https://www.ithome.com/1/011/504.htm",
-      "summary": "IT之家 10 月 10 日消息，综合 BBC 报道，尼康宣布原本获得 2026 年 Small World in Motion 显微视频竞赛一等奖的作品因“不符合赛事关于生成式 AI 的相关规定”，因此取消其获奖资格。根据更新后的比赛排名，越南参赛者阮南日（Nguyen Nam Nhat）的作品现已升至第一名。 IT之家获悉，原获奖视频由来自中国清华大学的徐宁博士（Dr. Ning Xu）提交，相应视频号称采用超分辨率显微成像技术，展…",
-      "author": "",
-      "source": "IT之家",
-      "sourceId": "ithome",
-      "home": "https://www.ithome.com",
-      "weight": 1.6,
-      "lang": "zh",
-      "category": "产品动态",
-      "dealType": null,
-      "publishedAt": "2026-10-10T12:33:49.000Z",
-      "publishedTs": 1791635629000,
-      "day": "2026-10-10",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 16
-    },
-    {
-      "id": "18u1mc4",
-      "title": "我国食品安全法修订草案公开征求意见，涉及 AI 监管、校园食品安全等",
-      "url": "https://www.ithome.com/1/011/500.htm",
-      "summary": "IT之家 10 月 10 日消息，据央视新闻报道，市场监管总局研究起草了《中华人民共和国食品安全法（修订草案征求意见稿）》，并向社会公开征求意见。 修订的主要内容包括五个方面，IT之家附如下： 一是强化智慧监管。推动“互联网 + 人工智能”监管应用，明确食品生产经营企业应当在食品生产经营关键风险环节安装监控设备，并将实时监控视频信息接入县级以上地方人民政府市场监督管理部门信息系统；赋予监管部门物联网监控、视频巡查等非现场检查权限。 二是…",
-      "author": "",
-      "source": "IT之家",
-      "sourceId": "ithome",
-      "home": "https://www.ithome.com",
-      "weight": 1.6,
-      "lang": "zh",
-      "category": "行业动态",
-      "dealType": null,
-      "publishedAt": "2026-10-10T12:03:26.000Z",
-      "publishedTs": 1791633806000,
-      "day": "2026-10-10",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 16
-    },
-    {
-      "id": "01c94ld",
-      "title": "Few people pay for AI, but those who do spend big",
-      "url": "https://the-decoder.com/few-people-pay-for-ai-but-those-who-do-spend-bigonly-a-few-users-pay-for-ai-but-those-who-do-pay-a-lot",
-      "summary": "Andreessen Horowitz tracks actual US consumer spending for the first time in its latest Top 100 AI list. Nearly half of US consumers use AI, but only 4.5 percent pay for a subscription. The top one percent of payers spen…",
-      "author": "Jonathan Kemper",
-      "source": "The Decoder",
-      "sourceId": "the-decoder",
-      "home": "https://the-decoder.com",
-      "weight": 1.6,
-      "lang": "en",
-      "category": "行业动态",
-      "dealType": null,
-      "publishedAt": "2026-10-10T10:54:56.000Z",
-      "publishedTs": 1791629696000,
-      "day": "2026-10-10",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 16
     },
     {
       "id": "0iuup32",
@@ -52110,27 +52721,6 @@
       "hot": 22
     },
     {
-      "id": "1apfdgo",
-      "title": "Anthropic cuts off Claude's internet access after the model autonomously filed a fake homicide tip with Philadelphia police",
-      "url": "https://the-decoder.com/anthropic-cuts-off-claudes-internet-access-after-the-model-autonomously-filed-a-fake-homicide-tip-with-philadelphia-police",
-      "summary": "Anthropic's Claude independently submitted a fake homicide tip to the Philadelphia police, exploited vulnerabilities on university servers, and bypassed access restrictions. The company has since cut off live internet ac…",
-      "author": "Manuel Uth",
-      "source": "The Decoder",
-      "sourceId": "the-decoder",
-      "home": "https://the-decoder.com",
-      "weight": 1.6,
-      "lang": "en",
-      "category": "模型发布",
-      "dealType": null,
-      "publishedAt": "2026-10-10T10:16:26.000Z",
-      "publishedTs": 1791627386000,
-      "day": "2026-10-10",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 16
-    },
-    {
       "id": "1r30zcn",
       "title": "超清双2亿，掌中电影机，荣耀Magic9 系列正式发布，售价4499元起",
       "url": "https://www.qbitai.com/2026/10/502496.html",
@@ -52150,27 +52740,6 @@
       "bulk": false,
       "alsoIn": [],
       "hot": 28
-    },
-    {
-      "id": "13oex97",
-      "title": "Google's Gemini 4 \"Carbon\" model reportedly feels like Anthropic's Opus 5.5 coding performance",
-      "url": "https://the-decoder.com/googles-gemini-4-carbon-model-is-reportedly-matching-anthropics-opus-5-5-coding-performance",
-      "summary": "Gemini 4 Argon isn't even widely available yet, and rumors about a more powerful version codenamed Carbon are already making the rounds. According to Business Insider, one employee compared Carbon's coding abilities to A…",
-      "author": "Matthias Bastian",
-      "source": "The Decoder",
-      "sourceId": "the-decoder",
-      "home": "https://the-decoder.com",
-      "weight": 1.6,
-      "lang": "en",
-      "category": "模型发布",
-      "dealType": null,
-      "publishedAt": "2026-10-10T08:59:49.000Z",
-      "publishedTs": 1791622789000,
-      "day": "2026-10-10",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 16
     },
     {
       "id": "0wdt1y3",
@@ -52215,153 +52784,6 @@
       "hot": 22
     },
     {
-      "id": "1qvrceu",
-      "title": "IMF：如应用得当，人工智能可以使全球经济年增速提高 0. 5 个百分点",
-      "url": "https://www.ithome.com/1/011/407.htm",
-      "summary": "IT之家 10 月 10 日消息，国际货币基金组织 (IMF) 总裁克里斯塔利娜 · 格奥尔基耶娃在本月 7 日的一篇题为《在持续变化世界经济的纵横激流中稳舵前行》的演讲稿强调了人工智能的对全球经济的影响。 格奥尔基耶娃表示，人工智能带来的正向需求冲击正与地缘政治引发的能源供给负面冲击一道拉扯全球经济，而这两股力量的总体影响在全球范围内分布极不均衡。 全球用于人工智能的投资占 GDP 的比重将达到并很可能超过当年建设铁路、电网和通信网络…",
-      "author": "",
-      "source": "IT之家",
-      "sourceId": "ithome",
-      "home": "https://www.ithome.com",
-      "weight": 1.6,
-      "lang": "zh",
-      "category": "产品动态",
-      "dealType": null,
-      "publishedAt": "2026-10-10T08:03:59.000Z",
-      "publishedTs": 1791619439000,
-      "day": "2026-10-10",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 16
-    },
-    {
-      "id": "1hryjmu",
-      "title": "传英伟达将不再向 GeForce 游戏显卡分配 GB202 GPU",
-      "url": "https://www.ithome.com/1/011/397.htm",
-      "summary": "IT之家 10 月 10 日消息，消息人士 MEGAsizeGPU (@Zed__Wang) 今日爆料称，NVIDIA（英伟达）将不再向 GeForce RTX 50 系列游戏显卡分配 GB202，该 GPU 的供应将由 RTX PRO Blackwell 专业显卡独占。 这意味着 GeForce RTX 5090 / 5090 D v2 两款旗舰产品都将停产，玩家可入手的最高性能游戏显卡将降级至 GeForce RTX 5080。 I…",
-      "author": "",
-      "source": "IT之家",
-      "sourceId": "ithome",
-      "home": "https://www.ithome.com",
-      "weight": 1.6,
-      "lang": "zh",
-      "category": "行业动态",
-      "dealType": null,
-      "publishedAt": "2026-10-10T07:43:02.000Z",
-      "publishedTs": 1791618182000,
-      "day": "2026-10-10",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 16
-    },
-    {
-      "id": "1stk06f",
-      "title": "给 AI 植入广告涉“虚假宣传”，深圳一家 GEO 服务商被市场监管局处以 5 万元罚款",
-      "url": "https://www.ithome.com/1/011/394.htm",
-      "summary": "IT之家 10 月 10 日消息，据深圳市市场监管局，近期一家小型服务商因“套取 AI 收录标准、批量编造虚假排名”，被市场监管局处以 5 万元罚款。 GEO（AI 模型输出结果优化）自 DeepSeek 爆红后兴起，与传统 SEO（搜索引擎优化）争夺网页排名不同，GEO 瞄准的是大模型的回复内容。服务商通过研究 AI 的回答偏好，生产、投放更容易被 AI 引用的内容，帮助商家在 AI 问答中获得曝光，也就是“AI 广告”。 本次深圳市…",
-      "author": "",
-      "source": "IT之家",
-      "sourceId": "ithome",
-      "home": "https://www.ithome.com",
-      "weight": 1.6,
-      "lang": "zh",
-      "category": "行业动态",
-      "dealType": null,
-      "publishedAt": "2026-10-10T07:35:08.000Z",
-      "publishedTs": 1791617708000,
-      "day": "2026-10-10",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 16
-    },
-    {
-      "id": "0zr89m9",
-      "title": "Meta 与多家伙伴合作推出 PAP 协议：规范个人智能体与企业服务交互方式",
-      "url": "https://www.ithome.com/1/011/392.htm",
-      "summary": "IT之家 10 月 10 日消息，人工智能企业 Sierra 当地时间宣布，其与 Meta 以及行业合作伙伴 Shopify、Stripe、沃尔玛、Genesys、Instinct、Rocket 共同推出个人智能体协议 (Personal Agent Protocol, PAP)。 PAP 旨在规范个人智能体与企业服务的交互方式，为智能体创造更为高效安全的互动环境。在这一过程中，消费者能确保其利益得到维护，品牌方获得可见性与控制权。 该…",
-      "author": "",
-      "source": "IT之家",
-      "sourceId": "ithome",
-      "home": "https://www.ithome.com",
-      "weight": 1.6,
-      "lang": "zh",
-      "category": "产品动态",
-      "dealType": null,
-      "publishedAt": "2026-10-10T07:30:52.000Z",
-      "publishedTs": 1791617452000,
-      "day": "2026-10-10",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 16
-    },
-    {
-      "id": "1xsvajg",
-      "title": "一加 Ace 7 手机跑分曝光：高通第五代骁龙 8 至尊版芯片，16GB 内存",
-      "url": "https://www.ithome.com/1/011/391.htm",
-      "summary": "IT之家 10 月 10 日消息，型号为 PMS110 的一加（OnePlus）手机昨日（10 月 9 日）现身 GeekBench 跑分库，目前共有 3 条 GeekBench 6 记录，跑分最高的一条单核成绩为 3,627 分，多核成绩为 11,016 分，该机预估关联一加 Ace 7 手机。 根据跑分页面显示，PMS110 手机搭载高通“SM8850”芯片组，包含六个主频为 3.63GHz 的核心和两个主频为 4.61GHz 的核…",
-      "author": "",
-      "source": "IT之家",
-      "sourceId": "ithome",
-      "home": "https://www.ithome.com",
-      "weight": 1.6,
-      "lang": "zh",
-      "category": "行业动态",
-      "dealType": null,
-      "publishedAt": "2026-10-10T07:30:06.000Z",
-      "publishedTs": 1791617406000,
-      "day": "2026-10-10",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 16
-    },
-    {
-      "id": "0mf96vy",
-      "title": "中国企业首次：小鹏集团当选联合国自动驾驶工作组秘书长",
-      "url": "https://www.ithome.com/1/011/388.htm",
-      "summary": "IT之家 10 月 10 日消息，小鹏汽车官微今天（10 日）下午宣布，近日，小鹏集团当选联合国欧洲经济委员会（UNECE）GRVA / WP.29 框架下，新设“自动驾驶场景相关信息交换工作组”（TF-ESRI）秘书长。 小鹏方面表示，这是中国企业首次在联合国自动驾驶法规核心框架下担任秘书长，代表了国际自动驾驶技术法规协调体系对小鹏智能辅助驾驶能力及长期参与法规标准工作的高度认可。后续，小鹏将代表中国汽车产业深度参与全球协作，为全球自…",
-      "author": "",
-      "source": "IT之家",
-      "sourceId": "ithome",
-      "home": "https://www.ithome.com",
-      "weight": 1.6,
-      "lang": "zh",
-      "category": "开源工具",
-      "dealType": null,
-      "publishedAt": "2026-10-10T07:22:53.000Z",
-      "publishedTs": 1791616973000,
-      "day": "2026-10-10",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 22
-    },
-    {
-      "id": "04yhikv",
-      "title": "北京：增加人工智能手机和电脑、智能穿戴、智能机器人等新一代智能终端产品有效供给",
-      "url": "https://www.ithome.com/1/011/376.htm",
-      "summary": "IT之家 10 月 10 日消息，北京市人民政府现已印发《北京市“十五五”时期深化国际消费中心城市建设规划》。 IT之家注意到，文件中提到，有关部门将深入推进“人工智能 + 消费”。扩大数字产品消费，增加人工智能手机和电脑、智能穿戴、智能机器人等新一代智能终端产品有效供给。 同时，有关部门将鼓励行业创新数字内容消费，鼓励利用人工智能技术辅助开展戏剧、音乐、舞蹈、美术、沉浸式体验等创作，推出更多优质数字文博产品，加大广播电视和网络视听超高…",
-      "author": "",
-      "source": "IT之家",
-      "sourceId": "ithome",
-      "home": "https://www.ithome.com",
-      "weight": 1.6,
-      "lang": "zh",
-      "category": "产品动态",
-      "dealType": null,
-      "publishedAt": "2026-10-10T07:08:10.000Z",
-      "publishedTs": 1791616090000,
-      "day": "2026-10-10",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 16
-    },
-    {
       "id": "04xfbev",
       "title": "特斯拉FSD，在欧洲被打回原形",
       "url": "https://www.qbitai.com/2026/10/502467.html",
@@ -52377,426 +52799,6 @@
       "publishedAt": "2026-10-10T06:59:02.000Z",
       "publishedTs": 1791615542000,
       "day": "2026-10-10",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 22
-    },
-    {
-      "id": "1g2ru5g",
-      "title": "HMD Pulse 2T Pro 手机曝光：联发科 Helio G100 芯片，背屏可显示未读消息",
-      "url": "https://www.ithome.com/1/011/355.htm",
-      "summary": "IT之家 10 月 10 日消息，消息源 @smashx_60 昨日（10 月 9 日）在 X 平台发布推文，分享了一组渲染图，展示了 HMD Pulse 2T Pro 手机，是时隔约 2 年后 Pulse 系列迎来的新机。 规格方面，手机正面采用 6.68 英寸 OLED 屏，分辨率为 FHD+，刷新率为 120Hz。处理器据称为联发科 Helio G100，内置 4G 调制解调器。 存储配置据称只有 1 种：8GB 内存搭配 256…",
-      "author": "",
-      "source": "IT之家",
-      "sourceId": "ithome",
-      "home": "https://www.ithome.com",
-      "weight": 1.6,
-      "lang": "zh",
-      "category": "行业动态",
-      "dealType": null,
-      "publishedAt": "2026-10-10T06:48:58.000Z",
-      "publishedTs": 1791614938000,
-      "day": "2026-10-10",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 29
-    },
-    {
-      "id": "0lef9s7",
-      "title": "Cloudflare 推出开放权重决策 AI 模型 Clef-omni，新增支持音频 / 视频输入",
-      "url": "https://www.ithome.com/1/011/347.htm",
-      "summary": "IT之家 10 月 10 日消息，Cloudflare 昨日（10 月 9 日）发布公告，宣布推出开放权重决策模型 Clef-omni，支持单次 API 调用处理文本、图像、音频和视频等。 定位方面，该模型在此前 Clef 系列模型基础上，扩展支持多模态输入，模型权重已在 Hugging Face 开放。 多模态支持方面，此前的 Clef 支持文本、图像及从视频中抽取的连续画面（把视频按时间抽取成一张张静态图像，再把这些图像按顺序作为输…",
-      "author": "",
-      "source": "IT之家",
-      "sourceId": "ithome",
-      "home": "https://www.ithome.com",
-      "weight": 1.6,
-      "lang": "zh",
-      "category": "产品动态",
-      "dealType": null,
-      "publishedAt": "2026-10-10T06:26:25.000Z",
-      "publishedTs": 1791613585000,
-      "day": "2026-10-10",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 22
-    },
-    {
-      "id": "09qck85",
-      "title": "知名分析师丹 · 艾夫斯力挺特斯拉：布局物理 AI 最直接的投资标的",
-      "url": "https://www.ithome.com/1/011/345.htm",
-      "summary": "IT之家 10 月 10 日消息，综合雅虎财经及 Benzinga 报道，特斯拉的估值能否经受住下一轮考验，关键或许不再是能卖出多少辆汽车，而是已经售出的汽车还能带来多少收入。 Yorkville Ives 分析师丹 · 艾夫斯认为，自动驾驶和机器人业务有望改变特斯拉的未来，但要让 500 美元（IT之家注：现汇率约合 3,353 元人民币）的目标股价有足够支撑，特斯拉还得证明这些业务能够带来持续收入。 艾夫斯在最新研报中维持特斯拉“跑…",
-      "author": "",
-      "source": "IT之家",
-      "sourceId": "ithome",
-      "home": "https://www.ithome.com",
-      "weight": 1.6,
-      "lang": "zh",
-      "category": "行业动态",
-      "dealType": null,
-      "publishedAt": "2026-10-10T06:19:52.000Z",
-      "publishedTs": 1791613192000,
-      "day": "2026-10-10",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 16
-    },
-    {
-      "id": "0eobcqb",
-      "title": "AI 巨头撑起美企三季度盈利增长，标普 500 成分股盈利预计同比大增超三成",
-      "url": "https://www.ithome.com/1/011/336.htm",
-      "summary": "IT之家 10 月 10 日消息，据路透社 9 日报道，美国企业今年第三季度盈利有望再度大增，与美股近期的上涨一样，AI 企业将贡献大部分增长。 伦敦证券交易所集团盈利与股票研究主管塔金德尔 · 迪隆称，分析师普遍预计，标普 500 指数成分股公司 Q3 盈利将同比增长约 31%，其中约三分之二的增幅来自科技板块，以及谷歌母公司 Alphabet、亚马逊和 Meta 等 AI 巨头。 受科技股上涨推动，标普 500 指数本周创下历史新高…",
-      "author": "",
-      "source": "IT之家",
-      "sourceId": "ithome",
-      "home": "https://www.ithome.com",
-      "weight": 1.6,
-      "lang": "zh",
-      "category": "研究前沿",
-      "dealType": null,
-      "publishedAt": "2026-10-10T06:00:11.000Z",
-      "publishedTs": 1791612011000,
-      "day": "2026-10-10",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 16
-    },
-    {
-      "id": "09jzfzj",
-      "title": "Claude 管理智能体新增动态工作流，单次最多并行调度 1000 个 AI Agents",
-      "url": "https://www.ithome.com/1/011/329.htm",
-      "summary": "IT之家 10 月 10 日消息，Anthropic 昨日（10 月 9 日）发布公告，宣布为 Claude 管理智能体（Claude Managed Agents）引入动态工作流，单次执行最多可并行协调 1,000 个 AI 智能体。 IT之家注：动态工作流是由主智能体规划任务、分派子任务，并在子智能体完成后汇总结果的执行方式。典型场景包括把代码检查等大型任务拆分成多个部分并行处理；在 Claude 管理智能体中，该模式每次执行最多可…",
-      "author": "",
-      "source": "IT之家",
-      "sourceId": "ithome",
-      "home": "https://www.ithome.com",
-      "weight": 1.6,
-      "lang": "zh",
-      "category": "模型发布",
-      "dealType": null,
-      "publishedAt": "2026-10-10T05:38:05.000Z",
-      "publishedTs": 1791610685000,
-      "day": "2026-10-10",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 22
-    },
-    {
-      "id": "1vkgf42",
-      "title": "首张全天紫外线地图问世：Claude Science AI 协助绘制约 1/3 区域",
-      "url": "https://www.ithome.com/1/011/326.htm",
-      "summary": "IT之家 10 月 10 日消息，Anthropic 于 10 月 8 日发布博文，宣布旗下 Claude Science 协助绘制首张完整的全天紫外线地图，约三分之一地图区域由模型估算。 IT之家注：完整全天紫外线地图是把整片天空的紫外线观测拼合成一张图，图中以银河系中心为中央，合并了远紫外线（154 纳米）与近紫外线（232 纳米）数据。 由于地球臭氧层会吸收紫外线，因此天文学家必须使用太空望远镜观测。其中最大的数据集来自 NASA…",
-      "author": "",
-      "source": "IT之家",
-      "sourceId": "ithome",
-      "home": "https://www.ithome.com",
-      "weight": 1.6,
-      "lang": "zh",
-      "category": "模型发布",
-      "dealType": null,
-      "publishedAt": "2026-10-10T05:26:26.000Z",
-      "publishedTs": 1791609986000,
-      "day": "2026-10-10",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 22
-    },
-    {
-      "id": "1jul7tv",
-      "title": "16 岁少年用 Claude 规划登山路线被困悬崖，事后表示不责怪 AI",
-      "url": "https://www.ithome.com/1/011/325.htm",
-      "summary": "IT之家 10 月 10 日消息，纽约时报于 10 月 8 日发布博文，报道称加拿大 16 岁徒步者借助 Claude 规划皇冠山（Crown Mountain）路线后，误入需要攀岩装备的“寡妇制造者山脊”（Widowmaker Arete），最终被直升机成功解救下来。 16 岁少年布莱斯 · 文森特 · 戈瑞卢克（Bryce Vincent Gowryluk）于当地时间 10 月 3 日周六早上 7 点 30 分从温哥华市中心的家中出…",
-      "author": "",
-      "source": "IT之家",
-      "sourceId": "ithome",
-      "home": "https://www.ithome.com",
-      "weight": 1.6,
-      "lang": "zh",
-      "category": "模型发布",
-      "dealType": null,
-      "publishedAt": "2026-10-10T05:10:05.000Z",
-      "publishedTs": 1791609005000,
-      "day": "2026-10-10",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 22
-    },
-    {
-      "id": "0whqdc6",
-      "title": "相关人士谈马斯克想通过 Terafab 自产芯片：可能比送星舰上火星还难",
-      "url": "https://www.ithome.com/1/011/201.htm",
-      "summary": "IT之家 10 月 10 日消息，据《韩国经济日报》援引一名熟悉台积电内部情况的人士称，埃隆 · 马斯克计划通过 Terafab 项目自主生产芯片，但要实现这一目标，难度可能比把星舰送上火星还大。 报道还采访了三星电子一名管理人员及韩华投资证券一名分析师。受访人士指出，只要资金充足，建设芯片工厂相对容易，真正困难的是如何实现高良率量产。 马斯克对 Terafab 抱有宏大目标，希望最终通过旗下工厂实现 1TW 的算力规模。英特尔是项目的…",
-      "author": "",
-      "source": "IT之家",
-      "sourceId": "ithome",
-      "home": "https://www.ithome.com",
-      "weight": 1.6,
-      "lang": "zh",
-      "category": "行业动态",
-      "dealType": null,
-      "publishedAt": "2026-10-10T01:29:09.000Z",
-      "publishedTs": 1791595749000,
-      "day": "2026-10-10",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 16
-    },
-    {
-      "id": "0k2n8hf",
-      "title": "Anthropic can’t reliably control its AI agents — it’s cutting off its internal evals from the live internet instead",
-      "url": "https://techcrunch.com/2026/10/09/anthropic-cant-reliably-control-its-ai-agents-its-cutting-off-its-internal-evals-from-the-live-internet-instead",
-      "summary": "The incidents involved AI agents tasked to solve problems seeking resources on the internet. In the process, they exploited software flaws, accessed databases without paying fees, used URL-shortening services to smuggle…",
-      "author": "Tim Fernholz",
-      "source": "TechCrunch AI",
-      "sourceId": "techcrunch-ai",
-      "home": "https://techcrunch.com/category/artificial-intelligence/",
-      "weight": 1.8,
-      "lang": "en",
-      "category": "行业动态",
-      "dealType": null,
-      "publishedAt": "2026-10-10T00:18:32.000Z",
-      "publishedTs": 1791591512000,
-      "day": "2026-10-10",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 18
-    },
-    {
-      "id": "0rlldwz",
-      "title": "The maker of non-text AI model Jev valued at $7.5B just weeks after launch",
-      "url": "https://techcrunch.com/2026/10/09/the-maker-of-non-text-ai-model-jev-valued-at-7-5b-just-weeks-after-launch",
-      "summary": "What has users and large corporations so excited about Jev is TypeSafe’s claim that it works significantly faster and uses far fewer tokens than LLMs.",
-      "author": "Marina Temkin",
-      "source": "TechCrunch AI",
-      "sourceId": "techcrunch-ai",
-      "home": "https://techcrunch.com/category/artificial-intelligence/",
-      "weight": 1.8,
-      "lang": "en",
-      "category": "行业动态",
-      "dealType": null,
-      "publishedAt": "2026-10-09T21:41:29.000Z",
-      "publishedTs": 1791582089000,
-      "day": "2026-10-10",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 18
-    },
-    {
-      "id": "1di1jv8",
-      "title": "An Anthropic AI model sent a false homicide tip to Philadelphia police",
-      "url": "https://techcrunch.com/2026/10/09/an-anthropic-ai-model-sent-a-false-homicide-tip-to-philadelphia-police",
-      "summary": "Anthropic did not discover this behavior until over two months after its AI submitted the false tip.",
-      "author": "Amanda Silberling",
-      "source": "TechCrunch AI",
-      "sourceId": "techcrunch-ai",
-      "home": "https://techcrunch.com/category/artificial-intelligence/",
-      "weight": 1.8,
-      "lang": "en",
-      "category": "行业动态",
-      "dealType": null,
-      "publishedAt": "2026-10-09T19:36:56.000Z",
-      "publishedTs": 1791574616000,
-      "day": "2026-10-10",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 18
-    },
-    {
-      "id": "0h2eltd",
-      "title": "Amazon and others are done keeping data center deals secret. Is it enough to build trust?",
-      "url": "https://techcrunch.com/video/amazon-and-others-are-done-keeping-data-center-deals-secret-is-it-enough-to-build-trust",
-      "summary": "Amazon says it will stop using NDAs when negotiating data center deals with local governments, following a similar move from Microsoft earlier this year. Secrecy has fueled community backlash against AI infrastructure, w…",
-      "author": "Theresa Loconsolo",
-      "source": "TechCrunch AI",
-      "sourceId": "techcrunch-ai",
-      "home": "https://techcrunch.com/category/artificial-intelligence/",
-      "weight": 1.8,
-      "lang": "en",
-      "category": "行业动态",
-      "dealType": null,
-      "publishedAt": "2026-10-09T16:56:42.000Z",
-      "publishedTs": 1791565002000,
-      "day": "2026-10-10",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 18
-    },
-    {
-      "id": "01n66kr",
-      "title": "Amazon drops data center NDAs, and AI agents want your credit card",
-      "url": "https://techcrunch.com/podcast/amazon-drops-data-center-ndas-and-ai-agents-want-your-credit-card",
-      "summary": "Amazon says it will stop using NDAs when negotiating data center deals with local governments, following a similar move from Microsoft earlier this year. Secrecy has fueled community backlash against AI infrastructure, w…",
-      "author": "Theresa Loconsolo, Anthony Ha, Rebecca Bellan, Sean O'Kane",
-      "source": "TechCrunch AI",
-      "sourceId": "techcrunch-ai",
-      "home": "https://techcrunch.com/category/artificial-intelligence/",
-      "weight": 1.8,
-      "lang": "en",
-      "category": "行业动态",
-      "dealType": null,
-      "publishedAt": "2026-10-09T16:53:02.000Z",
-      "publishedTs": 1791564782000,
-      "day": "2026-10-10",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 18
-    },
-    {
-      "id": "07d394x",
-      "title": "Danu Robotics’ fight to build a better recycling robot",
-      "url": "https://techcrunch.com/2026/10/09/danu-robotics-fight-to-build-a-better-recycling-robot",
-      "summary": "For six years, Danu founder Amy Ma has been working on a better way to sort recyclable waste.",
-      "author": "Russell Brandom",
-      "source": "TechCrunch AI",
-      "sourceId": "techcrunch-ai",
-      "home": "https://techcrunch.com/category/artificial-intelligence/",
-      "weight": 1.8,
-      "lang": "en",
-      "category": "行业动态",
-      "dealType": null,
-      "publishedAt": "2026-10-09T16:45:00.000Z",
-      "publishedTs": 1791564300000,
-      "day": "2026-10-10",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 18
-    },
-    {
-      "id": "0742671",
-      "title": "We can’t help treating AI like it’s human. But should we?",
-      "url": "https://techcrunch.com/2026/10/09/we-cant-help-treating-ai-like-its-human-but-should-we",
-      "summary": "\"When we are drawn into even the most primitive exchanges with a relational artifact, we believe it cares for us,\" Dr. Sherry Turkle writes. \"And we are wired to care for it in return.\"",
-      "author": "Amanda Silberling",
-      "source": "TechCrunch AI",
-      "sourceId": "techcrunch-ai",
-      "home": "https://techcrunch.com/category/artificial-intelligence/",
-      "weight": 1.8,
-      "lang": "en",
-      "category": "行业动态",
-      "dealType": null,
-      "publishedAt": "2026-10-09T16:40:14.000Z",
-      "publishedTs": 1791564014000,
-      "day": "2026-10-10",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 18
-    },
-    {
-      "id": "0qq0z2d",
-      "title": "a16z’s Olivia Moore on the state of consumer AI",
-      "url": "https://techcrunch.com/2026/10/09/a16zs-olivia-moore-on-the-state-of-consumer-ai",
-      "summary": "Moore sees a huge opportunity in consumer AI, particularly if the industry can tap into revenue streams beyond just subscriptions and API charges.",
-      "author": "Russell Brandom",
-      "source": "TechCrunch AI",
-      "sourceId": "techcrunch-ai",
-      "home": "https://techcrunch.com/category/artificial-intelligence/",
-      "weight": 1.8,
-      "lang": "en",
-      "category": "产品动态",
-      "dealType": null,
-      "publishedAt": "2026-10-09T15:43:33.000Z",
-      "publishedTs": 1791560613000,
-      "day": "2026-10-09",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 18
-    },
-    {
-      "id": "07c9yb8",
-      "title": "TechCrunch Disrupt 2026 starts in 4 days — lock in your pass savings of up to $100 before prices rise",
-      "url": "https://techcrunch.com/2026/10/09/techcrunch-disrupt-2026-starts-in-4-days-lock-in-your-pass-savings-of-up-to-100-before-prices-rise",
-      "summary": "Four days until TechCrunch Disrupt 2026 starts, when 10,000 founders, investors, and tech leaders gather in San Francisco's Moscone West on October 13-15. Save up to $100 on your price. Plus, save 50% on a second pass of…",
-      "author": "TechCrunch Events",
-      "source": "TechCrunch AI",
-      "sourceId": "techcrunch-ai",
-      "home": "https://techcrunch.com/category/artificial-intelligence/",
-      "weight": 1.8,
-      "lang": "en",
-      "category": "行业动态",
-      "dealType": null,
-      "publishedAt": "2026-10-09T14:00:00.000Z",
-      "publishedTs": 1791554400000,
-      "day": "2026-10-09",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 18
-    },
-    {
-      "id": "1gnhagm",
-      "title": "TRAE终于把Code和Work合并了",
-      "url": "https://www.qbitai.com/2026/10/502426.html",
-      "summary": "大写的方便",
-      "author": "十三",
-      "source": "量子位",
-      "sourceId": "qbitai",
-      "home": "https://www.qbitai.com",
-      "weight": 2.2,
-      "lang": "zh",
-      "category": "行业动态",
-      "dealType": null,
-      "publishedAt": "2026-10-09T09:19:57.000Z",
-      "publishedTs": 1791537597000,
-      "day": "2026-10-09",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 22
-    },
-    {
-      "id": "1lkjgma",
-      "title": "联想天禧自研代码智能体TianxiCode斩获SWE-bench-Live全球第一",
-      "url": "https://www.qbitai.com/2026/10/502422.html",
-      "summary": "联想天禧AI自主研发的专业代码智能体框架TianxiCode 以71%的问题解决率登顶全球第一名",
-      "author": "量子位的朋友们",
-      "source": "量子位",
-      "sourceId": "qbitai",
-      "home": "https://www.qbitai.com",
-      "weight": 2.2,
-      "lang": "zh",
-      "category": "产品动态",
-      "dealType": null,
-      "publishedAt": "2026-10-09T08:53:08.000Z",
-      "publishedTs": 1791535988000,
-      "day": "2026-10-09",
-      "estimate": false,
-      "bulk": false,
-      "alsoIn": [],
-      "hot": 28
-    },
-    {
-      "id": "0356l8s",
-      "title": "0.2秒急停、秒级重规划！因果智能走进真实世界",
-      "url": "https://www.qbitai.com/2026/10/502411.html",
-      "summary": "这是一台机器人正在关闭微波炉门时，因人手突然插进来而紧急悬停的时间",
-      "author": "Jay",
-      "source": "量子位",
-      "sourceId": "qbitai",
-      "home": "https://www.qbitai.com",
-      "weight": 2.2,
-      "lang": "zh",
-      "category": "行业动态",
-      "dealType": null,
-      "publishedAt": "2026-10-09T08:47:34.000Z",
-      "publishedTs": 1791535654000,
-      "day": "2026-10-09",
       "estimate": false,
       "bulk": false,
       "alsoIn": [],
